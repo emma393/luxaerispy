@@ -15,12 +15,12 @@
     }
   },
   "current_seed_counts": {
-    "airports": 67,
-    "routes": 2100,
-    "lounges": 20,
+    "airports": 106,
+    "routes": 5124,
+    "lounges": 25,
     "airlines": 15,
     "aircraft": 5,
-    "destinations": 65,
-    "flights": 10
+    "destinations": 94,
+    "flights": 15
   }
 }

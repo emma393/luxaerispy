@@ -1,0 +1,30 @@
+{
+  "seed_counts": {
+    "airports": 106,
+    "routes": 5124,
+    "destinations": 94,
+    "airlines": 15,
+    "aircraft": 5,
+    "lounges": 25,
+    "flights": 15
+  },
+  "derived_counts": {
+    "airport_airline_edges": 54,
+    "airport_destination_edges": 4720,
+    "route_airline_edges": 20496,
+    "airport_lounge_edges": 25,
+    "unique_city_pairs": 4329,
+    "cabin_variants": 5,
+    "terminal_variants": 3
+  },
+  "estimated_total_pages_now": 82818,
+  "how_to_reach_500k": {
+    "target_airports": 1200,
+    "target_routes": 35000,
+    "target_destinations": 4000,
+    "target_lounges": 2500,
+    "target_flights": 100000,
+    "target_route_airline_edges": 140000,
+    "target_estimated_pages": 500000
+  }
+}

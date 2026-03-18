@@ -2,15 +2,16 @@
   {
     "aircraft_slug": "airbus-a380-business-class",
     "model_name": "Airbus A380 Business Class",
+    "featured_image": "/assets/images/dubai.png",
     "premium_summary": "A flagship long-haul aircraft type often associated with quieter cabins and stronger premium positioning.",
     "related_airline_slugs": [
       "emirates-business-class"
-    ],
-    "featured_image": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20City%20skyline.jpg"
+    ]
   },
   {
     "aircraft_slug": "boeing-777-business-class",
     "model_name": "Boeing 777 Business Class",
+    "featured_image": "/assets/images/london.png",
     "premium_summary": "A widely used long-haul aircraft family that appears on many premium international routes.",
     "related_airline_slugs": [
       "emirates-business-class",
@@ -22,12 +23,12 @@
       "swiss-business-class",
       "turkish-airlines-business-class",
       "united-polaris"
-    ],
-    "featured_image": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20City%20skyline.jpg"
+    ]
   },
   {
     "aircraft_slug": "airbus-a350-business-class",
     "model_name": "Airbus A350 Business Class",
+    "featured_image": "/assets/images/singapore.png",
     "premium_summary": "A modern long-haul aircraft commonly used for stronger premium-cabin experiences on flagship routes.",
     "related_airline_slugs": [
       "british-airways-business-class",
@@ -39,23 +40,23 @@
       "iberia-business-class",
       "air-france-business-class",
       "lufthansa-business-class"
-    ],
-    "featured_image": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20City%20skyline.jpg"
+    ]
   },
   {
     "aircraft_slug": "airbus-a330-business-class",
     "model_name": "Airbus A330 Business Class",
+    "featured_image": "/assets/images/rome.png",
     "premium_summary": "A practical widebody option used on premium long-haul and mid-haul routes.",
     "related_airline_slugs": [
       "delta-one",
       "ita-airways-business-class",
       "swiss-business-class"
-    ],
-    "featured_image": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20City%20skyline.jpg"
+    ]
   },
   {
     "aircraft_slug": "boeing-787-business-class",
     "model_name": "Boeing 787 Business Class",
+    "featured_image": "/assets/images/tokyo.png",
     "premium_summary": "A modern long-haul aircraft used on premium routes where efficiency and quieter cabin feel matter.",
     "related_airline_slugs": [
       "ana-business-class",
@@ -63,7 +64,6 @@
       "lufthansa-business-class",
       "turkish-airlines-business-class",
       "united-polaris"
-    ],
-    "featured_image": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20City%20skyline.jpg"
+    ]
   }
 ]
