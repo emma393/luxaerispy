@@ -1,0 +1,10 @@
+{
+  "contains": {
+    "static_website": true,
+    "python_engine": true,
+    "structured_data": true,
+    "blueprint_docs": true,
+    "netlify_config": true,
+    "github_actions": true
+  }
+}

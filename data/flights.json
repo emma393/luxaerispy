@@ -1,0 +1,23 @@
+[
+  {
+    "flight_slug": "ek202",
+    "flight_number": "EK202",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "dxb",
+    "flight_summary": "A well-known premium long-haul flight linking New York and Dubai."
+  },
+  {
+    "flight_slug": "ba117",
+    "flight_number": "BA117",
+    "origin_airport_slug": "lhr",
+    "destination_airport_slug": "jfk",
+    "flight_summary": "A flagship premium transatlantic flight between London and New York."
+  },
+  {
+    "flight_slug": "sq317",
+    "flight_number": "SQ317",
+    "origin_airport_slug": "lhr",
+    "destination_airport_slug": "sin",
+    "flight_summary": "A premium long-haul route linking London and Singapore."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "airport-must-have-iata",
+      "entity": "airport",
+      "severity": "error",
+      "rule": "code_iata must be present and unique when airport_type is commercial"
+    },
+    {
+      "id": "route-airports-exist",
+      "entity": "route",
+      "severity": "error",
+      "rule": "origin_airport_slug and destination_airport_slug must reference existing airport slugs"
+    },
+    {
+      "id": "lounge-airport-exists",
+      "entity": "lounge",
+      "severity": "error",
+      "rule": "airport_slug must reference an existing airport"
+    },
+    {
+      "id": "lounge-terminal-optional-but-consistent",
+      "entity": "lounge",
+      "severity": "warn",
+      "rule": "terminal_slug should reference an existing terminal when terminal-specific access matters"
+    },
+    {
+      "id": "thin-summary-block",
+      "entity": "all",
+      "severity": "error",
+      "rule": "customer-facing summary fields should be at least 120 characters"
+    },
+    {
+      "id": "featured-image-needed",
+      "entity": "all_major_page_types",
+      "severity": "warn",
+      "rule": "featured_image should be present for airports, lounges, airlines, routes, destinations, and aircraft"
+    },
+    {
+      "id": "slug-unique",
+      "entity": "all",
+      "severity": "error",
+      "rule": "slug fields must be globally unique within each entity type"
+    },
+    {
+      "id": "internal-notes-not-published",
+      "entity": "all",
+      "severity": "error",
+      "rule": "internal_notes must never be rendered on public pages"
+    }
+  ]
+}

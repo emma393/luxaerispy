@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Airport",
+  "type": "object",
+  "required": [
+    "slug",
+    "code_iata",
+    "name",
+    "city_slug",
+    "country_code",
+    "premium_summary"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "code_iata": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "code_icao": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "city_slug": {
+      "type": "string"
+    },
+    "country_code": {
+      "type": "string"
+    },
+    "country_name": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "longitude": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "timezone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "airport_type": {
+      "type": "string"
+    },
+    "terminal_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "premium_summary": {
+      "type": "string"
+    },
+    "featured_image": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "related_lounge_slugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_route_slugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_airline_slugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "internal_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "package": "luxaeris_final_working_website",
+  "html_pages_total": 71,
+  "tools_pages": [
+    "airline-comparison.html",
+    "cabin-comparison.html",
+    "flight-tracker.html",
+    "index.html",
+    "lounge-finder.html",
+    "price-estimator.html",
+    "route-explorer.html",
+    "seat-guide.html"
+  ]
+}

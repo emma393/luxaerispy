@@ -1,0 +1,19 @@
+[
+  {
+    "lounge_slug": "centurion-lounge-jfk",
+    "lounge_name": "Centurion Lounge JFK",
+    "airport_slug": "jfk",
+    "terminal_slug": "jfk-terminal-4",
+    "operator_name": "American Express",
+    "access_rules": "Eligible American Express cardholders and selected premium guests.",
+    "opening_hours": "05:00-22:00",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ],
+    "customer_summary": "The Centurion Lounge at JFK is a polished premium pre-flight option for eligible travelers wanting stronger food, better seating, and a calmer airport experience before departure.",
+    "featured_image": "/assets/images/centurion-jfk.jpg",
+    "internal_notes": null
+  }
+]

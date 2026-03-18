@@ -1,0 +1,47 @@
+[
+  {
+    "route_slug": "jfk-to-lhr-business-class",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "lhr",
+    "origin_city_slug": "new-york",
+    "destination_city_slug": "london",
+    "primary_cabin": "Business Class",
+    "route_summary": "The JFK to Heathrow business-class market is one of the strongest premium transatlantic corridors, where schedule quality, aircraft choice, and ground experience all matter."
+  },
+  {
+    "route_slug": "jfk-to-dxb-business-class",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "dxb",
+    "origin_city_slug": "new-york",
+    "destination_city_slug": "dubai",
+    "primary_cabin": "Business Class",
+    "route_summary": "This long-haul premium route rewards stronger airport flow, privacy, and overnight sleep support."
+  },
+  {
+    "route_slug": "lhr-to-dxb-business-class",
+    "origin_airport_slug": "lhr",
+    "destination_airport_slug": "dxb",
+    "origin_city_slug": "london",
+    "destination_city_slug": "dubai",
+    "primary_cabin": "Business Class",
+    "route_summary": "London to Dubai is one of the best-known premium medium-to-long-haul business-class corridors."
+  },
+  {
+    "route_slug": "lhr-to-sin-business-class",
+    "origin_airport_slug": "lhr",
+    "destination_airport_slug": "sin",
+    "origin_city_slug": "london",
+    "destination_city_slug": "singapore",
+    "primary_cabin": "Business Class",
+    "route_summary": "This premium Asia route is driven by aircraft quality, lounge standards, and long-haul sleep value."
+  },
+  {
+    "route_slug": "jfk-to-hnd-business-class",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "hnd",
+    "origin_city_slug": "new-york",
+    "destination_city_slug": "tokyo",
+    "primary_cabin": "Business Class",
+    "route_summary": "New York to Tokyo is a premium long-haul route where aircraft, timing, and airport efficiency shape the trip."
+  }
+]

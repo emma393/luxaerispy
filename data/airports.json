@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "jfk",
+    "code_iata": "JFK",
+    "name": "John F. Kennedy International Airport",
+    "city_slug": "new-york",
+    "country_name": "United States",
+    "premium_summary": "JFK is one of the most important premium long-haul gateways in North America, with strong lounge depth, transatlantic connectivity, and multiple flagship business-class departures.",
+    "related_route_slugs": [
+      "jfk-to-lhr-business-class",
+      "jfk-to-dxb-business-class"
+    ],
+    "related_airline_slugs": [
+      "delta-one",
+      "emirates-business-class",
+      "british-airways-business-class"
+    ]
+  },
+  {
+    "slug": "lhr",
+    "code_iata": "LHR",
+    "name": "London Heathrow Airport",
+    "city_slug": "london",
+    "country_name": "United Kingdom",
+    "premium_summary": "Heathrow is one of the world\u2019s best-known premium long-haul gateways, with excellent airline depth, strong lounges, and broad transatlantic connectivity.",
+    "related_route_slugs": [
+      "jfk-to-lhr-business-class",
+      "lhr-to-dxb-business-class"
+    ],
+    "related_airline_slugs": [
+      "british-airways-business-class",
+      "virgin-atlantic-upper-class"
+    ]
+  },
+  {
+    "slug": "dxb",
+    "code_iata": "DXB",
+    "name": "Dubai International Airport",
+    "city_slug": "dubai",
+    "country_name": "United Arab Emirates",
+    "premium_summary": "Dubai International Airport is one of the strongest premium hubs worldwide, especially for long-haul business class and first class travel.",
+    "related_route_slugs": [
+      "jfk-to-dxb-business-class",
+      "lhr-to-dxb-business-class"
+    ],
+    "related_airline_slugs": [
+      "emirates-business-class",
+      "qatar-airways-business-class"
+    ]
+  },
+  {
+    "slug": "sin",
+    "code_iata": "SIN",
+    "name": "Singapore Changi Airport",
+    "city_slug": "singapore",
+    "country_name": "Singapore",
+    "premium_summary": "Changi is a polished long-haul premium airport known for efficient transfers, premium lounges, and strong Asia connectivity.",
+    "related_route_slugs": [
+      "lhr-to-sin-business-class"
+    ],
+    "related_airline_slugs": [
+      "singapore-airlines-business-class"
+    ]
+  },
+  {
+    "slug": "hnd",
+    "code_iata": "HND",
+    "name": "Tokyo Haneda Airport",
+    "city_slug": "tokyo",
+    "country_name": "Japan",
+    "premium_summary": "Haneda is a highly efficient premium airport for Tokyo-bound long-haul travel, with strong airline quality and convenient city access.",
+    "related_route_slugs": [
+      "jfk-to-hnd-business-class"
+    ],
+    "related_airline_slugs": [
+      "ana-business-class",
+      "japan-airlines-business-class"
+    ]
+  }
+]

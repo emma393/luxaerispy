@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Airline",
+  "type": "object",
+  "required": [
+    "airline_slug",
+    "airline_name",
+    "premium_summary"
+  ],
+  "properties": {
+    "airline_slug": {
+      "type": "string"
+    },
+    "airline_name": {
+      "type": "string"
+    },
+    "iata_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "icao_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alliance_slug": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_hubs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "premium_summary": {
+      "type": "string"
+    },
+    "featured_image": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "related_aircraft_slugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "internal_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "aircraft_slug": "airbus-a380-business-class",
+    "model_name": "Airbus A380 Business Class",
+    "premium_summary": "A flagship long-haul aircraft type often associated with quieter cabins and stronger premium positioning.",
+    "related_airline_slugs": [
+      "emirates-business-class"
+    ]
+  },
+  {
+    "aircraft_slug": "boeing-777-business-class",
+    "model_name": "Boeing 777 Business Class",
+    "premium_summary": "A widely used long-haul aircraft family that appears on many premium international routes.",
+    "related_airline_slugs": [
+      "emirates-business-class",
+      "british-airways-business-class",
+      "qatar-airways-business-class",
+      "singapore-airlines-business-class"
+    ]
+  },
+  {
+    "aircraft_slug": "airbus-a350-business-class",
+    "model_name": "Airbus A350 Business Class",
+    "premium_summary": "A modern long-haul aircraft commonly used for stronger premium-cabin experiences on flagship routes.",
+    "related_airline_slugs": [
+      "british-airways-business-class",
+      "qatar-airways-business-class",
+      "singapore-airlines-business-class",
+      "delta-one"
+    ]
+  },
+  {
+    "aircraft_slug": "airbus-a330-business-class",
+    "model_name": "Airbus A330 Business Class",
+    "premium_summary": "A practical widebody option used on premium long-haul and mid-haul routes.",
+    "related_airline_slugs": [
+      "delta-one"
+    ]
+  }
+]

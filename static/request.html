@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-language" content="en">
+<title>Request a Premium Flight Quote | LuxAeris</title>
+<meta name="description" content="Request a luxury business class or first class flight quote with your trip details prefilled for a faster premium booking experience.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://luxaeris.com/request.html">
+<meta property="og:title" content="Request a Premium Flight Quote | LuxAeris">
+<meta property="og:description" content="Request a luxury business class or first class flight quote with your trip details prefilled for a faster premium booking experience.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://luxaeris.com/request.html">
+<meta property="og:image" content="https://luxaeris.com/assets/images/logo-header.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Request a Premium Flight Quote | LuxAeris">
+<meta name="twitter:description" content="Request a luxury business class or first class flight quote with your trip details prefilled for a faster premium booking experience.">
+<meta name="twitter:image" content="https://luxaeris.com/assets/images/logo-header.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/site.js"></script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"TravelAgency",
+  "name":"LuxAeris",
+  "url":"https://luxaeris.com",
+  "description":"Luxury business class and first class travel booking platform.",
+  "areaServed":"Worldwide"
+}</script>
+</head>
+<body><header class="site-header"><div class="container nav">
+<a class="logo-wrap" href="index.html">
+  <img class="logo-img" src="assets/images/logo-header.png" alt="LuxAeris shield logo">
+  <div><div class="brand-name">LuxAeris</div><div class="brand-tag">Private fares. Premium journeys.</div></div>
+</a>
+<nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="destinations/index.html">Destinations</a>
+  <a href="airlines/index.html">Airlines</a>
+  <a href="airports/index.html">Airports</a>
+  <a href="routes/index.html">Routes</a>
+  <a href="cabins/index.html">Cabins</a>
+  <a href="tools/index.html">Tools</a>
+  <a href="search.html">Search</a>
+  <a class="btn btn-primary" href="request.html">Request Quote</a>
+</nav></div></header>
+<section class="section"><div class="container feature-grid">
+<div class="panel">
+  <p class="kicker">Request a premium quote</p>
+  <h1 class="section-title">Complete your premium request</h1>
+  <p class="section-intro">Your search values are carried here so only the remaining traveler details need to be filled in.</p>
+  <div id="requestTripSwitcher" data-trip-switcher data-default-trip="roundtrip">
+    <div class="trip-tabs">
+      <button type="button" class="trip-tab" data-trip="oneway">One way</button>
+      <button type="button" class="trip-tab" data-trip="roundtrip">Round trip</button>
+      <button type="button" class="trip-tab" data-trip="multicity">Multi city</button>
+    </div>
+    <form class="request-grid" action="https://formspree.io/f/xzdankoe" method="POST">
+      <input name="tripType" placeholder="Trip type">
+      <select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select>
+      <input data-location-input name="origin" placeholder="Origin">
+      <input data-location-input name="destination" placeholder="Destination">
+      <input type="date" name="departDate">
+      <input class="roundtrip-only" type="date" name="returnDate">
+      <div class="multi-city-shell" style="grid-column:1/-1">
+        <div class="multi-city-rows">
+          <div class="multi-row">
+            <input data-location-input placeholder="Origin">
+            <input data-location-input placeholder="Destination">
+            <input type="date">
+            <button type="button" class="icon-remove" aria-label="Remove leg">−</button>
+          </div>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+          <button type="button" class="icon-add" data-add-multi-city aria-label="Add leg">+</button>
+        </div>
+      </div>
+      <textarea id="multiCitySummary" name="multiCitySummary" placeholder="Multi-city legs will appear here when used."></textarea>
+      <input name="name" placeholder="Full name">
+      <input name="email" placeholder="Email">
+      <input name="phone" placeholder="Phone">
+      <textarea name="notes" placeholder="Preferred airlines, flexibility, passenger details, or anything else that helps refine the itinerary."></textarea>
+      <input type="hidden" name="_subject" value="LuxAeris premium quote request">
+      <button class="btn btn-primary" type="submit">Submit Request</button>
+    </form>
+  </div>
+</div>
+<div class="panel">
+  <h2 style="font-family:Georgia,serif">Destination information</h2>
+  <div id="destinationInfoBox" class="card"><h3>Choose a destination</h3><p>When a destination is selected from the search page, the related destination summary appears here.</p></div>
+  <div class="card-grid" style="grid-template-columns:1fr">
+    <div class="card"><h3>What happens next</h3><p>Once the request is submitted, the itinerary can be refined based on route fit, airline choice, schedule, and cabin preference.</p></div>
+    <div class="card"><h3>How to use the page</h3><p>Keep the origin, destination, dates, and cabin values that were carried over, then add your name and contact details.</p></div>
+  </div>
+</div>
+</div></section>
+
+<div id="cookieBanner" class="cookie-banner">
+  <div class="cookie-card">
+    <strong>Cookies</strong>
+    <p style="margin:8px 0 0;color:var(--muted)">We use cookies to improve website performance, remember preferences, and support a smoother premium booking experience.</p>
+    <div class="cookie-actions">
+      <button id="cookieAccept" class="btn btn-primary" type="button">Accept</button>
+      <button id="cookieReject" class="btn btn-secondary" type="button">Reject</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer"><div class="container footer-grid">
+<div><strong>LuxAeris</strong><p>Luxury business class, first class, and premium travel request platform built to move visitors from search to a refined request flow.</p></div>
+<div><strong>Explore</strong><p><a href="destinations/index.html">All destinations</a><br><a href="airlines/index.html">Airlines</a><br><a href="routes/index.html">Routes</a></p></div>
+<div><strong>Guides</strong><p><a href="cabins/index.html">Cabins</a><br><a href="airports/index.html">Airports</a><br><a href="search.html">Search</a></p></div>
+<div><strong>Quote</strong><p><a href="request.html">Open request form</a></p></div>
+</div></footer></body></html>

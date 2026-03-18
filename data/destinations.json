@@ -1,0 +1,35 @@
+[
+  {
+    "destination_slug": "dubai",
+    "display_name": "Dubai",
+    "luxury_summary": "Dubai combines luxury hotels, strong premium route density, and polished airport flow.",
+    "route_slugs": [
+      "jfk-to-dxb-business-class",
+      "lhr-to-dxb-business-class"
+    ]
+  },
+  {
+    "destination_slug": "london",
+    "display_name": "London",
+    "luxury_summary": "London suits premium city breaks, strong airline choice, and Heathrow-driven long-haul access.",
+    "route_slugs": [
+      "jfk-to-lhr-business-class"
+    ]
+  },
+  {
+    "destination_slug": "singapore",
+    "display_name": "Singapore",
+    "luxury_summary": "Singapore suits premium stopovers, polished airport transitions, and long-haul Asia itineraries.",
+    "route_slugs": [
+      "lhr-to-sin-business-class"
+    ]
+  },
+  {
+    "destination_slug": "tokyo",
+    "display_name": "Tokyo",
+    "luxury_summary": "Tokyo suits premium city travel where airport efficiency and arrival timing matter.",
+    "route_slugs": [
+      "jfk-to-hnd-business-class"
+    ]
+  }
+]

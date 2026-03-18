@@ -1,0 +1,47 @@
+[
+  {
+    "airline_slug": "emirates-business-class",
+    "airline_name": "Emirates Business Class",
+    "premium_summary": "Emirates business class suits Dubai-linked travel, premium lounge access, and polished long-haul itineraries.",
+    "related_aircraft_slugs": [
+      "airbus-a380-business-class",
+      "boeing-777-business-class"
+    ]
+  },
+  {
+    "airline_slug": "british-airways-business-class",
+    "airline_name": "British Airways Business Class",
+    "premium_summary": "British Airways business class suits Heathrow-led premium travel with strong transatlantic reach.",
+    "related_aircraft_slugs": [
+      "boeing-777-business-class",
+      "airbus-a350-business-class"
+    ]
+  },
+  {
+    "airline_slug": "qatar-airways-business-class",
+    "airline_name": "Qatar Airways Business Class",
+    "premium_summary": "Qatar Airways business class is known for privacy-led long-haul travel and strong Doha connectivity.",
+    "related_aircraft_slugs": [
+      "boeing-777-business-class",
+      "airbus-a350-business-class"
+    ]
+  },
+  {
+    "airline_slug": "singapore-airlines-business-class",
+    "airline_name": "Singapore Airlines Business Class",
+    "premium_summary": "Singapore Airlines business class suits long-haul Asia travel with polished service and premium cabin consistency.",
+    "related_aircraft_slugs": [
+      "airbus-a350-business-class",
+      "boeing-777-business-class"
+    ]
+  },
+  {
+    "airline_slug": "delta-one",
+    "airline_name": "Delta One",
+    "premium_summary": "Delta One suits premium transatlantic and long-haul travel where airport flow and overnight timing matter.",
+    "related_aircraft_slugs": [
+      "airbus-a330-business-class",
+      "airbus-a350-business-class"
+    ]
+  }
+]

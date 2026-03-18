@@ -1,0 +1,57 @@
+[
+  {
+    "lounge_slug": "centurion-lounge-jfk",
+    "lounge_name": "Centurion Lounge JFK",
+    "airport_slug": "jfk",
+    "customer_summary": "A polished premium pre-flight option for eligible travelers wanting stronger food, calmer seating, and better airport comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "virgin-atlantic-clubhouse-lhr",
+    "lounge_name": "Virgin Atlantic Clubhouse Heathrow",
+    "airport_slug": "lhr",
+    "customer_summary": "A standout premium lounge for eligible travelers departing Heathrow on Virgin Atlantic-linked itineraries.",
+    "features": [
+      "Dining",
+      "Bar",
+      "Relaxed premium atmosphere"
+    ]
+  },
+  {
+    "lounge_slug": "emirates-business-class-lounge-dxb",
+    "lounge_name": "Emirates Business Class Lounge Dubai",
+    "airport_slug": "dxb",
+    "customer_summary": "A flagship premium lounge built for Emirates business-class travelers wanting a smoother departure and connection experience.",
+    "features": [
+      "Dining",
+      "Direct boarding access",
+      "Quiet areas"
+    ]
+  },
+  {
+    "lounge_slug": "silverkris-lounge-sin",
+    "lounge_name": "SilverKris Lounge Singapore",
+    "airport_slug": "sin",
+    "customer_summary": "A polished premium lounge for Singapore Airlines premium travelers with a strong long-haul fit.",
+    "features": [
+      "Dining",
+      "Showers",
+      "Rest areas"
+    ]
+  },
+  {
+    "lounge_slug": "ana-lounge-hnd",
+    "lounge_name": "ANA Lounge Haneda",
+    "airport_slug": "hnd",
+    "customer_summary": "A practical premium lounge choice for Haneda departures with efficient boarding support.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Workspaces"
+    ]
+  }
+]
