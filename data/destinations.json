@@ -2,7 +2,7 @@
   {
     "destination_slug": "atlanta",
     "display_name": "Atlanta",
-    "luxury_summary": "Atlanta suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Atlanta suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-atl-business-class",
       "cdg-to-atl-business-class",
@@ -24,12 +24,13 @@
       "sin-to-atl-business-class",
       "syd-to-atl-business-class",
       "zrh-to-atl-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "austin",
     "display_name": "Austin",
-    "luxury_summary": "Austin suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Austin suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-aus-business-class",
       "cdg-to-aus-business-class",
@@ -51,12 +52,13 @@
       "sin-to-aus-business-class",
       "syd-to-aus-business-class",
       "zrh-to-aus-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "bangkok",
     "display_name": "Bangkok",
-    "luxury_summary": "Bangkok suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Bangkok suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-bkk-business-class",
       "cdg-to-bkk-business-class",
@@ -78,12 +80,13 @@
       "sin-to-bkk-business-class",
       "syd-to-bkk-business-class",
       "zrh-to-bkk-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "barcelona",
     "display_name": "Barcelona",
-    "luxury_summary": "Barcelona suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Barcelona suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-bcn-business-class",
       "aus-to-bcn-business-class",
@@ -147,18 +150,20 @@
       "yul-to-bcn-business-class",
       "yyz-to-bcn-business-class",
       "zrh-to-bcn-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/rome.png"
   },
   {
     "destination_slug": "belgrade",
     "display_name": "Belgrade",
-    "luxury_summary": "Belgrade suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
-    "route_slugs": []
+    "luxury_summary": "Belgrade suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
+    "route_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "mumbai",
     "display_name": "Mumbai",
-    "luxury_summary": "Mumbai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Mumbai suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-bom-business-class",
       "cdg-to-bom-business-class",
@@ -180,12 +185,13 @@
       "sin-to-bom-business-class",
       "syd-to-bom-business-class",
       "zrh-to-bom-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "boston",
     "display_name": "Boston",
-    "luxury_summary": "Boston suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Boston suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-bos-business-class",
       "cdg-to-bos-business-class",
@@ -207,12 +213,13 @@
       "sin-to-bos-business-class",
       "syd-to-bos-business-class",
       "zrh-to-bos-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "brussels",
     "display_name": "Brussels",
-    "luxury_summary": "Brussels suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Brussels suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-bru-business-class",
       "cdg-to-bru-business-class",
@@ -234,12 +241,13 @@
       "sin-to-bru-business-class",
       "syd-to-bru-business-class",
       "zrh-to-bru-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "budapest",
     "display_name": "Budapest",
-    "luxury_summary": "Budapest suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Budapest suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-bud-business-class",
       "cdg-to-bud-business-class",
@@ -261,12 +269,13 @@
       "sin-to-bud-business-class",
       "syd-to-bud-business-class",
       "zrh-to-bud-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "cairo",
     "display_name": "Cairo",
-    "luxury_summary": "Cairo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Cairo suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-cai-business-class",
       "cdg-to-cai-business-class",
@@ -288,12 +297,13 @@
       "sin-to-cai-business-class",
       "syd-to-cai-business-class",
       "zrh-to-cai-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "paris",
     "display_name": "Paris",
-    "luxury_summary": "Paris suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Paris suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-cdg-business-class",
       "aus-to-cdg-business-class",
@@ -357,18 +367,20 @@
       "yul-to-cdg-business-class",
       "yyz-to-cdg-business-class",
       "zrh-to-cdg-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/paris.png"
   },
   {
     "destination_slug": "jakarta",
     "display_name": "Jakarta",
-    "luxury_summary": "Jakarta suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
-    "route_slugs": []
+    "luxury_summary": "Jakarta suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
+    "route_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "copenhagen",
     "display_name": "Copenhagen",
-    "luxury_summary": "Copenhagen suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Copenhagen suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-cph-business-class",
       "cdg-to-cph-business-class",
@@ -390,12 +402,13 @@
       "sin-to-cph-business-class",
       "syd-to-cph-business-class",
       "zrh-to-cph-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "cape-town",
     "display_name": "Cape Town",
-    "luxury_summary": "Cape Town suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Cape Town suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-cpt-business-class",
       "cdg-to-cpt-business-class",
@@ -417,12 +430,13 @@
       "sin-to-cpt-business-class",
       "syd-to-cpt-business-class",
       "zrh-to-cpt-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "delhi",
     "display_name": "Delhi",
-    "luxury_summary": "Delhi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Delhi suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-del-business-class",
       "cdg-to-del-business-class",
@@ -444,12 +458,13 @@
       "sin-to-del-business-class",
       "syd-to-del-business-class",
       "zrh-to-del-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "dallas",
     "display_name": "Dallas",
-    "luxury_summary": "Dallas suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Dallas suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-dfw-business-class",
       "cdg-to-dfw-business-class",
@@ -471,12 +486,13 @@
       "sin-to-dfw-business-class",
       "syd-to-dfw-business-class",
       "zrh-to-dfw-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "doha",
     "display_name": "Doha",
-    "luxury_summary": "Doha suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Doha suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-doh-business-class",
       "aus-to-doh-business-class",
@@ -540,12 +556,13 @@
       "yul-to-doh-business-class",
       "yyz-to-doh-business-class",
       "zrh-to-doh-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "bali",
     "display_name": "Bali",
-    "luxury_summary": "Bali suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Bali suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-dps-business-class",
       "cdg-to-dps-business-class",
@@ -567,12 +584,13 @@
       "sin-to-dps-business-class",
       "syd-to-dps-business-class",
       "zrh-to-dps-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/bali.png"
   },
   {
     "destination_slug": "dublin",
     "display_name": "Dublin",
-    "luxury_summary": "Dublin suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Dublin suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-dub-business-class",
       "cdg-to-dub-business-class",
@@ -594,12 +612,13 @@
       "sin-to-dub-business-class",
       "syd-to-dub-business-class",
       "zrh-to-dub-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "dusseldorf",
     "display_name": "Düsseldorf",
-    "luxury_summary": "Düsseldorf suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Düsseldorf suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-dus-business-class",
       "cdg-to-dus-business-class",
@@ -621,12 +640,13 @@
       "sin-to-dus-business-class",
       "syd-to-dus-business-class",
       "zrh-to-dus-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "dubai",
     "display_name": "Dubai",
-    "luxury_summary": "Dubai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Dubai suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-dxb-business-class",
       "aus-to-dxb-business-class",
@@ -690,12 +710,13 @@
       "yul-to-dxb-business-class",
       "yyz-to-dxb-business-class",
       "zrh-to-dxb-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "new-york",
     "display_name": "New York",
-    "luxury_summary": "New York suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "New York suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-jfk-business-class",
       "aus-to-jfk-business-class",
@@ -779,12 +800,13 @@
       "yyz-to-jfk-business-class",
       "zrh-to-ewr-business-class",
       "zrh-to-jfk-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/new-york.png"
   },
   {
     "destination_slug": "rome",
     "display_name": "Rome",
-    "luxury_summary": "Rome suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Rome suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-fco-business-class",
       "aus-to-fco-business-class",
@@ -848,12 +870,13 @@
       "yul-to-fco-business-class",
       "yyz-to-fco-business-class",
       "zrh-to-fco-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/rome.png"
   },
   {
     "destination_slug": "frankfurt",
     "display_name": "Frankfurt",
-    "luxury_summary": "Frankfurt suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Frankfurt suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-fra-business-class",
       "aus-to-fra-business-class",
@@ -917,12 +940,13 @@
       "yul-to-fra-business-class",
       "yyz-to-fra-business-class",
       "zrh-to-fra-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "geneva",
     "display_name": "Geneva",
-    "luxury_summary": "Geneva suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Geneva suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-gva-business-class",
       "cdg-to-gva-business-class",
@@ -944,12 +968,13 @@
       "sin-to-gva-business-class",
       "syd-to-gva-business-class",
       "zrh-to-gva-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "hong-kong",
     "display_name": "Hong Kong",
-    "luxury_summary": "Hong Kong suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Hong Kong suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-hkg-business-class",
       "aus-to-hkg-business-class",
@@ -1013,12 +1038,13 @@
       "yul-to-hkg-business-class",
       "yyz-to-hkg-business-class",
       "zrh-to-hkg-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "tokyo",
     "display_name": "Tokyo",
-    "luxury_summary": "Tokyo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Tokyo suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-hnd-business-class",
       "atl-to-nrt-business-class",
@@ -1144,12 +1170,13 @@
       "yyz-to-nrt-business-class",
       "zrh-to-hnd-business-class",
       "zrh-to-nrt-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/tokyo.png"
   },
   {
     "destination_slug": "houston",
     "display_name": "Houston",
-    "luxury_summary": "Houston suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Houston suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-iah-business-class",
       "cdg-to-iah-business-class",
@@ -1171,12 +1198,13 @@
       "sin-to-iah-business-class",
       "syd-to-iah-business-class",
       "zrh-to-iah-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "seoul",
     "display_name": "Seoul",
-    "luxury_summary": "Seoul suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Seoul suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-icn-business-class",
       "aus-to-icn-business-class",
@@ -1240,12 +1268,13 @@
       "yul-to-icn-business-class",
       "yyz-to-icn-business-class",
       "zrh-to-icn-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "istanbul",
     "display_name": "Istanbul",
-    "luxury_summary": "Istanbul suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Istanbul suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-ist-business-class",
       "cdg-to-ist-business-class",
@@ -1267,12 +1296,13 @@
       "sin-to-ist-business-class",
       "syd-to-ist-business-class",
       "zrh-to-ist-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "jeddah",
     "display_name": "Jeddah",
-    "luxury_summary": "Jeddah suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Jeddah suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-jed-business-class",
       "cdg-to-jed-business-class",
@@ -1294,12 +1324,13 @@
       "sin-to-jed-business-class",
       "syd-to-jed-business-class",
       "zrh-to-jed-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "johannesburg",
     "display_name": "Johannesburg",
-    "luxury_summary": "Johannesburg suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Johannesburg suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-jnb-business-class",
       "cdg-to-jnb-business-class",
@@ -1321,18 +1352,20 @@
       "sin-to-jnb-business-class",
       "syd-to-jnb-business-class",
       "zrh-to-jnb-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "osaka",
     "display_name": "Osaka",
-    "luxury_summary": "Osaka suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
-    "route_slugs": []
+    "luxury_summary": "Osaka suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
+    "route_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "kuala-lumpur",
     "display_name": "Kuala Lumpur",
-    "luxury_summary": "Kuala Lumpur suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Kuala Lumpur suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-kul-business-class",
       "cdg-to-kul-business-class",
@@ -1354,12 +1387,13 @@
       "sin-to-kul-business-class",
       "syd-to-kul-business-class",
       "zrh-to-kul-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "las-vegas",
     "display_name": "Las Vegas",
-    "luxury_summary": "Las Vegas suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Las Vegas suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-las-business-class",
       "cdg-to-las-business-class",
@@ -1381,12 +1415,13 @@
       "sin-to-las-business-class",
       "syd-to-las-business-class",
       "zrh-to-las-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "los-angeles",
     "display_name": "Los Angeles",
-    "luxury_summary": "Los Angeles suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Los Angeles suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-lax-business-class",
       "aus-to-lax-business-class",
@@ -1450,12 +1485,13 @@
       "yul-to-lax-business-class",
       "yyz-to-lax-business-class",
       "zrh-to-lax-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "london",
     "display_name": "London",
-    "luxury_summary": "London suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "London suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-lhr-business-class",
       "aus-to-lhr-business-class",
@@ -1519,12 +1555,13 @@
       "yul-to-lhr-business-class",
       "yyz-to-lhr-business-class",
       "zrh-to-lhr-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/london.png"
   },
   {
     "destination_slug": "lisbon",
     "display_name": "Lisbon",
-    "luxury_summary": "Lisbon suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Lisbon suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-lis-business-class",
       "cdg-to-lis-business-class",
@@ -1546,18 +1583,20 @@
       "sin-to-lis-business-class",
       "syd-to-lis-business-class",
       "zrh-to-lis-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "luxembourg",
     "display_name": "Luxembourg",
-    "luxury_summary": "Luxembourg suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
-    "route_slugs": []
+    "luxury_summary": "Luxembourg suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
+    "route_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "madrid",
     "display_name": "Madrid",
-    "luxury_summary": "Madrid suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Madrid suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-mad-business-class",
       "aus-to-mad-business-class",
@@ -1621,12 +1660,13 @@
       "yul-to-mad-business-class",
       "yyz-to-mad-business-class",
       "zrh-to-mad-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "manchester",
     "display_name": "Manchester",
-    "luxury_summary": "Manchester suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Manchester suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-man-business-class",
       "cdg-to-man-business-class",
@@ -1648,12 +1688,13 @@
       "sin-to-man-business-class",
       "syd-to-man-business-class",
       "zrh-to-man-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "mexico-city",
     "display_name": "Mexico City",
-    "luxury_summary": "Mexico City suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Mexico City suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-mex-business-class",
       "cdg-to-mex-business-class",
@@ -1675,12 +1716,13 @@
       "sin-to-mex-business-class",
       "syd-to-mex-business-class",
       "zrh-to-mex-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "miami",
     "display_name": "Miami",
-    "luxury_summary": "Miami suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Miami suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-mia-business-class",
       "aus-to-mia-business-class",
@@ -1744,12 +1786,13 @@
       "yul-to-mia-business-class",
       "yyz-to-mia-business-class",
       "zrh-to-mia-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "male",
     "display_name": "Malé",
-    "luxury_summary": "Malé suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Malé suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-mle-business-class",
       "cdg-to-mle-business-class",
@@ -1771,12 +1814,13 @@
       "sin-to-mle-business-class",
       "syd-to-mle-business-class",
       "zrh-to-mle-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "munich",
     "display_name": "Munich",
-    "luxury_summary": "Munich suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Munich suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-muc-business-class",
       "cdg-to-muc-business-class",
@@ -1798,12 +1842,13 @@
       "sin-to-muc-business-class",
       "syd-to-muc-business-class",
       "zrh-to-muc-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "nice",
     "display_name": "Nice",
-    "luxury_summary": "Nice suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Nice suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-nce-business-class",
       "cdg-to-nce-business-class",
@@ -1825,12 +1870,13 @@
       "sin-to-nce-business-class",
       "syd-to-nce-business-class",
       "zrh-to-nce-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "chicago",
     "display_name": "Chicago",
-    "luxury_summary": "Chicago suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Chicago suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-ord-business-class",
       "aus-to-ord-business-class",
@@ -1894,12 +1940,13 @@
       "yul-to-ord-business-class",
       "yyz-to-ord-business-class",
       "zrh-to-ord-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "oslo",
     "display_name": "Oslo",
-    "luxury_summary": "Oslo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Oslo suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-osl-business-class",
       "cdg-to-osl-business-class",
@@ -1921,12 +1968,13 @@
       "sin-to-osl-business-class",
       "syd-to-osl-business-class",
       "zrh-to-osl-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "philadelphia",
     "display_name": "Philadelphia",
-    "luxury_summary": "Philadelphia suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Philadelphia suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-phl-business-class",
       "cdg-to-phl-business-class",
@@ -1948,12 +1996,13 @@
       "sin-to-phl-business-class",
       "syd-to-phl-business-class",
       "zrh-to-phl-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "phoenix",
     "display_name": "Phoenix",
-    "luxury_summary": "Phoenix suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Phoenix suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-phx-business-class",
       "cdg-to-phx-business-class",
@@ -1975,12 +2024,13 @@
       "sin-to-phx-business-class",
       "syd-to-phx-business-class",
       "zrh-to-phx-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "prague",
     "display_name": "Prague",
-    "luxury_summary": "Prague suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Prague suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-prg-business-class",
       "cdg-to-prg-business-class",
@@ -2002,12 +2052,13 @@
       "sin-to-prg-business-class",
       "syd-to-prg-business-class",
       "zrh-to-prg-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "shanghai",
     "display_name": "Shanghai",
-    "luxury_summary": "Shanghai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Shanghai suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-pvg-business-class",
       "cdg-to-pvg-business-class",
@@ -2029,12 +2080,13 @@
       "sin-to-pvg-business-class",
       "syd-to-pvg-business-class",
       "zrh-to-pvg-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "marrakesh",
     "display_name": "Marrakesh",
-    "luxury_summary": "Marrakesh suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Marrakesh suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-rak-business-class",
       "cdg-to-rak-business-class",
@@ -2056,12 +2108,13 @@
       "sin-to-rak-business-class",
       "syd-to-rak-business-class",
       "zrh-to-rak-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "riyadh",
     "display_name": "Riyadh",
-    "luxury_summary": "Riyadh suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Riyadh suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-ruh-business-class",
       "cdg-to-ruh-business-class",
@@ -2083,12 +2136,13 @@
       "sin-to-ruh-business-class",
       "syd-to-ruh-business-class",
       "zrh-to-ruh-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "san-diego",
     "display_name": "San Diego",
-    "luxury_summary": "San Diego suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "San Diego suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-san-business-class",
       "cdg-to-san-business-class",
@@ -2110,12 +2164,13 @@
       "sin-to-san-business-class",
       "syd-to-san-business-class",
       "zrh-to-san-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "san-francisco",
     "display_name": "San Francisco",
-    "luxury_summary": "San Francisco suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "San Francisco suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-sfo-business-class",
       "aus-to-sfo-business-class",
@@ -2179,12 +2234,13 @@
       "yul-to-sfo-business-class",
       "yyz-to-sfo-business-class",
       "zrh-to-sfo-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "singapore",
     "display_name": "Singapore",
-    "luxury_summary": "Singapore suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Singapore suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-sin-business-class",
       "aus-to-sin-business-class",
@@ -2248,12 +2304,13 @@
       "yul-to-sin-business-class",
       "yyz-to-sin-business-class",
       "zrh-to-sin-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/singapore.png"
   },
   {
     "destination_slug": "sydney",
     "display_name": "Sydney",
-    "luxury_summary": "Sydney suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Sydney suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-syd-business-class",
       "aus-to-syd-business-class",
@@ -2317,12 +2374,13 @@
       "yul-to-syd-business-class",
       "yyz-to-syd-business-class",
       "zrh-to-syd-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "tel-aviv",
     "display_name": "Tel Aviv",
-    "luxury_summary": "Tel Aviv suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Tel Aviv suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-tlv-business-class",
       "cdg-to-tlv-business-class",
@@ -2344,12 +2402,13 @@
       "sin-to-tlv-business-class",
       "syd-to-tlv-business-class",
       "zrh-to-tlv-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "venice",
     "display_name": "Venice",
-    "luxury_summary": "Venice suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Venice suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-vce-business-class",
       "cdg-to-vce-business-class",
@@ -2371,12 +2430,13 @@
       "sin-to-vce-business-class",
       "syd-to-vce-business-class",
       "zrh-to-vce-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "vienna",
     "display_name": "Vienna",
-    "luxury_summary": "Vienna suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Vienna suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-vie-business-class",
       "cdg-to-vie-business-class",
@@ -2398,12 +2458,13 @@
       "sin-to-vie-business-class",
       "syd-to-vie-business-class",
       "zrh-to-vie-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "warsaw",
     "display_name": "Warsaw",
-    "luxury_summary": "Warsaw suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Warsaw suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-waw-business-class",
       "cdg-to-waw-business-class",
@@ -2425,12 +2486,13 @@
       "sin-to-waw-business-class",
       "syd-to-waw-business-class",
       "zrh-to-waw-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "montreal",
     "display_name": "Montreal",
-    "luxury_summary": "Montreal suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Montreal suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-yul-business-class",
       "cdg-to-yul-business-class",
@@ -2452,12 +2514,13 @@
       "sin-to-yul-business-class",
       "syd-to-yul-business-class",
       "zrh-to-yul-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "toronto",
     "display_name": "Toronto",
-    "luxury_summary": "Toronto suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Toronto suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "bcn-to-yyz-business-class",
       "cdg-to-yyz-business-class",
@@ -2479,12 +2542,13 @@
       "sin-to-yyz-business-class",
       "syd-to-yyz-business-class",
       "zrh-to-yyz-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "destination_slug": "zurich",
     "display_name": "Zurich",
-    "luxury_summary": "Zurich suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "luxury_summary": "Zurich suits premium travel where airport convenience, route quality, hotel positioning, and arrival comfort matter.",
     "route_slugs": [
       "atl-to-zrh-business-class",
       "aus-to-zrh-business-class",
@@ -2548,6 +2612,7 @@
       "waw-to-zrh-business-class",
       "yul-to-zrh-business-class",
       "yyz-to-zrh-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   }
 ]

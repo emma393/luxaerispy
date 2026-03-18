@@ -2,15 +2,16 @@
   {
     "aircraft_slug": "airbus-a380-business-class",
     "model_name": "Airbus A380 Business Class",
-    "premium_summary": "A flagship long-haul aircraft type often associated with quieter cabins and stronger premium positioning.",
+    "premium_summary": "Airbus A380 Business Class matters because aircraft type often changes privacy, seat layout, storage, noise level, and the overall feel of a premium long-haul trip.",
     "related_airline_slugs": [
       "emirates-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "aircraft_slug": "boeing-777-business-class",
     "model_name": "Boeing 777 Business Class",
-    "premium_summary": "A widely used long-haul aircraft family that appears on many premium international routes.",
+    "premium_summary": "Boeing 777 Business Class matters because aircraft type often changes privacy, seat layout, storage, noise level, and the overall feel of a premium long-haul trip.",
     "related_airline_slugs": [
       "emirates-business-class",
       "british-airways-business-class",
@@ -21,12 +22,13 @@
       "swiss-business-class",
       "turkish-airlines-business-class",
       "united-polaris"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "aircraft_slug": "airbus-a350-business-class",
     "model_name": "Airbus A350 Business Class",
-    "premium_summary": "A modern long-haul aircraft commonly used for stronger premium-cabin experiences on flagship routes.",
+    "premium_summary": "Airbus A350 Business Class matters because aircraft type often changes privacy, seat layout, storage, noise level, and the overall feel of a premium long-haul trip.",
     "related_airline_slugs": [
       "british-airways-business-class",
       "qatar-airways-business-class",
@@ -37,28 +39,31 @@
       "iberia-business-class",
       "air-france-business-class",
       "lufthansa-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "aircraft_slug": "airbus-a330-business-class",
     "model_name": "Airbus A330 Business Class",
-    "premium_summary": "A practical widebody option used on premium long-haul and mid-haul routes.",
+    "premium_summary": "Airbus A330 Business Class matters because aircraft type often changes privacy, seat layout, storage, noise level, and the overall feel of a premium long-haul trip.",
     "related_airline_slugs": [
       "delta-one",
       "ita-airways-business-class",
       "swiss-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "aircraft_slug": "boeing-787-business-class",
     "model_name": "Boeing 787 Business Class",
-    "premium_summary": "A modern long-haul aircraft used on premium routes where efficiency and quieter cabin feel matter.",
+    "premium_summary": "Boeing 787 Business Class matters because aircraft type often changes privacy, seat layout, storage, noise level, and the overall feel of a premium long-haul trip.",
     "related_airline_slugs": [
       "ana-business-class",
       "japan-airlines-business-class",
       "lufthansa-business-class",
       "turkish-airlines-business-class",
       "united-polaris"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   }
 ]

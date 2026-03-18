@@ -6,7 +6,7 @@ from .utils import ensure_dir
 BASE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">\n  <meta http-equiv="content-language" content="en">\n  <meta name="language" content="English">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">

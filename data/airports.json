@@ -7,7 +7,7 @@
     "city_code": "ATL",
     "name": "Hartsfield-Jackson Atlanta International Airport",
     "country_name": "United States",
-    "premium_summary": "Hartsfield-Jackson Atlanta International Airport is a key premium gateway for Atlanta, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Hartsfield-Jackson Atlanta International Airport is a key premium gateway for Atlanta, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Atlanta (ATL) — Hartsfield-Jackson Atlanta International Airport (ATL)",
     "related_route_slugs": [
       "atl-to-bcn-business-class",
@@ -51,7 +51,8 @@
       "syd-to-atl-business-class",
       "zrh-to-atl-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "aus",
@@ -61,7 +62,7 @@
     "city_code": "AUS",
     "name": "Austin-Bergstrom International Airport",
     "country_name": "United States",
-    "premium_summary": "Austin-Bergstrom International Airport is a key premium gateway for Austin, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Austin-Bergstrom International Airport is a key premium gateway for Austin, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Austin (AUS) — Austin-Bergstrom International Airport (AUS)",
     "related_route_slugs": [
       "aus-to-bcn-business-class",
@@ -105,7 +106,8 @@
       "syd-to-aus-business-class",
       "zrh-to-aus-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "bkk",
@@ -115,7 +117,7 @@
     "city_code": "BKK",
     "name": "Suvarnabhumi Airport",
     "country_name": "Thailand",
-    "premium_summary": "Suvarnabhumi Airport is a key premium gateway for Bangkok, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Suvarnabhumi Airport is a key premium gateway for Bangkok, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Bangkok (BKK) — Suvarnabhumi Airport (BKK)",
     "related_route_slugs": [
       "bcn-to-bkk-business-class",
@@ -159,7 +161,8 @@
       "syd-to-bkk-business-class",
       "zrh-to-bkk-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "bcn",
@@ -169,7 +172,7 @@
     "city_code": "BCN",
     "name": "Barcelona El Prat Airport",
     "country_name": "Spain",
-    "premium_summary": "Barcelona El Prat Airport is a key premium gateway for Barcelona, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Barcelona El Prat Airport is a key premium gateway for Barcelona, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Barcelona (BCN) — Barcelona El Prat Airport (BCN)",
     "related_route_slugs": [
       "atl-to-bcn-business-class",
@@ -300,7 +303,8 @@
     "related_airline_slugs": [
       "british-airways-business-class",
       "iberia-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/rome.png"
   },
   {
     "slug": "beg",
@@ -310,10 +314,11 @@
     "city_code": "BEG",
     "name": "Belgrade Nikola Tesla Airport",
     "country_name": "Serbia",
-    "premium_summary": "Belgrade Nikola Tesla Airport is a key premium gateway for Belgrade, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Belgrade Nikola Tesla Airport is a key premium gateway for Belgrade, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Belgrade (BEG) — Belgrade Nikola Tesla Airport (BEG)",
     "related_route_slugs": [],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "bom",
@@ -323,7 +328,7 @@
     "city_code": "BOM",
     "name": "Chhatrapati Shivaji Maharaj International Airport",
     "country_name": "India",
-    "premium_summary": "Chhatrapati Shivaji Maharaj International Airport is a key premium gateway for Mumbai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Chhatrapati Shivaji Maharaj International Airport is a key premium gateway for Mumbai, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Mumbai (BOM) — Chhatrapati Shivaji Maharaj International Airport (BOM)",
     "related_route_slugs": [
       "bcn-to-bom-business-class",
@@ -367,7 +372,8 @@
       "syd-to-bom-business-class",
       "zrh-to-bom-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "bos",
@@ -377,7 +383,7 @@
     "city_code": "BOS",
     "name": "Boston Logan International Airport",
     "country_name": "United States",
-    "premium_summary": "Boston Logan International Airport is a key premium gateway for Boston, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Boston Logan International Airport is a key premium gateway for Boston, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Boston (BOS) — Boston Logan International Airport (BOS)",
     "related_route_slugs": [
       "bcn-to-bos-business-class",
@@ -421,7 +427,8 @@
       "syd-to-bos-business-class",
       "zrh-to-bos-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "bru",
@@ -431,7 +438,7 @@
     "city_code": "BRU",
     "name": "Brussels Airport",
     "country_name": "Belgium",
-    "premium_summary": "Brussels Airport is a key premium gateway for Brussels, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Brussels Airport is a key premium gateway for Brussels, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Brussels (BRU) — Brussels Airport (BRU)",
     "related_route_slugs": [
       "bcn-to-bru-business-class",
@@ -475,7 +482,8 @@
       "syd-to-bru-business-class",
       "zrh-to-bru-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "bud",
@@ -485,7 +493,7 @@
     "city_code": "BUD",
     "name": "Budapest Ferenc Liszt International Airport",
     "country_name": "Hungary",
-    "premium_summary": "Budapest Ferenc Liszt International Airport is a key premium gateway for Budapest, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Budapest Ferenc Liszt International Airport is a key premium gateway for Budapest, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Budapest (BUD) — Budapest Ferenc Liszt International Airport (BUD)",
     "related_route_slugs": [
       "bcn-to-bud-business-class",
@@ -529,7 +537,8 @@
       "syd-to-bud-business-class",
       "zrh-to-bud-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "cai",
@@ -539,7 +548,7 @@
     "city_code": "CAI",
     "name": "Cairo International Airport",
     "country_name": "Egypt",
-    "premium_summary": "Cairo International Airport is a key premium gateway for Cairo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Cairo International Airport is a key premium gateway for Cairo, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Cairo (CAI) — Cairo International Airport (CAI)",
     "related_route_slugs": [
       "bcn-to-cai-business-class",
@@ -583,7 +592,8 @@
       "syd-to-cai-business-class",
       "zrh-to-cai-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "cdg",
@@ -593,7 +603,7 @@
     "city_code": "PAR",
     "name": "Paris Charles de Gaulle Airport",
     "country_name": "France",
-    "premium_summary": "Paris Charles de Gaulle Airport is a key premium gateway for Paris, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Paris Charles de Gaulle Airport is a key premium gateway for Paris, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Paris (PAR) — Paris Charles de Gaulle Airport (CDG)",
     "related_route_slugs": [
       "atl-to-cdg-business-class",
@@ -725,7 +735,8 @@
       "air-france-business-class",
       "delta-one",
       "singapore-airlines-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/paris.png"
   },
   {
     "slug": "cgk",
@@ -735,10 +746,11 @@
     "city_code": "JKT",
     "name": "Soekarno-Hatta International Airport",
     "country_name": "Indonesia",
-    "premium_summary": "Soekarno-Hatta International Airport is a key premium gateway for Jakarta, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Soekarno-Hatta International Airport is a key premium gateway for Jakarta, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Jakarta (JKT) — Soekarno-Hatta International Airport (CGK)",
     "related_route_slugs": [],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "cph",
@@ -748,7 +760,7 @@
     "city_code": "CPH",
     "name": "Copenhagen Airport",
     "country_name": "Denmark",
-    "premium_summary": "Copenhagen Airport is a key premium gateway for Copenhagen, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Copenhagen Airport is a key premium gateway for Copenhagen, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Copenhagen (CPH) — Copenhagen Airport (CPH)",
     "related_route_slugs": [
       "bcn-to-cph-business-class",
@@ -792,7 +804,8 @@
       "syd-to-cph-business-class",
       "zrh-to-cph-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "cpt",
@@ -802,7 +815,7 @@
     "city_code": "CPT",
     "name": "Cape Town International Airport",
     "country_name": "South Africa",
-    "premium_summary": "Cape Town International Airport is a key premium gateway for Cape Town, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Cape Town International Airport is a key premium gateway for Cape Town, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Cape Town (CPT) — Cape Town International Airport (CPT)",
     "related_route_slugs": [
       "bcn-to-cpt-business-class",
@@ -846,7 +859,8 @@
       "syd-to-cpt-business-class",
       "zrh-to-cpt-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "del",
@@ -856,7 +870,7 @@
     "city_code": "DEL",
     "name": "Indira Gandhi International Airport",
     "country_name": "India",
-    "premium_summary": "Indira Gandhi International Airport is a key premium gateway for Delhi, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Indira Gandhi International Airport is a key premium gateway for Delhi, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Delhi (DEL) — Indira Gandhi International Airport (DEL)",
     "related_route_slugs": [
       "bcn-to-del-business-class",
@@ -900,7 +914,8 @@
       "syd-to-del-business-class",
       "zrh-to-del-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "dfw",
@@ -910,7 +925,7 @@
     "city_code": "DFW",
     "name": "Dallas Fort Worth International Airport",
     "country_name": "United States",
-    "premium_summary": "Dallas Fort Worth International Airport is a key premium gateway for Dallas, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Dallas Fort Worth International Airport is a key premium gateway for Dallas, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Dallas (DFW) — Dallas Fort Worth International Airport (DFW)",
     "related_route_slugs": [
       "bcn-to-dfw-business-class",
@@ -954,7 +969,8 @@
       "syd-to-dfw-business-class",
       "zrh-to-dfw-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "doh",
@@ -964,7 +980,7 @@
     "city_code": "DOH",
     "name": "Hamad International Airport",
     "country_name": "Qatar",
-    "premium_summary": "Hamad International Airport is a key premium gateway for Doha, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Hamad International Airport is a key premium gateway for Doha, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Doha (DOH) — Hamad International Airport (DOH)",
     "related_route_slugs": [
       "atl-to-doh-business-class",
@@ -1094,7 +1110,8 @@
     ],
     "related_airline_slugs": [
       "qatar-airways-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "dps",
@@ -1104,7 +1121,7 @@
     "city_code": "DPS",
     "name": "Ngurah Rai International Airport",
     "country_name": "Indonesia",
-    "premium_summary": "Ngurah Rai International Airport is a key premium gateway for Bali, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Ngurah Rai International Airport is a key premium gateway for Bali, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Bali (DPS) — Ngurah Rai International Airport (DPS)",
     "related_route_slugs": [
       "bcn-to-dps-business-class",
@@ -1148,7 +1165,8 @@
       "syd-to-dps-business-class",
       "zrh-to-dps-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/bali.png"
   },
   {
     "slug": "dub",
@@ -1158,7 +1176,7 @@
     "city_code": "DUB",
     "name": "Dublin Airport",
     "country_name": "Ireland",
-    "premium_summary": "Dublin Airport is a key premium gateway for Dublin, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Dublin Airport is a key premium gateway for Dublin, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Dublin (DUB) — Dublin Airport (DUB)",
     "related_route_slugs": [
       "bcn-to-dub-business-class",
@@ -1202,7 +1220,8 @@
       "syd-to-dub-business-class",
       "zrh-to-dub-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "dus",
@@ -1212,7 +1231,7 @@
     "city_code": "DUS",
     "name": "Düsseldorf Airport",
     "country_name": "Germany",
-    "premium_summary": "Düsseldorf Airport is a key premium gateway for Düsseldorf, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Düsseldorf Airport is a key premium gateway for Düsseldorf, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Düsseldorf (DUS) — Düsseldorf Airport (DUS)",
     "related_route_slugs": [
       "bcn-to-dus-business-class",
@@ -1256,7 +1275,8 @@
       "syd-to-dus-business-class",
       "zrh-to-dus-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "dxb",
@@ -1266,7 +1286,7 @@
     "city_code": "DXB",
     "name": "Dubai International Airport",
     "country_name": "United Arab Emirates",
-    "premium_summary": "Dubai International Airport is a key premium gateway for Dubai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Dubai International Airport is a key premium gateway for Dubai, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Dubai (DXB) — Dubai International Airport (DXB)",
     "related_route_slugs": [
       "atl-to-dxb-business-class",
@@ -1397,7 +1417,8 @@
     "related_airline_slugs": [
       "emirates-business-class",
       "qatar-airways-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "ewr",
@@ -1407,7 +1428,7 @@
     "city_code": "NYC",
     "name": "Newark Liberty International Airport",
     "country_name": "United States",
-    "premium_summary": "Newark Liberty International Airport is a key premium gateway for New York, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Newark Liberty International Airport is a key premium gateway for New York, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "New York (NYC) — Newark Liberty International Airport (EWR)",
     "related_route_slugs": [
       "bcn-to-ewr-business-class",
@@ -1451,7 +1472,8 @@
       "syd-to-ewr-business-class",
       "zrh-to-ewr-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/new-york.png"
   },
   {
     "slug": "fco",
@@ -1461,7 +1483,7 @@
     "city_code": "ROM",
     "name": "Leonardo da Vinci–Fiumicino Airport",
     "country_name": "Italy",
-    "premium_summary": "Leonardo da Vinci–Fiumicino Airport is a key premium gateway for Rome, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Leonardo da Vinci–Fiumicino Airport is a key premium gateway for Rome, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Rome (ROM) — Leonardo da Vinci–Fiumicino Airport (FCO)",
     "related_route_slugs": [
       "atl-to-fco-business-class",
@@ -1592,7 +1614,8 @@
     "related_airline_slugs": [
       "british-airways-business-class",
       "ita-airways-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/rome.png"
   },
   {
     "slug": "fra",
@@ -1602,7 +1625,7 @@
     "city_code": "FRA",
     "name": "Frankfurt Airport",
     "country_name": "Germany",
-    "premium_summary": "Frankfurt Airport is a key premium gateway for Frankfurt, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Frankfurt Airport is a key premium gateway for Frankfurt, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Frankfurt (FRA) — Frankfurt Airport (FRA)",
     "related_route_slugs": [
       "atl-to-fra-business-class",
@@ -1733,7 +1756,8 @@
     "related_airline_slugs": [
       "lufthansa-business-class",
       "singapore-airlines-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "gva",
@@ -1743,7 +1767,7 @@
     "city_code": "GVA",
     "name": "Geneva Airport",
     "country_name": "Switzerland",
-    "premium_summary": "Geneva Airport is a key premium gateway for Geneva, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Geneva Airport is a key premium gateway for Geneva, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Geneva (GVA) — Geneva Airport (GVA)",
     "related_route_slugs": [
       "bcn-to-gva-business-class",
@@ -1787,7 +1811,8 @@
       "syd-to-gva-business-class",
       "zrh-to-gva-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "hkg",
@@ -1797,7 +1822,7 @@
     "city_code": "HKG",
     "name": "Hong Kong International Airport",
     "country_name": "Hong Kong",
-    "premium_summary": "Hong Kong International Airport is a key premium gateway for Hong Kong, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Hong Kong International Airport is a key premium gateway for Hong Kong, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Hong Kong (HKG) — Hong Kong International Airport (HKG)",
     "related_route_slugs": [
       "atl-to-hkg-business-class",
@@ -1925,7 +1950,8 @@
       "yyz-to-hkg-business-class",
       "zrh-to-hkg-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "hnd",
@@ -1935,7 +1961,7 @@
     "city_code": "TYO",
     "name": "Tokyo Haneda Airport",
     "country_name": "Japan",
-    "premium_summary": "Tokyo Haneda Airport is a key premium gateway for Tokyo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Tokyo Haneda Airport is a key premium gateway for Tokyo, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Tokyo (TYO) — Tokyo Haneda Airport (HND)",
     "related_route_slugs": [
       "atl-to-hnd-business-class",
@@ -2067,7 +2093,8 @@
       "ana-business-class",
       "japan-airlines-business-class",
       "singapore-airlines-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/tokyo.png"
   },
   {
     "slug": "iah",
@@ -2077,7 +2104,7 @@
     "city_code": "HOU",
     "name": "George Bush Intercontinental Airport",
     "country_name": "United States",
-    "premium_summary": "George Bush Intercontinental Airport is a key premium gateway for Houston, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "George Bush Intercontinental Airport is a key premium gateway for Houston, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Houston (HOU) — George Bush Intercontinental Airport (IAH)",
     "related_route_slugs": [
       "bcn-to-iah-business-class",
@@ -2121,7 +2148,8 @@
       "syd-to-iah-business-class",
       "zrh-to-iah-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "icn",
@@ -2131,7 +2159,7 @@
     "city_code": "SEL",
     "name": "Incheon International Airport",
     "country_name": "South Korea",
-    "premium_summary": "Incheon International Airport is a key premium gateway for Seoul, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Incheon International Airport is a key premium gateway for Seoul, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Seoul (SEL) — Incheon International Airport (ICN)",
     "related_route_slugs": [
       "atl-to-icn-business-class",
@@ -2259,7 +2287,8 @@
       "yyz-to-icn-business-class",
       "zrh-to-icn-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "ist",
@@ -2269,7 +2298,7 @@
     "city_code": "IST",
     "name": "Istanbul Airport",
     "country_name": "Turkey",
-    "premium_summary": "Istanbul Airport is a key premium gateway for Istanbul, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Istanbul Airport is a key premium gateway for Istanbul, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Istanbul (IST) — Istanbul Airport (IST)",
     "related_route_slugs": [
       "bcn-to-ist-business-class",
@@ -2315,7 +2344,8 @@
     ],
     "related_airline_slugs": [
       "turkish-airlines-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "jed",
@@ -2325,7 +2355,7 @@
     "city_code": "JED",
     "name": "King Abdulaziz International Airport",
     "country_name": "Saudi Arabia",
-    "premium_summary": "King Abdulaziz International Airport is a key premium gateway for Jeddah, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "King Abdulaziz International Airport is a key premium gateway for Jeddah, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Jeddah (JED) — King Abdulaziz International Airport (JED)",
     "related_route_slugs": [
       "bcn-to-jed-business-class",
@@ -2369,7 +2399,8 @@
       "syd-to-jed-business-class",
       "zrh-to-jed-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "jfk",
@@ -2379,7 +2410,7 @@
     "city_code": "NYC",
     "name": "John F. Kennedy International Airport",
     "country_name": "United States",
-    "premium_summary": "John F. Kennedy International Airport is a key premium gateway for New York, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "John F. Kennedy International Airport is a key premium gateway for New York, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "New York (NYC) — John F. Kennedy International Airport (JFK)",
     "related_route_slugs": [
       "atl-to-jfk-business-class",
@@ -2513,7 +2544,8 @@
       "delta-one",
       "emirates-business-class",
       "united-polaris"
-    ]
+    ],
+    "featured_image": "/assets/images/new-york.png"
   },
   {
     "slug": "jnb",
@@ -2523,7 +2555,7 @@
     "city_code": "JNB",
     "name": "O. R. Tambo International Airport",
     "country_name": "South Africa",
-    "premium_summary": "O. R. Tambo International Airport is a key premium gateway for Johannesburg, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "O. R. Tambo International Airport is a key premium gateway for Johannesburg, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Johannesburg (JNB) — O. R. Tambo International Airport (JNB)",
     "related_route_slugs": [
       "bcn-to-jnb-business-class",
@@ -2567,7 +2599,8 @@
       "syd-to-jnb-business-class",
       "zrh-to-jnb-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "kix",
@@ -2577,10 +2610,11 @@
     "city_code": "OSA",
     "name": "Kansai International Airport",
     "country_name": "Japan",
-    "premium_summary": "Kansai International Airport is a key premium gateway for Osaka, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Kansai International Airport is a key premium gateway for Osaka, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Osaka (OSA) — Kansai International Airport (KIX)",
     "related_route_slugs": [],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "kul",
@@ -2590,7 +2624,7 @@
     "city_code": "KUL",
     "name": "Kuala Lumpur International Airport",
     "country_name": "Malaysia",
-    "premium_summary": "Kuala Lumpur International Airport is a key premium gateway for Kuala Lumpur, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Kuala Lumpur International Airport is a key premium gateway for Kuala Lumpur, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Kuala Lumpur (KUL) — Kuala Lumpur International Airport (KUL)",
     "related_route_slugs": [
       "bcn-to-kul-business-class",
@@ -2634,7 +2668,8 @@
       "syd-to-kul-business-class",
       "zrh-to-kul-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "las",
@@ -2644,7 +2679,7 @@
     "city_code": "LAS",
     "name": "Harry Reid International Airport",
     "country_name": "United States",
-    "premium_summary": "Harry Reid International Airport is a key premium gateway for Las Vegas, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Harry Reid International Airport is a key premium gateway for Las Vegas, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Las Vegas (LAS) — Harry Reid International Airport (LAS)",
     "related_route_slugs": [
       "bcn-to-las-business-class",
@@ -2688,7 +2723,8 @@
       "syd-to-las-business-class",
       "zrh-to-las-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "lax",
@@ -2698,7 +2734,7 @@
     "city_code": "LAX",
     "name": "Los Angeles International Airport",
     "country_name": "United States",
-    "premium_summary": "Los Angeles International Airport is a key premium gateway for Los Angeles, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Los Angeles International Airport is a key premium gateway for Los Angeles, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Los Angeles (LAX) — Los Angeles International Airport (LAX)",
     "related_route_slugs": [
       "atl-to-lax-business-class",
@@ -2831,7 +2867,8 @@
       "delta-one",
       "singapore-airlines-business-class",
       "united-polaris"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "lhr",
@@ -2841,7 +2878,7 @@
     "city_code": "LON",
     "name": "London Heathrow Airport",
     "country_name": "United Kingdom",
-    "premium_summary": "London Heathrow Airport is a key premium gateway for London, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "London Heathrow Airport is a key premium gateway for London, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "London (LON) — London Heathrow Airport (LHR)",
     "related_route_slugs": [
       "atl-to-lhr-business-class",
@@ -2975,7 +3012,8 @@
       "lufthansa-business-class",
       "singapore-airlines-business-class",
       "virgin-atlantic-upper-class"
-    ]
+    ],
+    "featured_image": "/assets/images/london.png"
   },
   {
     "slug": "lis",
@@ -2985,7 +3023,7 @@
     "city_code": "LIS",
     "name": "Humberto Delgado Airport",
     "country_name": "Portugal",
-    "premium_summary": "Humberto Delgado Airport is a key premium gateway for Lisbon, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Humberto Delgado Airport is a key premium gateway for Lisbon, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Lisbon (LIS) — Humberto Delgado Airport (LIS)",
     "related_route_slugs": [
       "bcn-to-lis-business-class",
@@ -3029,7 +3067,8 @@
       "syd-to-lis-business-class",
       "zrh-to-lis-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "lux",
@@ -3039,10 +3078,11 @@
     "city_code": "LUX",
     "name": "Luxembourg Airport",
     "country_name": "Luxembourg",
-    "premium_summary": "Luxembourg Airport is a key premium gateway for Luxembourg, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Luxembourg Airport is a key premium gateway for Luxembourg, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Luxembourg (LUX) — Luxembourg Airport (LUX)",
     "related_route_slugs": [],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "mad",
@@ -3052,7 +3092,7 @@
     "city_code": "MAD",
     "name": "Adolfo Suárez Madrid–Barajas Airport",
     "country_name": "Spain",
-    "premium_summary": "Adolfo Suárez Madrid–Barajas Airport is a key premium gateway for Madrid, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Adolfo Suárez Madrid–Barajas Airport is a key premium gateway for Madrid, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Madrid (MAD) — Adolfo Suárez Madrid–Barajas Airport (MAD)",
     "related_route_slugs": [
       "atl-to-mad-business-class",
@@ -3183,7 +3223,8 @@
     "related_airline_slugs": [
       "british-airways-business-class",
       "iberia-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "man",
@@ -3193,7 +3234,7 @@
     "city_code": "MAN",
     "name": "Manchester Airport",
     "country_name": "United Kingdom",
-    "premium_summary": "Manchester Airport is a key premium gateway for Manchester, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Manchester Airport is a key premium gateway for Manchester, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Manchester (MAN) — Manchester Airport (MAN)",
     "related_route_slugs": [
       "bcn-to-man-business-class",
@@ -3237,7 +3278,8 @@
       "syd-to-man-business-class",
       "zrh-to-man-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "mex",
@@ -3247,7 +3289,7 @@
     "city_code": "MEX",
     "name": "Mexico City International Airport",
     "country_name": "Mexico",
-    "premium_summary": "Mexico City International Airport is a key premium gateway for Mexico City, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Mexico City International Airport is a key premium gateway for Mexico City, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Mexico City (MEX) — Mexico City International Airport (MEX)",
     "related_route_slugs": [
       "bcn-to-mex-business-class",
@@ -3291,7 +3333,8 @@
       "syd-to-mex-business-class",
       "zrh-to-mex-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "mia",
@@ -3301,7 +3344,7 @@
     "city_code": "MIA",
     "name": "Miami International Airport",
     "country_name": "United States",
-    "premium_summary": "Miami International Airport is a key premium gateway for Miami, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Miami International Airport is a key premium gateway for Miami, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Miami (MIA) — Miami International Airport (MIA)",
     "related_route_slugs": [
       "atl-to-mia-business-class",
@@ -3432,7 +3475,8 @@
     "related_airline_slugs": [
       "british-airways-business-class",
       "delta-one"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "mle",
@@ -3442,7 +3486,7 @@
     "city_code": "MLE",
     "name": "Velana International Airport",
     "country_name": "Maldives",
-    "premium_summary": "Velana International Airport is a key premium gateway for Malé, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Velana International Airport is a key premium gateway for Malé, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Malé (MLE) — Velana International Airport (MLE)",
     "related_route_slugs": [
       "bcn-to-mle-business-class",
@@ -3486,7 +3530,8 @@
       "syd-to-mle-business-class",
       "zrh-to-mle-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "muc",
@@ -3496,7 +3541,7 @@
     "city_code": "MUC",
     "name": "Munich Airport",
     "country_name": "Germany",
-    "premium_summary": "Munich Airport is a key premium gateway for Munich, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Munich Airport is a key premium gateway for Munich, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Munich (MUC) — Munich Airport (MUC)",
     "related_route_slugs": [
       "bcn-to-muc-business-class",
@@ -3542,7 +3587,8 @@
     ],
     "related_airline_slugs": [
       "lufthansa-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "nce",
@@ -3552,7 +3598,7 @@
     "city_code": "NCE",
     "name": "Nice Côte d'Azur Airport",
     "country_name": "France",
-    "premium_summary": "Nice Côte d'Azur Airport is a key premium gateway for Nice, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Nice Côte d'Azur Airport is a key premium gateway for Nice, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Nice (NCE) — Nice Côte d'Azur Airport (NCE)",
     "related_route_slugs": [
       "bcn-to-nce-business-class",
@@ -3596,7 +3642,8 @@
       "syd-to-nce-business-class",
       "zrh-to-nce-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "nrt",
@@ -3606,7 +3653,7 @@
     "city_code": "TYO",
     "name": "Narita International Airport",
     "country_name": "Japan",
-    "premium_summary": "Narita International Airport is a key premium gateway for Tokyo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Narita International Airport is a key premium gateway for Tokyo, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Tokyo (TYO) — Narita International Airport (NRT)",
     "related_route_slugs": [
       "atl-to-nrt-business-class",
@@ -3737,7 +3784,8 @@
     "related_airline_slugs": [
       "ana-business-class",
       "japan-airlines-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/tokyo.png"
   },
   {
     "slug": "ord",
@@ -3747,7 +3795,7 @@
     "city_code": "CHI",
     "name": "O'Hare International Airport",
     "country_name": "United States",
-    "premium_summary": "O'Hare International Airport is a key premium gateway for Chicago, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "O'Hare International Airport is a key premium gateway for Chicago, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Chicago (CHI) — O'Hare International Airport (ORD)",
     "related_route_slugs": [
       "atl-to-ord-business-class",
@@ -3878,7 +3926,8 @@
     "related_airline_slugs": [
       "british-airways-business-class",
       "united-polaris"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "osl",
@@ -3888,7 +3937,7 @@
     "city_code": "OSL",
     "name": "Oslo Gardermoen Airport",
     "country_name": "Norway",
-    "premium_summary": "Oslo Gardermoen Airport is a key premium gateway for Oslo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Oslo Gardermoen Airport is a key premium gateway for Oslo, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Oslo (OSL) — Oslo Gardermoen Airport (OSL)",
     "related_route_slugs": [
       "bcn-to-osl-business-class",
@@ -3932,7 +3981,8 @@
       "syd-to-osl-business-class",
       "zrh-to-osl-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "phl",
@@ -3942,7 +3992,7 @@
     "city_code": "PHL",
     "name": "Philadelphia International Airport",
     "country_name": "United States",
-    "premium_summary": "Philadelphia International Airport is a key premium gateway for Philadelphia, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Philadelphia International Airport is a key premium gateway for Philadelphia, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Philadelphia (PHL) — Philadelphia International Airport (PHL)",
     "related_route_slugs": [
       "bcn-to-phl-business-class",
@@ -3986,7 +4036,8 @@
       "syd-to-phl-business-class",
       "zrh-to-phl-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "phx",
@@ -3996,7 +4047,7 @@
     "city_code": "PHX",
     "name": "Phoenix Sky Harbor International Airport",
     "country_name": "United States",
-    "premium_summary": "Phoenix Sky Harbor International Airport is a key premium gateway for Phoenix, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Phoenix Sky Harbor International Airport is a key premium gateway for Phoenix, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Phoenix (PHX) — Phoenix Sky Harbor International Airport (PHX)",
     "related_route_slugs": [
       "bcn-to-phx-business-class",
@@ -4040,7 +4091,8 @@
       "syd-to-phx-business-class",
       "zrh-to-phx-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "prg",
@@ -4050,7 +4102,7 @@
     "city_code": "PRG",
     "name": "Václav Havel Airport Prague",
     "country_name": "Czech Republic",
-    "premium_summary": "Václav Havel Airport Prague is a key premium gateway for Prague, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Václav Havel Airport Prague is a key premium gateway for Prague, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Prague (PRG) — Václav Havel Airport Prague (PRG)",
     "related_route_slugs": [
       "bcn-to-prg-business-class",
@@ -4094,7 +4146,8 @@
       "syd-to-prg-business-class",
       "zrh-to-prg-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "pvg",
@@ -4104,7 +4157,7 @@
     "city_code": "SHA",
     "name": "Shanghai Pudong International Airport",
     "country_name": "China",
-    "premium_summary": "Shanghai Pudong International Airport is a key premium gateway for Shanghai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Shanghai Pudong International Airport is a key premium gateway for Shanghai, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Shanghai (SHA) — Shanghai Pudong International Airport (PVG)",
     "related_route_slugs": [
       "bcn-to-pvg-business-class",
@@ -4148,7 +4201,8 @@
       "syd-to-pvg-business-class",
       "zrh-to-pvg-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "rak",
@@ -4158,7 +4212,7 @@
     "city_code": "RAK",
     "name": "Marrakesh Menara Airport",
     "country_name": "Morocco",
-    "premium_summary": "Marrakesh Menara Airport is a key premium gateway for Marrakesh, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Marrakesh Menara Airport is a key premium gateway for Marrakesh, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Marrakesh (RAK) — Marrakesh Menara Airport (RAK)",
     "related_route_slugs": [
       "bcn-to-rak-business-class",
@@ -4202,7 +4256,8 @@
       "syd-to-rak-business-class",
       "zrh-to-rak-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "ruh",
@@ -4212,7 +4267,7 @@
     "city_code": "RUH",
     "name": "King Khalid International Airport",
     "country_name": "Saudi Arabia",
-    "premium_summary": "King Khalid International Airport is a key premium gateway for Riyadh, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "King Khalid International Airport is a key premium gateway for Riyadh, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Riyadh (RUH) — King Khalid International Airport (RUH)",
     "related_route_slugs": [
       "bcn-to-ruh-business-class",
@@ -4256,7 +4311,8 @@
       "syd-to-ruh-business-class",
       "zrh-to-ruh-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "san",
@@ -4266,7 +4322,7 @@
     "city_code": "SAN",
     "name": "San Diego International Airport",
     "country_name": "United States",
-    "premium_summary": "San Diego International Airport is a key premium gateway for San Diego, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "San Diego International Airport is a key premium gateway for San Diego, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "San Diego (SAN) — San Diego International Airport (SAN)",
     "related_route_slugs": [
       "bcn-to-san-business-class",
@@ -4310,7 +4366,8 @@
       "syd-to-san-business-class",
       "zrh-to-san-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "sfo",
@@ -4320,7 +4377,7 @@
     "city_code": "SFO",
     "name": "San Francisco International Airport",
     "country_name": "United States",
-    "premium_summary": "San Francisco International Airport is a key premium gateway for San Francisco, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "San Francisco International Airport is a key premium gateway for San Francisco, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "San Francisco (SFO) — San Francisco International Airport (SFO)",
     "related_route_slugs": [
       "atl-to-sfo-business-class",
@@ -4452,7 +4509,8 @@
       "delta-one",
       "singapore-airlines-business-class",
       "united-polaris"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "sin",
@@ -4462,7 +4520,7 @@
     "city_code": "SIN",
     "name": "Singapore Changi Airport",
     "country_name": "Singapore",
-    "premium_summary": "Singapore Changi Airport is a key premium gateway for Singapore, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Singapore Changi Airport is a key premium gateway for Singapore, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Singapore (SIN) — Singapore Changi Airport (SIN)",
     "related_route_slugs": [
       "atl-to-sin-business-class",
@@ -4593,7 +4651,8 @@
     "related_airline_slugs": [
       "qatar-airways-business-class",
       "singapore-airlines-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/singapore.png"
   },
   {
     "slug": "syd",
@@ -4603,7 +4662,7 @@
     "city_code": "SYD",
     "name": "Sydney Kingsford Smith Airport",
     "country_name": "Australia",
-    "premium_summary": "Sydney Kingsford Smith Airport is a key premium gateway for Sydney, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Sydney Kingsford Smith Airport is a key premium gateway for Sydney, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Sydney (SYD) — Sydney Kingsford Smith Airport (SYD)",
     "related_route_slugs": [
       "atl-to-syd-business-class",
@@ -4731,7 +4790,8 @@
       "yyz-to-syd-business-class",
       "zrh-to-syd-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "tlv",
@@ -4741,7 +4801,7 @@
     "city_code": "TLV",
     "name": "Ben Gurion Airport",
     "country_name": "Israel",
-    "premium_summary": "Ben Gurion Airport is a key premium gateway for Tel Aviv, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Ben Gurion Airport is a key premium gateway for Tel Aviv, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Tel Aviv (TLV) — Ben Gurion Airport (TLV)",
     "related_route_slugs": [
       "bcn-to-tlv-business-class",
@@ -4785,7 +4845,8 @@
       "tlv-to-zrh-business-class",
       "zrh-to-tlv-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "vce",
@@ -4795,7 +4856,7 @@
     "city_code": "VCE",
     "name": "Venice Marco Polo Airport",
     "country_name": "Italy",
-    "premium_summary": "Venice Marco Polo Airport is a key premium gateway for Venice, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Venice Marco Polo Airport is a key premium gateway for Venice, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Venice (VCE) — Venice Marco Polo Airport (VCE)",
     "related_route_slugs": [
       "bcn-to-vce-business-class",
@@ -4839,7 +4900,8 @@
       "vce-to-zrh-business-class",
       "zrh-to-vce-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "vie",
@@ -4849,7 +4911,7 @@
     "city_code": "VIE",
     "name": "Vienna International Airport",
     "country_name": "Austria",
-    "premium_summary": "Vienna International Airport is a key premium gateway for Vienna, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Vienna International Airport is a key premium gateway for Vienna, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Vienna (VIE) — Vienna International Airport (VIE)",
     "related_route_slugs": [
       "bcn-to-vie-business-class",
@@ -4893,7 +4955,8 @@
       "vie-to-zrh-business-class",
       "zrh-to-vie-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "waw",
@@ -4903,7 +4966,7 @@
     "city_code": "WAW",
     "name": "Warsaw Chopin Airport",
     "country_name": "Poland",
-    "premium_summary": "Warsaw Chopin Airport is a key premium gateway for Warsaw, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Warsaw Chopin Airport is a key premium gateway for Warsaw, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Warsaw (WAW) — Warsaw Chopin Airport (WAW)",
     "related_route_slugs": [
       "bcn-to-waw-business-class",
@@ -4947,7 +5010,8 @@
       "waw-to-zrh-business-class",
       "zrh-to-waw-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "yul",
@@ -4957,7 +5021,7 @@
     "city_code": "YMQ",
     "name": "Montréal–Trudeau International Airport",
     "country_name": "Canada",
-    "premium_summary": "Montréal–Trudeau International Airport is a key premium gateway for Montreal, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Montréal–Trudeau International Airport is a key premium gateway for Montreal, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Montreal (YMQ) — Montréal–Trudeau International Airport (YUL)",
     "related_route_slugs": [
       "bcn-to-yul-business-class",
@@ -5001,7 +5065,8 @@
       "yul-to-zrh-business-class",
       "zrh-to-yul-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "yyz",
@@ -5011,7 +5076,7 @@
     "city_code": "YTO",
     "name": "Toronto Pearson International Airport",
     "country_name": "Canada",
-    "premium_summary": "Toronto Pearson International Airport is a key premium gateway for Toronto, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Toronto Pearson International Airport is a key premium gateway for Toronto, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Toronto (YTO) — Toronto Pearson International Airport (YYZ)",
     "related_route_slugs": [
       "bcn-to-yyz-business-class",
@@ -5055,7 +5120,8 @@
       "yyz-to-zrh-business-class",
       "zrh-to-yyz-business-class"
     ],
-    "related_airline_slugs": []
+    "related_airline_slugs": [],
+    "featured_image": "/assets/images/dubai.png"
   },
   {
     "slug": "zrh",
@@ -5065,7 +5131,7 @@
     "city_code": "ZRH",
     "name": "Zurich Airport",
     "country_name": "Switzerland",
-    "premium_summary": "Zurich Airport is a key premium gateway for Zurich, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
+    "premium_summary": "Zurich Airport is a key premium gateway for Zurich, valued for long-haul relevance, lounge demand, and route research by business class and first class travelers.",
     "search_label": "Zurich (ZRH) — Zurich Airport (ZRH)",
     "related_route_slugs": [
       "atl-to-zrh-business-class",
@@ -5196,6 +5262,7 @@
     "related_airline_slugs": [
       "lufthansa-business-class",
       "swiss-business-class"
-    ]
+    ],
+    "featured_image": "/assets/images/dubai.png"
   }
 ]
