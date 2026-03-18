@@ -4,20 +4,69 @@
     "flight_number": "EK202",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "dxb",
-    "flight_summary": "A well-known premium long-haul flight linking New York and Dubai."
+    "flight_summary": "EK202 is a premium route linking New York and Dubai."
   },
   {
     "flight_slug": "ba117",
     "flight_number": "BA117",
     "origin_airport_slug": "lhr",
     "destination_airport_slug": "jfk",
-    "flight_summary": "A flagship premium transatlantic flight between London and New York."
+    "flight_summary": "BA117 is a premium route linking London and New York."
   },
   {
     "flight_slug": "sq317",
     "flight_number": "SQ317",
     "origin_airport_slug": "lhr",
     "destination_airport_slug": "sin",
-    "flight_summary": "A premium long-haul route linking London and Singapore."
+    "flight_summary": "SQ317 is a premium route linking London and Singapore."
+  },
+  {
+    "flight_slug": "qr8",
+    "flight_number": "QR8",
+    "origin_airport_slug": "lhr",
+    "destination_airport_slug": "doh",
+    "flight_summary": "QR8 is a premium route linking London and Doha."
+  },
+  {
+    "flight_slug": "dl1",
+    "flight_number": "DL1",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "lhr",
+    "flight_summary": "DL1 is a premium route linking New York and London."
+  },
+  {
+    "flight_slug": "af11",
+    "flight_number": "AF11",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "cdg",
+    "flight_summary": "AF11 is a premium route linking New York and Paris."
+  },
+  {
+    "flight_slug": "lh401",
+    "flight_number": "LH401",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "fra",
+    "flight_summary": "LH401 is a premium route linking New York and Frankfurt."
+  },
+  {
+    "flight_slug": "tk1980",
+    "flight_number": "TK1980",
+    "origin_airport_slug": "lhr",
+    "destination_airport_slug": "ist",
+    "flight_summary": "TK1980 is a premium route linking London and Istanbul."
+  },
+  {
+    "flight_slug": "ua1",
+    "flight_number": "UA1",
+    "origin_airport_slug": "sfo",
+    "destination_airport_slug": "sin",
+    "flight_summary": "UA1 is a premium route linking San Francisco and Singapore."
+  },
+  {
+    "flight_slug": "jl5",
+    "flight_number": "JL5",
+    "origin_airport_slug": "jfk",
+    "destination_airport_slug": "hnd",
+    "flight_summary": "JL5 is a premium route linking New York and Tokyo."
   }
 ]

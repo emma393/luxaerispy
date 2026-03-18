@@ -15,7 +15,12 @@
       "emirates-business-class",
       "british-airways-business-class",
       "qatar-airways-business-class",
-      "singapore-airlines-business-class"
+      "singapore-airlines-business-class",
+      "ana-business-class",
+      "air-france-business-class",
+      "swiss-business-class",
+      "turkish-airlines-business-class",
+      "united-polaris"
     ]
   },
   {
@@ -26,7 +31,12 @@
       "british-airways-business-class",
       "qatar-airways-business-class",
       "singapore-airlines-business-class",
-      "delta-one"
+      "delta-one",
+      "virgin-atlantic-upper-class",
+      "japan-airlines-business-class",
+      "iberia-business-class",
+      "air-france-business-class",
+      "lufthansa-business-class"
     ]
   },
   {
@@ -34,7 +44,21 @@
     "model_name": "Airbus A330 Business Class",
     "premium_summary": "A practical widebody option used on premium long-haul and mid-haul routes.",
     "related_airline_slugs": [
-      "delta-one"
+      "delta-one",
+      "ita-airways-business-class",
+      "swiss-business-class"
+    ]
+  },
+  {
+    "aircraft_slug": "boeing-787-business-class",
+    "model_name": "Boeing 787 Business Class",
+    "premium_summary": "A modern long-haul aircraft used on premium routes where efficiency and quieter cabin feel matter.",
+    "related_airline_slugs": [
+      "ana-business-class",
+      "japan-airlines-business-class",
+      "lufthansa-business-class",
+      "turkish-airlines-business-class",
+      "united-polaris"
     ]
   }
 ]

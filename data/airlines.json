@@ -43,5 +43,92 @@
       "airbus-a330-business-class",
       "airbus-a350-business-class"
     ]
+  },
+  {
+    "airline_slug": "virgin-atlantic-upper-class",
+    "airline_name": "Virgin Atlantic Upper Class",
+    "premium_summary": "Virgin Atlantic Upper Class suits Heathrow-focused premium travel with a stronger lifestyle-led ground experience.",
+    "related_aircraft_slugs": [
+      "airbus-a350-business-class"
+    ]
+  },
+  {
+    "airline_slug": "ana-business-class",
+    "airline_name": "ANA Business Class",
+    "premium_summary": "ANA business class suits premium Japan travel with strong timing, airport efficiency, and polished cabin service.",
+    "related_aircraft_slugs": [
+      "boeing-787-business-class",
+      "boeing-777-business-class"
+    ]
+  },
+  {
+    "airline_slug": "japan-airlines-business-class",
+    "airline_name": "Japan Airlines Business Class",
+    "premium_summary": "Japan Airlines business class is valued for punctuality, privacy, and premium long-haul comfort into Japan.",
+    "related_aircraft_slugs": [
+      "airbus-a350-business-class",
+      "boeing-787-business-class"
+    ]
+  },
+  {
+    "airline_slug": "ita-airways-business-class",
+    "airline_name": "ITA Airways Business Class",
+    "premium_summary": "ITA Airways business class supports premium Rome itineraries where direct routes and airport convenience matter.",
+    "related_aircraft_slugs": [
+      "airbus-a330-business-class"
+    ]
+  },
+  {
+    "airline_slug": "iberia-business-class",
+    "airline_name": "Iberia Business Class",
+    "premium_summary": "Iberia business class suits Spain-bound premium routes with strong Madrid and Barcelona connectivity.",
+    "related_aircraft_slugs": [
+      "airbus-a350-business-class"
+    ]
+  },
+  {
+    "airline_slug": "air-france-business-class",
+    "airline_name": "Air France Business Class",
+    "premium_summary": "Air France business class suits Paris-led premium travel with strong Europe and long-haul connectivity.",
+    "related_aircraft_slugs": [
+      "boeing-777-business-class",
+      "airbus-a350-business-class"
+    ]
+  },
+  {
+    "airline_slug": "lufthansa-business-class",
+    "airline_name": "Lufthansa Business Class",
+    "premium_summary": "Lufthansa business class suits Frankfurt and Munich-led premium travel with strong European and long-haul reach.",
+    "related_aircraft_slugs": [
+      "airbus-a350-business-class",
+      "boeing-787-business-class"
+    ]
+  },
+  {
+    "airline_slug": "swiss-business-class",
+    "airline_name": "SWISS Business Class",
+    "premium_summary": "SWISS business class suits Zurich-based premium travel with strong cabin consistency and polished airport flow.",
+    "related_aircraft_slugs": [
+      "airbus-a330-business-class",
+      "boeing-777-business-class"
+    ]
+  },
+  {
+    "airline_slug": "turkish-airlines-business-class",
+    "airline_name": "Turkish Airlines Business Class",
+    "premium_summary": "Turkish Airlines business class suits Istanbul-led premium connectivity across Europe, Asia, and the Middle East.",
+    "related_aircraft_slugs": [
+      "boeing-777-business-class",
+      "boeing-787-business-class"
+    ]
+  },
+  {
+    "airline_slug": "united-polaris",
+    "airline_name": "United Polaris",
+    "premium_summary": "United Polaris suits premium North America and transatlantic travel where route depth and practical airport flow matter.",
+    "related_aircraft_slugs": [
+      "boeing-787-business-class",
+      "boeing-777-business-class"
+    ]
   }
 ]
