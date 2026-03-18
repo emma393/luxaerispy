@@ -46,7 +46,7 @@ class LuxAerisBuilder:
 
     def build_index(self, rel_dir, items, title, description):
         links = [{"href": f"/{rel_dir}/{i['slug']}.html", "label": i['name']} for i in items]
-        write_page(self.output_root, f"{rel_dir}/index.html", self.ctx(f"{title} | {self.config['site_name']}", description, f"{rel_dir}/index.html", title, description, [{"title": title, "text": description, "items": links[:500]}], links[:30]))
+        write_page(self.output_root, f"{rel_dir}/index.html", self.ctx(f"{title} | {self.config['site_name']}", description, f"{rel_dir}/index.html", title, description, [{"title": title, "text": description, "links": links[:500]}], links[:30]))
 
     def build_airports(self):
         items = []
@@ -60,9 +60,9 @@ class LuxAerisBuilder:
                 f"airports/{slug}.html",
                 f"{name} Airport Guide",
                 summary,
-                [{"title": f"{name} overview", "text": summary, "items": []},
-                 {"title": "Why this airport matters", "text": "Airport flow, lounge access, and route quality can shape a premium trip as much as the seat itself.", "items": []},
-                 {"title": "Related premium routes", "text": "These route guides help visitors move from airport research into route research and a quote request.", "items": route_links}],
+                [{"title": f"{name} overview", "text": summary, "links": []},
+                 {"title": "Why this airport matters", "text": "Airport flow, lounge access, and route quality can shape a premium trip as much as the seat itself.", "links": []},
+                 {"title": "Related premium routes", "text": "These route guides help visitors move from airport research into route research and a quote request.", "links": route_links}],
                 route_links
             ))
             items.append({"slug": slug, "name": name})
@@ -85,8 +85,8 @@ class LuxAerisBuilder:
                 f"routes/{slug}.html",
                 name,
                 summary,
-                [{"title": "Route overview", "text": summary, "items": []},
-                 {"title": "What matters on this route", "text": "The best premium result comes from comparing aircraft, airport flow, overnight timing, and total rest quality together.", "items": []}],
+                [{"title": "Route overview", "text": summary, "links": []},
+                 {"title": "What matters on this route", "text": "The best premium result comes from comparing aircraft, airport flow, overnight timing, and total rest quality together.", "links": []}],
                 related
             ))
             items.append({"slug": slug, "name": name})
@@ -105,8 +105,8 @@ class LuxAerisBuilder:
                 f"lounges/{slug}.html",
                 name,
                 summary,
-                [{"title": "Lounge overview", "text": summary, "items": []},
-                 {"title": "Useful lounge features", "text": "The most valuable premium lounges usually improve the pre-flight experience through better comfort, food, and practical amenities.", "items": feats}],
+                [{"title": "Lounge overview", "text": summary, "links": []},
+                 {"title": "Useful lounge features", "text": "The most valuable premium lounges usually improve the pre-flight experience through better comfort, food, and practical amenities.", "links": feats}],
                 related
             ))
             items.append({"slug": slug, "name": name})
@@ -124,8 +124,8 @@ class LuxAerisBuilder:
                 f"airlines/{slug}.html",
                 name,
                 summary,
-                [{"title": "Airline cabin overview", "text": summary, "items": []},
-                 {"title": "Related aircraft", "text": "Aircraft type influences privacy, seat layout, and the overall premium feel of the journey.", "items": related}],
+                [{"title": "Airline cabin overview", "text": summary, "links": []},
+                 {"title": "Related aircraft", "text": "Aircraft type influences privacy, seat layout, and the overall premium feel of the journey.", "links": related}],
                 related
             ))
             items.append({"slug": slug, "name": name})
@@ -143,8 +143,8 @@ class LuxAerisBuilder:
                 f"aircraft/{slug}.html",
                 name,
                 summary,
-                [{"title": "Aircraft overview", "text": summary, "items": []},
-                 {"title": "Airlines using this aircraft style", "text": "Different airlines configure the same aircraft very differently, which is why aircraft and airline should be judged together.", "items": related}],
+                [{"title": "Aircraft overview", "text": summary, "links": []},
+                 {"title": "Airlines using this aircraft style", "text": "Different airlines configure the same aircraft very differently, which is why aircraft and airline should be judged together.", "links": related}],
                 related
             ))
             items.append({"slug": slug, "name": name})
@@ -162,8 +162,8 @@ class LuxAerisBuilder:
                 f"destinations/{slug}.html",
                 f"Flights to {name}",
                 summary,
-                [{"title": "Destination overview", "text": summary, "items": []},
-                 {"title": "Relevant premium routes", "text": "These routes support destination-led planning by linking the place itself with premium flight options.", "items": related}],
+                [{"title": "Destination overview", "text": summary, "links": []},
+                 {"title": "Relevant premium routes", "text": "These routes support destination-led planning by linking the place itself with premium flight options.", "links": related}],
                 related
             ))
             items.append({"slug": slug, "name": name})
@@ -182,8 +182,8 @@ class LuxAerisBuilder:
                 f"flight/{slug}.html",
                 number,
                 summary,
-                [{"title": "Flight overview", "text": summary, "items": []},
-                 {"title": "Route context", "text": "Flight-number pages help connect a specific premium flight with its route, airport flow, and airline context.", "items": related}],
+                [{"title": "Flight overview", "text": summary, "links": []},
+                 {"title": "Route context", "text": "Flight-number pages help connect a specific premium flight with its route, airport flow, and airline context.", "links": related}],
                 related
             ))
             items.append({"slug": slug, "name": number})

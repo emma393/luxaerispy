@@ -2,7 +2,7 @@
 from __future__ import annotations
 from pathlib import Path
 from jinja2 import Environment, BaseLoader, select_autoescape
-from .utils import ensure_dir, canonical
+from .utils import ensure_dir
 
 BASE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
@@ -53,9 +53,9 @@ BASE_TEMPLATE = """<!DOCTYPE html>
       <section class="content-block">
         <h2>{{ section.title }}</h2>
         <p>{{ section.text }}</p>
-        {% if section.items %}
+        {% if section.links %}
         <ul>
-          {% for item in section.items %}
+          {% for item in section.links %}
           <li><a href="{{ item.href }}">{{ item.label }}</a></li>
           {% endfor %}
         </ul>
@@ -96,10 +96,7 @@ BASE_TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-env = Environment(
-    loader=BaseLoader(),
-    autoescape=select_autoescape(enabled_extensions=("html",))
-)
+env = Environment(loader=BaseLoader(), autoescape=select_autoescape(enabled_extensions=("html",)))
 
 def write_page(output_root: Path, rel_path: str, context: dict) -> None:
     template = env.from_string(BASE_TEMPLATE)
