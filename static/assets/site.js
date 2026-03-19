@@ -1,4 +1,21 @@
 
+function initHeroVideo(){
+  const video = document.getElementById('heroVideo');
+  if(!video) return;
+  const tryPlay = () => {
+    const p = video.play();
+    if(p && typeof p.catch === 'function'){ p.catch(()=>{}); }
+  };
+  video.muted = true;
+  video.setAttribute('muted','');
+  video.setAttribute('playsinline','');
+  video.setAttribute('autoplay','');
+  video.addEventListener('loadeddata', tryPlay);
+  video.addEventListener('canplay', tryPlay);
+  tryPlay();
+}
+
+
 let globalSearchIndex = null;
 function normalizeSearchText(v){
   return (v || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
@@ -273,4 +290,4 @@ async function initRouteEstimateTool(){
 }
 
 
-document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();attachAirportValidation();initRouteEstimateTool();});
+document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();initHeroVideo();attachAirportValidation();initRouteEstimateTool();});
