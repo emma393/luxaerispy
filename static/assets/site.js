@@ -313,3 +313,8 @@ async function initRouteEstimateTool(){
 
 
 document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();initHeroVideo();validateQuoteForm();attachAirportValidation();initRouteEstimateTool();});
+
+
+window.addEventListener('load', () => {
+  if (typeof initHeroVideo === 'function') initHeroVideo();
+});

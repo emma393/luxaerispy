@@ -1,0 +1,10 @@
+{
+  "build.py": "ok",
+  "luxaeris_engine/utils.py": "ok",
+  "luxaeris_engine/page_writer.py": "ok",
+  "luxaeris_engine/builder.py": "ok",
+  "scripts/run_automation.py": "ok",
+  "scripts/merge_global_dataset.py": "ok",
+  "scripts/apply_image_engine.py": "ok",
+  "marketing_engine/generate_posts.py": "ok"
+}
