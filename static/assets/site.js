@@ -2,10 +2,7 @@
 function initHeroVideo(){
   const video = document.getElementById('heroVideo');
   if(!video) return;
-  const tryPlay = () => {
-    const p = video.play();
-    if(p && typeof p.catch === 'function'){ p.catch(()=>{}); }
-  };
+  const tryPlay = () => { const p = video.play(); if(p && typeof p.catch === 'function'){ p.catch(()=>{}); } };
   video.muted = true;
   video.setAttribute('muted','');
   video.setAttribute('playsinline','');
@@ -14,7 +11,32 @@ function initHeroVideo(){
   video.addEventListener('canplay', tryPlay);
   tryPlay();
 }
-
+function validateRequiredTravelFields(form, tripType){
+  const origin = form.querySelector('[name="origin"]');
+  const destination = form.querySelector('[name="destination"]');
+  const departDate = form.querySelector('[name="departDate"]');
+  const returnDate = form.querySelector('[name="returnDate"]');
+  let ok = true;
+  [origin,destination,departDate].forEach(field=>{ if(field && (!field.value || !String(field.value).trim())) ok = false; });
+  if(tripType === 'roundtrip' && returnDate && (!returnDate.value || !String(returnDate.value).trim())) ok = false;
+  return ok;
+}
+function validateQuoteForm(){
+  const form = document.getElementById('quoteRequestForm');
+  if(!form) return;
+  form.addEventListener('submit', (e) => {
+    const tripType = form.querySelector('[name="tripType"]')?.value || 'roundtrip';
+    let ok = validateRequiredTravelFields(form, tripType);
+    ['fullName','email','phone'].forEach(n => {
+      const f = form.querySelector(`[name="${n}"]`);
+      if(f && (!f.value || !String(f.value).trim())) ok = false;
+    });
+    if(!ok){
+      e.preventDefault();
+      alert('Please complete all required fields before submitting.');
+    }
+  });
+}
 
 let globalSearchIndex = null;
 function normalizeSearchText(v){
@@ -290,4 +312,4 @@ async function initRouteEstimateTool(){
 }
 
 
-document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();initHeroVideo();attachAirportValidation();initRouteEstimateTool();});
+document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();initHeroVideo();validateQuoteForm();attachAirportValidation();initRouteEstimateTool();});

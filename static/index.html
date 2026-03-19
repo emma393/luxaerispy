@@ -56,20 +56,12 @@
   </div>
 </header>
 
-
 <section class="hero hero-home">
-  <div class="hero-media">
-    <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/images/dubai.png">
-      <source src="assets/videos/hero-plane-window.mp4" type="video/mp4">
-    </video>
-    <div class="hero-video-fallback"></div>
-  </div>
   <div class="hero-video-overlay"></div>
-
   <div class="container hero-content">
     <p class="kicker">Luxury flight advisory</p>
-    <h1>Business &amp; First Class Flights, Designed Around Comfort.</h1>
-    <p>Search your route, select your cabin, and move straight into a refined quote request built around better timing, airport flow, and premium travel quality.</p>
+    <h1>Fly business and first class with a more refined booking experience.</h1>
+    <p>Search your route, prefill your request, and move into premium fare guidance shaped around comfort, privacy, and smarter routing.</p>
 
     <div class="hero-search-shell light-band" data-trip-switcher data-default-trip="roundtrip">
       <div class="trip-tabs">
@@ -79,10 +71,10 @@
       </div>
 
       <form data-flight-search class="search-grid hero-search-grid">
-        <input name="origin" data-location-input placeholder="Origin airport">
-        <input name="destination" data-location-input placeholder="Destination airport">
-        <input name="departDate" type="date" aria-label="Departure date">
-        <input class="roundtrip-only" name="returnDate" type="date" aria-label="Return date">
+        <input name="origin" data-location-input placeholder="Origin airport" required>
+        <input name="destination" data-location-input placeholder="Destination airport" required>
+        <input name="departDate" type="date" aria-label="Departure date" required>
+        <input class="roundtrip-only" name="returnDate" type="date" aria-label="Return date" required>
         <select name="cabin" aria-label="Cabin">
           <option>Business Class</option>
           <option>First Class</option>
@@ -105,14 +97,13 @@
     </div>
 
     <div class="trust-strip">
-      <div class="trust-pill"><strong>Private fare guidance</strong>Premium route and cabin support designed around real luxury travel requests.</div>
+      <div class="trust-pill"><strong>Private fare guidance</strong>Request personalized premium routing without a cluttered booking flow.</div>
       <div class="trust-pill"><strong>Airport-aware planning</strong>Compare lounges, hubs, and route comfort before you submit your request.</div>
-      <div class="trust-pill"><strong>Clear premium choices</strong>Built for business class, first class, and premium economy itineraries.</div>
+      <div class="trust-pill"><strong>Business, first, premium</strong>Built for travelers who care about cabin quality, timing, and arrival condition.</div>
       <div class="trust-pill"><strong>Advisor-led follow-up</strong>Search first, then move directly into a tailored quote request.</div>
     </div>
   </div>
 </section>
-
 
 <section class="section-soft">
   <div class="container">

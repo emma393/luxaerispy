@@ -60,15 +60,15 @@
     <form class="request-grid" action="https://formspree.io/f/xzdankoe" method="POST">
       <input name="tripType" placeholder="Trip type">
       <select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select>
-      <input data-location-input name="origin" placeholder="Origin">
-      <input data-location-input name="destination" placeholder="Destination">
+      <input data-location-input name="origin" placeholder="Origin airport" required>
+      <input data-location-input name="destination" placeholder="Destination airport" required>
       <input type="date" name="departDate">
       <input class="roundtrip-only" type="date" name="returnDate">
       <div class="multi-city-shell" style="grid-column:1/-1">
         <div class="multi-city-rows">
           <div class="multi-row">
-            <input data-location-input placeholder="Origin">
-            <input data-location-input placeholder="Destination">
+            <input data-location-input placeholder="Origin airport" required>
+            <input data-location-input placeholder="Destination airport" required>
             <input type="date">
             <button type="button" class="icon-remove" aria-label="Remove leg">−</button>
           </div>
@@ -77,8 +77,9 @@
           <button type="button" class="icon-add" data-add-multi-city aria-label="Add leg">+</button>
         </div>
       </div>
-      <textarea id="multiCitySummary" name="multiCitySummary" placeholder="Multi-city legs will appear here when used."></textarea>
-      <input name="name" placeholder="Full name">
+      <input name="phone" placeholder="Phone number" type="tel" required>
+        <textarea id="multiCitySummary" name="multiCitySummary" placeholder="Multi-city legs will appear here when used."></textarea>
+      <input name="name" placeholder="Full name" required>
       <input name="email" placeholder="Email">
       <input name="phone" placeholder="Phone">
       <textarea name="notes" placeholder="Preferred airlines, flexibility, passenger details, or anything else that helps refine the itinerary."></textarea>
