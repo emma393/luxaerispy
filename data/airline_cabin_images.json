@@ -1,0 +1,77 @@
+[
+  {
+    "airline_slug": "emirates-business-class",
+    "airline_name": "Emirates Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "british-airways-business-class",
+    "airline_name": "British Airways Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "qatar-airways-business-class",
+    "airline_name": "Qatar Airways Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "singapore-airlines-business-class",
+    "airline_name": "Singapore Airlines Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "delta-one",
+    "airline_name": "Delta One",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "virgin-atlantic-upper-class",
+    "airline_name": "Virgin Atlantic Upper Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "ana-business-class",
+    "airline_name": "ANA Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "japan-airlines-business-class",
+    "airline_name": "Japan Airlines Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "ita-airways-business-class",
+    "airline_name": "ITA Airways Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "iberia-business-class",
+    "airline_name": "Iberia Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "air-france-business-class",
+    "airline_name": "Air France Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "lufthansa-business-class",
+    "airline_name": "Lufthansa Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "swiss-business-class",
+    "airline_name": "SWISS Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "turkish-airlines-business-class",
+    "airline_name": "Turkish Airlines Business Class",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "airline_slug": "united-polaris",
+    "airline_name": "United Polaris",
+    "image": "/assets/images/logo-header.png"
+  }
+]

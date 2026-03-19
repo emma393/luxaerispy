@@ -1,0 +1,13 @@
+
+This pack is the next step for organic SEO growth.
+
+It adds:
+- larger structured data
+- explicit page-family datasets
+- metadata templates
+- content rules
+- internal linking rules
+- a page count model
+
+It does NOT claim to be a finished licensed 500k-page aviation database.
+It is the correct next data-architecture step to grow the site organically with stronger metadata and page-family generation.

@@ -4,7 +4,7 @@
     "flight_number": "EK202",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "dxb",
-    "featured_image": "/assets/images/dubai.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "EK202 is a premium route linking New York and Dubai."
   },
   {
@@ -12,7 +12,7 @@
     "flight_number": "BA117",
     "origin_airport_slug": "lhr",
     "destination_airport_slug": "jfk",
-    "featured_image": "/assets/images/new-york.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "BA117 is a premium route linking London and New York."
   },
   {
@@ -20,7 +20,7 @@
     "flight_number": "SQ317",
     "origin_airport_slug": "lhr",
     "destination_airport_slug": "sin",
-    "featured_image": "/assets/images/singapore.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "SQ317 is a premium route linking London and Singapore."
   },
   {
@@ -28,7 +28,7 @@
     "flight_number": "QR8",
     "origin_airport_slug": "lhr",
     "destination_airport_slug": "doh",
-    "featured_image": "/assets/images/dubai.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "QR8 is a premium route linking London and Doha."
   },
   {
@@ -36,7 +36,7 @@
     "flight_number": "DL1",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "lhr",
-    "featured_image": "/assets/images/london.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "DL1 is a premium route linking New York and London."
   },
   {
@@ -44,7 +44,7 @@
     "flight_number": "AF11",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "cdg",
-    "featured_image": "/assets/images/paris.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "AF11 is a premium route linking New York and Paris."
   },
   {
@@ -52,7 +52,7 @@
     "flight_number": "LH401",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "fra",
-    "featured_image": "/assets/images/dubai.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "LH401 is a premium route linking New York and Frankfurt."
   },
   {
@@ -60,7 +60,7 @@
     "flight_number": "TK1980",
     "origin_airport_slug": "lhr",
     "destination_airport_slug": "ist",
-    "featured_image": "/assets/images/dubai.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "TK1980 is a premium route linking London and Istanbul."
   },
   {
@@ -68,7 +68,7 @@
     "flight_number": "UA1",
     "origin_airport_slug": "sfo",
     "destination_airport_slug": "sin",
-    "featured_image": "/assets/images/singapore.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "UA1 is a premium route linking San Francisco and Singapore."
   },
   {
@@ -76,7 +76,7 @@
     "flight_number": "JL5",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "hnd",
-    "featured_image": "/assets/images/tokyo.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "JL5 is a premium route linking New York and Tokyo."
   },
   {
@@ -84,7 +84,7 @@
     "flight_number": "NH7",
     "origin_airport_slug": "sfo",
     "destination_airport_slug": "nrt",
-    "featured_image": "/assets/images/tokyo.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "NH7 is a premium route linking San Francisco and Tokyo."
   },
   {
@@ -92,7 +92,7 @@
     "flight_number": "EY100",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "auh",
-    "featured_image": "/assets/images/dubai.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "EY100 is a premium route linking New York and Abu Dhabi."
   },
   {
@@ -100,7 +100,7 @@
     "flight_number": "IB6253",
     "origin_airport_slug": "mad",
     "destination_airport_slug": "jfk",
-    "featured_image": "/assets/images/new-york.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "IB6253 is a premium route linking Madrid and New York."
   },
   {
@@ -108,7 +108,7 @@
     "flight_number": "AZ611",
     "origin_airport_slug": "jfk",
     "destination_airport_slug": "fco",
-    "featured_image": "/assets/images/rome.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "AZ611 is a premium route linking New York and Rome."
   },
   {
@@ -116,7 +116,7 @@
     "flight_number": "EK413",
     "origin_airport_slug": "syd",
     "destination_airport_slug": "dxb",
-    "featured_image": "/assets/images/dubai.png",
+    "featured_image": "/assets/images/logo-header.png",
     "flight_summary": "EK413 is a premium route linking Sydney and Dubai."
   }
 ]

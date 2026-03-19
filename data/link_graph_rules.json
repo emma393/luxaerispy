@@ -1,0 +1,29 @@
+{
+  "airport_page_links_to": [
+    "routes",
+    "airlines",
+    "lounges",
+    "destinations"
+  ],
+  "route_page_links_to": [
+    "origin_airport",
+    "destination_airport",
+    "destination",
+    "related_airlines"
+  ],
+  "destination_page_links_to": [
+    "routes",
+    "nearest_airports",
+    "cabin_guides"
+  ],
+  "airline_page_links_to": [
+    "aircraft",
+    "hub_airports",
+    "major_routes"
+  ],
+  "lounge_page_links_to": [
+    "airport",
+    "related_routes",
+    "quote_request"
+  ]
+}

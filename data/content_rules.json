@@ -1,0 +1,10 @@
+{
+  "minimum_body_sections": 3,
+  "minimum_related_links": 6,
+  "minimum_description_chars": 110,
+  "require_image_on_index_cards": true,
+  "require_image_on_generated_pages": true,
+  "forbid_logo_as_content_image": true,
+  "forbid_duplicate_meta_titles": true,
+  "forbid_duplicate_meta_descriptions": true
+}

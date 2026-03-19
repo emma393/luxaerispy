@@ -1,0 +1,54 @@
+{
+  "clusters": [
+    {
+      "name": "dubai-premium",
+      "destinations": [
+        "dubai"
+      ],
+      "priority": 1
+    },
+    {
+      "name": "london-premium",
+      "destinations": [
+        "london"
+      ],
+      "priority": 1
+    },
+    {
+      "name": "tokyo-premium",
+      "destinations": [
+        "tokyo"
+      ],
+      "priority": 1
+    },
+    {
+      "name": "new-york-premium",
+      "destinations": [
+        "new-york"
+      ],
+      "priority": 1
+    },
+    {
+      "name": "premium-lounges",
+      "page_family": "lounges",
+      "priority": 2
+    },
+    {
+      "name": "business-class-airlines",
+      "page_family": "airlines",
+      "priority": 2
+    }
+  ],
+  "search_index_output": "static/assets/search-index.json",
+  "sitemap_output": "generated/site/sitemap.xml",
+  "batch_targets": {
+    "airports_per_run": 50,
+    "routes_per_run": 500,
+    "destinations_per_run": 40,
+    "lounges_per_run": 80
+  },
+  "deployment": {
+    "build_command": "python build.py",
+    "publish_directory": "generated/site"
+  }
+}

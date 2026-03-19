@@ -1,9 +1,10 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="en">
 <meta name="language" content="English">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="content-language" content="en">
 <title>Search Luxury Flights and Guides | LuxAeris</title>
 <meta name="description" content="Search destinations, airline guides, airport guides, cabin comparisons, and premium travel tools across LuxAeris.">
 <meta name="robots" content="index, follow">
@@ -22,16 +23,9 @@
 <link rel="shortcut icon" href="assets/images/favicon.ico">
 <link rel="stylesheet" href="assets/site.css">
 <script defer src="assets/site.js"></script>
-<script type="application/ld+json">{
-  "@context":"https://schema.org",
-  "@type":"TravelAgency",
-  "name":"LuxAeris",
-  "url":"https://luxaeris.com",
-  "description":"Luxury business class and first class travel booking platform.",
-  "areaServed":"Worldwide"
-}</script>
 </head>
-<body><header class="site-header"><div class="container nav">
+<body>
+<header class="site-header"><div class="container nav">
 <a class="logo-wrap" href="index.html">
   <img class="logo-img" src="assets/images/logo-header.png" alt="LuxAeris shield logo">
   <div><div class="brand-name">LuxAeris</div><div class="brand-tag">Private fares. Premium journeys.</div></div>
@@ -47,27 +41,36 @@
   <a href="search.html">Search</a>
   <a class="btn btn-primary" href="request.html">Request Quote</a>
 </nav></div></header>
-<section class="section"><div class="container"><div class="panel">
-  <p class="kicker">Search the site</p>
-  <h1 class="section-title">Find destinations, cabin guides, airports, routes, and tools</h1>
-  <form data-site-search class="single-search"><input placeholder="Search airports, destinations, airlines, cabins, lounges, and routes"><button class="btn btn-primary" type="submit">Search</button></form>
-  <div id="siteSearchResults" style="margin-top:20px"></div>
-</div></div></section>
+<section class="section">
+  <div class="container">
+    <p class="kicker">Site search</p>
+    <h1 class="section-title">Search the website</h1>
+    <p class="section-intro">Type a city, airport, airline, cabin, lounge, flight number, or route keyword. Search returns matching page links across the website.</p>
+    <form data-site-search class="light-band" style="display:grid;grid-template-columns:1fr auto;gap:12px">
+      <input type="text" placeholder="Search London, JFK, Emirates, lounge, business class, EK202, Dubai..." aria-label="Search the website">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <div id="siteSearchResults" style="margin-top:24px"></div>
+  </div>
+</section>
+<footer class="footer"><div class="container footer-grid">
+<div><strong>LuxAeris</strong><p>Luxury business class, first class, and premium travel request platform.</p></div>
+<div><strong>Explore</strong><p><a href="destinations/index.html">Destinations</a><br><a href="airlines/index.html">Airlines</a><br><a href="routes/index.html">Routes</a></p></div>
+<div><strong>Guides</strong><p><a href="airports/index.html">Airports</a><br><a href="tools/index.html">Tools</a></p></div>
+<div><strong>Quote</strong><p><a href="request.html">Open request form</a></p></div>
+</div></footer>
 
-<div id="cookieBanner" class="cookie-banner">
-  <div class="cookie-card">
-    <strong>Cookies</strong>
-    <p style="margin:8px 0 0;color:var(--muted)">We use cookies to improve website performance, remember preferences, and support a smoother premium booking experience.</p>
+<div id="cookieBanner" class="cookie-banner" style="display:none">
+  <div class="cookie-inner">
+    <div>
+      <strong>Cookie notice</strong>
+      <p>LuxAeris uses cookies and similar technologies to improve site functionality, remember preferences, and understand website usage.</p>
+    </div>
     <div class="cookie-actions">
-      <button id="cookieAccept" class="btn btn-primary" type="button">Accept</button>
-      <button id="cookieReject" class="btn btn-secondary" type="button">Reject</button>
+      <button class="btn btn-secondary" id="cookieReject" type="button">Reject</button>
+      <button class="btn btn-primary" id="cookieAccept" type="button">Accept</button>
     </div>
   </div>
 </div>
 
-<footer class="footer"><div class="container footer-grid">
-<div><strong>LuxAeris</strong><p>Luxury business class, first class, and premium travel request platform built to move visitors from search to a refined request flow.</p></div>
-<div><strong>Explore</strong><p><a href="destinations/index.html">All destinations</a><br><a href="airlines/index.html">Airlines</a><br><a href="routes/index.html">Routes</a></p></div>
-<div><strong>Guides</strong><p><a href="cabins/index.html">Cabins</a><br><a href="airports/index.html">Airports</a><br><a href="search.html">Search</a></p></div>
-<div><strong>Quote</strong><p><a href="request.html">Open request form</a></p></div>
-</div></footer></body></html>
+</body></html>

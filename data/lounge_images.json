@@ -1,0 +1,152 @@
+[
+  {
+    "lounge_slug": "american-flagship-lounge-jfk",
+    "lounge_name": "American Flagship Lounge JFK",
+    "airport_slug": "jfk",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "chase-sapphire-lounge-jfk",
+    "lounge_name": "Chase Sapphire Lounge JFK",
+    "airport_slug": "jfk",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "delta-sky-club-jfk",
+    "lounge_name": "Delta Sky Club JFK",
+    "airport_slug": "jfk",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "virgin-atlantic-clubhouse-heathrow",
+    "lounge_name": "Virgin Atlantic Clubhouse Heathrow",
+    "airport_slug": "lhr",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "british-airways-galleries-club-heathrow",
+    "lounge_name": "British Airways Galleries Club Heathrow",
+    "airport_slug": "lhr",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "plaza-premium-lounge-heathrow",
+    "lounge_name": "Plaza Premium Lounge Heathrow",
+    "airport_slug": "lhr",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "emirates-business-class-lounge-dubai",
+    "lounge_name": "Emirates Business Class Lounge Dubai",
+    "airport_slug": "dxb",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "ahlan-lounge-dubai",
+    "lounge_name": "Ahlan Lounge Dubai",
+    "airport_slug": "dxb",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "marhaba-lounge-dubai",
+    "lounge_name": "Marhaba Lounge Dubai",
+    "airport_slug": "dxb",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "silverkris-lounge-singapore",
+    "lounge_name": "SilverKris Lounge Singapore",
+    "airport_slug": "sin",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "dnata-lounge-singapore",
+    "lounge_name": "dnata Lounge Singapore",
+    "airport_slug": "sin",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "ana-lounge-haneda",
+    "lounge_name": "ANA Lounge Haneda",
+    "airport_slug": "hnd",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "jal-sakura-lounge-haneda",
+    "lounge_name": "JAL Sakura Lounge Haneda",
+    "airport_slug": "hnd",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "air-france-lounge-paris-charles-de-gaulle",
+    "lounge_name": "Air France Lounge Paris Charles de Gaulle",
+    "airport_slug": "cdg",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "plaza-premium-lounge-rome-fiumicino",
+    "lounge_name": "Plaza Premium Lounge Rome Fiumicino",
+    "airport_slug": "fco",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "delta-sky-club-los-angeles",
+    "lounge_name": "Delta Sky Club Los Angeles",
+    "airport_slug": "lax",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "american-flagship-lounge-miami",
+    "lounge_name": "American Flagship Lounge Miami",
+    "airport_slug": "mia",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "lufthansa-business-lounge-frankfurt",
+    "lounge_name": "Lufthansa Business Lounge Frankfurt",
+    "airport_slug": "fra",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "swiss-business-lounge-zurich",
+    "lounge_name": "SWISS Business Lounge Zurich",
+    "airport_slug": "zrh",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "turkish-airlines-lounge-istanbul",
+    "lounge_name": "Turkish Airlines Lounge Istanbul",
+    "airport_slug": "ist",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "al-mourjan-business-lounge-doha",
+    "lounge_name": "Al Mourjan Business Lounge Doha",
+    "airport_slug": "doh",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "qantas-international-business-lounge-sydney",
+    "lounge_name": "Qantas International Business Lounge Sydney",
+    "airport_slug": "syd",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "the-pier-business-class-lounge-hong-kong",
+    "lounge_name": "The Pier Business Class Lounge Hong Kong",
+    "airport_slug": "hkg",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "korean-air-prestige-lounge-seoul",
+    "lounge_name": "Korean Air Prestige Lounge Seoul",
+    "airport_slug": "icn",
+    "image": "/assets/images/logo-header.png"
+  },
+  {
+    "lounge_slug": "latam-vip-lounge-são-paulo",
+    "lounge_name": "LATAM VIP Lounge São Paulo",
+    "airport_slug": "gru",
+    "image": "/assets/images/logo-header.png"
+  }
+]

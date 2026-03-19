@@ -1,4 +1,127 @@
 
+let globalSearchIndex = null;
+function normalizeSearchText(v){
+  return (v || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+}
+async function loadSearchIndex(){
+  if(globalSearchIndex) return globalSearchIndex;
+  try{
+    const res = await fetch('/assets/search-index.json');
+    if(res.ok){
+      globalSearchIndex = await res.json();
+      return globalSearchIndex;
+    }
+  }catch(err){}
+  globalSearchIndex = [];
+  return globalSearchIndex;
+}
+function scoreSearchItem(item, q){
+  const nq = normalizeSearchText(q);
+  const title = normalizeSearchText(item.title || '');
+  const keys = normalizeSearchText(item.keywords || '');
+  const sum = normalizeSearchText(item.summary || '');
+  let score = 0;
+  if(title === nq) score += 100;
+  if(title.startsWith(nq)) score += 50;
+  if(title.includes(nq)) score += 35;
+  if(keys.includes(nq)) score += 20;
+  if(sum.includes(nq)) score += 10;
+
+  // very light typo tolerance via token overlap
+  const qTokens = nq.split(' ').filter(Boolean);
+  const corpus = (title + ' ' + keys + ' ' + sum).split(' ').filter(Boolean);
+  let overlap = 0;
+  qTokens.forEach(t=>{
+    if(corpus.some(c => c.startsWith(t) || t.startsWith(c))) overlap += 1;
+  });
+  score += overlap * 6;
+  return score;
+}
+async function renderSearchResultsEnhanced(){
+  const box = document.getElementById('siteSearchResults');
+  if(!box) return;
+  const q = (new URLSearchParams(window.location.search).get('q') || '').trim();
+  if(!q){
+    box.innerHTML = '<p>Search airports, destinations, routes, airlines, lounges, cabins, and tools.</p>';
+    return;
+  }
+  const index = await loadSearchIndex();
+  const ranked = index
+    .map(item => ({item, score: scoreSearchItem(item, q)}))
+    .filter(x => x.score > 0)
+    .sort((a,b) => b.score - a.score)
+    .slice(0, 40);
+
+  if(!ranked.length){
+    box.innerHTML = '<p>No matching pages were found. Try a city, airport code, airline, lounge, flight number, or route.</p>';
+    return;
+  }
+
+  const groups = {};
+  ranked.forEach(({item})=>{
+    if(!groups[item.type]) groups[item.type] = [];
+    groups[item.type].push(item);
+  });
+
+  box.innerHTML = Object.entries(groups).map(([type, items]) => `
+    <section style="margin-bottom:26px">
+      <h2 style="margin-bottom:12px">${type}</h2>
+      <div class="card-grid">
+        ${items.slice(0,8).map(item => `
+          <a class="card" href="${item.url}" style="text-decoration:none">
+            <h3>${item.title}</h3>
+            <p>${item.summary || 'Open page'}</p>
+          </a>`).join('')}
+      </div>
+    </section>`).join('');
+}
+async function initRouteEstimateTool(){
+  const form = document.getElementById('routeEstimateForm');
+  const out = document.getElementById('routeEstimateOutput');
+  if(!form || !out) return;
+
+  form.querySelectorAll('[data-location-input]').forEach(el=>{
+    if((el.value||'').trim().length>=2) el.setAttribute('list','location-options');
+  });
+
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const origin = document.getElementById('estimateOrigin')?.value || '';
+    const destination = document.getElementById('estimateDestination')?.value || '';
+    const cabin = document.getElementById('estimateCabin')?.value || 'Business Class';
+    const departDate = document.getElementById('estimateDepartDate')?.value || '';
+    const returnDate = document.getElementById('estimateReturnDate')?.value || '';
+
+    if(!airportLookup[origin] || !airportLookup[destination]){
+      out.innerHTML = '<p>Please select valid airports from the dropdown list.</p>';
+      return;
+    }
+
+    out.innerHTML = '<p>Checking route guidance...</p>';
+    try{
+      const qs = new URLSearchParams({origin,destination,cabin,departDate,returnDate});
+      const res = await fetch('/.netlify/functions/route-estimate?' + qs.toString());
+      const data = await res.json();
+      if(res.ok && data.route_type){
+        out.innerHTML = `
+          <table class="compare-table">
+            <tr><th>Origin</th><td>${data.origin}</td></tr>
+            <tr><th>Destination</th><td>${data.destination}</td></tr>
+            <tr><th>Cabin</th><td>${data.cabin}</td></tr>
+            <tr><th>Route profile</th><td>${data.route_type}</td></tr>
+            <tr><th>Demand profile</th><td>${data.demand_profile}</td></tr>
+            <tr><th>Best use</th><td>${data.best_use}</td></tr>
+            <tr><th>Recommended next step</th><td>${data.next_step}</td></tr>
+            <tr><th>Note</th><td>${data.note}</td></tr>
+          </table>`;
+        return;
+      }
+    }catch(err){}
+    out.innerHTML = '<p>Route guidance is temporarily unavailable.</p>';
+  });
+}
+
+
 const destinationInfo={dubai:{title:'Dubai',text:'Dubai combines premium city energy, luxury hotels, polished airport flow, and strong premium route coverage from major long-haul hubs.'},london:{title:'London',text:'London suits premium city breaks, strong airline choice, Heathrow route density, and high-end hotel positioning.'},paris:{title:'Paris',text:'Paris suits landmark-driven luxury travel, strong premium airline positioning, and style-led city breaks.'},tokyo:{title:'Tokyo',text:'Tokyo suits design-led city breaks, precision travel, and premium long-haul itineraries.'},singapore:{title:'Singapore',text:'Singapore suits premium stopovers, polished hotel stays, and strong Asia route connectivity.'},maldives:{title:'Maldives',text:'The Maldives suit premium leisure, resort-led travel, and long-haul trips where sleep and comfort matter.'},rome:{title:'Rome',text:'Rome suits landmark-driven travel, luxury city breaks, and premium European or long-haul itineraries.'},'new york':{title:'New York',text:'New York suits high-value city itineraries, strong premium airline choice, and luxury hotel-led stays.'},bali:{title:'Bali',text:'Bali suits resort-led relaxation, villa stays, and longer premium itineraries where comfort matters.'},barcelona:{title:'Barcelona',text:'Barcelona suits luxury city breaks, design-led travel, and premium Mediterranean itineraries.'},bangkok:{title:'Bangkok',text:'Bangkok suits long-haul Asia trips, premium stopovers, and route planning where airport flow matters.'}};
 const locationOptions = ["Atlanta (ATL) — Hartsfield-Jackson Atlanta International Airport (ATL)", "Austin (AUS) — Austin-Bergstrom International Airport (AUS)", "Bangkok (BKK) — Suvarnabhumi Airport (BKK)", "Barcelona (BCN) — Barcelona El Prat Airport (BCN)", "Belgrade (BEG) — Belgrade Nikola Tesla Airport (BEG)", "Mumbai (BOM) — Chhatrapati Shivaji Maharaj International Airport (BOM)", "Boston (BOS) — Boston Logan International Airport (BOS)", "Brussels (BRU) — Brussels Airport (BRU)", "Budapest (BUD) — Budapest Ferenc Liszt International Airport (BUD)", "Cairo (CAI) — Cairo International Airport (CAI)", "Paris (PAR) — Paris Charles de Gaulle Airport (CDG)", "Jakarta (JKT) — Soekarno-Hatta International Airport (CGK)", "Copenhagen (CPH) — Copenhagen Airport (CPH)", "Cape Town (CPT) — Cape Town International Airport (CPT)", "Delhi (DEL) — Indira Gandhi International Airport (DEL)", "Dallas (DFW) — Dallas Fort Worth International Airport (DFW)", "Doha (DOH) — Hamad International Airport (DOH)", "Bali (DPS) — Ngurah Rai International Airport (DPS)", "Dublin (DUB) — Dublin Airport (DUB)", "Düsseldorf (DUS) — Düsseldorf Airport (DUS)", "Dubai (DXB) — Dubai International Airport (DXB)", "New York (NYC) — Newark Liberty International Airport (EWR)", "Rome (ROM) — Leonardo da Vinci–Fiumicino Airport (FCO)", "Frankfurt (FRA) — Frankfurt Airport (FRA)", "Geneva (GVA) — Geneva Airport (GVA)", "Hong Kong (HKG) — Hong Kong International Airport (HKG)", "Tokyo (TYO) — Tokyo Haneda Airport (HND)", "Houston (HOU) — George Bush Intercontinental Airport (IAH)", "Seoul (SEL) — Incheon International Airport (ICN)", "Istanbul (IST) — Istanbul Airport (IST)", "Jeddah (JED) — King Abdulaziz International Airport (JED)", "New York (NYC) — John F. Kennedy International Airport (JFK)", "Johannesburg (JNB) — O. R. Tambo International Airport (JNB)", "Osaka (OSA) — Kansai International Airport (KIX)", "Kuala Lumpur (KUL) — Kuala Lumpur International Airport (KUL)", "Las Vegas (LAS) — Harry Reid International Airport (LAS)", "Los Angeles (LAX) — Los Angeles International Airport (LAX)", "London (LON) — London Heathrow Airport (LHR)", "Lisbon (LIS) — Humberto Delgado Airport (LIS)", "Luxembourg (LUX) — Luxembourg Airport (LUX)", "Madrid (MAD) — Adolfo Suárez Madrid–Barajas Airport (MAD)", "Manchester (MAN) — Manchester Airport (MAN)", "Mexico City (MEX) — Mexico City International Airport (MEX)", "Miami (MIA) — Miami International Airport (MIA)", "Malé (MLE) — Velana International Airport (MLE)", "Munich (MUC) — Munich Airport (MUC)", "Nice (NCE) — Nice Côte d'Azur Airport (NCE)", "Tokyo (TYO) — Narita International Airport (NRT)", "Chicago (CHI) — O'Hare International Airport (ORD)", "Oslo (OSL) — Oslo Gardermoen Airport (OSL)", "Philadelphia (PHL) — Philadelphia International Airport (PHL)", "Phoenix (PHX) — Phoenix Sky Harbor International Airport (PHX)", "Prague (PRG) — Václav Havel Airport Prague (PRG)", "Shanghai (SHA) — Shanghai Pudong International Airport (PVG)", "Marrakesh (RAK) — Marrakesh Menara Airport (RAK)", "Riyadh (RUH) — King Khalid International Airport (RUH)", "San Diego (SAN) — San Diego International Airport (SAN)", "San Francisco (SFO) — San Francisco International Airport (SFO)", "Singapore (SIN) — Singapore Changi Airport (SIN)", "Sydney (SYD) — Sydney Kingsford Smith Airport (SYD)", "Tel Aviv (TLV) — Ben Gurion Airport (TLV)", "Venice (VCE) — Venice Marco Polo Airport (VCE)", "Vienna (VIE) — Vienna International Airport (VIE)", "Warsaw (WAW) — Warsaw Chopin Airport (WAW)", "Montreal (YMQ) — Montréal–Trudeau International Airport (YUL)", "Toronto (YTO) — Toronto Pearson International Airport (YYZ)", "Zurich (ZRH) — Zurich Airport (ZRH)"];
 const airportLookup = {"Atlanta (ATL) — Hartsfield-Jackson Atlanta International Airport (ATL)": {"iata": "ATL", "city": "Atlanta", "cityCode": "ATL", "airport": "Hartsfield-Jackson Atlanta International Airport"}, "Austin (AUS) — Austin-Bergstrom International Airport (AUS)": {"iata": "AUS", "city": "Austin", "cityCode": "AUS", "airport": "Austin-Bergstrom International Airport"}, "Bangkok (BKK) — Suvarnabhumi Airport (BKK)": {"iata": "BKK", "city": "Bangkok", "cityCode": "BKK", "airport": "Suvarnabhumi Airport"}, "Barcelona (BCN) — Barcelona El Prat Airport (BCN)": {"iata": "BCN", "city": "Barcelona", "cityCode": "BCN", "airport": "Barcelona El Prat Airport"}, "Belgrade (BEG) — Belgrade Nikola Tesla Airport (BEG)": {"iata": "BEG", "city": "Belgrade", "cityCode": "BEG", "airport": "Belgrade Nikola Tesla Airport"}, "Mumbai (BOM) — Chhatrapati Shivaji Maharaj International Airport (BOM)": {"iata": "BOM", "city": "Mumbai", "cityCode": "BOM", "airport": "Chhatrapati Shivaji Maharaj International Airport"}, "Boston (BOS) — Boston Logan International Airport (BOS)": {"iata": "BOS", "city": "Boston", "cityCode": "BOS", "airport": "Boston Logan International Airport"}, "Brussels (BRU) — Brussels Airport (BRU)": {"iata": "BRU", "city": "Brussels", "cityCode": "BRU", "airport": "Brussels Airport"}, "Budapest (BUD) — Budapest Ferenc Liszt International Airport (BUD)": {"iata": "BUD", "city": "Budapest", "cityCode": "BUD", "airport": "Budapest Ferenc Liszt International Airport"}, "Cairo (CAI) — Cairo International Airport (CAI)": {"iata": "CAI", "city": "Cairo", "cityCode": "CAI", "airport": "Cairo International Airport"}, "Paris (PAR) — Paris Charles de Gaulle Airport (CDG)": {"iata": "CDG", "city": "Paris", "cityCode": "PAR", "airport": "Paris Charles de Gaulle Airport"}, "Jakarta (JKT) — Soekarno-Hatta International Airport (CGK)": {"iata": "CGK", "city": "Jakarta", "cityCode": "JKT", "airport": "Soekarno-Hatta International Airport"}, "Copenhagen (CPH) — Copenhagen Airport (CPH)": {"iata": "CPH", "city": "Copenhagen", "cityCode": "CPH", "airport": "Copenhagen Airport"}, "Cape Town (CPT) — Cape Town International Airport (CPT)": {"iata": "CPT", "city": "Cape Town", "cityCode": "CPT", "airport": "Cape Town International Airport"}, "Delhi (DEL) — Indira Gandhi International Airport (DEL)": {"iata": "DEL", "city": "Delhi", "cityCode": "DEL", "airport": "Indira Gandhi International Airport"}, "Dallas (DFW) — Dallas Fort Worth International Airport (DFW)": {"iata": "DFW", "city": "Dallas", "cityCode": "DFW", "airport": "Dallas Fort Worth International Airport"}, "Doha (DOH) — Hamad International Airport (DOH)": {"iata": "DOH", "city": "Doha", "cityCode": "DOH", "airport": "Hamad International Airport"}, "Bali (DPS) — Ngurah Rai International Airport (DPS)": {"iata": "DPS", "city": "Bali", "cityCode": "DPS", "airport": "Ngurah Rai International Airport"}, "Dublin (DUB) — Dublin Airport (DUB)": {"iata": "DUB", "city": "Dublin", "cityCode": "DUB", "airport": "Dublin Airport"}, "Düsseldorf (DUS) — Düsseldorf Airport (DUS)": {"iata": "DUS", "city": "Düsseldorf", "cityCode": "DUS", "airport": "Düsseldorf Airport"}, "Dubai (DXB) — Dubai International Airport (DXB)": {"iata": "DXB", "city": "Dubai", "cityCode": "DXB", "airport": "Dubai International Airport"}, "New York (NYC) — Newark Liberty International Airport (EWR)": {"iata": "EWR", "city": "New York", "cityCode": "NYC", "airport": "Newark Liberty International Airport"}, "Rome (ROM) — Leonardo da Vinci–Fiumicino Airport (FCO)": {"iata": "FCO", "city": "Rome", "cityCode": "ROM", "airport": "Leonardo da Vinci–Fiumicino Airport"}, "Frankfurt (FRA) — Frankfurt Airport (FRA)": {"iata": "FRA", "city": "Frankfurt", "cityCode": "FRA", "airport": "Frankfurt Airport"}, "Geneva (GVA) — Geneva Airport (GVA)": {"iata": "GVA", "city": "Geneva", "cityCode": "GVA", "airport": "Geneva Airport"}, "Hong Kong (HKG) — Hong Kong International Airport (HKG)": {"iata": "HKG", "city": "Hong Kong", "cityCode": "HKG", "airport": "Hong Kong International Airport"}, "Tokyo (TYO) — Tokyo Haneda Airport (HND)": {"iata": "HND", "city": "Tokyo", "cityCode": "TYO", "airport": "Tokyo Haneda Airport"}, "Houston (HOU) — George Bush Intercontinental Airport (IAH)": {"iata": "IAH", "city": "Houston", "cityCode": "HOU", "airport": "George Bush Intercontinental Airport"}, "Seoul (SEL) — Incheon International Airport (ICN)": {"iata": "ICN", "city": "Seoul", "cityCode": "SEL", "airport": "Incheon International Airport"}, "Istanbul (IST) — Istanbul Airport (IST)": {"iata": "IST", "city": "Istanbul", "cityCode": "IST", "airport": "Istanbul Airport"}, "Jeddah (JED) — King Abdulaziz International Airport (JED)": {"iata": "JED", "city": "Jeddah", "cityCode": "JED", "airport": "King Abdulaziz International Airport"}, "New York (NYC) — John F. Kennedy International Airport (JFK)": {"iata": "JFK", "city": "New York", "cityCode": "NYC", "airport": "John F. Kennedy International Airport"}, "Johannesburg (JNB) — O. R. Tambo International Airport (JNB)": {"iata": "JNB", "city": "Johannesburg", "cityCode": "JNB", "airport": "O. R. Tambo International Airport"}, "Osaka (OSA) — Kansai International Airport (KIX)": {"iata": "KIX", "city": "Osaka", "cityCode": "OSA", "airport": "Kansai International Airport"}, "Kuala Lumpur (KUL) — Kuala Lumpur International Airport (KUL)": {"iata": "KUL", "city": "Kuala Lumpur", "cityCode": "KUL", "airport": "Kuala Lumpur International Airport"}, "Las Vegas (LAS) — Harry Reid International Airport (LAS)": {"iata": "LAS", "city": "Las Vegas", "cityCode": "LAS", "airport": "Harry Reid International Airport"}, "Los Angeles (LAX) — Los Angeles International Airport (LAX)": {"iata": "LAX", "city": "Los Angeles", "cityCode": "LAX", "airport": "Los Angeles International Airport"}, "London (LON) — London Heathrow Airport (LHR)": {"iata": "LHR", "city": "London", "cityCode": "LON", "airport": "London Heathrow Airport"}, "Lisbon (LIS) — Humberto Delgado Airport (LIS)": {"iata": "LIS", "city": "Lisbon", "cityCode": "LIS", "airport": "Humberto Delgado Airport"}, "Luxembourg (LUX) — Luxembourg Airport (LUX)": {"iata": "LUX", "city": "Luxembourg", "cityCode": "LUX", "airport": "Luxembourg Airport"}, "Madrid (MAD) — Adolfo Suárez Madrid–Barajas Airport (MAD)": {"iata": "MAD", "city": "Madrid", "cityCode": "MAD", "airport": "Adolfo Suárez Madrid–Barajas Airport"}, "Manchester (MAN) — Manchester Airport (MAN)": {"iata": "MAN", "city": "Manchester", "cityCode": "MAN", "airport": "Manchester Airport"}, "Mexico City (MEX) — Mexico City International Airport (MEX)": {"iata": "MEX", "city": "Mexico City", "cityCode": "MEX", "airport": "Mexico City International Airport"}, "Miami (MIA) — Miami International Airport (MIA)": {"iata": "MIA", "city": "Miami", "cityCode": "MIA", "airport": "Miami International Airport"}, "Malé (MLE) — Velana International Airport (MLE)": {"iata": "MLE", "city": "Malé", "cityCode": "MLE", "airport": "Velana International Airport"}, "Munich (MUC) — Munich Airport (MUC)": {"iata": "MUC", "city": "Munich", "cityCode": "MUC", "airport": "Munich Airport"}, "Nice (NCE) — Nice Côte d'Azur Airport (NCE)": {"iata": "NCE", "city": "Nice", "cityCode": "NCE", "airport": "Nice Côte d'Azur Airport"}, "Tokyo (TYO) — Narita International Airport (NRT)": {"iata": "NRT", "city": "Tokyo", "cityCode": "TYO", "airport": "Narita International Airport"}, "Chicago (CHI) — O'Hare International Airport (ORD)": {"iata": "ORD", "city": "Chicago", "cityCode": "CHI", "airport": "O'Hare International Airport"}, "Oslo (OSL) — Oslo Gardermoen Airport (OSL)": {"iata": "OSL", "city": "Oslo", "cityCode": "OSL", "airport": "Oslo Gardermoen Airport"}, "Philadelphia (PHL) — Philadelphia International Airport (PHL)": {"iata": "PHL", "city": "Philadelphia", "cityCode": "PHL", "airport": "Philadelphia International Airport"}, "Phoenix (PHX) — Phoenix Sky Harbor International Airport (PHX)": {"iata": "PHX", "city": "Phoenix", "cityCode": "PHX", "airport": "Phoenix Sky Harbor International Airport"}, "Prague (PRG) — Václav Havel Airport Prague (PRG)": {"iata": "PRG", "city": "Prague", "cityCode": "PRG", "airport": "Václav Havel Airport Prague"}, "Shanghai (SHA) — Shanghai Pudong International Airport (PVG)": {"iata": "PVG", "city": "Shanghai", "cityCode": "SHA", "airport": "Shanghai Pudong International Airport"}, "Marrakesh (RAK) — Marrakesh Menara Airport (RAK)": {"iata": "RAK", "city": "Marrakesh", "cityCode": "RAK", "airport": "Marrakesh Menara Airport"}, "Riyadh (RUH) — King Khalid International Airport (RUH)": {"iata": "RUH", "city": "Riyadh", "cityCode": "RUH", "airport": "King Khalid International Airport"}, "San Diego (SAN) — San Diego International Airport (SAN)": {"iata": "SAN", "city": "San Diego", "cityCode": "SAN", "airport": "San Diego International Airport"}, "San Francisco (SFO) — San Francisco International Airport (SFO)": {"iata": "SFO", "city": "San Francisco", "cityCode": "SFO", "airport": "San Francisco International Airport"}, "Singapore (SIN) — Singapore Changi Airport (SIN)": {"iata": "SIN", "city": "Singapore", "cityCode": "SIN", "airport": "Singapore Changi Airport"}, "Sydney (SYD) — Sydney Kingsford Smith Airport (SYD)": {"iata": "SYD", "city": "Sydney", "cityCode": "SYD", "airport": "Sydney Kingsford Smith Airport"}, "Tel Aviv (TLV) — Ben Gurion Airport (TLV)": {"iata": "TLV", "city": "Tel Aviv", "cityCode": "TLV", "airport": "Ben Gurion Airport"}, "Venice (VCE) — Venice Marco Polo Airport (VCE)": {"iata": "VCE", "city": "Venice", "cityCode": "VCE", "airport": "Venice Marco Polo Airport"}, "Vienna (VIE) — Vienna International Airport (VIE)": {"iata": "VIE", "city": "Vienna", "cityCode": "VIE", "airport": "Vienna International Airport"}, "Warsaw (WAW) — Warsaw Chopin Airport (WAW)": {"iata": "WAW", "city": "Warsaw", "cityCode": "WAW", "airport": "Warsaw Chopin Airport"}, "Montreal (YMQ) — Montréal–Trudeau International Airport (YUL)": {"iata": "YUL", "city": "Montreal", "cityCode": "YMQ", "airport": "Montréal–Trudeau International Airport"}, "Toronto (YTO) — Toronto Pearson International Airport (YYZ)": {"iata": "YYZ", "city": "Toronto", "cityCode": "YTO", "airport": "Toronto Pearson International Airport"}, "Zurich (ZRH) — Zurich Airport (ZRH)": {"iata": "ZRH", "city": "Zurich", "cityCode": "ZRH", "airport": "Zurich Airport"}};
@@ -102,4 +225,52 @@ function attachAirportValidation(){
 }
 
 
-document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();attachAirportValidation();});
+
+async function initRouteEstimateTool(){
+  const form = document.getElementById('routeEstimateForm');
+  const out = document.getElementById('routeEstimateOutput');
+  if(!form || !out) return;
+
+  form.querySelectorAll('[data-location-input]').forEach(el=>{
+    if((el.value||'').trim().length>=2) el.setAttribute('list','location-options');
+  });
+
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const origin = document.getElementById('estimateOrigin')?.value || '';
+    const destination = document.getElementById('estimateDestination')?.value || '';
+    const cabin = document.getElementById('estimateCabin')?.value || 'Business Class';
+    const departDate = document.getElementById('estimateDepartDate')?.value || '';
+    const returnDate = document.getElementById('estimateReturnDate')?.value || '';
+
+    if(!airportLookup[origin] || !airportLookup[destination]){
+      out.innerHTML = '<p>Please select valid airports from the dropdown list.</p>';
+      return;
+    }
+
+    out.innerHTML = '<p>Checking route guidance...</p>';
+    try{
+      const qs = new URLSearchParams({origin,destination,cabin,departDate,returnDate});
+      const res = await fetch('/.netlify/functions/route-estimate?' + qs.toString());
+      const data = await res.json();
+      if(res.ok && data.route_type){
+        out.innerHTML = `
+          <table class="compare-table">
+            <tr><th>Origin</th><td>${data.origin}</td></tr>
+            <tr><th>Destination</th><td>${data.destination}</td></tr>
+            <tr><th>Cabin</th><td>${data.cabin}</td></tr>
+            <tr><th>Route profile</th><td>${data.route_type}</td></tr>
+            <tr><th>Demand profile</th><td>${data.demand_profile}</td></tr>
+            <tr><th>Best use</th><td>${data.best_use}</td></tr>
+            <tr><th>Recommended next step</th><td>${data.next_step}</td></tr>
+            <tr><th>Note</th><td>${data.note}</td></tr>
+          </table>`;
+        return;
+      }
+    }catch(err){}
+    out.innerHTML = '<p>Route guidance is temporarily unavailable.</p>';
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded',()=>{attachDatalists();setDateBounds();bindTripTypeControls();bindSearchForms();fillRequestForm();bindSiteSearch();renderSearchResults();initFlightTracker();initAirlineComparison();initCabinComparison();initPriceEstimator();initRouteExplorer();initLoungeFinder();initSeatGuide();initCookieBanner();attachAirportValidation();initRouteEstimateTool();});

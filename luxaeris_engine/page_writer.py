@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 from pathlib import Path
 from jinja2 import Environment, BaseLoader, select_autoescape
@@ -53,7 +52,6 @@ BASE_TEMPLATE = """<!DOCTYPE html>
     </nav>
   </div>
 </header>
-
 <main>
   <section class="page-hero">
     <div class="container">
@@ -62,7 +60,6 @@ BASE_TEMPLATE = """<!DOCTYPE html>
       <p>{{ intro }}</p>
     </div>
   </section>
-
   <section class="section" style="padding-top:0">
     <div class="container">
       <div class="feature-grid">
@@ -103,13 +100,22 @@ BASE_TEMPLATE = """<!DOCTYPE html>
     </div>
   </section>
 </main>
-
 <footer class="footer">
   <div class="container footer-grid">
     <div><strong>{{ site_name }}</strong><p>{{ brand_tagline }}</p></div>
-    <div><strong>Explore</strong><p><a href="/destinations/index.html">Destinations</a><br><a href="/routes/index.html">Routes</a></p></div>
-    <div><strong>Guides</strong><p><a href="/airports/index.html">Airports</a><br><a href="/airlines/index.html">Airlines</a></p></div>
-    <div><strong>Quote</strong><p><a href="/request.html">Open request form</a></p></div>
+    <div><strong>Explore</strong><p><a href="/destinations/index.html">Destinations</a><br><a href="/routes/index.html">Routes</a><br><a href="/airports/index.html">Airports</a><br><a href="/airlines/index.html">Airlines</a></p></div>
+    <div><strong>Support</strong><p><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/request.html">Request Quote</a></p></div>
+    <div><strong>Company</strong><p><a href="/about.html">About</a><br><a href="/privacy-policy.html">Privacy Policy</a><br><a href="/terms-and-conditions.html">Terms & Conditions</a><br><a href="/cookie-policy.html">Cookie Policy</a></p></div>
+  </div>
+  <div class="container legal-links">
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/terms-and-conditions.html">Terms & Conditions</a>
+    <a href="/cookie-policy.html">Cookie Policy</a>
+    <a href="/disclaimer.html">Disclaimer</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/sitemap-page.html">Sitemap</a>
   </div>
 </footer>
 </body>

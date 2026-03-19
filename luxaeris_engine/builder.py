@@ -27,23 +27,30 @@ class LuxAerisBuilder:
             shutil.rmtree(self.output_root)
         shutil.copytree(self.static_root, self.output_root)
 
-    def ctx(self, title, description, rel_path, h1, intro, image_url, sections, related_links):
-        return {
-            "title": title,
-            "description": description,
-            "canonical_url": canonical(self.config["site_url"], rel_path),
-            "og_image": canonical(self.config["site_url"], image_url or self.config["default_image"]),
-            "h1": h1,
-            "intro": intro,
-            "sections": sections,
-            "related_links": related_links,
-            "image_url": image_url or self.config["default_image"],
-            "request_quote_url": self.config["request_quote_url"],
-            "site_name": self.config["site_name"],
-            "brand_tagline": self.config["brand_tagline"],
-            "schema": json.dumps({"@context":"https://schema.org","@type":"TravelAgency","name":self.config["site_name"],"url":self.config["site_url"],"description":"Luxury business class and first class travel booking platform.","areaServed":"Worldwide"})
-        }
 
+def ctx(self, title, description, rel_path, h1, intro, image_url, sections, related_links):
+    return {
+        "title": title,
+        "description": description,
+        "canonical_url": canonical(self.config["site_url"], rel_path),
+        "og_image": canonical(self.config["site_url"], image_url or self.config["default_image"]),
+        "h1": h1,
+        "intro": intro,
+        "sections": sections,
+        "related_links": related_links,
+        "image_url": image_url or self.config["default_image"],
+        "request_quote_url": self.config["request_quote_url"],
+        "site_name": self.config["site_name"],
+        "brand_tagline": self.config["brand_tagline"],
+        "schema": json.dumps({
+            "@context":"https://schema.org",
+            "@type":"TravelAgency",
+            "name":self.config["site_name"],
+            "url":self.config["site_url"],
+            "description":"Luxury business class and first class travel booking platform.",
+            "areaServed":"Worldwide"
+        })
+    }
     def build_index(self, rel_dir, items, title, description):
         links = [{"href": f"/{rel_dir}/{i['slug']}.html", "label": i['name']} for i in items[:500]]
         write_page(self.output_root, f"{rel_dir}/index.html", self.ctx(f"{title} | {self.config['site_name']}", description, f"{rel_dir}/index.html", title, description, self.config["default_image"], [{"title": title, "text": description, "links": links}], links[:18]))

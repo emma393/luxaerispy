@@ -1,5 +1,5 @@
 {
-  "seed_counts": {
+  "core_seed_counts": {
     "airports": 106,
     "routes": 5124,
     "destinations": 94,
@@ -8,23 +8,41 @@
     "lounges": 25,
     "flights": 15
   },
-  "derived_counts": {
-    "airport_airline_edges": 54,
-    "airport_destination_edges": 4720,
-    "route_airline_edges": 20496,
-    "airport_lounge_edges": 25,
-    "unique_city_pairs": 4329,
-    "cabin_variants": 5,
-    "terminal_variants": 3
+  "derived_page_family_counts": {
+    "airport_airline_pages": 54,
+    "airport_destination_pages": 4720,
+    "route_airline_pages": 12662,
+    "route_cabin_pages": 25620,
+    "destination_cabin_pages": 470,
+    "city_pair_guides": 4329,
+    "city_pair_cabin_pages": 21645,
+    "airport_terminal_lounge_guides": 75
   },
-  "estimated_total_pages_now": 82818,
-  "how_to_reach_500k": {
-    "target_airports": 1200,
-    "target_routes": 35000,
-    "target_destinations": 4000,
-    "target_lounges": 2500,
-    "target_flights": 100000,
-    "target_route_airline_edges": 140000,
-    "target_estimated_pages": 500000
+  "estimated_total_pages_now": 74959,
+  "500k_growth_plan": {
+    "need_more_airports": 1200,
+    "need_more_routes": 35000,
+    "need_more_destinations": 4000,
+    "need_more_flights": 100000,
+    "need_more_lounges": 2500,
+    "need_more_airport_airline_edges": 15000,
+    "need_more_route_airline_edges": 140000,
+    "need_page_families_enabled": [
+      "airport",
+      "route",
+      "destination",
+      "airline",
+      "aircraft",
+      "lounge",
+      "flight",
+      "airport_airline",
+      "airport_destination",
+      "route_airline",
+      "route_cabin",
+      "destination_cabin",
+      "city_pair",
+      "city_pair_cabin",
+      "airport_terminal_lounge"
+    ]
   }
 }

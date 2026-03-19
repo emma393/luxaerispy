@@ -1,0 +1,1 @@
+This pack adds full SEO metadata to both generated pages and static pages: title, meta description, robots, canonical, Open Graph, Twitter card, language tags, and schema.
