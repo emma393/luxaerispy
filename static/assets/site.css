@@ -202,3 +202,55 @@ textarea{min-height:120px; padding-top:16px}
 @media (max-width:760px){
   .request-form, .request-form .compact-row, .request-form .date-row{grid-template-columns:1fr}
 }
+
+.airport-dropdown{
+  position:absolute;
+  left:0; right:0; top:calc(100% + 6px);
+  background:#fffdf9;
+  border:1px solid rgba(40,29,22,.12);
+  border-radius:16px;
+  box-shadow:0 14px 30px rgba(39,28,20,.14);
+  z-index:2000;
+  overflow:hidden;
+}
+.airport-option{
+  display:block; width:100%; text-align:left;
+  padding:12px 14px; border:none; background:#fffdf9; color:#271d17;
+  cursor:pointer; font:inherit;
+}
+.airport-option:hover{background:#f4ede3}
+.trip-tab{opacity:1!important}
+.trip-tab:not(.active){background:#3a312b!important; color:#f2e5d6!important; border:1px solid rgba(255,255,255,.12)!important}
+
+.request-form input,
+.request-form select,
+.request-form textarea,
+.request-form .date-display{
+  background:#fffaf4!important;
+  color:#241b16!important;
+  border:1px solid rgba(36,27,22,.12)!important;
+}
+.request-form input::placeholder,
+.request-form textarea::placeholder{
+  color:#7b6f63!important;
+}
+.request-form .trip-tabs{
+  margin-bottom:18px;
+}
+.request-form .trip-tab{
+  background:#453932!important;
+  color:#f2e5d6!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+}
+.request-form .trip-tab.active{
+  background:linear-gradient(180deg,#e3c795,#cda363)!important;
+  color:#24170e!important;
+}
+.request-form .panel,
+#destinationInfoBox.panel{
+  background:#fff!important;
+}
+.airport-dropdown{
+  max-height:320px;
+  overflow:auto;
+}

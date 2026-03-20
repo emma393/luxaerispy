@@ -1,0 +1,1332 @@
+[
+  {
+    "label": "JFK — New York, United States",
+    "code": "JFK",
+    "city": "New York",
+    "country": "United States",
+    "slug": "jfk"
+  },
+  {
+    "label": "EWR — New York, United States",
+    "code": "EWR",
+    "city": "New York",
+    "country": "United States",
+    "slug": "ewr"
+  },
+  {
+    "label": "LGA — New York, United States",
+    "code": "LGA",
+    "city": "New York",
+    "country": "United States",
+    "slug": "lga"
+  },
+  {
+    "label": "LAX — Los Angeles, United States",
+    "code": "LAX",
+    "city": "Los Angeles",
+    "country": "United States",
+    "slug": "lax"
+  },
+  {
+    "label": "SFO — San Francisco, United States",
+    "code": "SFO",
+    "city": "San Francisco",
+    "country": "United States",
+    "slug": "sfo"
+  },
+  {
+    "label": "ORD — Chicago, United States",
+    "code": "ORD",
+    "city": "Chicago",
+    "country": "United States",
+    "slug": "ord"
+  },
+  {
+    "label": "MIA — Miami, United States",
+    "code": "MIA",
+    "city": "Miami",
+    "country": "United States",
+    "slug": "mia"
+  },
+  {
+    "label": "BOS — Boston, United States",
+    "code": "BOS",
+    "city": "Boston",
+    "country": "United States",
+    "slug": "bos"
+  },
+  {
+    "label": "DFW — Dallas, United States",
+    "code": "DFW",
+    "city": "Dallas",
+    "country": "United States",
+    "slug": "dfw"
+  },
+  {
+    "label": "ATL — Atlanta, United States",
+    "code": "ATL",
+    "city": "Atlanta",
+    "country": "United States",
+    "slug": "atl"
+  },
+  {
+    "label": "IAH — Houston, United States",
+    "code": "IAH",
+    "city": "Houston",
+    "country": "United States",
+    "slug": "iah"
+  },
+  {
+    "label": "SEA — Seattle, United States",
+    "code": "SEA",
+    "city": "Seattle",
+    "country": "United States",
+    "slug": "sea"
+  },
+  {
+    "label": "IAD — Washington, United States",
+    "code": "IAD",
+    "city": "Washington",
+    "country": "United States",
+    "slug": "iad"
+  },
+  {
+    "label": "YYZ — Toronto, Canada",
+    "code": "YYZ",
+    "city": "Toronto",
+    "country": "Canada",
+    "slug": "yyz"
+  },
+  {
+    "label": "YUL — Montreal, Canada",
+    "code": "YUL",
+    "city": "Montreal",
+    "country": "Canada",
+    "slug": "yul"
+  },
+  {
+    "label": "MEX — Mexico City, Mexico",
+    "code": "MEX",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "slug": "mex"
+  },
+  {
+    "label": "CUN — Cancún, Mexico",
+    "code": "CUN",
+    "city": "Cancún",
+    "country": "Mexico",
+    "slug": "cun"
+  },
+  {
+    "label": "LHR — London, United Kingdom",
+    "code": "LHR",
+    "city": "London",
+    "country": "United Kingdom",
+    "slug": "lhr"
+  },
+  {
+    "label": "LGW — London, United Kingdom",
+    "code": "LGW",
+    "city": "London",
+    "country": "United Kingdom",
+    "slug": "lgw"
+  },
+  {
+    "label": "MAN — Manchester, United Kingdom",
+    "code": "MAN",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "slug": "man"
+  },
+  {
+    "label": "CDG — Paris, France",
+    "code": "CDG",
+    "city": "Paris",
+    "country": "France",
+    "slug": "cdg"
+  },
+  {
+    "label": "ORY — Paris, France",
+    "code": "ORY",
+    "city": "Paris",
+    "country": "France",
+    "slug": "ory"
+  },
+  {
+    "label": "FRA — Frankfurt, Germany",
+    "code": "FRA",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "slug": "fra"
+  },
+  {
+    "label": "MUC — Munich, Germany",
+    "code": "MUC",
+    "city": "Munich",
+    "country": "Germany",
+    "slug": "muc"
+  },
+  {
+    "label": "AMS — Amsterdam, Netherlands",
+    "code": "AMS",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "ams"
+  },
+  {
+    "label": "BRU — Brussels, Belgium",
+    "code": "BRU",
+    "city": "Brussels",
+    "country": "Belgium",
+    "slug": "bru"
+  },
+  {
+    "label": "ZRH — Zurich, Switzerland",
+    "code": "ZRH",
+    "city": "Zurich",
+    "country": "Switzerland",
+    "slug": "zrh"
+  },
+  {
+    "label": "GVA — Geneva, Switzerland",
+    "code": "GVA",
+    "city": "Geneva",
+    "country": "Switzerland",
+    "slug": "gva"
+  },
+  {
+    "label": "VIE — Vienna, Austria",
+    "code": "VIE",
+    "city": "Vienna",
+    "country": "Austria",
+    "slug": "vie"
+  },
+  {
+    "label": "MAD — Madrid, Spain",
+    "code": "MAD",
+    "city": "Madrid",
+    "country": "Spain",
+    "slug": "mad"
+  },
+  {
+    "label": "BCN — Barcelona, Spain",
+    "code": "BCN",
+    "city": "Barcelona",
+    "country": "Spain",
+    "slug": "bcn"
+  },
+  {
+    "label": "LIS — Lisbon, Portugal",
+    "code": "LIS",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "slug": "lis"
+  },
+  {
+    "label": "FCO — Rome, Italy",
+    "code": "FCO",
+    "city": "Rome",
+    "country": "Italy",
+    "slug": "fco"
+  },
+  {
+    "label": "MXP — Milan, Italy",
+    "code": "MXP",
+    "city": "Milan",
+    "country": "Italy",
+    "slug": "mxp"
+  },
+  {
+    "label": "VCE — Venice, Italy",
+    "code": "VCE",
+    "city": "Venice",
+    "country": "Italy",
+    "slug": "vce"
+  },
+  {
+    "label": "ATH — Athens, Greece",
+    "code": "ATH",
+    "city": "Athens",
+    "country": "Greece",
+    "slug": "ath"
+  },
+  {
+    "label": "DUB — Dublin, Ireland",
+    "code": "DUB",
+    "city": "Dublin",
+    "country": "Ireland",
+    "slug": "dub"
+  },
+  {
+    "label": "OSL — Oslo, Norway",
+    "code": "OSL",
+    "city": "Oslo",
+    "country": "Norway",
+    "slug": "osl"
+  },
+  {
+    "label": "ARN — Stockholm, Sweden",
+    "code": "ARN",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "slug": "arn"
+  },
+  {
+    "label": "CPH — Copenhagen, Denmark",
+    "code": "CPH",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "slug": "cph"
+  },
+  {
+    "label": "HEL — Helsinki, Finland",
+    "code": "HEL",
+    "city": "Helsinki",
+    "country": "Finland",
+    "slug": "hel"
+  },
+  {
+    "label": "PRG — Prague, Czech Republic",
+    "code": "PRG",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "slug": "prg"
+  },
+  {
+    "label": "WAW — Warsaw, Poland",
+    "code": "WAW",
+    "city": "Warsaw",
+    "country": "Poland",
+    "slug": "waw"
+  },
+  {
+    "label": "BUD — Budapest, Hungary",
+    "code": "BUD",
+    "city": "Budapest",
+    "country": "Hungary",
+    "slug": "bud"
+  },
+  {
+    "label": "IST — Istanbul, Turkey",
+    "code": "IST",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "slug": "ist"
+  },
+  {
+    "label": "SAW — Istanbul, Turkey",
+    "code": "SAW",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "slug": "saw"
+  },
+  {
+    "label": "DXB — Dubai, United Arab Emirates",
+    "code": "DXB",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "slug": "dxb"
+  },
+  {
+    "label": "DWC — Dubai, United Arab Emirates",
+    "code": "DWC",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "slug": "dwc"
+  },
+  {
+    "label": "AUH — Abu Dhabi, United Arab Emirates",
+    "code": "AUH",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "slug": "auh"
+  },
+  {
+    "label": "DOH — Doha, Qatar",
+    "code": "DOH",
+    "city": "Doha",
+    "country": "Qatar",
+    "slug": "doh"
+  },
+  {
+    "label": "RUH — Riyadh, Saudi Arabia",
+    "code": "RUH",
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "slug": "ruh"
+  },
+  {
+    "label": "JED — Jeddah, Saudi Arabia",
+    "code": "JED",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "slug": "jed"
+  },
+  {
+    "label": "TLV — Tel Aviv, Israel",
+    "code": "TLV",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "slug": "tlv"
+  },
+  {
+    "label": "CAI — Cairo, Egypt",
+    "code": "CAI",
+    "city": "Cairo",
+    "country": "Egypt",
+    "slug": "cai"
+  },
+  {
+    "label": "AMM — Amman, Jordan",
+    "code": "AMM",
+    "city": "Amman",
+    "country": "Jordan",
+    "slug": "amm"
+  },
+  {
+    "label": "BEY — Beirut, Lebanon",
+    "code": "BEY",
+    "city": "Beirut",
+    "country": "Lebanon",
+    "slug": "bey"
+  },
+  {
+    "label": "JNB — Johannesburg, South Africa",
+    "code": "JNB",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "slug": "jnb"
+  },
+  {
+    "label": "CPT — Cape Town, South Africa",
+    "code": "CPT",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "slug": "cpt"
+  },
+  {
+    "label": "NBO — Nairobi, Kenya",
+    "code": "NBO",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "slug": "nbo"
+  },
+  {
+    "label": "CMN — Casablanca, Morocco",
+    "code": "CMN",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "slug": "cmn"
+  },
+  {
+    "label": "RAK — Marrakesh, Morocco",
+    "code": "RAK",
+    "city": "Marrakesh",
+    "country": "Morocco",
+    "slug": "rak"
+  },
+  {
+    "label": "LOS — Lagos, Nigeria",
+    "code": "LOS",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "slug": "los"
+  },
+  {
+    "label": "ADD — Addis Ababa, Ethiopia",
+    "code": "ADD",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "slug": "add"
+  },
+  {
+    "label": "DEL — Delhi, India",
+    "code": "DEL",
+    "city": "Delhi",
+    "country": "India",
+    "slug": "del"
+  },
+  {
+    "label": "BOM — Mumbai, India",
+    "code": "BOM",
+    "city": "Mumbai",
+    "country": "India",
+    "slug": "bom"
+  },
+  {
+    "label": "BLR — Bengaluru, India",
+    "code": "BLR",
+    "city": "Bengaluru",
+    "country": "India",
+    "slug": "blr"
+  },
+  {
+    "label": "MAA — Chennai, India",
+    "code": "MAA",
+    "city": "Chennai",
+    "country": "India",
+    "slug": "maa"
+  },
+  {
+    "label": "HYD — Hyderabad, India",
+    "code": "HYD",
+    "city": "Hyderabad",
+    "country": "India",
+    "slug": "hyd"
+  },
+  {
+    "label": "SIN — Singapore, Singapore",
+    "code": "SIN",
+    "city": "Singapore",
+    "country": "Singapore",
+    "slug": "sin"
+  },
+  {
+    "label": "HKG — Hong Kong, Hong Kong",
+    "code": "HKG",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "slug": "hkg"
+  },
+  {
+    "label": "ICN — Seoul, South Korea",
+    "code": "ICN",
+    "city": "Seoul",
+    "country": "South Korea",
+    "slug": "icn"
+  },
+  {
+    "label": "GMP — Seoul, South Korea",
+    "code": "GMP",
+    "city": "Seoul",
+    "country": "South Korea",
+    "slug": "gmp"
+  },
+  {
+    "label": "HND — Tokyo, Japan",
+    "code": "HND",
+    "city": "Tokyo",
+    "country": "Japan",
+    "slug": "hnd"
+  },
+  {
+    "label": "NRT — Tokyo, Japan",
+    "code": "NRT",
+    "city": "Tokyo",
+    "country": "Japan",
+    "slug": "nrt"
+  },
+  {
+    "label": "KIX — Osaka, Japan",
+    "code": "KIX",
+    "city": "Osaka",
+    "country": "Japan",
+    "slug": "kix"
+  },
+  {
+    "label": "ITM — Osaka, Japan",
+    "code": "ITM",
+    "city": "Osaka",
+    "country": "Japan",
+    "slug": "itm"
+  },
+  {
+    "label": "NGO — Nagoya, Japan",
+    "code": "NGO",
+    "city": "Nagoya",
+    "country": "Japan",
+    "slug": "ngo"
+  },
+  {
+    "label": "PVG — Shanghai, China",
+    "code": "PVG",
+    "city": "Shanghai",
+    "country": "China",
+    "slug": "pvg"
+  },
+  {
+    "label": "SHA — Shanghai, China",
+    "code": "SHA",
+    "city": "Shanghai",
+    "country": "China",
+    "slug": "sha"
+  },
+  {
+    "label": "PEK — Beijing, China",
+    "code": "PEK",
+    "city": "Beijing",
+    "country": "China",
+    "slug": "pek"
+  },
+  {
+    "label": "PKX — Beijing, China",
+    "code": "PKX",
+    "city": "Beijing",
+    "country": "China",
+    "slug": "pkx"
+  },
+  {
+    "label": "CAN — Guangzhou, China",
+    "code": "CAN",
+    "city": "Guangzhou",
+    "country": "China",
+    "slug": "can"
+  },
+  {
+    "label": "SZX — Shenzhen, China",
+    "code": "SZX",
+    "city": "Shenzhen",
+    "country": "China",
+    "slug": "szx"
+  },
+  {
+    "label": "TPE — Taipei, Taiwan",
+    "code": "TPE",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "slug": "tpe"
+  },
+  {
+    "label": "KUL — Kuala Lumpur, Malaysia",
+    "code": "KUL",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "slug": "kul"
+  },
+  {
+    "label": "BKK — Bangkok, Thailand",
+    "code": "BKK",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "slug": "bkk"
+  },
+  {
+    "label": "DMK — Bangkok, Thailand",
+    "code": "DMK",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "slug": "dmk"
+  },
+  {
+    "label": "CGK — Jakarta, Indonesia",
+    "code": "CGK",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "slug": "cgk"
+  },
+  {
+    "label": "DPS — Bali, Indonesia",
+    "code": "DPS",
+    "city": "Bali",
+    "country": "Indonesia",
+    "slug": "dps"
+  },
+  {
+    "label": "MNL — Manila, Philippines",
+    "code": "MNL",
+    "city": "Manila",
+    "country": "Philippines",
+    "slug": "mnl"
+  },
+  {
+    "label": "HAN — Hanoi, Vietnam",
+    "code": "HAN",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "slug": "han"
+  },
+  {
+    "label": "SGN — Ho Chi Minh City, Vietnam",
+    "code": "SGN",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "slug": "sgn"
+  },
+  {
+    "label": "SYD — Sydney, Australia",
+    "code": "SYD",
+    "city": "Sydney",
+    "country": "Australia",
+    "slug": "syd"
+  },
+  {
+    "label": "MEL — Melbourne, Australia",
+    "code": "MEL",
+    "city": "Melbourne",
+    "country": "Australia",
+    "slug": "mel"
+  },
+  {
+    "label": "BNE — Brisbane, Australia",
+    "code": "BNE",
+    "city": "Brisbane",
+    "country": "Australia",
+    "slug": "bne"
+  },
+  {
+    "label": "PER — Perth, Australia",
+    "code": "PER",
+    "city": "Perth",
+    "country": "Australia",
+    "slug": "per"
+  },
+  {
+    "label": "AKL — Auckland, New Zealand",
+    "code": "AKL",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "slug": "akl"
+  },
+  {
+    "label": "CHC — Christchurch, New Zealand",
+    "code": "CHC",
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "slug": "chc"
+  },
+  {
+    "label": "MLE — Malé, Maldives",
+    "code": "MLE",
+    "city": "Malé",
+    "country": "Maldives",
+    "slug": "mle"
+  },
+  {
+    "label": "MRU — Mauritius, Mauritius",
+    "code": "MRU",
+    "city": "Mauritius",
+    "country": "Mauritius",
+    "slug": "mru"
+  },
+  {
+    "label": "GRU — São Paulo, Brazil",
+    "code": "GRU",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "slug": "gru"
+  },
+  {
+    "label": "GIG — Rio de Janeiro, Brazil",
+    "code": "GIG",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "slug": "gig"
+  },
+  {
+    "label": "SCL — Santiago, Chile",
+    "code": "SCL",
+    "city": "Santiago",
+    "country": "Chile",
+    "slug": "scl"
+  },
+  {
+    "label": "EZE — Buenos Aires, Argentina",
+    "code": "EZE",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "slug": "eze"
+  },
+  {
+    "label": "LIM — Lima, Peru",
+    "code": "LIM",
+    "city": "Lima",
+    "country": "Peru",
+    "slug": "lim"
+  },
+  {
+    "label": "BOG — Bogotá, Colombia",
+    "code": "BOG",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "slug": "bog"
+  },
+  {
+    "label": "CA1 — Cancún, International",
+    "code": "CA1",
+    "city": "Cancún",
+    "country": "International",
+    "slug": "cancún-airport"
+  },
+  {
+    "label": "CHE — Chennai, International",
+    "code": "CHE",
+    "city": "Chennai",
+    "country": "International",
+    "slug": "chennai-airport"
+  },
+  {
+    "label": "NAG — Nagoya, International",
+    "code": "NAG",
+    "city": "Nagoya",
+    "country": "International",
+    "slug": "nagoya-airport"
+  },
+  {
+    "label": "CHR — Christchurch, International",
+    "code": "CHR",
+    "city": "Christchurch",
+    "country": "International",
+    "slug": "christchurch-airport"
+  },
+  {
+    "label": "LAS — Las Vegas, United States",
+    "code": "LAS",
+    "city": "Las Vegas",
+    "country": "United States",
+    "slug": "las-vegas-airport"
+  },
+  {
+    "label": "ORL — Orlando, United States",
+    "code": "ORL",
+    "city": "Orlando",
+    "country": "United States",
+    "slug": "orlando-airport"
+  },
+  {
+    "label": "DEN — Denver, United States",
+    "code": "DEN",
+    "city": "Denver",
+    "country": "United States",
+    "slug": "denver-airport"
+  },
+  {
+    "label": "SAN — San Diego, United States",
+    "code": "SAN",
+    "city": "San Diego",
+    "country": "United States",
+    "slug": "san-diego-airport"
+  },
+  {
+    "label": "PHI — Philadelphia, United States",
+    "code": "PHI",
+    "city": "Philadelphia",
+    "country": "United States",
+    "slug": "philadelphia-airport"
+  },
+  {
+    "label": "VAN — Vancouver, Canada",
+    "code": "VAN",
+    "city": "Vancouver",
+    "country": "Canada",
+    "slug": "vancouver-airport"
+  },
+  {
+    "label": "CAL — Calgary, Canada",
+    "code": "CAL",
+    "city": "Calgary",
+    "country": "Canada",
+    "slug": "calgary-airport"
+  },
+  {
+    "label": "CA2 — Cancun, Mexico",
+    "code": "CA2",
+    "city": "Cancun",
+    "country": "Mexico",
+    "slug": "cancun-airport"
+  },
+  {
+    "label": "MON — Monterrey, Mexico",
+    "code": "MON",
+    "city": "Monterrey",
+    "country": "Mexico",
+    "slug": "monterrey-airport"
+  },
+  {
+    "label": "GUA — Guadalajara, Mexico",
+    "code": "GUA",
+    "city": "Guadalajara",
+    "country": "Mexico",
+    "slug": "guadalajara-airport"
+  },
+  {
+    "label": "POR — Porto, Portugal",
+    "code": "POR",
+    "city": "Porto",
+    "country": "Portugal",
+    "slug": "porto-airport"
+  },
+  {
+    "label": "BER — Berlin, Germany",
+    "code": "BER",
+    "city": "Berlin",
+    "country": "Germany",
+    "slug": "berlin-airport"
+  },
+  {
+    "label": "HAM — Hamburg, Germany",
+    "code": "HAM",
+    "city": "Hamburg",
+    "country": "Germany",
+    "slug": "hamburg-airport"
+  },
+  {
+    "label": "EDI — Edinburgh, United Kingdom",
+    "code": "EDI",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "slug": "edinburgh-airport"
+  },
+  {
+    "label": "MYK — Mykonos, Greece",
+    "code": "MYK",
+    "city": "Mykonos",
+    "country": "Greece",
+    "slug": "mykonos-airport"
+  },
+  {
+    "label": "SA1 — Santorini, Greece",
+    "code": "SA1",
+    "city": "Santorini",
+    "country": "Greece",
+    "slug": "santorini-airport"
+  },
+  {
+    "label": "ANT — Antalya, Turkey",
+    "code": "ANT",
+    "city": "Antalya",
+    "country": "Turkey",
+    "slug": "antalya-airport"
+  },
+  {
+    "label": "NIC — Nice, France",
+    "code": "NIC",
+    "city": "Nice",
+    "country": "France",
+    "slug": "nice-airport"
+  },
+  {
+    "label": "MAR — Marseille, France",
+    "code": "MAR",
+    "city": "Marseille",
+    "country": "France",
+    "slug": "marseille-airport"
+  },
+  {
+    "label": "NAP — Naples, Italy",
+    "code": "NAP",
+    "city": "Naples",
+    "country": "Italy",
+    "slug": "naples-airport"
+  },
+  {
+    "label": "FLO — Florence, Italy",
+    "code": "FLO",
+    "city": "Florence",
+    "country": "Italy",
+    "slug": "florence-airport"
+  },
+  {
+    "label": "PAL — Palma de Mallorca, Spain",
+    "code": "PAL",
+    "city": "Palma de Mallorca",
+    "country": "Spain",
+    "slug": "palma-de-mallorca-airport"
+  },
+  {
+    "label": "MAL — Malaga, Spain",
+    "code": "MAL",
+    "city": "Malaga",
+    "country": "Spain",
+    "slug": "malaga-airport"
+  },
+  {
+    "label": "VAL — Valencia, Spain",
+    "code": "VAL",
+    "city": "Valencia",
+    "country": "Spain",
+    "slug": "valencia-airport"
+  },
+  {
+    "label": "SEV — Seville, Spain",
+    "code": "SEV",
+    "city": "Seville",
+    "country": "Spain",
+    "slug": "seville-airport"
+  },
+  {
+    "label": "MUS — Muscat, Oman",
+    "code": "MUS",
+    "city": "Muscat",
+    "country": "Oman",
+    "slug": "muscat-airport"
+  },
+  {
+    "label": "KUW — Kuwait City, Kuwait",
+    "code": "KUW",
+    "city": "Kuwait City",
+    "country": "Kuwait",
+    "slug": "kuwait-city-airport"
+  },
+  {
+    "label": "BAH — Bahrain, Bahrain",
+    "code": "BAH",
+    "city": "Bahrain",
+    "country": "Bahrain",
+    "slug": "bahrain-airport"
+  },
+  {
+    "label": "JER — Jerusalem, Israel",
+    "code": "JER",
+    "city": "Jerusalem",
+    "country": "Israel",
+    "slug": "jerusalem-airport"
+  },
+  {
+    "label": "SH1 — Sharm El Sheikh, Egypt",
+    "code": "SH1",
+    "city": "Sharm El Sheikh",
+    "country": "Egypt",
+    "slug": "sharm-el-sheikh-airport"
+  },
+  {
+    "label": "KYO — Kyoto, Japan",
+    "code": "KYO",
+    "city": "Kyoto",
+    "country": "Japan",
+    "slug": "kyoto-airport"
+  },
+  {
+    "label": "SAP — Sapporo, Japan",
+    "code": "SAP",
+    "city": "Sapporo",
+    "country": "Japan",
+    "slug": "sapporo-airport"
+  },
+  {
+    "label": "FUK — Fukuoka, Japan",
+    "code": "FUK",
+    "city": "Fukuoka",
+    "country": "Japan",
+    "slug": "fukuoka-airport"
+  },
+  {
+    "label": "BUS — Busan, South Korea",
+    "code": "BUS",
+    "city": "Busan",
+    "country": "South Korea",
+    "slug": "busan-airport"
+  },
+  {
+    "label": "PHU — Phuket, Thailand",
+    "code": "PHU",
+    "city": "Phuket",
+    "country": "Thailand",
+    "slug": "phuket-airport"
+  },
+  {
+    "label": "CHI — Chiang Mai, Thailand",
+    "code": "CHI",
+    "city": "Chiang Mai",
+    "country": "Thailand",
+    "slug": "chiang-mai-airport"
+  },
+  {
+    "label": "KAO — Kaohsiung, Taiwan",
+    "code": "KAO",
+    "city": "Kaohsiung",
+    "country": "Taiwan",
+    "slug": "kaohsiung-airport"
+  },
+  {
+    "label": "YOG — Yogyakarta, Indonesia",
+    "code": "YOG",
+    "city": "Yogyakarta",
+    "country": "Indonesia",
+    "slug": "yogyakarta-airport"
+  },
+  {
+    "label": "PEN — Penang, Malaysia",
+    "code": "PEN",
+    "city": "Penang",
+    "country": "Malaysia",
+    "slug": "penang-airport"
+  },
+  {
+    "label": "LAN — Langkawi, Malaysia",
+    "code": "LAN",
+    "city": "Langkawi",
+    "country": "Malaysia",
+    "slug": "langkawi-airport"
+  },
+  {
+    "label": "CEB — Cebu, Philippines",
+    "code": "CEB",
+    "city": "Cebu",
+    "country": "Philippines",
+    "slug": "cebu-airport"
+  },
+  {
+    "label": "DAN — Da Nang, Vietnam",
+    "code": "DAN",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "slug": "da-nang-airport"
+  },
+  {
+    "label": "GOA — Goa, India",
+    "code": "GOA",
+    "city": "Goa",
+    "country": "India",
+    "slug": "goa-airport"
+  },
+  {
+    "label": "KAT — Kathmandu, Nepal",
+    "code": "KAT",
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "slug": "kathmandu-airport"
+  },
+  {
+    "label": "COL — Colombo, Sri Lanka",
+    "code": "COL",
+    "city": "Colombo",
+    "country": "Sri Lanka",
+    "slug": "colombo-airport"
+  },
+  {
+    "label": "DHA — Dhaka, Bangladesh",
+    "code": "DHA",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "slug": "dhaka-airport"
+  },
+  {
+    "label": "CH1 — Chengdu, China",
+    "code": "CH1",
+    "city": "Chengdu",
+    "country": "China",
+    "slug": "chengdu-airport"
+  },
+  {
+    "label": "QUE — Queenstown, New Zealand",
+    "code": "QUE",
+    "city": "Queenstown",
+    "country": "New Zealand",
+    "slug": "queenstown-airport"
+  },
+  {
+    "label": "WEL — Wellington, New Zealand",
+    "code": "WEL",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "slug": "wellington-airport"
+  },
+  {
+    "label": "DUR — Durban, South Africa",
+    "code": "DUR",
+    "city": "Durban",
+    "country": "South Africa",
+    "slug": "durban-airport"
+  },
+  {
+    "label": "AGA — Agadir, Morocco",
+    "code": "AGA",
+    "city": "Agadir",
+    "country": "Morocco",
+    "slug": "agadir-airport"
+  },
+  {
+    "label": "MOM — Mombasa, Kenya",
+    "code": "MOM",
+    "city": "Mombasa",
+    "country": "Kenya",
+    "slug": "mombasa-airport"
+  },
+  {
+    "label": "ZAN — Zanzibar, Tanzania",
+    "code": "ZAN",
+    "city": "Zanzibar",
+    "country": "Tanzania",
+    "slug": "zanzibar-airport"
+  },
+  {
+    "label": "DAR — Dar es Salaam, Tanzania",
+    "code": "DAR",
+    "city": "Dar es Salaam",
+    "country": "Tanzania",
+    "slug": "dar-es-salaam-airport"
+  },
+  {
+    "label": "ACC — Accra, Ghana",
+    "code": "ACC",
+    "city": "Accra",
+    "country": "Ghana",
+    "slug": "accra-airport"
+  },
+  {
+    "label": "TUN — Tunis, Tunisia",
+    "code": "TUN",
+    "city": "Tunis",
+    "country": "Tunisia",
+    "slug": "tunis-airport"
+  },
+  {
+    "label": "SEY — Seychelles, Seychelles",
+    "code": "SEY",
+    "city": "Seychelles",
+    "country": "Seychelles",
+    "slug": "seychelles-airport"
+  },
+  {
+    "label": "SAL — Salvador, Brazil",
+    "code": "SAL",
+    "city": "Salvador",
+    "country": "Brazil",
+    "slug": "salvador-airport"
+  },
+  {
+    "label": "MEN — Mendoza, Argentina",
+    "code": "MEN",
+    "city": "Mendoza",
+    "country": "Argentina",
+    "slug": "mendoza-airport"
+  },
+  {
+    "label": "CUS — Cusco, Peru",
+    "code": "CUS",
+    "city": "Cusco",
+    "country": "Peru",
+    "slug": "cusco-airport"
+  },
+  {
+    "label": "MED — Medellin, Colombia",
+    "code": "MED",
+    "city": "Medellin",
+    "country": "Colombia",
+    "slug": "medellin-airport"
+  },
+  {
+    "label": "CAR — Cartagena, Colombia",
+    "code": "CAR",
+    "city": "Cartagena",
+    "country": "Colombia",
+    "slug": "cartagena-airport"
+  },
+  {
+    "label": "QUI — Quito, Ecuador",
+    "code": "QUI",
+    "city": "Quito",
+    "country": "Ecuador",
+    "slug": "quito-airport"
+  },
+  {
+    "label": "GU1 — Guayaquil, Ecuador",
+    "code": "GU1",
+    "city": "Guayaquil",
+    "country": "Ecuador",
+    "slug": "guayaquil-airport"
+  },
+  {
+    "label": "MO1 — Montevideo, Uruguay",
+    "code": "MO1",
+    "city": "Montevideo",
+    "country": "Uruguay",
+    "slug": "montevideo-airport"
+  },
+  {
+    "label": "NAS — Nassau, Bahamas",
+    "code": "NAS",
+    "city": "Nassau",
+    "country": "Bahamas",
+    "slug": "nassau-airport"
+  },
+  {
+    "label": "PUN — Punta Cana, Dominican Republic",
+    "code": "PUN",
+    "city": "Punta Cana",
+    "country": "Dominican Republic",
+    "slug": "punta-cana-airport"
+  },
+  {
+    "label": "SA2 — Santo Domingo, Dominican Republic",
+    "code": "SA2",
+    "city": "Santo Domingo",
+    "country": "Dominican Republic",
+    "slug": "santo-domingo-airport"
+  },
+  {
+    "label": "SA3 — San Juan, Puerto Rico",
+    "code": "SA3",
+    "city": "San Juan",
+    "country": "Puerto Rico",
+    "slug": "san-juan-airport"
+  },
+  {
+    "label": "ARU — Aruba, Aruba",
+    "code": "ARU",
+    "city": "Aruba",
+    "country": "Aruba",
+    "slug": "aruba-airport"
+  },
+  {
+    "label": "CUR — Curacao, Curacao",
+    "code": "CUR",
+    "city": "Curacao",
+    "country": "Curacao",
+    "slug": "curacao-airport"
+  },
+  {
+    "label": "MO2 — Montego Bay, Jamaica",
+    "code": "MO2",
+    "city": "Montego Bay",
+    "country": "Jamaica",
+    "slug": "montego-bay-airport"
+  },
+  {
+    "label": "KIN — Kingston, Jamaica",
+    "code": "KIN",
+    "city": "Kingston",
+    "country": "Jamaica",
+    "slug": "kingston-airport"
+  },
+  {
+    "label": "BRI — Bridgetown, Barbados",
+    "code": "BRI",
+    "city": "Bridgetown",
+    "country": "Barbados",
+    "slug": "bridgetown-airport"
+  },
+  {
+    "label": "STL — St Lucia, Saint Lucia",
+    "code": "STL",
+    "city": "St Lucia",
+    "country": "Saint Lucia",
+    "slug": "st-lucia-airport"
+  },
+  {
+    "label": "BAS — Basel, Switzerland",
+    "code": "BAS",
+    "city": "Basel",
+    "country": "Switzerland",
+    "slug": "basel-airport"
+  },
+  {
+    "label": "LAU — Lausanne, Switzerland",
+    "code": "LAU",
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "slug": "lausanne-airport"
+  },
+  {
+    "label": "LYO — Lyon, France",
+    "code": "LYO",
+    "city": "Lyon",
+    "country": "France",
+    "slug": "lyon-airport"
+  },
+  {
+    "label": "CA3 — Cannes, France",
+    "code": "CA3",
+    "city": "Cannes",
+    "country": "France",
+    "slug": "cannes-airport"
+  },
+  {
+    "label": "BOR — Bordeaux, France",
+    "code": "BOR",
+    "city": "Bordeaux",
+    "country": "France",
+    "slug": "bordeaux-airport"
+  }
+]

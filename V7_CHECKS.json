@@ -1,0 +1,6 @@
+{
+  "build.py": "ok",
+  "luxaeris_engine/builder.py": "ok",
+  "luxaeris_engine/page_writer.py": "ok",
+  "scripts/fetch_real_airports_10k.py": "ok"
+}
