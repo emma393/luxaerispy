@@ -188,3 +188,17 @@ textarea{min-height:120px; padding-top:16px}
 .footer{background:#241d19!important}
 .footer strong{color:#fff7ee}
 .footer p,.footer a{color:#eadfce!important}
+
+
+.request-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.request-form .full-row{grid-column:1/-1}
+.request-form .name-row{grid-column:1/-1}
+.request-form .compact-row{display:grid; grid-template-columns:1fr 1fr; gap:14px; grid-column:1/-1}
+.request-form .date-row{display:grid; grid-template-columns:1fr 1fr; gap:14px; grid-column:1/-1}
+@media (max-width:760px){
+  .request-form, .request-form .compact-row, .request-form .date-row{grid-template-columns:1fr}
+}

@@ -9,7 +9,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-jfk.svg",
+    "featured_image": "/assets/generated_png/airport-jfk.png",
     "premium_summary": "John F. Kennedy International Airport is a key premium gateway for New York, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "New York (NYC) — John F. Kennedy International Airport (JFK)",
     "related_route_slugs": [
@@ -406,7 +406,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-ewr.svg",
+    "featured_image": "/assets/generated_png/airport-ewr.png",
     "premium_summary": "Newark Liberty International Airport is a key premium gateway for New York, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "New York (NYC) — Newark Liberty International Airport (EWR)",
     "related_route_slugs": [
@@ -482,7 +482,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-lga.svg",
+    "featured_image": "/assets/generated_png/airport-lga.png",
     "premium_summary": "LaGuardia Airport is a key premium gateway for New York, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "New York (NYC) — LaGuardia Airport (LGA)",
     "related_route_slugs": [
@@ -555,7 +555,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-lax.svg",
+    "featured_image": "/assets/generated_png/airport-lax.png",
     "premium_summary": "Los Angeles International Airport is a key premium gateway for Los Angeles, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Los Angeles (LAX) — Los Angeles International Airport (LAX)",
     "related_route_slugs": [
@@ -951,7 +951,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-sfo.svg",
+    "featured_image": "/assets/generated_png/airport-sfo.png",
     "premium_summary": "San Francisco International Airport is a key premium gateway for San Francisco, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "San Francisco (SFO) — San Francisco International Airport (SFO)",
     "related_route_slugs": [
@@ -1346,7 +1346,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-ord.svg",
+    "featured_image": "/assets/generated_png/airport-ord.png",
     "premium_summary": "O'Hare International Airport is a key premium gateway for Chicago, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Chicago (CHI) — O'Hare International Airport (ORD)",
     "related_route_slugs": [
@@ -1740,7 +1740,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-mia.svg",
+    "featured_image": "/assets/generated_png/airport-mia.png",
     "premium_summary": "Miami International Airport is a key premium gateway for Miami, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Miami (MIA) — Miami International Airport (MIA)",
     "related_route_slugs": [
@@ -2134,7 +2134,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bos.svg",
+    "featured_image": "/assets/generated_png/airport-bos.png",
     "premium_summary": "Boston Logan International Airport is a key premium gateway for Boston, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Boston (BOS) — Boston Logan International Airport (BOS)",
     "related_route_slugs": [
@@ -2207,7 +2207,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-dfw.svg",
+    "featured_image": "/assets/generated_png/airport-dfw.png",
     "premium_summary": "Dallas Fort Worth International Airport is a key premium gateway for Dallas, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Dallas (DFW) — Dallas Fort Worth International Airport (DFW)",
     "related_route_slugs": [
@@ -2280,7 +2280,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-atl.svg",
+    "featured_image": "/assets/generated_png/airport-atl.png",
     "premium_summary": "Hartsfield-Jackson Atlanta International Airport is a key premium gateway for Atlanta, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Atlanta (ATL) — Hartsfield-Jackson Atlanta International Airport (ATL)",
     "related_route_slugs": [
@@ -2353,7 +2353,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-iah.svg",
+    "featured_image": "/assets/generated_png/airport-iah.png",
     "premium_summary": "George Bush Intercontinental Airport is a key premium gateway for Houston, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Houston (HOU) — George Bush Intercontinental Airport (IAH)",
     "related_route_slugs": [
@@ -2426,7 +2426,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-sea.svg",
+    "featured_image": "/assets/generated_png/airport-sea.png",
     "premium_summary": "Seattle-Tacoma International Airport is a key premium gateway for Seattle, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Seattle (SEA) — Seattle-Tacoma International Airport (SEA)",
     "related_route_slugs": [
@@ -2499,7 +2499,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-iad.svg",
+    "featured_image": "/assets/generated_png/airport-iad.png",
     "premium_summary": "Washington Dulles International Airport is a key premium gateway for Washington, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Washington (WAS) — Washington Dulles International Airport (IAD)",
     "related_route_slugs": [
@@ -2572,7 +2572,7 @@
     "country_name": "Canada",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-yyz.svg",
+    "featured_image": "/assets/generated_png/airport-yyz.png",
     "premium_summary": "Toronto Pearson International Airport is a key premium gateway for Toronto, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Toronto (YTO) — Toronto Pearson International Airport (YYZ)",
     "related_route_slugs": [
@@ -2645,7 +2645,7 @@
     "country_name": "Canada",
     "region_cluster": "north-america",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-yul.svg",
+    "featured_image": "/assets/generated_png/airport-yul.png",
     "premium_summary": "Montréal–Trudeau International Airport is a key premium gateway for Montreal, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Montreal (YMQ) — Montréal–Trudeau International Airport (YUL)",
     "related_route_slugs": [
@@ -2718,7 +2718,7 @@
     "country_name": "Mexico",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mex.svg",
+    "featured_image": "/assets/generated_png/airport-mex.png",
     "premium_summary": "Mexico City International Airport is a key premium gateway for Mexico City, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Mexico City (MEX) — Mexico City International Airport (MEX)",
     "related_route_slugs": [
@@ -2791,7 +2791,7 @@
     "country_name": "Mexico",
     "region_cluster": "north-america",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-cun.svg",
+    "featured_image": "/assets/generated_png/airport-cun.png",
     "premium_summary": "Cancún International Airport is a key premium gateway for Cancún, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Cancún (CUN) — Cancún International Airport (CUN)",
     "related_route_slugs": [
@@ -2864,7 +2864,7 @@
     "country_name": "United Kingdom",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-lhr.svg",
+    "featured_image": "/assets/generated_png/airport-lhr.png",
     "premium_summary": "London Heathrow Airport is a key premium gateway for London, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "London (LON) — London Heathrow Airport (LHR)",
     "related_route_slugs": [
@@ -3261,7 +3261,7 @@
     "country_name": "United Kingdom",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-lgw.svg",
+    "featured_image": "/assets/generated_png/airport-lgw.png",
     "premium_summary": "London Gatwick Airport is a key premium gateway for London, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "London (LON) — London Gatwick Airport (LGW)",
     "related_route_slugs": [
@@ -3334,7 +3334,7 @@
     "country_name": "United Kingdom",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-man.svg",
+    "featured_image": "/assets/generated_png/airport-man.png",
     "premium_summary": "Manchester Airport is a key premium gateway for Manchester, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Manchester (MAN) — Manchester Airport (MAN)",
     "related_route_slugs": [
@@ -3407,7 +3407,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-cdg.svg",
+    "featured_image": "/assets/generated_png/airport-cdg.png",
     "premium_summary": "Paris Charles de Gaulle Airport is a key premium gateway for Paris, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Paris (PAR) — Paris Charles de Gaulle Airport (CDG)",
     "related_route_slugs": [
@@ -3802,7 +3802,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-ory.svg",
+    "featured_image": "/assets/generated_png/airport-ory.png",
     "premium_summary": "Paris Orly Airport is a key premium gateway for Paris, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Paris (PAR) — Paris Orly Airport (ORY)",
     "related_route_slugs": [
@@ -3875,7 +3875,7 @@
     "country_name": "Germany",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-fra.svg",
+    "featured_image": "/assets/generated_png/airport-fra.png",
     "premium_summary": "Frankfurt Airport is a key premium gateway for Frankfurt, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Frankfurt (FRA) — Frankfurt Airport (FRA)",
     "related_route_slugs": [
@@ -4270,7 +4270,7 @@
     "country_name": "Germany",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-muc.svg",
+    "featured_image": "/assets/generated_png/airport-muc.png",
     "premium_summary": "Munich Airport is a key premium gateway for Munich, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Munich (MUC) — Munich Airport (MUC)",
     "related_route_slugs": [
@@ -4345,7 +4345,7 @@
     "country_name": "Netherlands",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-ams.svg",
+    "featured_image": "/assets/generated_png/airport-ams.png",
     "premium_summary": "Amsterdam Airport Schiphol is a key premium gateway for Amsterdam, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Amsterdam (AMS) — Amsterdam Airport Schiphol (AMS)",
     "related_route_slugs": [
@@ -4736,7 +4736,7 @@
     "country_name": "Belgium",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bru.svg",
+    "featured_image": "/assets/generated_png/airport-bru.png",
     "premium_summary": "Brussels Airport is a key premium gateway for Brussels, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Brussels (BRU) — Brussels Airport (BRU)",
     "related_route_slugs": [
@@ -4809,7 +4809,7 @@
     "country_name": "Switzerland",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-zrh.svg",
+    "featured_image": "/assets/generated_png/airport-zrh.png",
     "premium_summary": "Zurich Airport is a key premium gateway for Zurich, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Zurich (ZRH) — Zurich Airport (ZRH)",
     "related_route_slugs": [
@@ -5203,7 +5203,7 @@
     "country_name": "Switzerland",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-gva.svg",
+    "featured_image": "/assets/generated_png/airport-gva.png",
     "premium_summary": "Geneva Airport is a key premium gateway for Geneva, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Geneva (GVA) — Geneva Airport (GVA)",
     "related_route_slugs": [
@@ -5276,7 +5276,7 @@
     "country_name": "Austria",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-vie.svg",
+    "featured_image": "/assets/generated_png/airport-vie.png",
     "premium_summary": "Vienna International Airport is a key premium gateway for Vienna, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Vienna (VIE) — Vienna International Airport (VIE)",
     "related_route_slugs": [
@@ -5349,7 +5349,7 @@
     "country_name": "Spain",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-mad.svg",
+    "featured_image": "/assets/generated_png/airport-mad.png",
     "premium_summary": "Adolfo Suárez Madrid–Barajas Airport is a key premium gateway for Madrid, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Madrid (MAD) — Adolfo Suárez Madrid–Barajas Airport (MAD)",
     "related_route_slugs": [
@@ -5743,7 +5743,7 @@
     "country_name": "Spain",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-bcn.svg",
+    "featured_image": "/assets/generated_png/airport-bcn.png",
     "premium_summary": "Barcelona El Prat Airport is a key premium gateway for Barcelona, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Barcelona (BCN) — Barcelona El Prat Airport (BCN)",
     "related_route_slugs": [
@@ -6137,7 +6137,7 @@
     "country_name": "Portugal",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-lis.svg",
+    "featured_image": "/assets/generated_png/airport-lis.png",
     "premium_summary": "Humberto Delgado Airport is a key premium gateway for Lisbon, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Lisbon (LIS) — Humberto Delgado Airport (LIS)",
     "related_route_slugs": [
@@ -6210,7 +6210,7 @@
     "country_name": "Italy",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-fco.svg",
+    "featured_image": "/assets/generated_png/airport-fco.png",
     "premium_summary": "Leonardo da Vinci–Fiumicino Airport is a key premium gateway for Rome, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Rome (ROM) — Leonardo da Vinci–Fiumicino Airport (FCO)",
     "related_route_slugs": [
@@ -6604,7 +6604,7 @@
     "country_name": "Italy",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mxp.svg",
+    "featured_image": "/assets/generated_png/airport-mxp.png",
     "premium_summary": "Milan Malpensa Airport is a key premium gateway for Milan, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Milan (MIL) — Milan Malpensa Airport (MXP)",
     "related_route_slugs": [
@@ -6677,7 +6677,7 @@
     "country_name": "Italy",
     "region_cluster": "europe",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-vce.svg",
+    "featured_image": "/assets/generated_png/airport-vce.png",
     "premium_summary": "Venice Marco Polo Airport is a key premium gateway for Venice, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Venice (VCE) — Venice Marco Polo Airport (VCE)",
     "related_route_slugs": [
@@ -6750,7 +6750,7 @@
     "country_name": "Greece",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-ath.svg",
+    "featured_image": "/assets/generated_png/airport-ath.png",
     "premium_summary": "Athens International Airport is a key premium gateway for Athens, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Athens (ATH) — Athens International Airport (ATH)",
     "related_route_slugs": [
@@ -6823,7 +6823,7 @@
     "country_name": "Ireland",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-dub.svg",
+    "featured_image": "/assets/generated_png/airport-dub.png",
     "premium_summary": "Dublin Airport is a key premium gateway for Dublin, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Dublin (DUB) — Dublin Airport (DUB)",
     "related_route_slugs": [
@@ -6896,7 +6896,7 @@
     "country_name": "Norway",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-osl.svg",
+    "featured_image": "/assets/generated_png/airport-osl.png",
     "premium_summary": "Oslo Gardermoen Airport is a key premium gateway for Oslo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Oslo (OSL) — Oslo Gardermoen Airport (OSL)",
     "related_route_slugs": [
@@ -6969,7 +6969,7 @@
     "country_name": "Sweden",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-arn.svg",
+    "featured_image": "/assets/generated_png/airport-arn.png",
     "premium_summary": "Stockholm Arlanda Airport is a key premium gateway for Stockholm, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Stockholm (STO) — Stockholm Arlanda Airport (ARN)",
     "related_route_slugs": [
@@ -7042,7 +7042,7 @@
     "country_name": "Denmark",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cph.svg",
+    "featured_image": "/assets/generated_png/airport-cph.png",
     "premium_summary": "Copenhagen Airport is a key premium gateway for Copenhagen, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Copenhagen (CPH) — Copenhagen Airport (CPH)",
     "related_route_slugs": [
@@ -7115,7 +7115,7 @@
     "country_name": "Finland",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-hel.svg",
+    "featured_image": "/assets/generated_png/airport-hel.png",
     "premium_summary": "Helsinki Airport is a key premium gateway for Helsinki, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Helsinki (HEL) — Helsinki Airport (HEL)",
     "related_route_slugs": [
@@ -7188,7 +7188,7 @@
     "country_name": "Czech Republic",
     "region_cluster": "europe",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-prg.svg",
+    "featured_image": "/assets/generated_png/airport-prg.png",
     "premium_summary": "Václav Havel Airport Prague is a key premium gateway for Prague, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Prague (PRG) — Václav Havel Airport Prague (PRG)",
     "related_route_slugs": [
@@ -7261,7 +7261,7 @@
     "country_name": "Poland",
     "region_cluster": "europe",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-waw.svg",
+    "featured_image": "/assets/generated_png/airport-waw.png",
     "premium_summary": "Warsaw Chopin Airport is a key premium gateway for Warsaw, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Warsaw (WAW) — Warsaw Chopin Airport (WAW)",
     "related_route_slugs": [
@@ -7334,7 +7334,7 @@
     "country_name": "Hungary",
     "region_cluster": "europe",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-bud.svg",
+    "featured_image": "/assets/generated_png/airport-bud.png",
     "premium_summary": "Budapest Ferenc Liszt International Airport is a key premium gateway for Budapest, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Budapest (BUD) — Budapest Ferenc Liszt International Airport (BUD)",
     "related_route_slugs": [
@@ -7407,7 +7407,7 @@
     "country_name": "Turkey",
     "region_cluster": "europe",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-ist.svg",
+    "featured_image": "/assets/generated_png/airport-ist.png",
     "premium_summary": "Istanbul Airport is a key premium gateway for Istanbul, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Istanbul (IST) — Istanbul Airport (IST)",
     "related_route_slugs": [
@@ -7800,7 +7800,7 @@
     "country_name": "Turkey",
     "region_cluster": "europe",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-saw.svg",
+    "featured_image": "/assets/generated_png/airport-saw.png",
     "premium_summary": "Sabiha Gökçen International Airport is a key premium gateway for Istanbul, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Istanbul (IST) — Sabiha Gökçen International Airport (SAW)",
     "related_route_slugs": [
@@ -7873,7 +7873,7 @@
     "country_name": "United Arab Emirates",
     "region_cluster": "middle-east",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-dxb.svg",
+    "featured_image": "/assets/generated_png/airport-dxb.png",
     "premium_summary": "Dubai International Airport is a key premium gateway for Dubai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Dubai (DXB) — Dubai International Airport (DXB)",
     "related_route_slugs": [
@@ -8267,7 +8267,7 @@
     "country_name": "United Arab Emirates",
     "region_cluster": "middle-east",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-dwc.svg",
+    "featured_image": "/assets/generated_png/airport-dwc.png",
     "premium_summary": "Al Maktoum International Airport is a key premium gateway for Dubai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Dubai (DXB) — Al Maktoum International Airport (DWC)",
     "related_route_slugs": [
@@ -8340,7 +8340,7 @@
     "country_name": "United Arab Emirates",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-auh.svg",
+    "featured_image": "/assets/generated_png/airport-auh.png",
     "premium_summary": "Abu Dhabi International Airport is a key premium gateway for Abu Dhabi, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Abu Dhabi (AUH) — Abu Dhabi International Airport (AUH)",
     "related_route_slugs": [
@@ -8415,7 +8415,7 @@
     "country_name": "Qatar",
     "region_cluster": "middle-east",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-doh.svg",
+    "featured_image": "/assets/generated_png/airport-doh.png",
     "premium_summary": "Hamad International Airport is a key premium gateway for Doha, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Doha (DOH) — Hamad International Airport (DOH)",
     "related_route_slugs": [
@@ -8808,7 +8808,7 @@
     "country_name": "Saudi Arabia",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-ruh.svg",
+    "featured_image": "/assets/generated_png/airport-ruh.png",
     "premium_summary": "King Khalid International Airport is a key premium gateway for Riyadh, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Riyadh (RUH) — King Khalid International Airport (RUH)",
     "related_route_slugs": [
@@ -8881,7 +8881,7 @@
     "country_name": "Saudi Arabia",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-jed.svg",
+    "featured_image": "/assets/generated_png/airport-jed.png",
     "premium_summary": "King Abdulaziz International Airport is a key premium gateway for Jeddah, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Jeddah (JED) — King Abdulaziz International Airport (JED)",
     "related_route_slugs": [
@@ -8954,7 +8954,7 @@
     "country_name": "Israel",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-tlv.svg",
+    "featured_image": "/assets/generated_png/airport-tlv.png",
     "premium_summary": "Ben Gurion Airport is a key premium gateway for Tel Aviv, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Tel Aviv (TLV) — Ben Gurion Airport (TLV)",
     "related_route_slugs": [
@@ -9027,7 +9027,7 @@
     "country_name": "Egypt",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cai.svg",
+    "featured_image": "/assets/generated_png/airport-cai.png",
     "premium_summary": "Cairo International Airport is a key premium gateway for Cairo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Cairo (CAI) — Cairo International Airport (CAI)",
     "related_route_slugs": [
@@ -9100,7 +9100,7 @@
     "country_name": "Jordan",
     "region_cluster": "middle-east",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-amm.svg",
+    "featured_image": "/assets/generated_png/airport-amm.png",
     "premium_summary": "Queen Alia International Airport is a key premium gateway for Amman, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Amman (AMM) — Queen Alia International Airport (AMM)",
     "related_route_slugs": [
@@ -9173,7 +9173,7 @@
     "country_name": "Lebanon",
     "region_cluster": "middle-east",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-bey.svg",
+    "featured_image": "/assets/generated_png/airport-bey.png",
     "premium_summary": "Beirut–Rafic Hariri International Airport is a key premium gateway for Beirut, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Beirut (BEY) — Beirut–Rafic Hariri International Airport (BEY)",
     "related_route_slugs": [
@@ -9246,7 +9246,7 @@
     "country_name": "South Africa",
     "region_cluster": "africa",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-jnb.svg",
+    "featured_image": "/assets/generated_png/airport-jnb.png",
     "premium_summary": "O. R. Tambo International Airport is a key premium gateway for Johannesburg, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Johannesburg (JNB) — O. R. Tambo International Airport (JNB)",
     "related_route_slugs": [
@@ -9637,7 +9637,7 @@
     "country_name": "South Africa",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cpt.svg",
+    "featured_image": "/assets/generated_png/airport-cpt.png",
     "premium_summary": "Cape Town International Airport is a key premium gateway for Cape Town, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Cape Town (CPT) — Cape Town International Airport (CPT)",
     "related_route_slugs": [
@@ -9710,7 +9710,7 @@
     "country_name": "Kenya",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-nbo.svg",
+    "featured_image": "/assets/generated_png/airport-nbo.png",
     "premium_summary": "Jomo Kenyatta International Airport is a key premium gateway for Nairobi, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Nairobi (NBO) — Jomo Kenyatta International Airport (NBO)",
     "related_route_slugs": [
@@ -9783,7 +9783,7 @@
     "country_name": "Morocco",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cmn.svg",
+    "featured_image": "/assets/generated_png/airport-cmn.png",
     "premium_summary": "Mohammed V International Airport is a key premium gateway for Casablanca, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Casablanca (CAS) — Mohammed V International Airport (CMN)",
     "related_route_slugs": [
@@ -9856,7 +9856,7 @@
     "country_name": "Morocco",
     "region_cluster": "africa",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-rak.svg",
+    "featured_image": "/assets/generated_png/airport-rak.png",
     "premium_summary": "Marrakesh Menara Airport is a key premium gateway for Marrakesh, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Marrakesh (RAK) — Marrakesh Menara Airport (RAK)",
     "related_route_slugs": [
@@ -9929,7 +9929,7 @@
     "country_name": "Nigeria",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-los.svg",
+    "featured_image": "/assets/generated_png/airport-los.png",
     "premium_summary": "Murtala Muhammed International Airport is a key premium gateway for Lagos, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Lagos (LOS) — Murtala Muhammed International Airport (LOS)",
     "related_route_slugs": [
@@ -10002,7 +10002,7 @@
     "country_name": "Ethiopia",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-add.svg",
+    "featured_image": "/assets/generated_png/airport-add.png",
     "premium_summary": "Addis Ababa Bole International Airport is a key premium gateway for Addis Ababa, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Addis Ababa (ADD) — Addis Ababa Bole International Airport (ADD)",
     "related_route_slugs": [
@@ -10075,7 +10075,7 @@
     "country_name": "India",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-del.svg",
+    "featured_image": "/assets/generated_png/airport-del.png",
     "premium_summary": "Indira Gandhi International Airport is a key premium gateway for Delhi, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Delhi (DEL) — Indira Gandhi International Airport (DEL)",
     "related_route_slugs": [
@@ -10466,7 +10466,7 @@
     "country_name": "India",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-bom.svg",
+    "featured_image": "/assets/generated_png/airport-bom.png",
     "premium_summary": "Chhatrapati Shivaji Maharaj International Airport is a key premium gateway for Mumbai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Mumbai (BOM) — Chhatrapati Shivaji Maharaj International Airport (BOM)",
     "related_route_slugs": [
@@ -10693,7 +10693,7 @@
     "country_name": "India",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-blr.svg",
+    "featured_image": "/assets/generated_png/airport-blr.png",
     "premium_summary": "Kempegowda International Airport is a key premium gateway for Bengaluru, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Bengaluru (BLR) — Kempegowda International Airport (BLR)",
     "related_route_slugs": [
@@ -10766,7 +10766,7 @@
     "country_name": "India",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-maa.svg",
+    "featured_image": "/assets/generated_png/airport-maa.png",
     "premium_summary": "Chennai International Airport is a key premium gateway for Chennai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Chennai (MAA) — Chennai International Airport (MAA)",
     "related_route_slugs": [
@@ -10839,7 +10839,7 @@
     "country_name": "India",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-hyd.svg",
+    "featured_image": "/assets/generated_png/airport-hyd.png",
     "premium_summary": "Rajiv Gandhi International Airport is a key premium gateway for Hyderabad, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Hyderabad (HYD) — Rajiv Gandhi International Airport (HYD)",
     "related_route_slugs": [
@@ -10912,7 +10912,7 @@
     "country_name": "Singapore",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-sin.svg",
+    "featured_image": "/assets/generated_png/airport-sin.png",
     "premium_summary": "Singapore Changi Airport is a key premium gateway for Singapore, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Singapore (SIN) — Singapore Changi Airport (SIN)",
     "related_route_slugs": [
@@ -11143,7 +11143,7 @@
     "country_name": "Hong Kong",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-hkg.svg",
+    "featured_image": "/assets/generated_png/airport-hkg.png",
     "premium_summary": "Hong Kong International Airport is a key premium gateway for Hong Kong, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Hong Kong (HKG) — Hong Kong International Airport (HKG)",
     "related_route_slugs": [
@@ -11370,7 +11370,7 @@
     "country_name": "South Korea",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-icn.svg",
+    "featured_image": "/assets/generated_png/airport-icn.png",
     "premium_summary": "Incheon International Airport is a key premium gateway for Seoul, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Seoul (SEL) — Incheon International Airport (ICN)",
     "related_route_slugs": [
@@ -11597,7 +11597,7 @@
     "country_name": "South Korea",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-gmp.svg",
+    "featured_image": "/assets/generated_png/airport-gmp.png",
     "premium_summary": "Gimpo International Airport is a key premium gateway for Seoul, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Seoul (SEL) — Gimpo International Airport (GMP)",
     "related_route_slugs": [
@@ -11670,7 +11670,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-hnd.svg",
+    "featured_image": "/assets/generated_png/airport-hnd.png",
     "premium_summary": "Tokyo Haneda Airport is a key premium gateway for Tokyo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Tokyo (TYO) — Tokyo Haneda Airport (HND)",
     "related_route_slugs": [
@@ -11901,7 +11901,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-nrt.svg",
+    "featured_image": "/assets/generated_png/airport-nrt.png",
     "premium_summary": "Narita International Airport is a key premium gateway for Tokyo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Tokyo (TYO) — Narita International Airport (NRT)",
     "related_route_slugs": [
@@ -12131,7 +12131,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kix.svg",
+    "featured_image": "/assets/generated_png/airport-kix.png",
     "premium_summary": "Kansai International Airport is a key premium gateway for Osaka, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Osaka (OSA) — Kansai International Airport (KIX)",
     "related_route_slugs": [
@@ -12204,7 +12204,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-itm.svg",
+    "featured_image": "/assets/generated_png/airport-itm.png",
     "premium_summary": "Osaka Itami Airport is a key premium gateway for Osaka, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Osaka (OSA) — Osaka Itami Airport (ITM)",
     "related_route_slugs": [
@@ -12277,7 +12277,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-ngo.svg",
+    "featured_image": "/assets/generated_png/airport-ngo.png",
     "premium_summary": "Chubu Centrair International Airport is a key premium gateway for Nagoya, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Nagoya (NGO) — Chubu Centrair International Airport (NGO)",
     "related_route_slugs": [
@@ -12350,7 +12350,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-pvg.svg",
+    "featured_image": "/assets/generated_png/airport-pvg.png",
     "premium_summary": "Shanghai Pudong International Airport is a key premium gateway for Shanghai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Shanghai (SHA) — Shanghai Pudong International Airport (PVG)",
     "related_route_slugs": [
@@ -12577,7 +12577,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-sha.svg",
+    "featured_image": "/assets/generated_png/airport-sha.png",
     "premium_summary": "Shanghai Hongqiao International Airport is a key premium gateway for Shanghai, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Shanghai (SHA) — Shanghai Hongqiao International Airport (SHA)",
     "related_route_slugs": [
@@ -12650,7 +12650,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-pek.svg",
+    "featured_image": "/assets/generated_png/airport-pek.png",
     "premium_summary": "Beijing Capital International Airport is a key premium gateway for Beijing, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Beijing (BJS) — Beijing Capital International Airport (PEK)",
     "related_route_slugs": [
@@ -12877,7 +12877,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-pkx.svg",
+    "featured_image": "/assets/generated_png/airport-pkx.png",
     "premium_summary": "Beijing Daxing International Airport is a key premium gateway for Beijing, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Beijing (BJS) — Beijing Daxing International Airport (PKX)",
     "related_route_slugs": [
@@ -12950,7 +12950,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-can.svg",
+    "featured_image": "/assets/generated_png/airport-can.png",
     "premium_summary": "Guangzhou Baiyun International Airport is a key premium gateway for Guangzhou, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Guangzhou (CAN) — Guangzhou Baiyun International Airport (CAN)",
     "related_route_slugs": [
@@ -13023,7 +13023,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-szx.svg",
+    "featured_image": "/assets/generated_png/airport-szx.png",
     "premium_summary": "Shenzhen Bao'an International Airport is a key premium gateway for Shenzhen, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Shenzhen (SZX) — Shenzhen Bao'an International Airport (SZX)",
     "related_route_slugs": [
@@ -13096,7 +13096,7 @@
     "country_name": "Taiwan",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-tpe.svg",
+    "featured_image": "/assets/generated_png/airport-tpe.png",
     "premium_summary": "Taiwan Taoyuan International Airport is a key premium gateway for Taipei, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Taipei (TPE) — Taiwan Taoyuan International Airport (TPE)",
     "related_route_slugs": [
@@ -13169,7 +13169,7 @@
     "country_name": "Malaysia",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kul.svg",
+    "featured_image": "/assets/generated_png/airport-kul.png",
     "premium_summary": "Kuala Lumpur International Airport is a key premium gateway for Kuala Lumpur, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Kuala Lumpur (KUL) — Kuala Lumpur International Airport (KUL)",
     "related_route_slugs": [
@@ -13242,7 +13242,7 @@
     "country_name": "Thailand",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bkk.svg",
+    "featured_image": "/assets/generated_png/airport-bkk.png",
     "premium_summary": "Suvarnabhumi Airport is a key premium gateway for Bangkok, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Bangkok (BKK) — Suvarnabhumi Airport (BKK)",
     "related_route_slugs": [
@@ -13315,7 +13315,7 @@
     "country_name": "Thailand",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-dmk.svg",
+    "featured_image": "/assets/generated_png/airport-dmk.png",
     "premium_summary": "Don Mueang International Airport is a key premium gateway for Bangkok, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Bangkok (BKK) — Don Mueang International Airport (DMK)",
     "related_route_slugs": [
@@ -13388,7 +13388,7 @@
     "country_name": "Indonesia",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cgk.svg",
+    "featured_image": "/assets/generated_png/airport-cgk.png",
     "premium_summary": "Soekarno-Hatta International Airport is a key premium gateway for Jakarta, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Jakarta (JKT) — Soekarno-Hatta International Airport (CGK)",
     "related_route_slugs": [
@@ -13461,7 +13461,7 @@
     "country_name": "Indonesia",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-dps.svg",
+    "featured_image": "/assets/generated_png/airport-dps.png",
     "premium_summary": "Ngurah Rai International Airport is a key premium gateway for Bali, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Bali (DPS) — Ngurah Rai International Airport (DPS)",
     "related_route_slugs": [
@@ -13534,7 +13534,7 @@
     "country_name": "Philippines",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mnl.svg",
+    "featured_image": "/assets/generated_png/airport-mnl.png",
     "premium_summary": "Ninoy Aquino International Airport is a key premium gateway for Manila, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Manila (MNL) — Ninoy Aquino International Airport (MNL)",
     "related_route_slugs": [
@@ -13607,7 +13607,7 @@
     "country_name": "Vietnam",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-han.svg",
+    "featured_image": "/assets/generated_png/airport-han.png",
     "premium_summary": "Noi Bai International Airport is a key premium gateway for Hanoi, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Hanoi (HAN) — Noi Bai International Airport (HAN)",
     "related_route_slugs": [
@@ -13680,7 +13680,7 @@
     "country_name": "Vietnam",
     "region_cluster": "asia",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-sgn.svg",
+    "featured_image": "/assets/generated_png/airport-sgn.png",
     "premium_summary": "Tan Son Nhat International Airport is a key premium gateway for Ho Chi Minh City, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Ho Chi Minh City (SGN) — Tan Son Nhat International Airport (SGN)",
     "related_route_slugs": [
@@ -13753,7 +13753,7 @@
     "country_name": "Australia",
     "region_cluster": "oceania",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-syd.svg",
+    "featured_image": "/assets/generated_png/airport-syd.png",
     "premium_summary": "Sydney Kingsford Smith Airport is a key premium gateway for Sydney, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Sydney (SYD) — Sydney Kingsford Smith Airport (SYD)",
     "related_route_slugs": [
@@ -13980,7 +13980,7 @@
     "country_name": "Australia",
     "region_cluster": "oceania",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mel.svg",
+    "featured_image": "/assets/generated_png/airport-mel.png",
     "premium_summary": "Melbourne Airport is a key premium gateway for Melbourne, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Melbourne (MEL) — Melbourne Airport (MEL)",
     "related_route_slugs": [
@@ -14053,7 +14053,7 @@
     "country_name": "Australia",
     "region_cluster": "oceania",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bne.svg",
+    "featured_image": "/assets/generated_png/airport-bne.png",
     "premium_summary": "Brisbane Airport is a key premium gateway for Brisbane, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Brisbane (BNE) — Brisbane Airport (BNE)",
     "related_route_slugs": [
@@ -14126,7 +14126,7 @@
     "country_name": "Australia",
     "region_cluster": "oceania",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-per.svg",
+    "featured_image": "/assets/generated_png/airport-per.png",
     "premium_summary": "Perth Airport is a key premium gateway for Perth, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Perth (PER) — Perth Airport (PER)",
     "related_route_slugs": [
@@ -14199,7 +14199,7 @@
     "country_name": "New Zealand",
     "region_cluster": "oceania",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-akl.svg",
+    "featured_image": "/assets/generated_png/airport-akl.png",
     "premium_summary": "Auckland Airport is a key premium gateway for Auckland, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Auckland (AKL) — Auckland Airport (AKL)",
     "related_route_slugs": [
@@ -14272,7 +14272,7 @@
     "country_name": "New Zealand",
     "region_cluster": "oceania",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-chc.svg",
+    "featured_image": "/assets/generated_png/airport-chc.png",
     "premium_summary": "Christchurch Airport is a key premium gateway for Christchurch, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Christchurch (CHC) — Christchurch Airport (CHC)",
     "related_route_slugs": [
@@ -14345,7 +14345,7 @@
     "country_name": "Maldives",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mle.svg",
+    "featured_image": "/assets/generated_png/airport-mle.png",
     "premium_summary": "Velana International Airport is a key premium gateway for Malé, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Malé (MLE) — Velana International Airport (MLE)",
     "related_route_slugs": [
@@ -14418,7 +14418,7 @@
     "country_name": "Mauritius",
     "region_cluster": "africa",
     "tier": "tier3",
-    "featured_image": "/assets/generated/airport-mru.svg",
+    "featured_image": "/assets/generated_png/airport-mru.png",
     "premium_summary": "Sir Seewoosagur Ramgoolam International Airport is a key premium gateway for Mauritius, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Mauritius (MRU) — Sir Seewoosagur Ramgoolam International Airport (MRU)",
     "related_route_slugs": [
@@ -14491,7 +14491,7 @@
     "country_name": "Brazil",
     "region_cluster": "south-america",
     "tier": "tier1",
-    "featured_image": "/assets/generated/airport-gru.svg",
+    "featured_image": "/assets/generated_png/airport-gru.png",
     "premium_summary": "São Paulo/Guarulhos International Airport is a key premium gateway for São Paulo, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "São Paulo (SAO) — São Paulo/Guarulhos International Airport (GRU)",
     "related_route_slugs": [
@@ -14722,7 +14722,7 @@
     "country_name": "Brazil",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-gig.svg",
+    "featured_image": "/assets/generated_png/airport-gig.png",
     "premium_summary": "Rio de Janeiro/Galeão International Airport is a key premium gateway for Rio de Janeiro, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Rio de Janeiro (RIO) — Rio de Janeiro/Galeão International Airport (GIG)",
     "related_route_slugs": [
@@ -14795,7 +14795,7 @@
     "country_name": "Chile",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-scl.svg",
+    "featured_image": "/assets/generated_png/airport-scl.png",
     "premium_summary": "Arturo Merino Benítez International Airport is a key premium gateway for Santiago, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Santiago (SCL) — Arturo Merino Benítez International Airport (SCL)",
     "related_route_slugs": [
@@ -14868,7 +14868,7 @@
     "country_name": "Argentina",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-eze.svg",
+    "featured_image": "/assets/generated_png/airport-eze.png",
     "premium_summary": "Ministro Pistarini International Airport is a key premium gateway for Buenos Aires, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Buenos Aires (BUE) — Ministro Pistarini International Airport (EZE)",
     "related_route_slugs": [
@@ -14941,7 +14941,7 @@
     "country_name": "Peru",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-lim.svg",
+    "featured_image": "/assets/generated_png/airport-lim.png",
     "premium_summary": "Jorge Chávez International Airport is a key premium gateway for Lima, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Lima (LIM) — Jorge Chávez International Airport (LIM)",
     "related_route_slugs": [
@@ -15014,7 +15014,7 @@
     "country_name": "Colombia",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bog.svg",
+    "featured_image": "/assets/generated_png/airport-bog.png",
     "premium_summary": "El Dorado International Airport is a key premium gateway for Bogotá, with strong long-haul relevance, lounge demand, and route research value for business class and first class travelers.",
     "search_label": "Bogotá (BOG) — El Dorado International Airport (BOG)",
     "related_route_slugs": [
@@ -15087,7 +15087,7 @@
     "country_name": "International",
     "region_cluster": "global",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cancún-airport.svg",
+    "featured_image": "/assets/generated_png/airport-cancún-airport.png",
     "premium_summary": "Cancún International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Cancún (CA1) — Cancún International Airport (CA1)",
     "related_route_slugs": [
@@ -15140,7 +15140,7 @@
     "country_name": "International",
     "region_cluster": "global",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-chennai-airport.svg",
+    "featured_image": "/assets/generated_png/airport-chennai-airport.png",
     "premium_summary": "Chennai International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Chennai (CHE) — Chennai International Airport (CHE)",
     "related_route_slugs": [
@@ -15193,7 +15193,7 @@
     "country_name": "International",
     "region_cluster": "global",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-nagoya-airport.svg",
+    "featured_image": "/assets/generated_png/airport-nagoya-airport.png",
     "premium_summary": "Nagoya International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Nagoya (NAG) — Nagoya International Airport (NAG)",
     "related_route_slugs": [
@@ -15246,7 +15246,7 @@
     "country_name": "International",
     "region_cluster": "global",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-christchurch-airport.svg",
+    "featured_image": "/assets/generated_png/airport-christchurch-airport.png",
     "premium_summary": "Christchurch International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Christchurch (CHR) — Christchurch International Airport (CHR)",
     "related_route_slugs": [
@@ -15299,7 +15299,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-las-vegas-airport.svg",
+    "featured_image": "/assets/generated_png/airport-las-vegas-airport.png",
     "premium_summary": "Las Vegas International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Las Vegas (LAS) — Las Vegas International Airport (LAS)",
     "related_route_slugs": [
@@ -15352,7 +15352,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-orlando-airport.svg",
+    "featured_image": "/assets/generated_png/airport-orlando-airport.png",
     "premium_summary": "Orlando International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Orlando (ORL) — Orlando International Airport (ORL)",
     "related_route_slugs": [
@@ -15405,7 +15405,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-denver-airport.svg",
+    "featured_image": "/assets/generated_png/airport-denver-airport.png",
     "premium_summary": "Denver International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Denver (DEN) — Denver International Airport (DEN)",
     "related_route_slugs": [
@@ -15458,7 +15458,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-san-diego-airport.svg",
+    "featured_image": "/assets/generated_png/airport-san-diego-airport.png",
     "premium_summary": "San Diego International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "San Diego (SAN) — San Diego International Airport (SAN)",
     "related_route_slugs": [
@@ -15511,7 +15511,7 @@
     "country_name": "United States",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-philadelphia-airport.svg",
+    "featured_image": "/assets/generated_png/airport-philadelphia-airport.png",
     "premium_summary": "Philadelphia International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Philadelphia (PHI) — Philadelphia International Airport (PHI)",
     "related_route_slugs": [
@@ -15564,7 +15564,7 @@
     "country_name": "Canada",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-vancouver-airport.svg",
+    "featured_image": "/assets/generated_png/airport-vancouver-airport.png",
     "premium_summary": "Vancouver International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Vancouver (VAN) — Vancouver International Airport (VAN)",
     "related_route_slugs": [
@@ -15617,7 +15617,7 @@
     "country_name": "Canada",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-calgary-airport.svg",
+    "featured_image": "/assets/generated_png/airport-calgary-airport.png",
     "premium_summary": "Calgary International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Calgary (CAL) — Calgary International Airport (CAL)",
     "related_route_slugs": [
@@ -15670,7 +15670,7 @@
     "country_name": "Mexico",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cancun-airport.svg",
+    "featured_image": "/assets/generated_png/airport-cancun-airport.png",
     "premium_summary": "Cancun International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Cancun (CA2) — Cancun International Airport (CA2)",
     "related_route_slugs": [
@@ -15723,7 +15723,7 @@
     "country_name": "Mexico",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-monterrey-airport.svg",
+    "featured_image": "/assets/generated_png/airport-monterrey-airport.png",
     "premium_summary": "Monterrey International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Monterrey (MON) — Monterrey International Airport (MON)",
     "related_route_slugs": [
@@ -15776,7 +15776,7 @@
     "country_name": "Mexico",
     "region_cluster": "north-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-guadalajara-airport.svg",
+    "featured_image": "/assets/generated_png/airport-guadalajara-airport.png",
     "premium_summary": "Guadalajara International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Guadalajara (GUA) — Guadalajara International Airport (GUA)",
     "related_route_slugs": [
@@ -15829,7 +15829,7 @@
     "country_name": "Portugal",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-porto-airport.svg",
+    "featured_image": "/assets/generated_png/airport-porto-airport.png",
     "premium_summary": "Porto International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Porto (POR) — Porto International Airport (POR)",
     "related_route_slugs": [
@@ -15882,7 +15882,7 @@
     "country_name": "Germany",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-berlin-airport.svg",
+    "featured_image": "/assets/generated_png/airport-berlin-airport.png",
     "premium_summary": "Berlin International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Berlin (BER) — Berlin International Airport (BER)",
     "related_route_slugs": [
@@ -15935,7 +15935,7 @@
     "country_name": "Germany",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-hamburg-airport.svg",
+    "featured_image": "/assets/generated_png/airport-hamburg-airport.png",
     "premium_summary": "Hamburg International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Hamburg (HAM) — Hamburg International Airport (HAM)",
     "related_route_slugs": [
@@ -15988,7 +15988,7 @@
     "country_name": "United Kingdom",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-edinburgh-airport.svg",
+    "featured_image": "/assets/generated_png/airport-edinburgh-airport.png",
     "premium_summary": "Edinburgh International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Edinburgh (EDI) — Edinburgh International Airport (EDI)",
     "related_route_slugs": [
@@ -16041,7 +16041,7 @@
     "country_name": "Greece",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mykonos-airport.svg",
+    "featured_image": "/assets/generated_png/airport-mykonos-airport.png",
     "premium_summary": "Mykonos International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Mykonos (MYK) — Mykonos International Airport (MYK)",
     "related_route_slugs": [
@@ -16094,7 +16094,7 @@
     "country_name": "Greece",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-santorini-airport.svg",
+    "featured_image": "/assets/generated_png/airport-santorini-airport.png",
     "premium_summary": "Santorini International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Santorini (SA1) — Santorini International Airport (SA1)",
     "related_route_slugs": [
@@ -16147,7 +16147,7 @@
     "country_name": "Turkey",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-antalya-airport.svg",
+    "featured_image": "/assets/generated_png/airport-antalya-airport.png",
     "premium_summary": "Antalya International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Antalya (ANT) — Antalya International Airport (ANT)",
     "related_route_slugs": [
@@ -16200,7 +16200,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-nice-airport.svg",
+    "featured_image": "/assets/generated_png/airport-nice-airport.png",
     "premium_summary": "Nice International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Nice (NIC) — Nice International Airport (NIC)",
     "related_route_slugs": [
@@ -16253,7 +16253,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-marseille-airport.svg",
+    "featured_image": "/assets/generated_png/airport-marseille-airport.png",
     "premium_summary": "Marseille International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Marseille (MAR) — Marseille International Airport (MAR)",
     "related_route_slugs": [
@@ -16306,7 +16306,7 @@
     "country_name": "Italy",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-naples-airport.svg",
+    "featured_image": "/assets/generated_png/airport-naples-airport.png",
     "premium_summary": "Naples International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Naples (NAP) — Naples International Airport (NAP)",
     "related_route_slugs": [
@@ -16359,7 +16359,7 @@
     "country_name": "Italy",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-florence-airport.svg",
+    "featured_image": "/assets/generated_png/airport-florence-airport.png",
     "premium_summary": "Florence International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Florence (FLO) — Florence International Airport (FLO)",
     "related_route_slugs": [
@@ -16412,7 +16412,7 @@
     "country_name": "Spain",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-palma-de-mallorca-airport.svg",
+    "featured_image": "/assets/generated_png/airport-palma-de-mallorca-airport.png",
     "premium_summary": "Palma de Mallorca International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Palma de Mallorca (PAL) — Palma de Mallorca International Airport (PAL)",
     "related_route_slugs": [
@@ -16465,7 +16465,7 @@
     "country_name": "Spain",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-malaga-airport.svg",
+    "featured_image": "/assets/generated_png/airport-malaga-airport.png",
     "premium_summary": "Malaga International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Malaga (MAL) — Malaga International Airport (MAL)",
     "related_route_slugs": [
@@ -16518,7 +16518,7 @@
     "country_name": "Spain",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-valencia-airport.svg",
+    "featured_image": "/assets/generated_png/airport-valencia-airport.png",
     "premium_summary": "Valencia International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Valencia (VAL) — Valencia International Airport (VAL)",
     "related_route_slugs": [
@@ -16571,7 +16571,7 @@
     "country_name": "Spain",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-seville-airport.svg",
+    "featured_image": "/assets/generated_png/airport-seville-airport.png",
     "premium_summary": "Seville International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Seville (SEV) — Seville International Airport (SEV)",
     "related_route_slugs": [
@@ -16624,7 +16624,7 @@
     "country_name": "Oman",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-muscat-airport.svg",
+    "featured_image": "/assets/generated_png/airport-muscat-airport.png",
     "premium_summary": "Muscat International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Muscat (MUS) — Muscat International Airport (MUS)",
     "related_route_slugs": [
@@ -16677,7 +16677,7 @@
     "country_name": "Kuwait",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kuwait-city-airport.svg",
+    "featured_image": "/assets/generated_png/airport-kuwait-city-airport.png",
     "premium_summary": "Kuwait City International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Kuwait City (KUW) — Kuwait City International Airport (KUW)",
     "related_route_slugs": [
@@ -16730,7 +16730,7 @@
     "country_name": "Bahrain",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bahrain-airport.svg",
+    "featured_image": "/assets/generated_png/airport-bahrain-airport.png",
     "premium_summary": "Bahrain International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Bahrain (BAH) — Bahrain International Airport (BAH)",
     "related_route_slugs": [
@@ -16783,7 +16783,7 @@
     "country_name": "Israel",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-jerusalem-airport.svg",
+    "featured_image": "/assets/generated_png/airport-jerusalem-airport.png",
     "premium_summary": "Jerusalem International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Jerusalem (JER) — Jerusalem International Airport (JER)",
     "related_route_slugs": [
@@ -16836,7 +16836,7 @@
     "country_name": "Egypt",
     "region_cluster": "middle-east",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-sharm-el-sheikh-airport.svg",
+    "featured_image": "/assets/generated_png/airport-sharm-el-sheikh-airport.png",
     "premium_summary": "Sharm El Sheikh International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Sharm El Sheikh (SH1) — Sharm El Sheikh International Airport (SH1)",
     "related_route_slugs": [
@@ -16889,7 +16889,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kyoto-airport.svg",
+    "featured_image": "/assets/generated_png/airport-kyoto-airport.png",
     "premium_summary": "Kyoto International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Kyoto (KYO) — Kyoto International Airport (KYO)",
     "related_route_slugs": [
@@ -16942,7 +16942,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-sapporo-airport.svg",
+    "featured_image": "/assets/generated_png/airport-sapporo-airport.png",
     "premium_summary": "Sapporo International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Sapporo (SAP) — Sapporo International Airport (SAP)",
     "related_route_slugs": [
@@ -16995,7 +16995,7 @@
     "country_name": "Japan",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-fukuoka-airport.svg",
+    "featured_image": "/assets/generated_png/airport-fukuoka-airport.png",
     "premium_summary": "Fukuoka International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Fukuoka (FUK) — Fukuoka International Airport (FUK)",
     "related_route_slugs": [
@@ -17048,7 +17048,7 @@
     "country_name": "South Korea",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-busan-airport.svg",
+    "featured_image": "/assets/generated_png/airport-busan-airport.png",
     "premium_summary": "Busan International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Busan (BUS) — Busan International Airport (BUS)",
     "related_route_slugs": [
@@ -17101,7 +17101,7 @@
     "country_name": "Thailand",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-phuket-airport.svg",
+    "featured_image": "/assets/generated_png/airport-phuket-airport.png",
     "premium_summary": "Phuket International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Phuket (PHU) — Phuket International Airport (PHU)",
     "related_route_slugs": [
@@ -17154,7 +17154,7 @@
     "country_name": "Thailand",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-chiang-mai-airport.svg",
+    "featured_image": "/assets/generated_png/airport-chiang-mai-airport.png",
     "premium_summary": "Chiang Mai International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Chiang Mai (CHI) — Chiang Mai International Airport (CHI)",
     "related_route_slugs": [
@@ -17207,7 +17207,7 @@
     "country_name": "Taiwan",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kaohsiung-airport.svg",
+    "featured_image": "/assets/generated_png/airport-kaohsiung-airport.png",
     "premium_summary": "Kaohsiung International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Kaohsiung (KAO) — Kaohsiung International Airport (KAO)",
     "related_route_slugs": [
@@ -17260,7 +17260,7 @@
     "country_name": "Indonesia",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-yogyakarta-airport.svg",
+    "featured_image": "/assets/generated_png/airport-yogyakarta-airport.png",
     "premium_summary": "Yogyakarta International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Yogyakarta (YOG) — Yogyakarta International Airport (YOG)",
     "related_route_slugs": [
@@ -17313,7 +17313,7 @@
     "country_name": "Malaysia",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-penang-airport.svg",
+    "featured_image": "/assets/generated_png/airport-penang-airport.png",
     "premium_summary": "Penang International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Penang (PEN) — Penang International Airport (PEN)",
     "related_route_slugs": [
@@ -17366,7 +17366,7 @@
     "country_name": "Malaysia",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-langkawi-airport.svg",
+    "featured_image": "/assets/generated_png/airport-langkawi-airport.png",
     "premium_summary": "Langkawi International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Langkawi (LAN) — Langkawi International Airport (LAN)",
     "related_route_slugs": [
@@ -17419,7 +17419,7 @@
     "country_name": "Philippines",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cebu-airport.svg",
+    "featured_image": "/assets/generated_png/airport-cebu-airport.png",
     "premium_summary": "Cebu International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Cebu (CEB) — Cebu International Airport (CEB)",
     "related_route_slugs": [
@@ -17472,7 +17472,7 @@
     "country_name": "Vietnam",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-da-nang-airport.svg",
+    "featured_image": "/assets/generated_png/airport-da-nang-airport.png",
     "premium_summary": "Da Nang International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Da Nang (DAN) — Da Nang International Airport (DAN)",
     "related_route_slugs": [
@@ -17525,7 +17525,7 @@
     "country_name": "India",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-goa-airport.svg",
+    "featured_image": "/assets/generated_png/airport-goa-airport.png",
     "premium_summary": "Goa International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Goa (GOA) — Goa International Airport (GOA)",
     "related_route_slugs": [
@@ -17578,7 +17578,7 @@
     "country_name": "Nepal",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kathmandu-airport.svg",
+    "featured_image": "/assets/generated_png/airport-kathmandu-airport.png",
     "premium_summary": "Kathmandu International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Kathmandu (KAT) — Kathmandu International Airport (KAT)",
     "related_route_slugs": [
@@ -17631,7 +17631,7 @@
     "country_name": "Sri Lanka",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-colombo-airport.svg",
+    "featured_image": "/assets/generated_png/airport-colombo-airport.png",
     "premium_summary": "Colombo International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Colombo (COL) — Colombo International Airport (COL)",
     "related_route_slugs": [
@@ -17684,7 +17684,7 @@
     "country_name": "Bangladesh",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-dhaka-airport.svg",
+    "featured_image": "/assets/generated_png/airport-dhaka-airport.png",
     "premium_summary": "Dhaka International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Dhaka (DHA) — Dhaka International Airport (DHA)",
     "related_route_slugs": [
@@ -17737,7 +17737,7 @@
     "country_name": "China",
     "region_cluster": "asia",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-chengdu-airport.svg",
+    "featured_image": "/assets/generated_png/airport-chengdu-airport.png",
     "premium_summary": "Chengdu International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Chengdu (CH1) — Chengdu International Airport (CH1)",
     "related_route_slugs": [
@@ -17790,7 +17790,7 @@
     "country_name": "New Zealand",
     "region_cluster": "oceania",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-queenstown-airport.svg",
+    "featured_image": "/assets/generated_png/airport-queenstown-airport.png",
     "premium_summary": "Queenstown International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Queenstown (QUE) — Queenstown International Airport (QUE)",
     "related_route_slugs": [
@@ -17843,7 +17843,7 @@
     "country_name": "New Zealand",
     "region_cluster": "oceania",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-wellington-airport.svg",
+    "featured_image": "/assets/generated_png/airport-wellington-airport.png",
     "premium_summary": "Wellington International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Wellington (WEL) — Wellington International Airport (WEL)",
     "related_route_slugs": [
@@ -17896,7 +17896,7 @@
     "country_name": "South Africa",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-durban-airport.svg",
+    "featured_image": "/assets/generated_png/airport-durban-airport.png",
     "premium_summary": "Durban International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Durban (DUR) — Durban International Airport (DUR)",
     "related_route_slugs": [
@@ -17949,7 +17949,7 @@
     "country_name": "Morocco",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-agadir-airport.svg",
+    "featured_image": "/assets/generated_png/airport-agadir-airport.png",
     "premium_summary": "Agadir International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Agadir (AGA) — Agadir International Airport (AGA)",
     "related_route_slugs": [
@@ -18002,7 +18002,7 @@
     "country_name": "Kenya",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mombasa-airport.svg",
+    "featured_image": "/assets/generated_png/airport-mombasa-airport.png",
     "premium_summary": "Mombasa International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Mombasa (MOM) — Mombasa International Airport (MOM)",
     "related_route_slugs": [
@@ -18055,7 +18055,7 @@
     "country_name": "Tanzania",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-zanzibar-airport.svg",
+    "featured_image": "/assets/generated_png/airport-zanzibar-airport.png",
     "premium_summary": "Zanzibar International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Zanzibar (ZAN) — Zanzibar International Airport (ZAN)",
     "related_route_slugs": [
@@ -18108,7 +18108,7 @@
     "country_name": "Tanzania",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-dar-es-salaam-airport.svg",
+    "featured_image": "/assets/generated_png/airport-dar-es-salaam-airport.png",
     "premium_summary": "Dar es Salaam International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Dar es Salaam (DAR) — Dar es Salaam International Airport (DAR)",
     "related_route_slugs": [
@@ -18161,7 +18161,7 @@
     "country_name": "Ghana",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-accra-airport.svg",
+    "featured_image": "/assets/generated_png/airport-accra-airport.png",
     "premium_summary": "Accra International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Accra (ACC) — Accra International Airport (ACC)",
     "related_route_slugs": [
@@ -18214,7 +18214,7 @@
     "country_name": "Tunisia",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-tunis-airport.svg",
+    "featured_image": "/assets/generated_png/airport-tunis-airport.png",
     "premium_summary": "Tunis International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Tunis (TUN) — Tunis International Airport (TUN)",
     "related_route_slugs": [
@@ -18267,7 +18267,7 @@
     "country_name": "Seychelles",
     "region_cluster": "africa",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-seychelles-airport.svg",
+    "featured_image": "/assets/generated_png/airport-seychelles-airport.png",
     "premium_summary": "Seychelles International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Seychelles (SEY) — Seychelles International Airport (SEY)",
     "related_route_slugs": [
@@ -18320,7 +18320,7 @@
     "country_name": "Brazil",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-salvador-airport.svg",
+    "featured_image": "/assets/generated_png/airport-salvador-airport.png",
     "premium_summary": "Salvador International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Salvador (SAL) — Salvador International Airport (SAL)",
     "related_route_slugs": [
@@ -18373,7 +18373,7 @@
     "country_name": "Argentina",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-mendoza-airport.svg",
+    "featured_image": "/assets/generated_png/airport-mendoza-airport.png",
     "premium_summary": "Mendoza International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Mendoza (MEN) — Mendoza International Airport (MEN)",
     "related_route_slugs": [
@@ -18426,7 +18426,7 @@
     "country_name": "Peru",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cusco-airport.svg",
+    "featured_image": "/assets/generated_png/airport-cusco-airport.png",
     "premium_summary": "Cusco International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Cusco (CUS) — Cusco International Airport (CUS)",
     "related_route_slugs": [
@@ -18479,7 +18479,7 @@
     "country_name": "Colombia",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-medellin-airport.svg",
+    "featured_image": "/assets/generated_png/airport-medellin-airport.png",
     "premium_summary": "Medellin International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Medellin (MED) — Medellin International Airport (MED)",
     "related_route_slugs": [
@@ -18532,7 +18532,7 @@
     "country_name": "Colombia",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cartagena-airport.svg",
+    "featured_image": "/assets/generated_png/airport-cartagena-airport.png",
     "premium_summary": "Cartagena International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Cartagena (CAR) — Cartagena International Airport (CAR)",
     "related_route_slugs": [
@@ -18585,7 +18585,7 @@
     "country_name": "Ecuador",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-quito-airport.svg",
+    "featured_image": "/assets/generated_png/airport-quito-airport.png",
     "premium_summary": "Quito International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Quito (QUI) — Quito International Airport (QUI)",
     "related_route_slugs": [
@@ -18638,7 +18638,7 @@
     "country_name": "Ecuador",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-guayaquil-airport.svg",
+    "featured_image": "/assets/generated_png/airport-guayaquil-airport.png",
     "premium_summary": "Guayaquil International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Guayaquil (GU1) — Guayaquil International Airport (GU1)",
     "related_route_slugs": [
@@ -18691,7 +18691,7 @@
     "country_name": "Uruguay",
     "region_cluster": "south-america",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-montevideo-airport.svg",
+    "featured_image": "/assets/generated_png/airport-montevideo-airport.png",
     "premium_summary": "Montevideo International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Montevideo (MO1) — Montevideo International Airport (MO1)",
     "related_route_slugs": [
@@ -18744,7 +18744,7 @@
     "country_name": "Bahamas",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-nassau-airport.svg",
+    "featured_image": "/assets/generated_png/airport-nassau-airport.png",
     "premium_summary": "Nassau International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Nassau (NAS) — Nassau International Airport (NAS)",
     "related_route_slugs": [
@@ -18797,7 +18797,7 @@
     "country_name": "Dominican Republic",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-punta-cana-airport.svg",
+    "featured_image": "/assets/generated_png/airport-punta-cana-airport.png",
     "premium_summary": "Punta Cana International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Punta Cana (PUN) — Punta Cana International Airport (PUN)",
     "related_route_slugs": [
@@ -18850,7 +18850,7 @@
     "country_name": "Dominican Republic",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-santo-domingo-airport.svg",
+    "featured_image": "/assets/generated_png/airport-santo-domingo-airport.png",
     "premium_summary": "Santo Domingo International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Santo Domingo (SA2) — Santo Domingo International Airport (SA2)",
     "related_route_slugs": [
@@ -18903,7 +18903,7 @@
     "country_name": "Puerto Rico",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-san-juan-airport.svg",
+    "featured_image": "/assets/generated_png/airport-san-juan-airport.png",
     "premium_summary": "San Juan International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "San Juan (SA3) — San Juan International Airport (SA3)",
     "related_route_slugs": [
@@ -18956,7 +18956,7 @@
     "country_name": "Aruba",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-aruba-airport.svg",
+    "featured_image": "/assets/generated_png/airport-aruba-airport.png",
     "premium_summary": "Aruba International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Aruba (ARU) — Aruba International Airport (ARU)",
     "related_route_slugs": [
@@ -19009,7 +19009,7 @@
     "country_name": "Curacao",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-curacao-airport.svg",
+    "featured_image": "/assets/generated_png/airport-curacao-airport.png",
     "premium_summary": "Curacao International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Curacao (CUR) — Curacao International Airport (CUR)",
     "related_route_slugs": [
@@ -19062,7 +19062,7 @@
     "country_name": "Jamaica",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-montego-bay-airport.svg",
+    "featured_image": "/assets/generated_png/airport-montego-bay-airport.png",
     "premium_summary": "Montego Bay International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Montego Bay (MO2) — Montego Bay International Airport (MO2)",
     "related_route_slugs": [
@@ -19115,7 +19115,7 @@
     "country_name": "Jamaica",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-kingston-airport.svg",
+    "featured_image": "/assets/generated_png/airport-kingston-airport.png",
     "premium_summary": "Kingston International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Kingston (KIN) — Kingston International Airport (KIN)",
     "related_route_slugs": [
@@ -19168,7 +19168,7 @@
     "country_name": "Barbados",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bridgetown-airport.svg",
+    "featured_image": "/assets/generated_png/airport-bridgetown-airport.png",
     "premium_summary": "Bridgetown International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Bridgetown (BRI) — Bridgetown International Airport (BRI)",
     "related_route_slugs": [
@@ -19221,7 +19221,7 @@
     "country_name": "Saint Lucia",
     "region_cluster": "caribbean",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-st-lucia-airport.svg",
+    "featured_image": "/assets/generated_png/airport-st-lucia-airport.png",
     "premium_summary": "St Lucia International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "St Lucia (STL) — St Lucia International Airport (STL)",
     "related_route_slugs": [
@@ -19274,7 +19274,7 @@
     "country_name": "Switzerland",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-basel-airport.svg",
+    "featured_image": "/assets/generated_png/airport-basel-airport.png",
     "premium_summary": "Basel International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Basel (BAS) — Basel International Airport (BAS)",
     "related_route_slugs": [
@@ -19327,7 +19327,7 @@
     "country_name": "Switzerland",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-lausanne-airport.svg",
+    "featured_image": "/assets/generated_png/airport-lausanne-airport.png",
     "premium_summary": "Lausanne International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Lausanne (LAU) — Lausanne International Airport (LAU)",
     "related_route_slugs": [
@@ -19380,7 +19380,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-lyon-airport.svg",
+    "featured_image": "/assets/generated_png/airport-lyon-airport.png",
     "premium_summary": "Lyon International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Lyon (LYO) — Lyon International Airport (LYO)",
     "related_route_slugs": [
@@ -19433,7 +19433,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-cannes-airport.svg",
+    "featured_image": "/assets/generated_png/airport-cannes-airport.png",
     "premium_summary": "Cannes International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Cannes (CA3) — Cannes International Airport (CA3)",
     "related_route_slugs": [],
@@ -19449,7 +19449,7 @@
     "country_name": "France",
     "region_cluster": "europe",
     "tier": "tier2",
-    "featured_image": "/assets/generated/airport-bordeaux-airport.svg",
+    "featured_image": "/assets/generated_png/airport-bordeaux-airport.png",
     "premium_summary": "Bordeaux International Airport supports premium travel planning with route, airline, and airport context for luxury itineraries.",
     "search_label": "Bordeaux (BOR) — Bordeaux International Airport (BOR)",
     "related_route_slugs": [],

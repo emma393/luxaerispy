@@ -2,7 +2,7 @@
   {
     "destination_slug": "new-york",
     "display_name": "New York",
-    "featured_image": "/assets/generated/dest-new-york.svg",
+    "featured_image": "/assets/generated_png/dest-new-york.png",
     "luxury_summary": "New York suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-jfk-business-class",
@@ -255,7 +255,7 @@
   {
     "destination_slug": "los-angeles",
     "display_name": "Los Angeles",
-    "featured_image": "/assets/generated/dest-los-angeles.svg",
+    "featured_image": "/assets/generated_png/dest-los-angeles.png",
     "luxury_summary": "Los Angeles suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-lax-business-class",
@@ -452,7 +452,7 @@
   {
     "destination_slug": "san-francisco",
     "display_name": "San Francisco",
-    "featured_image": "/assets/generated/dest-san-francisco.svg",
+    "featured_image": "/assets/generated_png/dest-san-francisco.png",
     "luxury_summary": "San Francisco suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-sfo-business-class",
@@ -649,7 +649,7 @@
   {
     "destination_slug": "chicago",
     "display_name": "Chicago",
-    "featured_image": "/assets/generated/dest-chicago.svg",
+    "featured_image": "/assets/generated_png/dest-chicago.png",
     "luxury_summary": "Chicago suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-ord-business-class",
@@ -846,7 +846,7 @@
   {
     "destination_slug": "miami",
     "display_name": "Miami",
-    "featured_image": "/assets/generated/dest-miami.svg",
+    "featured_image": "/assets/generated_png/dest-miami.png",
     "luxury_summary": "Miami suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-mia-business-class",
@@ -1043,7 +1043,7 @@
   {
     "destination_slug": "boston",
     "display_name": "Boston",
-    "featured_image": "/assets/generated/dest-boston.svg",
+    "featured_image": "/assets/generated_png/dest-boston.png",
     "luxury_summary": "Boston suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bos-business-class",
@@ -1081,7 +1081,7 @@
   {
     "destination_slug": "dallas",
     "display_name": "Dallas",
-    "featured_image": "/assets/generated/dest-dallas.svg",
+    "featured_image": "/assets/generated_png/dest-dallas.png",
     "luxury_summary": "Dallas suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-dfw-business-class",
@@ -1119,7 +1119,7 @@
   {
     "destination_slug": "atlanta",
     "display_name": "Atlanta",
-    "featured_image": "/assets/generated/dest-atlanta.svg",
+    "featured_image": "/assets/generated_png/dest-atlanta.png",
     "luxury_summary": "Atlanta suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-atl-business-class",
@@ -1157,7 +1157,7 @@
   {
     "destination_slug": "houston",
     "display_name": "Houston",
-    "featured_image": "/assets/generated/dest-houston.svg",
+    "featured_image": "/assets/generated_png/dest-houston.png",
     "luxury_summary": "Houston suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-iah-business-class",
@@ -1195,7 +1195,7 @@
   {
     "destination_slug": "seattle",
     "display_name": "Seattle",
-    "featured_image": "/assets/generated/dest-seattle.svg",
+    "featured_image": "/assets/generated_png/dest-seattle.png",
     "luxury_summary": "Seattle suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-sea-business-class",
@@ -1233,7 +1233,7 @@
   {
     "destination_slug": "washington",
     "display_name": "Washington",
-    "featured_image": "/assets/generated/dest-washington.svg",
+    "featured_image": "/assets/generated_png/dest-washington.png",
     "luxury_summary": "Washington suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-iad-business-class",
@@ -1271,7 +1271,7 @@
   {
     "destination_slug": "toronto",
     "display_name": "Toronto",
-    "featured_image": "/assets/generated/dest-toronto.svg",
+    "featured_image": "/assets/generated_png/dest-toronto.png",
     "luxury_summary": "Toronto suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-yyz-business-class",
@@ -1309,7 +1309,7 @@
   {
     "destination_slug": "montreal",
     "display_name": "Montreal",
-    "featured_image": "/assets/generated/dest-montreal.svg",
+    "featured_image": "/assets/generated_png/dest-montreal.png",
     "luxury_summary": "Montreal suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-yul-business-class",
@@ -1347,7 +1347,7 @@
   {
     "destination_slug": "mexico-city",
     "display_name": "Mexico City",
-    "featured_image": "/assets/generated/dest-mexico-city.svg",
+    "featured_image": "/assets/generated_png/dest-mexico-city.png",
     "luxury_summary": "Mexico City suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-mex-business-class",
@@ -1385,7 +1385,7 @@
   {
     "destination_slug": "cancún",
     "display_name": "Cancún",
-    "featured_image": "/assets/generated/dest-cancún.svg",
+    "featured_image": "/assets/generated_png/dest-cancún.png",
     "luxury_summary": "Cancún suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-cun-business-class",
@@ -1441,7 +1441,7 @@
   {
     "destination_slug": "london",
     "display_name": "London",
-    "featured_image": "/assets/generated/dest-london.svg",
+    "featured_image": "/assets/generated_png/dest-london.png",
     "luxury_summary": "London suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-lhr-business-class",
@@ -1666,7 +1666,7 @@
   {
     "destination_slug": "manchester",
     "display_name": "Manchester",
-    "featured_image": "/assets/generated/dest-manchester.svg",
+    "featured_image": "/assets/generated_png/dest-manchester.png",
     "luxury_summary": "Manchester suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-man-business-class",
@@ -1704,7 +1704,7 @@
   {
     "destination_slug": "paris",
     "display_name": "Paris",
-    "featured_image": "/assets/generated/dest-paris.svg",
+    "featured_image": "/assets/generated_png/dest-paris.png",
     "luxury_summary": "Paris suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-cdg-business-class",
@@ -1929,7 +1929,7 @@
   {
     "destination_slug": "frankfurt",
     "display_name": "Frankfurt",
-    "featured_image": "/assets/generated/dest-frankfurt.svg",
+    "featured_image": "/assets/generated_png/dest-frankfurt.png",
     "luxury_summary": "Frankfurt suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-fra-business-class",
@@ -2126,7 +2126,7 @@
   {
     "destination_slug": "munich",
     "display_name": "Munich",
-    "featured_image": "/assets/generated/dest-munich.svg",
+    "featured_image": "/assets/generated_png/dest-munich.png",
     "luxury_summary": "Munich suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-muc-business-class",
@@ -2164,7 +2164,7 @@
   {
     "destination_slug": "amsterdam",
     "display_name": "Amsterdam",
-    "featured_image": "/assets/generated/dest-amsterdam.svg",
+    "featured_image": "/assets/generated_png/dest-amsterdam.png",
     "luxury_summary": "Amsterdam suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-ams-business-class",
@@ -2361,7 +2361,7 @@
   {
     "destination_slug": "brussels",
     "display_name": "Brussels",
-    "featured_image": "/assets/generated/dest-brussels.svg",
+    "featured_image": "/assets/generated_png/dest-brussels.png",
     "luxury_summary": "Brussels suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bru-business-class",
@@ -2399,7 +2399,7 @@
   {
     "destination_slug": "zurich",
     "display_name": "Zurich",
-    "featured_image": "/assets/generated/dest-zurich.svg",
+    "featured_image": "/assets/generated_png/dest-zurich.png",
     "luxury_summary": "Zurich suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-zrh-business-class",
@@ -2596,7 +2596,7 @@
   {
     "destination_slug": "geneva",
     "display_name": "Geneva",
-    "featured_image": "/assets/generated/dest-geneva.svg",
+    "featured_image": "/assets/generated_png/dest-geneva.png",
     "luxury_summary": "Geneva suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-gva-business-class",
@@ -2634,7 +2634,7 @@
   {
     "destination_slug": "vienna",
     "display_name": "Vienna",
-    "featured_image": "/assets/generated/dest-vienna.svg",
+    "featured_image": "/assets/generated_png/dest-vienna.png",
     "luxury_summary": "Vienna suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-vie-business-class",
@@ -2672,7 +2672,7 @@
   {
     "destination_slug": "madrid",
     "display_name": "Madrid",
-    "featured_image": "/assets/generated/dest-madrid.svg",
+    "featured_image": "/assets/generated_png/dest-madrid.png",
     "luxury_summary": "Madrid suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-mad-business-class",
@@ -2869,7 +2869,7 @@
   {
     "destination_slug": "barcelona",
     "display_name": "Barcelona",
-    "featured_image": "/assets/generated/dest-barcelona.svg",
+    "featured_image": "/assets/generated_png/dest-barcelona.png",
     "luxury_summary": "Barcelona suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-bcn-business-class",
@@ -3066,7 +3066,7 @@
   {
     "destination_slug": "lisbon",
     "display_name": "Lisbon",
-    "featured_image": "/assets/generated/dest-lisbon.svg",
+    "featured_image": "/assets/generated_png/dest-lisbon.png",
     "luxury_summary": "Lisbon suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-lis-business-class",
@@ -3104,7 +3104,7 @@
   {
     "destination_slug": "rome",
     "display_name": "Rome",
-    "featured_image": "/assets/generated/dest-rome.svg",
+    "featured_image": "/assets/generated_png/dest-rome.png",
     "luxury_summary": "Rome suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-fco-business-class",
@@ -3301,7 +3301,7 @@
   {
     "destination_slug": "milan",
     "display_name": "Milan",
-    "featured_image": "/assets/generated/dest-milan.svg",
+    "featured_image": "/assets/generated_png/dest-milan.png",
     "luxury_summary": "Milan suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-mxp-business-class",
@@ -3339,7 +3339,7 @@
   {
     "destination_slug": "venice",
     "display_name": "Venice",
-    "featured_image": "/assets/generated/dest-venice.svg",
+    "featured_image": "/assets/generated_png/dest-venice.png",
     "luxury_summary": "Venice suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-vce-business-class",
@@ -3377,7 +3377,7 @@
   {
     "destination_slug": "athens",
     "display_name": "Athens",
-    "featured_image": "/assets/generated/dest-athens.svg",
+    "featured_image": "/assets/generated_png/dest-athens.png",
     "luxury_summary": "Athens suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-ath-business-class",
@@ -3415,7 +3415,7 @@
   {
     "destination_slug": "dublin",
     "display_name": "Dublin",
-    "featured_image": "/assets/generated/dest-dublin.svg",
+    "featured_image": "/assets/generated_png/dest-dublin.png",
     "luxury_summary": "Dublin suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-dub-business-class",
@@ -3453,7 +3453,7 @@
   {
     "destination_slug": "oslo",
     "display_name": "Oslo",
-    "featured_image": "/assets/generated/dest-oslo.svg",
+    "featured_image": "/assets/generated_png/dest-oslo.png",
     "luxury_summary": "Oslo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-osl-business-class",
@@ -3491,7 +3491,7 @@
   {
     "destination_slug": "stockholm",
     "display_name": "Stockholm",
-    "featured_image": "/assets/generated/dest-stockholm.svg",
+    "featured_image": "/assets/generated_png/dest-stockholm.png",
     "luxury_summary": "Stockholm suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-arn-business-class",
@@ -3529,7 +3529,7 @@
   {
     "destination_slug": "copenhagen",
     "display_name": "Copenhagen",
-    "featured_image": "/assets/generated/dest-copenhagen.svg",
+    "featured_image": "/assets/generated_png/dest-copenhagen.png",
     "luxury_summary": "Copenhagen suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-cph-business-class",
@@ -3567,7 +3567,7 @@
   {
     "destination_slug": "helsinki",
     "display_name": "Helsinki",
-    "featured_image": "/assets/generated/dest-helsinki.svg",
+    "featured_image": "/assets/generated_png/dest-helsinki.png",
     "luxury_summary": "Helsinki suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-hel-business-class",
@@ -3605,7 +3605,7 @@
   {
     "destination_slug": "prague",
     "display_name": "Prague",
-    "featured_image": "/assets/generated/dest-prague.svg",
+    "featured_image": "/assets/generated_png/dest-prague.png",
     "luxury_summary": "Prague suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-prg-business-class",
@@ -3643,7 +3643,7 @@
   {
     "destination_slug": "warsaw",
     "display_name": "Warsaw",
-    "featured_image": "/assets/generated/dest-warsaw.svg",
+    "featured_image": "/assets/generated_png/dest-warsaw.png",
     "luxury_summary": "Warsaw suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-waw-business-class",
@@ -3681,7 +3681,7 @@
   {
     "destination_slug": "budapest",
     "display_name": "Budapest",
-    "featured_image": "/assets/generated/dest-budapest.svg",
+    "featured_image": "/assets/generated_png/dest-budapest.png",
     "luxury_summary": "Budapest suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bud-business-class",
@@ -3719,7 +3719,7 @@
   {
     "destination_slug": "istanbul",
     "display_name": "Istanbul",
-    "featured_image": "/assets/generated/dest-istanbul.svg",
+    "featured_image": "/assets/generated_png/dest-istanbul.png",
     "luxury_summary": "Istanbul suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-ist-business-class",
@@ -3944,7 +3944,7 @@
   {
     "destination_slug": "dubai",
     "display_name": "Dubai",
-    "featured_image": "/assets/generated/dest-dubai.svg",
+    "featured_image": "/assets/generated_png/dest-dubai.png",
     "luxury_summary": "Dubai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-dxb-business-class",
@@ -4169,7 +4169,7 @@
   {
     "destination_slug": "abu-dhabi",
     "display_name": "Abu Dhabi",
-    "featured_image": "/assets/generated/dest-abu-dhabi.svg",
+    "featured_image": "/assets/generated_png/dest-abu-dhabi.png",
     "luxury_summary": "Abu Dhabi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-auh-business-class",
@@ -4207,7 +4207,7 @@
   {
     "destination_slug": "doha",
     "display_name": "Doha",
-    "featured_image": "/assets/generated/dest-doha.svg",
+    "featured_image": "/assets/generated_png/dest-doha.png",
     "luxury_summary": "Doha suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-doh-business-class",
@@ -4404,7 +4404,7 @@
   {
     "destination_slug": "riyadh",
     "display_name": "Riyadh",
-    "featured_image": "/assets/generated/dest-riyadh.svg",
+    "featured_image": "/assets/generated_png/dest-riyadh.png",
     "luxury_summary": "Riyadh suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-ruh-business-class",
@@ -4442,7 +4442,7 @@
   {
     "destination_slug": "jeddah",
     "display_name": "Jeddah",
-    "featured_image": "/assets/generated/dest-jeddah.svg",
+    "featured_image": "/assets/generated_png/dest-jeddah.png",
     "luxury_summary": "Jeddah suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-jed-business-class",
@@ -4480,7 +4480,7 @@
   {
     "destination_slug": "tel-aviv",
     "display_name": "Tel Aviv",
-    "featured_image": "/assets/generated/dest-tel-aviv.svg",
+    "featured_image": "/assets/generated_png/dest-tel-aviv.png",
     "luxury_summary": "Tel Aviv suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-tlv-business-class",
@@ -4518,7 +4518,7 @@
   {
     "destination_slug": "cairo",
     "display_name": "Cairo",
-    "featured_image": "/assets/generated/dest-cairo.svg",
+    "featured_image": "/assets/generated_png/dest-cairo.png",
     "luxury_summary": "Cairo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-cai-business-class",
@@ -4556,7 +4556,7 @@
   {
     "destination_slug": "amman",
     "display_name": "Amman",
-    "featured_image": "/assets/generated/dest-amman.svg",
+    "featured_image": "/assets/generated_png/dest-amman.png",
     "luxury_summary": "Amman suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-amm-business-class",
@@ -4594,7 +4594,7 @@
   {
     "destination_slug": "beirut",
     "display_name": "Beirut",
-    "featured_image": "/assets/generated/dest-beirut.svg",
+    "featured_image": "/assets/generated_png/dest-beirut.png",
     "luxury_summary": "Beirut suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bey-business-class",
@@ -4632,7 +4632,7 @@
   {
     "destination_slug": "johannesburg",
     "display_name": "Johannesburg",
-    "featured_image": "/assets/generated/dest-johannesburg.svg",
+    "featured_image": "/assets/generated_png/dest-johannesburg.png",
     "luxury_summary": "Johannesburg suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-jnb-business-class",
@@ -4829,7 +4829,7 @@
   {
     "destination_slug": "cape-town",
     "display_name": "Cape Town",
-    "featured_image": "/assets/generated/dest-cape-town.svg",
+    "featured_image": "/assets/generated_png/dest-cape-town.png",
     "luxury_summary": "Cape Town suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-cpt-business-class",
@@ -4867,7 +4867,7 @@
   {
     "destination_slug": "nairobi",
     "display_name": "Nairobi",
-    "featured_image": "/assets/generated/dest-nairobi.svg",
+    "featured_image": "/assets/generated_png/dest-nairobi.png",
     "luxury_summary": "Nairobi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-nbo-business-class",
@@ -4905,7 +4905,7 @@
   {
     "destination_slug": "casablanca",
     "display_name": "Casablanca",
-    "featured_image": "/assets/generated/dest-casablanca.svg",
+    "featured_image": "/assets/generated_png/dest-casablanca.png",
     "luxury_summary": "Casablanca suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-cmn-business-class",
@@ -4943,7 +4943,7 @@
   {
     "destination_slug": "marrakesh",
     "display_name": "Marrakesh",
-    "featured_image": "/assets/generated/dest-marrakesh.svg",
+    "featured_image": "/assets/generated_png/dest-marrakesh.png",
     "luxury_summary": "Marrakesh suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-rak-business-class",
@@ -4981,7 +4981,7 @@
   {
     "destination_slug": "lagos",
     "display_name": "Lagos",
-    "featured_image": "/assets/generated/dest-lagos.svg",
+    "featured_image": "/assets/generated_png/dest-lagos.png",
     "luxury_summary": "Lagos suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-los-business-class",
@@ -5019,7 +5019,7 @@
   {
     "destination_slug": "addis-ababa",
     "display_name": "Addis Ababa",
-    "featured_image": "/assets/generated/dest-addis-ababa.svg",
+    "featured_image": "/assets/generated_png/dest-addis-ababa.png",
     "luxury_summary": "Addis Ababa suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-add-business-class",
@@ -5057,7 +5057,7 @@
   {
     "destination_slug": "delhi",
     "display_name": "Delhi",
-    "featured_image": "/assets/generated/dest-delhi.svg",
+    "featured_image": "/assets/generated_png/dest-delhi.png",
     "luxury_summary": "Delhi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-del-business-class",
@@ -5254,7 +5254,7 @@
   {
     "destination_slug": "mumbai",
     "display_name": "Mumbai",
-    "featured_image": "/assets/generated/dest-mumbai.svg",
+    "featured_image": "/assets/generated_png/dest-mumbai.png",
     "luxury_summary": "Mumbai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-bom-business-class",
@@ -5369,7 +5369,7 @@
   {
     "destination_slug": "bengaluru",
     "display_name": "Bengaluru",
-    "featured_image": "/assets/generated/dest-bengaluru.svg",
+    "featured_image": "/assets/generated_png/dest-bengaluru.png",
     "luxury_summary": "Bengaluru suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-blr-business-class",
@@ -5407,7 +5407,7 @@
   {
     "destination_slug": "chennai",
     "display_name": "Chennai",
-    "featured_image": "/assets/generated/dest-chennai.svg",
+    "featured_image": "/assets/generated_png/dest-chennai.png",
     "luxury_summary": "Chennai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-maa-business-class",
@@ -5463,7 +5463,7 @@
   {
     "destination_slug": "hyderabad",
     "display_name": "Hyderabad",
-    "featured_image": "/assets/generated/dest-hyderabad.svg",
+    "featured_image": "/assets/generated_png/dest-hyderabad.png",
     "luxury_summary": "Hyderabad suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-hyd-business-class",
@@ -5501,7 +5501,7 @@
   {
     "destination_slug": "singapore",
     "display_name": "Singapore",
-    "featured_image": "/assets/generated/dest-singapore.svg",
+    "featured_image": "/assets/generated_png/dest-singapore.png",
     "luxury_summary": "Singapore suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-sin-business-class",
@@ -5616,7 +5616,7 @@
   {
     "destination_slug": "hong-kong",
     "display_name": "Hong Kong",
-    "featured_image": "/assets/generated/dest-hong-kong.svg",
+    "featured_image": "/assets/generated_png/dest-hong-kong.png",
     "luxury_summary": "Hong Kong suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-hkg-business-class",
@@ -5731,7 +5731,7 @@
   {
     "destination_slug": "seoul",
     "display_name": "Seoul",
-    "featured_image": "/assets/generated/dest-seoul.svg",
+    "featured_image": "/assets/generated_png/dest-seoul.png",
     "luxury_summary": "Seoul suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-icn-business-class",
@@ -5874,7 +5874,7 @@
   {
     "destination_slug": "tokyo",
     "display_name": "Tokyo",
-    "featured_image": "/assets/generated/dest-tokyo.svg",
+    "featured_image": "/assets/generated_png/dest-tokyo.png",
     "luxury_summary": "Tokyo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-hnd-business-class",
@@ -6094,7 +6094,7 @@
   {
     "destination_slug": "osaka",
     "display_name": "Osaka",
-    "featured_image": "/assets/generated/dest-osaka.svg",
+    "featured_image": "/assets/generated_png/dest-osaka.png",
     "luxury_summary": "Osaka suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-itm-business-class",
@@ -6160,7 +6160,7 @@
   {
     "destination_slug": "nagoya",
     "display_name": "Nagoya",
-    "featured_image": "/assets/generated/dest-nagoya.svg",
+    "featured_image": "/assets/generated_png/dest-nagoya.png",
     "luxury_summary": "Nagoya suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-ngo-business-class",
@@ -6216,7 +6216,7 @@
   {
     "destination_slug": "shanghai",
     "display_name": "Shanghai",
-    "featured_image": "/assets/generated/dest-shanghai.svg",
+    "featured_image": "/assets/generated_png/dest-shanghai.png",
     "luxury_summary": "Shanghai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-pvg-business-class",
@@ -6359,7 +6359,7 @@
   {
     "destination_slug": "beijing",
     "display_name": "Beijing",
-    "featured_image": "/assets/generated/dest-beijing.svg",
+    "featured_image": "/assets/generated_png/dest-beijing.png",
     "luxury_summary": "Beijing suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-pek-business-class",
@@ -6502,7 +6502,7 @@
   {
     "destination_slug": "guangzhou",
     "display_name": "Guangzhou",
-    "featured_image": "/assets/generated/dest-guangzhou.svg",
+    "featured_image": "/assets/generated_png/dest-guangzhou.png",
     "luxury_summary": "Guangzhou suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-can-business-class",
@@ -6540,7 +6540,7 @@
   {
     "destination_slug": "shenzhen",
     "display_name": "Shenzhen",
-    "featured_image": "/assets/generated/dest-shenzhen.svg",
+    "featured_image": "/assets/generated_png/dest-shenzhen.png",
     "luxury_summary": "Shenzhen suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-szx-business-class",
@@ -6578,7 +6578,7 @@
   {
     "destination_slug": "taipei",
     "display_name": "Taipei",
-    "featured_image": "/assets/generated/dest-taipei.svg",
+    "featured_image": "/assets/generated_png/dest-taipei.png",
     "luxury_summary": "Taipei suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-tpe-business-class",
@@ -6616,7 +6616,7 @@
   {
     "destination_slug": "kuala-lumpur",
     "display_name": "Kuala Lumpur",
-    "featured_image": "/assets/generated/dest-kuala-lumpur.svg",
+    "featured_image": "/assets/generated_png/dest-kuala-lumpur.png",
     "luxury_summary": "Kuala Lumpur suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-kul-business-class",
@@ -6654,7 +6654,7 @@
   {
     "destination_slug": "bangkok",
     "display_name": "Bangkok",
-    "featured_image": "/assets/generated/dest-bangkok.svg",
+    "featured_image": "/assets/generated_png/dest-bangkok.png",
     "luxury_summary": "Bangkok suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bkk-business-class",
@@ -6720,7 +6720,7 @@
   {
     "destination_slug": "jakarta",
     "display_name": "Jakarta",
-    "featured_image": "/assets/generated/dest-jakarta.svg",
+    "featured_image": "/assets/generated_png/dest-jakarta.png",
     "luxury_summary": "Jakarta suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-cgk-business-class",
@@ -6758,7 +6758,7 @@
   {
     "destination_slug": "bali",
     "display_name": "Bali",
-    "featured_image": "/assets/generated/dest-bali.svg",
+    "featured_image": "/assets/generated_png/dest-bali.png",
     "luxury_summary": "Bali suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-dps-business-class",
@@ -6796,7 +6796,7 @@
   {
     "destination_slug": "manila",
     "display_name": "Manila",
-    "featured_image": "/assets/generated/dest-manila.svg",
+    "featured_image": "/assets/generated_png/dest-manila.png",
     "luxury_summary": "Manila suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-mnl-business-class",
@@ -6834,7 +6834,7 @@
   {
     "destination_slug": "hanoi",
     "display_name": "Hanoi",
-    "featured_image": "/assets/generated/dest-hanoi.svg",
+    "featured_image": "/assets/generated_png/dest-hanoi.png",
     "luxury_summary": "Hanoi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-han-business-class",
@@ -6872,7 +6872,7 @@
   {
     "destination_slug": "ho-chi-minh-city",
     "display_name": "Ho Chi Minh City",
-    "featured_image": "/assets/generated/dest-ho-chi-minh-city.svg",
+    "featured_image": "/assets/generated_png/dest-ho-chi-minh-city.png",
     "luxury_summary": "Ho Chi Minh City suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-sgn-business-class",
@@ -6910,7 +6910,7 @@
   {
     "destination_slug": "sydney",
     "display_name": "Sydney",
-    "featured_image": "/assets/generated/dest-sydney.svg",
+    "featured_image": "/assets/generated_png/dest-sydney.png",
     "luxury_summary": "Sydney suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-syd-business-class",
@@ -7025,7 +7025,7 @@
   {
     "destination_slug": "melbourne",
     "display_name": "Melbourne",
-    "featured_image": "/assets/generated/dest-melbourne.svg",
+    "featured_image": "/assets/generated_png/dest-melbourne.png",
     "luxury_summary": "Melbourne suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-mel-business-class",
@@ -7063,7 +7063,7 @@
   {
     "destination_slug": "brisbane",
     "display_name": "Brisbane",
-    "featured_image": "/assets/generated/dest-brisbane.svg",
+    "featured_image": "/assets/generated_png/dest-brisbane.png",
     "luxury_summary": "Brisbane suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bne-business-class",
@@ -7101,7 +7101,7 @@
   {
     "destination_slug": "perth",
     "display_name": "Perth",
-    "featured_image": "/assets/generated/dest-perth.svg",
+    "featured_image": "/assets/generated_png/dest-perth.png",
     "luxury_summary": "Perth suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-per-business-class",
@@ -7139,7 +7139,7 @@
   {
     "destination_slug": "auckland",
     "display_name": "Auckland",
-    "featured_image": "/assets/generated/dest-auckland.svg",
+    "featured_image": "/assets/generated_png/dest-auckland.png",
     "luxury_summary": "Auckland suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-akl-business-class",
@@ -7177,7 +7177,7 @@
   {
     "destination_slug": "christchurch",
     "display_name": "Christchurch",
-    "featured_image": "/assets/generated/dest-christchurch.svg",
+    "featured_image": "/assets/generated_png/dest-christchurch.png",
     "luxury_summary": "Christchurch suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-chc-business-class",
@@ -7233,7 +7233,7 @@
   {
     "destination_slug": "male",
     "display_name": "Malé",
-    "featured_image": "/assets/generated/dest-male.svg",
+    "featured_image": "/assets/generated_png/dest-male.png",
     "luxury_summary": "Malé suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-mle-business-class",
@@ -7271,7 +7271,7 @@
   {
     "destination_slug": "mauritius",
     "display_name": "Mauritius",
-    "featured_image": "/assets/generated/dest-mauritius.svg",
+    "featured_image": "/assets/generated_png/dest-mauritius.png",
     "luxury_summary": "Mauritius suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-mru-business-class",
@@ -7309,7 +7309,7 @@
   {
     "destination_slug": "sao-paulo",
     "display_name": "São Paulo",
-    "featured_image": "/assets/generated/dest-sao-paulo.svg",
+    "featured_image": "/assets/generated_png/dest-sao-paulo.png",
     "luxury_summary": "São Paulo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "add-to-gru-business-class",
@@ -7424,7 +7424,7 @@
   {
     "destination_slug": "rio-de-janeiro",
     "display_name": "Rio de Janeiro",
-    "featured_image": "/assets/generated/dest-rio-de-janeiro.svg",
+    "featured_image": "/assets/generated_png/dest-rio-de-janeiro.png",
     "luxury_summary": "Rio de Janeiro suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-gig-business-class",
@@ -7462,7 +7462,7 @@
   {
     "destination_slug": "santiago",
     "display_name": "Santiago",
-    "featured_image": "/assets/generated/dest-santiago.svg",
+    "featured_image": "/assets/generated_png/dest-santiago.png",
     "luxury_summary": "Santiago suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-scl-business-class",
@@ -7500,7 +7500,7 @@
   {
     "destination_slug": "buenos-aires",
     "display_name": "Buenos Aires",
-    "featured_image": "/assets/generated/dest-buenos-aires.svg",
+    "featured_image": "/assets/generated_png/dest-buenos-aires.png",
     "luxury_summary": "Buenos Aires suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-eze-business-class",
@@ -7538,7 +7538,7 @@
   {
     "destination_slug": "lima",
     "display_name": "Lima",
-    "featured_image": "/assets/generated/dest-lima.svg",
+    "featured_image": "/assets/generated_png/dest-lima.png",
     "luxury_summary": "Lima suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-lim-business-class",
@@ -7576,7 +7576,7 @@
   {
     "destination_slug": "bogota",
     "display_name": "Bogotá",
-    "featured_image": "/assets/generated/dest-bogota.svg",
+    "featured_image": "/assets/generated_png/dest-bogota.png",
     "luxury_summary": "Bogotá suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
     "route_slugs": [
       "ams-to-bog-business-class",
@@ -7616,7 +7616,7 @@
     "display_name": "Las Vegas",
     "country": "United States",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-las-vegas.svg",
+    "featured_image": "/assets/generated_png/dest-las-vegas.png",
     "luxury_summary": "Las Vegas is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-las-vegas-airport-business-class",
@@ -7644,7 +7644,7 @@
     "display_name": "Orlando",
     "country": "United States",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-orlando.svg",
+    "featured_image": "/assets/generated_png/dest-orlando.png",
     "luxury_summary": "Orlando is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-orlando-airport-business-class",
@@ -7672,7 +7672,7 @@
     "display_name": "Denver",
     "country": "United States",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-denver.svg",
+    "featured_image": "/assets/generated_png/dest-denver.png",
     "luxury_summary": "Denver is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-denver-airport-business-class",
@@ -7700,7 +7700,7 @@
     "display_name": "San Diego",
     "country": "United States",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-san-diego.svg",
+    "featured_image": "/assets/generated_png/dest-san-diego.png",
     "luxury_summary": "San Diego is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-san-diego-airport-business-class",
@@ -7728,7 +7728,7 @@
     "display_name": "Philadelphia",
     "country": "United States",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-philadelphia.svg",
+    "featured_image": "/assets/generated_png/dest-philadelphia.png",
     "luxury_summary": "Philadelphia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-philadelphia-airport-business-class",
@@ -7756,7 +7756,7 @@
     "display_name": "Vancouver",
     "country": "Canada",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-vancouver.svg",
+    "featured_image": "/assets/generated_png/dest-vancouver.png",
     "luxury_summary": "Vancouver is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-vancouver-airport-business-class",
@@ -7784,7 +7784,7 @@
     "display_name": "Calgary",
     "country": "Canada",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-calgary.svg",
+    "featured_image": "/assets/generated_png/dest-calgary.png",
     "luxury_summary": "Calgary is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-calgary-airport-business-class",
@@ -7812,7 +7812,7 @@
     "display_name": "Cancun",
     "country": "Mexico",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-cancun.svg",
+    "featured_image": "/assets/generated_png/dest-cancun.png",
     "luxury_summary": "Cancun is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-cancun-airport-business-class",
@@ -7840,7 +7840,7 @@
     "display_name": "Monterrey",
     "country": "Mexico",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-monterrey.svg",
+    "featured_image": "/assets/generated_png/dest-monterrey.png",
     "luxury_summary": "Monterrey is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-monterrey-airport-business-class",
@@ -7868,7 +7868,7 @@
     "display_name": "Guadalajara",
     "country": "Mexico",
     "region_cluster": "north-america",
-    "featured_image": "/assets/generated/dest-guadalajara.svg",
+    "featured_image": "/assets/generated_png/dest-guadalajara.png",
     "luxury_summary": "Guadalajara is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-guadalajara-airport-business-class",
@@ -7896,7 +7896,7 @@
     "display_name": "Porto",
     "country": "Portugal",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-porto.svg",
+    "featured_image": "/assets/generated_png/dest-porto.png",
     "luxury_summary": "Porto is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-porto-airport-business-class",
@@ -7924,7 +7924,7 @@
     "display_name": "Berlin",
     "country": "Germany",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-berlin.svg",
+    "featured_image": "/assets/generated_png/dest-berlin.png",
     "luxury_summary": "Berlin is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-berlin-airport-business-class",
@@ -7952,7 +7952,7 @@
     "display_name": "Hamburg",
     "country": "Germany",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-hamburg.svg",
+    "featured_image": "/assets/generated_png/dest-hamburg.png",
     "luxury_summary": "Hamburg is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-hamburg-airport-business-class",
@@ -7980,7 +7980,7 @@
     "display_name": "Edinburgh",
     "country": "United Kingdom",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-edinburgh.svg",
+    "featured_image": "/assets/generated_png/dest-edinburgh.png",
     "luxury_summary": "Edinburgh is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-edinburgh-airport-business-class",
@@ -8008,7 +8008,7 @@
     "display_name": "Mykonos",
     "country": "Greece",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-mykonos.svg",
+    "featured_image": "/assets/generated_png/dest-mykonos.png",
     "luxury_summary": "Mykonos is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-mykonos-airport-business-class",
@@ -8036,7 +8036,7 @@
     "display_name": "Santorini",
     "country": "Greece",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-santorini.svg",
+    "featured_image": "/assets/generated_png/dest-santorini.png",
     "luxury_summary": "Santorini is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-santorini-airport-business-class",
@@ -8064,7 +8064,7 @@
     "display_name": "Antalya",
     "country": "Turkey",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-antalya.svg",
+    "featured_image": "/assets/generated_png/dest-antalya.png",
     "luxury_summary": "Antalya is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-antalya-airport-business-class",
@@ -8092,7 +8092,7 @@
     "display_name": "Nice",
     "country": "France",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-nice.svg",
+    "featured_image": "/assets/generated_png/dest-nice.png",
     "luxury_summary": "Nice is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-nice-airport-business-class",
@@ -8120,7 +8120,7 @@
     "display_name": "Marseille",
     "country": "France",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-marseille.svg",
+    "featured_image": "/assets/generated_png/dest-marseille.png",
     "luxury_summary": "Marseille is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-marseille-airport-business-class",
@@ -8148,7 +8148,7 @@
     "display_name": "Naples",
     "country": "Italy",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-naples.svg",
+    "featured_image": "/assets/generated_png/dest-naples.png",
     "luxury_summary": "Naples is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-naples-airport-business-class",
@@ -8176,7 +8176,7 @@
     "display_name": "Florence",
     "country": "Italy",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-florence.svg",
+    "featured_image": "/assets/generated_png/dest-florence.png",
     "luxury_summary": "Florence is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-florence-airport-business-class",
@@ -8204,7 +8204,7 @@
     "display_name": "Palma de Mallorca",
     "country": "Spain",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-palma-de-mallorca.svg",
+    "featured_image": "/assets/generated_png/dest-palma-de-mallorca.png",
     "luxury_summary": "Palma de Mallorca is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-palma-de-mallorca-airport-business-class",
@@ -8232,7 +8232,7 @@
     "display_name": "Malaga",
     "country": "Spain",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-malaga.svg",
+    "featured_image": "/assets/generated_png/dest-malaga.png",
     "luxury_summary": "Malaga is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-malaga-airport-business-class",
@@ -8260,7 +8260,7 @@
     "display_name": "Valencia",
     "country": "Spain",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-valencia.svg",
+    "featured_image": "/assets/generated_png/dest-valencia.png",
     "luxury_summary": "Valencia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-valencia-airport-business-class",
@@ -8288,7 +8288,7 @@
     "display_name": "Seville",
     "country": "Spain",
     "region_cluster": "europe",
-    "featured_image": "/assets/generated/dest-seville.svg",
+    "featured_image": "/assets/generated_png/dest-seville.png",
     "luxury_summary": "Seville is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-seville-airport-business-class",
@@ -8316,7 +8316,7 @@
     "display_name": "Muscat",
     "country": "Oman",
     "region_cluster": "middle-east",
-    "featured_image": "/assets/generated/dest-muscat.svg",
+    "featured_image": "/assets/generated_png/dest-muscat.png",
     "luxury_summary": "Muscat is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-muscat-airport-business-class",
@@ -8344,7 +8344,7 @@
     "display_name": "Kuwait City",
     "country": "Kuwait",
     "region_cluster": "middle-east",
-    "featured_image": "/assets/generated/dest-kuwait-city.svg",
+    "featured_image": "/assets/generated_png/dest-kuwait-city.png",
     "luxury_summary": "Kuwait City is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-kuwait-city-airport-business-class",
@@ -8372,7 +8372,7 @@
     "display_name": "Bahrain",
     "country": "Bahrain",
     "region_cluster": "middle-east",
-    "featured_image": "/assets/generated/dest-bahrain.svg",
+    "featured_image": "/assets/generated_png/dest-bahrain.png",
     "luxury_summary": "Bahrain is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-bahrain-airport-business-class",
@@ -8400,7 +8400,7 @@
     "display_name": "Jerusalem",
     "country": "Israel",
     "region_cluster": "middle-east",
-    "featured_image": "/assets/generated/dest-jerusalem.svg",
+    "featured_image": "/assets/generated_png/dest-jerusalem.png",
     "luxury_summary": "Jerusalem is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-jerusalem-airport-business-class",
@@ -8428,7 +8428,7 @@
     "display_name": "Sharm El Sheikh",
     "country": "Egypt",
     "region_cluster": "middle-east",
-    "featured_image": "/assets/generated/dest-sharm-el-sheikh.svg",
+    "featured_image": "/assets/generated_png/dest-sharm-el-sheikh.png",
     "luxury_summary": "Sharm El Sheikh is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-sharm-el-sheikh-airport-business-class",
@@ -8456,7 +8456,7 @@
     "display_name": "Kyoto",
     "country": "Japan",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-kyoto.svg",
+    "featured_image": "/assets/generated_png/dest-kyoto.png",
     "luxury_summary": "Kyoto is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-kyoto-airport-business-class",
@@ -8484,7 +8484,7 @@
     "display_name": "Sapporo",
     "country": "Japan",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-sapporo.svg",
+    "featured_image": "/assets/generated_png/dest-sapporo.png",
     "luxury_summary": "Sapporo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-sapporo-airport-business-class",
@@ -8512,7 +8512,7 @@
     "display_name": "Fukuoka",
     "country": "Japan",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-fukuoka.svg",
+    "featured_image": "/assets/generated_png/dest-fukuoka.png",
     "luxury_summary": "Fukuoka is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-fukuoka-airport-business-class",
@@ -8540,7 +8540,7 @@
     "display_name": "Busan",
     "country": "South Korea",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-busan.svg",
+    "featured_image": "/assets/generated_png/dest-busan.png",
     "luxury_summary": "Busan is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-busan-airport-business-class",
@@ -8568,7 +8568,7 @@
     "display_name": "Phuket",
     "country": "Thailand",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-phuket.svg",
+    "featured_image": "/assets/generated_png/dest-phuket.png",
     "luxury_summary": "Phuket is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-phuket-airport-business-class",
@@ -8596,7 +8596,7 @@
     "display_name": "Chiang Mai",
     "country": "Thailand",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-chiang-mai.svg",
+    "featured_image": "/assets/generated_png/dest-chiang-mai.png",
     "luxury_summary": "Chiang Mai is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-chiang-mai-airport-business-class",
@@ -8624,7 +8624,7 @@
     "display_name": "Kaohsiung",
     "country": "Taiwan",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-kaohsiung.svg",
+    "featured_image": "/assets/generated_png/dest-kaohsiung.png",
     "luxury_summary": "Kaohsiung is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-kaohsiung-airport-business-class",
@@ -8652,7 +8652,7 @@
     "display_name": "Yogyakarta",
     "country": "Indonesia",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-yogyakarta.svg",
+    "featured_image": "/assets/generated_png/dest-yogyakarta.png",
     "luxury_summary": "Yogyakarta is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-yogyakarta-airport-business-class",
@@ -8680,7 +8680,7 @@
     "display_name": "Penang",
     "country": "Malaysia",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-penang.svg",
+    "featured_image": "/assets/generated_png/dest-penang.png",
     "luxury_summary": "Penang is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-penang-airport-business-class",
@@ -8708,7 +8708,7 @@
     "display_name": "Langkawi",
     "country": "Malaysia",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-langkawi.svg",
+    "featured_image": "/assets/generated_png/dest-langkawi.png",
     "luxury_summary": "Langkawi is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-langkawi-airport-business-class",
@@ -8736,7 +8736,7 @@
     "display_name": "Cebu",
     "country": "Philippines",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-cebu.svg",
+    "featured_image": "/assets/generated_png/dest-cebu.png",
     "luxury_summary": "Cebu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-cebu-airport-business-class",
@@ -8764,7 +8764,7 @@
     "display_name": "Da Nang",
     "country": "Vietnam",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-da-nang.svg",
+    "featured_image": "/assets/generated_png/dest-da-nang.png",
     "luxury_summary": "Da Nang is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-da-nang-airport-business-class",
@@ -8792,7 +8792,7 @@
     "display_name": "Goa",
     "country": "India",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-goa.svg",
+    "featured_image": "/assets/generated_png/dest-goa.png",
     "luxury_summary": "Goa is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-goa-airport-business-class",
@@ -8820,7 +8820,7 @@
     "display_name": "Kathmandu",
     "country": "Nepal",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-kathmandu.svg",
+    "featured_image": "/assets/generated_png/dest-kathmandu.png",
     "luxury_summary": "Kathmandu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-kathmandu-airport-business-class",
@@ -8848,7 +8848,7 @@
     "display_name": "Colombo",
     "country": "Sri Lanka",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-colombo.svg",
+    "featured_image": "/assets/generated_png/dest-colombo.png",
     "luxury_summary": "Colombo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-colombo-airport-business-class",
@@ -8876,7 +8876,7 @@
     "display_name": "Dhaka",
     "country": "Bangladesh",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-dhaka.svg",
+    "featured_image": "/assets/generated_png/dest-dhaka.png",
     "luxury_summary": "Dhaka is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-dhaka-airport-business-class",
@@ -8904,7 +8904,7 @@
     "display_name": "Chengdu",
     "country": "China",
     "region_cluster": "asia",
-    "featured_image": "/assets/generated/dest-chengdu.svg",
+    "featured_image": "/assets/generated_png/dest-chengdu.png",
     "luxury_summary": "Chengdu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-chengdu-airport-business-class",
@@ -8932,7 +8932,7 @@
     "display_name": "Queenstown",
     "country": "New Zealand",
     "region_cluster": "oceania",
-    "featured_image": "/assets/generated/dest-queenstown.svg",
+    "featured_image": "/assets/generated_png/dest-queenstown.png",
     "luxury_summary": "Queenstown is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-queenstown-airport-business-class",
@@ -8960,7 +8960,7 @@
     "display_name": "Wellington",
     "country": "New Zealand",
     "region_cluster": "oceania",
-    "featured_image": "/assets/generated/dest-wellington.svg",
+    "featured_image": "/assets/generated_png/dest-wellington.png",
     "luxury_summary": "Wellington is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-wellington-airport-business-class",
@@ -8988,7 +8988,7 @@
     "display_name": "Durban",
     "country": "South Africa",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-durban.svg",
+    "featured_image": "/assets/generated_png/dest-durban.png",
     "luxury_summary": "Durban is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-durban-airport-business-class",
@@ -9016,7 +9016,7 @@
     "display_name": "Agadir",
     "country": "Morocco",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-agadir.svg",
+    "featured_image": "/assets/generated_png/dest-agadir.png",
     "luxury_summary": "Agadir is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-agadir-airport-business-class",
@@ -9044,7 +9044,7 @@
     "display_name": "Mombasa",
     "country": "Kenya",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-mombasa.svg",
+    "featured_image": "/assets/generated_png/dest-mombasa.png",
     "luxury_summary": "Mombasa is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-mombasa-airport-business-class",
@@ -9072,7 +9072,7 @@
     "display_name": "Zanzibar",
     "country": "Tanzania",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-zanzibar.svg",
+    "featured_image": "/assets/generated_png/dest-zanzibar.png",
     "luxury_summary": "Zanzibar is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-zanzibar-airport-business-class",
@@ -9100,7 +9100,7 @@
     "display_name": "Dar es Salaam",
     "country": "Tanzania",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-dar-es-salaam.svg",
+    "featured_image": "/assets/generated_png/dest-dar-es-salaam.png",
     "luxury_summary": "Dar es Salaam is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-dar-es-salaam-airport-business-class",
@@ -9128,7 +9128,7 @@
     "display_name": "Accra",
     "country": "Ghana",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-accra.svg",
+    "featured_image": "/assets/generated_png/dest-accra.png",
     "luxury_summary": "Accra is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-accra-airport-business-class",
@@ -9156,7 +9156,7 @@
     "display_name": "Tunis",
     "country": "Tunisia",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-tunis.svg",
+    "featured_image": "/assets/generated_png/dest-tunis.png",
     "luxury_summary": "Tunis is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-tunis-airport-business-class",
@@ -9184,7 +9184,7 @@
     "display_name": "Seychelles",
     "country": "Seychelles",
     "region_cluster": "africa",
-    "featured_image": "/assets/generated/dest-seychelles.svg",
+    "featured_image": "/assets/generated_png/dest-seychelles.png",
     "luxury_summary": "Seychelles is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-seychelles-airport-business-class",
@@ -9212,7 +9212,7 @@
     "display_name": "Salvador",
     "country": "Brazil",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-salvador.svg",
+    "featured_image": "/assets/generated_png/dest-salvador.png",
     "luxury_summary": "Salvador is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-salvador-airport-business-class",
@@ -9240,7 +9240,7 @@
     "display_name": "Mendoza",
     "country": "Argentina",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-mendoza.svg",
+    "featured_image": "/assets/generated_png/dest-mendoza.png",
     "luxury_summary": "Mendoza is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-mendoza-airport-business-class",
@@ -9268,7 +9268,7 @@
     "display_name": "Cusco",
     "country": "Peru",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-cusco.svg",
+    "featured_image": "/assets/generated_png/dest-cusco.png",
     "luxury_summary": "Cusco is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-cusco-airport-business-class",
@@ -9296,7 +9296,7 @@
     "display_name": "Medellin",
     "country": "Colombia",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-medellin.svg",
+    "featured_image": "/assets/generated_png/dest-medellin.png",
     "luxury_summary": "Medellin is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-medellin-airport-business-class",
@@ -9324,7 +9324,7 @@
     "display_name": "Cartagena",
     "country": "Colombia",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-cartagena.svg",
+    "featured_image": "/assets/generated_png/dest-cartagena.png",
     "luxury_summary": "Cartagena is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-cartagena-airport-business-class",
@@ -9352,7 +9352,7 @@
     "display_name": "Quito",
     "country": "Ecuador",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-quito.svg",
+    "featured_image": "/assets/generated_png/dest-quito.png",
     "luxury_summary": "Quito is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-quito-airport-business-class",
@@ -9380,7 +9380,7 @@
     "display_name": "Guayaquil",
     "country": "Ecuador",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-guayaquil.svg",
+    "featured_image": "/assets/generated_png/dest-guayaquil.png",
     "luxury_summary": "Guayaquil is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-guayaquil-airport-business-class",
@@ -9408,7 +9408,7 @@
     "display_name": "Montevideo",
     "country": "Uruguay",
     "region_cluster": "south-america",
-    "featured_image": "/assets/generated/dest-montevideo.svg",
+    "featured_image": "/assets/generated_png/dest-montevideo.png",
     "luxury_summary": "Montevideo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-montevideo-airport-business-class",
@@ -9436,7 +9436,7 @@
     "display_name": "Nassau",
     "country": "Bahamas",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-nassau.svg",
+    "featured_image": "/assets/generated_png/dest-nassau.png",
     "luxury_summary": "Nassau is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-nassau-airport-business-class",
@@ -9464,7 +9464,7 @@
     "display_name": "Punta Cana",
     "country": "Dominican Republic",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-punta-cana.svg",
+    "featured_image": "/assets/generated_png/dest-punta-cana.png",
     "luxury_summary": "Punta Cana is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-punta-cana-airport-business-class",
@@ -9492,7 +9492,7 @@
     "display_name": "Santo Domingo",
     "country": "Dominican Republic",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-santo-domingo.svg",
+    "featured_image": "/assets/generated_png/dest-santo-domingo.png",
     "luxury_summary": "Santo Domingo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-santo-domingo-airport-business-class",
@@ -9520,7 +9520,7 @@
     "display_name": "San Juan",
     "country": "Puerto Rico",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-san-juan.svg",
+    "featured_image": "/assets/generated_png/dest-san-juan.png",
     "luxury_summary": "San Juan is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-san-juan-airport-business-class",
@@ -9548,7 +9548,7 @@
     "display_name": "Aruba",
     "country": "Aruba",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-aruba.svg",
+    "featured_image": "/assets/generated_png/dest-aruba.png",
     "luxury_summary": "Aruba is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-aruba-airport-business-class",
@@ -9576,7 +9576,7 @@
     "display_name": "Curacao",
     "country": "Curacao",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-curacao.svg",
+    "featured_image": "/assets/generated_png/dest-curacao.png",
     "luxury_summary": "Curacao is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-curacao-airport-business-class",
@@ -9604,7 +9604,7 @@
     "display_name": "Montego Bay",
     "country": "Jamaica",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-montego-bay.svg",
+    "featured_image": "/assets/generated_png/dest-montego-bay.png",
     "luxury_summary": "Montego Bay is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-montego-bay-airport-business-class",
@@ -9632,7 +9632,7 @@
     "display_name": "Kingston",
     "country": "Jamaica",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-kingston.svg",
+    "featured_image": "/assets/generated_png/dest-kingston.png",
     "luxury_summary": "Kingston is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-kingston-airport-business-class",
@@ -9660,7 +9660,7 @@
     "display_name": "Bridgetown",
     "country": "Barbados",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-bridgetown.svg",
+    "featured_image": "/assets/generated_png/dest-bridgetown.png",
     "luxury_summary": "Bridgetown is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-bridgetown-airport-business-class",
@@ -9688,7 +9688,7 @@
     "display_name": "St Lucia",
     "country": "Saint Lucia",
     "region_cluster": "caribbean",
-    "featured_image": "/assets/generated/dest-st-lucia.svg",
+    "featured_image": "/assets/generated_png/dest-st-lucia.png",
     "luxury_summary": "St Lucia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
     "route_slugs": [
       "jfk-to-st-lucia-airport-business-class",
@@ -9714,7 +9714,7 @@
   {
     "destination_slug": "basel",
     "display_name": "Basel",
-    "featured_image": "/assets/generated/dest-basel.svg",
+    "featured_image": "/assets/generated_png/dest-basel.png",
     "luxury_summary": "Basel works well for premium travel with better route planning, airport flow, and total arrival quality.",
     "route_slugs": [
       "jfk-to-basel-airport-business-class",
@@ -9742,7 +9742,7 @@
   {
     "destination_slug": "lausanne",
     "display_name": "Lausanne",
-    "featured_image": "/assets/generated/dest-lausanne.svg",
+    "featured_image": "/assets/generated_png/dest-lausanne.png",
     "luxury_summary": "Lausanne works well for premium travel with better route planning, airport flow, and total arrival quality.",
     "route_slugs": [
       "jfk-to-lausanne-airport-business-class",
@@ -9770,7 +9770,7 @@
   {
     "destination_slug": "lyon",
     "display_name": "Lyon",
-    "featured_image": "/assets/generated/dest-lyon.svg",
+    "featured_image": "/assets/generated_png/dest-lyon.png",
     "luxury_summary": "Lyon works well for premium travel with better route planning, airport flow, and total arrival quality.",
     "route_slugs": [
       "jfk-to-lyon-airport-business-class",
@@ -9798,7 +9798,7 @@
   {
     "destination_slug": "cannes",
     "display_name": "Cannes",
-    "featured_image": "/assets/generated/dest-cannes.svg",
+    "featured_image": "/assets/generated_png/dest-cannes.png",
     "luxury_summary": "Cannes works well for premium travel with better route planning, airport flow, and total arrival quality.",
     "route_slugs": [],
     "country": "France",
@@ -9807,7 +9807,7 @@
   {
     "destination_slug": "bordeaux",
     "display_name": "Bordeaux",
-    "featured_image": "/assets/generated/dest-bordeaux.svg",
+    "featured_image": "/assets/generated_png/dest-bordeaux.png",
     "luxury_summary": "Bordeaux works well for premium travel with better route planning, airport flow, and total arrival quality.",
     "route_slugs": [],
     "country": "France",

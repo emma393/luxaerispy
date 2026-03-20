@@ -25,9 +25,9 @@ BASE_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:image" content="{{ og_image }}">
   <script type="application/ld+json">{{ schema | safe }}</script>
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.svg">
+  <link rel="shortcut icon" href="/assets/images/favicon.svg">
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site.js"></script>
 </head>

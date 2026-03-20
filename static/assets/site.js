@@ -1,6 +1,7 @@
 
 let AIRPORTS = [];
 const AIRPORT_LOOKUP = new Map();
+let DEST_INFO = {};
 
 async function loadAirports(){
   try{
@@ -8,6 +9,12 @@ async function loadAirports(){
     AIRPORTS = await res.json();
     AIRPORTS.forEach(a => AIRPORT_LOOKUP.set(a.label, a));
     ensureDatalist();
+  }catch(err){}
+}
+async function loadDestinations(){
+  try{
+    const res = await fetch('/assets/destination-info.json');
+    DEST_INFO = await res.json();
   }catch(err){}
 }
 function ensureDatalist(){
@@ -40,6 +47,11 @@ function toUS(iso){
   const [y,m,d] = iso.split('-');
   return `${m}.${d}.${y}`;
 }
+function syncDateDisplay(input){
+  const shell = input.closest('.date-shell');
+  const display = shell ? shell.querySelector('.date-display') : null;
+  if(display) display.value = toUS(input.value);
+}
 function applyDateLimitsAndUI(){
   const today = new Date();
   const maxDate = new Date();
@@ -49,9 +61,11 @@ function applyDateLimitsAndUI(){
   document.querySelectorAll('input[type="date"]').forEach(input=>{
     input.min = min;
     input.max = max;
-    if(input.dataset.enhanced === '1') return;
+    if(input.dataset.enhanced === '1'){
+      syncDateDisplay(input);
+      return;
+    }
     input.dataset.enhanced = '1';
-
     const shell = document.createElement('div');
     shell.className = 'date-shell';
     input.parentNode.insertBefore(shell, input);
@@ -61,6 +75,7 @@ function applyDateLimitsAndUI(){
     display.type = 'text';
     display.className = 'date-display';
     display.placeholder = 'mm.dd.yyyy';
+    display.readOnly = true;
     display.value = toUS(input.value);
     shell.insertBefore(display, input);
 
@@ -77,8 +92,7 @@ function applyDateLimitsAndUI(){
     btn.addEventListener('click', openPicker);
     display.addEventListener('focus', openPicker);
     display.addEventListener('click', openPicker);
-    input.addEventListener('change', ()=> display.value = toUS(input.value));
-    display.addEventListener('blur', ()=> display.value = toUS(input.value) || display.value);
+    input.addEventListener('change', ()=> syncDateDisplay(input));
   });
 }
 function buildRequestURL(form){
@@ -100,9 +114,11 @@ function bindTripSwitchers(){
       host.dataset.tripType = type;
       tabs.forEach(t => t.classList.toggle('active', t.dataset.trip === type));
       if(returnField){
-        returnField.closest('.date-shell')?.style.setProperty('display', type === 'roundtrip' ? '' : 'none');
+        const shell = returnField.closest('.date-shell') || returnField;
+        shell.style.display = type === 'roundtrip' ? '' : 'none';
         returnField.required = type === 'roundtrip';
         if(type !== 'roundtrip') returnField.value = '';
+        syncDateDisplay(returnField);
       }
       if(multi) multi.style.display = type === 'multicity' ? '' : 'none';
       const tripSelect = host.querySelector('[name="tripType"]');
@@ -131,6 +147,18 @@ function bindSearchForms(){
     });
   });
 }
+function updateDestinationInfo(){
+  const box = document.getElementById('destinationInfoBox');
+  const destinationInput = document.querySelector('#quoteRequestForm [name="destination"]');
+  if(!box || !destinationInput) return;
+  const raw = destinationInput.value || '';
+  const chosen = AIRPORT_LOOKUP.get(raw);
+  const city = chosen ? chosen.city : raw.replace(/^[A-Z0-9]{3}\s+—\s+/,'').split(',')[0].trim();
+  const info = DEST_INFO[city];
+  if(!info){ box.style.display='none'; return; }
+  box.style.display='block';
+  box.innerHTML = `<h3>${city}</h3><p>${info.summary}</p><p><strong>Country:</strong> ${info.country}</p>`;
+}
 function prefillRequestForm(){
   const form = document.getElementById('quoteRequestForm');
   if(!form) return;
@@ -138,8 +166,11 @@ function prefillRequestForm(){
   ['origin','destination','departDate','returnDate','cabin','tripType'].forEach(name=>{
     const value = url.searchParams.get(name);
     const field = form.querySelector(`[name="${name}"]`);
-    if(value && field) field.value = value;
+    if(value && field){ field.value = value; if(field.type === 'date') syncDateDisplay(field); }
   });
+  updateDestinationInfo();
+  form.querySelector('[name="destination"]')?.addEventListener('change', updateDestinationInfo);
+  form.querySelector('[name="destination"]')?.addEventListener('input', updateDestinationInfo);
 }
 function bindQuoteForm(){
   const form = document.getElementById('quoteRequestForm');
@@ -165,14 +196,11 @@ function initHeroVideo(){
   video.playsInline = true;
   video.autoplay = true;
   const source = video.querySelector('source');
-  if(source && source.getAttribute('src') !== '/assets/videos/hero-plane-window.mp4'){
-    source.setAttribute('src', '/assets/videos/hero-plane-window.mp4');
+  if(source && source.getAttribute('src') !== 'assets/video/hero-background.mp4'){
+    source.setAttribute('src', 'assets/video/hero-background.mp4');
     video.load();
   }
-  const tryPlay = () => {
-    const p = video.play();
-    if(p && p.catch) p.catch(()=>{});
-  };
+  const tryPlay = () => { const p = video.play(); if(p && p.catch) p.catch(()=>{}); };
   tryPlay();
   video.addEventListener('loadeddata', tryPlay);
   video.addEventListener('canplay', tryPlay);
@@ -188,7 +216,7 @@ function initCookieBanner(){
   document.getElementById('cookieReject')?.addEventListener('click',()=>{ try{localStorage.setItem(key,'rejected')}catch(err){} banner.style.display='none'; });
 }
 document.addEventListener('DOMContentLoaded', async ()=>{
-  await loadAirports();
+  await Promise.all([loadAirports(), loadDestinations()]);
   applyDateLimitsAndUI();
   bindTripSwitchers();
   bindSearchForms();

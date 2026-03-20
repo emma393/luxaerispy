@@ -1,0 +1,872 @@
+{
+  "New York": {
+    "summary": "New York suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Los Angeles": {
+    "summary": "Los Angeles suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "San Francisco": {
+    "summary": "San Francisco suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Chicago": {
+    "summary": "Chicago suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Miami": {
+    "summary": "Miami suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Boston": {
+    "summary": "Boston suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Dallas": {
+    "summary": "Dallas suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Atlanta": {
+    "summary": "Atlanta suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Houston": {
+    "summary": "Houston suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Seattle": {
+    "summary": "Seattle suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Washington": {
+    "summary": "Washington suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Toronto": {
+    "summary": "Toronto suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Canada",
+    "region": "north-america"
+  },
+  "Montreal": {
+    "summary": "Montreal suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Canada",
+    "region": "north-america"
+  },
+  "Mexico City": {
+    "summary": "Mexico City suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Mexico",
+    "region": "north-america"
+  },
+  "Cancún": {
+    "summary": "Cancún suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "International",
+    "region": "global"
+  },
+  "London": {
+    "summary": "London suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United Kingdom",
+    "region": "europe"
+  },
+  "Manchester": {
+    "summary": "Manchester suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United Kingdom",
+    "region": "europe"
+  },
+  "Paris": {
+    "summary": "Paris suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "France",
+    "region": "europe"
+  },
+  "Frankfurt": {
+    "summary": "Frankfurt suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Germany",
+    "region": "europe"
+  },
+  "Munich": {
+    "summary": "Munich suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Germany",
+    "region": "europe"
+  },
+  "Amsterdam": {
+    "summary": "Amsterdam suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Netherlands",
+    "region": "europe"
+  },
+  "Brussels": {
+    "summary": "Brussels suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Belgium",
+    "region": "europe"
+  },
+  "Zurich": {
+    "summary": "Zurich suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Switzerland",
+    "region": "europe"
+  },
+  "Geneva": {
+    "summary": "Geneva suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Switzerland",
+    "region": "europe"
+  },
+  "Vienna": {
+    "summary": "Vienna suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Austria",
+    "region": "europe"
+  },
+  "Madrid": {
+    "summary": "Madrid suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Spain",
+    "region": "europe"
+  },
+  "Barcelona": {
+    "summary": "Barcelona suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Spain",
+    "region": "europe"
+  },
+  "Lisbon": {
+    "summary": "Lisbon suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Portugal",
+    "region": "europe"
+  },
+  "Rome": {
+    "summary": "Rome suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Italy",
+    "region": "europe"
+  },
+  "Milan": {
+    "summary": "Milan suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Italy",
+    "region": "europe"
+  },
+  "Venice": {
+    "summary": "Venice suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Italy",
+    "region": "europe"
+  },
+  "Athens": {
+    "summary": "Athens suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Greece",
+    "region": "europe"
+  },
+  "Dublin": {
+    "summary": "Dublin suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Ireland",
+    "region": "europe"
+  },
+  "Oslo": {
+    "summary": "Oslo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Norway",
+    "region": "europe"
+  },
+  "Stockholm": {
+    "summary": "Stockholm suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Sweden",
+    "region": "europe"
+  },
+  "Copenhagen": {
+    "summary": "Copenhagen suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Denmark",
+    "region": "europe"
+  },
+  "Helsinki": {
+    "summary": "Helsinki suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Finland",
+    "region": "europe"
+  },
+  "Prague": {
+    "summary": "Prague suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Czech Republic",
+    "region": "europe"
+  },
+  "Warsaw": {
+    "summary": "Warsaw suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Poland",
+    "region": "europe"
+  },
+  "Budapest": {
+    "summary": "Budapest suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Hungary",
+    "region": "europe"
+  },
+  "Istanbul": {
+    "summary": "Istanbul suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Turkey",
+    "region": "europe"
+  },
+  "Dubai": {
+    "summary": "Dubai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United Arab Emirates",
+    "region": "middle-east"
+  },
+  "Abu Dhabi": {
+    "summary": "Abu Dhabi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "United Arab Emirates",
+    "region": "middle-east"
+  },
+  "Doha": {
+    "summary": "Doha suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Qatar",
+    "region": "middle-east"
+  },
+  "Riyadh": {
+    "summary": "Riyadh suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Saudi Arabia",
+    "region": "middle-east"
+  },
+  "Jeddah": {
+    "summary": "Jeddah suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Saudi Arabia",
+    "region": "middle-east"
+  },
+  "Tel Aviv": {
+    "summary": "Tel Aviv suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Israel",
+    "region": "middle-east"
+  },
+  "Cairo": {
+    "summary": "Cairo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Egypt",
+    "region": "middle-east"
+  },
+  "Amman": {
+    "summary": "Amman suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Jordan",
+    "region": "middle-east"
+  },
+  "Beirut": {
+    "summary": "Beirut suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Lebanon",
+    "region": "middle-east"
+  },
+  "Johannesburg": {
+    "summary": "Johannesburg suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "South Africa",
+    "region": "africa"
+  },
+  "Cape Town": {
+    "summary": "Cape Town suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "South Africa",
+    "region": "africa"
+  },
+  "Nairobi": {
+    "summary": "Nairobi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Kenya",
+    "region": "africa"
+  },
+  "Casablanca": {
+    "summary": "Casablanca suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Morocco",
+    "region": "africa"
+  },
+  "Marrakesh": {
+    "summary": "Marrakesh suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Morocco",
+    "region": "africa"
+  },
+  "Lagos": {
+    "summary": "Lagos suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Nigeria",
+    "region": "africa"
+  },
+  "Addis Ababa": {
+    "summary": "Addis Ababa suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Ethiopia",
+    "region": "africa"
+  },
+  "Delhi": {
+    "summary": "Delhi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "India",
+    "region": "asia"
+  },
+  "Mumbai": {
+    "summary": "Mumbai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "India",
+    "region": "asia"
+  },
+  "Bengaluru": {
+    "summary": "Bengaluru suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "India",
+    "region": "asia"
+  },
+  "Chennai": {
+    "summary": "Chennai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "International",
+    "region": "global"
+  },
+  "Hyderabad": {
+    "summary": "Hyderabad suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "India",
+    "region": "asia"
+  },
+  "Singapore": {
+    "summary": "Singapore suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Singapore",
+    "region": "asia"
+  },
+  "Hong Kong": {
+    "summary": "Hong Kong suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Hong Kong",
+    "region": "asia"
+  },
+  "Seoul": {
+    "summary": "Seoul suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "South Korea",
+    "region": "asia"
+  },
+  "Tokyo": {
+    "summary": "Tokyo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Japan",
+    "region": "asia"
+  },
+  "Osaka": {
+    "summary": "Osaka suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Japan",
+    "region": "asia"
+  },
+  "Nagoya": {
+    "summary": "Nagoya suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "International",
+    "region": "global"
+  },
+  "Shanghai": {
+    "summary": "Shanghai suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "China",
+    "region": "asia"
+  },
+  "Beijing": {
+    "summary": "Beijing suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "China",
+    "region": "asia"
+  },
+  "Guangzhou": {
+    "summary": "Guangzhou suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "China",
+    "region": "asia"
+  },
+  "Shenzhen": {
+    "summary": "Shenzhen suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "China",
+    "region": "asia"
+  },
+  "Taipei": {
+    "summary": "Taipei suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Taiwan",
+    "region": "asia"
+  },
+  "Kuala Lumpur": {
+    "summary": "Kuala Lumpur suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Malaysia",
+    "region": "asia"
+  },
+  "Bangkok": {
+    "summary": "Bangkok suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Thailand",
+    "region": "asia"
+  },
+  "Jakarta": {
+    "summary": "Jakarta suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Indonesia",
+    "region": "asia"
+  },
+  "Bali": {
+    "summary": "Bali suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Indonesia",
+    "region": "asia"
+  },
+  "Manila": {
+    "summary": "Manila suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Philippines",
+    "region": "asia"
+  },
+  "Hanoi": {
+    "summary": "Hanoi suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Vietnam",
+    "region": "asia"
+  },
+  "Ho Chi Minh City": {
+    "summary": "Ho Chi Minh City suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Vietnam",
+    "region": "asia"
+  },
+  "Sydney": {
+    "summary": "Sydney suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Australia",
+    "region": "oceania"
+  },
+  "Melbourne": {
+    "summary": "Melbourne suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Australia",
+    "region": "oceania"
+  },
+  "Brisbane": {
+    "summary": "Brisbane suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Australia",
+    "region": "oceania"
+  },
+  "Perth": {
+    "summary": "Perth suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Australia",
+    "region": "oceania"
+  },
+  "Auckland": {
+    "summary": "Auckland suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "New Zealand",
+    "region": "oceania"
+  },
+  "Christchurch": {
+    "summary": "Christchurch suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "International",
+    "region": "global"
+  },
+  "Malé": {
+    "summary": "Malé suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Maldives",
+    "region": "asia"
+  },
+  "Mauritius": {
+    "summary": "Mauritius suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Mauritius",
+    "region": "africa"
+  },
+  "São Paulo": {
+    "summary": "São Paulo suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Brazil",
+    "region": "south-america"
+  },
+  "Rio de Janeiro": {
+    "summary": "Rio de Janeiro suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Brazil",
+    "region": "south-america"
+  },
+  "Santiago": {
+    "summary": "Santiago suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Chile",
+    "region": "south-america"
+  },
+  "Buenos Aires": {
+    "summary": "Buenos Aires suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Argentina",
+    "region": "south-america"
+  },
+  "Lima": {
+    "summary": "Lima suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Peru",
+    "region": "south-america"
+  },
+  "Bogotá": {
+    "summary": "Bogotá suits premium travel where airport efficiency, route choice, hotel quality, and total arrival experience matter.",
+    "country": "Colombia",
+    "region": "south-america"
+  },
+  "Las Vegas": {
+    "summary": "Las Vegas is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Orlando": {
+    "summary": "Orlando is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Denver": {
+    "summary": "Denver is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "San Diego": {
+    "summary": "San Diego is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Philadelphia": {
+    "summary": "Philadelphia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "United States",
+    "region": "north-america"
+  },
+  "Vancouver": {
+    "summary": "Vancouver is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Canada",
+    "region": "north-america"
+  },
+  "Calgary": {
+    "summary": "Calgary is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Canada",
+    "region": "north-america"
+  },
+  "Cancun": {
+    "summary": "Cancun is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Mexico",
+    "region": "north-america"
+  },
+  "Monterrey": {
+    "summary": "Monterrey is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Mexico",
+    "region": "north-america"
+  },
+  "Guadalajara": {
+    "summary": "Guadalajara is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Mexico",
+    "region": "north-america"
+  },
+  "Porto": {
+    "summary": "Porto is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Portugal",
+    "region": "europe"
+  },
+  "Berlin": {
+    "summary": "Berlin is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Germany",
+    "region": "europe"
+  },
+  "Hamburg": {
+    "summary": "Hamburg is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Germany",
+    "region": "europe"
+  },
+  "Edinburgh": {
+    "summary": "Edinburgh is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "United Kingdom",
+    "region": "europe"
+  },
+  "Mykonos": {
+    "summary": "Mykonos is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Greece",
+    "region": "europe"
+  },
+  "Santorini": {
+    "summary": "Santorini is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Greece",
+    "region": "europe"
+  },
+  "Antalya": {
+    "summary": "Antalya is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Turkey",
+    "region": "europe"
+  },
+  "Nice": {
+    "summary": "Nice is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "France",
+    "region": "europe"
+  },
+  "Marseille": {
+    "summary": "Marseille is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "France",
+    "region": "europe"
+  },
+  "Naples": {
+    "summary": "Naples is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Italy",
+    "region": "europe"
+  },
+  "Florence": {
+    "summary": "Florence is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Italy",
+    "region": "europe"
+  },
+  "Palma de Mallorca": {
+    "summary": "Palma de Mallorca is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Spain",
+    "region": "europe"
+  },
+  "Malaga": {
+    "summary": "Malaga is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Spain",
+    "region": "europe"
+  },
+  "Valencia": {
+    "summary": "Valencia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Spain",
+    "region": "europe"
+  },
+  "Seville": {
+    "summary": "Seville is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Spain",
+    "region": "europe"
+  },
+  "Muscat": {
+    "summary": "Muscat is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Oman",
+    "region": "middle-east"
+  },
+  "Kuwait City": {
+    "summary": "Kuwait City is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Kuwait",
+    "region": "middle-east"
+  },
+  "Bahrain": {
+    "summary": "Bahrain is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Bahrain",
+    "region": "middle-east"
+  },
+  "Jerusalem": {
+    "summary": "Jerusalem is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Israel",
+    "region": "middle-east"
+  },
+  "Sharm El Sheikh": {
+    "summary": "Sharm El Sheikh is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Egypt",
+    "region": "middle-east"
+  },
+  "Kyoto": {
+    "summary": "Kyoto is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Japan",
+    "region": "asia"
+  },
+  "Sapporo": {
+    "summary": "Sapporo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Japan",
+    "region": "asia"
+  },
+  "Fukuoka": {
+    "summary": "Fukuoka is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Japan",
+    "region": "asia"
+  },
+  "Busan": {
+    "summary": "Busan is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "South Korea",
+    "region": "asia"
+  },
+  "Phuket": {
+    "summary": "Phuket is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Thailand",
+    "region": "asia"
+  },
+  "Chiang Mai": {
+    "summary": "Chiang Mai is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Thailand",
+    "region": "asia"
+  },
+  "Kaohsiung": {
+    "summary": "Kaohsiung is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Taiwan",
+    "region": "asia"
+  },
+  "Yogyakarta": {
+    "summary": "Yogyakarta is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Indonesia",
+    "region": "asia"
+  },
+  "Penang": {
+    "summary": "Penang is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Malaysia",
+    "region": "asia"
+  },
+  "Langkawi": {
+    "summary": "Langkawi is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Malaysia",
+    "region": "asia"
+  },
+  "Cebu": {
+    "summary": "Cebu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Philippines",
+    "region": "asia"
+  },
+  "Da Nang": {
+    "summary": "Da Nang is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Vietnam",
+    "region": "asia"
+  },
+  "Goa": {
+    "summary": "Goa is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "India",
+    "region": "asia"
+  },
+  "Kathmandu": {
+    "summary": "Kathmandu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Nepal",
+    "region": "asia"
+  },
+  "Colombo": {
+    "summary": "Colombo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Sri Lanka",
+    "region": "asia"
+  },
+  "Dhaka": {
+    "summary": "Dhaka is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Bangladesh",
+    "region": "asia"
+  },
+  "Chengdu": {
+    "summary": "Chengdu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "China",
+    "region": "asia"
+  },
+  "Queenstown": {
+    "summary": "Queenstown is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "New Zealand",
+    "region": "oceania"
+  },
+  "Wellington": {
+    "summary": "Wellington is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "New Zealand",
+    "region": "oceania"
+  },
+  "Durban": {
+    "summary": "Durban is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "South Africa",
+    "region": "africa"
+  },
+  "Agadir": {
+    "summary": "Agadir is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Morocco",
+    "region": "africa"
+  },
+  "Mombasa": {
+    "summary": "Mombasa is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Kenya",
+    "region": "africa"
+  },
+  "Zanzibar": {
+    "summary": "Zanzibar is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Tanzania",
+    "region": "africa"
+  },
+  "Dar es Salaam": {
+    "summary": "Dar es Salaam is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Tanzania",
+    "region": "africa"
+  },
+  "Accra": {
+    "summary": "Accra is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Ghana",
+    "region": "africa"
+  },
+  "Tunis": {
+    "summary": "Tunis is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Tunisia",
+    "region": "africa"
+  },
+  "Seychelles": {
+    "summary": "Seychelles is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Seychelles",
+    "region": "africa"
+  },
+  "Salvador": {
+    "summary": "Salvador is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Brazil",
+    "region": "south-america"
+  },
+  "Mendoza": {
+    "summary": "Mendoza is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Argentina",
+    "region": "south-america"
+  },
+  "Cusco": {
+    "summary": "Cusco is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Peru",
+    "region": "south-america"
+  },
+  "Medellin": {
+    "summary": "Medellin is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Colombia",
+    "region": "south-america"
+  },
+  "Cartagena": {
+    "summary": "Cartagena is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Colombia",
+    "region": "south-america"
+  },
+  "Quito": {
+    "summary": "Quito is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Ecuador",
+    "region": "south-america"
+  },
+  "Guayaquil": {
+    "summary": "Guayaquil is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Ecuador",
+    "region": "south-america"
+  },
+  "Montevideo": {
+    "summary": "Montevideo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Uruguay",
+    "region": "south-america"
+  },
+  "Nassau": {
+    "summary": "Nassau is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Bahamas",
+    "region": "caribbean"
+  },
+  "Punta Cana": {
+    "summary": "Punta Cana is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Dominican Republic",
+    "region": "caribbean"
+  },
+  "Santo Domingo": {
+    "summary": "Santo Domingo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Dominican Republic",
+    "region": "caribbean"
+  },
+  "San Juan": {
+    "summary": "San Juan is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Puerto Rico",
+    "region": "caribbean"
+  },
+  "Aruba": {
+    "summary": "Aruba is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Aruba",
+    "region": "caribbean"
+  },
+  "Curacao": {
+    "summary": "Curacao is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Curacao",
+    "region": "caribbean"
+  },
+  "Montego Bay": {
+    "summary": "Montego Bay is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Jamaica",
+    "region": "caribbean"
+  },
+  "Kingston": {
+    "summary": "Kingston is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Jamaica",
+    "region": "caribbean"
+  },
+  "Bridgetown": {
+    "summary": "Bridgetown is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Barbados",
+    "region": "caribbean"
+  },
+  "St Lucia": {
+    "summary": "St Lucia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "country": "Saint Lucia",
+    "region": "caribbean"
+  },
+  "Basel": {
+    "summary": "Basel works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "country": "Switzerland",
+    "region": "europe"
+  },
+  "Lausanne": {
+    "summary": "Lausanne works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "country": "Switzerland",
+    "region": "europe"
+  },
+  "Lyon": {
+    "summary": "Lyon works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "country": "France",
+    "region": "europe"
+  },
+  "Cannes": {
+    "summary": "Cannes works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "country": "France",
+    "region": "europe"
+  },
+  "Bordeaux": {
+    "summary": "Bordeaux works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "country": "France",
+    "region": "europe"
+  }
+}

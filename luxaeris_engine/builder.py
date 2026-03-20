@@ -64,7 +64,36 @@ class LuxAerisBuilder:
             f'<a class="visual-card" href="/{rel_dir}/{i["slug"]}.html"><img src="{i["img"]}" alt="{i["name"]}"><div class="visual-card-body"><h3>{i["name"]}</h3><p>{i["desc"]}</p></div></a>'
             for i in items[:300]
         ])
-        html = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{title} | {self.config["site_name"]}</title><meta name="description" content="{description}"><link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head><body><div class="topbar"><div class="container topbar-inner"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div><header class="site-header"><div class="container nav"><a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">{self.config["site_name"]}</div><div class="brand-tag">{self.config["brand_tagline"]}</div></div></a><nav class="nav-links"><a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/tools/index.html">Tools</a><a href="/search.html">Search</a><a class="btn btn-primary" href="/request.html">Request Quote</a></nav></div></header><a class="btn btn-primary floating-request" href="/request.html">Request Quote</a><section class="section" style="padding-top:120px"><div class="container"><p class="kicker">Explore</p><h1 class="section-title">{title}</h1><p class="section-intro">{description}</p><div class="index-visual-grid">{cards}</div></div></section></body></html>'''
+        html = f"""<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+<meta charset=\"UTF-8\">
+<meta http-equiv=\"content-language\" content=\"en\">
+<meta name=\"language\" content=\"English\">
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+<title>{title} | {self.config['site_name']}</title>
+<meta name=\"description\" content=\"{description}\">
+<meta name=\"robots\" content=\"index, follow\">
+<link rel=\"canonical\" href=\"{canonical(self.config['site_url'], rel_dir + '/index.html')}\">
+<meta property=\"og:title\" content=\"{title} | {self.config['site_name']}\">
+<meta property=\"og:description\" content=\"{description}\">
+<meta property=\"og:type\" content=\"website\">
+<meta property=\"og:url\" content=\"{canonical(self.config['site_url'], rel_dir + '/index.html')}\">
+<meta property=\"og:image\" content=\"{canonical(self.config['site_url'], items[0]['img'] if items else self.config['default_image'])}\">
+<meta name=\"twitter:card\" content=\"summary_large_image\">
+<meta name=\"twitter:title\" content=\"{title} | {self.config['site_name']}\">
+<meta name=\"twitter:description\" content=\"{description}\">
+<meta name=\"twitter:image\" content=\"{canonical(self.config['site_url'], items[0]['img'] if items else self.config['default_image'])}\">
+<link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/images/favicon.svg\">
+<link rel=\"stylesheet\" href=\"/assets/site.css\">
+<script defer src=\"/assets/site.js\"></script>
+</head>
+<body>
+<div class=\"topbar\"><div class=\"container topbar-inner\"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
+<header class=\"site-header\"><div class=\"container nav\"><a class=\"logo-wrap\" href=\"/index.html\"><img class=\"logo-img\" src=\"/assets/images/logo-header.png\" alt=\"LuxAeris shield logo\"><div><div class=\"brand-name\">{self.config['site_name']}</div><div class=\"brand-tag\">{self.config['brand_tagline']}</div></div></a><nav class=\"nav-links\"><a href=\"/index.html\">Home</a><a href=\"/destinations/index.html\">Destinations</a><a href=\"/airlines/index.html\">Airlines</a><a href=\"/airports/index.html\">Airports</a><a href=\"/routes/index.html\">Routes</a><a href=\"/tools/index.html\">Tools</a><a href=\"/search.html\">Search</a><a class=\"btn btn-primary\" href=\"/request.html\">Request Quote</a></nav></div></header>
+<a class=\"btn btn-primary floating-request\" href=\"/request.html\">Request Quote</a>
+<section class=\"section\" style=\"padding-top:120px\"><div class=\"container\"><p class=\"kicker\">Explore</p><h1 class=\"section-title\">{title}</h1><p class=\"section-intro\">{description}</p><div class=\"index-visual-grid\">{cards}</div></div></section>
+</body></html>"""
         p = self.output_root / rel_dir / "index.html"
         ensure_dir(p.parent); p.write_text(html, encoding="utf-8")
 
@@ -144,7 +173,55 @@ class LuxAerisBuilder:
             write_page(self.output_root, f"destinations/{region}/{country_slug}/{slug}/index.html", ctx)
         self.build_destination_hierarchy()
 
+
+    def build_route_hierarchy(self):
+        by_region = defaultdict(list)
+        by_country = defaultdict(list)
+        dest_map = {d["destination_slug"]: d for d in self.destinations}
+        for r in self.routes:
+            ds = r.get("destination_city_slug")
+            d = dest_map.get(ds, {})
+            region = d.get("region_cluster","global")
+            country = d.get("country","International")
+            by_region[region].append(r)
+            by_country[(region,country)].append(r)
+
+        cards = []
+        for region, items in sorted(by_region.items()):
+            img = self.config["default_image"]
+            if items:
+                ds = items[0].get("destination_city_slug")
+                d = dest_map.get(ds,{})
+                img = d.get("featured_image", img)
+            cards.append({"slug": region, "name": slug_to_title(region), "img": img, "desc": f"Browse premium routes into {slug_to_title(region)} by country and city."})
+        self.build_index("routes", cards, "Routes by Continent", "Browse routes by continent, then country, then city to reduce scrolling and improve navigation.")
+
+        for region, items in by_region.items():
+            by_country_local = defaultdict(list)
+            for r in items:
+                ds = r.get("destination_city_slug")
+                d = dest_map.get(ds, {})
+                by_country_local[d.get("country","International")].append(r)
+            country_cards = []
+            for country, arr in sorted(by_country_local.items()):
+                img = dest_map.get(arr[0].get("destination_city_slug"), {}).get("featured_image", self.config["default_image"])
+                country_cards.append({"slug": country.lower().replace(" ","-"), "name": country, "img": img, "desc": f"Browse routes for {country}."})
+            self.build_index(f"routes/{region}", country_cards, f"{slug_to_title(region)} Routes", f"Browse premium routes in {slug_to_title(region)} by country.")
+            for country, arr in by_country_local.items():
+                country_slug = country.lower().replace(" ","-")
+                city_cards = []
+                seen = set()
+                for r in arr:
+                    ds = r.get("destination_city_slug")
+                    if ds in seen: 
+                        continue
+                    seen.add(ds)
+                    d = dest_map.get(ds,{})
+                    city_cards.append({"slug": ds, "name": d.get("display_name", slug_to_title(ds)), "img": d.get("featured_image", self.config["default_image"]), "desc": f"Open route guides for {d.get('display_name', slug_to_title(ds))}."})
+                self.build_index(f"routes/{region}/{country_slug}", city_cards, f"{country} Route Cities", f"Browse route cities in {country}.")
+
     def build_routes(self):
+        dest_map = {d["destination_slug"]: d for d in self.destinations}
         items = []
         for r in self.routes:
             slug = r["route_slug"]
@@ -165,7 +242,7 @@ class LuxAerisBuilder:
                 {"title": "Airport quality", "text": "Premium airport flow changes the full journey."},
                 {"title": "Request-ready route", "text": "Once the route looks right, move directly into the quote form."},
             ]
-            write_page(self.output_root, f"routes/{slug}.html", self.ctx(
+            ctx = self.ctx(
                 f"{origin} to {dest} {cabin} | {self.config['site_name']}",
                 f"Explore premium flights from {origin} to {dest}, with airport, route, and cabin context built for luxury travel.",
                 f"routes/{slug}.html",
@@ -173,9 +250,14 @@ class LuxAerisBuilder:
                 r.get("route_summary",""),
                 r.get("featured_image", self.config["default_image"]),
                 sections, related, page_type="route", kicker="Route guide", highlight_cards=cards
-            ))
+            )
+            write_page(self.output_root, f"routes/{slug}.html", ctx)
+            dmeta = dest_map.get(r.get("destination_city_slug"), {}) if "dest_map" in locals() else {}
+            region = dmeta.get("region_cluster","global")
+            country_slug = dmeta.get("country","International").lower().replace(" ","-")
+            write_page(self.output_root, f"routes/{region}/{country_slug}/{r.get('destination_city_slug', 'city')}/{slug}.html", ctx)
             items.append({"slug": slug, "name": f"{origin} → {dest}", "img": r.get("featured_image", self.config["default_image"]), "desc": r.get("route_summary","")[:150]})
-        self.build_index("routes", items, "Premium Route Guides", "Explore premium route guides with stronger airport, timing, and cabin context.")
+        self.build_route_hierarchy()
 
     def build_airports(self):
         for a in self.airports:
