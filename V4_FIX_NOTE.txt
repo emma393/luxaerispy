@@ -1,0 +1,8 @@
+
+This version fixes:
+1. tab logo/favicon restored with favicon.svg
+2. homepage video path aligned to the actual repo and also copied to /assets/videos/hero-plane-window.mp4
+3. request page rebuilt and homepage dates/prefill preserved
+4. airline pages no longer use the website logo as their featured image
+5. airlines grouped by alliances -> airlines
+6. meta expanded on static homepage/request and generator pages continue to emit title/description/canonical/og/twitter tags

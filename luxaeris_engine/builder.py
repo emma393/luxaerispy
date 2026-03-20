@@ -206,6 +206,24 @@ class LuxAerisBuilder:
             write_page(self.output_root, f"airports/{region}/{country_slug}/{slug}/index.html", ctx)
         self.build_airport_hierarchy()
 
+
+    def build_airline_hierarchy(self):
+        alliances = defaultdict(list)
+        for a in self.airlines:
+            alliances[a.get("alliance", "Independent")].append(a)
+
+        cards = []
+        for alliance, items in sorted(alliances.items()):
+            cards.append({"slug": alliance.lower().replace(" ","-"), "name": alliance, "img": items[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(items)} premium airlines in {alliance}."})
+        self.build_index("airlines", cards, "Airlines by Alliance", "Browse airlines by alliance, then open each airline guide.")
+
+        for alliance, items in alliances.items():
+            alliance_slug = alliance.lower().replace(" ","-")
+            airline_cards = []
+            for a in items:
+                airline_cards.append({"slug": a["airline_slug"], "name": a["airline_name"], "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]})
+            self.build_index(f"airlines/{alliance_slug}", airline_cards, f"{alliance} Airlines", f"Explore premium airlines in {alliance}.")
+
     def build_airlines(self):
         items = []
         for a in self.airlines:
@@ -222,7 +240,7 @@ class LuxAerisBuilder:
                 sections, related, kicker="Airline"
             ))
             items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]})
-        self.build_index("airlines", items, "Airlines", "Browse premium airlines, their route fit, and aircraft context.")
+        self.build_airline_hierarchy()
 
     def build_aircraft(self):
         items = []

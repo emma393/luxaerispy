@@ -2,6 +2,6 @@
   "site_name": "LuxAeris",
   "site_url": "https://luxaeris.com",
   "brand_tagline": "Private fares. Premium journeys.",
-  "default_image": "/assets/images/logo-header.png",
+  "default_image": "/assets/generated/dest-dubai.svg",
   "request_quote_url": "/request.html"
 }

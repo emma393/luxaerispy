@@ -2,148 +2,163 @@
   {
     "airline_slug": "emirates-business-class",
     "airline_name": "Emirates Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-emirates-business-class.svg",
     "premium_summary": "Emirates Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a380-business-class",
       "boeing-777-business-class"
-    ]
+    ],
+    "alliance": "Independent"
   },
   {
     "airline_slug": "british-airways-business-class",
     "airline_name": "British Airways Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-british-airways-business-class.svg",
     "premium_summary": "British Airways Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "airbus-a350-business-class"
-    ]
+    ],
+    "alliance": "Oneworld"
   },
   {
     "airline_slug": "qatar-airways-business-class",
     "airline_name": "Qatar Airways Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-qatar-airways-business-class.svg",
     "premium_summary": "Qatar Airways Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "airbus-a350-business-class"
-    ]
+    ],
+    "alliance": "Oneworld"
   },
   {
     "airline_slug": "singapore-airlines-business-class",
     "airline_name": "Singapore Airlines Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-singapore-airlines-business-class.svg",
     "premium_summary": "Singapore Airlines Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "airbus-a350-business-class"
-    ]
+    ],
+    "alliance": "Star Alliance"
   },
   {
     "airline_slug": "delta-one",
     "airline_name": "Delta One",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-delta-one.svg",
     "premium_summary": "Delta One should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a350-business-class",
       "airbus-a330-business-class"
-    ]
+    ],
+    "alliance": "SkyTeam"
   },
   {
     "airline_slug": "virgin-atlantic-upper-class",
     "airline_name": "Virgin Atlantic Upper Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-virgin-atlantic-upper-class.svg",
     "premium_summary": "Virgin Atlantic Upper Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a350-business-class"
-    ]
+    ],
+    "alliance": "SkyTeam"
   },
   {
     "airline_slug": "ana-business-class",
     "airline_name": "ANA Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-ana-business-class.svg",
     "premium_summary": "ANA Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "boeing-787-business-class"
-    ]
+    ],
+    "alliance": "Star Alliance"
   },
   {
     "airline_slug": "japan-airlines-business-class",
     "airline_name": "Japan Airlines Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-japan-airlines-business-class.svg",
     "premium_summary": "Japan Airlines Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a350-business-class",
       "boeing-787-business-class"
-    ]
+    ],
+    "alliance": "Independent"
   },
   {
     "airline_slug": "ita-airways-business-class",
     "airline_name": "ITA Airways Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-ita-airways-business-class.svg",
     "premium_summary": "ITA Airways Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a330-business-class"
-    ]
+    ],
+    "alliance": "SkyTeam"
   },
   {
     "airline_slug": "iberia-business-class",
     "airline_name": "Iberia Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-iberia-business-class.svg",
     "premium_summary": "Iberia Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a350-business-class"
-    ]
+    ],
+    "alliance": "Independent"
   },
   {
     "airline_slug": "air-france-business-class",
     "airline_name": "Air France Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-air-france-business-class.svg",
     "premium_summary": "Air France Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "airbus-a350-business-class"
-    ]
+    ],
+    "alliance": "SkyTeam"
   },
   {
     "airline_slug": "lufthansa-business-class",
     "airline_name": "Lufthansa Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-lufthansa-business-class.svg",
     "premium_summary": "Lufthansa Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "airbus-a350-business-class",
       "boeing-787-business-class"
-    ]
+    ],
+    "alliance": "Star Alliance"
   },
   {
     "airline_slug": "swiss-business-class",
     "airline_name": "SWISS Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-swiss-business-class.svg",
     "premium_summary": "SWISS Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "airbus-a330-business-class"
-    ]
+    ],
+    "alliance": "Star Alliance"
   },
   {
     "airline_slug": "turkish-airlines-business-class",
     "airline_name": "Turkish Airlines Business Class",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-turkish-airlines-business-class.svg",
     "premium_summary": "Turkish Airlines Business Class should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "boeing-787-business-class"
-    ]
+    ],
+    "alliance": "Star Alliance"
   },
   {
     "airline_slug": "united-polaris",
     "airline_name": "United Polaris",
-    "featured_image": "/assets/images/logo-header.png",
+    "featured_image": "/assets/generated/airline-united-polaris.svg",
     "premium_summary": "United Polaris should be judged by seat privacy, airport fit, lounge quality, route strength, and the total feel of a long-haul premium journey instead of marketing alone.",
     "related_aircraft_slugs": [
       "boeing-777-business-class",
       "boeing-787-business-class"
-    ]
+    ],
+    "alliance": "Star Alliance"
   }
 ]
