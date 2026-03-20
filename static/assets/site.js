@@ -42,7 +42,6 @@ function buildRequestURL(form){
 function bindTripSwitchers(){
   document.querySelectorAll('[data-trip-switcher]').forEach(host=>{
     const tabs = host.querySelectorAll('.trip-tab');
-    const form = host.querySelector('[data-flight-search], #quoteRequestForm');
     const multi = host.querySelector('.multi-city-shell');
     const returnField = host.querySelector('[name="returnDate"]');
     function apply(type){
@@ -109,13 +108,24 @@ function bindQuoteForm(){
 function initHeroVideo(){
   const video = document.getElementById('heroVideo');
   if(!video) return;
-  const tryPlay = () => { const p = video.play(); if(p && p.catch) p.catch(()=>{}); };
-  video.muted = true;
-  video.loop = true;
-  video.playsInline = true;
+  const tryPlay = () => {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.playsInline = true;
+    const p = video.play();
+    if(p && p.catch) p.catch(()=>{});
+  };
   tryPlay();
-  video.addEventListener('canplay', tryPlay);
-  video.addEventListener('loadeddata', tryPlay);
+  ['canplay','loadeddata','loadedmetadata','playing','ended'].forEach(ev=>{
+    video.addEventListener(ev, ()=> {
+      if(ev === 'ended'){ video.currentTime = 0; }
+      tryPlay();
+    });
+  });
+  document.addEventListener('visibilitychange', ()=> {
+    if(!document.hidden) tryPlay();
+  });
 }
 function initCookieBanner(){
   const banner = document.getElementById('cookieBanner');
@@ -127,13 +137,78 @@ function initCookieBanner(){
   document.getElementById('cookieAccept')?.addEventListener('click',()=>{ try{localStorage.setItem(key,'accepted')}catch(err){} banner.style.display='none'; });
   document.getElementById('cookieReject')?.addEventListener('click',()=>{ try{localStorage.setItem(key,'rejected')}catch(err){} banner.style.display='none'; });
 }
+function formatUSDate(iso){
+  if(!iso) return '';
+  const p = iso.split('-');
+  if(p.length !== 3) return '';
+  return `${p[1]}.${p[2]}.${p[0]}`;
+}
+function parseUSDate(text){
+  const m = (text || '').trim().match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+  if(!m) return '';
+  return `${m[3]}-${m[1].padStart(2,'0')}-${m[2].padStart(2,'0')}`;
+}
+function enhanceDateInputs(){
+  document.querySelectorAll('input[type="date"]').forEach(native => {
+    if(native.dataset.enhanced === '1') return;
+    native.dataset.enhanced = '1';
+    const wrapper = document.createElement('div');
+    wrapper.style.position = 'relative';
+    native.parentNode.insertBefore(wrapper, native);
+    wrapper.appendChild(native);
+    const visible = document.createElement('input');
+    visible.type = 'text';
+    visible.placeholder = 'mm.dd.yyyy';
+    visible.value = formatUSDate(native.value);
+    visible.style.width = '100%';
+    visible.style.minHeight = getComputedStyle(native).minHeight || '56px';
+    visible.style.border = getComputedStyle(native).border;
+    visible.style.borderRadius = getComputedStyle(native).borderRadius;
+    visible.style.padding = getComputedStyle(native).padding;
+    visible.style.background = getComputedStyle(native).background;
+    visible.style.color = getComputedStyle(native).color;
+    wrapper.insertBefore(visible, native);
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.innerHTML = '📅';
+    btn.setAttribute('aria-label','Open calendar');
+    btn.style.position = 'absolute';
+    btn.style.right = '12px';
+    btn.style.top = '50%';
+    btn.style.transform = 'translateY(-50%)';
+    btn.style.border = '0';
+    btn.style.background = 'transparent';
+    btn.style.cursor = 'pointer';
+    wrapper.appendChild(btn);
+    native.style.position = 'absolute';
+    native.style.inset = '0';
+    native.style.opacity = '0';
+    native.style.pointerEvents = 'none';
+    const openPicker = () => {
+      if(typeof native.showPicker === 'function') native.showPicker();
+      else native.focus();
+    };
+    btn.addEventListener('click', openPicker);
+    visible.addEventListener('focus', openPicker);
+    visible.addEventListener('click', openPicker);
+    native.addEventListener('change', () => { visible.value = formatUSDate(native.value); });
+    visible.addEventListener('input', () => {
+      const parsed = parseUSDate(visible.value);
+      if(parsed) native.value = parsed;
+    });
+    visible.addEventListener('blur', ()=> {
+      visible.value = formatUSDate(native.value) || visible.value;
+    });
+  });
+}
 document.addEventListener('DOMContentLoaded', async ()=>{
   await loadAirports();
   bindTripSwitchers();
   bindSearchForms();
   prefillRequestForm();
   bindQuoteForm();
+  enhanceDateInputs();
   initHeroVideo();
   initCookieBanner();
 });
-window.addEventListener('load', ()=> initHeroVideo());
+window.addEventListener('load', ()=> { initHeroVideo(); enhanceDateInputs(); });

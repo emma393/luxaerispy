@@ -6062,5 +6062,725 @@
     ],
     "region_cluster": "south-america",
     "country": "Colombia"
+  },
+  {
+    "destination_slug": "las-vegas",
+    "display_name": "Las Vegas",
+    "country": "United States",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-las-vegas.svg",
+    "luxury_summary": "Las Vegas is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "orlando",
+    "display_name": "Orlando",
+    "country": "United States",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-orlando.svg",
+    "luxury_summary": "Orlando is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "denver",
+    "display_name": "Denver",
+    "country": "United States",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-denver.svg",
+    "luxury_summary": "Denver is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "san-diego",
+    "display_name": "San Diego",
+    "country": "United States",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-san-diego.svg",
+    "luxury_summary": "San Diego is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "philadelphia",
+    "display_name": "Philadelphia",
+    "country": "United States",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-philadelphia.svg",
+    "luxury_summary": "Philadelphia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "vancouver",
+    "display_name": "Vancouver",
+    "country": "Canada",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-vancouver.svg",
+    "luxury_summary": "Vancouver is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "calgary",
+    "display_name": "Calgary",
+    "country": "Canada",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-calgary.svg",
+    "luxury_summary": "Calgary is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "cancun",
+    "display_name": "Cancun",
+    "country": "Mexico",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-cancun.svg",
+    "luxury_summary": "Cancun is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "monterrey",
+    "display_name": "Monterrey",
+    "country": "Mexico",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-monterrey.svg",
+    "luxury_summary": "Monterrey is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "guadalajara",
+    "display_name": "Guadalajara",
+    "country": "Mexico",
+    "region_cluster": "north-america",
+    "featured_image": "/assets/generated/dest-guadalajara.svg",
+    "luxury_summary": "Guadalajara is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "porto",
+    "display_name": "Porto",
+    "country": "Portugal",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-porto.svg",
+    "luxury_summary": "Porto is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "berlin",
+    "display_name": "Berlin",
+    "country": "Germany",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-berlin.svg",
+    "luxury_summary": "Berlin is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "hamburg",
+    "display_name": "Hamburg",
+    "country": "Germany",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-hamburg.svg",
+    "luxury_summary": "Hamburg is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "edinburgh",
+    "display_name": "Edinburgh",
+    "country": "United Kingdom",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-edinburgh.svg",
+    "luxury_summary": "Edinburgh is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "mykonos",
+    "display_name": "Mykonos",
+    "country": "Greece",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-mykonos.svg",
+    "luxury_summary": "Mykonos is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "santorini",
+    "display_name": "Santorini",
+    "country": "Greece",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-santorini.svg",
+    "luxury_summary": "Santorini is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "antalya",
+    "display_name": "Antalya",
+    "country": "Turkey",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-antalya.svg",
+    "luxury_summary": "Antalya is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "nice",
+    "display_name": "Nice",
+    "country": "France",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-nice.svg",
+    "luxury_summary": "Nice is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "marseille",
+    "display_name": "Marseille",
+    "country": "France",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-marseille.svg",
+    "luxury_summary": "Marseille is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "naples",
+    "display_name": "Naples",
+    "country": "Italy",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-naples.svg",
+    "luxury_summary": "Naples is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "florence",
+    "display_name": "Florence",
+    "country": "Italy",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-florence.svg",
+    "luxury_summary": "Florence is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "palma-de-mallorca",
+    "display_name": "Palma de Mallorca",
+    "country": "Spain",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-palma-de-mallorca.svg",
+    "luxury_summary": "Palma de Mallorca is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "malaga",
+    "display_name": "Malaga",
+    "country": "Spain",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-malaga.svg",
+    "luxury_summary": "Malaga is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "valencia",
+    "display_name": "Valencia",
+    "country": "Spain",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-valencia.svg",
+    "luxury_summary": "Valencia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "seville",
+    "display_name": "Seville",
+    "country": "Spain",
+    "region_cluster": "europe",
+    "featured_image": "/assets/generated/dest-seville.svg",
+    "luxury_summary": "Seville is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "muscat",
+    "display_name": "Muscat",
+    "country": "Oman",
+    "region_cluster": "middle-east",
+    "featured_image": "/assets/generated/dest-muscat.svg",
+    "luxury_summary": "Muscat is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "kuwait-city",
+    "display_name": "Kuwait City",
+    "country": "Kuwait",
+    "region_cluster": "middle-east",
+    "featured_image": "/assets/generated/dest-kuwait-city.svg",
+    "luxury_summary": "Kuwait City is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "bahrain",
+    "display_name": "Bahrain",
+    "country": "Bahrain",
+    "region_cluster": "middle-east",
+    "featured_image": "/assets/generated/dest-bahrain.svg",
+    "luxury_summary": "Bahrain is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "jerusalem",
+    "display_name": "Jerusalem",
+    "country": "Israel",
+    "region_cluster": "middle-east",
+    "featured_image": "/assets/generated/dest-jerusalem.svg",
+    "luxury_summary": "Jerusalem is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "sharm-el-sheikh",
+    "display_name": "Sharm El Sheikh",
+    "country": "Egypt",
+    "region_cluster": "middle-east",
+    "featured_image": "/assets/generated/dest-sharm-el-sheikh.svg",
+    "luxury_summary": "Sharm El Sheikh is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "kyoto",
+    "display_name": "Kyoto",
+    "country": "Japan",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-kyoto.svg",
+    "luxury_summary": "Kyoto is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "sapporo",
+    "display_name": "Sapporo",
+    "country": "Japan",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-sapporo.svg",
+    "luxury_summary": "Sapporo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "fukuoka",
+    "display_name": "Fukuoka",
+    "country": "Japan",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-fukuoka.svg",
+    "luxury_summary": "Fukuoka is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "busan",
+    "display_name": "Busan",
+    "country": "South Korea",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-busan.svg",
+    "luxury_summary": "Busan is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "phuket",
+    "display_name": "Phuket",
+    "country": "Thailand",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-phuket.svg",
+    "luxury_summary": "Phuket is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "chiang-mai",
+    "display_name": "Chiang Mai",
+    "country": "Thailand",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-chiang-mai.svg",
+    "luxury_summary": "Chiang Mai is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "kaohsiung",
+    "display_name": "Kaohsiung",
+    "country": "Taiwan",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-kaohsiung.svg",
+    "luxury_summary": "Kaohsiung is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "yogyakarta",
+    "display_name": "Yogyakarta",
+    "country": "Indonesia",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-yogyakarta.svg",
+    "luxury_summary": "Yogyakarta is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "penang",
+    "display_name": "Penang",
+    "country": "Malaysia",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-penang.svg",
+    "luxury_summary": "Penang is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "langkawi",
+    "display_name": "Langkawi",
+    "country": "Malaysia",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-langkawi.svg",
+    "luxury_summary": "Langkawi is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "cebu",
+    "display_name": "Cebu",
+    "country": "Philippines",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-cebu.svg",
+    "luxury_summary": "Cebu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "da-nang",
+    "display_name": "Da Nang",
+    "country": "Vietnam",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-da-nang.svg",
+    "luxury_summary": "Da Nang is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "goa",
+    "display_name": "Goa",
+    "country": "India",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-goa.svg",
+    "luxury_summary": "Goa is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "kathmandu",
+    "display_name": "Kathmandu",
+    "country": "Nepal",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-kathmandu.svg",
+    "luxury_summary": "Kathmandu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "colombo",
+    "display_name": "Colombo",
+    "country": "Sri Lanka",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-colombo.svg",
+    "luxury_summary": "Colombo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "dhaka",
+    "display_name": "Dhaka",
+    "country": "Bangladesh",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-dhaka.svg",
+    "luxury_summary": "Dhaka is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "chengdu",
+    "display_name": "Chengdu",
+    "country": "China",
+    "region_cluster": "asia",
+    "featured_image": "/assets/generated/dest-chengdu.svg",
+    "luxury_summary": "Chengdu is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "queenstown",
+    "display_name": "Queenstown",
+    "country": "New Zealand",
+    "region_cluster": "oceania",
+    "featured_image": "/assets/generated/dest-queenstown.svg",
+    "luxury_summary": "Queenstown is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "wellington",
+    "display_name": "Wellington",
+    "country": "New Zealand",
+    "region_cluster": "oceania",
+    "featured_image": "/assets/generated/dest-wellington.svg",
+    "luxury_summary": "Wellington is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "durban",
+    "display_name": "Durban",
+    "country": "South Africa",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-durban.svg",
+    "luxury_summary": "Durban is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "agadir",
+    "display_name": "Agadir",
+    "country": "Morocco",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-agadir.svg",
+    "luxury_summary": "Agadir is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "mombasa",
+    "display_name": "Mombasa",
+    "country": "Kenya",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-mombasa.svg",
+    "luxury_summary": "Mombasa is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "zanzibar",
+    "display_name": "Zanzibar",
+    "country": "Tanzania",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-zanzibar.svg",
+    "luxury_summary": "Zanzibar is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "dar-es-salaam",
+    "display_name": "Dar es Salaam",
+    "country": "Tanzania",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-dar-es-salaam.svg",
+    "luxury_summary": "Dar es Salaam is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "accra",
+    "display_name": "Accra",
+    "country": "Ghana",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-accra.svg",
+    "luxury_summary": "Accra is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "tunis",
+    "display_name": "Tunis",
+    "country": "Tunisia",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-tunis.svg",
+    "luxury_summary": "Tunis is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "seychelles",
+    "display_name": "Seychelles",
+    "country": "Seychelles",
+    "region_cluster": "africa",
+    "featured_image": "/assets/generated/dest-seychelles.svg",
+    "luxury_summary": "Seychelles is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "salvador",
+    "display_name": "Salvador",
+    "country": "Brazil",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-salvador.svg",
+    "luxury_summary": "Salvador is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "mendoza",
+    "display_name": "Mendoza",
+    "country": "Argentina",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-mendoza.svg",
+    "luxury_summary": "Mendoza is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "cusco",
+    "display_name": "Cusco",
+    "country": "Peru",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-cusco.svg",
+    "luxury_summary": "Cusco is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "medellin",
+    "display_name": "Medellin",
+    "country": "Colombia",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-medellin.svg",
+    "luxury_summary": "Medellin is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "cartagena",
+    "display_name": "Cartagena",
+    "country": "Colombia",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-cartagena.svg",
+    "luxury_summary": "Cartagena is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "quito",
+    "display_name": "Quito",
+    "country": "Ecuador",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-quito.svg",
+    "luxury_summary": "Quito is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "guayaquil",
+    "display_name": "Guayaquil",
+    "country": "Ecuador",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-guayaquil.svg",
+    "luxury_summary": "Guayaquil is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "montevideo",
+    "display_name": "Montevideo",
+    "country": "Uruguay",
+    "region_cluster": "south-america",
+    "featured_image": "/assets/generated/dest-montevideo.svg",
+    "luxury_summary": "Montevideo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "nassau",
+    "display_name": "Nassau",
+    "country": "Bahamas",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-nassau.svg",
+    "luxury_summary": "Nassau is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "punta-cana",
+    "display_name": "Punta Cana",
+    "country": "Dominican Republic",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-punta-cana.svg",
+    "luxury_summary": "Punta Cana is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "santo-domingo",
+    "display_name": "Santo Domingo",
+    "country": "Dominican Republic",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-santo-domingo.svg",
+    "luxury_summary": "Santo Domingo is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "san-juan",
+    "display_name": "San Juan",
+    "country": "Puerto Rico",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-san-juan.svg",
+    "luxury_summary": "San Juan is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "aruba",
+    "display_name": "Aruba",
+    "country": "Aruba",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-aruba.svg",
+    "luxury_summary": "Aruba is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "curacao",
+    "display_name": "Curacao",
+    "country": "Curacao",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-curacao.svg",
+    "luxury_summary": "Curacao is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "montego-bay",
+    "display_name": "Montego Bay",
+    "country": "Jamaica",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-montego-bay.svg",
+    "luxury_summary": "Montego Bay is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "kingston",
+    "display_name": "Kingston",
+    "country": "Jamaica",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-kingston.svg",
+    "luxury_summary": "Kingston is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "bridgetown",
+    "display_name": "Bridgetown",
+    "country": "Barbados",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-bridgetown.svg",
+    "luxury_summary": "Bridgetown is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "st-lucia",
+    "display_name": "St Lucia",
+    "country": "Saint Lucia",
+    "region_cluster": "caribbean",
+    "featured_image": "/assets/generated/dest-st-lucia.svg",
+    "luxury_summary": "St Lucia is a premium travel destination that benefits from route planning focused on cabin comfort, airport flow, and the overall quality of arrival.",
+    "route_slugs": []
+  },
+  {
+    "destination_slug": "basel",
+    "display_name": "Basel",
+    "featured_image": "/assets/generated/dest-basel.svg",
+    "luxury_summary": "Basel works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "route_slugs": [],
+    "country": "Switzerland",
+    "region_cluster": "europe"
+  },
+  {
+    "destination_slug": "lausanne",
+    "display_name": "Lausanne",
+    "featured_image": "/assets/generated/dest-lausanne.svg",
+    "luxury_summary": "Lausanne works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "route_slugs": [],
+    "country": "Switzerland",
+    "region_cluster": "europe"
+  },
+  {
+    "destination_slug": "lyon",
+    "display_name": "Lyon",
+    "featured_image": "/assets/generated/dest-lyon.svg",
+    "luxury_summary": "Lyon works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "route_slugs": [],
+    "country": "France",
+    "region_cluster": "europe"
+  },
+  {
+    "destination_slug": "cannes",
+    "display_name": "Cannes",
+    "featured_image": "/assets/generated/dest-cannes.svg",
+    "luxury_summary": "Cannes works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "route_slugs": [],
+    "country": "France",
+    "region_cluster": "europe"
+  },
+  {
+    "destination_slug": "bordeaux",
+    "display_name": "Bordeaux",
+    "featured_image": "/assets/generated/dest-bordeaux.svg",
+    "luxury_summary": "Bordeaux works well for premium travel with better route planning, airport flow, and total arrival quality.",
+    "route_slugs": [],
+    "country": "France",
+    "region_cluster": "europe"
   }
 ]

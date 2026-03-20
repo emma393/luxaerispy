@@ -70,40 +70,47 @@ class LuxAerisBuilder:
 
     def build_destination_hierarchy(self):
         regions = defaultdict(list)
-        countries = defaultdict(list)
         for d in self.destinations:
-            region = d.get("region_cluster","global")
-            country = d.get("country","International")
-            regions[region].append(d)
-            countries[(region, country)].append(d)
-
-        # main destinations page -> continents
+            regions[d.get("region_cluster","global")].append(d)
         cards = []
         for region, items in sorted(regions.items()):
             cards.append({"slug": region, "name": slug_to_title(region), "img": items[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(items)} premium destinations in {slug_to_title(region)}."})
         self.build_index("destinations", cards, "Destinations by Continent", "Browse destinations by continent, then country, then city for a cleaner premium travel structure.")
-
-        # continent pages -> countries
         for region, items in regions.items():
-            country_cards = []
             by_country = defaultdict(list)
-            for d in items:
-                by_country[d.get("country","International")].append(d)
+            for d in items: by_country[d.get("country","International")].append(d)
+            country_cards = []
             for country, arr in sorted(by_country.items()):
                 country_slug = country.lower().replace(" ","-")
                 country_cards.append({"slug": country_slug, "name": country, "img": arr[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(arr)} premium destinations in {country}."})
             self.build_index(f"destinations/{region}", country_cards, f"{slug_to_title(region)} Destinations", f"Explore premium destinations across {slug_to_title(region)} by country.")
-
-            # country pages -> cities
             for country, arr in by_country.items():
                 country_slug = country.lower().replace(" ","-")
-                city_cards = []
-                for d in arr:
-                    city_cards.append({"slug": d["destination_slug"], "name": d["display_name"], "img": d.get("featured_image", self.config["default_image"]), "desc": d.get("luxury_summary","")[:150]})
+                city_cards = [{"slug": d["destination_slug"], "name": d["display_name"], "img": d.get("featured_image", self.config["default_image"]), "desc": d.get("luxury_summary","")[:150]} for d in arr]
                 self.build_index(f"destinations/{region}/{country_slug}", city_cards, f"{country} Destinations", f"Explore premium destinations in {country}, then open city guides for routes, airports, and premium planning.")
 
+    def build_airport_hierarchy(self):
+        regions = defaultdict(list)
+        for a in self.airports:
+            regions[a.get("region_cluster","global")].append(a)
+        cards = []
+        for region, items in sorted(regions.items()):
+            cards.append({"slug": region, "name": slug_to_title(region), "img": items[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(items)} premium airports in {slug_to_title(region)}."})
+        self.build_index("airports", cards, "Airports by Continent", "Browse airports by continent, then country, then airport for a clearer premium travel structure.")
+        for region, items in regions.items():
+            by_country = defaultdict(list)
+            for a in items: by_country[a.get("country_name","International")].append(a)
+            country_cards = []
+            for country, arr in sorted(by_country.items()):
+                country_slug = country.lower().replace(" ","-")
+                country_cards.append({"slug": country_slug, "name": country, "img": arr[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(arr)} airports in {country}."})
+            self.build_index(f"airports/{region}", country_cards, f"{slug_to_title(region)} Airports", f"Explore airports across {slug_to_title(region)} by country.")
+            for country, arr in by_country.items():
+                country_slug = country.lower().replace(" ","-")
+                airport_cards = [{"slug": a["slug"], "name": a["name"], "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]} for a in arr]
+                self.build_index(f"airports/{region}/{country_slug}", airport_cards, f"{country} Airports", f"Explore airports in {country}, major hubs, route context, and premium travel planning.")
+
     def build_destinations(self):
-        items = []
         for d in self.destinations:
             slug, name = d["destination_slug"], d["display_name"]
             region = d.get("region_cluster","global")
@@ -112,15 +119,15 @@ class LuxAerisBuilder:
             sections = [
                 {"title": f"Why {name} works for premium travel", "text": d.get("luxury_summary", ""), "links": []},
                 {"title": "Useful route guides", "text": "Open the strongest route pages to compare airport quality, timing, and better cabin choices.", "links": related},
-                {"title": "Where this page sits in the destination structure", "text": f"This city is filed under {slug_to_title(region)} → {d.get('country','International')} → {name}.", "links": [
+                {"title": "Browse nearby structure", "text": f"This city is filed under {slug_to_title(region)} → {d.get('country','International')} → {name}.", "links": [
                     {"href": f"/destinations/{region}/index.html", "label": f"{slug_to_title(region)} destinations"},
                     {"href": f"/destinations/{region}/{country_slug}/index.html", "label": f"{d.get('country','International')} destinations"},
                 ]},
             ]
             cards = [
-                {"title": "Continent to city navigation", "text": "You can now browse from continent to country to city instead of seeing only a flat city list."},
+                {"title": "Continent to city navigation", "text": "Browse from continent to country to city instead of using one flat city list."},
                 {"title": "Airport-aware planning", "text": "Premium arrival quality depends on airport flow, transfer logic, and route timing."},
-                {"title": "Quote-ready structure", "text": "Every destination guide leads naturally into route research and the quote request form."},
+                {"title": "Quote-ready structure", "text": "Every destination guide now leads naturally into route research and the quote request form."},
             ]
             ctx = self.ctx(
                 f"Business Class Flights to {name} | {self.config['site_name']}",
@@ -129,18 +136,12 @@ class LuxAerisBuilder:
                 f"Flights to {name}",
                 d.get("luxury_summary",""),
                 d.get("featured_image", self.config["default_image"]),
-                sections,
-                related,
-                page_type="destination",
-                kicker="Destination",
-                highlight_cards=cards,
+                sections, related, page_type="destination", kicker="Destination", highlight_cards=cards,
                 sidebar_title="Browse destination structure",
                 sidebar_text="Move between continent, country, city, routes, and request flow without dead ends."
             )
             write_page(self.output_root, f"destinations/{slug}.html", ctx)
-            # hierarchical city path too
             write_page(self.output_root, f"destinations/{region}/{country_slug}/{slug}/index.html", ctx)
-            items.append({"slug": slug, "name": name, "img": d.get("featured_image", self.config["default_image"]), "desc": d.get("luxury_summary","")[:150]})
         self.build_destination_hierarchy()
 
     def build_routes(self):
@@ -177,27 +178,33 @@ class LuxAerisBuilder:
         self.build_index("routes", items, "Premium Route Guides", "Explore premium route guides with stronger airport, timing, and cabin context.")
 
     def build_airports(self):
-        items = []
         for a in self.airports:
             slug, code, name = a["slug"], a["code_iata"], a["name"]
+            region = a.get("region_cluster","global")
+            country_slug = a.get("country_name","International").lower().replace(" ","-")
             route_links = [{"href": f"/routes/{r}.html", "label": slug_to_title(r)} for r in a.get("related_route_slugs", [])[:8]]
             airline_links = [{"href": f"/airlines/{x}.html", "label": slug_to_title(x)} for x in a.get("related_airline_slugs", [])[:6]]
             sections = [
                 {"title": f"{name} overview", "text": a.get("premium_summary", ""), "links": []},
                 {"title": "Major hubs and routes", "text": "Use these route and airline pages to understand which premium options actually move through this airport.", "links": route_links + airline_links},
+                {"title": "Browse airport structure", "text": f"This airport sits under {slug_to_title(region)} → {a.get('country_name','International')} → {name}.", "links": [
+                    {"href": f"/airports/{region}/index.html", "label": f"{slug_to_title(region)} airports"},
+                    {"href": f"/airports/{region}/{country_slug}/index.html", "label": f"{a.get('country_name','International')} airports"},
+                ]},
             ]
             related = route_links[:6] + airline_links[:6]
-            write_page(self.output_root, f"airports/{slug}.html", self.ctx(
+            ctx = self.ctx(
                 f"{code} Airport Guide | {self.config['site_name']}",
-                f"Explore {name}, including premium routes, major hubs, and airport planning guidance for luxury travel.",
+                f"Explore {name}, including major hubs, premium routes, and airport planning guidance for luxury travel.",
                 f"airports/{slug}.html",
                 f"{name} Airport Guide",
                 a.get("premium_summary",""),
                 a.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Airport"
-            ))
-            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]})
-        self.build_index("airports", items, "Major Hubs and Premium Airports", "Explore airports, major hubs, and the airlines and routes that matter for premium travel.")
+            )
+            write_page(self.output_root, f"airports/{slug}.html", ctx)
+            write_page(self.output_root, f"airports/{region}/{country_slug}/{slug}/index.html", ctx)
+        self.build_airport_hierarchy()
 
     def build_airlines(self):
         items = []
@@ -274,13 +281,18 @@ class LuxAerisBuilder:
     def build_500k_seed_files(self):
         seeds = load_json(self.data_root / "global_city_pair_guides.json")
         variants = load_json(self.data_root / "global_keyword_variants.json")
+        route_keywords = variants.get("route_keywords", [])
         matrix = []
-        for row in seeds[:1000]:
-            for variant in row.get("page_variants", [])[:5]:
-                matrix.append({"path": f"/routes/{variant}.html", "type": "route-seed"})
+        for row in seeds:
+            base = row.get("route_slug")
+            matrix.append({"path": f"/routes/{base}.html", "type": "route-seed"})
+            for k in route_keywords[:6]:
+                matrix.append({"path": f"/routes/{base}-{k.replace(' ','-')}.html", "type": "route-variant"})
+            if len(matrix) >= 500000:
+                break
         out = self.output_root / "seo-engine"
         ensure_dir(out)
-        (out / "page-seed-matrix.json").write_text(json.dumps({"seed_count": len(matrix), "samples": matrix[:500]}, indent=2), encoding="utf-8")
+        (out / "page-seed-matrix.json").write_text(json.dumps({"seed_count": len(matrix), "sample": matrix[:2000]}, indent=2), encoding="utf-8")
 
     def build_sitemaps(self):
         all_pages = sorted([p.relative_to(self.output_root).as_posix() for p in self.output_root.rglob("*.html")])
