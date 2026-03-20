@@ -634,5 +634,509 @@
     "code": "BOG",
     "slug": "bog",
     "city": "Bogot\u00e1"
+  },
+  {
+    "label": "CA1 \u2014 Canc\u00fan, International",
+    "code": "CA1",
+    "slug": "canc\u00fan-airport",
+    "city": "Canc\u00fan"
+  },
+  {
+    "label": "CHE \u2014 Chennai, International",
+    "code": "CHE",
+    "slug": "chennai-airport",
+    "city": "Chennai"
+  },
+  {
+    "label": "NAG \u2014 Nagoya, International",
+    "code": "NAG",
+    "slug": "nagoya-airport",
+    "city": "Nagoya"
+  },
+  {
+    "label": "CHR \u2014 Christchurch, International",
+    "code": "CHR",
+    "slug": "christchurch-airport",
+    "city": "Christchurch"
+  },
+  {
+    "label": "LAS \u2014 Las Vegas, United States",
+    "code": "LAS",
+    "slug": "las-vegas-airport",
+    "city": "Las Vegas"
+  },
+  {
+    "label": "ORL \u2014 Orlando, United States",
+    "code": "ORL",
+    "slug": "orlando-airport",
+    "city": "Orlando"
+  },
+  {
+    "label": "DEN \u2014 Denver, United States",
+    "code": "DEN",
+    "slug": "denver-airport",
+    "city": "Denver"
+  },
+  {
+    "label": "SAN \u2014 San Diego, United States",
+    "code": "SAN",
+    "slug": "san-diego-airport",
+    "city": "San Diego"
+  },
+  {
+    "label": "PHI \u2014 Philadelphia, United States",
+    "code": "PHI",
+    "slug": "philadelphia-airport",
+    "city": "Philadelphia"
+  },
+  {
+    "label": "VAN \u2014 Vancouver, Canada",
+    "code": "VAN",
+    "slug": "vancouver-airport",
+    "city": "Vancouver"
+  },
+  {
+    "label": "CAL \u2014 Calgary, Canada",
+    "code": "CAL",
+    "slug": "calgary-airport",
+    "city": "Calgary"
+  },
+  {
+    "label": "CA2 \u2014 Cancun, Mexico",
+    "code": "CA2",
+    "slug": "cancun-airport",
+    "city": "Cancun"
+  },
+  {
+    "label": "MON \u2014 Monterrey, Mexico",
+    "code": "MON",
+    "slug": "monterrey-airport",
+    "city": "Monterrey"
+  },
+  {
+    "label": "GUA \u2014 Guadalajara, Mexico",
+    "code": "GUA",
+    "slug": "guadalajara-airport",
+    "city": "Guadalajara"
+  },
+  {
+    "label": "POR \u2014 Porto, Portugal",
+    "code": "POR",
+    "slug": "porto-airport",
+    "city": "Porto"
+  },
+  {
+    "label": "BER \u2014 Berlin, Germany",
+    "code": "BER",
+    "slug": "berlin-airport",
+    "city": "Berlin"
+  },
+  {
+    "label": "HAM \u2014 Hamburg, Germany",
+    "code": "HAM",
+    "slug": "hamburg-airport",
+    "city": "Hamburg"
+  },
+  {
+    "label": "EDI \u2014 Edinburgh, United Kingdom",
+    "code": "EDI",
+    "slug": "edinburgh-airport",
+    "city": "Edinburgh"
+  },
+  {
+    "label": "MYK \u2014 Mykonos, Greece",
+    "code": "MYK",
+    "slug": "mykonos-airport",
+    "city": "Mykonos"
+  },
+  {
+    "label": "SA1 \u2014 Santorini, Greece",
+    "code": "SA1",
+    "slug": "santorini-airport",
+    "city": "Santorini"
+  },
+  {
+    "label": "ANT \u2014 Antalya, Turkey",
+    "code": "ANT",
+    "slug": "antalya-airport",
+    "city": "Antalya"
+  },
+  {
+    "label": "NIC \u2014 Nice, France",
+    "code": "NIC",
+    "slug": "nice-airport",
+    "city": "Nice"
+  },
+  {
+    "label": "MAR \u2014 Marseille, France",
+    "code": "MAR",
+    "slug": "marseille-airport",
+    "city": "Marseille"
+  },
+  {
+    "label": "NAP \u2014 Naples, Italy",
+    "code": "NAP",
+    "slug": "naples-airport",
+    "city": "Naples"
+  },
+  {
+    "label": "FLO \u2014 Florence, Italy",
+    "code": "FLO",
+    "slug": "florence-airport",
+    "city": "Florence"
+  },
+  {
+    "label": "PAL \u2014 Palma de Mallorca, Spain",
+    "code": "PAL",
+    "slug": "palma-de-mallorca-airport",
+    "city": "Palma de Mallorca"
+  },
+  {
+    "label": "MAL \u2014 Malaga, Spain",
+    "code": "MAL",
+    "slug": "malaga-airport",
+    "city": "Malaga"
+  },
+  {
+    "label": "VAL \u2014 Valencia, Spain",
+    "code": "VAL",
+    "slug": "valencia-airport",
+    "city": "Valencia"
+  },
+  {
+    "label": "SEV \u2014 Seville, Spain",
+    "code": "SEV",
+    "slug": "seville-airport",
+    "city": "Seville"
+  },
+  {
+    "label": "MUS \u2014 Muscat, Oman",
+    "code": "MUS",
+    "slug": "muscat-airport",
+    "city": "Muscat"
+  },
+  {
+    "label": "KUW \u2014 Kuwait City, Kuwait",
+    "code": "KUW",
+    "slug": "kuwait-city-airport",
+    "city": "Kuwait City"
+  },
+  {
+    "label": "BAH \u2014 Bahrain, Bahrain",
+    "code": "BAH",
+    "slug": "bahrain-airport",
+    "city": "Bahrain"
+  },
+  {
+    "label": "JER \u2014 Jerusalem, Israel",
+    "code": "JER",
+    "slug": "jerusalem-airport",
+    "city": "Jerusalem"
+  },
+  {
+    "label": "SH1 \u2014 Sharm El Sheikh, Egypt",
+    "code": "SH1",
+    "slug": "sharm-el-sheikh-airport",
+    "city": "Sharm El Sheikh"
+  },
+  {
+    "label": "KYO \u2014 Kyoto, Japan",
+    "code": "KYO",
+    "slug": "kyoto-airport",
+    "city": "Kyoto"
+  },
+  {
+    "label": "SAP \u2014 Sapporo, Japan",
+    "code": "SAP",
+    "slug": "sapporo-airport",
+    "city": "Sapporo"
+  },
+  {
+    "label": "FUK \u2014 Fukuoka, Japan",
+    "code": "FUK",
+    "slug": "fukuoka-airport",
+    "city": "Fukuoka"
+  },
+  {
+    "label": "BUS \u2014 Busan, South Korea",
+    "code": "BUS",
+    "slug": "busan-airport",
+    "city": "Busan"
+  },
+  {
+    "label": "PHU \u2014 Phuket, Thailand",
+    "code": "PHU",
+    "slug": "phuket-airport",
+    "city": "Phuket"
+  },
+  {
+    "label": "CHI \u2014 Chiang Mai, Thailand",
+    "code": "CHI",
+    "slug": "chiang-mai-airport",
+    "city": "Chiang Mai"
+  },
+  {
+    "label": "KAO \u2014 Kaohsiung, Taiwan",
+    "code": "KAO",
+    "slug": "kaohsiung-airport",
+    "city": "Kaohsiung"
+  },
+  {
+    "label": "YOG \u2014 Yogyakarta, Indonesia",
+    "code": "YOG",
+    "slug": "yogyakarta-airport",
+    "city": "Yogyakarta"
+  },
+  {
+    "label": "PEN \u2014 Penang, Malaysia",
+    "code": "PEN",
+    "slug": "penang-airport",
+    "city": "Penang"
+  },
+  {
+    "label": "LAN \u2014 Langkawi, Malaysia",
+    "code": "LAN",
+    "slug": "langkawi-airport",
+    "city": "Langkawi"
+  },
+  {
+    "label": "CEB \u2014 Cebu, Philippines",
+    "code": "CEB",
+    "slug": "cebu-airport",
+    "city": "Cebu"
+  },
+  {
+    "label": "DAN \u2014 Da Nang, Vietnam",
+    "code": "DAN",
+    "slug": "da-nang-airport",
+    "city": "Da Nang"
+  },
+  {
+    "label": "GOA \u2014 Goa, India",
+    "code": "GOA",
+    "slug": "goa-airport",
+    "city": "Goa"
+  },
+  {
+    "label": "KAT \u2014 Kathmandu, Nepal",
+    "code": "KAT",
+    "slug": "kathmandu-airport",
+    "city": "Kathmandu"
+  },
+  {
+    "label": "COL \u2014 Colombo, Sri Lanka",
+    "code": "COL",
+    "slug": "colombo-airport",
+    "city": "Colombo"
+  },
+  {
+    "label": "DHA \u2014 Dhaka, Bangladesh",
+    "code": "DHA",
+    "slug": "dhaka-airport",
+    "city": "Dhaka"
+  },
+  {
+    "label": "CH1 \u2014 Chengdu, China",
+    "code": "CH1",
+    "slug": "chengdu-airport",
+    "city": "Chengdu"
+  },
+  {
+    "label": "QUE \u2014 Queenstown, New Zealand",
+    "code": "QUE",
+    "slug": "queenstown-airport",
+    "city": "Queenstown"
+  },
+  {
+    "label": "WEL \u2014 Wellington, New Zealand",
+    "code": "WEL",
+    "slug": "wellington-airport",
+    "city": "Wellington"
+  },
+  {
+    "label": "DUR \u2014 Durban, South Africa",
+    "code": "DUR",
+    "slug": "durban-airport",
+    "city": "Durban"
+  },
+  {
+    "label": "AGA \u2014 Agadir, Morocco",
+    "code": "AGA",
+    "slug": "agadir-airport",
+    "city": "Agadir"
+  },
+  {
+    "label": "MOM \u2014 Mombasa, Kenya",
+    "code": "MOM",
+    "slug": "mombasa-airport",
+    "city": "Mombasa"
+  },
+  {
+    "label": "ZAN \u2014 Zanzibar, Tanzania",
+    "code": "ZAN",
+    "slug": "zanzibar-airport",
+    "city": "Zanzibar"
+  },
+  {
+    "label": "DAR \u2014 Dar es Salaam, Tanzania",
+    "code": "DAR",
+    "slug": "dar-es-salaam-airport",
+    "city": "Dar es Salaam"
+  },
+  {
+    "label": "ACC \u2014 Accra, Ghana",
+    "code": "ACC",
+    "slug": "accra-airport",
+    "city": "Accra"
+  },
+  {
+    "label": "TUN \u2014 Tunis, Tunisia",
+    "code": "TUN",
+    "slug": "tunis-airport",
+    "city": "Tunis"
+  },
+  {
+    "label": "SEY \u2014 Seychelles, Seychelles",
+    "code": "SEY",
+    "slug": "seychelles-airport",
+    "city": "Seychelles"
+  },
+  {
+    "label": "SAL \u2014 Salvador, Brazil",
+    "code": "SAL",
+    "slug": "salvador-airport",
+    "city": "Salvador"
+  },
+  {
+    "label": "MEN \u2014 Mendoza, Argentina",
+    "code": "MEN",
+    "slug": "mendoza-airport",
+    "city": "Mendoza"
+  },
+  {
+    "label": "CUS \u2014 Cusco, Peru",
+    "code": "CUS",
+    "slug": "cusco-airport",
+    "city": "Cusco"
+  },
+  {
+    "label": "MED \u2014 Medellin, Colombia",
+    "code": "MED",
+    "slug": "medellin-airport",
+    "city": "Medellin"
+  },
+  {
+    "label": "CAR \u2014 Cartagena, Colombia",
+    "code": "CAR",
+    "slug": "cartagena-airport",
+    "city": "Cartagena"
+  },
+  {
+    "label": "QUI \u2014 Quito, Ecuador",
+    "code": "QUI",
+    "slug": "quito-airport",
+    "city": "Quito"
+  },
+  {
+    "label": "GU1 \u2014 Guayaquil, Ecuador",
+    "code": "GU1",
+    "slug": "guayaquil-airport",
+    "city": "Guayaquil"
+  },
+  {
+    "label": "MO1 \u2014 Montevideo, Uruguay",
+    "code": "MO1",
+    "slug": "montevideo-airport",
+    "city": "Montevideo"
+  },
+  {
+    "label": "NAS \u2014 Nassau, Bahamas",
+    "code": "NAS",
+    "slug": "nassau-airport",
+    "city": "Nassau"
+  },
+  {
+    "label": "PUN \u2014 Punta Cana, Dominican Republic",
+    "code": "PUN",
+    "slug": "punta-cana-airport",
+    "city": "Punta Cana"
+  },
+  {
+    "label": "SA2 \u2014 Santo Domingo, Dominican Republic",
+    "code": "SA2",
+    "slug": "santo-domingo-airport",
+    "city": "Santo Domingo"
+  },
+  {
+    "label": "SA3 \u2014 San Juan, Puerto Rico",
+    "code": "SA3",
+    "slug": "san-juan-airport",
+    "city": "San Juan"
+  },
+  {
+    "label": "ARU \u2014 Aruba, Aruba",
+    "code": "ARU",
+    "slug": "aruba-airport",
+    "city": "Aruba"
+  },
+  {
+    "label": "CUR \u2014 Curacao, Curacao",
+    "code": "CUR",
+    "slug": "curacao-airport",
+    "city": "Curacao"
+  },
+  {
+    "label": "MO2 \u2014 Montego Bay, Jamaica",
+    "code": "MO2",
+    "slug": "montego-bay-airport",
+    "city": "Montego Bay"
+  },
+  {
+    "label": "KIN \u2014 Kingston, Jamaica",
+    "code": "KIN",
+    "slug": "kingston-airport",
+    "city": "Kingston"
+  },
+  {
+    "label": "BRI \u2014 Bridgetown, Barbados",
+    "code": "BRI",
+    "slug": "bridgetown-airport",
+    "city": "Bridgetown"
+  },
+  {
+    "label": "STL \u2014 St Lucia, Saint Lucia",
+    "code": "STL",
+    "slug": "st-lucia-airport",
+    "city": "St Lucia"
+  },
+  {
+    "label": "BAS \u2014 Basel, Switzerland",
+    "code": "BAS",
+    "slug": "basel-airport",
+    "city": "Basel"
+  },
+  {
+    "label": "LAU \u2014 Lausanne, Switzerland",
+    "code": "LAU",
+    "slug": "lausanne-airport",
+    "city": "Lausanne"
+  },
+  {
+    "label": "LYO \u2014 Lyon, France",
+    "code": "LYO",
+    "slug": "lyon-airport",
+    "city": "Lyon"
+  },
+  {
+    "label": "CA3 \u2014 Cannes, France",
+    "code": "CA3",
+    "slug": "cannes-airport",
+    "city": "Cannes"
+  },
+  {
+    "label": "BOR \u2014 Bordeaux, France",
+    "code": "BOR",
+    "slug": "bordeaux-airport",
+    "city": "Bordeaux"
   }
 ]

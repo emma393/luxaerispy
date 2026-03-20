@@ -171,3 +171,20 @@ textarea{min-height:120px; padding-top:16px}
   .hero-search-grid,.card-grid,.deals-grid,.index-visual-grid,.hierarchy-grid,.lux-grid-3,.footer-grid{grid-template-columns:1fr}
   .floating-request{left:18px; right:18px; width:auto}
 }
+
+
+.date-shell{position:relative}
+.date-shell input[type="date"]{
+  position:absolute; inset:0; opacity:0; pointer-events:none;
+}
+.date-display{
+  width:100%; min-height:56px; border-radius:18px; border:1px solid rgba(40,29,22,.10);
+  padding:14px 48px 14px 16px; background:#fffdf9; color:#271d17; font:inherit;
+}
+.date-trigger{
+  position:absolute; right:12px; top:50%; transform:translateY(-50%);
+  width:30px; height:30px; border:none; background:transparent; cursor:pointer;
+}
+.footer{background:#241d19!important}
+.footer strong{color:#fff7ee}
+.footer p,.footer a{color:#eadfce!important}
