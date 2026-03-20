@@ -5,7 +5,6 @@ from pathlib import Path
 from collections import defaultdict
 from .utils import load_json, slug_to_title, ensure_dir, canonical, chunked
 from .page_writer import write_page
-from .seo import infer_keywords, schema_graph
 
 def slug_country(value: str) -> str:
     return value.lower().replace(" ", "-").replace("&", "and").replace("'", "")
@@ -35,23 +34,14 @@ class LuxAerisBuilder:
 
     def ctx(self, title, description, rel_path, h1, intro, image_url, sections, related_links,
             page_type="generic", kicker="Guide", highlight_cards=None,
-            sidebar_title="Next useful pages", sidebar_text="Use these related pages to continue your premium travel research.", faq_items=None):
+            sidebar_title="Next useful pages", sidebar_text="Use these related pages to continue your premium travel research."):
         if highlight_cards is None:
             highlight_cards = []
-        if faq_items is None:
-            faq_items = [
-                (f"What does this {page_type} page cover?", f"This page gives premium travel context, route guidance, and related links for {h1}."),
-                ("Can I request tailored travel options?", "Yes. Use the request form to submit your route, dates, cabin preference, and contact details."),
-                ("Does LuxAeris sell tickets directly?", "No. LuxAeris is an informational platform that helps travelers explore premium routes and connect with specialist providers.")
-            ]
-        canonical_url = canonical(self.config["site_url"], rel_path)
-        og_image = canonical(self.config["site_url"], image_url or self.config["default_image"])
         return {
             "title": title,
             "description": description,
-            "meta_keywords": infer_keywords(page_type, title, h1),
-            "canonical_url": canonical_url,
-            "og_image": og_image,
+            "canonical_url": canonical(self.config["site_url"], rel_path),
+            "og_image": canonical(self.config["site_url"], image_url or self.config["default_image"]),
             "h1": h1,
             "intro": intro,
             "sections": sections,
@@ -60,7 +50,14 @@ class LuxAerisBuilder:
             "request_quote_url": self.config["request_quote_url"],
             "site_name": self.config["site_name"],
             "brand_tagline": self.config["brand_tagline"],
-            "schema_graph": [schema_graph(self.config["site_name"], self.config["site_url"], canonical_url, title, description, page_type, h1, og_image, rel_path, faq_items)],
+            "schema": json.dumps({
+                "@context": "https://schema.org",
+                "@type": "TravelAgency",
+                "name": self.config["site_name"],
+                "url": self.config["site_url"],
+                "description": "Luxury business class and first class travel booking platform.",
+                "areaServed": "Worldwide"
+            }),
             "page_type": page_type,
             "kicker": kicker,
             "highlight_cards": highlight_cards,
@@ -69,25 +66,41 @@ class LuxAerisBuilder:
         }
 
     def build_index(self, rel_dir, items, title, description):
-        cards = []
-        for item in items:
-            href = f"/{rel_dir}/{item['slug']}.html"
-            cards.append(f'<a class="index-card" href="{href}"><img src="{item["img"]}" alt="{item["name"]}"><div><p class="kicker">Explore</p><h2>{item["name"]}</h2><p>{item["desc"]}</p></div></a>')
-        cards = "".join(cards)
+        cards = "".join([
+            f'<a class="visual-card" href="/{rel_dir}/{i["slug"]}.html"><img src="{i["img"]}" alt="{i["name"]}"><div class="visual-card-body"><h3>{i["name"]}</h3><p>{i["desc"]}</p></div></a>'
+            for i in items[:300]
+        ])
         img = items[0]["img"] if items else self.config["default_image"]
         page_url = canonical(self.config["site_url"], rel_dir + "/index.html")
-        schema = schema_graph(self.config["site_name"], self.config["site_url"], page_url, f"{title} | {self.config['site_name']}", description, "index", title, canonical(self.config["site_url"], img), rel_dir + "/index.html", [
-            (f"What can I find in {title}?", description),
-            ("How should I use these pages?", "Use these index pages to move from broad categories into detailed route, destination, airport, and airline guides.")
-        ])
-        html = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="content-language" content="en"><meta name="language" content="English"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{title} | {self.config["site_name"]}</title>
-<meta name="description" content="{description}"><meta name="keywords" content="{infer_keywords('index', title, title)}"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="theme-color" content="#1f1814"><link rel="canonical" href="{page_url}"><meta property="og:title" content="{title} | {self.config["site_name"]}"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="{page_url}"><meta property="og:image" content="{canonical(self.config["site_url"], img)}"><meta property="og:site_name" content="{self.config["site_name"]}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title} | {self.config["site_name"]}"><meta name="twitter:description" content="{description}"><meta name="twitter:image" content="{canonical(self.config["site_url"], img)}"><script type="application/ld+json">{schema}</script><link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg"><link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head><body><div class="topbar"><div class="container topbar-inner"><span>Premium travel research and specialist matching</span><span>Business Class • First Class • Premium Economy</span></div></div><header class="site-header"><div class="container nav"><a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">{self.config["site_name"]}</div><div class="brand-tag">{self.config["brand_tagline"]}</div></div></a><nav class="nav-links"><a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/cabins/index.html">Cabins</a><a href="/tools/index.html">Tools</a><a href="/search.html">Search</a><a class="btn btn-primary" href="/request.html">Request Options</a></nav></div></header><a class="btn btn-primary floating-request" href="/request.html">Request Options</a><section class="section" style="padding-top:120px"><div class="container"><p class="kicker">Explore</p><h1 class="section-title">{title}</h1><p class="section-intro">{description}</p><div class="index-visual-grid">{cards}</div></div></section></body></html>'''
+        html = f'''<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta http-equiv="content-language" content="en"><meta name="language" content="English">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title} | {self.config["site_name"]}</title>
+<meta name="description" content="{description}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{page_url}">
+<meta property="og:title" content="{title} | {self.config["site_name"]}">
+<meta property="og:description" content="{description}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{page_url}">
+<meta property="og:image" content="{canonical(self.config["site_url"], img)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title} | {self.config["site_name"]}">
+<meta name="twitter:description" content="{description}">
+<meta name="twitter:image" content="{canonical(self.config["site_url"], img)}">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>
+<body>
+<div class="topbar"><div class="container topbar-inner"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
+<header class="site-header"><div class="container nav"><a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">{self.config["site_name"]}</div><div class="brand-tag">{self.config["brand_tagline"]}</div></div></a><nav class="nav-links"><a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/cabins/index.html">Cabins</a><a href="/tools/index.html">Tools</a><a href="/search.html">Search</a><a class="btn btn-primary" href="/request.html">Request Quote</a></nav></div></header>
+<a class="btn btn-primary floating-request" href="/request.html">Request Quote</a>
+<section class="section" style="padding-top:120px"><div class="container"><p class="kicker">Explore</p><h1 class="section-title">{title}</h1><p class="section-intro">{description}</p><div class="index-visual-grid">{cards}</div></div></section>
+</body></html>'''
         p = self.output_root / rel_dir / "index.html"
         ensure_dir(p.parent)
         p.write_text(html, encoding="utf-8")
 
     def build_destination_hierarchy(self):
-
         regions = defaultdict(list)
         for d in self.destinations:
             regions[d.get("region_cluster","global")].append(d)
@@ -140,8 +153,8 @@ class LuxAerisBuilder:
                 {"title": "Quote-ready structure", "text": "Every destination guide leads naturally into route research and the quote request form."},
             ]
             ctx = self.ctx(
-                f"Business & First Class Flights to {name} | 2026 Luxury Guide | {self.config['site_name']}",
-                f"Explore business class and first class flights to {name}, with premium route insights, airport context, and tailored travel planning guidance.",
+                f"Business Class Flights to {name} | {self.config['site_name']}",
+                f"Explore premium flights to {name}, with route context, airport guidance, and a cleaner luxury booking path.",
                 f"destinations/{slug}.html",
                 f"Flights to {name}",
                 d.get("luxury_summary",""),
@@ -189,8 +202,8 @@ class LuxAerisBuilder:
             ]
             related = route_links[:6] + airline_links[:6]
             ctx = self.ctx(
-                f"{code} Airport Guide | Premium Routes, Airlines & Lounge Insights | {self.config['site_name']}",
-                f"Explore {name}, including premium routes, lounge context, airline activity, and airport planning guidance for refined travel.",
+                f"{code} Airport Guide | {self.config['site_name']}",
+                f"Explore {name}, including premium routes, major hubs, and airport planning guidance for luxury travel.",
                 f"airports/{slug}.html",
                 f"{name} Airport Guide",
                 a.get("premium_summary",""),
@@ -264,8 +277,8 @@ class LuxAerisBuilder:
                 {"title": "Request-ready route", "text": "Once the route looks right, move directly into the quote form."},
             ]
             ctx = self.ctx(
-                f"{cabin} Flights from {origin} to {dest} | 2026 Premium Route Guide | {self.config['site_name']}",
-                f"Explore business class and first class travel from {origin} to {dest}, with airport flow, cabin guidance, and premium route insights.",
+                f"{origin} to {dest} {cabin} | {self.config['site_name']}",
+                f"Explore premium flights from {origin} to {dest}, with airport, route, and cabin context built for luxury travel.",
                 f"routes/{slug}.html",
                 f"{origin} to {dest} {cabin}",
                 r.get("route_summary",""),
@@ -297,8 +310,8 @@ class LuxAerisBuilder:
             related = [{"href": f"/aircraft/{x}.html", "label": slug_to_title(x)} for x in a.get("related_aircraft_slugs", [])]
             sections = [{"title": "Airline overview", "text": a.get("premium_summary",""), "links": related}]
             ctx = self.ctx(
-                f"{name} Review | Business Class, First Class & Route Insights | {self.config['site_name']}",
-                f"Explore {name}, including cabin experience, route fit, aircraft context, and premium planning guidance.",
+                f"{name} Review | {self.config['site_name']}",
+                f"Explore {name}, including route fit, aircraft context, and premium planning guidance.",
                 f"airlines/{slug}.html", name, a.get("premium_summary",""), a.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Airline"
             )
@@ -313,8 +326,8 @@ class LuxAerisBuilder:
             related = [{"href": f"/airlines/{x}.html", "label": self.airline_map.get(x,{}).get("airline_name", slug_to_title(x))} for x in a.get("related_airline_slugs", [])]
             sections = [{"title": "Aircraft overview", "text": a.get("premium_summary",""), "links": related}]
             write_page(self.output_root, f"aircraft/{slug}.html", self.ctx(
-                f"{name} Guide | Premium Cabin & Route Context | {self.config['site_name']}",
-                f"Explore {name}, airline usage, cabin planning context, and premium route relevance.",
+                f"{name} | {self.config['site_name']}",
+                f"Explore {name}, airline usage, and premium cabin planning context.",
                 f"aircraft/{slug}.html", name, a.get("premium_summary",""), a.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Aircraft"
             ))
@@ -328,8 +341,8 @@ class LuxAerisBuilder:
             related = [{"href": f"/airports/{l['airport_slug']}.html", "label": f"{l['airport_slug'].upper()} airport"}]
             sections = [{"title": "Lounge overview", "text": l.get("customer_summary",""), "links": related}]
             write_page(self.output_root, f"lounges/{slug}.html", self.ctx(
-                f"{name} Lounge Guide | Access, Atmosphere & Airport Context | {self.config['site_name']}",
-                f"Explore {name}, including lounge access context, airport flow, and premium ground experience guidance.",
+                f"{name} | {self.config['site_name']}",
+                f"Explore {name}, access context, and airport planning guidance.",
                 f"lounges/{slug}.html", name, l.get("customer_summary",""), l.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Lounge"
             ))
@@ -343,8 +356,8 @@ class LuxAerisBuilder:
             related = [{"href": f"/airports/{f['origin_airport_slug']}.html", "label": f"{f['origin_airport_slug'].upper()} airport"}, {"href": f"/airports/{f['destination_airport_slug']}.html", "label": f"{f['destination_airport_slug'].upper()} airport"}]
             sections = [{"title": "Flight overview", "text": f.get("flight_summary",""), "links": related}]
             write_page(self.output_root, f"flight/{slug}.html", self.ctx(
-                f"{number} Flight Guide | Route, Airport & Cabin Insights | {self.config['site_name']}",
-                f"Explore {number}, including route context, airport flow, and premium travel planning guidance.",
+                f"{number} Flight Guide | {self.config['site_name']}",
+                f"Explore {number}, route context, and premium planning guidance.",
                 f"flight/{slug}.html", number, f.get("flight_summary",""), f.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Flight"
             ))
