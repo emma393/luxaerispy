@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,49 +7,19 @@
 <meta name="language" content="English">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luxury Business & First Class Flights | LuxAeris</title>
-<meta name="description" content="Request luxury business class and first class flight options worldwide. Explore routes, airports, lounges, and premium cabin guidance through LuxAeris.">
+<meta name="description" content="Search premium routes, request a luxury flight quote, and explore destinations, airports, airlines, and route guides with LuxAeris.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://luxaeris.com/">
-<meta property="og:title" content="Luxury Business & First Class Flights | LuxAeris">
-<meta property="og:description" content="Request luxury business class and first class flight options worldwide. Explore routes, airports, lounges, and premium cabin guidance through LuxAeris.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://luxaeris.com/">
-<meta property="og:image" content="https://luxaeris.com/assets/images/logo-header.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Luxury Business & First Class Flights | LuxAeris">
-<meta name="twitter:description" content="Request luxury business class and first class flight options worldwide. Explore routes, airports, lounges, and premium cabin guidance through LuxAeris.">
-<meta name="twitter:image" content="https://luxaeris.com/assets/images/logo-header.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
-<link rel="shortcut icon" href="assets/images/favicon.ico">
 <link rel="stylesheet" href="assets/site.css">
 <script defer src="assets/site.js"></script>
-<script type="application/ld+json">{
-  "@context":"https://schema.org",
-  "@type":"TravelAgency",
-  "name":"LuxAeris",
-  "url":"https://luxaeris.com",
-  "description":"Luxury business class and first class travel request platform.",
-  "areaServed":"Worldwide"
-}</script>
 </head>
 <body>
-
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>No booking fees on quote requests</span>
-    <span>Business Class • First Class • Premium Economy</span>
-  </div>
-</div>
-
+<div class="topbar"><div class="container topbar-inner"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
 <header class="site-header">
   <div class="container nav">
     <a class="logo-wrap" href="index.html">
       <img class="logo-img" src="assets/images/logo-header.png" alt="LuxAeris shield logo">
-      <div>
-        <div class="brand-name">LuxAeris</div>
-        <div class="brand-tag">Private fares. Premium journeys.</div>
-      </div>
+      <div><div class="brand-name">LuxAeris</div><div class="brand-tag">Private fares. Premium journeys.</div></div>
     </a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
@@ -56,113 +27,59 @@
       <a href="airlines/index.html">Airlines</a>
       <a href="airports/index.html">Airports</a>
       <a href="routes/index.html">Routes</a>
-      <a href="cabins/index.html">Cabins</a>
       <a href="tools/index.html">Tools</a>
       <a href="search.html">Search</a>
       <a class="btn btn-primary" href="request.html">Request Quote</a>
     </nav>
   </div>
 </header>
+<a class="btn btn-primary floating-request" href="request.html">Request Quote</a>
 
-<section class="hero hero-home">
+<section class="hero-home">
+  <div class="hero-media">
+    <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/generated/dest-dubai.svg">
+      <source src="assets/videos/hero-plane-window.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-fallback"></div>
+  </div>
   <div class="hero-video-overlay"></div>
   <div class="container hero-content">
-    <p class="kicker">Luxury flight advisory</p>
-    <h1>Fly business and first class with a more refined booking experience.</h1>
-    <p>Search your route, prefill your request, and move into premium fare guidance shaped around comfort, privacy, and smarter routing.</p>
-
-    <div class="hero-search-shell light-band" data-trip-switcher data-default-trip="roundtrip">
+    <p class="kicker">Luxury flight search</p>
+    <h1>Business & First Class Flights, Built Like a Real Premium Travel Website.</h1>
+    <p>Search your route, choose your cabin, and move directly into a cleaner luxury quote request with stronger airport, route, and airline context.</p>
+    <div class="hero-search-shell" data-trip-switcher data-default-trip="roundtrip">
       <div class="trip-tabs">
         <button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button>
         <button class="trip-tab" type="button" data-trip="oneway">One Way</button>
         <button class="trip-tab" type="button" data-trip="multicity">Multi City</button>
       </div>
-
       <form data-flight-search class="search-grid hero-search-grid">
         <input name="origin" data-location-input placeholder="Origin airport" required>
         <input name="destination" data-location-input placeholder="Destination airport" required>
-        <input name="departDate" type="date" aria-label="Departure date" required>
-        <input class="roundtrip-only" name="returnDate" type="date" aria-label="Return date" required>
-        <select name="cabin" aria-label="Cabin">
-          <option>Business Class</option>
-          <option>First Class</option>
-          <option>Premium Economy</option>
-        </select>
-        <button class="btn btn-primary" type="submit">Search</button>
+        <input name="departDate" type="date" required>
+        <input name="returnDate" type="date" required>
+        <select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select>
+        <button class="btn btn-primary" type="submit">Search Flights</button>
       </form>
-
       <div class="multi-city-shell" style="display:none">
-        <div class="multi-city-rows">
-          <div class="multi-row">
-            <input data-location-input placeholder="Origin">
-            <input data-location-input placeholder="Destination">
-            <input type="date">
-            <button type="button" class="icon-remove" aria-label="Remove leg">−</button>
-          </div>
-        </div>
-        <p style="margin-top:12px"><button class="btn btn-secondary" type="button" data-add-multi-city>Add another city</button></p>
+        <p style="color:#fff7ef;margin-top:12px">Multi-city request support is available in the request form after route selection.</p>
       </div>
-    </div>
-
-    <div class="trust-strip">
-      <div class="trust-pill"><strong>Private fare guidance</strong>Request personalized premium routing without a cluttered booking flow.</div>
-      <div class="trust-pill"><strong>Airport-aware planning</strong>Compare lounges, hubs, and route comfort before you submit your request.</div>
-      <div class="trust-pill"><strong>Business, first, premium</strong>Built for travelers who care about cabin quality, timing, and arrival condition.</div>
-      <div class="trust-pill"><strong>Advisor-led follow-up</strong>Search first, then move directly into a tailored quote request.</div>
     </div>
   </div>
 </section>
 
 <section class="section-soft">
   <div class="container">
-    <p class="kicker">Popular premium destinations</p>
-    <h2 class="section-title">Explore premium routes people request most often.</h2>
-    <p class="section-intro">Luxury city breaks, long-haul business travel, and premium leisure itineraries all start with the right airport, route, and cabin logic.</p>
-
-    <div class="deals-grid">
-      <a class="deal-card" href="destinations/dubai.html" style="text-decoration:none">
-        <div class="deal-badge">Luxury leisure</div>
-        <h3 class="deal-route">Dubai</h3>
-        <p class="deal-meta">Strong premium route density, polished ground experience, and long-haul cabin demand.</p>
-      </a>
-      <a class="deal-card" href="destinations/london.html" style="text-decoration:none">
-        <div class="deal-badge">Premium city</div>
-        <h3 class="deal-route">London</h3>
-        <p class="deal-meta">Heathrow-led premium demand, broad airline choice, and high-value business class traffic.</p>
-      </a>
-      <a class="deal-card" href="destinations/tokyo.html" style="text-decoration:none">
-        <div class="deal-badge">Long-haul premium</div>
-        <h3 class="deal-route">Tokyo</h3>
-        <p class="deal-meta">A premium route market where timing, airport flow, and cabin privacy matter.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <p class="kicker">Why request a quote</p>
-    <h2 class="section-title">A better path than searching random prices online.</h2>
+    <p class="kicker">Explore by structure</p>
+    <h2 class="section-title">Browse destinations by continent, country, and city.</h2>
+    <p class="section-intro">The destination architecture now starts at continent level, then country, then city — so the site is easier to use and easier for search engines to understand.</p>
     <div class="card-grid">
-      <div class="card"><h3>Private fare access</h3><p>Request premium fare guidance shaped around your route, dates, and preferred cabin experience.</p></div>
-      <div class="card"><h3>Smarter route logic</h3><p>Use airport, lounge, and airline context to choose a more comfortable itinerary from the start.</p></div>
-      <div class="card"><h3>Luxury-focused planning</h3><p>The site is built around business class, first class, premium economy, and premium trip quality.</p></div>
+      <a class="card" href="destinations/index.html" style="text-decoration:none"><h3>Destinations</h3><p>Start from continents, then drill down into countries and cities.</p></a>
+      <a class="card" href="airports/index.html" style="text-decoration:none"><h3>Major hubs</h3><p>Explore premium airports and the airlines that fly from them.</p></a>
+      <a class="card" href="routes/index.html" style="text-decoration:none"><h3>Route guides</h3><p>Compare premium routes with better airport and cabin context.</p></a>
     </div>
   </div>
 </section>
-
-<div id="cookieBanner" class="cookie-banner" style="display:none">
-  <div class="cookie-inner">
-    <div>
-      <strong>Cookie notice</strong>
-      <p>LuxAeris uses cookies and similar technologies to improve site functionality, remember preferences, and understand website usage.</p>
-    </div>
-    <div class="cookie-actions">
-      <button class="btn btn-secondary" id="cookieReject" type="button">Reject</button>
-      <button class="btn btn-primary" id="cookieAccept" type="button">Accept</button>
-    </div>
-  </div>
-</div>
 
 <footer class="footer">
   <div class="container footer-grid">
@@ -171,16 +88,6 @@
     <div><strong>Support</strong><p><a href="contact.html">Contact</a><br><a href="faq.html">FAQ</a><br><a href="request.html">Request Quote</a></p></div>
     <div><strong>Company</strong><p><a href="about.html">About</a><br><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-and-conditions.html">Terms & Conditions</a><br><a href="cookie-policy.html">Cookie Policy</a></p></div>
   </div>
-  <div class="container legal-links">
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-and-conditions.html">Terms & Conditions</a>
-    <a href="cookie-policy.html">Cookie Policy</a>
-    <a href="disclaimer.html">Disclaimer</a>
-    <a href="faq.html">FAQ</a>
-    <a href="sitemap-page.html">Sitemap</a>
-  </div>
 </footer>
-</body>
-</html>
+<div id="cookieBanner" class="cookie-banner" style="display:none"><div class="cookie-inner"><div><strong style="color:#fff8f1">Cookie notice</strong><p>LuxAeris uses cookies and similar technologies to improve site functionality, remember preferences, and understand website usage.</p></div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-secondary" id="cookieReject" type="button">Reject</button><button class="btn btn-primary" id="cookieAccept" type="button">Accept</button></div></div></div>
+</body></html>

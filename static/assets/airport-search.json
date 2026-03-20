@@ -1,0 +1,638 @@
+[
+  {
+    "label": "JFK \u2014 New York, United States",
+    "code": "JFK",
+    "slug": "jfk",
+    "city": "New York"
+  },
+  {
+    "label": "EWR \u2014 New York, United States",
+    "code": "EWR",
+    "slug": "ewr",
+    "city": "New York"
+  },
+  {
+    "label": "LGA \u2014 New York, United States",
+    "code": "LGA",
+    "slug": "lga",
+    "city": "New York"
+  },
+  {
+    "label": "LAX \u2014 Los Angeles, United States",
+    "code": "LAX",
+    "slug": "lax",
+    "city": "Los Angeles"
+  },
+  {
+    "label": "SFO \u2014 San Francisco, United States",
+    "code": "SFO",
+    "slug": "sfo",
+    "city": "San Francisco"
+  },
+  {
+    "label": "ORD \u2014 Chicago, United States",
+    "code": "ORD",
+    "slug": "ord",
+    "city": "Chicago"
+  },
+  {
+    "label": "MIA \u2014 Miami, United States",
+    "code": "MIA",
+    "slug": "mia",
+    "city": "Miami"
+  },
+  {
+    "label": "BOS \u2014 Boston, United States",
+    "code": "BOS",
+    "slug": "bos",
+    "city": "Boston"
+  },
+  {
+    "label": "DFW \u2014 Dallas, United States",
+    "code": "DFW",
+    "slug": "dfw",
+    "city": "Dallas"
+  },
+  {
+    "label": "ATL \u2014 Atlanta, United States",
+    "code": "ATL",
+    "slug": "atl",
+    "city": "Atlanta"
+  },
+  {
+    "label": "IAH \u2014 Houston, United States",
+    "code": "IAH",
+    "slug": "iah",
+    "city": "Houston"
+  },
+  {
+    "label": "SEA \u2014 Seattle, United States",
+    "code": "SEA",
+    "slug": "sea",
+    "city": "Seattle"
+  },
+  {
+    "label": "IAD \u2014 Washington, United States",
+    "code": "IAD",
+    "slug": "iad",
+    "city": "Washington"
+  },
+  {
+    "label": "YYZ \u2014 Toronto, Canada",
+    "code": "YYZ",
+    "slug": "yyz",
+    "city": "Toronto"
+  },
+  {
+    "label": "YUL \u2014 Montreal, Canada",
+    "code": "YUL",
+    "slug": "yul",
+    "city": "Montreal"
+  },
+  {
+    "label": "MEX \u2014 Mexico City, Mexico",
+    "code": "MEX",
+    "slug": "mex",
+    "city": "Mexico City"
+  },
+  {
+    "label": "CUN \u2014 Canc\u00fan, Mexico",
+    "code": "CUN",
+    "slug": "cun",
+    "city": "Canc\u00fan"
+  },
+  {
+    "label": "LHR \u2014 London, United Kingdom",
+    "code": "LHR",
+    "slug": "lhr",
+    "city": "London"
+  },
+  {
+    "label": "LGW \u2014 London, United Kingdom",
+    "code": "LGW",
+    "slug": "lgw",
+    "city": "London"
+  },
+  {
+    "label": "MAN \u2014 Manchester, United Kingdom",
+    "code": "MAN",
+    "slug": "man",
+    "city": "Manchester"
+  },
+  {
+    "label": "CDG \u2014 Paris, France",
+    "code": "CDG",
+    "slug": "cdg",
+    "city": "Paris"
+  },
+  {
+    "label": "ORY \u2014 Paris, France",
+    "code": "ORY",
+    "slug": "ory",
+    "city": "Paris"
+  },
+  {
+    "label": "FRA \u2014 Frankfurt, Germany",
+    "code": "FRA",
+    "slug": "fra",
+    "city": "Frankfurt"
+  },
+  {
+    "label": "MUC \u2014 Munich, Germany",
+    "code": "MUC",
+    "slug": "muc",
+    "city": "Munich"
+  },
+  {
+    "label": "AMS \u2014 Amsterdam, Netherlands",
+    "code": "AMS",
+    "slug": "ams",
+    "city": "Amsterdam"
+  },
+  {
+    "label": "BRU \u2014 Brussels, Belgium",
+    "code": "BRU",
+    "slug": "bru",
+    "city": "Brussels"
+  },
+  {
+    "label": "ZRH \u2014 Zurich, Switzerland",
+    "code": "ZRH",
+    "slug": "zrh",
+    "city": "Zurich"
+  },
+  {
+    "label": "GVA \u2014 Geneva, Switzerland",
+    "code": "GVA",
+    "slug": "gva",
+    "city": "Geneva"
+  },
+  {
+    "label": "VIE \u2014 Vienna, Austria",
+    "code": "VIE",
+    "slug": "vie",
+    "city": "Vienna"
+  },
+  {
+    "label": "MAD \u2014 Madrid, Spain",
+    "code": "MAD",
+    "slug": "mad",
+    "city": "Madrid"
+  },
+  {
+    "label": "BCN \u2014 Barcelona, Spain",
+    "code": "BCN",
+    "slug": "bcn",
+    "city": "Barcelona"
+  },
+  {
+    "label": "LIS \u2014 Lisbon, Portugal",
+    "code": "LIS",
+    "slug": "lis",
+    "city": "Lisbon"
+  },
+  {
+    "label": "FCO \u2014 Rome, Italy",
+    "code": "FCO",
+    "slug": "fco",
+    "city": "Rome"
+  },
+  {
+    "label": "MXP \u2014 Milan, Italy",
+    "code": "MXP",
+    "slug": "mxp",
+    "city": "Milan"
+  },
+  {
+    "label": "VCE \u2014 Venice, Italy",
+    "code": "VCE",
+    "slug": "vce",
+    "city": "Venice"
+  },
+  {
+    "label": "ATH \u2014 Athens, Greece",
+    "code": "ATH",
+    "slug": "ath",
+    "city": "Athens"
+  },
+  {
+    "label": "DUB \u2014 Dublin, Ireland",
+    "code": "DUB",
+    "slug": "dub",
+    "city": "Dublin"
+  },
+  {
+    "label": "OSL \u2014 Oslo, Norway",
+    "code": "OSL",
+    "slug": "osl",
+    "city": "Oslo"
+  },
+  {
+    "label": "ARN \u2014 Stockholm, Sweden",
+    "code": "ARN",
+    "slug": "arn",
+    "city": "Stockholm"
+  },
+  {
+    "label": "CPH \u2014 Copenhagen, Denmark",
+    "code": "CPH",
+    "slug": "cph",
+    "city": "Copenhagen"
+  },
+  {
+    "label": "HEL \u2014 Helsinki, Finland",
+    "code": "HEL",
+    "slug": "hel",
+    "city": "Helsinki"
+  },
+  {
+    "label": "PRG \u2014 Prague, Czech Republic",
+    "code": "PRG",
+    "slug": "prg",
+    "city": "Prague"
+  },
+  {
+    "label": "WAW \u2014 Warsaw, Poland",
+    "code": "WAW",
+    "slug": "waw",
+    "city": "Warsaw"
+  },
+  {
+    "label": "BUD \u2014 Budapest, Hungary",
+    "code": "BUD",
+    "slug": "bud",
+    "city": "Budapest"
+  },
+  {
+    "label": "IST \u2014 Istanbul, Turkey",
+    "code": "IST",
+    "slug": "ist",
+    "city": "Istanbul"
+  },
+  {
+    "label": "SAW \u2014 Istanbul, Turkey",
+    "code": "SAW",
+    "slug": "saw",
+    "city": "Istanbul"
+  },
+  {
+    "label": "DXB \u2014 Dubai, United Arab Emirates",
+    "code": "DXB",
+    "slug": "dxb",
+    "city": "Dubai"
+  },
+  {
+    "label": "DWC \u2014 Dubai, United Arab Emirates",
+    "code": "DWC",
+    "slug": "dwc",
+    "city": "Dubai"
+  },
+  {
+    "label": "AUH \u2014 Abu Dhabi, United Arab Emirates",
+    "code": "AUH",
+    "slug": "auh",
+    "city": "Abu Dhabi"
+  },
+  {
+    "label": "DOH \u2014 Doha, Qatar",
+    "code": "DOH",
+    "slug": "doh",
+    "city": "Doha"
+  },
+  {
+    "label": "RUH \u2014 Riyadh, Saudi Arabia",
+    "code": "RUH",
+    "slug": "ruh",
+    "city": "Riyadh"
+  },
+  {
+    "label": "JED \u2014 Jeddah, Saudi Arabia",
+    "code": "JED",
+    "slug": "jed",
+    "city": "Jeddah"
+  },
+  {
+    "label": "TLV \u2014 Tel Aviv, Israel",
+    "code": "TLV",
+    "slug": "tlv",
+    "city": "Tel Aviv"
+  },
+  {
+    "label": "CAI \u2014 Cairo, Egypt",
+    "code": "CAI",
+    "slug": "cai",
+    "city": "Cairo"
+  },
+  {
+    "label": "AMM \u2014 Amman, Jordan",
+    "code": "AMM",
+    "slug": "amm",
+    "city": "Amman"
+  },
+  {
+    "label": "BEY \u2014 Beirut, Lebanon",
+    "code": "BEY",
+    "slug": "bey",
+    "city": "Beirut"
+  },
+  {
+    "label": "JNB \u2014 Johannesburg, South Africa",
+    "code": "JNB",
+    "slug": "jnb",
+    "city": "Johannesburg"
+  },
+  {
+    "label": "CPT \u2014 Cape Town, South Africa",
+    "code": "CPT",
+    "slug": "cpt",
+    "city": "Cape Town"
+  },
+  {
+    "label": "NBO \u2014 Nairobi, Kenya",
+    "code": "NBO",
+    "slug": "nbo",
+    "city": "Nairobi"
+  },
+  {
+    "label": "CMN \u2014 Casablanca, Morocco",
+    "code": "CMN",
+    "slug": "cmn",
+    "city": "Casablanca"
+  },
+  {
+    "label": "RAK \u2014 Marrakesh, Morocco",
+    "code": "RAK",
+    "slug": "rak",
+    "city": "Marrakesh"
+  },
+  {
+    "label": "LOS \u2014 Lagos, Nigeria",
+    "code": "LOS",
+    "slug": "los",
+    "city": "Lagos"
+  },
+  {
+    "label": "ADD \u2014 Addis Ababa, Ethiopia",
+    "code": "ADD",
+    "slug": "add",
+    "city": "Addis Ababa"
+  },
+  {
+    "label": "DEL \u2014 Delhi, India",
+    "code": "DEL",
+    "slug": "del",
+    "city": "Delhi"
+  },
+  {
+    "label": "BOM \u2014 Mumbai, India",
+    "code": "BOM",
+    "slug": "bom",
+    "city": "Mumbai"
+  },
+  {
+    "label": "BLR \u2014 Bengaluru, India",
+    "code": "BLR",
+    "slug": "blr",
+    "city": "Bengaluru"
+  },
+  {
+    "label": "MAA \u2014 Chennai, India",
+    "code": "MAA",
+    "slug": "maa",
+    "city": "Chennai"
+  },
+  {
+    "label": "HYD \u2014 Hyderabad, India",
+    "code": "HYD",
+    "slug": "hyd",
+    "city": "Hyderabad"
+  },
+  {
+    "label": "SIN \u2014 Singapore, Singapore",
+    "code": "SIN",
+    "slug": "sin",
+    "city": "Singapore"
+  },
+  {
+    "label": "HKG \u2014 Hong Kong, Hong Kong",
+    "code": "HKG",
+    "slug": "hkg",
+    "city": "Hong Kong"
+  },
+  {
+    "label": "ICN \u2014 Seoul, South Korea",
+    "code": "ICN",
+    "slug": "icn",
+    "city": "Seoul"
+  },
+  {
+    "label": "GMP \u2014 Seoul, South Korea",
+    "code": "GMP",
+    "slug": "gmp",
+    "city": "Seoul"
+  },
+  {
+    "label": "HND \u2014 Tokyo, Japan",
+    "code": "HND",
+    "slug": "hnd",
+    "city": "Tokyo"
+  },
+  {
+    "label": "NRT \u2014 Tokyo, Japan",
+    "code": "NRT",
+    "slug": "nrt",
+    "city": "Tokyo"
+  },
+  {
+    "label": "KIX \u2014 Osaka, Japan",
+    "code": "KIX",
+    "slug": "kix",
+    "city": "Osaka"
+  },
+  {
+    "label": "ITM \u2014 Osaka, Japan",
+    "code": "ITM",
+    "slug": "itm",
+    "city": "Osaka"
+  },
+  {
+    "label": "NGO \u2014 Nagoya, Japan",
+    "code": "NGO",
+    "slug": "ngo",
+    "city": "Nagoya"
+  },
+  {
+    "label": "PVG \u2014 Shanghai, China",
+    "code": "PVG",
+    "slug": "pvg",
+    "city": "Shanghai"
+  },
+  {
+    "label": "SHA \u2014 Shanghai, China",
+    "code": "SHA",
+    "slug": "sha",
+    "city": "Shanghai"
+  },
+  {
+    "label": "PEK \u2014 Beijing, China",
+    "code": "PEK",
+    "slug": "pek",
+    "city": "Beijing"
+  },
+  {
+    "label": "PKX \u2014 Beijing, China",
+    "code": "PKX",
+    "slug": "pkx",
+    "city": "Beijing"
+  },
+  {
+    "label": "CAN \u2014 Guangzhou, China",
+    "code": "CAN",
+    "slug": "can",
+    "city": "Guangzhou"
+  },
+  {
+    "label": "SZX \u2014 Shenzhen, China",
+    "code": "SZX",
+    "slug": "szx",
+    "city": "Shenzhen"
+  },
+  {
+    "label": "TPE \u2014 Taipei, Taiwan",
+    "code": "TPE",
+    "slug": "tpe",
+    "city": "Taipei"
+  },
+  {
+    "label": "KUL \u2014 Kuala Lumpur, Malaysia",
+    "code": "KUL",
+    "slug": "kul",
+    "city": "Kuala Lumpur"
+  },
+  {
+    "label": "BKK \u2014 Bangkok, Thailand",
+    "code": "BKK",
+    "slug": "bkk",
+    "city": "Bangkok"
+  },
+  {
+    "label": "DMK \u2014 Bangkok, Thailand",
+    "code": "DMK",
+    "slug": "dmk",
+    "city": "Bangkok"
+  },
+  {
+    "label": "CGK \u2014 Jakarta, Indonesia",
+    "code": "CGK",
+    "slug": "cgk",
+    "city": "Jakarta"
+  },
+  {
+    "label": "DPS \u2014 Bali, Indonesia",
+    "code": "DPS",
+    "slug": "dps",
+    "city": "Bali"
+  },
+  {
+    "label": "MNL \u2014 Manila, Philippines",
+    "code": "MNL",
+    "slug": "mnl",
+    "city": "Manila"
+  },
+  {
+    "label": "HAN \u2014 Hanoi, Vietnam",
+    "code": "HAN",
+    "slug": "han",
+    "city": "Hanoi"
+  },
+  {
+    "label": "SGN \u2014 Ho Chi Minh City, Vietnam",
+    "code": "SGN",
+    "slug": "sgn",
+    "city": "Ho Chi Minh City"
+  },
+  {
+    "label": "SYD \u2014 Sydney, Australia",
+    "code": "SYD",
+    "slug": "syd",
+    "city": "Sydney"
+  },
+  {
+    "label": "MEL \u2014 Melbourne, Australia",
+    "code": "MEL",
+    "slug": "mel",
+    "city": "Melbourne"
+  },
+  {
+    "label": "BNE \u2014 Brisbane, Australia",
+    "code": "BNE",
+    "slug": "bne",
+    "city": "Brisbane"
+  },
+  {
+    "label": "PER \u2014 Perth, Australia",
+    "code": "PER",
+    "slug": "per",
+    "city": "Perth"
+  },
+  {
+    "label": "AKL \u2014 Auckland, New Zealand",
+    "code": "AKL",
+    "slug": "akl",
+    "city": "Auckland"
+  },
+  {
+    "label": "CHC \u2014 Christchurch, New Zealand",
+    "code": "CHC",
+    "slug": "chc",
+    "city": "Christchurch"
+  },
+  {
+    "label": "MLE \u2014 Mal\u00e9, Maldives",
+    "code": "MLE",
+    "slug": "mle",
+    "city": "Mal\u00e9"
+  },
+  {
+    "label": "MRU \u2014 Mauritius, Mauritius",
+    "code": "MRU",
+    "slug": "mru",
+    "city": "Mauritius"
+  },
+  {
+    "label": "GRU \u2014 S\u00e3o Paulo, Brazil",
+    "code": "GRU",
+    "slug": "gru",
+    "city": "S\u00e3o Paulo"
+  },
+  {
+    "label": "GIG \u2014 Rio de Janeiro, Brazil",
+    "code": "GIG",
+    "slug": "gig",
+    "city": "Rio de Janeiro"
+  },
+  {
+    "label": "SCL \u2014 Santiago, Chile",
+    "code": "SCL",
+    "slug": "scl",
+    "city": "Santiago"
+  },
+  {
+    "label": "EZE \u2014 Buenos Aires, Argentina",
+    "code": "EZE",
+    "slug": "eze",
+    "city": "Buenos Aires"
+  },
+  {
+    "label": "LIM \u2014 Lima, Peru",
+    "code": "LIM",
+    "slug": "lim",
+    "city": "Lima"
+  },
+  {
+    "label": "BOG \u2014 Bogot\u00e1, Colombia",
+    "code": "BOG",
+    "slug": "bog",
+    "city": "Bogot\u00e1"
+  }
+]

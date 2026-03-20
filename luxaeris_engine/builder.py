@@ -1,8 +1,8 @@
 
 from __future__ import annotations
-import json
-import shutil
+import json, shutil
 from pathlib import Path
+from collections import defaultdict
 from .utils import load_json, slug_to_title, ensure_dir, canonical, chunked
 from .page_writer import write_page
 
@@ -64,46 +64,84 @@ class LuxAerisBuilder:
             f'<a class="visual-card" href="/{rel_dir}/{i["slug"]}.html"><img src="{i["img"]}" alt="{i["name"]}"><div class="visual-card-body"><h3>{i["name"]}</h3><p>{i["desc"]}</p></div></a>'
             for i in items[:300]
         ])
-        html = f'''<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta http-equiv="content-language" content="en"><meta name="language" content="English"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{title} | {self.config["site_name"]}</title><meta name="description" content="{description}"><meta name="robots" content="index, follow"><link rel="canonical" href="{canonical(self.config["site_url"], rel_dir + "/index.html")}"><link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>
-<body><header class="site-header"><div class="container nav"><a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">{self.config["site_name"]}</div><div class="brand-tag">{self.config["brand_tagline"]}</div></div></a></div></header>
-<section class="section"><div class="container"><p class="kicker">Explore</p><h1 class="section-title">{title}</h1><p class="section-intro">{description}</p><div class="index-visual-grid">{cards}</div></div></section></body></html>'''
+        html = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{title} | {self.config["site_name"]}</title><meta name="description" content="{description}"><link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head><body><div class="topbar"><div class="container topbar-inner"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div><header class="site-header"><div class="container nav"><a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">{self.config["site_name"]}</div><div class="brand-tag">{self.config["brand_tagline"]}</div></div></a><nav class="nav-links"><a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/tools/index.html">Tools</a><a href="/search.html">Search</a><a class="btn btn-primary" href="/request.html">Request Quote</a></nav></div></header><a class="btn btn-primary floating-request" href="/request.html">Request Quote</a><section class="section" style="padding-top:120px"><div class="container"><p class="kicker">Explore</p><h1 class="section-title">{title}</h1><p class="section-intro">{description}</p><div class="index-visual-grid">{cards}</div></div></section></body></html>'''
         p = self.output_root / rel_dir / "index.html"
-        ensure_dir(p.parent)
-        p.write_text(html, encoding="utf-8")
+        ensure_dir(p.parent); p.write_text(html, encoding="utf-8")
+
+    def build_destination_hierarchy(self):
+        regions = defaultdict(list)
+        countries = defaultdict(list)
+        for d in self.destinations:
+            region = d.get("region_cluster","global")
+            country = d.get("country","International")
+            regions[region].append(d)
+            countries[(region, country)].append(d)
+
+        # main destinations page -> continents
+        cards = []
+        for region, items in sorted(regions.items()):
+            cards.append({"slug": region, "name": slug_to_title(region), "img": items[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(items)} premium destinations in {slug_to_title(region)}."})
+        self.build_index("destinations", cards, "Destinations by Continent", "Browse destinations by continent, then country, then city for a cleaner premium travel structure.")
+
+        # continent pages -> countries
+        for region, items in regions.items():
+            country_cards = []
+            by_country = defaultdict(list)
+            for d in items:
+                by_country[d.get("country","International")].append(d)
+            for country, arr in sorted(by_country.items()):
+                country_slug = country.lower().replace(" ","-")
+                country_cards.append({"slug": country_slug, "name": country, "img": arr[0].get("featured_image", self.config["default_image"]), "desc": f"Browse {len(arr)} premium destinations in {country}."})
+            self.build_index(f"destinations/{region}", country_cards, f"{slug_to_title(region)} Destinations", f"Explore premium destinations across {slug_to_title(region)} by country.")
+
+            # country pages -> cities
+            for country, arr in by_country.items():
+                country_slug = country.lower().replace(" ","-")
+                city_cards = []
+                for d in arr:
+                    city_cards.append({"slug": d["destination_slug"], "name": d["display_name"], "img": d.get("featured_image", self.config["default_image"]), "desc": d.get("luxury_summary","")[:150]})
+                self.build_index(f"destinations/{region}/{country_slug}", city_cards, f"{country} Destinations", f"Explore premium destinations in {country}, then open city guides for routes, airports, and premium planning.")
 
     def build_destinations(self):
         items = []
         for d in self.destinations:
             slug, name = d["destination_slug"], d["display_name"]
-            related = [{"href": f"/routes/{x}.html", "label": slug_to_title(x)} for x in d.get("route_slugs", [])[:12]]
+            region = d.get("region_cluster","global")
+            country_slug = d.get("country","International").lower().replace(" ","-")
+            related = [{"href": f"/routes/{x}.html", "label": slug_to_title(x)} for x in d.get("route_slugs", [])[:10]]
             sections = [
                 {"title": f"Why {name} works for premium travel", "text": d.get("luxury_summary", ""), "links": []},
-                {"title": "Best routes to consider", "text": "These route guides connect the destination with practical premium options and stronger airport context.", "links": related},
-                {"title": "Airport and arrival experience", "text": f"{name} is best judged through route timing, airport flow, and whether the arrival experience matches the purpose of the trip.", "links": []},
+                {"title": "Useful route guides", "text": "Open the strongest route pages to compare airport quality, timing, and better cabin choices.", "links": related},
+                {"title": "Where this page sits in the destination structure", "text": f"This city is filed under {slug_to_title(region)} → {d.get('country','International')} → {name}.", "links": [
+                    {"href": f"/destinations/{region}/index.html", "label": f"{slug_to_title(region)} destinations"},
+                    {"href": f"/destinations/{region}/{country_slug}/index.html", "label": f"{d.get('country','International')} destinations"},
+                ]},
             ]
             cards = [
-                {"title": "Best routes", "text": "Start with high-quality route options rather than random public fare searches."},
-                {"title": "Airport experience", "text": "Airport flow, lounge access, and arrival practicality can change the trip completely."},
-                {"title": "Cabin fit", "text": "Choose the cabin based on route length, sleep value, and the total premium experience."},
+                {"title": "Continent to city navigation", "text": "You can now browse from continent to country to city instead of seeing only a flat city list."},
+                {"title": "Airport-aware planning", "text": "Premium arrival quality depends on airport flow, transfer logic, and route timing."},
+                {"title": "Quote-ready structure", "text": "Every destination guide leads naturally into route research and the quote request form."},
             ]
-            write_page(self.output_root, f"destinations/{slug}.html", self.ctx(
+            ctx = self.ctx(
                 f"Business Class Flights to {name} | {self.config['site_name']}",
-                f"Compare luxury business class and first class flights to {name}. Explore premium routes and request a tailored fare quote with LuxAeris.",
+                f"Explore premium flights to {name}, with better route context, airport guidance, and a cleaner luxury booking path.",
                 f"destinations/{slug}.html",
                 f"Flights to {name}",
-                d.get("luxury_summary", ""),
+                d.get("luxury_summary",""),
                 d.get("featured_image", self.config["default_image"]),
                 sections,
                 related,
                 page_type="destination",
                 kicker="Destination",
                 highlight_cards=cards,
-                sidebar_title="Continue planning",
-                sidebar_text="Open related route pages and move into a premium quote request when the route, airport, and cabin fit your trip."
-            ))
-            items.append({"slug": slug, "name": name, "img": d.get("featured_image", self.config["default_image"]), "desc": d.get("luxury_summary", "")[:150]})
-        self.build_index("destinations", items, "Luxury Flight Destinations", "Explore luxury destinations with better route context, airport logic, and premium cabin guidance.")
+                sidebar_title="Browse destination structure",
+                sidebar_text="Move between continent, country, city, routes, and request flow without dead ends."
+            )
+            write_page(self.output_root, f"destinations/{slug}.html", ctx)
+            # hierarchical city path too
+            write_page(self.output_root, f"destinations/{region}/{country_slug}/{slug}/index.html", ctx)
+            items.append({"slug": slug, "name": name, "img": d.get("featured_image", self.config["default_image"]), "desc": d.get("luxury_summary","")[:150]})
+        self.build_destination_hierarchy()
 
     def build_routes(self):
         items = []
@@ -111,152 +149,138 @@ class LuxAerisBuilder:
             slug = r["route_slug"]
             origin = r["origin_city_slug"].replace("-", " ").title()
             dest = r["destination_city_slug"].replace("-", " ").title()
-            cabin = r.get("primary_cabin", "Business Class")
+            cabin = r.get("primary_cabin","Business Class")
             related = [
                 {"href": f"/airports/{r['origin_airport_slug']}.html", "label": f"{r['origin_airport_slug'].upper()} airport"},
                 {"href": f"/airports/{r['destination_airport_slug']}.html", "label": f"{r['destination_airport_slug'].upper()} airport"},
                 {"href": f"/destinations/{r['destination_city_slug']}.html", "label": f"{dest} destination guide"},
             ]
             sections = [
-                {"title": "Route overview", "text": r.get("route_summary", ""), "links": []},
-                {"title": "Airport and timing logic", "text": "A premium route should be judged through airport flow, timing, and whether the cabin matches the length and purpose of the journey.", "links": related},
-                {"title": "What to compare before requesting a quote", "text": "Compare airline quality, cabin privacy, departure time, and arrival practicality before choosing the route structure.", "links": []},
+                {"title": "Route overview", "text": r.get("route_summary",""), "links": []},
+                {"title": "Airport and airline logic", "text": "Use airport pages and airline pages to judge lounge quality, departure timing, and the total premium feel.", "links": related},
             ]
             cards = [
-                {"title": "Best airlines", "text": "Compare the route first, then the airline. The best airline on paper is not always best on this specific route."},
-                {"title": "Cabin comfort", "text": "Longer routes reward better privacy, stronger sleep support, and smoother airport transitions."},
-                {"title": "Ground experience", "text": "Departure airport quality and lounge access shape the total premium feel."},
+                {"title": "Better cabin fit", "text": "Longer routes reward stronger privacy and sleep support."},
+                {"title": "Airport quality", "text": "Premium airport flow changes the full journey."},
+                {"title": "Request-ready route", "text": "Once the route looks right, move directly into the quote form."},
             ]
             write_page(self.output_root, f"routes/{slug}.html", self.ctx(
                 f"{origin} to {dest} {cabin} | {self.config['site_name']}",
-                f"Compare {cabin.lower()} flights from {origin} to {dest}. Explore premium airlines, airport flow, and request a tailored fare quote.",
+                f"Explore premium flights from {origin} to {dest}, with airport, route, and cabin context built for luxury travel.",
                 f"routes/{slug}.html",
                 f"{origin} to {dest} {cabin}",
-                r.get("route_summary", ""),
+                r.get("route_summary",""),
                 r.get("featured_image", self.config["default_image"]),
-                sections,
-                related,
-                page_type="route",
-                kicker="Route guide",
-                highlight_cards=cards,
-                sidebar_title="Related planning pages",
-                sidebar_text="Use airport and destination pages to judge the total journey, not just the route name."
+                sections, related, page_type="route", kicker="Route guide", highlight_cards=cards
             ))
-            items.append({"slug": slug, "name": f"{origin} → {dest}", "img": r.get("featured_image", self.config["default_image"]), "desc": r.get("route_summary", "")[:150]})
+            items.append({"slug": slug, "name": f"{origin} → {dest}", "img": r.get("featured_image", self.config["default_image"]), "desc": r.get("route_summary","")[:150]})
         self.build_index("routes", items, "Premium Route Guides", "Explore premium route guides with stronger airport, timing, and cabin context.")
 
     def build_airports(self):
         items = []
         for a in self.airports:
             slug, code, name = a["slug"], a["code_iata"], a["name"]
-            route_links = [{"href": f"/routes/{r}.html", "label": slug_to_title(r)} for r in a.get("related_route_slugs", [])[:12]]
-            airline_links = [{"href": f"/airlines/{x}.html", "label": slug_to_title(x)} for x in a.get("related_airline_slugs", [])[:8]]
+            route_links = [{"href": f"/routes/{r}.html", "label": slug_to_title(r)} for r in a.get("related_route_slugs", [])[:8]]
+            airline_links = [{"href": f"/airlines/{x}.html", "label": slug_to_title(x)} for x in a.get("related_airline_slugs", [])[:6]]
             sections = [
                 {"title": f"{name} overview", "text": a.get("premium_summary", ""), "links": []},
-                {"title": "Related premium routes", "text": "These route guides help visitors move from airport research into route research and a quote request.", "links": route_links},
-                {"title": "Related airlines", "text": "These airline guides are commonly relevant for travelers comparing premium options through this airport.", "links": airline_links},
+                {"title": "Major hubs and routes", "text": "Use these route and airline pages to understand which premium options actually move through this airport.", "links": route_links + airline_links},
             ]
-            related = route_links[:8] + airline_links[:8]
+            related = route_links[:6] + airline_links[:6]
             write_page(self.output_root, f"airports/{slug}.html", self.ctx(
-                f"{code} Airport Lounge and Premium Travel Guide | {self.config['site_name']}",
-                f"Premium travel guide to {name}. Discover lounges, airlines, airport flow, and premium route context with LuxAeris.",
+                f"{code} Airport Guide | {self.config['site_name']}",
+                f"Explore {name}, including premium routes, major hubs, and airport planning guidance for luxury travel.",
                 f"airports/{slug}.html",
                 f"{name} Airport Guide",
-                a.get("premium_summary", ""),
+                a.get("premium_summary",""),
                 a.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Airport"
             ))
-            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary", "")[:150]})
-        self.build_index("airports", items, "Premium Airport Guides", "Explore premium airport guides, lounges, routes, and travel planning context.")
-
-    def build_lounges(self):
-        items = []
-        for l in self.lounges:
-            slug, name, airport_slug = l["lounge_slug"], l["lounge_name"], l["airport_slug"]
-            related = [{"href": f"/airports/{airport_slug}.html", "label": f"{airport_slug.upper()} airport guide"}]
-            feats = [{"href": "#", "label": f} for f in l.get("features", [])]
-            sections = [
-                {"title": "Lounge overview", "text": l.get("customer_summary", ""), "links": []},
-                {"title": "Useful lounge features", "text": "The most valuable premium lounges usually improve the pre-flight experience through better comfort, food, and practical amenities.", "links": feats},
-                {"title": "Airport context", "text": "Open the airport guide to compare this lounge with broader airport flow and route context.", "links": related}
-            ]
-            write_page(self.output_root, f"lounges/{slug}.html", self.ctx(
-                f"{name} | {self.config['site_name']}",
-                f"Guide to {name}. Explore terminal location, access context, and premium travel detail with LuxAeris.",
-                f"lounges/{slug}.html",
-                name,
-                l.get("customer_summary", ""),
-                l.get("featured_image", self.config["default_image"]),
-                sections, related, kicker="Lounge"
-            ))
-            items.append({"slug": slug, "name": name, "img": l.get("featured_image", self.config["default_image"]), "desc": l.get("customer_summary", "")[:150]})
-        self.build_index("lounges", items, "Premium Lounge Guides", "Explore airport lounge guides with practical premium-travel context.")
+            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]})
+        self.build_index("airports", items, "Major Hubs and Premium Airports", "Explore airports, major hubs, and the airlines and routes that matter for premium travel.")
 
     def build_airlines(self):
         items = []
         for a in self.airlines:
             slug, name = a["airline_slug"], a["airline_name"]
             related = [{"href": f"/aircraft/{x}.html", "label": slug_to_title(x)} for x in a.get("related_aircraft_slugs", [])]
-            sections = [
-                {"title": "Airline cabin overview", "text": a.get("premium_summary", ""), "links": []},
-                {"title": "Related aircraft", "text": "Aircraft type influences privacy, seat layout, and the overall premium feel of the journey.", "links": related},
-            ]
+            sections = [{"title": "Airline overview", "text": a.get("premium_summary",""), "links": related}]
             write_page(self.output_root, f"airlines/{slug}.html", self.ctx(
                 f"{name} Review | {self.config['site_name']}",
-                f"Compare {name.lower()}, route fit, aircraft, and premium travel context before requesting a tailored fare quote.",
+                f"Explore {name}, including route fit, aircraft context, and premium planning guidance.",
                 f"airlines/{slug}.html",
                 name,
-                a.get("premium_summary", ""),
+                a.get("premium_summary",""),
                 a.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Airline"
             ))
-            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary", "")[:150]})
-        self.build_index("airlines", items, "Premium Airline Cabin Guides", "Compare premium airlines, cabin positioning, aircraft context, and better route fit.")
+            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]})
+        self.build_index("airlines", items, "Airlines", "Browse premium airlines, their route fit, and aircraft context.")
 
     def build_aircraft(self):
         items = []
         for a in self.aircraft:
             slug, name = a["aircraft_slug"], a["model_name"]
-            related = [{"href": f"/airlines/{x}.html", "label": self.airline_map.get(x, {}).get("airline_name", slug_to_title(x))} for x in a.get("related_airline_slugs", [])]
-            sections = [
-                {"title": "Aircraft overview", "text": a.get("premium_summary", ""), "links": []},
-                {"title": "Airlines using this aircraft style", "text": "Different airlines configure the same aircraft very differently, which is why aircraft and airline should be judged together.", "links": related}
-            ]
+            related = [{"href": f"/airlines/{x}.html", "label": self.airline_map.get(x,{}).get("airline_name", slug_to_title(x))} for x in a.get("related_airline_slugs", [])]
+            sections = [{"title": "Aircraft overview", "text": a.get("premium_summary",""), "links": related}]
             write_page(self.output_root, f"aircraft/{slug}.html", self.ctx(
                 f"{name} | {self.config['site_name']}",
-                f"Explore {name.lower()} cabins, airline use, and premium travel context with LuxAeris.",
+                f"Explore {name}, airline usage, and premium cabin planning context.",
                 f"aircraft/{slug}.html",
                 name,
-                a.get("premium_summary", ""),
+                a.get("premium_summary",""),
                 a.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Aircraft"
             ))
-            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary", "")[:150]})
-        self.build_index("aircraft", items, "Premium Aircraft Guides", "Explore aircraft pages for premium cabins, seat context, airline use, and better long-haul decisions.")
+            items.append({"slug": slug, "name": name, "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]})
+        self.build_index("aircraft", items, "Aircraft", "Browse aircraft used on premium routes.")
+
+    def build_lounges(self):
+        items = []
+        for l in self.lounges:
+            slug, name = l["lounge_slug"], l["lounge_name"]
+            related = [{"href": f"/airports/{l['airport_slug']}.html", "label": f"{l['airport_slug'].upper()} airport"}]
+            sections = [{"title": "Lounge overview", "text": l.get("customer_summary",""), "links": related}]
+            write_page(self.output_root, f"lounges/{slug}.html", self.ctx(
+                f"{name} | {self.config['site_name']}",
+                f"Explore {name}, access context, and airport planning guidance.",
+                f"lounges/{slug}.html",
+                name,
+                l.get("customer_summary",""),
+                l.get("featured_image", self.config["default_image"]),
+                sections, related, kicker="Lounge"
+            ))
+            items.append({"slug": slug, "name": name, "img": l.get("featured_image", self.config["default_image"]), "desc": l.get("customer_summary","")[:150]})
+        self.build_index("lounges", items, "Lounges", "Browse airport lounges with premium context.")
 
     def build_flights(self):
         items = []
         for f in self.flights:
             slug, number = f["flight_slug"], f["flight_number"]
-            related = [
-                {"href": f"/airports/{f['origin_airport_slug']}.html", "label": f"{f['origin_airport_slug'].upper()} airport"},
-                {"href": f"/airports/{f['destination_airport_slug']}.html", "label": f"{f['destination_airport_slug'].upper()} airport"},
-            ]
-            sections = [
-                {"title": "Flight overview", "text": f.get("flight_summary", ""), "links": []},
-                {"title": "Route context", "text": "Flight-number pages help connect a specific premium flight with its route, airport quality, and broader planning context.", "links": related}
-            ]
+            related = [{"href": f"/airports/{f['origin_airport_slug']}.html", "label": f"{f['origin_airport_slug'].upper()} airport"}, {"href": f"/airports/{f['destination_airport_slug']}.html", "label": f"{f['destination_airport_slug'].upper()} airport"}]
+            sections = [{"title": "Flight overview", "text": f.get("flight_summary",""), "links": related}]
             write_page(self.output_root, f"flight/{slug}.html", self.ctx(
                 f"{number} Flight Guide | {self.config['site_name']}",
-                f"Explore {number} route context, airport fit, and premium travel planning insight with LuxAeris.",
+                f"Explore {number}, route context, and premium planning guidance.",
                 f"flight/{slug}.html",
                 number,
-                f.get("flight_summary", ""),
+                f.get("flight_summary",""),
                 f.get("featured_image", self.config["default_image"]),
                 sections, related, kicker="Flight"
             ))
-            items.append({"slug": slug, "name": number, "img": f.get("featured_image", self.config["default_image"]), "desc": f.get("flight_summary", "")[:150]})
-        self.build_index("flight", items, "Flight Number Guides", "Explore flight-number pages with route context, airport links, and better premium travel research paths.")
+            items.append({"slug": slug, "name": number, "img": f.get("featured_image", self.config["default_image"]), "desc": f.get("flight_summary","")[:150]})
+        self.build_index("flight", items, "Flights", "Browse flight number guides.")
+
+    def build_500k_seed_files(self):
+        seeds = load_json(self.data_root / "global_city_pair_guides.json")
+        variants = load_json(self.data_root / "global_keyword_variants.json")
+        matrix = []
+        for row in seeds[:1000]:
+            for variant in row.get("page_variants", [])[:5]:
+                matrix.append({"path": f"/routes/{variant}.html", "type": "route-seed"})
+        out = self.output_root / "seo-engine"
+        ensure_dir(out)
+        (out / "page-seed-matrix.json").write_text(json.dumps({"seed_count": len(matrix), "samples": matrix[:500]}, indent=2), encoding="utf-8")
 
     def build_sitemaps(self):
         all_pages = sorted([p.relative_to(self.output_root).as_posix() for p in self.output_root.rglob("*.html")])
@@ -291,4 +315,5 @@ class LuxAerisBuilder:
         self.build_aircraft()
         self.build_destinations()
         self.build_flights()
+        self.build_500k_seed_files()
         self.build_sitemaps()
