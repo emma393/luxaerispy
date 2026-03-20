@@ -1,9 +1,13 @@
-Replace these files in your current repo:
-- static/request.html
-- generated/site/request.html
-- static/assets/site.js
-- generated/site/assets/site.js
-- static/assets/site-config.js
-- generated/site/assets/site-config.js
+Replace these files in your current repo.
 
-This removes Formspree from the request form and switches submissions to your Google Sheets Apps Script endpoint.
+This patch includes:
+- stronger meta titles and meta descriptions for top pages
+- request page fixes for origin/destination fields
+- airport dropdown behavior after 2+ letters
+- mandatory validation for name, email, phone, and selected airports
+- calendar limits from today to 364 days ahead
+
+Included pages:
+homepage, request page, about, contact, FAQ, privacy, terms,
+main section indexes, top destination pages, top route pages,
+and the shared site.js file in both static/ and generated/site/.

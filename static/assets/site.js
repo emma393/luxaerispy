@@ -17,11 +17,13 @@ async function loadAirports() {
 function filterAirports(query) {
   const q = query.trim().toLowerCase();
   if (q.length < 2) return [];
-  return AIRPORTS.filter(item =>
-    item.label.toLowerCase().includes(q) ||
-    item.code.toLowerCase().includes(q) ||
-    item.city.toLowerCase().includes(q)
-  ).slice(0, 12);
+  return AIRPORTS.filter(item => {
+    const label = (item.label || '').toLowerCase();
+    const code = (item.code || '').toLowerCase();
+    const city = (item.city || '').toLowerCase();
+    const country = (item.country || '').toLowerCase();
+    return label.includes(q) || code.includes(q) || city.includes(q) || country.includes(q);
+  }).slice(0, 12);
 }
 
 function closeDropdown() {
@@ -33,6 +35,7 @@ function closeDropdown() {
 
 function attachAirportAutocomplete(input) {
   input.setAttribute('autocomplete', 'off');
+  input.setAttribute('spellcheck', 'false');
 
   input.addEventListener('focus', () => {
     closeDropdown();
@@ -43,9 +46,12 @@ function attachAirportAutocomplete(input) {
   });
 
   input.addEventListener('input', () => {
+    delete input.dataset.airportCode;
+    delete input.dataset.airportSlug;
+    input.setCustomValidity('');
     const matches = filterAirports(input.value || '');
     closeDropdown();
-    if (matches.length === 0) return;
+    if ((input.value || '').trim().length < 2 || matches.length === 0) return;
 
     const box = document.createElement('div');
     box.className = 'airport-dropdown';
@@ -119,6 +125,10 @@ function applyDateLimitsAndUI() {
   document.querySelectorAll('input[type="date"]').forEach(input => {
     input.min = min;
     input.max = max;
+    if (input.value) {
+      if (input.value < min) input.value = min;
+      if (input.value > max) input.value = max;
+    }
     if (input.dataset.enhanced === '1') {
       syncDateDisplay(input);
       return;
@@ -154,6 +164,22 @@ function applyDateLimitsAndUI() {
     });
 
     input.addEventListener('change', () => syncDateDisplay(input));
+  });
+
+  document.querySelectorAll('form').forEach(form => {
+    const depart = form.querySelector('[name="departDate"]');
+    const ret = form.querySelector('[name="returnDate"]');
+    if (depart && ret) {
+      const syncReturnMin = () => {
+        ret.min = depart.value || min;
+        if (ret.value && depart.value && ret.value < depart.value) {
+          ret.value = depart.value;
+          syncDateDisplay(ret);
+        }
+      };
+      depart.addEventListener('change', syncReturnMin);
+      syncReturnMin();
+    }
   });
 }
 
@@ -261,236 +287,4 @@ document.addEventListener('DOMContentLoaded', async () => {
   bindSearchForms();
   prefillRequestForm();
   initHeroVideo();
-});
-
-
-function injectFunnelBanner() {
-  if (document.querySelector('.funnel-banner')) return;
-  const banner = document.createElement('div');
-  banner.className = 'funnel-banner';
-  banner.innerHTML = `
-    <div class="container funnel-banner-inner">
-      <p><strong>Unpublished premium fares.</strong> Request a private quote for business or first class long-haul travel.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn btn-secondary" href="/destinations/index.html">Explore routes</a>
-        <a class="btn btn-primary" href="/request.html?source=sticky-banner">Get my private quote</a>
-      </div>
-    </div>`;
-  document.body.appendChild(banner);
-}
-
-function injectExitPopup() {
-  if (document.getElementById('exitPopup')) return;
-  const popup = document.createElement('div');
-  popup.id = 'exitPopup';
-  popup.className = 'popup-overlay';
-  popup.innerHTML = `
-    <div class="popup-card">
-      <button class="popup-close" type="button" aria-label="Close">×</button>
-      <p class="kicker">Before you leave</p>
-      <h3>Unlock unpublished business and first class fares.</h3>
-      <p>Tell us your route and dates and we will check premium fare options with no service fee. Designed for long-haul international travel.</p>
-      <div class="popup-actions">
-        <a class="btn btn-primary" href="/request.html?source=exit-popup">Get my private quote</a>
-        <a class="btn btn-secondary" href="/routes/index.html">Browse long-haul routes</a>
-      </div>
-    </div>`;
-  document.body.appendChild(popup);
-  popup.addEventListener('click', (e) => {
-    if (e.target === popup || e.target.closest('.popup-close')) popup.classList.remove('active');
-  });
-  const seen = sessionStorage.getItem('luxaeris_exit_popup_seen');
-  if (seen) return;
-  const handler = (e) => {
-    if (e.clientY > 20) return;
-    popup.classList.add('active');
-    sessionStorage.setItem('luxaeris_exit_popup_seen', '1');
-    document.removeEventListener('mouseout', handler);
-  };
-  document.addEventListener('mouseout', handler);
-}
-
-function enhanceRequestForm() {
-  const form = document.getElementById('quoteRequestForm');
-  if (!form) return;
-  const url = new URL(window.location.href);
-  const source = url.searchParams.get('source') || document.referrer || 'direct';
-  const sourceInput = document.createElement('input');
-  sourceInput.type = 'hidden'; sourceInput.name = 'leadSource'; sourceInput.value = source;
-  form.appendChild(sourceInput);
-  const nextInput = document.createElement('input');
-  nextInput.type = 'hidden'; nextInput.name = '_next'; nextInput.value = window.location.origin + '/thank-you.html';
-  form.appendChild(nextInput);
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-  injectFunnelBanner();
-  injectExitPopup();
-  enhanceRequestForm();
-}, { once: true });
-
-
-const REAL_IMAGE_MAP = {
-  destinations: {
-    'paris': '/assets/images/real/paris.jpg',
-    'new-york': '/assets/images/real/new-york.jpg',
-    'london': '/assets/images/real/london.jpg',
-    'tokyo': '/assets/images/real/tokyo.jpg',
-    'dubai': '/assets/images/real/dubai.jpg',
-    'los-angeles': '/assets/images/real/los-angeles.jpg'
-  },
-  airports: {
-    'jfk': '/assets/images/real/jfk.jpg',
-    'lax': '/assets/images/real/lax.jpg'
-  },
-  cabins: {
-    'business': '/assets/images/real/business-class.jpg',
-    'first': '/assets/images/real/first-class.jpg'
-  },
-  fallback: '/assets/images/real/business-class.jpg'
-};
-
-const CODE_IMAGE_MAP = { CDG: '/assets/images/real/paris.jpg', ORY: '/assets/images/real/paris.jpg', JFK: '/assets/images/real/new-york.jpg', EWR: '/assets/images/real/new-york.jpg', LHR: '/assets/images/real/london.jpg', LGW: '/assets/images/real/london.jpg', HND: '/assets/images/real/tokyo.jpg', NRT: '/assets/images/real/tokyo.jpg', DXB: '/assets/images/real/dubai.jpg', LAX: '/assets/images/real/los-angeles.jpg' };
-
-function validEmail(value) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((value || '').trim());
-}
-
-function validPhone(value) {
-  const digits = (value || '').replace(/\D/g, '');
-  return digits.length >= 7;
-}
-
-function getAirportRecordFromInput(input) {
-  const raw = (input.value || '').trim();
-  return AIRPORT_LOOKUP.get(raw) || null;
-}
-
-function inferRouteType(originCode, destinationCode) {
-  const us = new Set(['JFK','EWR','LGA','LAX','SFO','ORD','DFW','MIA','SEA','IAD','BOS','ATL','IAH','LAS','SAN','PHX','CLT','DTW','MSP','DEN','HNL']);
-  const originUS = us.has((originCode || '').toUpperCase());
-  const destinationUS = us.has((destinationCode || '').toUpperCase());
-  if (originUS && destinationUS) return 'domestic-us';
-  if (originUS && !destinationUS) return 'outbound-us';
-  if (!originUS && destinationUS) return 'inbound-us';
-  return 'global-premium';
-}
-
-function applyAirportValidation(form) {
-  let ok = true;
-  form.querySelectorAll('[data-location-input]').forEach(input => {
-    const valid = markAirportFieldValidity(input);
-    input.classList.toggle('field-invalid', !valid);
-    ok = valid && ok;
-  });
-  const email = form.querySelector('[name="email"]');
-  const phone = form.querySelector('[name="phone"]');
-  if (email) {
-    const good = validEmail(email.value);
-    email.setCustomValidity(good ? '' : 'Please enter a valid email address.');
-    email.classList.toggle('field-invalid', !good);
-    ok = good && ok;
-  }
-  if (phone) {
-    const good = validPhone(phone.value);
-    phone.setCustomValidity(good ? '' : 'Please enter a valid phone or WhatsApp number.');
-    phone.classList.toggle('field-invalid', !good);
-    ok = good && ok;
-  }
-  return ok;
-}
-
-function enhanceRequestSubmission() {
-  const form = document.getElementById('quoteRequestForm');
-  if (!form) return;
-  const status = document.getElementById('formStatus');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const ok = applyAirportValidation(form);
-    if (!ok) {
-      if (status) status.textContent = 'Please select valid airports from the list and enter a real email address and phone number.';
-      form.reportValidity();
-      return;
-    }
-
-    const origin = getAirportRecordFromInput(form.querySelector('[name="origin"]'));
-    const destination = getAirportRecordFromInput(form.querySelector('[name="destination"]'));
-    if (!origin || !destination) {
-      if (status) status.textContent = 'Please choose both airports from the suggested list.';
-      return;
-    }
-
-    const payload = Object.fromEntries(new FormData(form).entries());
-    payload.originCode = origin.code;
-    payload.destinationCode = destination.code;
-    payload.routeType = inferRouteType(origin.code, destination.code);
-    payload.originCity = origin.city || '';
-    payload.destinationCity = destination.city || '';
-
-    const endpoint = (window.LUXAERIS_FORM_ENDPOINT || '').trim();
-    if (!endpoint) {
-      if (status) status.textContent = 'Add your Google Apps Script endpoint in assets/site-config.js to activate submissions.';
-      return;
-    }
-
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) submitButton.disabled = true;
-    if (status) status.textContent = 'Submitting your request…';
-
-    try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (!res.ok) throw new Error('Submission failed');
-      window.location.href = '/thank-you.html';
-    } catch (err) {
-      if (status) status.textContent = 'We could not send your request just now. Please try again in a moment.';
-    } finally {
-      if (submitButton) submitButton.disabled = false;
-    }
-  });
-}
-
-function applyRealImages() {
-  const path = window.location.pathname;
-  const parts = path.split('/').filter(Boolean);
-  const heroImg = document.querySelector('.lux-hero img');
-  let src = '';
-  if (parts[0] === 'destinations' && parts.length >= 2) {
-    const slug = parts[parts.length - 1].replace('.html', '');
-    src = REAL_IMAGE_MAP.destinations[slug] || '';
-  } else if (parts[0] === 'airports' && parts.length >= 2) {
-    const slug = parts[parts.length - 1].replace('.html', '');
-    src = REAL_IMAGE_MAP.airports[slug] || '';
-  } else if (parts[0] === 'routes' && parts.length >= 2) {
-    const slug = parts[parts.length - 1].replace('.html', '');
-    const match = slug.match(/to-([a-z0-9]{3,4})/i);
-    if (match) src = CODE_IMAGE_MAP[match[1].toUpperCase()] || '';
-  } else if (parts[0] === 'cabins' && parts.length >= 2) {
-    const slug = parts[parts.length - 1];
-    if (slug.includes('business')) src = REAL_IMAGE_MAP.cabins.business;
-    if (slug.includes('first')) src = REAL_IMAGE_MAP.cabins.first;
-  } else if (path.endsWith('/index.html') || path === '/' || path === '/index.html') {
-    const cards = document.querySelectorAll('.feature-card');
-    cards.forEach((card, i) => card.classList.add('feature-card-visual', `visual-${i+1}`));
-  }
-  if (heroImg && src) {
-    heroImg.src = src;
-  }
-}
-
-function polishMicrocopy() {
-  document.querySelectorAll('a, button').forEach(el => {
-    if (el.textContent.includes('Request Quote')) el.textContent = el.textContent.replaceAll('Request Quote', 'Get Tailored Options');
-    if (el.textContent.includes('Get my private quote')) el.textContent = el.textContent.replaceAll('Get my private quote', 'Get tailored options');
-    if (el.textContent.includes('Get My Private Quote')) el.textContent = el.textContent.replaceAll('Get My Private Quote', 'Get Tailored Options');
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  enhanceRequestSubmission();
-  applyRealImages();
-  polishMicrocopy();
 });
