@@ -84,7 +84,7 @@
       "airbus-a350-business-class",
       "boeing-787-business-class"
     ],
-    "alliance": "Independent"
+    "alliance": "Oneworld"
   },
   {
     "airline_slug": "ita-airways-business-class",
@@ -94,7 +94,7 @@
     "related_aircraft_slugs": [
       "airbus-a330-business-class"
     ],
-    "alliance": "SkyTeam"
+    "alliance": "Transitioning to Star Alliance"
   },
   {
     "airline_slug": "iberia-business-class",
@@ -104,7 +104,7 @@
     "related_aircraft_slugs": [
       "airbus-a350-business-class"
     ],
-    "alliance": "Independent"
+    "alliance": "Oneworld"
   },
   {
     "airline_slug": "air-france-business-class",
