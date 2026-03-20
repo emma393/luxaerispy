@@ -1,0 +1,7 @@
+[
+  {"from":"JFK","to":"LHR","airlines":["British Airways","Virgin Atlantic","American Airlines"],"duration":"7h 05m","priceBusiness":2850,"priceFirst":5600},
+  {"from":"JFK","to":"DXB","airlines":["Emirates","United Airlines"],"duration":"12h 20m","priceBusiness":3950,"priceFirst":8400},
+  {"from":"SFO","to":"CDG","airlines":["Air France","United Airlines"],"duration":"10h 50m","priceBusiness":3180,"priceFirst":7200},
+  {"from":"LAX","to":"NRT","airlines":["Japan Airlines","ANA","American Airlines"],"duration":"11h 40m","priceBusiness":3620,"priceFirst":8900},
+  {"from":"JFK","to":"MLE","airlines":["Qatar Airways","Emirates","Etihad Airways"],"duration":"18h+","priceBusiness":4890,"priceFirst":11200}
+]

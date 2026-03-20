@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="content-language" content="en">
-<meta name="language" content="English">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Request Tailored Premium Flight Options | LuxAeris</title>
-<meta name="description" content="Share your route, dates, and cabin preferences to explore premium flight options and be matched with a relevant travel specialist when deeper support is needed.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#1f1814">
-<link rel="canonical" href="https://luxaeris.com/request.html">
-<meta property="og:title" content="Request Tailored Premium Flight Options | LuxAeris">
-<meta property="og:description" content="Share your route, dates, and cabin preferences to explore premium flight options and be matched with a relevant travel specialist when deeper support is needed.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://luxaeris.com/request.html">
-<meta property="og:image" content="https://luxaeris.com/assets/images/real/first-class.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-<link rel="stylesheet" href="assets/site.css">
-<script src="assets/site-config.js"></script>
-<script defer src="assets/site.js"></script>
-<meta name="twitter:title" content="Request Tailored Premium Flight Options | LuxAeris">
-<meta name="twitter:description" content="Share your route, dates, and cabin preferences to explore premium flight options and be matched with a relevant travel specialist when deeper support is needed.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxAeris Request — Finalize Your Premium Flight Quote</title>
+  <meta name="description" content="Finalize your premium business or first class flight request with LuxAeris.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<div class="topbar"><div class="container topbar-inner"><span>Premium travel research and specialist matching</span><span>Tailored premium travel request</span></div></div>
-<header class="site-header">
-  <div class="container nav">
-    <a class="logo-wrap" href="index.html"><img class="logo-img" src="assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">LuxAeris</div><div class="brand-tag">Premium route intelligence. Refined travel planning.</div></div></a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a><a href="destinations/index.html">Destinations</a><a href="airlines/index.html">Airlines</a><a href="airports/index.html">Airports</a><a href="routes/index.html">Routes</a><a href="tools/index.html">Tools</a><a href="search.html">Search</a><a class="btn btn-primary" href="request.html">Request tailored options</a>
-    </nav>
-  </div>
-</header>
-<a class="btn btn-primary floating-request" href="request.html?source=floating-cta">Request tailored options</a>
-
-<section class="section request-hero">
-  <div class="container request-layout">
-    <div>
-      <p class="kicker">Refined request flow</p>
-      <h1 class="section-title">Request tailored premium travel options.</h1>
-      <p class="section-intro">Share your route, dates, and cabin preferences so LuxAeris can understand your travel needs and, when appropriate, connect you with a relevant premium travel specialist.</p>
-      <div class="stepper">
-        <span class="step-chip active">1. Route</span>
-        <span class="step-chip active">2. Travel dates</span>
-        <span class="step-chip active">3. Cabin + details</span>
-        <span class="step-chip active">4. Contact</span>
-      </div>
-      <p class="request-note">Best for long-haul business class, first class, and premium US domestic requests. Multi-city details can be added in the notes field.</p>
-      <article class="panel request-form-shell">
-        <form id="quoteRequestForm" class="request-form" method="POST" data-google-sheet-form="" action="" novalidate data-google-sheet-form>
-          <div class="field-group">
-            <div class="label">Contact details</div>
-            <div class="name-row"><input name="fullName" placeholder="Full name" required minlength="2"></div>
-            <div class="compact-row"><input name="email" type="email" placeholder="Email address" required inputmode="email" autocomplete="email"><input name="phone" type="tel" placeholder="Phone or WhatsApp" required inputmode="tel" minlength="7" autocomplete="tel"></div>
-          </div>
-          <div class="field-group">
-            <div class="label">Trip details</div>
-            <div><input name="origin" data-location-input placeholder="Origin airport, city, or code" required></div>
-            <div><input name="destination" data-location-input placeholder="Destination airport, city, or code" required></div>
-            <div class="date-row"><input name="departDate" type="date" required><input name="returnDate" type="date"></div>
-            <div class="split-row"><select name="tripType"><option value="roundtrip">Round Trip</option><option value="oneway">One Way</option><option value="multicity">Multi City</option></select><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div>
-          </div>
-          <div class="field-group">
-            <div class="label">Preferences</div>
-            <div class="split-row"><select name="passengers"><option>1 passenger</option><option>2 passengers</option><option>3 passengers</option><option>4+ passengers</option></select><select name="dateFlexibility"><option>Exact dates</option><option>± 1-2 days</option><option>Flexible within a week</option><option>Flexible within a month</option></select></div>
-            <div class="split-row"><select name="preferredContact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select><select name="preferredCabinFocus"><option>Best fare</option><option>Best schedule</option><option>Best airline</option><option>Best seat / suite</option></select></div>
-            <div class="full-row"><textarea name="notes" placeholder="Notes, preferred times, airline preferences, loyalty program, or anything else that matters"></textarea></div>
-          </div>
-          <div class="full-row"><button class="btn btn-primary" type="submit">Submit Request</button></div><p id="formStatus" class="microcopy" aria-live="polite"></p>
-          <p class="microcopy">By submitting, you agree to our privacy terms and understand that relevant request details may be shared with selected travel partners.</p>
-        </form>
-      </article>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">LA</span>
+        <span class="brand-name">LuxAeris</span>
+      </a>
     </div>
-    <aside class="request-side-card">
-      <span class="small-badge">Designed for qualified leads</span>
-      <h3>What happens after you submit</h3>
-      <p>Your request is stored securely, reviewed for route clarity, and routed toward a relevant premium travel specialist when deeper support is appropriate.</p>
-      <ul>
-        <li>Valid airport selection required</li>
-        <li>Calendar flow preserved for cleaner date entry</li>
-        <li>Email or phone required for every request</li>
-        <li>Built for premium domestic and international travel</li>
-      </ul>
-      <div class="cta-inline">
-        <a class="btn btn-secondary" href="routes/index.html">View route guides</a>
-        <a class="btn btn-primary" href="destinations/index.html">View destinations</a>
-      </div>
-    </aside>
-  </div>
-</section>
+  </header>
 
-<footer class="footer"><div class="container footer-grid"><div><strong>LuxAeris</strong><p>Premium route intelligence, airport guidance, and refined travel research for business and first class journeys.</p></div><div><strong>Explore</strong><p><a href="destinations/index.html">Destinations</a><br><a href="airlines/index.html">Airlines</a><br><a href="routes/index.html">Routes</a><br><a href="airports/index.html">Airports</a></p></div><div><strong>Support</strong><p><a href="contact.html">Contact</a><br><a href="faq.html">FAQ</a><br><a href="request.html">Request tailored options</a></p></div><div><strong>Company</strong><p><a href="about.html">About</a><br><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-and-conditions.html">Terms &amp; Conditions</a></p></div></div><div class="container footer-sub"><p class="footer-note">LuxAeris is an independent premium travel discovery platform. We do not issue tickets directly. Requests may be shared with selected travel partners to help travelers explore relevant options.</p></div></footer>
-<div id="cookieBanner" class="cookie-banner" style="display:none"><div class="cookie-inner"><div><strong style="color:#fff8f1">Cookie notice</strong><p>LuxAeris uses cookies and similar technologies to improve site functionality, remember preferences, and understand website usage.</p></div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-secondary" id="cookieReject" type="button">Reject</button><button class="btn btn-primary" id="cookieAccept" type="button">Accept</button></div></div></div>
-</body></html>
+  <main class="request-page">
+    <section class="request-shell container">
+      <aside class="panel request-summary-panel">
+        <div class="eyebrow">Premium Quote Intake</div>
+        <h1 class="request-title">Review your route and send your request.</h1>
+        <p class="lead compact">A cleaner handoff, longer contact fields, and a proper airport picker directly beneath each box.</p>
+
+        <div class="request-summary-grid">
+          <div class="summary-card">
+            <span class="summary-label">Origin</span>
+            <strong id="summaryOrigin">Not selected yet</strong>
+          </div>
+          <div class="summary-card">
+            <span class="summary-label">Destination</span>
+            <strong id="summaryDestination">Not selected yet</strong>
+          </div>
+          <div class="summary-card">
+            <span class="summary-label">Cabin</span>
+            <strong id="summaryCabin">Business Class</strong>
+          </div>
+          <div class="summary-card">
+            <span class="summary-label">Departure</span>
+            <strong id="summaryDepart">Flexible</strong>
+          </div>
+          <div class="summary-card">
+            <span class="summary-label">Return</span>
+            <strong id="summaryReturn">One way / flexible</strong>
+          </div>
+          <div class="summary-card">
+            <span class="summary-label">Budget</span>
+            <strong id="summaryBudget">Not provided</strong>
+          </div>
+        </div>
+
+        <div class="request-notes card-like">
+          <h3>What happens next</h3>
+          <p>Your request is sent directly into your LuxAeris Leads Google Sheet, ready for follow-up and scoring.</p>
+          <ul class="mini-list">
+            <li>Real submission to Google Sheets</li>
+            <li>Valid airport selection required</li>
+            <li>Metro city codes like NYC, LON, PAR supported</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="panel form-panel request-form-panel">
+        <h2 class="panel-title">Complete your flight request</h2>
+        <p class="panel-subtitle">Our service is free. You only pay for the ticket you choose.</p>
+        <p class="highlight">Type at least 2 letters in origin or destination. Suggestions now stay directly under each field.</p>
+
+        <form id="fullRequestForm" novalidate>
+          <div class="form-grid form-grid-request">
+            <div class="field field-wide autocomplete-field">
+              <label for="origin">Origin</label>
+              <input id="origin" name="origin" type="text" placeholder="Type city, airport code, or metro code" autocomplete="off" required>
+              <input id="originCode" name="originCode" type="hidden">
+              <div id="originList" class="autocomplete-list" hidden></div>
+              <div id="originError" class="error"></div>
+            </div>
+
+            <div class="field field-wide autocomplete-field">
+              <label for="destination">Destination</label>
+              <input id="destination" name="destination" type="text" placeholder="Type city, airport code, or metro code" autocomplete="off" required>
+              <input id="destinationCode" name="destinationCode" type="hidden">
+              <div id="destinationList" class="autocomplete-list" hidden></div>
+              <div id="destinationError" class="error"></div>
+            </div>
+
+            <div class="field">
+              <label for="departDate">Departure date</label>
+              <input id="departDate" name="departDate" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="returnDate">Return date</label>
+              <input id="returnDate" name="returnDate" type="date">
+            </div>
+
+            <div class="field">
+              <label for="cabin">Cabin</label>
+              <select id="cabin" name="cabin">
+                <option>Business Class</option>
+                <option>First Class</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget</option>
+                <option>$2K–$5K</option>
+                <option>$5K–$10K</option>
+                <option>$10K+</option>
+              </select>
+            </div>
+
+            <div class="field field-wide contact-span">
+              <label for="fullName">Full name</label>
+              <input id="fullName" name="fullName" type="text" placeholder="Your full name" required>
+            </div>
+
+            <div class="field field-wide contact-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="field field-wide contact-field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" placeholder="+1 000 000 0000" required>
+            </div>
+
+            <div class="field field-wide">
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, number of passengers, or anything else relevant."></textarea>
+            </div>
+
+            <div class="field field-wide button-row request-actions">
+              <button type="submit" class="btn-primary">Submit request</button>
+              <a href="index.html" class="btn-secondary back-link">Back</a>
+            </div>
+          </div>
+        </form>
+
+        <div class="success-box" id="successBox"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">LuxAeris V16 request page.</div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
