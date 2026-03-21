@@ -1,0 +1,2 @@
+/routes/:region/:country /routes/:region/:country/index.html 200
+/routes/:region/:country/:city /routes/:region/:country/:city.html 200

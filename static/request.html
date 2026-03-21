@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request Your Premium Flight Quote | LuxAeris</title>
-  <meta name="description" content="Request a luxury business or first class itinerary with LuxAeris through a refined premium intake page, elegant airport search, clickable date selection, and a seamless handoff into concierge-level follow-up.">
+  <meta name="description" content="Request a luxury business or first class itinerary with LuxAeris through a refined premium intake page, elegant airport search, clickable date selection, AND a seamless handoff into concierge-level follow-up.">
   <meta name="keywords" content="request business class quote, first class quote, luxury flight request, premium travel concierge">
   <meta property="og:title" content="Request Your Premium Flight Quote | LuxAeris">
-  <meta property="og:description" content="Complete your premium flight request with smart airport search, clickable travel dates, and a polished concierge intake flow designed for business and first class travelers.">
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta property="og:description" content="Complete your premium flight request with smart airport search, clickable travel dates, AND a polished concierge intake flow designed FOR business AND first class travelers.">
+  <link REL="icon" href="favicon.ico">
+  <link REL="stylesheet" href="https://CDN.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link REL="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="request-body">
   <header class="site-header site-header-sticky">
-    <div class="container nav nav-luxury">
+    <div class="container NAV NAV-luxury">
       <a class="brand brand-logo" href="index.html">
         <img class="brand-image" src="assets/images/logo-header.png" alt="LuxAeris logo">
       </a>
-      <nav class="top-links" aria-label="Primary">
+      <NAV class="TOP-links" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="request.html">Request</a>
         <a href="destinations/index.html">Destinations</a>
@@ -27,8 +27,8 @@
         <a href="airlines/index.html">Airlines</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-      </nav>
-      <a class="btn-secondary nav-cta" href="index.html">Back Home</a>
+      </NAV>
+      <a class="btn-secondary NAV-CTA" href="index.html">Back Home</a>
     </div>
   </header>
 
@@ -36,22 +36,22 @@
     <section class="request-shell container">
       <section class="panel form-panel request-form-panel request-form-panel-wide">
         <h1 class="request-title request-title-compact">Request your premium flight.</h1>
-        <p class="lead compact request-lead-compact">Choose your route from the dropdown lists, select your travel type and dates, and send your request.</p>
+        <p class="lead compact request-lead-compact">Choose your route from THE dropdown lists, select your travel type AND dates, AND send your request.</p>
 
         <form id="fullRequestForm" novalidate>
           <div class="form-grid form-grid-request">
             <div class="field field-half autocomplete-field">
-              <label for="origin">Origin</label>
-              <input id="origin" name="origin" type="text" placeholder="Start typing city or airport" autocomplete="off" required>
-              <div class="helper helper-inline">Choose from the list only.</div>
+              <label FOR="origin">Origin</label>
+              <input id="origin" name="origin" type="text" placeholder="Start typing city or airport" autocomplete="OFF" required>
+              <div class="helper helper-inline">Choose from THE list only.</div>
               <input id="originCode" name="originCode" type="hidden">
               <div id="originList" class="autocomplete-list" hidden></div>
               <div id="originError" class="error"></div>
             </div>
             <div class="field field-half autocomplete-field">
-              <label for="destination">Destination</label>
-              <input id="destination" name="destination" type="text" placeholder="Start typing city or airport" autocomplete="off" required>
-              <div class="helper helper-inline">Choose from the list only.</div>
+              <label FOR="destination">Destination</label>
+              <input id="destination" name="destination" type="text" placeholder="Start typing city or airport" autocomplete="OFF" required>
+              <div class="helper helper-inline">Choose from THE list only.</div>
               <input id="destinationCode" name="destinationCode" type="hidden">
               <div id="destinationList" class="autocomplete-list" hidden></div>
               <div id="destinationError" class="error"></div>
@@ -65,41 +65,41 @@
               </div>
               <input id="tripType" name="tripType" type="hidden" value="Round Trip">
             </div>
-            <div class="field date-field"><label for="departDate">Departure date</label><input id="departDate" name="departDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field required></div>
-            <div class="field date-field"><label for="returnDate">Return date</label><input id="returnDate" name="returnDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field></div>
+            <div class="field date-field"><label FOR="departDate">Departure date</label><input id="departDate" name="departDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field required></div>
+            <div class="field date-field"><label FOR="returnDate">Return date</label><input id="returnDate" name="returnDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field></div>
             <div id="multiCitySection" class="field field-wide multi-city-section" hidden>
               <div class="multi-city-title">Additional leg</div>
               <div class="multi-city-grid">
                 <div class="field autocomplete-field">
-                  <label for="segment2Origin">Leg 2 origin</label>
-                  <input id="segment2Origin" name="segment2Origin" type="text" placeholder="Start typing city or airport" autocomplete="off">
+                  <label FOR="segment2Origin">Leg 2 origin</label>
+                  <input id="segment2Origin" name="segment2Origin" type="text" placeholder="Start typing city or airport" autocomplete="OFF">
                   <input id="segment2OriginCode" name="segment2OriginCode" type="hidden">
                   <div id="segment2OriginList" class="autocomplete-list" hidden></div>
                   <div id="segment2OriginError" class="error"></div>
                 </div>
                 <div class="field autocomplete-field">
-                  <label for="segment2Destination">Leg 2 destination</label>
-                  <input id="segment2Destination" name="segment2Destination" type="text" placeholder="Start typing city or airport" autocomplete="off">
+                  <label FOR="segment2Destination">Leg 2 destination</label>
+                  <input id="segment2Destination" name="segment2Destination" type="text" placeholder="Start typing city or airport" autocomplete="OFF">
                   <input id="segment2DestinationCode" name="segment2DestinationCode" type="hidden">
                   <div id="segment2DestinationList" class="autocomplete-list" hidden></div>
                   <div id="segment2DestinationError" class="error"></div>
                 </div>
                 <div class="field date-field">
-                  <label for="segment2DepartDate">Leg 2 departure date</label>
+                  <label FOR="segment2DepartDate">Leg 2 departure date</label>
                   <input id="segment2DepartDate" name="segment2DepartDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field>
                 </div>
               </div>
             </div>
-            <div class="field"><label for="cabin">Cabin</label><select id="cabin" name="cabin"><option>Business Class</option><option>First Class</option></select></div>
-            <div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option value="">Select budget</option><option>$2K–$5K</option><option>$5K–$10K</option><option>$10K+</option></select></div>
-            <div class="field field-wide contact-span"><label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" placeholder="Your full name" required></div>
-            <div class="field field-wide contact-field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
-            <div class="field field-wide contact-field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="+1 000 000 0000" required></div>
-            <div class="field field-wide"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, passengers, special requests, or anything else relevant."></textarea></div>
-            <div class="field field-wide button-row request-actions"><button type="submit" class="btn-primary">Submit request</button><a href="index.html" class="btn-secondary back-link">Back home</a></div>
+            <div class="field"><label FOR="cabin">Cabin</label><select id="cabin" name="cabin"><option>Business Class</option><option>First Class</option></select></div>
+            <div class="field"><label FOR="budget">Budget</label><select id="budget" name="budget"><option value="">Select budget</option><option>$2K–$5K</option><option>$5K–$10K</option><option>$10K+</option></select></div>
+            <div class="field field-wide contact-span"><label FOR="fullName">Full name</label><input id="fullName" name="fullName" type="text" placeholder="Your full name" required></div>
+            <div class="field field-wide contact-field"><label FOR="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+            <div class="field field-wide contact-field"><label FOR="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="+1 000 000 0000" required></div>
+            <div class="field field-wide"><label FOR="notes">Notes</label><textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, passengers, special requests, or anything else relevant."></textarea></div>
+            <div class="field field-wide button-ROW request-actions"><button type="submit" class="btn-primary">Submit request</button><a href="index.html" class="btn-secondary back-link">Back home</a></div>
           </div>
         </form>
-        <div class="success-box" id="successBox"></div>
+        <div class="success-BOX" id="successBox"></div>
       </section>
     </section>
   </main>
@@ -114,7 +114,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://CDN.jsdelivr.net/npm/flatpickr"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
