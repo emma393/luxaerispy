@@ -6,6 +6,7 @@ let AIRPORTS = [];
 let AIRPORTS_BY_CODE = new Map();
 
 const normalize = (value = '') => String(value).toLowerCase().trim();
+const normalizePlain = (value = '') => normalize(String(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, ''));
 
 async function loadAirports() {
   if (AIRPORTS.length) return AIRPORTS;
@@ -18,7 +19,7 @@ async function loadAirports() {
       const data = Array.isArray(raw) ? raw : (Array.isArray(raw?.airports) ? raw.airports : []);
       if (!Array.isArray(data) || !data.length) throw new Error('Airport data is not an array');
       AIRPORTS = data;
-      AIRPORTS_BY_CODE = new Map(AIRPORTS.map(a => [a.code, a]));
+      AIRPORTS_BY_CODE = new Map(AIRPORTS.map((a) => [a.code, a]));
       return AIRPORTS;
     } catch (error) {
       lastError = error;
@@ -27,43 +28,84 @@ async function loadAirports() {
   throw lastError || new Error('Unable to load airports data.');
 }
 
+function airportDisplayPrefix(airport) {
+  if (airport.displayPrefix) return airport.displayPrefix;
+  if (airport.isCityGroup) return airport.cityCode || airport.city;
+  if (airport.hasCityGroup) return airport.cityCode || airport.city;
+  return airport.code;
+}
+
 function airportLabel(airport) {
+  const prefix = airportDisplayPrefix(airport);
+  if (airport.isCityGroup) {
+    return `${prefix} (${(airport.memberCodes || []).join(', ')}) — ${airport.city}, ${airport.country}`;
+  }
+  if (airport.hasCityGroup) {
+    return `${prefix} (${airport.code}) — ${airport.city}, ${airport.country}`;
+  }
   return `${airport.code} — ${airport.city}, ${airport.country}`;
 }
 
 function airportMeta(airport) {
+  if (airport.isCityGroup) {
+    const names = (airport.memberCodes || []).slice(0, 6).join(', ');
+    return `Select the city-wide option or choose a specific airport • ${names}${(airport.memberCodes || []).length > 6 ? ', …' : ''}`;
+  }
   const bits = [airport.name || airport.airport || airport.city];
   if (airport.cityCode && airport.cityCode !== airport.code) bits.push(`${airport.cityCode} metro area`);
   if (airport.code) bits.push(airport.code);
   return bits.filter(Boolean).join(' • ');
 }
 
+function airportSearchTerms(airport) {
+  const parts = [
+    airport.code,
+    airport.cityCode,
+    airport.displayPrefix,
+    airport.city,
+    airport.country,
+    airport.name,
+    airport.airport,
+    airportLabel(airport),
+    ...(airport.memberCodes || []),
+    ...(airport.searchable || [])
+  ].filter(Boolean);
+  return Array.from(new Set(parts.map(normalizePlain)));
+}
+
 function searchAirports(term) {
-  const q = normalize(term);
+  const q = normalizePlain(term);
   if (q.length < 2) return [];
-  const starts = [];
-  const contains = [];
+  const scored = [];
   for (const airport of AIRPORTS) {
-    const hay = [airport.code, airport.cityCode, airport.city, airport.country, airport.name, airport.airport]
-      .filter(Boolean)
-      .map(normalize);
-    const joined = hay.join(' ');
+    const terms = airportSearchTerms(airport);
+    const joined = terms.join(' ');
     if (!joined.includes(q)) continue;
-    const rankTarget = `${normalize(airport.code)} ${normalize(airport.cityCode || '')} ${normalize(airport.city || '')} ${normalize(airport.name || airport.airport || '')}`;
-    (rankTarget.startsWith(q) ? starts : contains).push(airport);
+
+    let score = airport.isCityGroup ? 100 : 0;
+    if (terms.some((t) => t === q)) score += 120;
+    if (normalizePlain(airportDisplayPrefix(airport)) === q) score += airport.isCityGroup ? 220 : 150;
+    if (normalizePlain(airport.code) === q) score += airport.isCityGroup ? 90 : 180;
+    if (normalizePlain(airport.cityCode || '') === q) score += airport.isCityGroup ? 200 : 140;
+    if (normalizePlain(airport.city || '') === q) score += airport.isCityGroup ? 170 : 90;
+    if ((airport.memberCodes || []).some((code) => normalizePlain(code) === q)) score += airport.isCityGroup ? 160 : 70;
+    if (terms.some((t) => t.startsWith(q))) score += 60;
+    if (normalizePlain(airportLabel(airport)).startsWith(q)) score += 40;
+    score += Math.max(0, 12 - (airport.memberCodes || []).length) / 100;
+
+    scored.push({ airport, score });
   }
-  return [...starts, ...contains].slice(0, 10);
+
+  return scored
+    .sort((a, b) => b.score - a.score || a.airport.city.localeCompare(b.airport.city) || a.airport.code.localeCompare(b.airport.code))
+    .slice(0, 12)
+    .map((entry) => entry.airport);
 }
 
 function findExactAirport(term) {
-  const q = normalize(term);
+  const q = normalizePlain(term);
   if (!q) return null;
-  const exact = AIRPORTS.find((airport) => {
-    const options = [airport.code, airport.cityCode, airport.city, airport.name, airport.airport, airportLabel(airport)]
-      .filter(Boolean)
-      .map(normalize);
-    return options.includes(q);
-  });
+  const exact = AIRPORTS.find((airport) => airportSearchTerms(airport).includes(q));
   if (exact) return exact;
   const results = searchAirports(term);
   return results.length === 1 ? results[0] : null;
@@ -71,6 +113,20 @@ function findExactAirport(term) {
 
 function isValidCode(code) {
   return !!code && AIRPORTS_BY_CODE.has(code);
+}
+
+function findAirportByStoredCode(code) {
+  if (!code) return null;
+  if (AIRPORTS_BY_CODE.has(code)) return AIRPORTS_BY_CODE.get(code);
+  const matches = AIRPORTS.filter((airport) => airport.submitCode === code);
+  if (!matches.length) return null;
+  const preferredGroup = matches.find((airport) => airport.isCityGroup);
+  return preferredGroup || matches[0];
+}
+
+function submittedCodeFor(storedCode) {
+  const airport = findAirportByStoredCode(storedCode);
+  return airport?.submitCode || storedCode || '';
 }
 
 function parseMDY(text) {
@@ -114,42 +170,6 @@ function validMDYWithinRange(text) {
   return dt >= today && dt <= max;
 }
 
-function isReturnOnOrAfterDeparture(departText, returnText) {
-  const depart = parseMDY(departText);
-  const ret = parseMDY(returnText);
-  if (!depart || !ret) return false;
-  return ret >= depart;
-}
-
-function syncReturnDateConstraints() {
-  const departField = document.getElementById('departDate');
-  const returnField = document.getElementById('returnDate');
-  if (!departField || !returnField) return;
-
-  const apply = () => {
-    const departDate = parseMDY(departField.value);
-    const tripType = document.getElementById('tripType') ? document.getElementById('tripType').value : 'Round Trip';
-    if (returnField._flatpickr) {
-      returnField._flatpickr.set('minDate', departDate || 'today');
-    }
-    if (tripType === 'Round Trip' && returnField.value) {
-      if (!isReturnOnOrAfterDeparture(departField.value, returnField.value)) {
-        returnField.setCustomValidity('Return date cannot be earlier than departure date.');
-      } else {
-        returnField.setCustomValidity('');
-      }
-    } else {
-      returnField.setCustomValidity('');
-    }
-  };
-
-  departField.addEventListener('change', apply);
-  departField.addEventListener('blur', apply);
-  returnField.addEventListener('change', apply);
-  returnField.addEventListener('blur', apply);
-  apply();
-}
-
 function attachDatePickers() {
   const fields = Array.from(document.querySelectorAll('[data-date-field]'));
   const today = new Date();
@@ -190,8 +210,6 @@ function attachDatePickers() {
       }
     });
   });
-
-  syncReturnDateConstraints();
 }
 
 function setupAutocomplete({ inputId, hiddenId, listId, errorId }) {
@@ -330,21 +348,21 @@ function prefillRequestForm() {
     if (el) el.value = value;
   });
 
-  if (values.originCode && AIRPORTS_BY_CODE.has(values.originCode)) {
-    const airport = AIRPORTS_BY_CODE.get(values.originCode);
+  if (values.originCode) {
+    const airport = findAirportByStoredCode(values.originCode);
     const originInput = document.getElementById('origin');
     const hidden = document.getElementById('originCode');
-    if (originInput && hidden) {
+    if (airport && originInput && hidden) {
       originInput.value = airportLabel(airport);
       originInput.dataset.selectedCode = values.originCode;
       hidden.value = values.originCode;
     }
   }
-  if (values.destinationCode && AIRPORTS_BY_CODE.has(values.destinationCode)) {
-    const airport = AIRPORTS_BY_CODE.get(values.destinationCode);
+  if (values.destinationCode) {
+    const airport = findAirportByStoredCode(values.destinationCode);
     const destinationInput = document.getElementById('destination');
     const hidden = document.getElementById('destinationCode');
-    if (destinationInput && hidden) {
+    if (airport && destinationInput && hidden) {
       destinationInput.value = airportLabel(airport);
       destinationInput.dataset.selectedCode = values.destinationCode;
       hidden.value = values.destinationCode;
@@ -357,21 +375,21 @@ function prefillRequestForm() {
   const seg2Date = document.getElementById('segment2DepartDate');
   if (seg2Date) seg2Date.value = leg2DepartDate;
 
-  if (leg2OriginCode && AIRPORTS_BY_CODE.has(leg2OriginCode)) {
-    const airport = AIRPORTS_BY_CODE.get(leg2OriginCode);
+  if (leg2OriginCode) {
+    const airport = findAirportByStoredCode(leg2OriginCode);
     const input = document.getElementById('segment2Origin');
     const hidden = document.getElementById('segment2OriginCode');
-    if (input && hidden) {
+    if (airport && input && hidden) {
       input.value = airportLabel(airport);
       input.dataset.selectedCode = leg2OriginCode;
       hidden.value = leg2OriginCode;
     }
   }
-  if (leg2DestinationCode && AIRPORTS_BY_CODE.has(leg2DestinationCode)) {
-    const airport = AIRPORTS_BY_CODE.get(leg2DestinationCode);
+  if (leg2DestinationCode) {
+    const airport = findAirportByStoredCode(leg2DestinationCode);
     const input = document.getElementById('segment2Destination');
     const hidden = document.getElementById('segment2DestinationCode');
-    if (input && hidden) {
+    if (airport && input && hidden) {
       input.value = airportLabel(airport);
       input.dataset.selectedCode = leg2DestinationCode;
       hidden.value = leg2DestinationCode;
@@ -462,7 +480,6 @@ function setupTripType() {
       const el = document.getElementById(id);
       if (el && !multiCity) el.value = '';
     });
-    syncReturnDateConstraints();
   };
 
   buttons.forEach((btn) => btn.addEventListener('click', () => applyType(btn.dataset.tripType)));
@@ -491,9 +508,6 @@ async function attachForms() {
         if (!returnField.value || !validMDYWithinRange(returnField.value)) {
           returnField.setCustomValidity('Choose a valid return date.');
           valid = false;
-        } else if (!isReturnOnOrAfterDeparture(departField.value, returnField.value)) {
-          returnField.setCustomValidity('Return date cannot be earlier than departure date.');
-          valid = false;
         } else {
           returnField.setCustomValidity('');
         }
@@ -518,15 +532,7 @@ async function attachForms() {
       if (!departField.value || !validMDYWithinRange(departField.value)) valid = false;
       const selectedTripType = document.getElementById('tripType') ? document.getElementById('tripType').value : (returnField.value ? 'Round Trip' : 'One Way');
       if (selectedTripType === 'Round Trip') {
-        if (!returnField.value || !validMDYWithinRange(returnField.value)) {
-          returnField.setCustomValidity('Choose a valid return date.');
-          valid = false;
-        } else if (!isReturnOnOrAfterDeparture(departField.value, returnField.value)) {
-          returnField.setCustomValidity('Return date cannot be earlier than departure date.');
-          valid = false;
-        } else {
-          returnField.setCustomValidity('');
-        }
+        if (!returnField.value || !validMDYWithinRange(returnField.value)) valid = false;
       }
       if (selectedTripType === 'Multi City') {
         if (!validateAirportField('segment2Origin', 'segment2OriginCode', 'segment2OriginError')) valid = false;
@@ -547,18 +553,18 @@ async function attachForms() {
         success.classList.remove('error-state');
       }
 
-      const originAirport = AIRPORTS_BY_CODE.get(document.getElementById('originCode').value) || {};
-      const destinationAirport = AIRPORTS_BY_CODE.get(document.getElementById('destinationCode').value) || {};
+      const originAirport = findAirportByStoredCode(document.getElementById('originCode').value) || {};
+      const destinationAirport = findAirportByStoredCode(document.getElementById('destinationCode').value) || {};
       const payload = {
         fullName: document.getElementById('fullName').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         origin: document.getElementById('origin').value,
-        originCode: document.getElementById('originCode').value,
+        originCode: submittedCodeFor(document.getElementById('originCode').value),
         originCity: originAirport.city || '',
         originCountry: originAirport.country || '',
         destination: document.getElementById('destination').value,
-        destinationCode: document.getElementById('destinationCode').value,
+        destinationCode: submittedCodeFor(document.getElementById('destinationCode').value),
         destinationCity: destinationAirport.city || '',
         destinationCountry: destinationAirport.country || '',
         departDate: mdyToISO(document.getElementById('departDate').value),
@@ -572,9 +578,9 @@ async function attachForms() {
         multiCityLegs: '',
         multiCity: '',
         segment2Origin: document.getElementById('segment2Origin') ? document.getElementById('segment2Origin').value : '',
-        segment2OriginCode: document.getElementById('segment2OriginCode') ? document.getElementById('segment2OriginCode').value : '',
+        segment2OriginCode: document.getElementById('segment2OriginCode') ? submittedCodeFor(document.getElementById('segment2OriginCode').value) : '',
         segment2Destination: document.getElementById('segment2Destination') ? document.getElementById('segment2Destination').value : '',
-        segment2DestinationCode: document.getElementById('segment2DestinationCode') ? document.getElementById('segment2DestinationCode').value : '',
+        segment2DestinationCode: document.getElementById('segment2DestinationCode') ? submittedCodeFor(document.getElementById('segment2DestinationCode').value) : '',
         segment2DepartDate: document.getElementById('segment2DepartDate') ? mdyToISO(document.getElementById('segment2DepartDate').value) : ''
       };
 
