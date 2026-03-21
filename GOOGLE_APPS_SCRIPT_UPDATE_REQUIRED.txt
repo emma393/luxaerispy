@@ -1,0 +1,1 @@
+Replace your deployed Apps Script code with google-apps-script/Code.gs if you want email alerts on every request. Website-side code alone cannot send those emails; the Google script must handle them.
