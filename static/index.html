@@ -57,6 +57,16 @@
 
           <form id="quickQuoteForm" action="request.html" method="GET" novalidate>
             <div class="form-grid">
+              <div class="field field-wide trip-type-field">
+                <label>Trip type</label>
+                <div class="trip-type-switch" role="tablist" aria-label="Trip type">
+                  <button type="button" class="trip-type-btn is-active" data-trip-type="Round Trip">Round Trip</button>
+                  <button type="button" class="trip-type-btn" data-trip-type="One Way">One Way</button>
+                  <button type="button" class="trip-type-btn" data-trip-type="Multi City">Multi City</button>
+                </div>
+                <input id="tripType" name="tripType" type="hidden" value="Round Trip">
+              </div>
+
               <div class="field field-wide autocomplete-field">
                 <label for="origin">Origin</label>
                 <input id="origin" name="origin" type="text" placeholder="City, airport, or metro code" autocomplete="off" required>

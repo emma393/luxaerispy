@@ -28,6 +28,11 @@ function normalizeString_(value) {
   return value == null ? "" : String(value).trim();
 }
 
+function validEmail_(value) {
+  value = normalizeString_(value);
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
 function deriveRouteType_(originCountry, destinationCountry) {
   originCountry = normalizeString_(originCountry).toLowerCase();
   destinationCountry = normalizeString_(destinationCountry).toLowerCase();
@@ -46,10 +51,31 @@ function ensureHeaders_(sheet) {
   }
 }
 
+function getPayload_(e) {
+  var data = {};
+  if (e && e.postData && e.postData.contents) {
+    data = parseJson_(e.postData.contents);
+  }
+  if ((!data || !Object.keys(data).length) && e && e.parameter) {
+      data = parseJson_(e.parameter.payload);
+    }
+    if (!data || !Object.keys(data).length) {
+      data = e.parameter;
+    }
+  }
+  return data || {};
+}
+
 function sendNotificationEmail_(data) {
   var recipient = "leads@luxaeris.com";
   if (!recipient) return;
-  var subject = "New LuxAeris request: " + normalizeString_(data.originCode || data.origin) + " to " + normalizeString_(data.destinationCode || data.destination);
+
+  var subject =
+    "New LuxAeris request: " +
+    normalizeString_(data.originCode || data.origin) +
+    " to " +
+    normalizeString_(data.destinationCode || data.destination);
+
   var body = [
     "A new LuxAeris request was submitted.",
     "",
@@ -57,21 +83,34 @@ function sendNotificationEmail_(data) {
     "Email: " + normalizeString_(data.email),
     "Phone: " + normalizeString_(data.phone || data.number),
     "Origin: " + normalizeString_(data.origin),
+    "Origin Code: " + normalizeString_(data.originCode),
+    "Origin City: " + normalizeString_(data.originCity),
+    "Origin Country: " + normalizeString_(data.originCountry),
     "Destination: " + normalizeString_(data.destination),
+    "Destination Code: " + normalizeString_(data.destinationCode),
+    "Destination City: " + normalizeString_(data.destinationCity),
+    "Destination Country: " + normalizeString_(data.destinationCountry),
     "Departure: " + normalizeString_(data.departDate || data.departureDate),
     "Return: " + normalizeString_(data.returnDate),
     "Cabin: " + normalizeString_(data.cabin),
     "Budget: " + normalizeString_(data.priceRange || data.budget),
-    "Notes: " + normalizeString_(data.notes)
-  ].join("
-");
-  MailApp.sendEmail(recipient, subject, body);
+    "Trip Type: " + normalizeString_(data.tripType),
+    "Flight Type: " + normalizeString_(data.flightType),
+    "Route Type: " + normalizeString_(data.routeType),
+    "Notes: " + normalizeString_(data.notes),
+    normalizeString_(data.multiCityLegs) ? "Multi City Legs: " + normalizeString_(data.multiCityLegs) : ""
+  ].filter(Boolean).join("\n");
+
+  var options = { to: recipient, subject: subject, body: body };
+  if (validEmail_(data.email)) options.replyTo = normalizeString_(data.email);
+  MailApp.sendEmail(options);
 }
 
 function doPost(e) {
   try {
-    if (!e || !e.postData || !e.postData.contents) return jsonResponse_({ ok: false, error: "Missing POST data" });
-    var data = parseJson_(e.postData.contents);
+    var data = getPayload_(e);
+    if (!data || !Object.keys(data).length) return jsonResponse_({ ok: false, error: "Missing POST data" });
+
     var sheet = getSheet_();
     ensureHeaders_(sheet);
 
@@ -90,15 +129,48 @@ function doPost(e) {
     var returnDate = normalizeString_(data.returnDate);
     var cabin = normalizeString_(data.cabin);
     var priceRange = normalizeString_(data.priceRange || data.budget);
-    var tripType = normalizeString_(data.tripType);
-    var flightType = normalizeString_(data.flightType);
+    var tripType = normalizeString_(data.tripType || (returnDate ? 'Round Trip' : 'One Way'));
+    var flightType = normalizeString_(data.flightType || 'Premium Cabin Request');
     var notes = normalizeString_(data.notes);
     var routeType = normalizeString_(data.routeType) || deriveRouteType_(originCountry, destinationCountry);
+    var multiCityLegs = normalizeString_(data.multiCityLegs);
 
-    sheet.appendRow([new Date(), fullName, email, phone, origin, originCode, originCity, originCountry, destination, destinationCode, destinationCity, destinationCountry, departDate, returnDate, cabin, priceRange, tripType, flightType, routeType, notes]);
-    sendNotificationEmail_(data);
-    return jsonResponse_({ ok: true, message: "Lead saved" });
+    if (multiCityLegs) {
+      notes = (notes ? notes + "\n\n" : "") + "Multi City Legs: " + multiCityLegs;
+    }
+
+    sheet.appendRow([
+      new Date(),
+      fullName,
+      email,
+      phone,
+      origin,
+      originCode,
+      originCity,
+      originCountry,
+      destination,
+      destinationCode,
+      destinationCity,
+      destinationCountry,
+      departDate,
+      returnDate,
+      cabin,
+      priceRange,
+      tripType,
+      flightType,
+      routeType,
+      notes
+    ]);
+
+    var emailError = '';
+    try {
+      sendNotificationEmail_(data);
+    } catch (mailError) {
+      emailError = mailError && mailError.message ? mailError.message : 'Email failed';
+    }
+
+    return jsonResponse_({ ok: true, message: 'Lead saved', emailError: emailError });
   } catch (error) {
-    return jsonResponse_({ ok: false, error: error && error.message ? error.message : "Unknown error" });
+    return jsonResponse_({ ok: false, error: error && error.message ? error.message : 'Unknown error' });
   }
 }

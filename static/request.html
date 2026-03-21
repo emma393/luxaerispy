@@ -35,8 +35,8 @@
   <main class="request-page request-page-luxury">
     <section class="request-shell container">
       <section class="panel form-panel request-form-panel request-form-panel-wide">
-        <h1 class="request-title request-title-compact">Request your premium flight quote.</h1>
-        <p class="lead compact request-lead-compact">Choose your airports from the list, select your travel dates, and submit your request.</p>
+        <h1 class="request-title request-title-compact">Request your premium flight.</h1>
+        <p class="lead compact request-lead-compact">Choose your route from the dropdown lists, select your travel type and dates, and send your request.</p>
 
         <form id="fullRequestForm" novalidate>
           <div class="form-grid form-grid-request">
@@ -56,8 +56,40 @@
               <div id="destinationList" class="autocomplete-list" hidden></div>
               <div id="destinationError" class="error"></div>
             </div>
+            <div class="field field-wide trip-type-field">
+              <label>Trip type</label>
+              <div class="trip-type-switch" role="tablist" aria-label="Trip type">
+                <button type="button" class="trip-type-btn is-active" data-trip-type="Round Trip">Round Trip</button>
+                <button type="button" class="trip-type-btn" data-trip-type="One Way">One Way</button>
+                <button type="button" class="trip-type-btn" data-trip-type="Multi City">Multi City</button>
+              </div>
+              <input id="tripType" name="tripType" type="hidden" value="Round Trip">
+            </div>
             <div class="field date-field"><label for="departDate">Departure date</label><input id="departDate" name="departDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field required></div>
             <div class="field date-field"><label for="returnDate">Return date</label><input id="returnDate" name="returnDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field></div>
+            <div id="multiCitySection" class="field field-wide multi-city-section" hidden>
+              <div class="multi-city-title">Additional leg</div>
+              <div class="multi-city-grid">
+                <div class="field autocomplete-field">
+                  <label for="segment2Origin">Leg 2 origin</label>
+                  <input id="segment2Origin" name="segment2Origin" type="text" placeholder="Start typing city or airport" autocomplete="off">
+                  <input id="segment2OriginCode" name="segment2OriginCode" type="hidden">
+                  <div id="segment2OriginList" class="autocomplete-list" hidden></div>
+                  <div id="segment2OriginError" class="error"></div>
+                </div>
+                <div class="field autocomplete-field">
+                  <label for="segment2Destination">Leg 2 destination</label>
+                  <input id="segment2Destination" name="segment2Destination" type="text" placeholder="Start typing city or airport" autocomplete="off">
+                  <input id="segment2DestinationCode" name="segment2DestinationCode" type="hidden">
+                  <div id="segment2DestinationList" class="autocomplete-list" hidden></div>
+                  <div id="segment2DestinationError" class="error"></div>
+                </div>
+                <div class="field date-field">
+                  <label for="segment2DepartDate">Leg 2 departure date</label>
+                  <input id="segment2DepartDate" name="segment2DepartDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field>
+                </div>
+              </div>
+            </div>
             <div class="field"><label for="cabin">Cabin</label><select id="cabin" name="cabin"><option>Business Class</option><option>First Class</option></select></div>
             <div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option value="">Select budget</option><option>$2K–$5K</option><option>$5K–$10K</option><option>$10K+</option></select></div>
             <div class="field field-wide contact-span"><label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" placeholder="Your full name" required></div>

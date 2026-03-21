@@ -10,7 +10,7 @@ This build includes:
 ## Google Sheets endpoint in this build
 The frontend is already connected to:
 
-`https://script.google.com/macros/s/AKfycbzqGbpKf0FeFDgpdpdssCBUGQQszI9zMgN_wsQxRxZ2tcQnYre4OvYKM53uUOK3UwuR/exec`
+`https://script.google.com/macros/s/AKfycbyqmp583lxg3IEorhq4SaiXu2VrrMO1hUeQ1e2e4sByfqaLFMetKFeKir9Zi4AWopZk/exec`
 
 ## Included Apps Script
 Use the file in `google-apps-script/Code.gs` inside your spreadsheet project.
