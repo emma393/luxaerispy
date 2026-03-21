@@ -114,6 +114,42 @@ function validMDYWithinRange(text) {
   return dt >= today && dt <= max;
 }
 
+function isReturnOnOrAfterDeparture(departText, returnText) {
+  const depart = parseMDY(departText);
+  const ret = parseMDY(returnText);
+  if (!depart || !ret) return false;
+  return ret >= depart;
+}
+
+function syncReturnDateConstraints() {
+  const departField = document.getElementById('departDate');
+  const returnField = document.getElementById('returnDate');
+  if (!departField || !returnField) return;
+
+  const apply = () => {
+    const departDate = parseMDY(departField.value);
+    const tripType = document.getElementById('tripType') ? document.getElementById('tripType').value : 'Round Trip';
+    if (returnField._flatpickr) {
+      returnField._flatpickr.set('minDate', departDate || 'today');
+    }
+    if (tripType === 'Round Trip' && returnField.value) {
+      if (!isReturnOnOrAfterDeparture(departField.value, returnField.value)) {
+        returnField.setCustomValidity('Return date cannot be earlier than departure date.');
+      } else {
+        returnField.setCustomValidity('');
+      }
+    } else {
+      returnField.setCustomValidity('');
+    }
+  };
+
+  departField.addEventListener('change', apply);
+  departField.addEventListener('blur', apply);
+  returnField.addEventListener('change', apply);
+  returnField.addEventListener('blur', apply);
+  apply();
+}
+
 function attachDatePickers() {
   const fields = Array.from(document.querySelectorAll('[data-date-field]'));
   const today = new Date();
@@ -154,6 +190,8 @@ function attachDatePickers() {
       }
     });
   });
+
+  syncReturnDateConstraints();
 }
 
 function setupAutocomplete({ inputId, hiddenId, listId, errorId }) {
@@ -424,6 +462,7 @@ function setupTripType() {
       const el = document.getElementById(id);
       if (el && !multiCity) el.value = '';
     });
+    syncReturnDateConstraints();
   };
 
   buttons.forEach((btn) => btn.addEventListener('click', () => applyType(btn.dataset.tripType)));
@@ -452,6 +491,9 @@ async function attachForms() {
         if (!returnField.value || !validMDYWithinRange(returnField.value)) {
           returnField.setCustomValidity('Choose a valid return date.');
           valid = false;
+        } else if (!isReturnOnOrAfterDeparture(departField.value, returnField.value)) {
+          returnField.setCustomValidity('Return date cannot be earlier than departure date.');
+          valid = false;
         } else {
           returnField.setCustomValidity('');
         }
@@ -476,7 +518,15 @@ async function attachForms() {
       if (!departField.value || !validMDYWithinRange(departField.value)) valid = false;
       const selectedTripType = document.getElementById('tripType') ? document.getElementById('tripType').value : (returnField.value ? 'Round Trip' : 'One Way');
       if (selectedTripType === 'Round Trip') {
-        if (!returnField.value || !validMDYWithinRange(returnField.value)) valid = false;
+        if (!returnField.value || !validMDYWithinRange(returnField.value)) {
+          returnField.setCustomValidity('Choose a valid return date.');
+          valid = false;
+        } else if (!isReturnOnOrAfterDeparture(departField.value, returnField.value)) {
+          returnField.setCustomValidity('Return date cannot be earlier than departure date.');
+          valid = false;
+        } else {
+          returnField.setCustomValidity('');
+        }
       }
       if (selectedTripType === 'Multi City') {
         if (!validateAirportField('segment2Origin', 'segment2OriginCode', 'segment2OriginError')) valid = false;
