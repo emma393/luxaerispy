@@ -1,5 +1,5 @@
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyqmp583lxg3IEorhq4SaiXu2VrrMO1hUeQ1e2e4sByfqaLFMetKFeKir9Zi4AWopZk/exec';
+const GOOGLE_SCRIPT_URL = window.LUXAERIS_FORM_ENDPOINT || 'https://script.google.com/macros/s/AKfycbzI4qGgCYwGJMZL0P_xPqPtMCs_xJ7jvhDX0uYGXkgVFSQyMKKd1xBLYco9YmX7Dmhe/exec';
 const AIRPORTS_URL_CANDIDATES = ['data/airports.json', '/data/airports.json', 'assets/data/airports.json'];
 
 let AIRPORTS = [];
@@ -520,6 +520,7 @@ async function attachForms() {
         tripType: document.getElementById('tripType') ? document.getElementById('tripType').value : (document.getElementById('returnDate').value ? 'Round Trip' : 'One Way'),
         flightType: 'Premium Cabin Request',
         multiCityLegs: '',
+        multiCity: '',
         segment2Origin: document.getElementById('segment2Origin') ? document.getElementById('segment2Origin').value : '',
         segment2OriginCode: document.getElementById('segment2OriginCode') ? document.getElementById('segment2OriginCode').value : '',
         segment2Destination: document.getElementById('segment2Destination') ? document.getElementById('segment2Destination').value : '',
@@ -544,6 +545,7 @@ async function attachForms() {
             departDate: payload.segment2DepartDate
           }
         ]);
+        payload.multiCity = `Leg 1: ${payload.origin} → ${payload.destination} on ${payload.departDate}\nLeg 2: ${payload.segment2Origin} → ${payload.segment2Destination} on ${payload.segment2DepartDate}`;
         payload.notes = (payload.notes || '') + `
 
 Multi-city itinerary:
