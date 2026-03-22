@@ -1,0 +1,3762 @@
+[
+  {
+    "slug": "new-york-business-class",
+    "destination_slug": "new-york",
+    "cabin_variant": "business-class",
+    "title": "New York Business Class",
+    "meta_title": "New York Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to New York. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "new-york-first-class",
+    "destination_slug": "new-york",
+    "cabin_variant": "first-class",
+    "title": "New York First Class",
+    "meta_title": "New York First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to New York. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "new-york-premium-economy",
+    "destination_slug": "new-york",
+    "cabin_variant": "premium-economy",
+    "title": "New York Premium Economy",
+    "meta_title": "New York Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to New York. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "new-york-business-vs-first",
+    "destination_slug": "new-york",
+    "cabin_variant": "business-vs-first",
+    "title": "New York Business Vs First",
+    "meta_title": "New York Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to New York. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "new-york-business-vs-premium-economy",
+    "destination_slug": "new-york",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "New York Business Vs Premium Economy",
+    "meta_title": "New York Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to New York. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "los-angeles-business-class",
+    "destination_slug": "los-angeles",
+    "cabin_variant": "business-class",
+    "title": "Los Angeles Business Class",
+    "meta_title": "Los Angeles Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Los Angeles. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "los-angeles-first-class",
+    "destination_slug": "los-angeles",
+    "cabin_variant": "first-class",
+    "title": "Los Angeles First Class",
+    "meta_title": "Los Angeles First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Los Angeles. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "los-angeles-premium-economy",
+    "destination_slug": "los-angeles",
+    "cabin_variant": "premium-economy",
+    "title": "Los Angeles Premium Economy",
+    "meta_title": "Los Angeles Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Los Angeles. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "los-angeles-business-vs-first",
+    "destination_slug": "los-angeles",
+    "cabin_variant": "business-vs-first",
+    "title": "Los Angeles Business Vs First",
+    "meta_title": "Los Angeles Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Los Angeles. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "los-angeles-business-vs-premium-economy",
+    "destination_slug": "los-angeles",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Los Angeles Business Vs Premium Economy",
+    "meta_title": "Los Angeles Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Los Angeles. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "san-francisco-business-class",
+    "destination_slug": "san-francisco",
+    "cabin_variant": "business-class",
+    "title": "San Francisco Business Class",
+    "meta_title": "San Francisco Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to San Francisco. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "san-francisco-first-class",
+    "destination_slug": "san-francisco",
+    "cabin_variant": "first-class",
+    "title": "San Francisco First Class",
+    "meta_title": "San Francisco First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to San Francisco. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "san-francisco-premium-economy",
+    "destination_slug": "san-francisco",
+    "cabin_variant": "premium-economy",
+    "title": "San Francisco Premium Economy",
+    "meta_title": "San Francisco Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to San Francisco. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "san-francisco-business-vs-first",
+    "destination_slug": "san-francisco",
+    "cabin_variant": "business-vs-first",
+    "title": "San Francisco Business Vs First",
+    "meta_title": "San Francisco Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to San Francisco. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "san-francisco-business-vs-premium-economy",
+    "destination_slug": "san-francisco",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "San Francisco Business Vs Premium Economy",
+    "meta_title": "San Francisco Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to San Francisco. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chicago-business-class",
+    "destination_slug": "chicago",
+    "cabin_variant": "business-class",
+    "title": "Chicago Business Class",
+    "meta_title": "Chicago Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Chicago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chicago-first-class",
+    "destination_slug": "chicago",
+    "cabin_variant": "first-class",
+    "title": "Chicago First Class",
+    "meta_title": "Chicago First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Chicago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chicago-premium-economy",
+    "destination_slug": "chicago",
+    "cabin_variant": "premium-economy",
+    "title": "Chicago Premium Economy",
+    "meta_title": "Chicago Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Chicago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chicago-business-vs-first",
+    "destination_slug": "chicago",
+    "cabin_variant": "business-vs-first",
+    "title": "Chicago Business Vs First",
+    "meta_title": "Chicago Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Chicago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chicago-business-vs-premium-economy",
+    "destination_slug": "chicago",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Chicago Business Vs Premium Economy",
+    "meta_title": "Chicago Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Chicago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "miami-business-class",
+    "destination_slug": "miami",
+    "cabin_variant": "business-class",
+    "title": "Miami Business Class",
+    "meta_title": "Miami Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Miami. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "miami-first-class",
+    "destination_slug": "miami",
+    "cabin_variant": "first-class",
+    "title": "Miami First Class",
+    "meta_title": "Miami First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Miami. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "miami-premium-economy",
+    "destination_slug": "miami",
+    "cabin_variant": "premium-economy",
+    "title": "Miami Premium Economy",
+    "meta_title": "Miami Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Miami. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "miami-business-vs-first",
+    "destination_slug": "miami",
+    "cabin_variant": "business-vs-first",
+    "title": "Miami Business Vs First",
+    "meta_title": "Miami Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Miami. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "miami-business-vs-premium-economy",
+    "destination_slug": "miami",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Miami Business Vs Premium Economy",
+    "meta_title": "Miami Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Miami. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "boston-business-class",
+    "destination_slug": "boston",
+    "cabin_variant": "business-class",
+    "title": "Boston Business Class",
+    "meta_title": "Boston Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Boston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "boston-first-class",
+    "destination_slug": "boston",
+    "cabin_variant": "first-class",
+    "title": "Boston First Class",
+    "meta_title": "Boston First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Boston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "boston-premium-economy",
+    "destination_slug": "boston",
+    "cabin_variant": "premium-economy",
+    "title": "Boston Premium Economy",
+    "meta_title": "Boston Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Boston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "boston-business-vs-first",
+    "destination_slug": "boston",
+    "cabin_variant": "business-vs-first",
+    "title": "Boston Business Vs First",
+    "meta_title": "Boston Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Boston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "boston-business-vs-premium-economy",
+    "destination_slug": "boston",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Boston Business Vs Premium Economy",
+    "meta_title": "Boston Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Boston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dallas-business-class",
+    "destination_slug": "dallas",
+    "cabin_variant": "business-class",
+    "title": "Dallas Business Class",
+    "meta_title": "Dallas Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Dallas. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dallas-first-class",
+    "destination_slug": "dallas",
+    "cabin_variant": "first-class",
+    "title": "Dallas First Class",
+    "meta_title": "Dallas First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Dallas. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dallas-premium-economy",
+    "destination_slug": "dallas",
+    "cabin_variant": "premium-economy",
+    "title": "Dallas Premium Economy",
+    "meta_title": "Dallas Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Dallas. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dallas-business-vs-first",
+    "destination_slug": "dallas",
+    "cabin_variant": "business-vs-first",
+    "title": "Dallas Business Vs First",
+    "meta_title": "Dallas Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Dallas. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dallas-business-vs-premium-economy",
+    "destination_slug": "dallas",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Dallas Business Vs Premium Economy",
+    "meta_title": "Dallas Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Dallas. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "atlanta-business-class",
+    "destination_slug": "atlanta",
+    "cabin_variant": "business-class",
+    "title": "Atlanta Business Class",
+    "meta_title": "Atlanta Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Atlanta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "atlanta-first-class",
+    "destination_slug": "atlanta",
+    "cabin_variant": "first-class",
+    "title": "Atlanta First Class",
+    "meta_title": "Atlanta First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Atlanta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "atlanta-premium-economy",
+    "destination_slug": "atlanta",
+    "cabin_variant": "premium-economy",
+    "title": "Atlanta Premium Economy",
+    "meta_title": "Atlanta Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Atlanta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "atlanta-business-vs-first",
+    "destination_slug": "atlanta",
+    "cabin_variant": "business-vs-first",
+    "title": "Atlanta Business Vs First",
+    "meta_title": "Atlanta Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Atlanta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "atlanta-business-vs-premium-economy",
+    "destination_slug": "atlanta",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Atlanta Business Vs Premium Economy",
+    "meta_title": "Atlanta Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Atlanta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "houston-business-class",
+    "destination_slug": "houston",
+    "cabin_variant": "business-class",
+    "title": "Houston Business Class",
+    "meta_title": "Houston Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Houston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "houston-first-class",
+    "destination_slug": "houston",
+    "cabin_variant": "first-class",
+    "title": "Houston First Class",
+    "meta_title": "Houston First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Houston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "houston-premium-economy",
+    "destination_slug": "houston",
+    "cabin_variant": "premium-economy",
+    "title": "Houston Premium Economy",
+    "meta_title": "Houston Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Houston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "houston-business-vs-first",
+    "destination_slug": "houston",
+    "cabin_variant": "business-vs-first",
+    "title": "Houston Business Vs First",
+    "meta_title": "Houston Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Houston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "houston-business-vs-premium-economy",
+    "destination_slug": "houston",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Houston Business Vs Premium Economy",
+    "meta_title": "Houston Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Houston. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seattle-business-class",
+    "destination_slug": "seattle",
+    "cabin_variant": "business-class",
+    "title": "Seattle Business Class",
+    "meta_title": "Seattle Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Seattle. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seattle-first-class",
+    "destination_slug": "seattle",
+    "cabin_variant": "first-class",
+    "title": "Seattle First Class",
+    "meta_title": "Seattle First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Seattle. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seattle-premium-economy",
+    "destination_slug": "seattle",
+    "cabin_variant": "premium-economy",
+    "title": "Seattle Premium Economy",
+    "meta_title": "Seattle Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Seattle. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seattle-business-vs-first",
+    "destination_slug": "seattle",
+    "cabin_variant": "business-vs-first",
+    "title": "Seattle Business Vs First",
+    "meta_title": "Seattle Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Seattle. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seattle-business-vs-premium-economy",
+    "destination_slug": "seattle",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Seattle Business Vs Premium Economy",
+    "meta_title": "Seattle Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Seattle. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "washington-business-class",
+    "destination_slug": "washington",
+    "cabin_variant": "business-class",
+    "title": "Washington Business Class",
+    "meta_title": "Washington Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Washington. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "washington-first-class",
+    "destination_slug": "washington",
+    "cabin_variant": "first-class",
+    "title": "Washington First Class",
+    "meta_title": "Washington First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Washington. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "washington-premium-economy",
+    "destination_slug": "washington",
+    "cabin_variant": "premium-economy",
+    "title": "Washington Premium Economy",
+    "meta_title": "Washington Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Washington. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "washington-business-vs-first",
+    "destination_slug": "washington",
+    "cabin_variant": "business-vs-first",
+    "title": "Washington Business Vs First",
+    "meta_title": "Washington Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Washington. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "washington-business-vs-premium-economy",
+    "destination_slug": "washington",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Washington Business Vs Premium Economy",
+    "meta_title": "Washington Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Washington. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "toronto-business-class",
+    "destination_slug": "toronto",
+    "cabin_variant": "business-class",
+    "title": "Toronto Business Class",
+    "meta_title": "Toronto Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Toronto. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "toronto-first-class",
+    "destination_slug": "toronto",
+    "cabin_variant": "first-class",
+    "title": "Toronto First Class",
+    "meta_title": "Toronto First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Toronto. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "toronto-premium-economy",
+    "destination_slug": "toronto",
+    "cabin_variant": "premium-economy",
+    "title": "Toronto Premium Economy",
+    "meta_title": "Toronto Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Toronto. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "toronto-business-vs-first",
+    "destination_slug": "toronto",
+    "cabin_variant": "business-vs-first",
+    "title": "Toronto Business Vs First",
+    "meta_title": "Toronto Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Toronto. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "toronto-business-vs-premium-economy",
+    "destination_slug": "toronto",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Toronto Business Vs Premium Economy",
+    "meta_title": "Toronto Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Toronto. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "montreal-business-class",
+    "destination_slug": "montreal",
+    "cabin_variant": "business-class",
+    "title": "Montreal Business Class",
+    "meta_title": "Montreal Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Montreal. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "montreal-first-class",
+    "destination_slug": "montreal",
+    "cabin_variant": "first-class",
+    "title": "Montreal First Class",
+    "meta_title": "Montreal First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Montreal. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "montreal-premium-economy",
+    "destination_slug": "montreal",
+    "cabin_variant": "premium-economy",
+    "title": "Montreal Premium Economy",
+    "meta_title": "Montreal Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Montreal. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "montreal-business-vs-first",
+    "destination_slug": "montreal",
+    "cabin_variant": "business-vs-first",
+    "title": "Montreal Business Vs First",
+    "meta_title": "Montreal Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Montreal. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "montreal-business-vs-premium-economy",
+    "destination_slug": "montreal",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Montreal Business Vs Premium Economy",
+    "meta_title": "Montreal Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Montreal. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mexico-city-business-class",
+    "destination_slug": "mexico-city",
+    "cabin_variant": "business-class",
+    "title": "Mexico City Business Class",
+    "meta_title": "Mexico City Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Mexico City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mexico-city-first-class",
+    "destination_slug": "mexico-city",
+    "cabin_variant": "first-class",
+    "title": "Mexico City First Class",
+    "meta_title": "Mexico City First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Mexico City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mexico-city-premium-economy",
+    "destination_slug": "mexico-city",
+    "cabin_variant": "premium-economy",
+    "title": "Mexico City Premium Economy",
+    "meta_title": "Mexico City Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Mexico City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mexico-city-business-vs-first",
+    "destination_slug": "mexico-city",
+    "cabin_variant": "business-vs-first",
+    "title": "Mexico City Business Vs First",
+    "meta_title": "Mexico City Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Mexico City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mexico-city-business-vs-premium-economy",
+    "destination_slug": "mexico-city",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Mexico City Business Vs Premium Economy",
+    "meta_title": "Mexico City Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Mexico City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cancún-business-class",
+    "destination_slug": "cancún",
+    "cabin_variant": "business-class",
+    "title": "Cancún Business Class",
+    "meta_title": "Cancún Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cancún-first-class",
+    "destination_slug": "cancún",
+    "cabin_variant": "first-class",
+    "title": "Cancún First Class",
+    "meta_title": "Cancún First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cancún-premium-economy",
+    "destination_slug": "cancún",
+    "cabin_variant": "premium-economy",
+    "title": "Cancún Premium Economy",
+    "meta_title": "Cancún Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cancún-business-vs-first",
+    "destination_slug": "cancún",
+    "cabin_variant": "business-vs-first",
+    "title": "Cancún Business Vs First",
+    "meta_title": "Cancún Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cancún-business-vs-premium-economy",
+    "destination_slug": "cancún",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Cancún Business Vs Premium Economy",
+    "meta_title": "Cancún Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "london-business-class",
+    "destination_slug": "london",
+    "cabin_variant": "business-class",
+    "title": "London Business Class",
+    "meta_title": "London Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to London. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "london-first-class",
+    "destination_slug": "london",
+    "cabin_variant": "first-class",
+    "title": "London First Class",
+    "meta_title": "London First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to London. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "london-premium-economy",
+    "destination_slug": "london",
+    "cabin_variant": "premium-economy",
+    "title": "London Premium Economy",
+    "meta_title": "London Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to London. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "london-business-vs-first",
+    "destination_slug": "london",
+    "cabin_variant": "business-vs-first",
+    "title": "London Business Vs First",
+    "meta_title": "London Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to London. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "london-business-vs-premium-economy",
+    "destination_slug": "london",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "London Business Vs Premium Economy",
+    "meta_title": "London Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to London. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manchester-business-class",
+    "destination_slug": "manchester",
+    "cabin_variant": "business-class",
+    "title": "Manchester Business Class",
+    "meta_title": "Manchester Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Manchester. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manchester-first-class",
+    "destination_slug": "manchester",
+    "cabin_variant": "first-class",
+    "title": "Manchester First Class",
+    "meta_title": "Manchester First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Manchester. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manchester-premium-economy",
+    "destination_slug": "manchester",
+    "cabin_variant": "premium-economy",
+    "title": "Manchester Premium Economy",
+    "meta_title": "Manchester Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Manchester. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manchester-business-vs-first",
+    "destination_slug": "manchester",
+    "cabin_variant": "business-vs-first",
+    "title": "Manchester Business Vs First",
+    "meta_title": "Manchester Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Manchester. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manchester-business-vs-premium-economy",
+    "destination_slug": "manchester",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Manchester Business Vs Premium Economy",
+    "meta_title": "Manchester Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Manchester. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "paris-business-class",
+    "destination_slug": "paris",
+    "cabin_variant": "business-class",
+    "title": "Paris Business Class",
+    "meta_title": "Paris Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Paris. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "paris-first-class",
+    "destination_slug": "paris",
+    "cabin_variant": "first-class",
+    "title": "Paris First Class",
+    "meta_title": "Paris First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Paris. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "paris-premium-economy",
+    "destination_slug": "paris",
+    "cabin_variant": "premium-economy",
+    "title": "Paris Premium Economy",
+    "meta_title": "Paris Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Paris. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "paris-business-vs-first",
+    "destination_slug": "paris",
+    "cabin_variant": "business-vs-first",
+    "title": "Paris Business Vs First",
+    "meta_title": "Paris Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Paris. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "paris-business-vs-premium-economy",
+    "destination_slug": "paris",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Paris Business Vs Premium Economy",
+    "meta_title": "Paris Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Paris. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "frankfurt-business-class",
+    "destination_slug": "frankfurt",
+    "cabin_variant": "business-class",
+    "title": "Frankfurt Business Class",
+    "meta_title": "Frankfurt Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Frankfurt. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "frankfurt-first-class",
+    "destination_slug": "frankfurt",
+    "cabin_variant": "first-class",
+    "title": "Frankfurt First Class",
+    "meta_title": "Frankfurt First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Frankfurt. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "frankfurt-premium-economy",
+    "destination_slug": "frankfurt",
+    "cabin_variant": "premium-economy",
+    "title": "Frankfurt Premium Economy",
+    "meta_title": "Frankfurt Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Frankfurt. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "frankfurt-business-vs-first",
+    "destination_slug": "frankfurt",
+    "cabin_variant": "business-vs-first",
+    "title": "Frankfurt Business Vs First",
+    "meta_title": "Frankfurt Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Frankfurt. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "frankfurt-business-vs-premium-economy",
+    "destination_slug": "frankfurt",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Frankfurt Business Vs Premium Economy",
+    "meta_title": "Frankfurt Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Frankfurt. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "munich-business-class",
+    "destination_slug": "munich",
+    "cabin_variant": "business-class",
+    "title": "Munich Business Class",
+    "meta_title": "Munich Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Munich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "munich-first-class",
+    "destination_slug": "munich",
+    "cabin_variant": "first-class",
+    "title": "Munich First Class",
+    "meta_title": "Munich First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Munich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "munich-premium-economy",
+    "destination_slug": "munich",
+    "cabin_variant": "premium-economy",
+    "title": "Munich Premium Economy",
+    "meta_title": "Munich Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Munich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "munich-business-vs-first",
+    "destination_slug": "munich",
+    "cabin_variant": "business-vs-first",
+    "title": "Munich Business Vs First",
+    "meta_title": "Munich Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Munich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "munich-business-vs-premium-economy",
+    "destination_slug": "munich",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Munich Business Vs Premium Economy",
+    "meta_title": "Munich Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Munich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amsterdam-business-class",
+    "destination_slug": "amsterdam",
+    "cabin_variant": "business-class",
+    "title": "Amsterdam Business Class",
+    "meta_title": "Amsterdam Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Amsterdam. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amsterdam-first-class",
+    "destination_slug": "amsterdam",
+    "cabin_variant": "first-class",
+    "title": "Amsterdam First Class",
+    "meta_title": "Amsterdam First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Amsterdam. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amsterdam-premium-economy",
+    "destination_slug": "amsterdam",
+    "cabin_variant": "premium-economy",
+    "title": "Amsterdam Premium Economy",
+    "meta_title": "Amsterdam Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Amsterdam. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amsterdam-business-vs-first",
+    "destination_slug": "amsterdam",
+    "cabin_variant": "business-vs-first",
+    "title": "Amsterdam Business Vs First",
+    "meta_title": "Amsterdam Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Amsterdam. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amsterdam-business-vs-premium-economy",
+    "destination_slug": "amsterdam",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Amsterdam Business Vs Premium Economy",
+    "meta_title": "Amsterdam Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Amsterdam. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brussels-business-class",
+    "destination_slug": "brussels",
+    "cabin_variant": "business-class",
+    "title": "Brussels Business Class",
+    "meta_title": "Brussels Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Brussels. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brussels-first-class",
+    "destination_slug": "brussels",
+    "cabin_variant": "first-class",
+    "title": "Brussels First Class",
+    "meta_title": "Brussels First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Brussels. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brussels-premium-economy",
+    "destination_slug": "brussels",
+    "cabin_variant": "premium-economy",
+    "title": "Brussels Premium Economy",
+    "meta_title": "Brussels Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Brussels. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brussels-business-vs-first",
+    "destination_slug": "brussels",
+    "cabin_variant": "business-vs-first",
+    "title": "Brussels Business Vs First",
+    "meta_title": "Brussels Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Brussels. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brussels-business-vs-premium-economy",
+    "destination_slug": "brussels",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Brussels Business Vs Premium Economy",
+    "meta_title": "Brussels Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Brussels. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "zurich-business-class",
+    "destination_slug": "zurich",
+    "cabin_variant": "business-class",
+    "title": "Zurich Business Class",
+    "meta_title": "Zurich Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Zurich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "zurich-first-class",
+    "destination_slug": "zurich",
+    "cabin_variant": "first-class",
+    "title": "Zurich First Class",
+    "meta_title": "Zurich First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Zurich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "zurich-premium-economy",
+    "destination_slug": "zurich",
+    "cabin_variant": "premium-economy",
+    "title": "Zurich Premium Economy",
+    "meta_title": "Zurich Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Zurich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "zurich-business-vs-first",
+    "destination_slug": "zurich",
+    "cabin_variant": "business-vs-first",
+    "title": "Zurich Business Vs First",
+    "meta_title": "Zurich Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Zurich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "zurich-business-vs-premium-economy",
+    "destination_slug": "zurich",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Zurich Business Vs Premium Economy",
+    "meta_title": "Zurich Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Zurich. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "geneva-business-class",
+    "destination_slug": "geneva",
+    "cabin_variant": "business-class",
+    "title": "Geneva Business Class",
+    "meta_title": "Geneva Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Geneva. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "geneva-first-class",
+    "destination_slug": "geneva",
+    "cabin_variant": "first-class",
+    "title": "Geneva First Class",
+    "meta_title": "Geneva First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Geneva. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "geneva-premium-economy",
+    "destination_slug": "geneva",
+    "cabin_variant": "premium-economy",
+    "title": "Geneva Premium Economy",
+    "meta_title": "Geneva Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Geneva. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "geneva-business-vs-first",
+    "destination_slug": "geneva",
+    "cabin_variant": "business-vs-first",
+    "title": "Geneva Business Vs First",
+    "meta_title": "Geneva Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Geneva. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "geneva-business-vs-premium-economy",
+    "destination_slug": "geneva",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Geneva Business Vs Premium Economy",
+    "meta_title": "Geneva Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Geneva. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "vienna-business-class",
+    "destination_slug": "vienna",
+    "cabin_variant": "business-class",
+    "title": "Vienna Business Class",
+    "meta_title": "Vienna Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Vienna. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "vienna-first-class",
+    "destination_slug": "vienna",
+    "cabin_variant": "first-class",
+    "title": "Vienna First Class",
+    "meta_title": "Vienna First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Vienna. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "vienna-premium-economy",
+    "destination_slug": "vienna",
+    "cabin_variant": "premium-economy",
+    "title": "Vienna Premium Economy",
+    "meta_title": "Vienna Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Vienna. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "vienna-business-vs-first",
+    "destination_slug": "vienna",
+    "cabin_variant": "business-vs-first",
+    "title": "Vienna Business Vs First",
+    "meta_title": "Vienna Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Vienna. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "vienna-business-vs-premium-economy",
+    "destination_slug": "vienna",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Vienna Business Vs Premium Economy",
+    "meta_title": "Vienna Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Vienna. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "madrid-business-class",
+    "destination_slug": "madrid",
+    "cabin_variant": "business-class",
+    "title": "Madrid Business Class",
+    "meta_title": "Madrid Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Madrid. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "madrid-first-class",
+    "destination_slug": "madrid",
+    "cabin_variant": "first-class",
+    "title": "Madrid First Class",
+    "meta_title": "Madrid First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Madrid. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "madrid-premium-economy",
+    "destination_slug": "madrid",
+    "cabin_variant": "premium-economy",
+    "title": "Madrid Premium Economy",
+    "meta_title": "Madrid Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Madrid. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "madrid-business-vs-first",
+    "destination_slug": "madrid",
+    "cabin_variant": "business-vs-first",
+    "title": "Madrid Business Vs First",
+    "meta_title": "Madrid Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Madrid. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "madrid-business-vs-premium-economy",
+    "destination_slug": "madrid",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Madrid Business Vs Premium Economy",
+    "meta_title": "Madrid Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Madrid. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "barcelona-business-class",
+    "destination_slug": "barcelona",
+    "cabin_variant": "business-class",
+    "title": "Barcelona Business Class",
+    "meta_title": "Barcelona Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Barcelona. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "barcelona-first-class",
+    "destination_slug": "barcelona",
+    "cabin_variant": "first-class",
+    "title": "Barcelona First Class",
+    "meta_title": "Barcelona First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Barcelona. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "barcelona-premium-economy",
+    "destination_slug": "barcelona",
+    "cabin_variant": "premium-economy",
+    "title": "Barcelona Premium Economy",
+    "meta_title": "Barcelona Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Barcelona. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "barcelona-business-vs-first",
+    "destination_slug": "barcelona",
+    "cabin_variant": "business-vs-first",
+    "title": "Barcelona Business Vs First",
+    "meta_title": "Barcelona Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Barcelona. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "barcelona-business-vs-premium-economy",
+    "destination_slug": "barcelona",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Barcelona Business Vs Premium Economy",
+    "meta_title": "Barcelona Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Barcelona. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lisbon-business-class",
+    "destination_slug": "lisbon",
+    "cabin_variant": "business-class",
+    "title": "Lisbon Business Class",
+    "meta_title": "Lisbon Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Lisbon. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lisbon-first-class",
+    "destination_slug": "lisbon",
+    "cabin_variant": "first-class",
+    "title": "Lisbon First Class",
+    "meta_title": "Lisbon First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Lisbon. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lisbon-premium-economy",
+    "destination_slug": "lisbon",
+    "cabin_variant": "premium-economy",
+    "title": "Lisbon Premium Economy",
+    "meta_title": "Lisbon Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Lisbon. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lisbon-business-vs-first",
+    "destination_slug": "lisbon",
+    "cabin_variant": "business-vs-first",
+    "title": "Lisbon Business Vs First",
+    "meta_title": "Lisbon Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Lisbon. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lisbon-business-vs-premium-economy",
+    "destination_slug": "lisbon",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Lisbon Business Vs Premium Economy",
+    "meta_title": "Lisbon Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Lisbon. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rome-business-class",
+    "destination_slug": "rome",
+    "cabin_variant": "business-class",
+    "title": "Rome Business Class",
+    "meta_title": "Rome Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Rome. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rome-first-class",
+    "destination_slug": "rome",
+    "cabin_variant": "first-class",
+    "title": "Rome First Class",
+    "meta_title": "Rome First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Rome. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rome-premium-economy",
+    "destination_slug": "rome",
+    "cabin_variant": "premium-economy",
+    "title": "Rome Premium Economy",
+    "meta_title": "Rome Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Rome. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rome-business-vs-first",
+    "destination_slug": "rome",
+    "cabin_variant": "business-vs-first",
+    "title": "Rome Business Vs First",
+    "meta_title": "Rome Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Rome. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rome-business-vs-premium-economy",
+    "destination_slug": "rome",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Rome Business Vs Premium Economy",
+    "meta_title": "Rome Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Rome. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "milan-business-class",
+    "destination_slug": "milan",
+    "cabin_variant": "business-class",
+    "title": "Milan Business Class",
+    "meta_title": "Milan Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Milan. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "milan-first-class",
+    "destination_slug": "milan",
+    "cabin_variant": "first-class",
+    "title": "Milan First Class",
+    "meta_title": "Milan First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Milan. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "milan-premium-economy",
+    "destination_slug": "milan",
+    "cabin_variant": "premium-economy",
+    "title": "Milan Premium Economy",
+    "meta_title": "Milan Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Milan. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "milan-business-vs-first",
+    "destination_slug": "milan",
+    "cabin_variant": "business-vs-first",
+    "title": "Milan Business Vs First",
+    "meta_title": "Milan Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Milan. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "milan-business-vs-premium-economy",
+    "destination_slug": "milan",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Milan Business Vs Premium Economy",
+    "meta_title": "Milan Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Milan. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "venice-business-class",
+    "destination_slug": "venice",
+    "cabin_variant": "business-class",
+    "title": "Venice Business Class",
+    "meta_title": "Venice Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Venice. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "venice-first-class",
+    "destination_slug": "venice",
+    "cabin_variant": "first-class",
+    "title": "Venice First Class",
+    "meta_title": "Venice First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Venice. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "venice-premium-economy",
+    "destination_slug": "venice",
+    "cabin_variant": "premium-economy",
+    "title": "Venice Premium Economy",
+    "meta_title": "Venice Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Venice. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "venice-business-vs-first",
+    "destination_slug": "venice",
+    "cabin_variant": "business-vs-first",
+    "title": "Venice Business Vs First",
+    "meta_title": "Venice Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Venice. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "venice-business-vs-premium-economy",
+    "destination_slug": "venice",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Venice Business Vs Premium Economy",
+    "meta_title": "Venice Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Venice. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "athens-business-class",
+    "destination_slug": "athens",
+    "cabin_variant": "business-class",
+    "title": "Athens Business Class",
+    "meta_title": "Athens Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Athens. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "athens-first-class",
+    "destination_slug": "athens",
+    "cabin_variant": "first-class",
+    "title": "Athens First Class",
+    "meta_title": "Athens First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Athens. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "athens-premium-economy",
+    "destination_slug": "athens",
+    "cabin_variant": "premium-economy",
+    "title": "Athens Premium Economy",
+    "meta_title": "Athens Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Athens. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "athens-business-vs-first",
+    "destination_slug": "athens",
+    "cabin_variant": "business-vs-first",
+    "title": "Athens Business Vs First",
+    "meta_title": "Athens Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Athens. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "athens-business-vs-premium-economy",
+    "destination_slug": "athens",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Athens Business Vs Premium Economy",
+    "meta_title": "Athens Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Athens. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dublin-business-class",
+    "destination_slug": "dublin",
+    "cabin_variant": "business-class",
+    "title": "Dublin Business Class",
+    "meta_title": "Dublin Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Dublin. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dublin-first-class",
+    "destination_slug": "dublin",
+    "cabin_variant": "first-class",
+    "title": "Dublin First Class",
+    "meta_title": "Dublin First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Dublin. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dublin-premium-economy",
+    "destination_slug": "dublin",
+    "cabin_variant": "premium-economy",
+    "title": "Dublin Premium Economy",
+    "meta_title": "Dublin Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Dublin. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dublin-business-vs-first",
+    "destination_slug": "dublin",
+    "cabin_variant": "business-vs-first",
+    "title": "Dublin Business Vs First",
+    "meta_title": "Dublin Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Dublin. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dublin-business-vs-premium-economy",
+    "destination_slug": "dublin",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Dublin Business Vs Premium Economy",
+    "meta_title": "Dublin Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Dublin. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "oslo-business-class",
+    "destination_slug": "oslo",
+    "cabin_variant": "business-class",
+    "title": "Oslo Business Class",
+    "meta_title": "Oslo Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Oslo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "oslo-first-class",
+    "destination_slug": "oslo",
+    "cabin_variant": "first-class",
+    "title": "Oslo First Class",
+    "meta_title": "Oslo First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Oslo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "oslo-premium-economy",
+    "destination_slug": "oslo",
+    "cabin_variant": "premium-economy",
+    "title": "Oslo Premium Economy",
+    "meta_title": "Oslo Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Oslo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "oslo-business-vs-first",
+    "destination_slug": "oslo",
+    "cabin_variant": "business-vs-first",
+    "title": "Oslo Business Vs First",
+    "meta_title": "Oslo Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Oslo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "oslo-business-vs-premium-economy",
+    "destination_slug": "oslo",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Oslo Business Vs Premium Economy",
+    "meta_title": "Oslo Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Oslo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "stockholm-business-class",
+    "destination_slug": "stockholm",
+    "cabin_variant": "business-class",
+    "title": "Stockholm Business Class",
+    "meta_title": "Stockholm Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Stockholm. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "stockholm-first-class",
+    "destination_slug": "stockholm",
+    "cabin_variant": "first-class",
+    "title": "Stockholm First Class",
+    "meta_title": "Stockholm First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Stockholm. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "stockholm-premium-economy",
+    "destination_slug": "stockholm",
+    "cabin_variant": "premium-economy",
+    "title": "Stockholm Premium Economy",
+    "meta_title": "Stockholm Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Stockholm. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "stockholm-business-vs-first",
+    "destination_slug": "stockholm",
+    "cabin_variant": "business-vs-first",
+    "title": "Stockholm Business Vs First",
+    "meta_title": "Stockholm Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Stockholm. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "stockholm-business-vs-premium-economy",
+    "destination_slug": "stockholm",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Stockholm Business Vs Premium Economy",
+    "meta_title": "Stockholm Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Stockholm. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "copenhagen-business-class",
+    "destination_slug": "copenhagen",
+    "cabin_variant": "business-class",
+    "title": "Copenhagen Business Class",
+    "meta_title": "Copenhagen Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Copenhagen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "copenhagen-first-class",
+    "destination_slug": "copenhagen",
+    "cabin_variant": "first-class",
+    "title": "Copenhagen First Class",
+    "meta_title": "Copenhagen First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Copenhagen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "copenhagen-premium-economy",
+    "destination_slug": "copenhagen",
+    "cabin_variant": "premium-economy",
+    "title": "Copenhagen Premium Economy",
+    "meta_title": "Copenhagen Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Copenhagen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "copenhagen-business-vs-first",
+    "destination_slug": "copenhagen",
+    "cabin_variant": "business-vs-first",
+    "title": "Copenhagen Business Vs First",
+    "meta_title": "Copenhagen Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Copenhagen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "copenhagen-business-vs-premium-economy",
+    "destination_slug": "copenhagen",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Copenhagen Business Vs Premium Economy",
+    "meta_title": "Copenhagen Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Copenhagen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "helsinki-business-class",
+    "destination_slug": "helsinki",
+    "cabin_variant": "business-class",
+    "title": "Helsinki Business Class",
+    "meta_title": "Helsinki Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Helsinki. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "helsinki-first-class",
+    "destination_slug": "helsinki",
+    "cabin_variant": "first-class",
+    "title": "Helsinki First Class",
+    "meta_title": "Helsinki First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Helsinki. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "helsinki-premium-economy",
+    "destination_slug": "helsinki",
+    "cabin_variant": "premium-economy",
+    "title": "Helsinki Premium Economy",
+    "meta_title": "Helsinki Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Helsinki. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "helsinki-business-vs-first",
+    "destination_slug": "helsinki",
+    "cabin_variant": "business-vs-first",
+    "title": "Helsinki Business Vs First",
+    "meta_title": "Helsinki Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Helsinki. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "helsinki-business-vs-premium-economy",
+    "destination_slug": "helsinki",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Helsinki Business Vs Premium Economy",
+    "meta_title": "Helsinki Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Helsinki. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "prague-business-class",
+    "destination_slug": "prague",
+    "cabin_variant": "business-class",
+    "title": "Prague Business Class",
+    "meta_title": "Prague Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Prague. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "prague-first-class",
+    "destination_slug": "prague",
+    "cabin_variant": "first-class",
+    "title": "Prague First Class",
+    "meta_title": "Prague First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Prague. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "prague-premium-economy",
+    "destination_slug": "prague",
+    "cabin_variant": "premium-economy",
+    "title": "Prague Premium Economy",
+    "meta_title": "Prague Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Prague. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "prague-business-vs-first",
+    "destination_slug": "prague",
+    "cabin_variant": "business-vs-first",
+    "title": "Prague Business Vs First",
+    "meta_title": "Prague Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Prague. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "prague-business-vs-premium-economy",
+    "destination_slug": "prague",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Prague Business Vs Premium Economy",
+    "meta_title": "Prague Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Prague. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "warsaw-business-class",
+    "destination_slug": "warsaw",
+    "cabin_variant": "business-class",
+    "title": "Warsaw Business Class",
+    "meta_title": "Warsaw Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Warsaw. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "warsaw-first-class",
+    "destination_slug": "warsaw",
+    "cabin_variant": "first-class",
+    "title": "Warsaw First Class",
+    "meta_title": "Warsaw First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Warsaw. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "warsaw-premium-economy",
+    "destination_slug": "warsaw",
+    "cabin_variant": "premium-economy",
+    "title": "Warsaw Premium Economy",
+    "meta_title": "Warsaw Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Warsaw. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "warsaw-business-vs-first",
+    "destination_slug": "warsaw",
+    "cabin_variant": "business-vs-first",
+    "title": "Warsaw Business Vs First",
+    "meta_title": "Warsaw Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Warsaw. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "warsaw-business-vs-premium-economy",
+    "destination_slug": "warsaw",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Warsaw Business Vs Premium Economy",
+    "meta_title": "Warsaw Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Warsaw. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "budapest-business-class",
+    "destination_slug": "budapest",
+    "cabin_variant": "business-class",
+    "title": "Budapest Business Class",
+    "meta_title": "Budapest Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Budapest. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "budapest-first-class",
+    "destination_slug": "budapest",
+    "cabin_variant": "first-class",
+    "title": "Budapest First Class",
+    "meta_title": "Budapest First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Budapest. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "budapest-premium-economy",
+    "destination_slug": "budapest",
+    "cabin_variant": "premium-economy",
+    "title": "Budapest Premium Economy",
+    "meta_title": "Budapest Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Budapest. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "budapest-business-vs-first",
+    "destination_slug": "budapest",
+    "cabin_variant": "business-vs-first",
+    "title": "Budapest Business Vs First",
+    "meta_title": "Budapest Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Budapest. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "budapest-business-vs-premium-economy",
+    "destination_slug": "budapest",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Budapest Business Vs Premium Economy",
+    "meta_title": "Budapest Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Budapest. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "istanbul-business-class",
+    "destination_slug": "istanbul",
+    "cabin_variant": "business-class",
+    "title": "Istanbul Business Class",
+    "meta_title": "Istanbul Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Istanbul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "istanbul-first-class",
+    "destination_slug": "istanbul",
+    "cabin_variant": "first-class",
+    "title": "Istanbul First Class",
+    "meta_title": "Istanbul First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Istanbul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "istanbul-premium-economy",
+    "destination_slug": "istanbul",
+    "cabin_variant": "premium-economy",
+    "title": "Istanbul Premium Economy",
+    "meta_title": "Istanbul Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Istanbul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "istanbul-business-vs-first",
+    "destination_slug": "istanbul",
+    "cabin_variant": "business-vs-first",
+    "title": "Istanbul Business Vs First",
+    "meta_title": "Istanbul Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Istanbul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "istanbul-business-vs-premium-economy",
+    "destination_slug": "istanbul",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Istanbul Business Vs Premium Economy",
+    "meta_title": "Istanbul Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Istanbul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dubai-business-class",
+    "destination_slug": "dubai",
+    "cabin_variant": "business-class",
+    "title": "Dubai Business Class",
+    "meta_title": "Dubai Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Dubai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dubai-first-class",
+    "destination_slug": "dubai",
+    "cabin_variant": "first-class",
+    "title": "Dubai First Class",
+    "meta_title": "Dubai First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Dubai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dubai-premium-economy",
+    "destination_slug": "dubai",
+    "cabin_variant": "premium-economy",
+    "title": "Dubai Premium Economy",
+    "meta_title": "Dubai Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Dubai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dubai-business-vs-first",
+    "destination_slug": "dubai",
+    "cabin_variant": "business-vs-first",
+    "title": "Dubai Business Vs First",
+    "meta_title": "Dubai Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Dubai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "dubai-business-vs-premium-economy",
+    "destination_slug": "dubai",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Dubai Business Vs Premium Economy",
+    "meta_title": "Dubai Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Dubai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "abu-dhabi-business-class",
+    "destination_slug": "abu-dhabi",
+    "cabin_variant": "business-class",
+    "title": "Abu Dhabi Business Class",
+    "meta_title": "Abu Dhabi Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Abu Dhabi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "abu-dhabi-first-class",
+    "destination_slug": "abu-dhabi",
+    "cabin_variant": "first-class",
+    "title": "Abu Dhabi First Class",
+    "meta_title": "Abu Dhabi First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Abu Dhabi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "abu-dhabi-premium-economy",
+    "destination_slug": "abu-dhabi",
+    "cabin_variant": "premium-economy",
+    "title": "Abu Dhabi Premium Economy",
+    "meta_title": "Abu Dhabi Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Abu Dhabi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "abu-dhabi-business-vs-first",
+    "destination_slug": "abu-dhabi",
+    "cabin_variant": "business-vs-first",
+    "title": "Abu Dhabi Business Vs First",
+    "meta_title": "Abu Dhabi Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Abu Dhabi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "abu-dhabi-business-vs-premium-economy",
+    "destination_slug": "abu-dhabi",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Abu Dhabi Business Vs Premium Economy",
+    "meta_title": "Abu Dhabi Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Abu Dhabi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "doha-business-class",
+    "destination_slug": "doha",
+    "cabin_variant": "business-class",
+    "title": "Doha Business Class",
+    "meta_title": "Doha Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Doha. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "doha-first-class",
+    "destination_slug": "doha",
+    "cabin_variant": "first-class",
+    "title": "Doha First Class",
+    "meta_title": "Doha First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Doha. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "doha-premium-economy",
+    "destination_slug": "doha",
+    "cabin_variant": "premium-economy",
+    "title": "Doha Premium Economy",
+    "meta_title": "Doha Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Doha. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "doha-business-vs-first",
+    "destination_slug": "doha",
+    "cabin_variant": "business-vs-first",
+    "title": "Doha Business Vs First",
+    "meta_title": "Doha Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Doha. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "doha-business-vs-premium-economy",
+    "destination_slug": "doha",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Doha Business Vs Premium Economy",
+    "meta_title": "Doha Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Doha. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "riyadh-business-class",
+    "destination_slug": "riyadh",
+    "cabin_variant": "business-class",
+    "title": "Riyadh Business Class",
+    "meta_title": "Riyadh Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Riyadh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "riyadh-first-class",
+    "destination_slug": "riyadh",
+    "cabin_variant": "first-class",
+    "title": "Riyadh First Class",
+    "meta_title": "Riyadh First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Riyadh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "riyadh-premium-economy",
+    "destination_slug": "riyadh",
+    "cabin_variant": "premium-economy",
+    "title": "Riyadh Premium Economy",
+    "meta_title": "Riyadh Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Riyadh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "riyadh-business-vs-first",
+    "destination_slug": "riyadh",
+    "cabin_variant": "business-vs-first",
+    "title": "Riyadh Business Vs First",
+    "meta_title": "Riyadh Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Riyadh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "riyadh-business-vs-premium-economy",
+    "destination_slug": "riyadh",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Riyadh Business Vs Premium Economy",
+    "meta_title": "Riyadh Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Riyadh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jeddah-business-class",
+    "destination_slug": "jeddah",
+    "cabin_variant": "business-class",
+    "title": "Jeddah Business Class",
+    "meta_title": "Jeddah Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Jeddah. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jeddah-first-class",
+    "destination_slug": "jeddah",
+    "cabin_variant": "first-class",
+    "title": "Jeddah First Class",
+    "meta_title": "Jeddah First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Jeddah. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jeddah-premium-economy",
+    "destination_slug": "jeddah",
+    "cabin_variant": "premium-economy",
+    "title": "Jeddah Premium Economy",
+    "meta_title": "Jeddah Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Jeddah. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jeddah-business-vs-first",
+    "destination_slug": "jeddah",
+    "cabin_variant": "business-vs-first",
+    "title": "Jeddah Business Vs First",
+    "meta_title": "Jeddah Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Jeddah. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jeddah-business-vs-premium-economy",
+    "destination_slug": "jeddah",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Jeddah Business Vs Premium Economy",
+    "meta_title": "Jeddah Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Jeddah. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tel-aviv-business-class",
+    "destination_slug": "tel-aviv",
+    "cabin_variant": "business-class",
+    "title": "Tel Aviv Business Class",
+    "meta_title": "Tel Aviv Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Tel Aviv. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tel-aviv-first-class",
+    "destination_slug": "tel-aviv",
+    "cabin_variant": "first-class",
+    "title": "Tel Aviv First Class",
+    "meta_title": "Tel Aviv First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Tel Aviv. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tel-aviv-premium-economy",
+    "destination_slug": "tel-aviv",
+    "cabin_variant": "premium-economy",
+    "title": "Tel Aviv Premium Economy",
+    "meta_title": "Tel Aviv Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Tel Aviv. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tel-aviv-business-vs-first",
+    "destination_slug": "tel-aviv",
+    "cabin_variant": "business-vs-first",
+    "title": "Tel Aviv Business Vs First",
+    "meta_title": "Tel Aviv Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Tel Aviv. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tel-aviv-business-vs-premium-economy",
+    "destination_slug": "tel-aviv",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Tel Aviv Business Vs Premium Economy",
+    "meta_title": "Tel Aviv Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Tel Aviv. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cairo-business-class",
+    "destination_slug": "cairo",
+    "cabin_variant": "business-class",
+    "title": "Cairo Business Class",
+    "meta_title": "Cairo Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Cairo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cairo-first-class",
+    "destination_slug": "cairo",
+    "cabin_variant": "first-class",
+    "title": "Cairo First Class",
+    "meta_title": "Cairo First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Cairo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cairo-premium-economy",
+    "destination_slug": "cairo",
+    "cabin_variant": "premium-economy",
+    "title": "Cairo Premium Economy",
+    "meta_title": "Cairo Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Cairo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cairo-business-vs-first",
+    "destination_slug": "cairo",
+    "cabin_variant": "business-vs-first",
+    "title": "Cairo Business Vs First",
+    "meta_title": "Cairo Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Cairo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cairo-business-vs-premium-economy",
+    "destination_slug": "cairo",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Cairo Business Vs Premium Economy",
+    "meta_title": "Cairo Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Cairo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amman-business-class",
+    "destination_slug": "amman",
+    "cabin_variant": "business-class",
+    "title": "Amman Business Class",
+    "meta_title": "Amman Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Amman. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amman-first-class",
+    "destination_slug": "amman",
+    "cabin_variant": "first-class",
+    "title": "Amman First Class",
+    "meta_title": "Amman First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Amman. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amman-premium-economy",
+    "destination_slug": "amman",
+    "cabin_variant": "premium-economy",
+    "title": "Amman Premium Economy",
+    "meta_title": "Amman Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Amman. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amman-business-vs-first",
+    "destination_slug": "amman",
+    "cabin_variant": "business-vs-first",
+    "title": "Amman Business Vs First",
+    "meta_title": "Amman Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Amman. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "amman-business-vs-premium-economy",
+    "destination_slug": "amman",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Amman Business Vs Premium Economy",
+    "meta_title": "Amman Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Amman. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beirut-business-class",
+    "destination_slug": "beirut",
+    "cabin_variant": "business-class",
+    "title": "Beirut Business Class",
+    "meta_title": "Beirut Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Beirut. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beirut-first-class",
+    "destination_slug": "beirut",
+    "cabin_variant": "first-class",
+    "title": "Beirut First Class",
+    "meta_title": "Beirut First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Beirut. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beirut-premium-economy",
+    "destination_slug": "beirut",
+    "cabin_variant": "premium-economy",
+    "title": "Beirut Premium Economy",
+    "meta_title": "Beirut Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Beirut. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beirut-business-vs-first",
+    "destination_slug": "beirut",
+    "cabin_variant": "business-vs-first",
+    "title": "Beirut Business Vs First",
+    "meta_title": "Beirut Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Beirut. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beirut-business-vs-premium-economy",
+    "destination_slug": "beirut",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Beirut Business Vs Premium Economy",
+    "meta_title": "Beirut Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Beirut. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "johannesburg-business-class",
+    "destination_slug": "johannesburg",
+    "cabin_variant": "business-class",
+    "title": "Johannesburg Business Class",
+    "meta_title": "Johannesburg Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Johannesburg. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "johannesburg-first-class",
+    "destination_slug": "johannesburg",
+    "cabin_variant": "first-class",
+    "title": "Johannesburg First Class",
+    "meta_title": "Johannesburg First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Johannesburg. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "johannesburg-premium-economy",
+    "destination_slug": "johannesburg",
+    "cabin_variant": "premium-economy",
+    "title": "Johannesburg Premium Economy",
+    "meta_title": "Johannesburg Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Johannesburg. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "johannesburg-business-vs-first",
+    "destination_slug": "johannesburg",
+    "cabin_variant": "business-vs-first",
+    "title": "Johannesburg Business Vs First",
+    "meta_title": "Johannesburg Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Johannesburg. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "johannesburg-business-vs-premium-economy",
+    "destination_slug": "johannesburg",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Johannesburg Business Vs Premium Economy",
+    "meta_title": "Johannesburg Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Johannesburg. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cape-town-business-class",
+    "destination_slug": "cape-town",
+    "cabin_variant": "business-class",
+    "title": "Cape Town Business Class",
+    "meta_title": "Cape Town Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Cape Town. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cape-town-first-class",
+    "destination_slug": "cape-town",
+    "cabin_variant": "first-class",
+    "title": "Cape Town First Class",
+    "meta_title": "Cape Town First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Cape Town. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cape-town-premium-economy",
+    "destination_slug": "cape-town",
+    "cabin_variant": "premium-economy",
+    "title": "Cape Town Premium Economy",
+    "meta_title": "Cape Town Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Cape Town. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cape-town-business-vs-first",
+    "destination_slug": "cape-town",
+    "cabin_variant": "business-vs-first",
+    "title": "Cape Town Business Vs First",
+    "meta_title": "Cape Town Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Cape Town. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "cape-town-business-vs-premium-economy",
+    "destination_slug": "cape-town",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Cape Town Business Vs Premium Economy",
+    "meta_title": "Cape Town Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Cape Town. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nairobi-business-class",
+    "destination_slug": "nairobi",
+    "cabin_variant": "business-class",
+    "title": "Nairobi Business Class",
+    "meta_title": "Nairobi Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Nairobi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nairobi-first-class",
+    "destination_slug": "nairobi",
+    "cabin_variant": "first-class",
+    "title": "Nairobi First Class",
+    "meta_title": "Nairobi First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Nairobi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nairobi-premium-economy",
+    "destination_slug": "nairobi",
+    "cabin_variant": "premium-economy",
+    "title": "Nairobi Premium Economy",
+    "meta_title": "Nairobi Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Nairobi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nairobi-business-vs-first",
+    "destination_slug": "nairobi",
+    "cabin_variant": "business-vs-first",
+    "title": "Nairobi Business Vs First",
+    "meta_title": "Nairobi Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Nairobi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nairobi-business-vs-premium-economy",
+    "destination_slug": "nairobi",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Nairobi Business Vs Premium Economy",
+    "meta_title": "Nairobi Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Nairobi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "casablanca-business-class",
+    "destination_slug": "casablanca",
+    "cabin_variant": "business-class",
+    "title": "Casablanca Business Class",
+    "meta_title": "Casablanca Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Casablanca. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "casablanca-first-class",
+    "destination_slug": "casablanca",
+    "cabin_variant": "first-class",
+    "title": "Casablanca First Class",
+    "meta_title": "Casablanca First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Casablanca. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "casablanca-premium-economy",
+    "destination_slug": "casablanca",
+    "cabin_variant": "premium-economy",
+    "title": "Casablanca Premium Economy",
+    "meta_title": "Casablanca Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Casablanca. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "casablanca-business-vs-first",
+    "destination_slug": "casablanca",
+    "cabin_variant": "business-vs-first",
+    "title": "Casablanca Business Vs First",
+    "meta_title": "Casablanca Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Casablanca. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "casablanca-business-vs-premium-economy",
+    "destination_slug": "casablanca",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Casablanca Business Vs Premium Economy",
+    "meta_title": "Casablanca Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Casablanca. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "marrakesh-business-class",
+    "destination_slug": "marrakesh",
+    "cabin_variant": "business-class",
+    "title": "Marrakesh Business Class",
+    "meta_title": "Marrakesh Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Marrakesh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "marrakesh-first-class",
+    "destination_slug": "marrakesh",
+    "cabin_variant": "first-class",
+    "title": "Marrakesh First Class",
+    "meta_title": "Marrakesh First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Marrakesh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "marrakesh-premium-economy",
+    "destination_slug": "marrakesh",
+    "cabin_variant": "premium-economy",
+    "title": "Marrakesh Premium Economy",
+    "meta_title": "Marrakesh Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Marrakesh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "marrakesh-business-vs-first",
+    "destination_slug": "marrakesh",
+    "cabin_variant": "business-vs-first",
+    "title": "Marrakesh Business Vs First",
+    "meta_title": "Marrakesh Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Marrakesh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "marrakesh-business-vs-premium-economy",
+    "destination_slug": "marrakesh",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Marrakesh Business Vs Premium Economy",
+    "meta_title": "Marrakesh Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Marrakesh. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lagos-business-class",
+    "destination_slug": "lagos",
+    "cabin_variant": "business-class",
+    "title": "Lagos Business Class",
+    "meta_title": "Lagos Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Lagos. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lagos-first-class",
+    "destination_slug": "lagos",
+    "cabin_variant": "first-class",
+    "title": "Lagos First Class",
+    "meta_title": "Lagos First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Lagos. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lagos-premium-economy",
+    "destination_slug": "lagos",
+    "cabin_variant": "premium-economy",
+    "title": "Lagos Premium Economy",
+    "meta_title": "Lagos Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Lagos. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lagos-business-vs-first",
+    "destination_slug": "lagos",
+    "cabin_variant": "business-vs-first",
+    "title": "Lagos Business Vs First",
+    "meta_title": "Lagos Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Lagos. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lagos-business-vs-premium-economy",
+    "destination_slug": "lagos",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Lagos Business Vs Premium Economy",
+    "meta_title": "Lagos Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Lagos. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "addis-ababa-business-class",
+    "destination_slug": "addis-ababa",
+    "cabin_variant": "business-class",
+    "title": "Addis Ababa Business Class",
+    "meta_title": "Addis Ababa Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Addis Ababa. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "addis-ababa-first-class",
+    "destination_slug": "addis-ababa",
+    "cabin_variant": "first-class",
+    "title": "Addis Ababa First Class",
+    "meta_title": "Addis Ababa First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Addis Ababa. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "addis-ababa-premium-economy",
+    "destination_slug": "addis-ababa",
+    "cabin_variant": "premium-economy",
+    "title": "Addis Ababa Premium Economy",
+    "meta_title": "Addis Ababa Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Addis Ababa. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "addis-ababa-business-vs-first",
+    "destination_slug": "addis-ababa",
+    "cabin_variant": "business-vs-first",
+    "title": "Addis Ababa Business Vs First",
+    "meta_title": "Addis Ababa Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Addis Ababa. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "addis-ababa-business-vs-premium-economy",
+    "destination_slug": "addis-ababa",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Addis Ababa Business Vs Premium Economy",
+    "meta_title": "Addis Ababa Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Addis Ababa. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "delhi-business-class",
+    "destination_slug": "delhi",
+    "cabin_variant": "business-class",
+    "title": "Delhi Business Class",
+    "meta_title": "Delhi Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Delhi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "delhi-first-class",
+    "destination_slug": "delhi",
+    "cabin_variant": "first-class",
+    "title": "Delhi First Class",
+    "meta_title": "Delhi First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Delhi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "delhi-premium-economy",
+    "destination_slug": "delhi",
+    "cabin_variant": "premium-economy",
+    "title": "Delhi Premium Economy",
+    "meta_title": "Delhi Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Delhi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "delhi-business-vs-first",
+    "destination_slug": "delhi",
+    "cabin_variant": "business-vs-first",
+    "title": "Delhi Business Vs First",
+    "meta_title": "Delhi Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Delhi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "delhi-business-vs-premium-economy",
+    "destination_slug": "delhi",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Delhi Business Vs Premium Economy",
+    "meta_title": "Delhi Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Delhi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mumbai-business-class",
+    "destination_slug": "mumbai",
+    "cabin_variant": "business-class",
+    "title": "Mumbai Business Class",
+    "meta_title": "Mumbai Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Mumbai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mumbai-first-class",
+    "destination_slug": "mumbai",
+    "cabin_variant": "first-class",
+    "title": "Mumbai First Class",
+    "meta_title": "Mumbai First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Mumbai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mumbai-premium-economy",
+    "destination_slug": "mumbai",
+    "cabin_variant": "premium-economy",
+    "title": "Mumbai Premium Economy",
+    "meta_title": "Mumbai Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Mumbai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mumbai-business-vs-first",
+    "destination_slug": "mumbai",
+    "cabin_variant": "business-vs-first",
+    "title": "Mumbai Business Vs First",
+    "meta_title": "Mumbai Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Mumbai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mumbai-business-vs-premium-economy",
+    "destination_slug": "mumbai",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Mumbai Business Vs Premium Economy",
+    "meta_title": "Mumbai Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Mumbai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bengaluru-business-class",
+    "destination_slug": "bengaluru",
+    "cabin_variant": "business-class",
+    "title": "Bengaluru Business Class",
+    "meta_title": "Bengaluru Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Bengaluru. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bengaluru-first-class",
+    "destination_slug": "bengaluru",
+    "cabin_variant": "first-class",
+    "title": "Bengaluru First Class",
+    "meta_title": "Bengaluru First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Bengaluru. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bengaluru-premium-economy",
+    "destination_slug": "bengaluru",
+    "cabin_variant": "premium-economy",
+    "title": "Bengaluru Premium Economy",
+    "meta_title": "Bengaluru Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Bengaluru. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bengaluru-business-vs-first",
+    "destination_slug": "bengaluru",
+    "cabin_variant": "business-vs-first",
+    "title": "Bengaluru Business Vs First",
+    "meta_title": "Bengaluru Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Bengaluru. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bengaluru-business-vs-premium-economy",
+    "destination_slug": "bengaluru",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Bengaluru Business Vs Premium Economy",
+    "meta_title": "Bengaluru Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Bengaluru. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chennai-business-class",
+    "destination_slug": "chennai",
+    "cabin_variant": "business-class",
+    "title": "Chennai Business Class",
+    "meta_title": "Chennai Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Chennai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chennai-first-class",
+    "destination_slug": "chennai",
+    "cabin_variant": "first-class",
+    "title": "Chennai First Class",
+    "meta_title": "Chennai First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Chennai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chennai-premium-economy",
+    "destination_slug": "chennai",
+    "cabin_variant": "premium-economy",
+    "title": "Chennai Premium Economy",
+    "meta_title": "Chennai Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Chennai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chennai-business-vs-first",
+    "destination_slug": "chennai",
+    "cabin_variant": "business-vs-first",
+    "title": "Chennai Business Vs First",
+    "meta_title": "Chennai Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Chennai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "chennai-business-vs-premium-economy",
+    "destination_slug": "chennai",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Chennai Business Vs Premium Economy",
+    "meta_title": "Chennai Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Chennai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hyderabad-business-class",
+    "destination_slug": "hyderabad",
+    "cabin_variant": "business-class",
+    "title": "Hyderabad Business Class",
+    "meta_title": "Hyderabad Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Hyderabad. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hyderabad-first-class",
+    "destination_slug": "hyderabad",
+    "cabin_variant": "first-class",
+    "title": "Hyderabad First Class",
+    "meta_title": "Hyderabad First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Hyderabad. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hyderabad-premium-economy",
+    "destination_slug": "hyderabad",
+    "cabin_variant": "premium-economy",
+    "title": "Hyderabad Premium Economy",
+    "meta_title": "Hyderabad Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Hyderabad. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hyderabad-business-vs-first",
+    "destination_slug": "hyderabad",
+    "cabin_variant": "business-vs-first",
+    "title": "Hyderabad Business Vs First",
+    "meta_title": "Hyderabad Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Hyderabad. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hyderabad-business-vs-premium-economy",
+    "destination_slug": "hyderabad",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Hyderabad Business Vs Premium Economy",
+    "meta_title": "Hyderabad Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Hyderabad. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "singapore-business-class",
+    "destination_slug": "singapore",
+    "cabin_variant": "business-class",
+    "title": "Singapore Business Class",
+    "meta_title": "Singapore Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Singapore. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "singapore-first-class",
+    "destination_slug": "singapore",
+    "cabin_variant": "first-class",
+    "title": "Singapore First Class",
+    "meta_title": "Singapore First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Singapore. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "singapore-premium-economy",
+    "destination_slug": "singapore",
+    "cabin_variant": "premium-economy",
+    "title": "Singapore Premium Economy",
+    "meta_title": "Singapore Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Singapore. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "singapore-business-vs-first",
+    "destination_slug": "singapore",
+    "cabin_variant": "business-vs-first",
+    "title": "Singapore Business Vs First",
+    "meta_title": "Singapore Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Singapore. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "singapore-business-vs-premium-economy",
+    "destination_slug": "singapore",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Singapore Business Vs Premium Economy",
+    "meta_title": "Singapore Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Singapore. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hong-kong-business-class",
+    "destination_slug": "hong-kong",
+    "cabin_variant": "business-class",
+    "title": "Hong Kong Business Class",
+    "meta_title": "Hong Kong Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Hong Kong. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hong-kong-first-class",
+    "destination_slug": "hong-kong",
+    "cabin_variant": "first-class",
+    "title": "Hong Kong First Class",
+    "meta_title": "Hong Kong First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Hong Kong. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hong-kong-premium-economy",
+    "destination_slug": "hong-kong",
+    "cabin_variant": "premium-economy",
+    "title": "Hong Kong Premium Economy",
+    "meta_title": "Hong Kong Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Hong Kong. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hong-kong-business-vs-first",
+    "destination_slug": "hong-kong",
+    "cabin_variant": "business-vs-first",
+    "title": "Hong Kong Business Vs First",
+    "meta_title": "Hong Kong Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Hong Kong. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hong-kong-business-vs-premium-economy",
+    "destination_slug": "hong-kong",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Hong Kong Business Vs Premium Economy",
+    "meta_title": "Hong Kong Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Hong Kong. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seoul-business-class",
+    "destination_slug": "seoul",
+    "cabin_variant": "business-class",
+    "title": "Seoul Business Class",
+    "meta_title": "Seoul Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Seoul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seoul-first-class",
+    "destination_slug": "seoul",
+    "cabin_variant": "first-class",
+    "title": "Seoul First Class",
+    "meta_title": "Seoul First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Seoul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seoul-premium-economy",
+    "destination_slug": "seoul",
+    "cabin_variant": "premium-economy",
+    "title": "Seoul Premium Economy",
+    "meta_title": "Seoul Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Seoul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seoul-business-vs-first",
+    "destination_slug": "seoul",
+    "cabin_variant": "business-vs-first",
+    "title": "Seoul Business Vs First",
+    "meta_title": "Seoul Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Seoul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "seoul-business-vs-premium-economy",
+    "destination_slug": "seoul",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Seoul Business Vs Premium Economy",
+    "meta_title": "Seoul Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Seoul. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tokyo-business-class",
+    "destination_slug": "tokyo",
+    "cabin_variant": "business-class",
+    "title": "Tokyo Business Class",
+    "meta_title": "Tokyo Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Tokyo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tokyo-first-class",
+    "destination_slug": "tokyo",
+    "cabin_variant": "first-class",
+    "title": "Tokyo First Class",
+    "meta_title": "Tokyo First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Tokyo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tokyo-premium-economy",
+    "destination_slug": "tokyo",
+    "cabin_variant": "premium-economy",
+    "title": "Tokyo Premium Economy",
+    "meta_title": "Tokyo Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Tokyo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tokyo-business-vs-first",
+    "destination_slug": "tokyo",
+    "cabin_variant": "business-vs-first",
+    "title": "Tokyo Business Vs First",
+    "meta_title": "Tokyo Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Tokyo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "tokyo-business-vs-premium-economy",
+    "destination_slug": "tokyo",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Tokyo Business Vs Premium Economy",
+    "meta_title": "Tokyo Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Tokyo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "osaka-business-class",
+    "destination_slug": "osaka",
+    "cabin_variant": "business-class",
+    "title": "Osaka Business Class",
+    "meta_title": "Osaka Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Osaka. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "osaka-first-class",
+    "destination_slug": "osaka",
+    "cabin_variant": "first-class",
+    "title": "Osaka First Class",
+    "meta_title": "Osaka First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Osaka. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "osaka-premium-economy",
+    "destination_slug": "osaka",
+    "cabin_variant": "premium-economy",
+    "title": "Osaka Premium Economy",
+    "meta_title": "Osaka Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Osaka. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "osaka-business-vs-first",
+    "destination_slug": "osaka",
+    "cabin_variant": "business-vs-first",
+    "title": "Osaka Business Vs First",
+    "meta_title": "Osaka Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Osaka. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "osaka-business-vs-premium-economy",
+    "destination_slug": "osaka",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Osaka Business Vs Premium Economy",
+    "meta_title": "Osaka Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Osaka. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nagoya-business-class",
+    "destination_slug": "nagoya",
+    "cabin_variant": "business-class",
+    "title": "Nagoya Business Class",
+    "meta_title": "Nagoya Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Nagoya. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nagoya-first-class",
+    "destination_slug": "nagoya",
+    "cabin_variant": "first-class",
+    "title": "Nagoya First Class",
+    "meta_title": "Nagoya First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Nagoya. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nagoya-premium-economy",
+    "destination_slug": "nagoya",
+    "cabin_variant": "premium-economy",
+    "title": "Nagoya Premium Economy",
+    "meta_title": "Nagoya Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Nagoya. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nagoya-business-vs-first",
+    "destination_slug": "nagoya",
+    "cabin_variant": "business-vs-first",
+    "title": "Nagoya Business Vs First",
+    "meta_title": "Nagoya Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Nagoya. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "nagoya-business-vs-premium-economy",
+    "destination_slug": "nagoya",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Nagoya Business Vs Premium Economy",
+    "meta_title": "Nagoya Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Nagoya. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shanghai-business-class",
+    "destination_slug": "shanghai",
+    "cabin_variant": "business-class",
+    "title": "Shanghai Business Class",
+    "meta_title": "Shanghai Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Shanghai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shanghai-first-class",
+    "destination_slug": "shanghai",
+    "cabin_variant": "first-class",
+    "title": "Shanghai First Class",
+    "meta_title": "Shanghai First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Shanghai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shanghai-premium-economy",
+    "destination_slug": "shanghai",
+    "cabin_variant": "premium-economy",
+    "title": "Shanghai Premium Economy",
+    "meta_title": "Shanghai Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Shanghai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shanghai-business-vs-first",
+    "destination_slug": "shanghai",
+    "cabin_variant": "business-vs-first",
+    "title": "Shanghai Business Vs First",
+    "meta_title": "Shanghai Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Shanghai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shanghai-business-vs-premium-economy",
+    "destination_slug": "shanghai",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Shanghai Business Vs Premium Economy",
+    "meta_title": "Shanghai Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Shanghai. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beijing-business-class",
+    "destination_slug": "beijing",
+    "cabin_variant": "business-class",
+    "title": "Beijing Business Class",
+    "meta_title": "Beijing Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Beijing. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beijing-first-class",
+    "destination_slug": "beijing",
+    "cabin_variant": "first-class",
+    "title": "Beijing First Class",
+    "meta_title": "Beijing First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Beijing. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beijing-premium-economy",
+    "destination_slug": "beijing",
+    "cabin_variant": "premium-economy",
+    "title": "Beijing Premium Economy",
+    "meta_title": "Beijing Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Beijing. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beijing-business-vs-first",
+    "destination_slug": "beijing",
+    "cabin_variant": "business-vs-first",
+    "title": "Beijing Business Vs First",
+    "meta_title": "Beijing Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Beijing. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "beijing-business-vs-premium-economy",
+    "destination_slug": "beijing",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Beijing Business Vs Premium Economy",
+    "meta_title": "Beijing Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Beijing. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "guangzhou-business-class",
+    "destination_slug": "guangzhou",
+    "cabin_variant": "business-class",
+    "title": "Guangzhou Business Class",
+    "meta_title": "Guangzhou Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Guangzhou. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "guangzhou-first-class",
+    "destination_slug": "guangzhou",
+    "cabin_variant": "first-class",
+    "title": "Guangzhou First Class",
+    "meta_title": "Guangzhou First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Guangzhou. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "guangzhou-premium-economy",
+    "destination_slug": "guangzhou",
+    "cabin_variant": "premium-economy",
+    "title": "Guangzhou Premium Economy",
+    "meta_title": "Guangzhou Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Guangzhou. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "guangzhou-business-vs-first",
+    "destination_slug": "guangzhou",
+    "cabin_variant": "business-vs-first",
+    "title": "Guangzhou Business Vs First",
+    "meta_title": "Guangzhou Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Guangzhou. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "guangzhou-business-vs-premium-economy",
+    "destination_slug": "guangzhou",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Guangzhou Business Vs Premium Economy",
+    "meta_title": "Guangzhou Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Guangzhou. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shenzhen-business-class",
+    "destination_slug": "shenzhen",
+    "cabin_variant": "business-class",
+    "title": "Shenzhen Business Class",
+    "meta_title": "Shenzhen Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Shenzhen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shenzhen-first-class",
+    "destination_slug": "shenzhen",
+    "cabin_variant": "first-class",
+    "title": "Shenzhen First Class",
+    "meta_title": "Shenzhen First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Shenzhen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shenzhen-premium-economy",
+    "destination_slug": "shenzhen",
+    "cabin_variant": "premium-economy",
+    "title": "Shenzhen Premium Economy",
+    "meta_title": "Shenzhen Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Shenzhen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shenzhen-business-vs-first",
+    "destination_slug": "shenzhen",
+    "cabin_variant": "business-vs-first",
+    "title": "Shenzhen Business Vs First",
+    "meta_title": "Shenzhen Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Shenzhen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "shenzhen-business-vs-premium-economy",
+    "destination_slug": "shenzhen",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Shenzhen Business Vs Premium Economy",
+    "meta_title": "Shenzhen Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Shenzhen. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "taipei-business-class",
+    "destination_slug": "taipei",
+    "cabin_variant": "business-class",
+    "title": "Taipei Business Class",
+    "meta_title": "Taipei Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Taipei. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "taipei-first-class",
+    "destination_slug": "taipei",
+    "cabin_variant": "first-class",
+    "title": "Taipei First Class",
+    "meta_title": "Taipei First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Taipei. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "taipei-premium-economy",
+    "destination_slug": "taipei",
+    "cabin_variant": "premium-economy",
+    "title": "Taipei Premium Economy",
+    "meta_title": "Taipei Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Taipei. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "taipei-business-vs-first",
+    "destination_slug": "taipei",
+    "cabin_variant": "business-vs-first",
+    "title": "Taipei Business Vs First",
+    "meta_title": "Taipei Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Taipei. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "taipei-business-vs-premium-economy",
+    "destination_slug": "taipei",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Taipei Business Vs Premium Economy",
+    "meta_title": "Taipei Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Taipei. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "kuala-lumpur-business-class",
+    "destination_slug": "kuala-lumpur",
+    "cabin_variant": "business-class",
+    "title": "Kuala Lumpur Business Class",
+    "meta_title": "Kuala Lumpur Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Kuala Lumpur. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "kuala-lumpur-first-class",
+    "destination_slug": "kuala-lumpur",
+    "cabin_variant": "first-class",
+    "title": "Kuala Lumpur First Class",
+    "meta_title": "Kuala Lumpur First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Kuala Lumpur. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "kuala-lumpur-premium-economy",
+    "destination_slug": "kuala-lumpur",
+    "cabin_variant": "premium-economy",
+    "title": "Kuala Lumpur Premium Economy",
+    "meta_title": "Kuala Lumpur Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Kuala Lumpur. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "kuala-lumpur-business-vs-first",
+    "destination_slug": "kuala-lumpur",
+    "cabin_variant": "business-vs-first",
+    "title": "Kuala Lumpur Business Vs First",
+    "meta_title": "Kuala Lumpur Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Kuala Lumpur. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "kuala-lumpur-business-vs-premium-economy",
+    "destination_slug": "kuala-lumpur",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Kuala Lumpur Business Vs Premium Economy",
+    "meta_title": "Kuala Lumpur Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Kuala Lumpur. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bangkok-business-class",
+    "destination_slug": "bangkok",
+    "cabin_variant": "business-class",
+    "title": "Bangkok Business Class",
+    "meta_title": "Bangkok Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Bangkok. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bangkok-first-class",
+    "destination_slug": "bangkok",
+    "cabin_variant": "first-class",
+    "title": "Bangkok First Class",
+    "meta_title": "Bangkok First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Bangkok. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bangkok-premium-economy",
+    "destination_slug": "bangkok",
+    "cabin_variant": "premium-economy",
+    "title": "Bangkok Premium Economy",
+    "meta_title": "Bangkok Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Bangkok. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bangkok-business-vs-first",
+    "destination_slug": "bangkok",
+    "cabin_variant": "business-vs-first",
+    "title": "Bangkok Business Vs First",
+    "meta_title": "Bangkok Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Bangkok. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bangkok-business-vs-premium-economy",
+    "destination_slug": "bangkok",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Bangkok Business Vs Premium Economy",
+    "meta_title": "Bangkok Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Bangkok. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jakarta-business-class",
+    "destination_slug": "jakarta",
+    "cabin_variant": "business-class",
+    "title": "Jakarta Business Class",
+    "meta_title": "Jakarta Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Jakarta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jakarta-first-class",
+    "destination_slug": "jakarta",
+    "cabin_variant": "first-class",
+    "title": "Jakarta First Class",
+    "meta_title": "Jakarta First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Jakarta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jakarta-premium-economy",
+    "destination_slug": "jakarta",
+    "cabin_variant": "premium-economy",
+    "title": "Jakarta Premium Economy",
+    "meta_title": "Jakarta Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Jakarta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jakarta-business-vs-first",
+    "destination_slug": "jakarta",
+    "cabin_variant": "business-vs-first",
+    "title": "Jakarta Business Vs First",
+    "meta_title": "Jakarta Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Jakarta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "jakarta-business-vs-premium-economy",
+    "destination_slug": "jakarta",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Jakarta Business Vs Premium Economy",
+    "meta_title": "Jakarta Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Jakarta. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bali-business-class",
+    "destination_slug": "bali",
+    "cabin_variant": "business-class",
+    "title": "Bali Business Class",
+    "meta_title": "Bali Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Bali. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bali-first-class",
+    "destination_slug": "bali",
+    "cabin_variant": "first-class",
+    "title": "Bali First Class",
+    "meta_title": "Bali First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Bali. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bali-premium-economy",
+    "destination_slug": "bali",
+    "cabin_variant": "premium-economy",
+    "title": "Bali Premium Economy",
+    "meta_title": "Bali Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Bali. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bali-business-vs-first",
+    "destination_slug": "bali",
+    "cabin_variant": "business-vs-first",
+    "title": "Bali Business Vs First",
+    "meta_title": "Bali Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Bali. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bali-business-vs-premium-economy",
+    "destination_slug": "bali",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Bali Business Vs Premium Economy",
+    "meta_title": "Bali Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Bali. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manila-business-class",
+    "destination_slug": "manila",
+    "cabin_variant": "business-class",
+    "title": "Manila Business Class",
+    "meta_title": "Manila Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Manila. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manila-first-class",
+    "destination_slug": "manila",
+    "cabin_variant": "first-class",
+    "title": "Manila First Class",
+    "meta_title": "Manila First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Manila. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manila-premium-economy",
+    "destination_slug": "manila",
+    "cabin_variant": "premium-economy",
+    "title": "Manila Premium Economy",
+    "meta_title": "Manila Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Manila. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manila-business-vs-first",
+    "destination_slug": "manila",
+    "cabin_variant": "business-vs-first",
+    "title": "Manila Business Vs First",
+    "meta_title": "Manila Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Manila. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "manila-business-vs-premium-economy",
+    "destination_slug": "manila",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Manila Business Vs Premium Economy",
+    "meta_title": "Manila Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Manila. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hanoi-business-class",
+    "destination_slug": "hanoi",
+    "cabin_variant": "business-class",
+    "title": "Hanoi Business Class",
+    "meta_title": "Hanoi Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Hanoi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hanoi-first-class",
+    "destination_slug": "hanoi",
+    "cabin_variant": "first-class",
+    "title": "Hanoi First Class",
+    "meta_title": "Hanoi First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Hanoi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hanoi-premium-economy",
+    "destination_slug": "hanoi",
+    "cabin_variant": "premium-economy",
+    "title": "Hanoi Premium Economy",
+    "meta_title": "Hanoi Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Hanoi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hanoi-business-vs-first",
+    "destination_slug": "hanoi",
+    "cabin_variant": "business-vs-first",
+    "title": "Hanoi Business Vs First",
+    "meta_title": "Hanoi Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Hanoi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "hanoi-business-vs-premium-economy",
+    "destination_slug": "hanoi",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Hanoi Business Vs Premium Economy",
+    "meta_title": "Hanoi Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Hanoi. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "ho-chi-minh-city-business-class",
+    "destination_slug": "ho-chi-minh-city",
+    "cabin_variant": "business-class",
+    "title": "Ho Chi Minh City Business Class",
+    "meta_title": "Ho Chi Minh City Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Ho Chi Minh City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "ho-chi-minh-city-first-class",
+    "destination_slug": "ho-chi-minh-city",
+    "cabin_variant": "first-class",
+    "title": "Ho Chi Minh City First Class",
+    "meta_title": "Ho Chi Minh City First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Ho Chi Minh City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "ho-chi-minh-city-premium-economy",
+    "destination_slug": "ho-chi-minh-city",
+    "cabin_variant": "premium-economy",
+    "title": "Ho Chi Minh City Premium Economy",
+    "meta_title": "Ho Chi Minh City Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Ho Chi Minh City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "ho-chi-minh-city-business-vs-first",
+    "destination_slug": "ho-chi-minh-city",
+    "cabin_variant": "business-vs-first",
+    "title": "Ho Chi Minh City Business Vs First",
+    "meta_title": "Ho Chi Minh City Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Ho Chi Minh City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "ho-chi-minh-city-business-vs-premium-economy",
+    "destination_slug": "ho-chi-minh-city",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Ho Chi Minh City Business Vs Premium Economy",
+    "meta_title": "Ho Chi Minh City Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Ho Chi Minh City. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sydney-business-class",
+    "destination_slug": "sydney",
+    "cabin_variant": "business-class",
+    "title": "Sydney Business Class",
+    "meta_title": "Sydney Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Sydney. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sydney-first-class",
+    "destination_slug": "sydney",
+    "cabin_variant": "first-class",
+    "title": "Sydney First Class",
+    "meta_title": "Sydney First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Sydney. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sydney-premium-economy",
+    "destination_slug": "sydney",
+    "cabin_variant": "premium-economy",
+    "title": "Sydney Premium Economy",
+    "meta_title": "Sydney Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Sydney. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sydney-business-vs-first",
+    "destination_slug": "sydney",
+    "cabin_variant": "business-vs-first",
+    "title": "Sydney Business Vs First",
+    "meta_title": "Sydney Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Sydney. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sydney-business-vs-premium-economy",
+    "destination_slug": "sydney",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Sydney Business Vs Premium Economy",
+    "meta_title": "Sydney Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Sydney. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "melbourne-business-class",
+    "destination_slug": "melbourne",
+    "cabin_variant": "business-class",
+    "title": "Melbourne Business Class",
+    "meta_title": "Melbourne Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Melbourne. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "melbourne-first-class",
+    "destination_slug": "melbourne",
+    "cabin_variant": "first-class",
+    "title": "Melbourne First Class",
+    "meta_title": "Melbourne First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Melbourne. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "melbourne-premium-economy",
+    "destination_slug": "melbourne",
+    "cabin_variant": "premium-economy",
+    "title": "Melbourne Premium Economy",
+    "meta_title": "Melbourne Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Melbourne. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "melbourne-business-vs-first",
+    "destination_slug": "melbourne",
+    "cabin_variant": "business-vs-first",
+    "title": "Melbourne Business Vs First",
+    "meta_title": "Melbourne Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Melbourne. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "melbourne-business-vs-premium-economy",
+    "destination_slug": "melbourne",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Melbourne Business Vs Premium Economy",
+    "meta_title": "Melbourne Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Melbourne. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brisbane-business-class",
+    "destination_slug": "brisbane",
+    "cabin_variant": "business-class",
+    "title": "Brisbane Business Class",
+    "meta_title": "Brisbane Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Brisbane. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brisbane-first-class",
+    "destination_slug": "brisbane",
+    "cabin_variant": "first-class",
+    "title": "Brisbane First Class",
+    "meta_title": "Brisbane First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Brisbane. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brisbane-premium-economy",
+    "destination_slug": "brisbane",
+    "cabin_variant": "premium-economy",
+    "title": "Brisbane Premium Economy",
+    "meta_title": "Brisbane Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Brisbane. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brisbane-business-vs-first",
+    "destination_slug": "brisbane",
+    "cabin_variant": "business-vs-first",
+    "title": "Brisbane Business Vs First",
+    "meta_title": "Brisbane Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Brisbane. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "brisbane-business-vs-premium-economy",
+    "destination_slug": "brisbane",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Brisbane Business Vs Premium Economy",
+    "meta_title": "Brisbane Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Brisbane. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "perth-business-class",
+    "destination_slug": "perth",
+    "cabin_variant": "business-class",
+    "title": "Perth Business Class",
+    "meta_title": "Perth Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Perth. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "perth-first-class",
+    "destination_slug": "perth",
+    "cabin_variant": "first-class",
+    "title": "Perth First Class",
+    "meta_title": "Perth First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Perth. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "perth-premium-economy",
+    "destination_slug": "perth",
+    "cabin_variant": "premium-economy",
+    "title": "Perth Premium Economy",
+    "meta_title": "Perth Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Perth. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "perth-business-vs-first",
+    "destination_slug": "perth",
+    "cabin_variant": "business-vs-first",
+    "title": "Perth Business Vs First",
+    "meta_title": "Perth Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Perth. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "perth-business-vs-premium-economy",
+    "destination_slug": "perth",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Perth Business Vs Premium Economy",
+    "meta_title": "Perth Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Perth. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "auckland-business-class",
+    "destination_slug": "auckland",
+    "cabin_variant": "business-class",
+    "title": "Auckland Business Class",
+    "meta_title": "Auckland Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Auckland. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "auckland-first-class",
+    "destination_slug": "auckland",
+    "cabin_variant": "first-class",
+    "title": "Auckland First Class",
+    "meta_title": "Auckland First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Auckland. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "auckland-premium-economy",
+    "destination_slug": "auckland",
+    "cabin_variant": "premium-economy",
+    "title": "Auckland Premium Economy",
+    "meta_title": "Auckland Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Auckland. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "auckland-business-vs-first",
+    "destination_slug": "auckland",
+    "cabin_variant": "business-vs-first",
+    "title": "Auckland Business Vs First",
+    "meta_title": "Auckland Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Auckland. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "auckland-business-vs-premium-economy",
+    "destination_slug": "auckland",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Auckland Business Vs Premium Economy",
+    "meta_title": "Auckland Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Auckland. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "christchurch-business-class",
+    "destination_slug": "christchurch",
+    "cabin_variant": "business-class",
+    "title": "Christchurch Business Class",
+    "meta_title": "Christchurch Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Christchurch. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "christchurch-first-class",
+    "destination_slug": "christchurch",
+    "cabin_variant": "first-class",
+    "title": "Christchurch First Class",
+    "meta_title": "Christchurch First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Christchurch. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "christchurch-premium-economy",
+    "destination_slug": "christchurch",
+    "cabin_variant": "premium-economy",
+    "title": "Christchurch Premium Economy",
+    "meta_title": "Christchurch Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Christchurch. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "christchurch-business-vs-first",
+    "destination_slug": "christchurch",
+    "cabin_variant": "business-vs-first",
+    "title": "Christchurch Business Vs First",
+    "meta_title": "Christchurch Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Christchurch. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "christchurch-business-vs-premium-economy",
+    "destination_slug": "christchurch",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Christchurch Business Vs Premium Economy",
+    "meta_title": "Christchurch Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Christchurch. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "male-business-class",
+    "destination_slug": "male",
+    "cabin_variant": "business-class",
+    "title": "Malé Business Class",
+    "meta_title": "Malé Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Malé. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "male-first-class",
+    "destination_slug": "male",
+    "cabin_variant": "first-class",
+    "title": "Malé First Class",
+    "meta_title": "Malé First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Malé. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "male-premium-economy",
+    "destination_slug": "male",
+    "cabin_variant": "premium-economy",
+    "title": "Malé Premium Economy",
+    "meta_title": "Malé Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Malé. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "male-business-vs-first",
+    "destination_slug": "male",
+    "cabin_variant": "business-vs-first",
+    "title": "Malé Business Vs First",
+    "meta_title": "Malé Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Malé. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "male-business-vs-premium-economy",
+    "destination_slug": "male",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Malé Business Vs Premium Economy",
+    "meta_title": "Malé Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Malé. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mauritius-business-class",
+    "destination_slug": "mauritius",
+    "cabin_variant": "business-class",
+    "title": "Mauritius Business Class",
+    "meta_title": "Mauritius Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Mauritius. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mauritius-first-class",
+    "destination_slug": "mauritius",
+    "cabin_variant": "first-class",
+    "title": "Mauritius First Class",
+    "meta_title": "Mauritius First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Mauritius. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mauritius-premium-economy",
+    "destination_slug": "mauritius",
+    "cabin_variant": "premium-economy",
+    "title": "Mauritius Premium Economy",
+    "meta_title": "Mauritius Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Mauritius. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mauritius-business-vs-first",
+    "destination_slug": "mauritius",
+    "cabin_variant": "business-vs-first",
+    "title": "Mauritius Business Vs First",
+    "meta_title": "Mauritius Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Mauritius. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "mauritius-business-vs-premium-economy",
+    "destination_slug": "mauritius",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Mauritius Business Vs Premium Economy",
+    "meta_title": "Mauritius Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Mauritius. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sao-paulo-business-class",
+    "destination_slug": "sao-paulo",
+    "cabin_variant": "business-class",
+    "title": "São Paulo Business Class",
+    "meta_title": "São Paulo Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to São Paulo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sao-paulo-first-class",
+    "destination_slug": "sao-paulo",
+    "cabin_variant": "first-class",
+    "title": "São Paulo First Class",
+    "meta_title": "São Paulo First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to São Paulo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sao-paulo-premium-economy",
+    "destination_slug": "sao-paulo",
+    "cabin_variant": "premium-economy",
+    "title": "São Paulo Premium Economy",
+    "meta_title": "São Paulo Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to São Paulo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sao-paulo-business-vs-first",
+    "destination_slug": "sao-paulo",
+    "cabin_variant": "business-vs-first",
+    "title": "São Paulo Business Vs First",
+    "meta_title": "São Paulo Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to São Paulo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "sao-paulo-business-vs-premium-economy",
+    "destination_slug": "sao-paulo",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "São Paulo Business Vs Premium Economy",
+    "meta_title": "São Paulo Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to São Paulo. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rio-de-janeiro-business-class",
+    "destination_slug": "rio-de-janeiro",
+    "cabin_variant": "business-class",
+    "title": "Rio de Janeiro Business Class",
+    "meta_title": "Rio de Janeiro Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Rio de Janeiro. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rio-de-janeiro-first-class",
+    "destination_slug": "rio-de-janeiro",
+    "cabin_variant": "first-class",
+    "title": "Rio de Janeiro First Class",
+    "meta_title": "Rio de Janeiro First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Rio de Janeiro. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rio-de-janeiro-premium-economy",
+    "destination_slug": "rio-de-janeiro",
+    "cabin_variant": "premium-economy",
+    "title": "Rio de Janeiro Premium Economy",
+    "meta_title": "Rio de Janeiro Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Rio de Janeiro. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rio-de-janeiro-business-vs-first",
+    "destination_slug": "rio-de-janeiro",
+    "cabin_variant": "business-vs-first",
+    "title": "Rio de Janeiro Business Vs First",
+    "meta_title": "Rio de Janeiro Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Rio de Janeiro. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "rio-de-janeiro-business-vs-premium-economy",
+    "destination_slug": "rio-de-janeiro",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Rio de Janeiro Business Vs Premium Economy",
+    "meta_title": "Rio de Janeiro Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Rio de Janeiro. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "santiago-business-class",
+    "destination_slug": "santiago",
+    "cabin_variant": "business-class",
+    "title": "Santiago Business Class",
+    "meta_title": "Santiago Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Santiago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "santiago-first-class",
+    "destination_slug": "santiago",
+    "cabin_variant": "first-class",
+    "title": "Santiago First Class",
+    "meta_title": "Santiago First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Santiago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "santiago-premium-economy",
+    "destination_slug": "santiago",
+    "cabin_variant": "premium-economy",
+    "title": "Santiago Premium Economy",
+    "meta_title": "Santiago Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Santiago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "santiago-business-vs-first",
+    "destination_slug": "santiago",
+    "cabin_variant": "business-vs-first",
+    "title": "Santiago Business Vs First",
+    "meta_title": "Santiago Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Santiago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "santiago-business-vs-premium-economy",
+    "destination_slug": "santiago",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Santiago Business Vs Premium Economy",
+    "meta_title": "Santiago Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Santiago. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "buenos-aires-business-class",
+    "destination_slug": "buenos-aires",
+    "cabin_variant": "business-class",
+    "title": "Buenos Aires Business Class",
+    "meta_title": "Buenos Aires Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Buenos Aires. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "buenos-aires-first-class",
+    "destination_slug": "buenos-aires",
+    "cabin_variant": "first-class",
+    "title": "Buenos Aires First Class",
+    "meta_title": "Buenos Aires First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Buenos Aires. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "buenos-aires-premium-economy",
+    "destination_slug": "buenos-aires",
+    "cabin_variant": "premium-economy",
+    "title": "Buenos Aires Premium Economy",
+    "meta_title": "Buenos Aires Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Buenos Aires. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "buenos-aires-business-vs-first",
+    "destination_slug": "buenos-aires",
+    "cabin_variant": "business-vs-first",
+    "title": "Buenos Aires Business Vs First",
+    "meta_title": "Buenos Aires Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Buenos Aires. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "buenos-aires-business-vs-premium-economy",
+    "destination_slug": "buenos-aires",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Buenos Aires Business Vs Premium Economy",
+    "meta_title": "Buenos Aires Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Buenos Aires. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lima-business-class",
+    "destination_slug": "lima",
+    "cabin_variant": "business-class",
+    "title": "Lima Business Class",
+    "meta_title": "Lima Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Lima. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lima-first-class",
+    "destination_slug": "lima",
+    "cabin_variant": "first-class",
+    "title": "Lima First Class",
+    "meta_title": "Lima First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Lima. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lima-premium-economy",
+    "destination_slug": "lima",
+    "cabin_variant": "premium-economy",
+    "title": "Lima Premium Economy",
+    "meta_title": "Lima Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Lima. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lima-business-vs-first",
+    "destination_slug": "lima",
+    "cabin_variant": "business-vs-first",
+    "title": "Lima Business Vs First",
+    "meta_title": "Lima Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Lima. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "lima-business-vs-premium-economy",
+    "destination_slug": "lima",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Lima Business Vs Premium Economy",
+    "meta_title": "Lima Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Lima. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bogota-business-class",
+    "destination_slug": "bogota",
+    "cabin_variant": "business-class",
+    "title": "Bogotá Business Class",
+    "meta_title": "Bogotá Business Class Flights | LuxAeris",
+    "meta_description": "Compare business class flights to Bogotá. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bogota-first-class",
+    "destination_slug": "bogota",
+    "cabin_variant": "first-class",
+    "title": "Bogotá First Class",
+    "meta_title": "Bogotá First Class Flights | LuxAeris",
+    "meta_description": "Compare first class flights to Bogotá. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bogota-premium-economy",
+    "destination_slug": "bogota",
+    "cabin_variant": "premium-economy",
+    "title": "Bogotá Premium Economy",
+    "meta_title": "Bogotá Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare premium economy flights to Bogotá. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bogota-business-vs-first",
+    "destination_slug": "bogota",
+    "cabin_variant": "business-vs-first",
+    "title": "Bogotá Business Vs First",
+    "meta_title": "Bogotá Business Vs First Flights | LuxAeris",
+    "meta_description": "Compare business vs first flights to Bogotá. Explore routes, airport context, and premium travel planning with LuxAeris."
+  },
+  {
+    "slug": "bogota-business-vs-premium-economy",
+    "destination_slug": "bogota",
+    "cabin_variant": "business-vs-premium-economy",
+    "title": "Bogotá Business Vs Premium Economy",
+    "meta_title": "Bogotá Business Vs Premium Economy Flights | LuxAeris",
+    "meta_description": "Compare business vs premium economy flights to Bogotá. Explore routes, airport context, and premium travel planning with LuxAeris."
+  }
+]

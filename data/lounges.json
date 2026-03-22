@@ -1,0 +1,290 @@
+[
+  {
+    "lounge_slug": "american-flagship-lounge-jfk",
+    "lounge_name": "American Flagship Lounge JFK",
+    "airport_slug": "jfk",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "American Flagship Lounge JFK is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "chase-sapphire-lounge-jfk",
+    "lounge_name": "Chase Sapphire Lounge JFK",
+    "airport_slug": "jfk",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Chase Sapphire Lounge JFK is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "delta-sky-club-jfk",
+    "lounge_name": "Delta Sky Club JFK",
+    "airport_slug": "jfk",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Delta Sky Club JFK is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "virgin-atlantic-clubhouse-heathrow",
+    "lounge_name": "Virgin Atlantic Clubhouse Heathrow",
+    "airport_slug": "lhr",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Virgin Atlantic Clubhouse Heathrow is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "british-airways-galleries-club-heathrow",
+    "lounge_name": "British Airways Galleries Club Heathrow",
+    "airport_slug": "lhr",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "British Airways Galleries Club Heathrow is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "plaza-premium-lounge-heathrow",
+    "lounge_name": "Plaza Premium Lounge Heathrow",
+    "airport_slug": "lhr",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Plaza Premium Lounge Heathrow is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "emirates-business-class-lounge-dubai",
+    "lounge_name": "Emirates Business Class Lounge Dubai",
+    "airport_slug": "dxb",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Emirates Business Class Lounge Dubai is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "ahlan-lounge-dubai",
+    "lounge_name": "Ahlan Lounge Dubai",
+    "airport_slug": "dxb",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Ahlan Lounge Dubai is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "marhaba-lounge-dubai",
+    "lounge_name": "Marhaba Lounge Dubai",
+    "airport_slug": "dxb",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Marhaba Lounge Dubai is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "silverkris-lounge-singapore",
+    "lounge_name": "SilverKris Lounge Singapore",
+    "airport_slug": "sin",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "SilverKris Lounge Singapore is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "dnata-lounge-singapore",
+    "lounge_name": "dnata Lounge Singapore",
+    "airport_slug": "sin",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "dnata Lounge Singapore is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "ana-lounge-haneda",
+    "lounge_name": "ANA Lounge Haneda",
+    "airport_slug": "hnd",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "ANA Lounge Haneda is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "jal-sakura-lounge-haneda",
+    "lounge_name": "JAL Sakura Lounge Haneda",
+    "airport_slug": "hnd",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "JAL Sakura Lounge Haneda is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "air-france-lounge-paris-charles-de-gaulle",
+    "lounge_name": "Air France Lounge Paris Charles de Gaulle",
+    "airport_slug": "cdg",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Air France Lounge Paris Charles de Gaulle is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "plaza-premium-lounge-rome-fiumicino",
+    "lounge_name": "Plaza Premium Lounge Rome Fiumicino",
+    "airport_slug": "fco",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Plaza Premium Lounge Rome Fiumicino is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "delta-sky-club-los-angeles",
+    "lounge_name": "Delta Sky Club Los Angeles",
+    "airport_slug": "lax",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Delta Sky Club Los Angeles is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "american-flagship-lounge-miami",
+    "lounge_name": "American Flagship Lounge Miami",
+    "airport_slug": "mia",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "American Flagship Lounge Miami is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "lufthansa-business-lounge-frankfurt",
+    "lounge_name": "Lufthansa Business Lounge Frankfurt",
+    "airport_slug": "fra",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Lufthansa Business Lounge Frankfurt is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "swiss-business-lounge-zurich",
+    "lounge_name": "SWISS Business Lounge Zurich",
+    "airport_slug": "zrh",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "SWISS Business Lounge Zurich is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "turkish-airlines-lounge-istanbul",
+    "lounge_name": "Turkish Airlines Lounge Istanbul",
+    "airport_slug": "ist",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Turkish Airlines Lounge Istanbul is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "al-mourjan-business-lounge-doha",
+    "lounge_name": "Al Mourjan Business Lounge Doha",
+    "airport_slug": "doh",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Al Mourjan Business Lounge Doha is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "qantas-international-business-lounge-sydney",
+    "lounge_name": "Qantas International Business Lounge Sydney",
+    "airport_slug": "syd",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Qantas International Business Lounge Sydney is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "the-pier-business-class-lounge-hong-kong",
+    "lounge_name": "The Pier Business Class Lounge Hong Kong",
+    "airport_slug": "hkg",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "The Pier Business Class Lounge Hong Kong is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating",
+      "Showers"
+    ]
+  },
+  {
+    "lounge_slug": "korean-air-prestige-lounge-seoul",
+    "lounge_name": "Korean Air Prestige Lounge Seoul",
+    "airport_slug": "icn",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "Korean Air Prestige Lounge Seoul is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  },
+  {
+    "lounge_slug": "latam-vip-lounge-são-paulo",
+    "lounge_name": "LATAM VIP Lounge São Paulo",
+    "airport_slug": "gru",
+    "featured_image": "/assets/images/logo-header.png",
+    "customer_summary": "LATAM VIP Lounge São Paulo is a premium pre-flight space suited to travelers who value a calmer airport experience, better seating, and stronger ground comfort.",
+    "features": [
+      "Dining",
+      "Quiet seating"
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+This pack adds explicit language meta tags, brightens the dark-mode calendar icon, and updates the homepage styling toward a cleaner premium airfare specialist layout with centered search, trust signals, and route idea cards.

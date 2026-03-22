@@ -1,0 +1,9 @@
+
+This pack adds the next major upgrade:
+- image coverage manifests for airports, destinations, lounges, airlines, and routes
+- website-wide grouped search index in /static/assets/search-index.json
+- enhanced search results grouped by type
+- improved tools hub
+- route estimate tool using the same airport list as homepage/request form
+- backend route estimate function structure for future live API integration
+- refreshed airport, destination, and route image coverage in data

@@ -1,0 +1,76 @@
+{
+  "families": [
+    {
+      "name": "airport-pages",
+      "formula": "airports"
+    },
+    {
+      "name": "route-pages",
+      "formula": "routes"
+    },
+    {
+      "name": "destination-pages",
+      "formula": "destinations"
+    },
+    {
+      "name": "airline-pages",
+      "formula": "airlines"
+    },
+    {
+      "name": "aircraft-pages",
+      "formula": "aircraft"
+    },
+    {
+      "name": "lounge-pages",
+      "formula": "lounges"
+    },
+    {
+      "name": "flight-number-pages",
+      "formula": "flights"
+    },
+    {
+      "name": "route-cabin-pages",
+      "formula": "routes * cabin_variants"
+    },
+    {
+      "name": "destination-cabin-pages",
+      "formula": "destinations * cabin_variants"
+    },
+    {
+      "name": "airport-airline-pages",
+      "formula": "airport_airline_edges"
+    },
+    {
+      "name": "airport-destination-pages",
+      "formula": "airport_destination_edges"
+    },
+    {
+      "name": "route-airline-pages",
+      "formula": "route_airline_edges"
+    },
+    {
+      "name": "airport-lounge-pages",
+      "formula": "airport_lounge_edges"
+    },
+    {
+      "name": "city-pair-guides",
+      "formula": "unique_city_pairs"
+    },
+    {
+      "name": "city-pair-cabin-pages",
+      "formula": "unique_city_pairs * cabin_variants"
+    },
+    {
+      "name": "airport-terminal-lounge-guides",
+      "formula": "airport_lounge_edges * terminal_variants"
+    }
+  ],
+  "cabin_variants": [
+    "business-class",
+    "first-class",
+    "premium-economy",
+    "business-vs-first",
+    "business-vs-premium-economy"
+  ],
+  "terminal_variants": 3
+}

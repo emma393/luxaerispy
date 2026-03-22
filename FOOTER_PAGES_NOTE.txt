@@ -1,0 +1,1 @@
+Added footer information and policy pages across the site, including About, Contact, Privacy Policy, Terms & Conditions, Cookie Policy, Disclaimer, FAQ, and Sitemap.

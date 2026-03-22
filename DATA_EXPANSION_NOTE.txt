@@ -1,0 +1,1 @@
+This package expands the structured seed data with a much broader curated airport list, more route seeds, more destinations, more lounges, and richer search labels. It is a strong foundation for scaling further, but it is not a licensed full global aviation database.

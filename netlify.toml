@@ -1,12 +1,6 @@
 [build]
-  publish = "."
+command = "python build.py"
+publish = "generated/site"
 
-[[redirects]]
-  from = "/request"
-  to = "/request.html"
-  status = 200
-
-[[redirects]]
-  from = "/routes/*"
-  to = "/routes/:splat"
-  status = 200
+[build.environment]
+PYTHON_VERSION = "3.11"

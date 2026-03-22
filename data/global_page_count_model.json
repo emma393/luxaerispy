@@ -1,0 +1,10 @@
+{
+  "destinations": 165,
+  "city_pair_guides": 8010,
+  "route_page_variants_per_city_pair": 5,
+  "destination_cluster_variants_per_destination": 5,
+  "estimated_route_pages": 40050,
+  "estimated_destination_cluster_pages": 825,
+  "estimated_total_pages_before_airport_airline_expansion": 40875,
+  "note": "This is a global-scale SEO dataset for city, destination, and route expansion. It is designed to support 500k+ page architecture when combined with verified airport, airline, and internal-link datasets."
+}

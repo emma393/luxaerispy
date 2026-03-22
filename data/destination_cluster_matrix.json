@@ -1,0 +1,1652 @@
+[
+  {
+    "destination_slug": "new-york",
+    "cluster_pages": [
+      "new-york-business-class",
+      "new-york-first-class",
+      "new-york-premium-travel-guide",
+      "best-time-to-fly-to-new-york",
+      "airport-guide-for-new-york"
+    ]
+  },
+  {
+    "destination_slug": "los-angeles",
+    "cluster_pages": [
+      "los-angeles-business-class",
+      "los-angeles-first-class",
+      "los-angeles-premium-travel-guide",
+      "best-time-to-fly-to-los-angeles",
+      "airport-guide-for-los-angeles"
+    ]
+  },
+  {
+    "destination_slug": "chicago",
+    "cluster_pages": [
+      "chicago-business-class",
+      "chicago-first-class",
+      "chicago-premium-travel-guide",
+      "best-time-to-fly-to-chicago",
+      "airport-guide-for-chicago"
+    ]
+  },
+  {
+    "destination_slug": "miami",
+    "cluster_pages": [
+      "miami-business-class",
+      "miami-first-class",
+      "miami-premium-travel-guide",
+      "best-time-to-fly-to-miami",
+      "airport-guide-for-miami"
+    ]
+  },
+  {
+    "destination_slug": "san-francisco",
+    "cluster_pages": [
+      "san-francisco-business-class",
+      "san-francisco-first-class",
+      "san-francisco-premium-travel-guide",
+      "best-time-to-fly-to-san-francisco",
+      "airport-guide-for-san-francisco"
+    ]
+  },
+  {
+    "destination_slug": "las-vegas",
+    "cluster_pages": [
+      "las-vegas-business-class",
+      "las-vegas-first-class",
+      "las-vegas-premium-travel-guide",
+      "best-time-to-fly-to-las-vegas",
+      "airport-guide-for-las-vegas"
+    ]
+  },
+  {
+    "destination_slug": "washington",
+    "cluster_pages": [
+      "washington-business-class",
+      "washington-first-class",
+      "washington-premium-travel-guide",
+      "best-time-to-fly-to-washington",
+      "airport-guide-for-washington"
+    ]
+  },
+  {
+    "destination_slug": "boston",
+    "cluster_pages": [
+      "boston-business-class",
+      "boston-first-class",
+      "boston-premium-travel-guide",
+      "best-time-to-fly-to-boston",
+      "airport-guide-for-boston"
+    ]
+  },
+  {
+    "destination_slug": "seattle",
+    "cluster_pages": [
+      "seattle-business-class",
+      "seattle-first-class",
+      "seattle-premium-travel-guide",
+      "best-time-to-fly-to-seattle",
+      "airport-guide-for-seattle"
+    ]
+  },
+  {
+    "destination_slug": "dallas",
+    "cluster_pages": [
+      "dallas-business-class",
+      "dallas-first-class",
+      "dallas-premium-travel-guide",
+      "best-time-to-fly-to-dallas",
+      "airport-guide-for-dallas"
+    ]
+  },
+  {
+    "destination_slug": "houston",
+    "cluster_pages": [
+      "houston-business-class",
+      "houston-first-class",
+      "houston-premium-travel-guide",
+      "best-time-to-fly-to-houston",
+      "airport-guide-for-houston"
+    ]
+  },
+  {
+    "destination_slug": "atlanta",
+    "cluster_pages": [
+      "atlanta-business-class",
+      "atlanta-first-class",
+      "atlanta-premium-travel-guide",
+      "best-time-to-fly-to-atlanta",
+      "airport-guide-for-atlanta"
+    ]
+  },
+  {
+    "destination_slug": "orlando",
+    "cluster_pages": [
+      "orlando-business-class",
+      "orlando-first-class",
+      "orlando-premium-travel-guide",
+      "best-time-to-fly-to-orlando",
+      "airport-guide-for-orlando"
+    ]
+  },
+  {
+    "destination_slug": "denver",
+    "cluster_pages": [
+      "denver-business-class",
+      "denver-first-class",
+      "denver-premium-travel-guide",
+      "best-time-to-fly-to-denver",
+      "airport-guide-for-denver"
+    ]
+  },
+  {
+    "destination_slug": "san-diego",
+    "cluster_pages": [
+      "san-diego-business-class",
+      "san-diego-first-class",
+      "san-diego-premium-travel-guide",
+      "best-time-to-fly-to-san-diego",
+      "airport-guide-for-san-diego"
+    ]
+  },
+  {
+    "destination_slug": "philadelphia",
+    "cluster_pages": [
+      "philadelphia-business-class",
+      "philadelphia-first-class",
+      "philadelphia-premium-travel-guide",
+      "best-time-to-fly-to-philadelphia",
+      "airport-guide-for-philadelphia"
+    ]
+  },
+  {
+    "destination_slug": "toronto",
+    "cluster_pages": [
+      "toronto-business-class",
+      "toronto-first-class",
+      "toronto-premium-travel-guide",
+      "best-time-to-fly-to-toronto",
+      "airport-guide-for-toronto"
+    ]
+  },
+  {
+    "destination_slug": "vancouver",
+    "cluster_pages": [
+      "vancouver-business-class",
+      "vancouver-first-class",
+      "vancouver-premium-travel-guide",
+      "best-time-to-fly-to-vancouver",
+      "airport-guide-for-vancouver"
+    ]
+  },
+  {
+    "destination_slug": "montreal",
+    "cluster_pages": [
+      "montreal-business-class",
+      "montreal-first-class",
+      "montreal-premium-travel-guide",
+      "best-time-to-fly-to-montreal",
+      "airport-guide-for-montreal"
+    ]
+  },
+  {
+    "destination_slug": "calgary",
+    "cluster_pages": [
+      "calgary-business-class",
+      "calgary-first-class",
+      "calgary-premium-travel-guide",
+      "best-time-to-fly-to-calgary",
+      "airport-guide-for-calgary"
+    ]
+  },
+  {
+    "destination_slug": "mexico-city",
+    "cluster_pages": [
+      "mexico-city-business-class",
+      "mexico-city-first-class",
+      "mexico-city-premium-travel-guide",
+      "best-time-to-fly-to-mexico-city",
+      "airport-guide-for-mexico-city"
+    ]
+  },
+  {
+    "destination_slug": "cancun",
+    "cluster_pages": [
+      "cancun-business-class",
+      "cancun-first-class",
+      "cancun-premium-travel-guide",
+      "best-time-to-fly-to-cancun",
+      "airport-guide-for-cancun"
+    ]
+  },
+  {
+    "destination_slug": "monterrey",
+    "cluster_pages": [
+      "monterrey-business-class",
+      "monterrey-first-class",
+      "monterrey-premium-travel-guide",
+      "best-time-to-fly-to-monterrey",
+      "airport-guide-for-monterrey"
+    ]
+  },
+  {
+    "destination_slug": "guadalajara",
+    "cluster_pages": [
+      "guadalajara-business-class",
+      "guadalajara-first-class",
+      "guadalajara-premium-travel-guide",
+      "best-time-to-fly-to-guadalajara",
+      "airport-guide-for-guadalajara"
+    ]
+  },
+  {
+    "destination_slug": "london",
+    "cluster_pages": [
+      "london-business-class",
+      "london-first-class",
+      "london-premium-travel-guide",
+      "best-time-to-fly-to-london",
+      "airport-guide-for-london"
+    ]
+  },
+  {
+    "destination_slug": "paris",
+    "cluster_pages": [
+      "paris-business-class",
+      "paris-first-class",
+      "paris-premium-travel-guide",
+      "best-time-to-fly-to-paris",
+      "airport-guide-for-paris"
+    ]
+  },
+  {
+    "destination_slug": "rome",
+    "cluster_pages": [
+      "rome-business-class",
+      "rome-first-class",
+      "rome-premium-travel-guide",
+      "best-time-to-fly-to-rome",
+      "airport-guide-for-rome"
+    ]
+  },
+  {
+    "destination_slug": "milan",
+    "cluster_pages": [
+      "milan-business-class",
+      "milan-first-class",
+      "milan-premium-travel-guide",
+      "best-time-to-fly-to-milan",
+      "airport-guide-for-milan"
+    ]
+  },
+  {
+    "destination_slug": "venice",
+    "cluster_pages": [
+      "venice-business-class",
+      "venice-first-class",
+      "venice-premium-travel-guide",
+      "best-time-to-fly-to-venice",
+      "airport-guide-for-venice"
+    ]
+  },
+  {
+    "destination_slug": "barcelona",
+    "cluster_pages": [
+      "barcelona-business-class",
+      "barcelona-first-class",
+      "barcelona-premium-travel-guide",
+      "best-time-to-fly-to-barcelona",
+      "airport-guide-for-barcelona"
+    ]
+  },
+  {
+    "destination_slug": "madrid",
+    "cluster_pages": [
+      "madrid-business-class",
+      "madrid-first-class",
+      "madrid-premium-travel-guide",
+      "best-time-to-fly-to-madrid",
+      "airport-guide-for-madrid"
+    ]
+  },
+  {
+    "destination_slug": "lisbon",
+    "cluster_pages": [
+      "lisbon-business-class",
+      "lisbon-first-class",
+      "lisbon-premium-travel-guide",
+      "best-time-to-fly-to-lisbon",
+      "airport-guide-for-lisbon"
+    ]
+  },
+  {
+    "destination_slug": "porto",
+    "cluster_pages": [
+      "porto-business-class",
+      "porto-first-class",
+      "porto-premium-travel-guide",
+      "best-time-to-fly-to-porto",
+      "airport-guide-for-porto"
+    ]
+  },
+  {
+    "destination_slug": "amsterdam",
+    "cluster_pages": [
+      "amsterdam-business-class",
+      "amsterdam-first-class",
+      "amsterdam-premium-travel-guide",
+      "best-time-to-fly-to-amsterdam",
+      "airport-guide-for-amsterdam"
+    ]
+  },
+  {
+    "destination_slug": "brussels",
+    "cluster_pages": [
+      "brussels-business-class",
+      "brussels-first-class",
+      "brussels-premium-travel-guide",
+      "best-time-to-fly-to-brussels",
+      "airport-guide-for-brussels"
+    ]
+  },
+  {
+    "destination_slug": "zurich",
+    "cluster_pages": [
+      "zurich-business-class",
+      "zurich-first-class",
+      "zurich-premium-travel-guide",
+      "best-time-to-fly-to-zurich",
+      "airport-guide-for-zurich"
+    ]
+  },
+  {
+    "destination_slug": "geneva",
+    "cluster_pages": [
+      "geneva-business-class",
+      "geneva-first-class",
+      "geneva-premium-travel-guide",
+      "best-time-to-fly-to-geneva",
+      "airport-guide-for-geneva"
+    ]
+  },
+  {
+    "destination_slug": "vienna",
+    "cluster_pages": [
+      "vienna-business-class",
+      "vienna-first-class",
+      "vienna-premium-travel-guide",
+      "best-time-to-fly-to-vienna",
+      "airport-guide-for-vienna"
+    ]
+  },
+  {
+    "destination_slug": "munich",
+    "cluster_pages": [
+      "munich-business-class",
+      "munich-first-class",
+      "munich-premium-travel-guide",
+      "best-time-to-fly-to-munich",
+      "airport-guide-for-munich"
+    ]
+  },
+  {
+    "destination_slug": "frankfurt",
+    "cluster_pages": [
+      "frankfurt-business-class",
+      "frankfurt-first-class",
+      "frankfurt-premium-travel-guide",
+      "best-time-to-fly-to-frankfurt",
+      "airport-guide-for-frankfurt"
+    ]
+  },
+  {
+    "destination_slug": "berlin",
+    "cluster_pages": [
+      "berlin-business-class",
+      "berlin-first-class",
+      "berlin-premium-travel-guide",
+      "best-time-to-fly-to-berlin",
+      "airport-guide-for-berlin"
+    ]
+  },
+  {
+    "destination_slug": "hamburg",
+    "cluster_pages": [
+      "hamburg-business-class",
+      "hamburg-first-class",
+      "hamburg-premium-travel-guide",
+      "best-time-to-fly-to-hamburg",
+      "airport-guide-for-hamburg"
+    ]
+  },
+  {
+    "destination_slug": "copenhagen",
+    "cluster_pages": [
+      "copenhagen-business-class",
+      "copenhagen-first-class",
+      "copenhagen-premium-travel-guide",
+      "best-time-to-fly-to-copenhagen",
+      "airport-guide-for-copenhagen"
+    ]
+  },
+  {
+    "destination_slug": "stockholm",
+    "cluster_pages": [
+      "stockholm-business-class",
+      "stockholm-first-class",
+      "stockholm-premium-travel-guide",
+      "best-time-to-fly-to-stockholm",
+      "airport-guide-for-stockholm"
+    ]
+  },
+  {
+    "destination_slug": "oslo",
+    "cluster_pages": [
+      "oslo-business-class",
+      "oslo-first-class",
+      "oslo-premium-travel-guide",
+      "best-time-to-fly-to-oslo",
+      "airport-guide-for-oslo"
+    ]
+  },
+  {
+    "destination_slug": "helsinki",
+    "cluster_pages": [
+      "helsinki-business-class",
+      "helsinki-first-class",
+      "helsinki-premium-travel-guide",
+      "best-time-to-fly-to-helsinki",
+      "airport-guide-for-helsinki"
+    ]
+  },
+  {
+    "destination_slug": "dublin",
+    "cluster_pages": [
+      "dublin-business-class",
+      "dublin-first-class",
+      "dublin-premium-travel-guide",
+      "best-time-to-fly-to-dublin",
+      "airport-guide-for-dublin"
+    ]
+  },
+  {
+    "destination_slug": "edinburgh",
+    "cluster_pages": [
+      "edinburgh-business-class",
+      "edinburgh-first-class",
+      "edinburgh-premium-travel-guide",
+      "best-time-to-fly-to-edinburgh",
+      "airport-guide-for-edinburgh"
+    ]
+  },
+  {
+    "destination_slug": "manchester",
+    "cluster_pages": [
+      "manchester-business-class",
+      "manchester-first-class",
+      "manchester-premium-travel-guide",
+      "best-time-to-fly-to-manchester",
+      "airport-guide-for-manchester"
+    ]
+  },
+  {
+    "destination_slug": "prague",
+    "cluster_pages": [
+      "prague-business-class",
+      "prague-first-class",
+      "prague-premium-travel-guide",
+      "best-time-to-fly-to-prague",
+      "airport-guide-for-prague"
+    ]
+  },
+  {
+    "destination_slug": "budapest",
+    "cluster_pages": [
+      "budapest-business-class",
+      "budapest-first-class",
+      "budapest-premium-travel-guide",
+      "best-time-to-fly-to-budapest",
+      "airport-guide-for-budapest"
+    ]
+  },
+  {
+    "destination_slug": "warsaw",
+    "cluster_pages": [
+      "warsaw-business-class",
+      "warsaw-first-class",
+      "warsaw-premium-travel-guide",
+      "best-time-to-fly-to-warsaw",
+      "airport-guide-for-warsaw"
+    ]
+  },
+  {
+    "destination_slug": "athens",
+    "cluster_pages": [
+      "athens-business-class",
+      "athens-first-class",
+      "athens-premium-travel-guide",
+      "best-time-to-fly-to-athens",
+      "airport-guide-for-athens"
+    ]
+  },
+  {
+    "destination_slug": "mykonos",
+    "cluster_pages": [
+      "mykonos-business-class",
+      "mykonos-first-class",
+      "mykonos-premium-travel-guide",
+      "best-time-to-fly-to-mykonos",
+      "airport-guide-for-mykonos"
+    ]
+  },
+  {
+    "destination_slug": "santorini",
+    "cluster_pages": [
+      "santorini-business-class",
+      "santorini-first-class",
+      "santorini-premium-travel-guide",
+      "best-time-to-fly-to-santorini",
+      "airport-guide-for-santorini"
+    ]
+  },
+  {
+    "destination_slug": "istanbul",
+    "cluster_pages": [
+      "istanbul-business-class",
+      "istanbul-first-class",
+      "istanbul-premium-travel-guide",
+      "best-time-to-fly-to-istanbul",
+      "airport-guide-for-istanbul"
+    ]
+  },
+  {
+    "destination_slug": "antalya",
+    "cluster_pages": [
+      "antalya-business-class",
+      "antalya-first-class",
+      "antalya-premium-travel-guide",
+      "best-time-to-fly-to-antalya",
+      "airport-guide-for-antalya"
+    ]
+  },
+  {
+    "destination_slug": "nice",
+    "cluster_pages": [
+      "nice-business-class",
+      "nice-first-class",
+      "nice-premium-travel-guide",
+      "best-time-to-fly-to-nice",
+      "airport-guide-for-nice"
+    ]
+  },
+  {
+    "destination_slug": "marseille",
+    "cluster_pages": [
+      "marseille-business-class",
+      "marseille-first-class",
+      "marseille-premium-travel-guide",
+      "best-time-to-fly-to-marseille",
+      "airport-guide-for-marseille"
+    ]
+  },
+  {
+    "destination_slug": "naples",
+    "cluster_pages": [
+      "naples-business-class",
+      "naples-first-class",
+      "naples-premium-travel-guide",
+      "best-time-to-fly-to-naples",
+      "airport-guide-for-naples"
+    ]
+  },
+  {
+    "destination_slug": "florence",
+    "cluster_pages": [
+      "florence-business-class",
+      "florence-first-class",
+      "florence-premium-travel-guide",
+      "best-time-to-fly-to-florence",
+      "airport-guide-for-florence"
+    ]
+  },
+  {
+    "destination_slug": "palma-de-mallorca",
+    "cluster_pages": [
+      "palma-de-mallorca-business-class",
+      "palma-de-mallorca-first-class",
+      "palma-de-mallorca-premium-travel-guide",
+      "best-time-to-fly-to-palma-de-mallorca",
+      "airport-guide-for-palma-de-mallorca"
+    ]
+  },
+  {
+    "destination_slug": "malaga",
+    "cluster_pages": [
+      "malaga-business-class",
+      "malaga-first-class",
+      "malaga-premium-travel-guide",
+      "best-time-to-fly-to-malaga",
+      "airport-guide-for-malaga"
+    ]
+  },
+  {
+    "destination_slug": "valencia",
+    "cluster_pages": [
+      "valencia-business-class",
+      "valencia-first-class",
+      "valencia-premium-travel-guide",
+      "best-time-to-fly-to-valencia",
+      "airport-guide-for-valencia"
+    ]
+  },
+  {
+    "destination_slug": "seville",
+    "cluster_pages": [
+      "seville-business-class",
+      "seville-first-class",
+      "seville-premium-travel-guide",
+      "best-time-to-fly-to-seville",
+      "airport-guide-for-seville"
+    ]
+  },
+  {
+    "destination_slug": "dubai",
+    "cluster_pages": [
+      "dubai-business-class",
+      "dubai-first-class",
+      "dubai-premium-travel-guide",
+      "best-time-to-fly-to-dubai",
+      "airport-guide-for-dubai"
+    ]
+  },
+  {
+    "destination_slug": "abu-dhabi",
+    "cluster_pages": [
+      "abu-dhabi-business-class",
+      "abu-dhabi-first-class",
+      "abu-dhabi-premium-travel-guide",
+      "best-time-to-fly-to-abu-dhabi",
+      "airport-guide-for-abu-dhabi"
+    ]
+  },
+  {
+    "destination_slug": "doha",
+    "cluster_pages": [
+      "doha-business-class",
+      "doha-first-class",
+      "doha-premium-travel-guide",
+      "best-time-to-fly-to-doha",
+      "airport-guide-for-doha"
+    ]
+  },
+  {
+    "destination_slug": "riyadh",
+    "cluster_pages": [
+      "riyadh-business-class",
+      "riyadh-first-class",
+      "riyadh-premium-travel-guide",
+      "best-time-to-fly-to-riyadh",
+      "airport-guide-for-riyadh"
+    ]
+  },
+  {
+    "destination_slug": "jeddah",
+    "cluster_pages": [
+      "jeddah-business-class",
+      "jeddah-first-class",
+      "jeddah-premium-travel-guide",
+      "best-time-to-fly-to-jeddah",
+      "airport-guide-for-jeddah"
+    ]
+  },
+  {
+    "destination_slug": "muscat",
+    "cluster_pages": [
+      "muscat-business-class",
+      "muscat-first-class",
+      "muscat-premium-travel-guide",
+      "best-time-to-fly-to-muscat",
+      "airport-guide-for-muscat"
+    ]
+  },
+  {
+    "destination_slug": "kuwait-city",
+    "cluster_pages": [
+      "kuwait-city-business-class",
+      "kuwait-city-first-class",
+      "kuwait-city-premium-travel-guide",
+      "best-time-to-fly-to-kuwait-city",
+      "airport-guide-for-kuwait-city"
+    ]
+  },
+  {
+    "destination_slug": "bahrain",
+    "cluster_pages": [
+      "bahrain-business-class",
+      "bahrain-first-class",
+      "bahrain-premium-travel-guide",
+      "best-time-to-fly-to-bahrain",
+      "airport-guide-for-bahrain"
+    ]
+  },
+  {
+    "destination_slug": "amman",
+    "cluster_pages": [
+      "amman-business-class",
+      "amman-first-class",
+      "amman-premium-travel-guide",
+      "best-time-to-fly-to-amman",
+      "airport-guide-for-amman"
+    ]
+  },
+  {
+    "destination_slug": "tel-aviv",
+    "cluster_pages": [
+      "tel-aviv-business-class",
+      "tel-aviv-first-class",
+      "tel-aviv-premium-travel-guide",
+      "best-time-to-fly-to-tel-aviv",
+      "airport-guide-for-tel-aviv"
+    ]
+  },
+  {
+    "destination_slug": "jerusalem",
+    "cluster_pages": [
+      "jerusalem-business-class",
+      "jerusalem-first-class",
+      "jerusalem-premium-travel-guide",
+      "best-time-to-fly-to-jerusalem",
+      "airport-guide-for-jerusalem"
+    ]
+  },
+  {
+    "destination_slug": "beirut",
+    "cluster_pages": [
+      "beirut-business-class",
+      "beirut-first-class",
+      "beirut-premium-travel-guide",
+      "best-time-to-fly-to-beirut",
+      "airport-guide-for-beirut"
+    ]
+  },
+  {
+    "destination_slug": "cairo",
+    "cluster_pages": [
+      "cairo-business-class",
+      "cairo-first-class",
+      "cairo-premium-travel-guide",
+      "best-time-to-fly-to-cairo",
+      "airport-guide-for-cairo"
+    ]
+  },
+  {
+    "destination_slug": "sharm-el-sheikh",
+    "cluster_pages": [
+      "sharm-el-sheikh-business-class",
+      "sharm-el-sheikh-first-class",
+      "sharm-el-sheikh-premium-travel-guide",
+      "best-time-to-fly-to-sharm-el-sheikh",
+      "airport-guide-for-sharm-el-sheikh"
+    ]
+  },
+  {
+    "destination_slug": "tokyo",
+    "cluster_pages": [
+      "tokyo-business-class",
+      "tokyo-first-class",
+      "tokyo-premium-travel-guide",
+      "best-time-to-fly-to-tokyo",
+      "airport-guide-for-tokyo"
+    ]
+  },
+  {
+    "destination_slug": "osaka",
+    "cluster_pages": [
+      "osaka-business-class",
+      "osaka-first-class",
+      "osaka-premium-travel-guide",
+      "best-time-to-fly-to-osaka",
+      "airport-guide-for-osaka"
+    ]
+  },
+  {
+    "destination_slug": "kyoto",
+    "cluster_pages": [
+      "kyoto-business-class",
+      "kyoto-first-class",
+      "kyoto-premium-travel-guide",
+      "best-time-to-fly-to-kyoto",
+      "airport-guide-for-kyoto"
+    ]
+  },
+  {
+    "destination_slug": "sapporo",
+    "cluster_pages": [
+      "sapporo-business-class",
+      "sapporo-first-class",
+      "sapporo-premium-travel-guide",
+      "best-time-to-fly-to-sapporo",
+      "airport-guide-for-sapporo"
+    ]
+  },
+  {
+    "destination_slug": "fukuoka",
+    "cluster_pages": [
+      "fukuoka-business-class",
+      "fukuoka-first-class",
+      "fukuoka-premium-travel-guide",
+      "best-time-to-fly-to-fukuoka",
+      "airport-guide-for-fukuoka"
+    ]
+  },
+  {
+    "destination_slug": "seoul",
+    "cluster_pages": [
+      "seoul-business-class",
+      "seoul-first-class",
+      "seoul-premium-travel-guide",
+      "best-time-to-fly-to-seoul",
+      "airport-guide-for-seoul"
+    ]
+  },
+  {
+    "destination_slug": "busan",
+    "cluster_pages": [
+      "busan-business-class",
+      "busan-first-class",
+      "busan-premium-travel-guide",
+      "best-time-to-fly-to-busan",
+      "airport-guide-for-busan"
+    ]
+  },
+  {
+    "destination_slug": "singapore",
+    "cluster_pages": [
+      "singapore-business-class",
+      "singapore-first-class",
+      "singapore-premium-travel-guide",
+      "best-time-to-fly-to-singapore",
+      "airport-guide-for-singapore"
+    ]
+  },
+  {
+    "destination_slug": "bangkok",
+    "cluster_pages": [
+      "bangkok-business-class",
+      "bangkok-first-class",
+      "bangkok-premium-travel-guide",
+      "best-time-to-fly-to-bangkok",
+      "airport-guide-for-bangkok"
+    ]
+  },
+  {
+    "destination_slug": "phuket",
+    "cluster_pages": [
+      "phuket-business-class",
+      "phuket-first-class",
+      "phuket-premium-travel-guide",
+      "best-time-to-fly-to-phuket",
+      "airport-guide-for-phuket"
+    ]
+  },
+  {
+    "destination_slug": "chiang-mai",
+    "cluster_pages": [
+      "chiang-mai-business-class",
+      "chiang-mai-first-class",
+      "chiang-mai-premium-travel-guide",
+      "best-time-to-fly-to-chiang-mai",
+      "airport-guide-for-chiang-mai"
+    ]
+  },
+  {
+    "destination_slug": "hong-kong",
+    "cluster_pages": [
+      "hong-kong-business-class",
+      "hong-kong-first-class",
+      "hong-kong-premium-travel-guide",
+      "best-time-to-fly-to-hong-kong",
+      "airport-guide-for-hong-kong"
+    ]
+  },
+  {
+    "destination_slug": "taipei",
+    "cluster_pages": [
+      "taipei-business-class",
+      "taipei-first-class",
+      "taipei-premium-travel-guide",
+      "best-time-to-fly-to-taipei",
+      "airport-guide-for-taipei"
+    ]
+  },
+  {
+    "destination_slug": "kaohsiung",
+    "cluster_pages": [
+      "kaohsiung-business-class",
+      "kaohsiung-first-class",
+      "kaohsiung-premium-travel-guide",
+      "best-time-to-fly-to-kaohsiung",
+      "airport-guide-for-kaohsiung"
+    ]
+  },
+  {
+    "destination_slug": "bali",
+    "cluster_pages": [
+      "bali-business-class",
+      "bali-first-class",
+      "bali-premium-travel-guide",
+      "best-time-to-fly-to-bali",
+      "airport-guide-for-bali"
+    ]
+  },
+  {
+    "destination_slug": "jakarta",
+    "cluster_pages": [
+      "jakarta-business-class",
+      "jakarta-first-class",
+      "jakarta-premium-travel-guide",
+      "best-time-to-fly-to-jakarta",
+      "airport-guide-for-jakarta"
+    ]
+  },
+  {
+    "destination_slug": "yogyakarta",
+    "cluster_pages": [
+      "yogyakarta-business-class",
+      "yogyakarta-first-class",
+      "yogyakarta-premium-travel-guide",
+      "best-time-to-fly-to-yogyakarta",
+      "airport-guide-for-yogyakarta"
+    ]
+  },
+  {
+    "destination_slug": "kuala-lumpur",
+    "cluster_pages": [
+      "kuala-lumpur-business-class",
+      "kuala-lumpur-first-class",
+      "kuala-lumpur-premium-travel-guide",
+      "best-time-to-fly-to-kuala-lumpur",
+      "airport-guide-for-kuala-lumpur"
+    ]
+  },
+  {
+    "destination_slug": "penang",
+    "cluster_pages": [
+      "penang-business-class",
+      "penang-first-class",
+      "penang-premium-travel-guide",
+      "best-time-to-fly-to-penang",
+      "airport-guide-for-penang"
+    ]
+  },
+  {
+    "destination_slug": "langkawi",
+    "cluster_pages": [
+      "langkawi-business-class",
+      "langkawi-first-class",
+      "langkawi-premium-travel-guide",
+      "best-time-to-fly-to-langkawi",
+      "airport-guide-for-langkawi"
+    ]
+  },
+  {
+    "destination_slug": "manila",
+    "cluster_pages": [
+      "manila-business-class",
+      "manila-first-class",
+      "manila-premium-travel-guide",
+      "best-time-to-fly-to-manila",
+      "airport-guide-for-manila"
+    ]
+  },
+  {
+    "destination_slug": "cebu",
+    "cluster_pages": [
+      "cebu-business-class",
+      "cebu-first-class",
+      "cebu-premium-travel-guide",
+      "best-time-to-fly-to-cebu",
+      "airport-guide-for-cebu"
+    ]
+  },
+  {
+    "destination_slug": "ho-chi-minh-city",
+    "cluster_pages": [
+      "ho-chi-minh-city-business-class",
+      "ho-chi-minh-city-first-class",
+      "ho-chi-minh-city-premium-travel-guide",
+      "best-time-to-fly-to-ho-chi-minh-city",
+      "airport-guide-for-ho-chi-minh-city"
+    ]
+  },
+  {
+    "destination_slug": "hanoi",
+    "cluster_pages": [
+      "hanoi-business-class",
+      "hanoi-first-class",
+      "hanoi-premium-travel-guide",
+      "best-time-to-fly-to-hanoi",
+      "airport-guide-for-hanoi"
+    ]
+  },
+  {
+    "destination_slug": "da-nang",
+    "cluster_pages": [
+      "da-nang-business-class",
+      "da-nang-first-class",
+      "da-nang-premium-travel-guide",
+      "best-time-to-fly-to-da-nang",
+      "airport-guide-for-da-nang"
+    ]
+  },
+  {
+    "destination_slug": "delhi",
+    "cluster_pages": [
+      "delhi-business-class",
+      "delhi-first-class",
+      "delhi-premium-travel-guide",
+      "best-time-to-fly-to-delhi",
+      "airport-guide-for-delhi"
+    ]
+  },
+  {
+    "destination_slug": "mumbai",
+    "cluster_pages": [
+      "mumbai-business-class",
+      "mumbai-first-class",
+      "mumbai-premium-travel-guide",
+      "best-time-to-fly-to-mumbai",
+      "airport-guide-for-mumbai"
+    ]
+  },
+  {
+    "destination_slug": "bengaluru",
+    "cluster_pages": [
+      "bengaluru-business-class",
+      "bengaluru-first-class",
+      "bengaluru-premium-travel-guide",
+      "best-time-to-fly-to-bengaluru",
+      "airport-guide-for-bengaluru"
+    ]
+  },
+  {
+    "destination_slug": "hyderabad",
+    "cluster_pages": [
+      "hyderabad-business-class",
+      "hyderabad-first-class",
+      "hyderabad-premium-travel-guide",
+      "best-time-to-fly-to-hyderabad",
+      "airport-guide-for-hyderabad"
+    ]
+  },
+  {
+    "destination_slug": "goa",
+    "cluster_pages": [
+      "goa-business-class",
+      "goa-first-class",
+      "goa-premium-travel-guide",
+      "best-time-to-fly-to-goa",
+      "airport-guide-for-goa"
+    ]
+  },
+  {
+    "destination_slug": "kathmandu",
+    "cluster_pages": [
+      "kathmandu-business-class",
+      "kathmandu-first-class",
+      "kathmandu-premium-travel-guide",
+      "best-time-to-fly-to-kathmandu",
+      "airport-guide-for-kathmandu"
+    ]
+  },
+  {
+    "destination_slug": "colombo",
+    "cluster_pages": [
+      "colombo-business-class",
+      "colombo-first-class",
+      "colombo-premium-travel-guide",
+      "best-time-to-fly-to-colombo",
+      "airport-guide-for-colombo"
+    ]
+  },
+  {
+    "destination_slug": "male",
+    "cluster_pages": [
+      "male-business-class",
+      "male-first-class",
+      "male-premium-travel-guide",
+      "best-time-to-fly-to-male",
+      "airport-guide-for-male"
+    ]
+  },
+  {
+    "destination_slug": "dhaka",
+    "cluster_pages": [
+      "dhaka-business-class",
+      "dhaka-first-class",
+      "dhaka-premium-travel-guide",
+      "best-time-to-fly-to-dhaka",
+      "airport-guide-for-dhaka"
+    ]
+  },
+  {
+    "destination_slug": "beijing",
+    "cluster_pages": [
+      "beijing-business-class",
+      "beijing-first-class",
+      "beijing-premium-travel-guide",
+      "best-time-to-fly-to-beijing",
+      "airport-guide-for-beijing"
+    ]
+  },
+  {
+    "destination_slug": "shanghai",
+    "cluster_pages": [
+      "shanghai-business-class",
+      "shanghai-first-class",
+      "shanghai-premium-travel-guide",
+      "best-time-to-fly-to-shanghai",
+      "airport-guide-for-shanghai"
+    ]
+  },
+  {
+    "destination_slug": "shenzhen",
+    "cluster_pages": [
+      "shenzhen-business-class",
+      "shenzhen-first-class",
+      "shenzhen-premium-travel-guide",
+      "best-time-to-fly-to-shenzhen",
+      "airport-guide-for-shenzhen"
+    ]
+  },
+  {
+    "destination_slug": "guangzhou",
+    "cluster_pages": [
+      "guangzhou-business-class",
+      "guangzhou-first-class",
+      "guangzhou-premium-travel-guide",
+      "best-time-to-fly-to-guangzhou",
+      "airport-guide-for-guangzhou"
+    ]
+  },
+  {
+    "destination_slug": "chengdu",
+    "cluster_pages": [
+      "chengdu-business-class",
+      "chengdu-first-class",
+      "chengdu-premium-travel-guide",
+      "best-time-to-fly-to-chengdu",
+      "airport-guide-for-chengdu"
+    ]
+  },
+  {
+    "destination_slug": "sydney",
+    "cluster_pages": [
+      "sydney-business-class",
+      "sydney-first-class",
+      "sydney-premium-travel-guide",
+      "best-time-to-fly-to-sydney",
+      "airport-guide-for-sydney"
+    ]
+  },
+  {
+    "destination_slug": "melbourne",
+    "cluster_pages": [
+      "melbourne-business-class",
+      "melbourne-first-class",
+      "melbourne-premium-travel-guide",
+      "best-time-to-fly-to-melbourne",
+      "airport-guide-for-melbourne"
+    ]
+  },
+  {
+    "destination_slug": "brisbane",
+    "cluster_pages": [
+      "brisbane-business-class",
+      "brisbane-first-class",
+      "brisbane-premium-travel-guide",
+      "best-time-to-fly-to-brisbane",
+      "airport-guide-for-brisbane"
+    ]
+  },
+  {
+    "destination_slug": "perth",
+    "cluster_pages": [
+      "perth-business-class",
+      "perth-first-class",
+      "perth-premium-travel-guide",
+      "best-time-to-fly-to-perth",
+      "airport-guide-for-perth"
+    ]
+  },
+  {
+    "destination_slug": "auckland",
+    "cluster_pages": [
+      "auckland-business-class",
+      "auckland-first-class",
+      "auckland-premium-travel-guide",
+      "best-time-to-fly-to-auckland",
+      "airport-guide-for-auckland"
+    ]
+  },
+  {
+    "destination_slug": "queenstown",
+    "cluster_pages": [
+      "queenstown-business-class",
+      "queenstown-first-class",
+      "queenstown-premium-travel-guide",
+      "best-time-to-fly-to-queenstown",
+      "airport-guide-for-queenstown"
+    ]
+  },
+  {
+    "destination_slug": "wellington",
+    "cluster_pages": [
+      "wellington-business-class",
+      "wellington-first-class",
+      "wellington-premium-travel-guide",
+      "best-time-to-fly-to-wellington",
+      "airport-guide-for-wellington"
+    ]
+  },
+  {
+    "destination_slug": "cape-town",
+    "cluster_pages": [
+      "cape-town-business-class",
+      "cape-town-first-class",
+      "cape-town-premium-travel-guide",
+      "best-time-to-fly-to-cape-town",
+      "airport-guide-for-cape-town"
+    ]
+  },
+  {
+    "destination_slug": "johannesburg",
+    "cluster_pages": [
+      "johannesburg-business-class",
+      "johannesburg-first-class",
+      "johannesburg-premium-travel-guide",
+      "best-time-to-fly-to-johannesburg",
+      "airport-guide-for-johannesburg"
+    ]
+  },
+  {
+    "destination_slug": "durban",
+    "cluster_pages": [
+      "durban-business-class",
+      "durban-first-class",
+      "durban-premium-travel-guide",
+      "best-time-to-fly-to-durban",
+      "airport-guide-for-durban"
+    ]
+  },
+  {
+    "destination_slug": "marrakesh",
+    "cluster_pages": [
+      "marrakesh-business-class",
+      "marrakesh-first-class",
+      "marrakesh-premium-travel-guide",
+      "best-time-to-fly-to-marrakesh",
+      "airport-guide-for-marrakesh"
+    ]
+  },
+  {
+    "destination_slug": "casablanca",
+    "cluster_pages": [
+      "casablanca-business-class",
+      "casablanca-first-class",
+      "casablanca-premium-travel-guide",
+      "best-time-to-fly-to-casablanca",
+      "airport-guide-for-casablanca"
+    ]
+  },
+  {
+    "destination_slug": "agadir",
+    "cluster_pages": [
+      "agadir-business-class",
+      "agadir-first-class",
+      "agadir-premium-travel-guide",
+      "best-time-to-fly-to-agadir",
+      "airport-guide-for-agadir"
+    ]
+  },
+  {
+    "destination_slug": "nairobi",
+    "cluster_pages": [
+      "nairobi-business-class",
+      "nairobi-first-class",
+      "nairobi-premium-travel-guide",
+      "best-time-to-fly-to-nairobi",
+      "airport-guide-for-nairobi"
+    ]
+  },
+  {
+    "destination_slug": "mombasa",
+    "cluster_pages": [
+      "mombasa-business-class",
+      "mombasa-first-class",
+      "mombasa-premium-travel-guide",
+      "best-time-to-fly-to-mombasa",
+      "airport-guide-for-mombasa"
+    ]
+  },
+  {
+    "destination_slug": "zanzibar",
+    "cluster_pages": [
+      "zanzibar-business-class",
+      "zanzibar-first-class",
+      "zanzibar-premium-travel-guide",
+      "best-time-to-fly-to-zanzibar",
+      "airport-guide-for-zanzibar"
+    ]
+  },
+  {
+    "destination_slug": "dar-es-salaam",
+    "cluster_pages": [
+      "dar-es-salaam-business-class",
+      "dar-es-salaam-first-class",
+      "dar-es-salaam-premium-travel-guide",
+      "best-time-to-fly-to-dar-es-salaam",
+      "airport-guide-for-dar-es-salaam"
+    ]
+  },
+  {
+    "destination_slug": "lagos",
+    "cluster_pages": [
+      "lagos-business-class",
+      "lagos-first-class",
+      "lagos-premium-travel-guide",
+      "best-time-to-fly-to-lagos",
+      "airport-guide-for-lagos"
+    ]
+  },
+  {
+    "destination_slug": "accra",
+    "cluster_pages": [
+      "accra-business-class",
+      "accra-first-class",
+      "accra-premium-travel-guide",
+      "best-time-to-fly-to-accra",
+      "airport-guide-for-accra"
+    ]
+  },
+  {
+    "destination_slug": "addis-ababa",
+    "cluster_pages": [
+      "addis-ababa-business-class",
+      "addis-ababa-first-class",
+      "addis-ababa-premium-travel-guide",
+      "best-time-to-fly-to-addis-ababa",
+      "airport-guide-for-addis-ababa"
+    ]
+  },
+  {
+    "destination_slug": "tunis",
+    "cluster_pages": [
+      "tunis-business-class",
+      "tunis-first-class",
+      "tunis-premium-travel-guide",
+      "best-time-to-fly-to-tunis",
+      "airport-guide-for-tunis"
+    ]
+  },
+  {
+    "destination_slug": "mauritius",
+    "cluster_pages": [
+      "mauritius-business-class",
+      "mauritius-first-class",
+      "mauritius-premium-travel-guide",
+      "best-time-to-fly-to-mauritius",
+      "airport-guide-for-mauritius"
+    ]
+  },
+  {
+    "destination_slug": "seychelles",
+    "cluster_pages": [
+      "seychelles-business-class",
+      "seychelles-first-class",
+      "seychelles-premium-travel-guide",
+      "best-time-to-fly-to-seychelles",
+      "airport-guide-for-seychelles"
+    ]
+  },
+  {
+    "destination_slug": "sao-paulo",
+    "cluster_pages": [
+      "sao-paulo-business-class",
+      "sao-paulo-first-class",
+      "sao-paulo-premium-travel-guide",
+      "best-time-to-fly-to-sao-paulo",
+      "airport-guide-for-sao-paulo"
+    ]
+  },
+  {
+    "destination_slug": "rio-de-janeiro",
+    "cluster_pages": [
+      "rio-de-janeiro-business-class",
+      "rio-de-janeiro-first-class",
+      "rio-de-janeiro-premium-travel-guide",
+      "best-time-to-fly-to-rio-de-janeiro",
+      "airport-guide-for-rio-de-janeiro"
+    ]
+  },
+  {
+    "destination_slug": "salvador",
+    "cluster_pages": [
+      "salvador-business-class",
+      "salvador-first-class",
+      "salvador-premium-travel-guide",
+      "best-time-to-fly-to-salvador",
+      "airport-guide-for-salvador"
+    ]
+  },
+  {
+    "destination_slug": "buenos-aires",
+    "cluster_pages": [
+      "buenos-aires-business-class",
+      "buenos-aires-first-class",
+      "buenos-aires-premium-travel-guide",
+      "best-time-to-fly-to-buenos-aires",
+      "airport-guide-for-buenos-aires"
+    ]
+  },
+  {
+    "destination_slug": "mendoza",
+    "cluster_pages": [
+      "mendoza-business-class",
+      "mendoza-first-class",
+      "mendoza-premium-travel-guide",
+      "best-time-to-fly-to-mendoza",
+      "airport-guide-for-mendoza"
+    ]
+  },
+  {
+    "destination_slug": "santiago",
+    "cluster_pages": [
+      "santiago-business-class",
+      "santiago-first-class",
+      "santiago-premium-travel-guide",
+      "best-time-to-fly-to-santiago",
+      "airport-guide-for-santiago"
+    ]
+  },
+  {
+    "destination_slug": "lima",
+    "cluster_pages": [
+      "lima-business-class",
+      "lima-first-class",
+      "lima-premium-travel-guide",
+      "best-time-to-fly-to-lima",
+      "airport-guide-for-lima"
+    ]
+  },
+  {
+    "destination_slug": "cusco",
+    "cluster_pages": [
+      "cusco-business-class",
+      "cusco-first-class",
+      "cusco-premium-travel-guide",
+      "best-time-to-fly-to-cusco",
+      "airport-guide-for-cusco"
+    ]
+  },
+  {
+    "destination_slug": "bogota",
+    "cluster_pages": [
+      "bogota-business-class",
+      "bogota-first-class",
+      "bogota-premium-travel-guide",
+      "best-time-to-fly-to-bogota",
+      "airport-guide-for-bogota"
+    ]
+  },
+  {
+    "destination_slug": "medellin",
+    "cluster_pages": [
+      "medellin-business-class",
+      "medellin-first-class",
+      "medellin-premium-travel-guide",
+      "best-time-to-fly-to-medellin",
+      "airport-guide-for-medellin"
+    ]
+  },
+  {
+    "destination_slug": "cartagena",
+    "cluster_pages": [
+      "cartagena-business-class",
+      "cartagena-first-class",
+      "cartagena-premium-travel-guide",
+      "best-time-to-fly-to-cartagena",
+      "airport-guide-for-cartagena"
+    ]
+  },
+  {
+    "destination_slug": "quito",
+    "cluster_pages": [
+      "quito-business-class",
+      "quito-first-class",
+      "quito-premium-travel-guide",
+      "best-time-to-fly-to-quito",
+      "airport-guide-for-quito"
+    ]
+  },
+  {
+    "destination_slug": "guayaquil",
+    "cluster_pages": [
+      "guayaquil-business-class",
+      "guayaquil-first-class",
+      "guayaquil-premium-travel-guide",
+      "best-time-to-fly-to-guayaquil",
+      "airport-guide-for-guayaquil"
+    ]
+  },
+  {
+    "destination_slug": "montevideo",
+    "cluster_pages": [
+      "montevideo-business-class",
+      "montevideo-first-class",
+      "montevideo-premium-travel-guide",
+      "best-time-to-fly-to-montevideo",
+      "airport-guide-for-montevideo"
+    ]
+  },
+  {
+    "destination_slug": "nassau",
+    "cluster_pages": [
+      "nassau-business-class",
+      "nassau-first-class",
+      "nassau-premium-travel-guide",
+      "best-time-to-fly-to-nassau",
+      "airport-guide-for-nassau"
+    ]
+  },
+  {
+    "destination_slug": "punta-cana",
+    "cluster_pages": [
+      "punta-cana-business-class",
+      "punta-cana-first-class",
+      "punta-cana-premium-travel-guide",
+      "best-time-to-fly-to-punta-cana",
+      "airport-guide-for-punta-cana"
+    ]
+  },
+  {
+    "destination_slug": "santo-domingo",
+    "cluster_pages": [
+      "santo-domingo-business-class",
+      "santo-domingo-first-class",
+      "santo-domingo-premium-travel-guide",
+      "best-time-to-fly-to-santo-domingo",
+      "airport-guide-for-santo-domingo"
+    ]
+  },
+  {
+    "destination_slug": "san-juan",
+    "cluster_pages": [
+      "san-juan-business-class",
+      "san-juan-first-class",
+      "san-juan-premium-travel-guide",
+      "best-time-to-fly-to-san-juan",
+      "airport-guide-for-san-juan"
+    ]
+  },
+  {
+    "destination_slug": "aruba",
+    "cluster_pages": [
+      "aruba-business-class",
+      "aruba-first-class",
+      "aruba-premium-travel-guide",
+      "best-time-to-fly-to-aruba",
+      "airport-guide-for-aruba"
+    ]
+  },
+  {
+    "destination_slug": "curacao",
+    "cluster_pages": [
+      "curacao-business-class",
+      "curacao-first-class",
+      "curacao-premium-travel-guide",
+      "best-time-to-fly-to-curacao",
+      "airport-guide-for-curacao"
+    ]
+  },
+  {
+    "destination_slug": "montego-bay",
+    "cluster_pages": [
+      "montego-bay-business-class",
+      "montego-bay-first-class",
+      "montego-bay-premium-travel-guide",
+      "best-time-to-fly-to-montego-bay",
+      "airport-guide-for-montego-bay"
+    ]
+  },
+  {
+    "destination_slug": "kingston",
+    "cluster_pages": [
+      "kingston-business-class",
+      "kingston-first-class",
+      "kingston-premium-travel-guide",
+      "best-time-to-fly-to-kingston",
+      "airport-guide-for-kingston"
+    ]
+  },
+  {
+    "destination_slug": "bridgetown",
+    "cluster_pages": [
+      "bridgetown-business-class",
+      "bridgetown-first-class",
+      "bridgetown-premium-travel-guide",
+      "best-time-to-fly-to-bridgetown",
+      "airport-guide-for-bridgetown"
+    ]
+  },
+  {
+    "destination_slug": "st-lucia",
+    "cluster_pages": [
+      "st-lucia-business-class",
+      "st-lucia-first-class",
+      "st-lucia-premium-travel-guide",
+      "best-time-to-fly-to-st-lucia",
+      "airport-guide-for-st-lucia"
+    ]
+  }
+]

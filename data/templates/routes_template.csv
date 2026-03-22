@@ -1,0 +1,2 @@
+route_slug,origin_airport_slug,destination_airport_slug,origin_city_slug,destination_city_slug,primary_cabin,route_type,estimated_duration_minutes,route_summary,featured_image,airline_slugs,aircraft_slugs,internal_notes
+jfk-to-lhr-business-class,jfk,lhr,new-york,london,Business Class,long-haul,420,The JFK to Heathrow business-class market is one of the strongest premium transatlantic corridors.,/assets/images/jfk-lhr-route.jpg,british-airways-business-class|virgin-atlantic-upper-class|delta-one,boeing-777-business-class|airbus-a350-business-class,
