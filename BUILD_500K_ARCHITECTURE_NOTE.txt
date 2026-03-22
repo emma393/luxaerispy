@@ -1,1 +1,0 @@
-This pack expands the data architecture toward a 500k-page capable model and fixes the generated page template so the LuxAeris logo is not used as the content image on page bodies.

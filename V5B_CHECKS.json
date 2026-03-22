@@ -1,6 +1,0 @@
-{
-  "build.py": "ok",
-  "luxaeris_engine/builder.py": "ok",
-  "luxaeris_engine/page_writer.py": "ok",
-  "scripts/build_500k_data_engine.py": "ok"
-}

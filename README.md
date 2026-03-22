@@ -1,40 +1,20 @@
-# LuxAeris Combined Production Repo
+# LuxAeris V16
 
-This repo combines:
-- the final working LuxAeris static website in `static/`
-- the Python SEO generation engine in `luxaeris_engine/`
-- structured datasets in `data/`
-- schemas, templates, examples, and docs for scaling production data
-- `build.py` to combine the static website with generated SEO pages
-- `netlify.toml` for Netlify deployment
-- a GitHub Actions workflow to build the site automatically
+This build includes:
+- fixed `request.html` flow after the homepage form submit
+- improved premium request page layout
+- autocomplete dropdowns anchored directly under Origin and Destination fields
+- metro city code support such as NYC, LON, PAR, CHI, YTO
+- Google Sheets submission wired to the deployed Apps Script endpoint
 
-## Run
+## Google Sheets endpoint in this build
+The frontend is already connected to:
 
-```bash
-pip install -r requirements.txt
-python build.py
-```
+`https://script.google.com/macros/s/AKfycbyqmp583lxg3IEorhq4SaiXu2VrrMO1hUeQ1e2e4sByfqaLFMetKFeKir9Zi4AWopZk/exec`
 
-Output:
-```bash
-generated/site/
-```
+## Included Apps Script
+Use the file in `google-apps-script/Code.gs` inside your spreadsheet project.
 
-## Netlify
-- Build command: `python build.py`
-- Publish directory: `generated/site`
-
-
-## Production scale note
-
-This package includes a curated real-airport seed dataset and a production-ready structure.  
-It is designed to scale toward very large page counts by expanding JSON data and page families.
-
-Included scale profile file:
-- `data/build_profile.json`
-
-Recommended usage:
-- keep Netlify on the balanced profile for normal deploys
-- use CI or batch generation for higher page volumes
-- expand airports, routes, lounges, airline-cabin pages, and destination clusters gradually to protect quality
+## Notes
+- Replace `assets/video/hero-background.mp4` with the real background video before deploying.
+- Deploy on Netlify as a static site.

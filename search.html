@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Premium Routes, Airports, and Airlines | LuxAeris</title>
+<meta name="description" content="Search premium route pages, airport guides, destination pages, and airline reviews across LuxAeris.">
+<link rel="canonical" href="https://luxaeris.com/search.html">
+<link rel="stylesheet" href="/assets/site.css">
+<script defer src="/assets/site.js"></script>
+</head>
+<body>
+<div class="topbar"><div class="container topbar-inner"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
+<header class="site-header"><div class="container nav"><a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris"><div><div class="brand-name">LuxAeris</div><div class="brand-tag">Private fares. Premium journeys.</div></div></a><nav class="nav-links"><a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/tools/index.html">Tools</a><a class="btn btn-primary" href="/request.html">Request Quote</a></nav></div></header>
+<section class="section">
+  <div class="container">
+    <p class="kicker">Search the site</p>
+    <h1 class="section-title">Search pages or jump straight to a route</h1>
+    <p class="section-intro">Use the route search for airport-to-airport traffic, or use the page search below for destination guides, airline pages, and airport research.</p>
+    <div class="panel" data-trip-switcher data-default-trip="roundtrip">
+      <div class="trip-tabs">
+        <button type="button" class="trip-tab active" data-trip="roundtrip">Round trip</button>
+        <button type="button" class="trip-tab" data-trip="oneway">One way</button>
+      </div>
+      <form class="search-grid hero-search-grid" data-flight-search>
+        <div><label class="label-copy">From</label><input type="text" name="origin" data-location-input placeholder="JFK — New York, United States" required></div>
+        <div><label class="label-copy">To</label><input type="text" name="destination" data-location-input placeholder="FCO — Rome, Italy" required></div>
+        <div><label class="label-copy">Departure</label><input type="date" name="departDate" required></div>
+        <div><label class="label-copy">Return</label><input type="date" name="returnDate"></div>
+        <div><label class="label-copy">Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div>
+        <div style="align-self:end"><button class="btn btn-primary" type="submit">Go to route</button></div>
+      </form>
+    </div>
+    <div class="light-band" style="margin-top:22px">
+      <form data-site-search style="display:grid;grid-template-columns:1fr auto;gap:12px">
+        <input type="text" placeholder="Search Paris, JFK, Emirates, Doha, Tokyo, Air France, business class..." aria-label="Search the website">
+        <button class="btn btn-primary" type="submit">Search pages</button>
+      </form>
+    </div>
+    <div id="siteSearchResults" style="margin-top:24px"></div>
+  </div>
+</section>
+<footer class="footer"><div class="container footer-grid"><div><strong>LuxAeris</strong><p>Premium route, destination, airport, and airline content built for organic demand.</p></div><div><strong>Explore</strong><p><a href="/destinations/index.html">Destinations</a><br><a href="/airlines/index.html">Airlines</a><br><a href="/routes/index.html">Routes</a><br><a href="/airports/index.html">Airports</a></p></div><div><strong>Support</strong><p><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/request.html">Request Quote</a></p></div><div><strong>Company</strong><p><a href="/about.html">About</a><br><a href="/privacy-policy.html">Privacy Policy</a><br><a href="/terms-and-conditions.html">Terms & Conditions</a></p></div></div></footer>
+</body>
+</html>

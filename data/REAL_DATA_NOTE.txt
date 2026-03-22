@@ -1,1 +1,0 @@
-This package includes a curated real-airport seed list with actual city names, IATA airport codes, and city codes for search fields and SEO generation. It is not a complete licensed global aviation dataset. Expand it with authoritative source data before publishing at enterprise scale.

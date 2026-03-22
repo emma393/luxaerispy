@@ -1,1 +1,0 @@
-This package lightens the visual design, reduces homepage copy, adds destination/airport/cabin imagery via public remote image URLs, upgrades index pages from plain lists to image cards, improves the single-line site search, and carries the expanded data architecture needed to scale toward 500k pages.

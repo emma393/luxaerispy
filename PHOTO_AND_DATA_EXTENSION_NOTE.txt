@@ -1,1 +1,0 @@
-This pack fixes the generated-page image problem by assigning travel images instead of using the LuxAeris logo as the main photo area. It also extends the structured summaries on airports, routes, lounges, airlines, aircraft, destinations, and flight pages.

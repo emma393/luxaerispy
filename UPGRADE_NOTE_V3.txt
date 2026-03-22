@@ -1,9 +1,0 @@
-
-This version adds:
-- destination hierarchy: continent -> country -> city
-- airport hierarchy support in builder data
-- expanded destinations and airports dataset
-- premium calendar UI with mm.dd.yyyy display
-- date limit of current date + 364 days
-- forced absolute homepage video path /assets/videos/hero-plane-window.mp4
-- floating request quote button on all pages

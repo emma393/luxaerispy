@@ -1,6 +1,0 @@
-This pack adds:
-- route estimate tool using the same airport list as the homepage search and request form
-- backend estimate function at netlify/functions/route-estimate.js
-- seat guide layout repaired and expanded with visual cabin cards
-- airport, destination, and route index pages rebuilt with images and descriptions
-- generated page image mappings updated so the logo is not used as the main content image

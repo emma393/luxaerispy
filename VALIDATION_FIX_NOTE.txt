@@ -1,1 +1,0 @@
-This pack adds strict airport validation to origin and destination fields. A customer cannot submit the homepage search form or the Formspree request form unless each visible airport field matches a valid dropdown selection from the airport list.

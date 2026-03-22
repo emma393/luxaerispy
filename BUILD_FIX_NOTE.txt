@@ -1,3 +1,0 @@
-This package fixes the Netlify build error caused by the Jinja template iterating over section.items as a method.
-The template now uses section.links, and the builder was updated accordingly.
-The repo also includes the current structured data files in /data.
