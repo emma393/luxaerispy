@@ -1,6 +1,2 @@
 [build]
-command = "python build.py"
-publish = "generated/site"
-
-[build.environment]
-PYTHON_VERSION = "3.11"
+  publish = "."

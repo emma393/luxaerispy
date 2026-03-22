@@ -1,0 +1,20 @@
+Replace the matching files and folders in your existing repo with the files in this patch.
+
+Included fixes:
+- working site-wide search (search any word and get matching pages)
+- 404 fixes for broken destination and airport links, including Cancun/Cancún variants
+- clean Netlify redirects for country, city, airline, airport, route, cabin, and tools pages
+- updated search index built from page text
+- refreshed SEO meta descriptions on destination, airline, and key index pages
+
+Files to replace at repo root:
+- netlify.toml
+- _redirects
+- search.html
+- assets/site.js
+- assets/search-index.json
+- destinations/... updated files
+- airlines/... updated files
+- route and airport alias files included in this patch
+
+Do not remove your existing request page setup.
