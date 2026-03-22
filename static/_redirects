@@ -1,6 +1,2 @@
 /routes/:region/:country /routes/:region/:country/index.html 200
 /routes/:region/:country/:city /routes/:region/:country/:city.html 200
-/destinations/:region/:country /destinations/:region/:country/index.html 200
-/destinations/:region/:country/:city /destinations/:region/:country/:city.html 200
-/airports/:code /airports/:code.html 200
-/airlines/:slug /airlines/:slug.html 200
