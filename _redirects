@@ -28,3 +28,8 @@
 /destinations/global/international/cancún.html /destinations/global/international/cancun.html 301
 /airports/global/international/cancún-airport /airports/global/international/cancun-airport.html 301
 /airports/global/international/cancún-airport.html /airports/global/international/cancun-airport.html 301
+/destinations/:continent/:country/:city /destinations/:continent/:country/:city.html 200
+/routes/:continent/:country /routes/:continent/:country.html 200
+/routes/:continent/:country/:city /routes/:continent/:country/:city.html 200
+/routes/:continent/:country/:city/:slug /routes/:continent/:country/:city/:slug.html 200
+/airports/:continent/:country/:city /airports/:continent/:country/:city.html 200

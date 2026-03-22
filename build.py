@@ -1,5 +1,4 @@
 from pathlib import Path
-import os
 import shutil
 import json
 
@@ -40,15 +39,11 @@ def full_rebuild(base: Path):
 def main():
     base = Path(__file__).resolve().parent
     ensure_site_config(base)
-    # Default to the stable prebuilt site so Netlify deploys succeed.
-    # Set FULL_REBUILD=1 when you intentionally want the Python builder.
-    if os.environ.get("FULL_REBUILD") == "1":
-        try:
-            full_rebuild(base)
-            return
-        except Exception as exc:
-            print(f"Full rebuild failed, falling back to static copy: {exc}")
-    copy_static(base)
+    try:
+        full_rebuild(base)
+    except Exception as exc:
+        print(f"Full rebuild failed, falling back to static copy: {exc}")
+        copy_static(base)
 
 
 if __name__ == "__main__":
