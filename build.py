@@ -1,28 +1,55 @@
 from pathlib import Path
+import os
 import shutil
-from luxaeris_engine.builder import LuxAerisBuilder
+import json
 
-SITE_CONFIG = {"site_name": "LuxAeris", "site_url": "https://luxaeris.com", "brand_tagline": "Private fares. Premium journeys.", "default_image": "/assets/images/real/dubai.jpg", "request_quote_url": "/request.html"}
+SITE_CONFIG = {
+    "site_name": "LuxAeris",
+    "site_url": "https://luxaeris.com",
+    "brand_tagline": "Private fares. Premium journeys.",
+    "default_image": "/assets/images/real/dubai.jpg",
+    "request_quote_url": "/request.html",
+}
+
 
 def ensure_site_config(base: Path):
     data_dir = base / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
     cfg = data_dir / "site_config.json"
     if not cfg.exists():
-        cfg.write_text(__import__("json").dumps(SITE_CONFIG, indent=2))
+        cfg.write_text(json.dumps(SITE_CONFIG, indent=2), encoding="utf-8")
+
+
+def copy_static(base: Path):
+    src = base / "static"
+    out = base / "generated" / "site"
+    if out.exists():
+        shutil.rmtree(out)
+    shutil.copytree(src, out)
+    print("LuxAeris production site ready in generated/site/ (copied from static)")
+
+
+def full_rebuild(base: Path):
+    from luxaeris_engine.builder import LuxAerisBuilder
+
+    builder = LuxAerisBuilder(base)
+    builder.build()
+    print("LuxAeris production site rebuilt in generated/site/ using LuxAerisBuilder")
+
 
 def main():
     base = Path(__file__).resolve().parent
     ensure_site_config(base)
-    try:
-        builder = LuxAerisBuilder(base)
-        builder.build()
-    except Exception:
-        out = base / "generated" / "site"
-        if out.exists():
-            shutil.rmtree(out)
-        shutil.copytree(base / "static", out)
-    print("LuxAeris production site ready in generated/site/")
+    # Default to the stable prebuilt site so Netlify deploys succeed.
+    # Set FULL_REBUILD=1 when you intentionally want the Python builder.
+    if os.environ.get("FULL_REBUILD") == "1":
+        try:
+            full_rebuild(base)
+            return
+        except Exception as exc:
+            print(f"Full rebuild failed, falling back to static copy: {exc}")
+    copy_static(base)
+
 
 if __name__ == "__main__":
     main()

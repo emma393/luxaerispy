@@ -497,3 +497,75 @@ function polishMicrocopy() {
   });
 }
 
+
+
+async function loadSiteSearchIndex() {
+  if (window.__LUX_SEARCH_INDEX) return window.__LUX_SEARCH_INDEX;
+  try {
+    const res = await fetch('/assets/search-index.json');
+    const data = await res.json();
+    window.__LUX_SEARCH_INDEX = Array.isArray(data) ? data : [];
+  } catch (err) {
+    window.__LUX_SEARCH_INDEX = [];
+  }
+  return window.__LUX_SEARCH_INDEX;
+}
+
+function searchScore(item, terms) {
+  const hay = `${item.title || ''} ${item.keywords || ''} ${item.summary || ''} ${item.text || ''}`.toLowerCase();
+  let score = 0;
+  for (const term of terms) {
+    if (!term) continue;
+    if ((item.title || '').toLowerCase().includes(term)) score += 12;
+    if ((item.keywords || '').toLowerCase().includes(term)) score += 8;
+    if ((item.summary || '').toLowerCase().includes(term)) score += 6;
+    if (hay.includes(term)) score += 3;
+  }
+  return score;
+}
+
+function renderSearchResults(results, query) {
+  const host = document.getElementById('siteSearchResults');
+  if (!host) return;
+  if (!query) {
+    host.innerHTML = '';
+    return;
+  }
+  if (!results.length) {
+    host.innerHTML = `<div class="light-band"><p>No pages matched <strong>${query}</strong>. Try a city, airport code, airline, attraction, cabin type, or route.</p></div>`;
+    return;
+  }
+  const items = results.slice(0, 50).map(item => {
+    const desc = (item.summary || item.text || '').slice(0, 220);
+    return `<article class="light-band" style="margin-bottom:14px"><p class="kicker" style="margin-bottom:6px">${item.type}</p><h3 style="margin:0 0 8px"><a href="/${item.url}">${item.title}</a></h3><p style="margin:0 0 8px">${desc}</p><p class="muted small" style="margin:0"><a href="/${item.url}">/${item.url}</a></p></article>`;
+  }).join('');
+  host.innerHTML = `<p class="muted small" style="margin:0 0 16px">Showing ${Math.min(results.length, 50)} result${results.length === 1 ? '' : 's'} for <strong>${query}</strong>.</p>${items}`;
+}
+
+function bindSiteSearch() {
+  const form = document.querySelector('[data-site-search]');
+  if (!form) return;
+  const input = form.querySelector('input[type="text"]');
+  const run = async () => {
+    const query = (input.value || '').trim();
+    const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+    const data = await loadSiteSearchIndex();
+    if (!terms.length) return renderSearchResults([], '');
+    const results = data
+      .map(item => ({ item, score: searchScore(item, terms) }))
+      .filter(entry => entry.score > 0)
+      .sort((a, b) => b.score - a.score || (a.item.title || '').localeCompare(b.item.title || ''))
+      .map(entry => entry.item);
+    renderSearchResults(results, query);
+    const url = new URL(window.location.href);
+    url.searchParams.set('q', query);
+    history.replaceState({}, '', url.toString());
+  };
+  form.addEventListener('submit', e => { e.preventDefault(); run(); });
+  input.addEventListener('input', () => { if ((input.value || '').trim().length >= 2) run(); });
+  const params = new URL(window.location.href).searchParams;
+  const q = params.get('q');
+  if (q) { input.value = q; run(); }
+}
+
+document.addEventListener('DOMContentLoaded', () => { bindSiteSearch(); }, { once: true });
