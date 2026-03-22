@@ -1,204 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LuxAeris — Luxury Business & First Class Flight Concierge</title>
-  <meta name="description" content="LuxAeris arranges luxury business AND first class journeys with concierge-level care, elegant route planning, AND premium fare access FOR travelers who value discretion, comfort, AND a seamless long-haul booking experience.">
-  <meta name="keywords" content="luxury business class flights, first class concierge, premium flight quotes, long haul business class, luxury flight concierge">
-  <meta property="og:title" content="LuxAeris — Luxury Business & First Class Flight Concierge">
-  <meta property="og:description" content="Request premium business AND first class flights through a refined concierge booking experience, with elegant route planning, smart airport search, AND personalized support from quote to ticketing.">
-  <meta property="og:type" content="website">
-  <link REL="icon" href="favicon.ico">
-  <link REL="stylesheet" href="https://CDN.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link REL="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuxAeris | Premium Business & First Class Flights</title>
+  <meta name="description" content="Exclusive business and first class fares with concierge-level support, premium routes, and tailored flight requests.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/hero-ultra-luxury.css">
 </head>
-<body class="HAS-video home-luxury">
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="assets/video/hero-background.mp4" type="video/mp4">
-  </video>
+<body>
+  <section class="hero-ultra">
+    <video class="hero-ultra__video" autoplay muted loop playsinline preload="auto">
+      <source src="/assets/video/hero-background.mp4" type="video/mp4">
+    </video>
 
-  <header class="site-header site-header-sticky">
-    <div class="container NAV NAV-luxury">
-      <a class="brand brand-logo" href="index.html">
-        <img class="brand-image" src="assets/images/logo-header.png" alt="LuxAeris logo">
-      </a>
-      <NAV class="TOP-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="request.html">Request</a>
-        <a href="destinations/index.html">Destinations</a>
-        <a href="routes/index.html">Routes</a>
-        <a href="airports/index.html">Airports</a>
-        <a href="airlines/index.html">Airlines</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </NAV>
-      <a class="btn-secondary NAV-CTA" href="request.html">Get a Quote</a>
+    <div class="hero-ultra__veil"></div>
+    <div class="hero-ultra__glow"></div>
+
+    <header class="hero-ultra__header">
+      <div class="hero-ultra__nav-shell">
+        <a class="hero-ultra__brand" href="/">
+          <img src="/assets/images/logo.png" alt="LuxAeris">
+          <span class="hero-ultra__brand-text">
+            <strong>LuxAeris</strong>
+            <em>Private fares. Premium journeys.</em>
+          </span>
+        </a>
+
+        <nav class="hero-ultra__nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/request/">Request</a>
+          <a href="/destinations/">Destinations</a>
+          <a href="/routes/">Routes</a>
+          <a href="/airports/">Airports</a>
+          <a href="/airlines/">Airlines</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+
+        <a class="hero-ultra__cta" href="/request/">Request a Quote</a>
+      </div>
+    </header>
+
+    <div class="hero-ultra__content">
+      <p class="hero-ultra__eyebrow">Luxury flight concierge</p>
+      <h1>Business &amp; First Class travel, arranged with precision.</h1>
+      <p class="hero-ultra__subhead">
+        Access tailored premium fares, long-haul route expertise, and a booking experience designed for travelers who value comfort, speed, and discretion.
+      </p>
+
+      <div class="hero-ultra__actions">
+        <a class="hero-ultra__primary" href="/request/">Get My Quote</a>
+        <a class="hero-ultra__secondary" href="/destinations/">Explore Destinations</a>
+      </div>
+
+      <div class="hero-ultra__trust">
+        <span>No booking fees on tailored requests</span>
+        <span>Business Class • First Class • Premium Economy</span>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <section class="hero hero-luxury">
-      <div class="container hero-grid hero-grid-luxury">
-        <div class="hero-copy hero-copy-luxury">
-          <div class="eyebrow">Luxury Flight Concierge</div>
-          <h1>Business &amp; First Class travel,<br>arranged with precision.</h1>
-          <p class="lead lead-hero">Exclusive premium fares, discreet support, and a refined booking experience for travelers who expect comfort from the very first click.</p>
-          <div class="hero-actions">
-            <a class="btn-primary" href="request.html">Request a Quote</a>
-            <a class="btn-secondary" href="destinations/index.html">Explore Destinations</a>
-          </div>
-          <div class="hero-note">Our service is complimentary. You only pay for your ticket.</div>
-        </div>
-
-        <div class="panel form-panel home-form-panel luxury-quote-panel">
-          <h2 class="panel-title">Request a premium quote</h2>
-          <p class="panel-subtitle">Tell us where you want to go and we will prepare premium options with your route prefilled on the full request page.</p>
-
-          <form id="quickQuoteForm" action="request.html" method="GET" novalidate>
-            <div class="form-grid">
-              <div class="field field-wide trip-type-field">
-                <label>Trip type</label>
-                <div class="trip-type-switch" role="tablist" aria-label="Trip type">
-                  <button type="button" class="trip-type-btn is-active" data-trip-type="Round Trip">Round Trip</button>
-                  <button type="button" class="trip-type-btn" data-trip-type="One Way">One Way</button>
-                  <button type="button" class="trip-type-btn" data-trip-type="Multi City">Multi City</button>
-                </div>
-                <input id="tripType" name="tripType" type="hidden" value="Round Trip">
-              </div>
-
-              <div class="field field-wide autocomplete-field">
-                <label FOR="origin">Origin</label>
-                <input id="origin" name="origin" type="text" placeholder="City, airport, or metro code" autocomplete="OFF" required>
-                <input id="originCode" name="originCode" type="hidden">
-                <div id="originList" class="autocomplete-list" hidden></div>
-                <div id="originError" class="error"></div>
-              </div>
-
-              <div class="field field-wide autocomplete-field">
-                <label FOR="destination">Destination</label>
-                <input id="destination" name="destination" type="text" placeholder="City, airport, or metro code" autocomplete="OFF" required>
-                <input id="destinationCode" name="destinationCode" type="hidden">
-                <div id="destinationList" class="autocomplete-list" hidden></div>
-                <div id="destinationError" class="error"></div>
-              </div>
-
-              <div class="field">
-                <label FOR="departDate">Departure date</label>
-                <input id="departDate" name="departDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field required>
-              </div>
-
-              <div class="field">
-                <label FOR="returnDate">Return date</label>
-                <input id="returnDate" name="returnDate" type="text" inputmode="numeric" placeholder="mm.dd.yyyy" data-date-field>
-              </div>
-
-              <div class="field">
-                <label FOR="cabin">Cabin</label>
-                <select id="cabin" name="cabin">
-                  <option>Business Class</option>
-                  <option>First Class</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label FOR="budget">Budget</label>
-                <select id="budget" name="budget">
-                  <option value="">Select budget</option>
-                  <option>$2K–$5K</option>
-                  <option>$5K–$10K</option>
-                  <option>$10K+</option>
-                </select>
-              </div>
-
-              <div class="field field-wide button-ROW">
-                <button type="submit" class="btn-primary">Continue</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-luxury-intro">
-      <div class="container luxury-copy-block">
-        <div class="eyebrow">Why clients choose LuxAeris</div>
-        <h2 class="section-title">We do NOT just book flights. We shape premium journeys.</h2>
-        <p class="lead">LuxAeris is built FOR travelers who value comfort, efficiency, privacy, AND thoughtful premium planning. From long-haul business class itineraries to aspirational first class requests, every quote begins with a cleaner concierge intake flow AND ends with a sharper travel experience.</p>
-      </div>
-    </section>
-
-    <section class="section featured-destinations-section">
-      <div class="container">
-        <div class="section-heading compact">
-          <div>
-            <div class="eyebrow">Featured destinations</div>
-            <h2 class="section-title">Inspiration for your next premium journey.</h2>
-          </div>
-          <a class="section-link" href="destinations/index.html">View ALL destinations</a>
-        </div>
-        <div class="destination-grid destination-grid-home">
-          <a class="destination-card destination-card-large" href="destinations/new-york.html"><img src="assets/images/home/new-york.webp" alt="New York skyline at sunset"><span>New York</span></a>
-          <a class="destination-card" href="destinations/paris.html"><img src="assets/images/home/paris.webp" alt="Paris city view"><span>Paris</span></a>
-          <a class="destination-card" href="destinations/dubai.html"><img src="assets/images/home/dubai.webp" alt="Dubai skyline"><span>Dubai</span></a>
-          <a class="destination-card" href="destinations/london.html"><img src="assets/images/home/london.webp" alt="London skyline"><span>London</span></a>
-          <a class="destination-card" href="destinations/tokyo.html"><img src="assets/images/home/tokyo.webp" alt="Tokyo skyline"><span>Tokyo</span></a>
-          <a class="destination-card" href="destinations/rome.html"><img src="assets/images/home/rome.webp" alt="Rome skyline"><span>Rome</span></a>
-          <a class="destination-card" href="destinations/frankfurt.html"><img src="assets/images/home/frankfurt.webp" alt="Frankfurt skyline"><span>Frankfurt</span></a>
-          <a class="destination-card" href="destinations/sydney.html"><img src="assets/images/home/sydney.webp" alt="Sydney skyline"><span>Sydney</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark-panel">
-      <div class="container premium-routes-panel panel">
-        <div class="section-heading compact">
-          <div>
-            <div class="eyebrow">Browse premium pages</div>
-            <h2 class="section-title">Move between THE pages that matter.</h2>
-          </div>
-        </div>
-        <div class="link-cloud">
-          <a href="request.html">Request a Quote</a>
-          <a href="destinations/index.html">Destinations</a>
-          <a href="routes/index.html">Routes</a>
-          <a href="airports/index.html">Airports</a>
-          <a href="airlines/index.html">Airlines</a>
-          <a href="about.html">About LuxAeris</a>
-          <a href="contact.html">Contact</a>
-          <a href="routes/DFW-to-DXB-business-class.html">DFW to Dubai</a>
-          <a href="routes/BOS-to-FRA-business-class.html">Boston to Frankfurt</a>
-          <a href="routes/BOS-to-SIN-business-class.html">Boston to Singapore</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section final-CTA-section">
-      <div class="container final-CTA panel">
-        <div>
-          <div class="eyebrow">Ready when you ARE</div>
-          <h2 class="section-title">Tell us where you want to go.<br>We will take care of THE rest.</h2>
-        </div>
-        <div class="final-CTA-actions">
-          <a class="btn-primary" href="request.html">Request Your Flight</a>
-          <a class="btn-secondary" href="contact.html">Speak With LuxAeris</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inline footer-inline-rich">
-      <a href="index.html">Home</a>
-      <a href="request.html">Request</a>
-      <a href="destinations/index.html">Destinations</a>
-      <a href="routes/index.html">Routes</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </footer>
-
-  <script src="https://CDN.jsdelivr.net/npm/flatpickr"></script>
-  <script src="assets/js/app.js"></script>
+  </section>
 </body>
 </html>
