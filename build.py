@@ -28,22 +28,10 @@ def copy_static(base: Path):
     print("LuxAeris production site ready in generated/site/ (copied from static)")
 
 
-def full_rebuild(base: Path):
-    from luxaeris_engine.builder import LuxAerisBuilder
-
-    builder = LuxAerisBuilder(base)
-    builder.build()
-    print("LuxAeris production site rebuilt in generated/site/ using LuxAerisBuilder")
-
-
 def main():
     base = Path(__file__).resolve().parent
     ensure_site_config(base)
-    try:
-        full_rebuild(base)
-    except Exception as exc:
-        print(f"Full rebuild failed, falling back to static copy: {exc}")
-        copy_static(base)
+    copy_static(base)
 
 
 if __name__ == "__main__":

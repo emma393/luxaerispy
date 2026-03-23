@@ -33,3 +33,7 @@
 /routes/:continent/:country/:city /routes/:continent/:country/:city.html 200
 /routes/:continent/:country/:city/:slug /routes/:continent/:country/:city/:slug.html 200
 /airports/:continent/:country/:city /airports/:continent/:country/:city.html 200
+
+/destinations/:continent.html /destinations/:continent/ 301
+/destinations/:continent/:country.html /destinations/:continent/:country/ 301
+/destinations/:continent/:country/:city.html /destinations/:continent/:country/:city/ 301
