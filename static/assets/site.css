@@ -388,3 +388,11 @@ body,p,.section-intro,.small-muted{color:#2f2924!important}
 .bubble-link:hover{background:#f5e8d1}
 .small-muted{font-size:16px}
 .route-bubble,.airport-pill{font-weight:700!important}
+
+
+.route-bubbles{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.route-bubble{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;border:1px solid rgba(199,160,99,.35);background:#fff7ec;text-decoration:none!important;font-weight:800;color:#2b241d;box-shadow:0 8px 18px rgba(39,28,20,.06);line-height:1.2;text-transform:uppercase;letter-spacing:.02em}
+.route-bubble:hover{background:#f5e8d1}
+.footer{padding:18px 0 10px!important;margin-top:22px!important}
+.footer-grid{gap:10px!important}
+.footer p,.footer a,.footer-note{font-size:13px!important;line-height:1.45!important}
