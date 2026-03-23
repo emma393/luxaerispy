@@ -6,7 +6,7 @@
   --surface:#ffffff;
   --surface-soft:#efe7dc;
   --text:#1e1a17;
-  --muted:#5f564d;
+  --muted:#3f372f;
   --gold:#c7a063;
   --gold-deep:#a88043;
   --line:rgba(39,28,20,.10);
@@ -119,7 +119,7 @@ textarea{min-height:120px; padding-top:16px}
   padding:72px 0; background:linear-gradient(180deg,#f3ece2,#ece2d4);
 }
 .section-title{max-width:780px}
-.section-intro{max-width:760px; font-size:18px}
+.section-intro{max-width:760px; font-size:18px; color:#433a32}
 .card-grid,.deals-grid,.index-visual-grid,.lux-grid-3{
   display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
 }
@@ -357,3 +357,18 @@ textarea{min-height:120px; padding-top:16px}
 .lux-hero-copy p{max-width:760px;}
 .destination-highlights{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; margin-top:24px;}
 @media (max-width: 860px){.destination-highlights{grid-template-columns:1fr;}}
+
+
+.index-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.index-card{display:block;padding:20px 22px;border:1px solid var(--line);border-radius:24px;background:#fff;text-decoration:none;box-shadow:0 12px 28px rgba(39,28,20,.06)}
+.index-card h3{margin:0 0 6px;font-size:36px;color:var(--text)}
+.index-card p{margin:0;color:var(--muted)}
+.bubble-group{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.bubble-link{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:999px;background:#fff;border:1px solid rgba(199,160,99,.45);text-decoration:none;font-weight:700;color:#332922;box-shadow:0 8px 18px rgba(39,28,20,.06)}
+.bubble-link:hover{background:#f8f0e2;color:#231b15}
+.hierarchy-stack{display:grid;gap:26px}
+.hierarchy-section{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 28px rgba(39,28,20,.06)}
+.hierarchy-section h2{margin-bottom:10px}
+.small-muted{color:var(--muted);font-size:15px}
+@media (max-width:1100px){.index-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.index-grid{grid-template-columns:1fr}}
