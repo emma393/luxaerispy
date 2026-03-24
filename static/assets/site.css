@@ -411,3 +411,14 @@ body,p,.section-intro,.small-muted{color:#2f2924!important}
 .related-box{background:#fff;border:1px solid rgba(39,28,20,.10);border-radius:22px;padding:24px;box-shadow:0 18px 34px rgba(0,0,0,.04)}
 .related-box p,.content-panel p,.lede{color:#4b4239!important}
 @media (max-width: 960px){.hero-grid.city-guide-grid,.related-grid{grid-template-columns:1fr}}
+
+
+/* v10 city layout normalization */
+.hero-grid.city-guide-grid{grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr)!important;align-items:stretch!important}
+.city-guide-grid .glass{display:flex;flex-direction:column;justify-content:center;min-height:360px}
+.city-guide-grid .hero-shot{width:100%!important;height:100%!important;min-height:360px!important;object-fit:contain!important;object-position:center center!important;background:linear-gradient(180deg,#6e5a50,#3f332d)!important;border-radius:24px;padding:0}
+.hero-title{overflow-wrap:anywhere}
+.route-bubble,.city-bubble{white-space:nowrap}
+.airport-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.airport-pill{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;background:#fbf7f1;border:1px solid rgba(39,28,20,.12);text-decoration:none;color:#2a211b;font-weight:700;font-size:15px;box-shadow:0 8px 18px rgba(0,0,0,.04)}
+@media (max-width: 960px){.city-guide-grid .hero-shot,.city-guide-grid .glass{min-height:auto!important}}
