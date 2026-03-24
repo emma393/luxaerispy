@@ -261,6 +261,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   bindSearchForms();
   prefillRequestForm();
   initHeroVideo();
+  enhanceRequestSubmission();
 });
 
 
@@ -497,3 +498,29 @@ function polishMicrocopy() {
   });
 }
 
+
+
+function autofillInlineRequestFromPage() {
+  const form = document.getElementById('quoteRequestForm');
+  if (!form) return;
+  const path = window.location.pathname || '';
+  const destination = form.querySelector('[name="destination"]');
+  const notes = form.querySelector('[name="notes"]');
+  const cabin = form.querySelector('[name="cabin"]');
+  if (path.includes('/routes/')) {
+    const slug = path.split('/').pop().replace('.html','');
+    const m = slug.match(/^([a-z0-9-]+)-to-([a-z0-9-]+)-(business|first|premium-economy)-class$/i);
+    if (m) {
+      const normalize = (value) => value.length <= 4 ? value.toUpperCase() : value.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      const originInput = form.querySelector('[name="origin"]');
+      if (originInput && !originInput.value) originInput.value = normalize(m[1]);
+      if (destination && !destination.value) destination.value = normalize(m[2]);
+      if (cabin) cabin.value = m[3] === 'first' ? 'First Class' : (m[3] === 'premium-economy' ? 'Premium Economy' : 'Business Class');
+      if (notes && !notes.value) notes.value = `Interested in ${cabin.value.toLowerCase()} options for ${normalize(m[1])} to ${normalize(m[2])}.`;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  autofillInlineRequestFromPage();
+}, { once: true });
