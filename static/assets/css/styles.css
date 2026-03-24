@@ -687,3 +687,9 @@ footer {
 .destination-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
 .destination-card::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,10,14,.06),rgba(7,10,14,.38) 55%,rgba(7,10,14,.68));z-index:1;}
 .destination-card span{position:relative;z-index:2;}
+
+.brand-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand-text-home{display:flex;flex-direction:column}
+.brand-title-home{font-family:Georgia,serif;font-size:2.05rem;font-weight:700;line-height:1;color:#fff6e8;text-shadow:0 3px 18px rgba(0,0,0,.25)}
+.brand-tag-home{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:#ead7ab;margin-top:6px}
+@media (max-width: 720px){.brand-title-home{font-size:1.4rem}.brand-tag-home{font-size:.68rem;letter-spacing:.12em}}

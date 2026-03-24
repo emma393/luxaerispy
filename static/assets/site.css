@@ -396,3 +396,18 @@ body,p,.section-intro,.small-muted{color:#2f2924!important}
 .footer{padding:18px 0 10px!important;margin-top:22px!important}
 .footer-grid{gap:10px!important}
 .footer p,.footer a,.footer-note{font-size:13px!important;line-height:1.45!important}
+
+
+/* v9 city page refinement */
+.route-bubbles{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.route-bubble,.city-bubble{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;text-decoration:none;color:#2a211b;background:#fbf7f1;border:1px solid rgba(39,28,20,.12);font-weight:700;font-size:15px;box-shadow:0 8px 18px rgba(0,0,0,.04)}
+.route-bubble:hover,.city-bubble:hover{background:#f1e4cf;border-color:rgba(168,128,67,.35)}
+.content-panel ul{padding-left:20px;margin:0}.content-panel li{margin:0 0 10px;color:#4a4036}
+.site-footer{padding:20px 0 10px!important}.footer-inner{min-height:auto!important;gap:12px!important}.site-footer nav{gap:14px!important}
+.hero-grid.city-guide-grid{grid-template-columns:1.05fr .95fr;align-items:stretch}
+.city-guide-grid .glass{background:#fff;border:1px solid rgba(39,28,20,.10);box-shadow:0 18px 34px rgba(0,0,0,.05)}
+.city-guide-grid .hero-shot{min-height:360px;border:1px solid rgba(39,28,20,.10)}
+.related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:26px}
+.related-box{background:#fff;border:1px solid rgba(39,28,20,.10);border-radius:22px;padding:24px;box-shadow:0 18px 34px rgba(0,0,0,.04)}
+.related-box p,.content-panel p,.lede{color:#4b4239!important}
+@media (max-width: 960px){.hero-grid.city-guide-grid,.related-grid{grid-template-columns:1fr}}
