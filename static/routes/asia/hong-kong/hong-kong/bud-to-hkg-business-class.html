@@ -27,8 +27,8 @@
 <link href="/assets/images/favicon.svg" rel="shortcut icon"/>
 <link href="/assets/site.css" rel="stylesheet"/>
 <script src="/assets/site-config.js"></script><script defer="" src="/assets/site.js"></script>
-</head>
-<body>
+<script defer="" src="/assets/lead-sidebar.js"></script><link href="/assets/lead-sidebar.css" rel="stylesheet"/><script src="/assets/site-config.js"></script><script defer="" src="/assets/lead-sidebar.js"></script></head>
+<body class="lxa-has-sidebar">
 <div class="topbar"><div class="container topbar-inner"><span>No booking fees on tailored requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
 <header class="site-header">
 <div class="container nav">
@@ -49,7 +49,7 @@
 </div>
 </header>
 <a class="btn btn-primary floating-request" href="/request.html">Request tailored options</a>
-<main>
+<main><div class="container lxa-page-grid"><div class="lxa-main-col">
 <section class="lux-hero">
 <img alt="Budapest to Hong Kong Business Class" src="/assets/generated_png/dest-hong-kong.png"/>
 <div class="lux-hero-overlay"></div>
@@ -94,81 +94,79 @@
 </div>
 </div>
 </section>
-<section class="inline-request-section">
-<div class="container">
-<div class="request-form-shell panel">
-<div class="request-shell-copy">
-<p class="kicker">Request tailored options</p>
-<h2>Get your personalized premium flight options without leaving this page.</h2>
-<p class="microcopy">LuxAeris does not sell tickets directly. We help travelers request curated business class, first class, and premium economy options through a cleaner concierge-style process. No service fee. Fast follow-up. Premium routes only.</p>
-<div class="request-trust-row"><span>No service fee</span><span>Fast response</span><span>Lead-only concierge model</span></div>
 </div>
-<form class="request-form inline-request-form" id="quoteRequestForm" novalidate="">
-<div class="field-group compact-row">
-<div style="position:relative">
-<label class="label">Origin</label>
-<input data-location-input="" name="origin" placeholder="Start typing city or airport" value="BUD"/>
+<aside class="lxa-sidebar-col">
+<div class="lxa-sticky-card">
+<div class="lxa-form-head">
+<p class="lxa-kicker">Request tailored options</p>
+<h2>Get business or first class options without leaving this page.</h2>
+<p>Share your route, dates, and preferences to receive premium flight options sourced through LuxAeris. We do not sell tickets directly, and there is no LuxAeris service fee.</p>
+<ul class="lxa-trust-list">
+<li>No booking fee from LuxAeris</li>
+<li>Business, first, and premium economy</li>
+<li>Fast follow-up on long-haul routes</li>
+</ul>
 </div>
-<div style="position:relative">
-<label class="label">Destination</label>
-<input data-location-input="" name="destination" placeholder="Start typing city or airport" value="HKG"/>
+<form class="lxa-quote-form" data-page-lead="sidebar" novalidate="">
+<input name="leadContext" type="hidden" value="sidebar-inline"/>
+<div class="lxa-field-grid">
+<div class="lxa-field autocomplete-field">
+<label for="lxa-origin">Origin</label>
+<input autocomplete="off" data-location-input="" id="lxa-origin" name="origin" placeholder="Type city or airport" required="" type="text"/>
+</div>
+<div class="lxa-field autocomplete-field">
+<label for="lxa-destination">Destination</label>
+<input autocomplete="off" data-location-input="" id="lxa-destination" name="destination" placeholder="Type city or airport" required="" type="text"/>
+</div>
+<div class="lxa-field">
+<label for="lxa-tripType">Trip type</label>
+<select id="lxa-tripType" name="tripType">
+<option>Round Trip</option>
+<option>One Way</option>
+<option>Multi City</option>
+</select>
+</div>
+<div class="lxa-field">
+<label for="lxa-cabin">Cabin</label>
+<select id="lxa-cabin" name="cabin">
+<option>Business Class</option>
+<option>First Class</option>
+<option>Premium Economy</option>
+</select>
+</div>
+<div class="lxa-field">
+<label for="lxa-departDate">Departure date</label>
+<input id="lxa-departDate" name="departDate" required="" type="date"/>
+</div>
+<div class="lxa-field">
+<label for="lxa-returnDate">Return date</label>
+<input id="lxa-returnDate" name="returnDate" type="date"/>
+</div>
+<div class="lxa-field">
+<label for="lxa-fullName">Full name</label>
+<input id="lxa-fullName" name="fullName" placeholder="Your name" required="" type="text"/>
+</div>
+<div class="lxa-field">
+<label for="lxa-email">Email</label>
+<input id="lxa-email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="lxa-field lxa-field-full">
+<label for="lxa-phone">Phone or WhatsApp</label>
+<input id="lxa-phone" name="phone" placeholder="+1 000 000 0000" required="" type="tel"/>
+</div>
+<div class="lxa-field lxa-field-full">
+<label for="lxa-notes">Notes</label>
+<textarea id="lxa-notes" name="notes" placeholder="Airline preferences, flexibility, passengers, or anything else helpful."></textarea>
 </div>
 </div>
-<div class="field-group compact-row">
-<div>
-<label class="label">Departure date</label>
-<div class="date-shell"><input max="" min="" name="departDate" type="date"/><button aria-label="Choose departure date" class="date-trigger" type="button">📅</button><div class="date-display">mm.dd.yyyy</div></div>
-</div>
-<div>
-<label class="label">Return date</label>
-<div class="date-shell"><input max="" min="" name="returnDate" type="date"/><button aria-label="Choose return date" class="date-trigger" type="button">📅</button><div class="date-display">mm.dd.yyyy</div></div>
-</div>
-</div>
-<div class="field-group compact-row">
-<div>
-<label class="label">Cabin</label>
-<select name="cabin"><option selected="">Business Class</option><option>First Class</option><option>Premium Economy</option></select>
-</div>
-<div>
-<label class="label">Trip type</label>
-<select name="tripType"><option>Round Trip</option><option>One Way</option><option>Multi City</option></select>
-</div>
-</div>
-<div class="field-group compact-row">
-<div>
-<label class="label">Full name</label>
-<input name="fullName" placeholder="Your full name" required=""/>
-</div>
-<div>
-<label class="label">Email</label>
-<input name="email" placeholder="you@example.com" required="" type="email"/>
-</div>
-</div>
-<div class="field-group compact-row">
-<div>
-<label class="label">Phone or WhatsApp</label>
-<input name="phone" placeholder="+1 000 000 0000" required="" type="tel"/>
-</div>
-<div>
-<label class="label">Budget</label>
-<select name="budget"><option value="">Select budget</option><option>$2K–$5K</option><option>$5K–$10K</option><option>$10K–$15K</option><option>$15K–$25K</option><option>$25K+</option></select>
-</div>
-</div>
-<div class="field-group full-row">
-<label class="label">Notes</label>
-<textarea name="notes" placeholder="Preferred airline, flexibility, travelers, or any premium travel details that matter to you.">Interested in business class options for BUD to HKG.</textarea>
-</div>
-<div class="field-group full-row submit-row">
-<button class="btn btn-primary" type="submit">Submit request from this page</button>
-<a class="btn btn-secondary" href="/request.html">Open full request page</a>
-</div>
-<div aria-live="polite" class="form-status" id="formStatus"></div>
-<p class="microcopy microcopy-small">Availability changes quickly on premium cabins. If your dates or airport are not final, submit anyway and LuxAeris can refine the request with you.</p>
+<p class="lxa-microcopy">Not sure about the exact airport or date yet? Send the closest version now and refine it with the agent after submission.</p>
+<button class="btn btn-primary lxa-submit-btn" type="submit">Request tailored options</button>
+<p aria-live="polite" class="lxa-form-status"></p>
+<a class="lxa-request-page-link" href="/request.html">Open the full request page</a>
 </form>
 </div>
-</div>
-</section>
-</main>
-<footer class="footer"><div class="container footer-grid"><div><strong>LuxAeris</strong><p>Premium route intelligence, airport guidance, and refined travel research for business and first class journeys.</p></div><div><strong>Explore</strong><p><a href="..//destinations/index.html">Destinations</a><br/><a href="..//airlines/index.html">Airlines</a><br/><a href="..//routes/index.html">Routes</a><br/><a href="..//airports/index.html">Airports</a></p></div><div><strong>Support</strong><p><a href="..//contact.html">Contact</a><br/><a href="..//faq.html">FAQ</a><br/><a href="..//request.html">Request tailored options</a></p></div><div><strong>Company</strong><p><a href="..//about.html">About</a><br/><a href="..//privacy-policy.html">Privacy Policy</a><br/><a href="..//terms-and-conditions.html">Terms &amp; Conditions</a></p></div></div><div class="container footer-sub"><p class="footer-note">LuxAeris is an independent premium travel discovery platform. We do not issue tickets directly. Requests may be shared with selected travel partners to help travelers explore relevant options.</p></div></footer>
+</aside>
+</div></main>
+<footer class="footer"><div class="container footer-grid"><div><strong>LuxAeris</strong><p>Premium route intelligence, airport guidance, and refined travel research for business and first class journeys.</p></div><div><strong>Explore</strong><p><a href="/destinations/index.html">Destinations</a><br/><a href="/airlines/index.html">Airlines</a><br/><a href="/routes/index.html">Routes</a><br/><a href="/airports/index.html">Airports</a></p></div><div><strong>Support</strong><p><a href="/contact.html">Contact</a><br/><a href="/faq.html">FAQ</a><br/><a href="/request.html">Request tailored options</a></p></div><div><strong>Company</strong><p><a href="/about.html">About</a><br/><a href="/privacy-policy.html">Privacy Policy</a><br/><a href="/terms-and-conditions.html">Terms &amp; Conditions</a></p></div></div><div class="container footer-sub"><p class="footer-note">LuxAeris is an independent premium travel discovery platform. We do not issue tickets directly. Requests may be shared with selected travel partners to help travelers explore relevant options.</p></div></footer>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><div class="cookie-inner"><div><strong style="color:#fff8f1">Cookie notice</strong><p>LuxAeris uses cookies and similar technologies to improve site functionality, remember preferences, and understand website usage.</p></div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-secondary" id="cookieReject" type="button">Reject</button><button class="btn btn-primary" id="cookieAccept" type="button">Accept</button></div></div></div>
 </body></html>

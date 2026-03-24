@@ -1,0 +1,28 @@
+.lxa-page-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:28px;align-items:start}
+.lxa-main-col>.container{width:100%;padding-left:0;padding-right:0;max-width:none}
+.lxa-sidebar-col{position:relative}
+.lxa-sticky-card{position:sticky;top:104px;border-radius:26px;padding:24px;background:linear-gradient(180deg,rgba(255,250,243,.98),rgba(248,238,228,.96));border:1px solid rgba(122,88,52,.16);box-shadow:0 24px 48px rgba(25,16,11,.12)}
+.lxa-kicker{margin:0 0 8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8f6d4a;font-weight:700}
+.lxa-form-head h2{font-size:1.65rem;line-height:1.15;margin:0 0 10px;color:#1f1711}
+.lxa-form-head p{margin:0 0 12px;color:#4b3e35;line-height:1.6}
+.lxa-trust-list{display:grid;gap:8px;margin:0 0 16px;padding:0;list-style:none;color:#3f342c;font-size:.95rem}
+.lxa-trust-list li{padding-left:18px;position:relative}
+.lxa-trust-list li:before{content:"•";position:absolute;left:0;color:#a67d52}
+.lxa-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lxa-field,.lxa-field-full{display:grid;gap:6px}
+.lxa-field-full{grid-column:1/-1}
+.lxa-quote-form label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#6e5a4a;font-weight:700}
+.lxa-quote-form input,.lxa-quote-form select,.lxa-quote-form textarea{width:100%;border:1px solid rgba(76,55,33,.16);border-radius:14px;padding:13px 14px;background:#fff;color:#1d1713;font:inherit}
+.lxa-quote-form textarea{min-height:94px;resize:vertical}
+.lxa-submit-btn{width:100%;margin-top:12px}
+.lxa-microcopy,.lxa-form-status,.lxa-request-page-link{display:block;margin-top:10px;font-size:.92rem;line-height:1.55}
+.lxa-form-status{min-height:1.4em;color:#6a543e}
+.lxa-request-page-link{color:#6e4d2e;text-decoration:none;font-weight:600}
+.lxa-airport-dropdown{position:absolute;left:0;right:0;top:100%;margin-top:6px;background:#fff;border:1px solid rgba(76,55,33,.16);border-radius:16px;overflow:hidden;box-shadow:0 20px 30px rgba(0,0,0,.12);z-index:40}
+.lxa-airport-option{display:flex;justify-content:space-between;gap:12px;width:100%;background:#fff;border:0;padding:12px 14px;text-align:left;cursor:pointer}
+.lxa-airport-option strong{font-size:.95rem;color:#241c17}
+.lxa-airport-option span{font-size:.88rem;color:#67564a}
+.lxa-airport-option:hover{background:#f7efe7}
+.field-invalid{border-color:#b74f4f!important;box-shadow:0 0 0 3px rgba(183,79,79,.08)}
+@media (max-width: 1100px){.lxa-page-grid{grid-template-columns:1fr}.lxa-sticky-card{position:static;top:auto}.lxa-sidebar-col{order:-1}}
+@media (max-width: 720px){.lxa-field-grid{grid-template-columns:1fr}.lxa-sticky-card{padding:18px;border-radius:20px}.lxa-form-head h2{font-size:1.35rem}}
