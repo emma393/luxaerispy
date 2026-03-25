@@ -693,3 +693,22 @@ footer {
 .brand-title-home{font-family:Georgia,serif;font-size:2.05rem;font-weight:700;line-height:1;color:#fff6e8;text-shadow:0 3px 18px rgba(0,0,0,.25)}
 .brand-tag-home{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:#ead7ab;margin-top:6px}
 @media (max-width: 720px){.brand-title-home{font-size:1.4rem}.brand-tag-home{font-size:.68rem;letter-spacing:.12em}}
+
+
+/* Organic click optimization blocks */
+.luxaeris-topline{margin:10px 0 0;color:#6f6256;font-size:18px;max-width:62ch}
+.luxaeris-click-boost{margin:34px 0;padding:24px 26px;border:1px solid rgba(110,88,59,.16);border-radius:24px;background:linear-gradient(180deg,#f9f4ec,#f6efe5)}
+.luxaeris-click-boost h2{margin:0 0 12px;font-size:clamp(26px,2vw,34px)}
+.luxaeris-click-boost p{margin:0 0 12px;color:#51463d}
+.luxaeris-click-boost ul{margin:0;padding-left:18px;color:#51463d}
+.luxaeris-click-boost li{margin:0 0 8px}
+.luxaeris-fare-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.luxaeris-fare-card{padding:16px;border-radius:18px;background:#fffdf9;border:1px solid rgba(110,88,59,.14)}
+.luxaeris-fare-card strong{display:block;margin-bottom:6px}
+.luxaeris-faq{margin:34px 0;padding:24px 26px;border:1px solid rgba(110,88,59,.16);border-radius:24px;background:#fffdfa}
+.luxaeris-faq h2{margin:0 0 12px;font-size:clamp(26px,2vw,34px)}
+.luxaeris-faq details{border-top:1px solid rgba(110,88,59,.14);padding:14px 0}
+.luxaeris-faq details:first-of-type{border-top:none;padding-top:0}
+.luxaeris-faq summary{cursor:pointer;font-weight:700}
+.luxaeris-faq p{margin:10px 0 0;color:#51463d}
+@media (max-width: 900px){.luxaeris-fare-grid{grid-template-columns:1fr}}
