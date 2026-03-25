@@ -596,3 +596,139 @@ body.has-sticky-request-rail .floating-request{display:none !important;}
     grid-template-columns:1fr !important;
   }
 }
+
+
+/* ===== Final layout rebuild: left request rail, responsive content, safer image/title handling ===== */
+body.has-sticky-request-rail .luxaeris-two-col-target,
+body.has-sticky-request-rail .page-shell > .container{
+  width:min(1460px, calc(100% - 40px)) !important;
+  max-width:none !important;
+  margin:24px auto 0 !important;
+  padding:0 !important;
+  display:grid !important;
+  grid-template-columns:380px minmax(0, 1fr) !important;
+  gap:28px !important;
+  align-items:start !important;
+}
+
+body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-fixed-rail,
+body.has-sticky-request-rail .page-shell > .container > .luxaeris-fixed-rail{
+  grid-column:1 !important;
+  position:sticky !important;
+  top:96px !important;
+  align-self:start !important;
+  width:100% !important;
+  max-width:380px !important;
+  margin:0 !important;
+  z-index:40 !important;
+}
+
+body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-main-column,
+body.has-sticky-request-rail .page-shell > .container > .luxaeris-main-column{
+  grid-column:2 !important;
+  min-width:0 !important;
+  width:100% !important;
+}
+
+body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-main-column > .container,
+body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-main-column .container,
+body.has-sticky-request-rail .page-shell > .container > .luxaeris-main-column > .container,
+body.has-sticky-request-rail .page-shell > .container > .luxaeris-main-column .container{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card{
+  padding:22px !important;
+  border-radius:26px !important;
+}
+
+body.has-sticky-request-rail .visual-card img,
+body.has-sticky-request-rail .deal-card img,
+body.has-sticky-request-rail .feature-card img,
+body.has-sticky-request-rail .airport-card img,
+body.has-sticky-request-rail .destination-card img,
+body.has-sticky-request-rail .route-card img{
+  height:190px !important;
+  object-fit:cover !important;
+  object-position:center 35% !important;
+}
+
+body.has-sticky-request-rail .index-visual-grid,
+body.has-sticky-request-rail .card-grid,
+body.has-sticky-request-rail .hierarchy-grid,
+body.has-sticky-request-rail .related-grid{
+  grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+  gap:20px !important;
+}
+
+body.has-sticky-request-rail .hero-grid.city-guide-grid{
+  grid-template-columns:minmax(0,1fr) minmax(280px,420px) !important;
+  gap:22px !important;
+  align-items:stretch !important;
+}
+
+body.has-sticky-request-rail .city-guide-grid .hero-shot{
+  width:100% !important;
+  height:100% !important;
+  min-height:300px !important;
+  max-height:340px !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  background:none !important;
+  border-radius:24px !important;
+  padding:0 !important;
+}
+
+body.has-sticky-request-rail .hero-title,
+body.has-sticky-request-rail .visual-card h3,
+body.has-sticky-request-rail .deal-card h3,
+body.has-sticky-request-rail .related-box h2{
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+body.has-sticky-request-rail .visual-card,
+body.has-sticky-request-rail .deal-card,
+body.has-sticky-request-rail .feature-card,
+body.has-sticky-request-rail .related-box{
+  overflow:hidden !important;
+}
+
+@media (max-width: 1180px){
+  body.has-sticky-request-rail .luxaeris-two-col-target,
+  body.has-sticky-request-rail .page-shell > .container{
+    grid-template-columns:1fr !important;
+  }
+  body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-fixed-rail,
+  body.has-sticky-request-rail .page-shell > .container > .luxaeris-fixed-rail,
+  body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-main-column,
+  body.has-sticky-request-rail .page-shell > .container > .luxaeris-main-column{
+    grid-column:auto !important;
+    max-width:none !important;
+    width:100% !important;
+  }
+  body.has-sticky-request-rail .luxaeris-two-col-target > .luxaeris-fixed-rail,
+  body.has-sticky-request-rail .page-shell > .container > .luxaeris-fixed-rail{
+    position:static !important;
+    order:-1 !important;
+  }
+}
+
+@media (max-width: 860px){
+  body.has-sticky-request-rail .index-visual-grid,
+  body.has-sticky-request-rail .card-grid,
+  body.has-sticky-request-rail .hierarchy-grid,
+  body.has-sticky-request-rail .related-grid,
+  body.has-sticky-request-rail .hero-grid.city-guide-grid{
+    grid-template-columns:1fr !important;
+  }
+  body.has-sticky-request-rail .visual-card img,
+  body.has-sticky-request-rail .deal-card img,
+  body.has-sticky-request-rail .feature-card img{
+    height:210px !important;
+  }
+}
