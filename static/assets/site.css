@@ -25,7 +25,7 @@ body{
 }
 img{max-width:100%; display:block}
 a{color:inherit}
-.container{width:min(1380px, calc(100% - 48px)); margin:0 auto}
+.container{width:min(1180px, calc(100% - 40px)); margin:0 auto}
 .kicker{
   text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:700; color:var(--gold-deep);
 }
@@ -128,7 +128,7 @@ textarea{min-height:120px; padding-top:16px}
 }
 .card,.panel{padding:22px}
 .deal-card,.visual-card{overflow:hidden; text-decoration:none}
-.visual-card img,.deal-card img{width:100%; height:260px; object-fit:cover; object-position:center top; background:#eadfce}
+.visual-card img,.deal-card img{width:100%; height:220px; object-fit:cover}
 .visual-card-body,.deal-card-body{padding:18px}
 .page-hero{
   padding:72px 0 22px;
@@ -428,12 +428,10 @@ body,p,.section-intro,.small-muted{color:#2f2924!important}
 .floating-request,.funnel-banner,.popup-overlay{display:none!important}
 body.has-sticky-request-rail .site-header .container,
 body.has-sticky-request-rail .topbar .container,
-body.has-sticky-request-rail .footer .container{width:min(1440px,calc(100% - 48px));margin:0 auto}
-body.has-sticky-request-rail .luxaeris-layout-grid{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:40px;align-items:start;width:min(1440px,calc(100% - 48px));margin:0 auto}
-body.has-sticky-request-rail .luxaeris-main-column{min-width:0;max-width:100%;padding-right:8px}
-body.has-sticky-request-rail .luxaeris-request-rail{min-width:0}
-body.has-sticky-request-rail .luxaeris-request-rail .request-card{position:sticky;top:106px;background:linear-gradient(180deg,#fffaf3,#f5ecde);border:1px solid rgba(39,28,20,.10);border-radius:28px;padding:24px;box-shadow:0 18px 38px rgba(39,28,20,.10)}
-body.has-sticky-request-rail .luxaeris-request-rail h2{font-size:clamp(28px,2.2vw,42px);margin-bottom:10px}
+body.has-sticky-request-rail .footer .container{width:min(1380px,calc(100% - 48px));margin:0 auto}
+body.has-sticky-request-rail .luxaeris-fixed-rail{z-index:900}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card{background:linear-gradient(180deg,#fffaf3,#f5ecde);border:1px solid rgba(39,28,20,.10);border-radius:28px;padding:24px;box-shadow:0 18px 38px rgba(39,28,20,.10)}
+body.has-sticky-request-rail .luxaeris-fixed-rail h2{font-size:clamp(28px,2.2vw,42px);margin-bottom:10px}
 body.has-sticky-request-rail .request-lede{font-size:18px;color:#4a3f36}
 body.has-sticky-request-rail .proof-list{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px}
 body.has-sticky-request-rail .proof-list span{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid rgba(39,28,20,.08);font-size:13px;font-weight:700;color:#624d2d}
@@ -460,25 +458,91 @@ body.has-sticky-request-rail .mini-link-grid{display:grid;grid-template-columns:
 body.has-sticky-request-rail .mini-link-card{display:block;padding:18px;border-radius:20px;background:#fff;border:1px solid rgba(39,28,20,.08);text-decoration:none;box-shadow:0 10px 24px rgba(39,28,20,.05)}
 body.has-sticky-request-rail .mini-link-card strong{display:block;font-size:18px;margin-bottom:4px}
 body.has-sticky-request-rail .mini-link-card span{color:#6e6258}
-body.has-sticky-request-rail .section>.container:not(.luxaeris-layout-grid),
-body.has-sticky-request-rail main>.container:not(.luxaeris-layout-grid),
-body.has-sticky-request-rail .page-shell>.container:not(.luxaeris-layout-grid){width:min(1440px,calc(100% - 48px));margin:0 auto}
-body.has-sticky-request-rail .feature-grid{grid-template-columns:minmax(0,1fr)!important}
-body.has-sticky-request-rail .index-visual-grid,
-body.has-sticky-request-rail .card-grid,
-body.has-sticky-request-rail .hierarchy-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-body.has-sticky-request-rail h1.section-title,
-body.has-sticky-request-rail .section-title{font-size:clamp(42px,4.8vw,74px);max-width:900px}
-@media (max-width:1180px){
-  body.has-sticky-request-rail .luxaeris-layout-grid{grid-template-columns:1fr}
-  body.has-sticky-request-rail .luxaeris-request-rail .request-card{position:static;top:auto}
+@media (min-width:1200px){
+  body.has-sticky-request-rail .luxaeris-fixed-rail{position:fixed;top:106px;right:24px;width:390px;max-height:calc(100vh - 132px);overflow:auto}
+  body.has-sticky-request-rail main .container,
+  body.has-sticky-request-rail .page-shell>.container,
+  body.has-sticky-request-rail body>section>.container{width:min(1020px,calc(100vw - 470px));margin-left:24px;margin-right:auto}
+  body.has-sticky-request-rail .feature-grid{grid-template-columns:minmax(0,1fr)!important}
+  body.has-sticky-request-rail .index-visual-grid,
+  body.has-sticky-request-rail .card-grid,
+  body.has-sticky-request-rail .hierarchy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1199px){
+  body.has-sticky-request-rail .luxaeris-fixed-rail{position:relative;width:auto;max-width:none;margin:18px 24px 0}
 }
 @media (max-width:760px){
+  .container{width:min(100% - 28px,1380px)}
   body.has-sticky-request-rail .rail-quote-form,
   body.has-sticky-request-rail .luxaeris-price-box,
   body.has-sticky-request-rail .index-visual-grid,
   body.has-sticky-request-rail .card-grid,
   body.has-sticky-request-rail .hierarchy-grid,
   body.has-sticky-request-rail .mini-link-grid{grid-template-columns:1fr!important}
+  body.has-sticky-request-rail .luxaeris-fixed-rail{margin:18px 14px 0}
 }
+
+
+/* FINAL LAYOUT GRID OVERRIDE */
+body.has-sticky-request-rail .luxaeris-layout-shell{
+  width:min(1380px, calc(100% - 40px));
+  margin:28px auto 0;
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 390px;
+  gap:34px;
+  align-items:start;
+}
+body.has-sticky-request-rail .luxaeris-main-column{min-width:0}
+body.has-sticky-request-rail .luxaeris-main-column > main,
+body.has-sticky-request-rail .luxaeris-main-column > section,
+body.has-sticky-request-rail .luxaeris-main-column > div{margin-top:0}
+body.has-sticky-request-rail .luxaeris-main-column .container,
+body.has-sticky-request-rail .luxaeris-main-column main .container,
+body.has-sticky-request-rail .luxaeris-main-column section .container,
+body.has-sticky-request-rail .luxaeris-main-column .page-shell > .container{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+body.has-sticky-request-rail .luxaeris-fixed-rail{
+  position:sticky !important;
+  top:106px !important;
+  right:auto !important;
+  width:390px !important;
+  max-height:none !important;
+  overflow:visible !important;
+  margin:0 !important;
+  align-self:start;
+  z-index:50;
+}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card{
+  background:linear-gradient(180deg,#fffaf3,#f5ecde);
+  border:1px solid rgba(39,28,20,.10);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 18px 38px rgba(39,28,20,.10);
+}
+body.has-sticky-request-rail .feature-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+body.has-sticky-request-rail .hero-grid.city-guide-grid{grid-template-columns:minmax(0,1.04fr) minmax(360px,.96fr) !important}
+body.has-sticky-request-rail .hero-title{font-size:clamp(36px, 4vw, 60px); line-height:1.02; overflow-wrap:break-word}
+body.has-sticky-request-rail .city-guide-grid .hero-shot,
+body.has-sticky-request-rail .hero-shot{width:100% !important; height:100% !important; min-height:360px !important; object-fit:cover !important; object-position:center center !important; padding:0 !important}
+body.has-sticky-request-rail .gallery img{height:220px; object-fit:cover}
+body.has-sticky-request-rail .page-hero .container{padding-top:0}
+body.has-sticky-request-rail .luxaeris-trust-line{margin:10px 0 18px}
+body.has-sticky-request-rail .breadcrumbs{margin:0 0 14px}
+@media (max-width: 1199px){
+  body.has-sticky-request-rail .luxaeris-layout-shell{grid-template-columns:1fr; width:min(1380px, calc(100% - 32px));}
+  body.has-sticky-request-rail .luxaeris-fixed-rail{position:static !important; width:auto !important; margin-top:8px !important;}
+}
+@media (max-width: 760px){
+  body.has-sticky-request-rail .luxaeris-layout-shell{width:min(100% - 24px, 1380px); gap:20px;}
+  body.has-sticky-request-rail .feature-grid,
+  body.has-sticky-request-rail .hero-grid.city-guide-grid,
+  body.has-sticky-request-rail .rail-quote-form,
+  body.has-sticky-request-rail .luxaeris-price-box,
+  body.has-sticky-request-rail .mini-link-grid,
+  body.has-sticky-request-rail .related-grid{grid-template-columns:1fr !important;}
 }
