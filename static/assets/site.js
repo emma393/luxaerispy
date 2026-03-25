@@ -624,46 +624,45 @@ function bindUniversalQuoteForms(){
   });
 }
 
-function luxaerisBuildLayoutShell(){
-  const footer = document.querySelector('footer.footer, footer');
-  if (!footer) return null;
-  const header = document.querySelector('header.site-header, header');
-  const shell = document.createElement('section');
-  shell.className = 'luxaeris-layout-shell';
-  const mainCol = document.createElement('div');
-  mainCol.className = 'luxaeris-main-column';
-  shell.appendChild(mainCol);
-  let node = header ? header.nextElementSibling : document.body.firstElementChild;
-  while (node && node !== footer) {
-    const next = node.nextElementSibling;
-    if (!node.classList.contains('luxaeris-fixed-rail') && !node.classList.contains('cookie-banner')) {
-      mainCol.appendChild(node);
-    }
-    node = next;
-  }
-  footer.parentNode.insertBefore(shell, footer);
-  return shell;
-}
+function luxaerisBuildLayoutShell(){ return null; }
 
 function luxaerisInjectRail(){
-  if (!luxaerisShouldHaveRail() || document.querySelector('.luxaeris-fixed-rail')) return;
+  if (!luxaerisShouldHaveRail()) return;
   document.body.classList.add('has-sticky-request-rail');
   document.querySelectorAll('.floating-request').forEach(el => el.remove());
-  document.querySelectorAll('section, article, div').forEach(block => {
+  const h1 = document.querySelector('main h1, .page-shell h1, section h1, .section h1, .page-hero h1');
+  const contextTitle = h1 ? h1.textContent.trim() : 'this trip';
+  let container = document.querySelector('.luxaeris-two-col-target, main.page-shell > .container, .page-shell > .container, section.section > .container, main > .container, body > section > .container');
+  if (!container) {
+    luxaerisInjectEnhancements();
+    bindUniversalQuoteForms();
+    return;
+  }
+  container.classList.add('luxaeris-two-col-target');
+  container.querySelectorAll('section, article, div').forEach(block => {
     const heading = block.querySelector && block.querySelector('h2,h3');
     if (!heading) return;
     const txt = (heading.textContent || '').trim().toLowerCase();
     if (txt.includes('request a tailor') || txt.includes('request a quote') || txt.includes('request this route') || txt.includes('tailor-made itinerary')) {
-      if ((block.textContent || '').trim().length < 700) block.remove();
+      if ((block.textContent || '').trim().length < 1200) block.remove();
     }
   });
-  const h1 = document.querySelector('main h1, body > section h1, .page-shell h1, .section h1, .page-hero h1');
-  const contextTitle = h1 ? h1.textContent.trim() : 'this trip';
-  const shell = luxaerisBuildLayoutShell();
-  if (!shell) {
-    document.body.insertAdjacentHTML('beforeend', luxaerisRailHTML(contextTitle));
-  } else {
-    shell.insertAdjacentHTML('beforeend', luxaerisRailHTML(contextTitle));
+  let rail = container.querySelector(':scope > .luxaeris-fixed-rail');
+  if (!rail) {
+    container.insertAdjacentHTML('beforeend', luxaerisRailHTML(contextTitle));
+    rail = container.querySelector(':scope > .luxaeris-fixed-rail');
+  }
+  let mainCol = container.querySelector(':scope > .luxaeris-main-column');
+  if (!mainCol) {
+    mainCol = document.createElement('div');
+    mainCol.className = 'luxaeris-main-column';
+    Array.from(container.children).forEach(child => {
+      if (child !== rail) mainCol.appendChild(child);
+    });
+    container.insertBefore(mainCol, rail || null);
+  }
+  if (rail && rail.previousElementSibling !== mainCol) {
+    container.appendChild(rail);
   }
   luxaerisInjectEnhancements();
   bindUniversalQuoteForms();
