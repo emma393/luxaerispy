@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://luxaeris.com/sitemap.xml
+Sitemap: https://yourdomain.com/sitemap.xml

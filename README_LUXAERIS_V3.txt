@@ -1,1 +1,0 @@
-LuxAeris V3 includes improved destination, route, and airport guides; uppercase airport-code formatting; stronger meta descriptions; real city-guide content; and homepage city image cards over the original luxury video hero.
