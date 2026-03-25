@@ -423,21 +423,61 @@ body,p,.section-intro,.small-muted{color:#2f2924!important}
 .airport-pill{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;background:#fbf7f1;border:1px solid rgba(39,28,20,.12);text-decoration:none;color:#2a211b;font-weight:700;font-size:15px;box-shadow:0 8px 18px rgba(0,0,0,.04)}
 @media (max-width: 960px){.city-guide-grid .hero-shot,.city-guide-grid .glass{min-height:auto!important}}
 
-
-/* Organic click optimization blocks */
-.luxaeris-topline{margin:10px 0 0;color:#6f6256;font-size:18px;max-width:62ch}
-.luxaeris-click-boost{margin:34px 0;padding:24px 26px;border:1px solid rgba(110,88,59,.16);border-radius:24px;background:linear-gradient(180deg,#f9f4ec,#f6efe5)}
-.luxaeris-click-boost h2{margin:0 0 12px;font-size:clamp(26px,2vw,34px)}
-.luxaeris-click-boost p{margin:0 0 12px;color:#51463d}
-.luxaeris-click-boost ul{margin:0;padding-left:18px;color:#51463d}
-.luxaeris-click-boost li{margin:0 0 8px}
-.luxaeris-fare-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
-.luxaeris-fare-card{padding:16px;border-radius:18px;background:#fffdf9;border:1px solid rgba(110,88,59,.14)}
-.luxaeris-fare-card strong{display:block;margin-bottom:6px}
-.luxaeris-faq{margin:34px 0;padding:24px 26px;border:1px solid rgba(110,88,59,.16);border-radius:24px;background:#fffdfa}
-.luxaeris-faq h2{margin:0 0 12px;font-size:clamp(26px,2vw,34px)}
-.luxaeris-faq details{border-top:1px solid rgba(110,88,59,.14);padding:14px 0}
-.luxaeris-faq details:first-of-type{border-top:none;padding-top:0}
-.luxaeris-faq summary{cursor:pointer;font-weight:700}
-.luxaeris-faq p{margin:10px 0 0;color:#51463d}
-@media (max-width: 900px){.luxaeris-fare-grid{grid-template-columns:1fr}}
+/* LuxAeris final production layout */
+.container{width:min(1380px,calc(100% - 48px));}
+.floating-request,.funnel-banner,.popup-overlay{display:none!important}
+body.has-sticky-request-rail .site-header .container,
+body.has-sticky-request-rail .topbar .container,
+body.has-sticky-request-rail .footer .container{width:min(1380px,calc(100% - 48px));margin:0 auto}
+body.has-sticky-request-rail .luxaeris-fixed-rail{z-index:900}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card{background:linear-gradient(180deg,#fffaf3,#f5ecde);border:1px solid rgba(39,28,20,.10);border-radius:28px;padding:24px;box-shadow:0 18px 38px rgba(39,28,20,.10)}
+body.has-sticky-request-rail .luxaeris-fixed-rail h2{font-size:clamp(28px,2.2vw,42px);margin-bottom:10px}
+body.has-sticky-request-rail .request-lede{font-size:18px;color:#4a3f36}
+body.has-sticky-request-rail .proof-list{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px}
+body.has-sticky-request-rail .proof-list span{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid rgba(39,28,20,.08);font-size:13px;font-weight:700;color:#624d2d}
+body.has-sticky-request-rail .rail-quote-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+body.has-sticky-request-rail .rail-quote-form .full-row{grid-column:1/-1}
+body.has-sticky-request-rail .rail-quote-form .field label{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#6b5640;margin:0 0 6px}
+body.has-sticky-request-rail .rail-quote-form textarea{min-height:90px}
+body.has-sticky-request-rail .rail-quote-form .status{grid-column:1/-1;font-size:14px;color:#6d5e53;min-height:18px}
+body.has-sticky-request-rail .rail-quote-form .microcopy{grid-column:1/-1;margin:0;font-size:13px;color:#7a6c60}
+body.has-sticky-request-rail .trip-switch{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}
+body.has-sticky-request-rail .trip-switch .trip-tab{flex:1 1 auto;background:#fff;color:#2c2118;border:1px solid rgba(39,28,20,.10)}
+body.has-sticky-request-rail .trip-switch .trip-tab.active{background:linear-gradient(180deg,#e5c28d,#cfa35d);color:#22170f;border-color:#c29247}
+body.has-sticky-request-rail .luxaeris-trust-line{display:flex;flex-wrap:wrap;gap:10px;font-size:15px;font-weight:700;color:#7b6134;margin:8px 0 18px}
+body.has-sticky-request-rail .luxaeris-inline-faq{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 28px rgba(39,28,20,.06)}
+body.has-sticky-request-rail .luxaeris-inline-faq details{background:#fff;border:1px solid rgba(39,28,20,.08);border-radius:18px;padding:14px 16px;margin:0 0 12px}
+body.has-sticky-request-rail .luxaeris-inline-faq summary{font-weight:700;cursor:pointer}
+body.has-sticky-request-rail .luxaeris-price-box{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}
+body.has-sticky-request-rail .luxaeris-price-box .content-panel{padding:24px}
+body.has-sticky-request-rail .price-range{font-size:38px;font-family:'Cormorant Garamond', serif;color:#21170f;margin:4px 0 10px}
+body.has-sticky-request-rail .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:14px;color:#6e6258;margin:0 0 18px}
+body.has-sticky-request-rail .breadcrumbs .crumb:not(:last-child)::after{content:'›';margin-left:8px;color:#b69258}
+body.has-sticky-request-rail .breadcrumbs a{text-decoration:none;color:inherit}
+body.has-sticky-request-rail .mini-link-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:12px}
+body.has-sticky-request-rail .mini-link-card{display:block;padding:18px;border-radius:20px;background:#fff;border:1px solid rgba(39,28,20,.08);text-decoration:none;box-shadow:0 10px 24px rgba(39,28,20,.05)}
+body.has-sticky-request-rail .mini-link-card strong{display:block;font-size:18px;margin-bottom:4px}
+body.has-sticky-request-rail .mini-link-card span{color:#6e6258}
+@media (min-width:1200px){
+  body.has-sticky-request-rail .luxaeris-fixed-rail{position:fixed;top:106px;right:24px;width:390px;max-height:calc(100vh - 132px);overflow:auto}
+  body.has-sticky-request-rail main .container,
+  body.has-sticky-request-rail .page-shell>.container,
+  body.has-sticky-request-rail body>section>.container{width:min(1020px,calc(100vw - 470px));margin-left:24px;margin-right:auto}
+  body.has-sticky-request-rail .feature-grid{grid-template-columns:minmax(0,1fr)!important}
+  body.has-sticky-request-rail .index-visual-grid,
+  body.has-sticky-request-rail .card-grid,
+  body.has-sticky-request-rail .hierarchy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1199px){
+  body.has-sticky-request-rail .luxaeris-fixed-rail{position:relative;width:auto;max-width:none;margin:18px 24px 0}
+}
+@media (max-width:760px){
+  .container{width:min(100% - 28px,1380px)}
+  body.has-sticky-request-rail .rail-quote-form,
+  body.has-sticky-request-rail .luxaeris-price-box,
+  body.has-sticky-request-rail .index-visual-grid,
+  body.has-sticky-request-rail .card-grid,
+  body.has-sticky-request-rail .hierarchy-grid,
+  body.has-sticky-request-rail .mini-link-grid{grid-template-columns:1fr!important}
+  body.has-sticky-request-rail .luxaeris-fixed-rail{margin:18px 14px 0}
+}

@@ -1,54 +1,53 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
-<head><base href="/"/>
-<meta charset="utf-8"/>
-<meta content="en" http-equiv="content-language"/>
-<meta content="English" name="language"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="en">
+<meta name="language" content="English">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Live Route Search | LuxAeris</title>
-<meta content="Explore live route search on LuxAeris with premium travel context, route guidance, and business and first class insights." name="description"/>
-<meta content="index, follow" name="robots"/>
-<link href="https://luxaeris.com/tools/live-route-search.html" rel="canonical"/>
-<meta content="Live Route Search | LuxAeris" property="og:title"/>
-<meta content="Explore live route search on LuxAeris with premium travel context, route guidance, and business and first class insights." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://luxaeris.com/tools/live-route-search.html" property="og:url"/>
-<meta content="https://luxaeris.com/assets/images/real/business-class.jpg" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Live Route Search | LuxAeris" name="twitter:title"/>
-<meta content="Explore live route search on LuxAeris with premium travel context, route guidance, and business and first class insights." name="twitter:description"/>
-<meta content="https://luxaeris.com/assets/generated_png/dest-dubai.png" name="twitter:image"/>
-<link href="/assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="/assets/site.css" rel="stylesheet"/>
-<script defer="" src="/assets/site.js"></script>
+<meta name="description" content="Explore live route search on LuxAeris with premium travel context, route guidance, and business and first class insights.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://luxaeris.com/tools/live-route-search.html">
+<meta property="og:title" content="Live Route Search | LuxAeris">
+<meta property="og:description" content="Explore live route search on LuxAeris with premium travel context, route guidance, and business and first class insights.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://luxaeris.com/tools/live-route-search.html">
+<meta property="og:image" content="https://luxaeris.com/assets/images/real/business-class.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live Route Search | LuxAeris">
+<meta name="twitter:description" content="Explore live route search on LuxAeris with premium travel context, route guidance, and business and first class insights.">
+<meta name="twitter:image" content="https://luxaeris.com/assets/generated_png/dest-dubai.png">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css">
+<script defer src="/assets/site.js"></script>
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>No booking fees on tailored requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
 <header class="site-header">
-<div class="container nav">
-<a class="logo-wrap" href="/index.html"><img alt="LuxAeris shield logo" class="logo-img" src="/assets/images/logo-header.png"/><div><div class="brand-name">LuxAeris</div><div class="brand-tag">Premium route intelligence. Refined travel planning.</div></div></a>
-<nav class="nav-links">
-<a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/tools/index.html">Tools</a><a href="/search.html">Search</a><a class="btn btn-primary" href="/request.html">Request tailored options</a>
-</nav>
-</div>
+  <div class="container nav">
+    <a class="logo-wrap" href="/index.html"><img class="logo-img" src="/assets/images/logo-header.png" alt="LuxAeris shield logo"><div><div class="brand-name">LuxAeris</div><div class="brand-tag">Premium route intelligence. Refined travel planning.</div></div></a>
+    <nav class="nav-links">
+      <a href="/index.html">Home</a><a href="/destinations/index.html">Destinations</a><a href="/airlines/index.html">Airlines</a><a href="/airports/index.html">Airports</a><a href="/routes/index.html">Routes</a><a href="/tools/index.html">Tools</a><a href="/search.html">Search</a><a class="btn btn-primary" href="/request.html">Request tailored options</a>
+    </nav>
+  </div>
 </header>
 <section class="section" style="padding-top:120px">
-<div class="container" data-live-route-search="">
-<p class="kicker">Live API search</p>
-<h1 class="section-title">Live route search</h1>
-<p class="section-intro">Choose departure and arrival airports, then run a live route search through the configured aviation API.</p>
-<article class="panel">
-<form class="search-grid" style="grid-template-columns:1fr 1fr 1fr auto">
-<input data-location-input="" name="origin" placeholder="Origin airport"/>
-<input data-location-input="" name="destination" placeholder="Destination airport"/>
-<input name="date" type="date"/>
-<button class="btn btn-primary" type="submit">Search live</button>
-</form>
-<div class="card-grid" data-live-route-results="" style="margin-top:18px"></div>
-</article>
-</div>
+  <div class="container" data-live-route-search>
+    <p class="kicker">Live API search</p>
+    <h1 class="section-title">Live route search</h1>
+    <p class="section-intro">Choose departure and arrival airports, then run a live route search through the configured aviation API.</p>
+    <article class="panel">
+      <form class="search-grid" style="grid-template-columns:1fr 1fr 1fr auto">
+        <input data-location-input name="origin" placeholder="Origin airport">
+        <input data-location-input name="destination" placeholder="Destination airport">
+        <input type="date" name="date">
+        <button class="btn btn-primary" type="submit">Search live</button>
+      </form>
+      <div data-live-route-results class="card-grid" style="margin-top:18px"></div>
+    </article>
+  </div>
 </section>
 </body>
 </html>

@@ -497,3 +497,157 @@ function polishMicrocopy() {
   });
 }
 
+
+function luxaerisShouldHaveRail(){
+  const path = window.location.pathname.replace(/\/+/g,'/');
+  if (path === '/' || path === '/index.html' || path === '/request.html' || path === '/about.html' || path === '/contact.html' || path === '/faq.html' || path === '/privacy-policy.html' || path === '/terms-and-conditions.html' || path === '/cookie-policy.html' || path === '/disclaimer.html' || path === '/thank-you.html' || path === '/search.html') return false;
+  return /^\/(destinations|routes|airports|airlines|cabins)\//.test(path);
+}
+
+function luxaerisRailHTML(contextTitle){
+  return `<aside class="luxaeris-fixed-rail"><div class="request-card"><p class="kicker">Request tailored options</p><h2>Get business or first class options without leaving this page.</h2><p class="request-lede">Share your route, dates, and preferences for ${contextTitle}. LuxAeris does not sell tickets directly and there is no LuxAeris service fee.</p><div class="proof-list"><span>No service fee</span><span>Premium airlines</span><span>Fast follow-up</span></div><form class="rail-quote-form" data-luxaeris-form="rail" novalidate><div class="trip-switch"><button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button><button class="trip-tab" type="button" data-trip="oneway">One Way</button><button class="trip-tab" type="button" data-trip="multicity">Multi City</button><input type="hidden" name="tripType" value="roundtrip"></div><div class="field full-row"><label>Origin</label><input name="origin" data-location-input placeholder="Type city or airport" required></div><div class="field full-row"><label>Destination</label><input name="destination" data-location-input placeholder="Type city or airport" required></div><div class="field"><label>Departure date</label><input type="date" name="departDate" required></div><div class="field return-wrap"><label>Return date</label><input type="date" name="returnDate" required></div><div class="field"><label>Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div><div class="field"><label>Full name</label><input name="fullName" placeholder="Your name" required></div><div class="field full-row"><label>Email</label><input type="email" name="email" placeholder="name@email.com" required></div><div class="field full-row"><label>Phone or WhatsApp</label><input name="phone" placeholder="+1..." required></div><div class="field full-row"><label>Notes</label><textarea name="notes" placeholder="Preferred airline, flexibility, passengers, or anything helpful"></textarea></div><p class="microcopy">Not sure about dates or the exact airport yet? Submit the closest option and LuxAeris can refine it with you.</p><div class="status" aria-live="polite"></div><button class="btn btn-primary full-row" type="submit">Request tailored options</button></form></div></aside>`;
+}
+
+function luxaerisInjectEnhancements(){
+  if (!luxaerisShouldHaveRail()) return;
+  const h1 = document.querySelector('main h1, body > section h1, .page-shell h1, .section h1');
+  if (h1 && !document.querySelector('.luxaeris-trust-line')) {
+    const trust = document.createElement('p');
+    trust.className = 'luxaeris-trust-line';
+    trust.textContent = 'Tailored premium flight options • no LuxAeris service fee • request without leaving this page';
+    h1.insertAdjacentElement('afterend', trust);
+  }
+  if (/\/routes\//.test(window.location.pathname) && !document.querySelector('.luxaeris-price-box')) {
+    const intro = document.querySelector('main p, .section p');
+    if (intro && intro.parentNode) {
+      const box = document.createElement('section');
+      box.className = 'luxaeris-price-box';
+      box.innerHTML = `<article class="content-panel"><p class="kicker">Why travelers choose LuxAeris</p><h2>Premium route help without the search fatigue</h2><ul class="guide-list"><li>No LuxAeris service fee</li><li>Premium airlines and long-haul route context</li><li>Faster than manually checking dozens of combinations</li></ul></article><article class="content-panel"><p class="kicker">Typical fare context</p><h2>Typical business class fare range</h2><p class="price-range">$2,200 – $4,800</p><p>Typical fares vary by route, season, flexibility, and cabin inventory. Use the request form for route-specific options on your dates.</p></article>`;
+      intro.insertAdjacentElement('afterend', box);
+    }
+  }
+  if (!document.querySelector('.luxaeris-inline-faq')) {
+    const target = document.querySelector('main .container, body > section .container');
+    if (target) {
+      const faq = document.createElement('section');
+      faq.className = 'luxaeris-inline-faq';
+      const title = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'this page';
+      faq.innerHTML = `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I submit a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
+      target.appendChild(faq);
+    }
+  }
+  if (!document.querySelector('.breadcrumbs')) {
+    const target = document.querySelector('main .container, body > section .container');
+    if (target) {
+      const parts = window.location.pathname.split('/').filter(Boolean);
+      const bc = document.createElement('nav');
+      bc.className = 'breadcrumbs';
+      let html = '<span class="crumb"><a href="/index.html">Home</a></span>';
+      let cur = '';
+      parts.forEach((p, i) => {
+        cur += '/' + p;
+        const label = (p === 'index.html' ? (parts[i-1] || 'home') : p).replace('.html','').replace(/-/g,' ');
+        if (i < parts.length - 1) html += `<span class="crumb"><a href="${cur}${p==='index.html'?'':'/index.html'}">${label.replace(/\b\w/g, c => c.toUpperCase())}</a></span>`;
+      });
+      const last = (parts[parts.length-1] === 'index.html' ? parts[parts.length-2] : parts[parts.length-1]).replace('.html','').replace(/-/g,' ');
+      html += `<span class="crumb current">${last.replace(/\b\w/g, c => c.toUpperCase())}</span>`;
+      bc.innerHTML = html;
+      target.insertAdjacentElement('afterbegin', bc);
+    }
+  }
+}
+
+function bindUniversalQuoteForms(){
+  document.querySelectorAll('form[data-luxaeris-form]').forEach(form => {
+    if (form.dataset.bound === '1') return;
+    form.dataset.bound = '1';
+    form.querySelectorAll('[data-location-input]').forEach(attachAirportAutocomplete);
+    const tabs = form.querySelectorAll('.trip-tab');
+    const tripField = form.querySelector('[name="tripType"]');
+    const returnWrap = form.querySelector('.return-wrap');
+    const returnInput = form.querySelector('[name="returnDate"]');
+    function apply(type){
+      tabs.forEach(t => t.classList.toggle('active', t.dataset.trip === type));
+      if (tripField) tripField.value = type;
+      const needsReturn = type === 'roundtrip';
+      if (returnWrap) returnWrap.style.display = needsReturn ? '' : 'none';
+      if (returnInput) { returnInput.required = needsReturn; if (!needsReturn) returnInput.value = ''; }
+    }
+    tabs.forEach(t => t.addEventListener('click', () => apply(t.dataset.trip)));
+    apply((tripField && tripField.value) || 'roundtrip');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = form.querySelector('.status');
+      let ok = true;
+      form.querySelectorAll('[data-location-input]').forEach(input => {
+        const valid = markAirportFieldValidity(input);
+        input.classList.toggle('field-invalid', !valid);
+        ok = ok && valid;
+      });
+      const fullName = form.querySelector('[name="fullName"]');
+      const email = form.querySelector('[name="email"]');
+      const phone = form.querySelector('[name="phone"]');
+      if (fullName) { const good = validName(fullName.value); fullName.setCustomValidity(good ? '' : 'Please enter your full name.'); ok = ok && good; }
+      if (email) { const good = validEmail(email.value); email.setCustomValidity(good ? '' : 'Please enter a valid email address.'); ok = ok && good; }
+      if (phone) { const good = validPhone(phone.value); phone.setCustomValidity(good ? '' : 'Please enter a valid phone number.'); ok = ok && good; }
+      const dep = form.querySelector('[name="departDate"]');
+      if (!dep || !dep.value) ok = false;
+      if (returnInput && returnInput.required && !returnInput.value) ok = false;
+      if (!ok) {
+        if (status) status.textContent = 'Please complete the required fields and choose airports from the list.';
+        form.reportValidity();
+        return;
+      }
+      const origin = getAirportRecordFromInput(form.querySelector('[name="origin"]'));
+      const destination = getAirportRecordFromInput(form.querySelector('[name="destination"]'));
+      if (!origin || !destination) { if (status) status.textContent = 'Please choose both airports from the suggested list.'; return; }
+      const endpoint = (window.LUXAERIS_FORM_ENDPOINT || '').trim();
+      if (!endpoint) { if (status) status.textContent = 'Add your Google Apps Script endpoint in assets/site-config.js to activate submissions.'; return; }
+      const payload = Object.fromEntries(new FormData(form).entries());
+      payload.originCode = origin.code; payload.destinationCode = destination.code;
+      payload.routeType = inferRouteType(origin.code, destination.code);
+      payload.originCity = origin.city || ''; payload.destinationCity = destination.city || '';
+      payload.originCountry = origin.country || ''; payload.destinationCountry = destination.country || '';
+      payload.leadSource = window.location.pathname;
+      const submit = form.querySelector('button[type="submit"]'); if (submit) submit.disabled = true;
+      if (status) status.textContent = 'Submitting your request…';
+      try {
+        const res = await fetch(endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
+        if (!res.ok) throw new Error('Submission failed');
+        window.location.href = '/thank-you.html';
+      } catch (err) {
+        if (status) status.textContent = 'We could not send your request just now. Please try again in a moment.';
+      } finally {
+        if (submit) submit.disabled = false;
+      }
+    });
+  });
+}
+
+function luxaerisInjectRail(){
+  if (!luxaerisShouldHaveRail() || document.querySelector('.luxaeris-fixed-rail')) return;
+  document.body.classList.add('has-sticky-request-rail');
+  document.querySelectorAll('.floating-request').forEach(el => el.remove());
+  document.querySelectorAll('section, article, div').forEach(block => {
+    const heading = block.querySelector && block.querySelector('h2,h3');
+    if (!heading) return;
+    const txt = (heading.textContent || '').trim().toLowerCase();
+    if (txt.includes('request a tailor') || txt.includes('request a quote') || txt.includes('request this route') || txt.includes('tailor-made itinerary')) {
+      if ((block.textContent || '').trim().length < 700) block.remove();
+    }
+  });
+  const h1 = document.querySelector('main h1, body > section h1, .page-shell h1, .section h1');
+  const contextTitle = h1 ? h1.textContent.trim() : 'this trip';
+  const main = document.querySelector('main') || document.querySelector('body > section');
+  if (main) main.insertAdjacentHTML('afterend', luxaerisRailHTML(contextTitle));
+  else document.body.insertAdjacentHTML('beforeend', luxaerisRailHTML(contextTitle));
+  luxaerisInjectEnhancements();
+  bindUniversalQuoteForms();
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  try { if (!AIRPORTS.length) await loadAirports(); } catch (e) {}
+  applyDateLimitsAndUI();
+  luxaerisInjectRail();
+  bindUniversalQuoteForms();
+});
