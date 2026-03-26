@@ -786,3 +786,47 @@ body.has-sticky-request-rail .luxaeris-trust-line{color:#6b594b;font-weight:600}
 .lux-hero-copy p{color:#f1e6d7 !important}
 .page-hero .section-title{color:#201913}
 
+
+
+/* 2026-03-26 vfinal7 route/destination visibility */
+.page-shell .glass{
+  background:#07152b !important;
+  border:1px solid rgba(216,191,119,.26) !important;
+}
+.page-shell .glass .kicker{color:#e6c98f !important}
+.page-shell .hero-title{
+  color:#fff8ef !important;
+  text-shadow:0 10px 26px rgba(0,0,0,.46) !important;
+  font-size:clamp(2.6rem,4vw,4.3rem) !important;
+  line-height:1.02 !important;
+}
+.page-shell .lede{
+  color:#edf2f8 !important;
+}
+.page-shell .content-panel{
+  background:#fffaf3 !important;
+  border:1px solid rgba(39,28,20,.10) !important;
+}
+.page-shell .content-panel h2{
+  color:#231a15 !important;
+  font-size:clamp(1.9rem,2.5vw,2.7rem) !important;
+}
+.page-shell .content-panel p,
+.page-shell .content-panel li,
+.page-shell .content-panel ul{
+  color:#4a4138 !important;
+}
+.route-bubble,.route-bubble:visited,.airport-pill,.airport-pill:visited{
+  background:#fff7ec !important;
+  color:#2a211b !important;
+  border:1px solid rgba(199,160,99,.35) !important;
+}
+.route-bubble:hover,.route-bubble:focus,.route-bubble:active,
+.airport-pill:hover,.airport-pill:focus,.airport-pill:active{
+  background:linear-gradient(180deg,#edd39d,#d6b16f) !important;
+  color:#151515 !important;
+}
+.site-footer{padding:0 !important; min-height:2cm !important}
+.footer-inline-route,.footer-inner{min-height:2cm !important;display:flex !important;align-items:center !important;justify-content:center !important;gap:18px !important;flex-wrap:nowrap !important;white-space:nowrap !important;overflow-x:auto !important}
+.footer-inner nav{display:flex !important;gap:18px !important;flex-wrap:nowrap !important}
+
