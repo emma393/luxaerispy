@@ -448,7 +448,7 @@ function setupFlexibleItinerary(){
   const apply = () => {
     const on = toggle.checked;
     const tripField = document.getElementById('tripType');
-    if (preferredRange) preferredRange.hidden = !on;
+    if (preferredRange) preferredRange.hidden = false;
     ids.forEach((id) => {
       const el = document.getElementById(id);
       if (!el) return;

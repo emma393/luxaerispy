@@ -696,3 +696,35 @@ footer {
 
 
 .request-page-luxury{padding-bottom:40px}.request-shell{padding-top:28px;padding-bottom:40px}.request-form-panel-wide{max-width:980px;margin:0 auto}.fare-influence-box{margin-top:2px}.fare-influence-inner{padding:16px 18px;border:1px solid rgba(215,181,109,0.18);background:rgba(255,255,255,0.04);border-radius:16px;color:#f4ead3;display:grid;gap:8px}.fare-influence-inner span{color:var(--muted)}.checkline{display:flex;gap:12px;align-items:flex-start}.checkline input{width:18px;height:18px;min-height:18px;margin-top:3px}.flexible-toggle{margin-top:-6px}.field-disabled{opacity:.65}.nav nav,.top-links{align-items:center}.hero-copy-luxury h1{max-width:10ch}.lead-hero{max-width:54ch}.section-dark-panel .panel{background:rgba(14,18,26,.9)}.section-luxury-intro .lead{max-width:62ch}.request-actions{justify-content:flex-start}.request-actions .btn-secondary{margin-left:0}@media (max-width:760px){.request-title-compact{font-size:2.35rem;line-height:1.02}.container{width:min(1180px, calc(100% - 24px))}}
+
+/* 2026-03 luxury consistency refresh */
+:root{
+  --bg-soft:#f5f0e8;
+  --bg-panel:rgba(11,16,28,.86);
+  --ink-deep:#1b1612;
+  --ink-soft:#5a4d42;
+  --gold-soft:#d8b66e;
+}
+body,.request-body,.home-luxury{background:linear-gradient(180deg,#f6f1e9 0%,#efe7dd 100%);color:var(--ink-deep)}
+body.has-video:before{background:linear-gradient(90deg, rgba(7,9,16,.76) 0%, rgba(7,9,16,.58) 38%, rgba(7,9,16,.32) 64%, rgba(7,9,16,.50) 100%)}
+.hero-copy-luxury h1,.request-title,.section-title,h1,h2,h3{font-family:"Cormorant Garamond", Georgia, serif; letter-spacing:-0.02em}
+.hero-copy-luxury h1{font-size:clamp(3.7rem,6.2vw,6.4rem);line-height:.92;max-width:8.8ch;text-wrap:balance}
+.lead-hero,.lead,.panel-subtitle,.request-lead-compact{font-size:1.12rem;line-height:1.7;color:#eee2cf}
+.hero-note{font-size:1rem;color:#f4e3b3}
+.luxury-quote-panel,.request-form-panel-wide{background:linear-gradient(180deg, rgba(8,12,21,.96) 0%, rgba(11,16,29,.94) 100%);border:1px solid rgba(216,182,110,.20);box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.form-grid-request{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 18px}
+.form-grid-request .field-wide,.form-grid-request .trip-type-field,.form-grid-request .multi-city-section,.form-grid-request .fare-influence-box,.form-grid-request .button-row,.form-grid-request .contact-span,.form-grid-request .contact-field,.form-grid-request .flexible-toggle{grid-column:1/-1}
+.field select,.field input,.field textarea{min-height:60px;border-radius:18px}
+.field textarea{min-height:130px}
+.fare-influence-inner{background:rgba(255,255,255,.03);border:1px solid rgba(216,182,110,.18)}
+.flexible-toggle{padding:4px 0 2px}
+.request-shell{padding-top:34px;padding-bottom:28px}
+main.request-page{min-height:auto}
+footer{margin-top:0}
+.section-luxury-intro,.featured-destinations-section,.section-dark-panel,.final-cta-section{background:transparent}
+.section-title{font-size:clamp(2.6rem,4.4vw,4rem);line-height:1}
+.destination-card span{font-family:Inter,system-ui,sans-serif;font-weight:600}
+@media (max-width: 900px){
+  .hero-copy-luxury h1{font-size:clamp(3rem,13vw,4.5rem);max-width:none}
+  .form-grid-request{grid-template-columns:1fr}
+}
