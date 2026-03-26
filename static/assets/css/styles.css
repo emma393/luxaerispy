@@ -1153,3 +1153,63 @@ footer,
   object-fit:cover !important;
 }
 
+
+
+/* 2026-03-27 home layout fix */
+body.home-luxury .hero-grid-luxury{align-items:stretch !important; grid-template-columns:minmax(0,1.25fr) minmax(360px,.95fr) !important;}
+body.home-luxury .hero-copy-luxury{max-width:920px !important; padding-top:0 !important;}
+body.home-luxury .hero-copy-luxury h1{max-width:none !important; font-size:clamp(3.15rem,4.75vw,5.35rem) !important; line-height:.94 !important; letter-spacing:-.03em !important;}
+body.home-luxury .hero-copy-luxury .hero-line{display:block !important; white-space:nowrap !important;}
+body.home-luxury .lead-hero{max-width:34ch !important; font-size:clamp(1.08rem,1.4vw,1.4rem) !important; line-height:1.42 !important;}
+body.home-luxury .hero-note{max-width:none !important; white-space:nowrap !important;}
+body.home-luxury .section-luxury-intro .section-title{max-width:none !important; white-space:nowrap !important; font-size:clamp(2.4rem,3.6vw,4.2rem) !important; line-height:1 !important;}
+body.home-luxury .featured-destinations-section .section-title{max-width:none !important; white-space:nowrap !important; font-size:clamp(2.25rem,3.35vw,3.75rem) !important; line-height:1 !important;}
+body.home-luxury .section-dark-panel .section-title{max-width:none !important; white-space:nowrap !important; font-size:clamp(2.15rem,3.2vw,3.45rem) !important; line-height:1 !important;}
+body.home-luxury .final-cta .section-title{max-width:none !important; white-space:nowrap !important; font-size:clamp(1.65rem,2vw,2.3rem) !important; line-height:1.05 !important;}
+body.home-luxury .luxury-copy-block, body.home-luxury .premium-routes-panel, body.home-luxury .final-cta{max-width:none !important;}
+body.home-luxury .final-cta{padding:22px 26px !important; min-height:2cm !important;}
+body.home-luxury .footer-inline-rich{min-height:2cm !important; align-items:center !important;}
+body.home-luxury .footer-inline-rich a, body.home-luxury .footer-inline-rich{line-height:1.2 !important;}
+body.home-luxury #bg-video{opacity:.22 !important; filter:brightness(.42) saturate(.82) !important;}
+@media (max-width: 1200px){
+  body.home-luxury .hero-grid-luxury{grid-template-columns:1fr !important;}
+  body.home-luxury .hero-copy-luxury .hero-line,
+  body.home-luxury .section-luxury-intro .section-title,
+  body.home-luxury .featured-destinations-section .section-title,
+  body.home-luxury .section-dark-panel .section-title,
+  body.home-luxury .final-cta .section-title,
+  body.home-luxury .hero-note{white-space:normal !important;}
+}
+
+
+/* 2026-03-27 page card / rail layout fix */
+.visual-card, .deal-card, .card, .country-card, .destination-card, .airport-card{display:flex !important; flex-direction:column !important; overflow:hidden !important;}
+.visual-card img, .deal-card img, .card img, .country-card img, .destination-card img, .airport-card img{
+  width:100% !important;
+  height:260px !important;
+  object-fit:cover !important;
+  object-position:center 58% !important;
+  display:block !important;
+  background:#e9dfd1 !important;
+}
+.index-visual-grid .visual-card-body, .card-grid .card-body, .country-grid .country-card-body{min-height:170px !important;}
+.index-visual-grid{align-items:stretch !important;}
+body.has-sticky-request-rail .visual-card img,
+body.has-sticky-request-rail .card img,
+body.has-sticky-request-rail .collection-card img,
+body.has-sticky-request-rail .destination-card img,
+body.has-sticky-request-rail .airport-card img,
+body.has-sticky-request-rail .country-card img,
+body.has-sticky-request-rail .continent-card img{
+  height:260px !important;
+  object-fit:cover !important;
+  object-position:center 58% !important;
+}
+.request-rail .field-budget-row, .luxaeris-fixed-rail .field-budget-row{grid-column:1 / -1 !important; display:block !important;}
+.request-rail .field-budget-row select, .luxaeris-fixed-rail .field-budget-row select{width:100% !important;}
+.flatpickr-calendar{width:340px !important;}
+.flatpickr-months{min-height:64px !important;}
+.flatpickr-current-month{padding-top:12px !important;}
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year{font-size:1.18rem !important; font-weight:700 !important; min-width:92px !important;}
+.flatpickr-current-month .numInputWrapper{width:7ch !important;}
