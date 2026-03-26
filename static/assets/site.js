@@ -508,6 +508,11 @@ function luxaerisRailHTML(contextTitle){
   return `<aside class="luxaeris-fixed-rail"><div class="request-card"><p class="kicker">Request tailored options</p><h2>Get business or first class options without leaving this page.</h2><p class="request-lede">Share your route, dates, and preferences for ${contextTitle}. LuxAeris does not sell tickets directly and there is no LuxAeris service fee.</p><div class="proof-list"><span>No service fee</span><span>Premium airlines</span><span>Fast follow-up</span></div><form class="rail-quote-form" data-luxaeris-form="rail" novalidate><div class="trip-switch"><button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button><button class="trip-tab" type="button" data-trip="oneway">One Way</button><button class="trip-tab" type="button" data-trip="multicity">Multi City</button><input type="hidden" name="tripType" value="roundtrip"></div><div class="field full-row"><label>Origin</label><input name="origin" data-location-input placeholder="Type city or airport" required></div><div class="field full-row"><label>Destination</label><input name="destination" data-location-input placeholder="Type city or airport" required></div><div class="field"><label>Departure date</label><input type="date" name="departDate" required></div><div class="field return-wrap"><label>Return date</label><input type="date" name="returnDate" required></div><div class="field"><label>Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div><div class="field"><label>Full name</label><input name="fullName" placeholder="Your name" required></div><div class="field full-row"><label>Email</label><input type="email" name="email" placeholder="name@email.com" required></div><div class="field full-row"><label>Phone or WhatsApp</label><input name="phone" placeholder="+1..." required></div><div class="field full-row"><label>Notes</label><textarea name="notes" placeholder="Preferred airline, flexibility, passengers, or anything helpful"></textarea></div><p class="microcopy">Not sure about dates or the exact airport yet? Submit the closest option and LuxAeris can refine it with you.</p><div class="status" aria-live="polite"></div><button class="btn btn-primary full-row" type="submit">Request tailored options</button></form></div></aside>`;
 }
 
+
+function luxaerisEnhancementTarget(){
+  return document.querySelector('.luxaeris-main-column') || document.querySelector('main .container, body > section .container');
+}
+
 function luxaerisInjectEnhancements(){
   if (!luxaerisShouldHaveRail()) return;
   const h1 = document.querySelector('main h1, body > section h1, .page-shell h1, .section h1');
@@ -527,7 +532,7 @@ function luxaerisInjectEnhancements(){
     }
   }
   if (!document.querySelector('.luxaeris-inline-faq')) {
-    const target = document.querySelector('main .container, body > section .container');
+    const target = luxaerisEnhancementTarget();
     if (target) {
       const faq = document.createElement('section');
       faq.className = 'luxaeris-inline-faq';
@@ -537,7 +542,7 @@ function luxaerisInjectEnhancements(){
     }
   }
   if (!document.querySelector('.breadcrumbs')) {
-    const target = document.querySelector('main .container, body > section .container');
+    const target = luxaerisEnhancementTarget();
     if (target) {
       const parts = window.location.pathname.split('/').filter(Boolean);
       const bc = document.createElement('nav');
@@ -689,80 +694,3 @@ document.addEventListener('DOMContentLoaded', async () => {
   luxaerisInjectRail();
   bindUniversalQuoteForms();
 });
-
-
-/* ===== Final rail override: mount request on the left and preserve all page content ===== */
-function luxaerisRailHTML(contextTitle){
-  return `<aside class="luxaeris-fixed-rail"><div class="request-card"><p class="kicker">Request tailored options</p><h2>Plan your premium flight here.</h2><p class="request-lede">Share your route, dates, and preferences for ${contextTitle}. LuxAeris does not sell tickets directly and there is no LuxAeris service fee.</p><div class="proof-list"><span>No service fee</span><span>Premium airlines</span><span>Fast follow-up</span></div><form class="rail-quote-form" data-luxaeris-form="rail" novalidate><div class="trip-switch"><button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button><button class="trip-tab" type="button" data-trip="oneway">One Way</button><button class="trip-tab" type="button" data-trip="multicity">Multi City</button><input type="hidden" name="tripType" value="roundtrip"></div><div class="field full-row"><label>Origin</label><input name="origin" data-location-input placeholder="Type city or airport" required></div><div class="field full-row"><label>Destination</label><input name="destination" data-location-input placeholder="Type city or airport" required></div><div class="field"><label>Departure date</label><input type="date" name="departDate" required></div><div class="field return-wrap"><label>Return date</label><input type="date" name="returnDate" required></div><div class="field"><label>Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div><div class="field"><label>Full name</label><input name="fullName" placeholder="Your name" required></div><div class="field full-row"><label>Email</label><input type="email" name="email" placeholder="name@email.com" required></div><div class="field full-row"><label>Phone or WhatsApp</label><input name="phone" placeholder="+1..." required></div><div class="field full-row"><label>Notes</label><textarea name="notes" placeholder="Preferred airline, flexibility, passengers, or anything helpful"></textarea></div><p class="microcopy">Not sure about the exact dates or airport yet? Submit the closest option and refine it after.</p><div class="status" aria-live="polite"></div><button class="btn btn-primary full-row" type="submit">Request tailored options</button></form></div></aside>`;
-}
-
-function luxaerisBuildMainLayoutContainer(){
-  let main = document.querySelector('main.page-shell');
-  if (!main) {
-    const body = document.body;
-    const footer = body.querySelector(':scope > footer');
-    const topbar = body.querySelector(':scope > .topbar');
-    const header = body.querySelector(':scope > header.site-header');
-    const moveable = Array.from(body.children).filter(el => ![topbar, header, footer].includes(el) && !el.classList.contains('funnel-banner') && !el.classList.contains('popup-overlay') && !el.matches('script,style,link'));
-    if (!moveable.length) return null;
-    main = document.createElement('main');
-    main.className = 'page-shell';
-    const container = document.createElement('div');
-    container.className = 'container luxaeris-two-col-target';
-    main.appendChild(container);
-    if (footer) body.insertBefore(main, footer); else body.appendChild(main);
-    moveable.forEach(el => {
-      if (el !== main) container.appendChild(el);
-    });
-    return container;
-  }
-  let container = main.querySelector(':scope > .container');
-  if (!container) {
-    container = document.createElement('div');
-    container.className = 'container luxaeris-two-col-target';
-    while (main.firstChild) container.appendChild(main.firstChild);
-    main.appendChild(container);
-  }
-  container.classList.add('luxaeris-two-col-target');
-  return container;
-}
-
-function luxaerisInjectRail(){
-  if (!luxaerisShouldHaveRail()) return;
-  document.body.classList.add('has-sticky-request-rail');
-  document.querySelectorAll('.floating-request, .popup-overlay, .funnel-banner').forEach(el => el.remove());
-
-  const h1 = document.querySelector('h1, .section-title');
-  const contextTitle = h1 ? h1.textContent.trim() : 'this trip';
-
-  const container = luxaerisBuildMainLayoutContainer();
-  if (!container) {
-    luxaerisInjectEnhancements();
-    bindUniversalQuoteForms();
-    return;
-  }
-
-  let rail = container.querySelector(':scope > .luxaeris-fixed-rail');
-  if (!rail) {
-    container.insertAdjacentHTML('afterbegin', luxaerisRailHTML(contextTitle));
-    rail = container.querySelector(':scope > .luxaeris-fixed-rail');
-  }
-
-  let mainCol = container.querySelector(':scope > .luxaeris-main-column');
-  if (!mainCol) {
-    mainCol = document.createElement('div');
-    mainCol.className = 'luxaeris-main-column';
-    const children = Array.from(container.children);
-    children.forEach(child => {
-      if (child !== rail) mainCol.appendChild(child);
-    });
-    container.innerHTML = '';
-    container.appendChild(rail);
-    container.appendChild(mainCol);
-  } else if (rail.previousElementSibling !== null) {
-    container.insertBefore(rail, container.firstChild);
-  }
-
-  luxaerisInjectEnhancements();
-  bindUniversalQuoteForms();
-}

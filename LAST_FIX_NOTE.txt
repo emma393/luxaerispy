@@ -1,1 +1,0 @@
-Layout fix applied: left-side request rail, responsive content column, smaller image cards, safer title wrapping. Patched both static/assets and generated/site/assets.
