@@ -694,3 +694,133 @@ document.addEventListener('DOMContentLoaded', async () => {
   luxaerisInjectRail();
   bindUniversalQuoteForms();
 });
+
+
+/* ===== FINAL OVERRIDES: left rail, FAQ under content, site search, no tools ===== */
+function luxaerisRailHTML(contextTitle){
+  return `<aside class="luxaeris-fixed-rail"><div class="request-card"><p class="kicker">Request tailored options</p><h2>Get business or first class options without leaving this page.</h2><p class="request-lede">Share your travel details for ${contextTitle}. LuxAeris does not sell tickets directly and there is no LuxAeris service fee.</p><div class="proof-list"><span>No service fee</span><span>Premium airlines</span><span>Fast follow-up</span></div><form class="rail-quote-form" data-luxaeris-form="rail" novalidate><div class="field full-row"><label>Full name</label><input name="fullName" placeholder="Your name" required></div><div class="field full-row"><label>Email</label><input type="email" name="email" placeholder="name@email.com" required></div><div class="field full-row"><label>Phone or WhatsApp</label><input name="phone" placeholder="+1..." required></div><div class="trip-switch"><button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button><button class="trip-tab" type="button" data-trip="oneway">One Way</button><button class="trip-tab" type="button" data-trip="multicity">Multi City</button><input type="hidden" name="tripType" value="roundtrip"></div><div class="field full-row"><label>Origin</label><input name="origin" data-location-input placeholder="Type city or airport" required></div><div class="field full-row"><label>Destination</label><input name="destination" data-location-input placeholder="Type city or airport" required></div><div class="field"><label>Departure date</label><input type="date" name="departDate" required></div><div class="field return-wrap"><label>Return date</label><input type="date" name="returnDate" required></div><div class="field full-row"><label>Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div><div class="field full-row"><label>Notes</label><textarea name="notes" placeholder="Preferred airline, flexibility, passengers, or anything helpful"></textarea></div><p class="microcopy">Not sure about dates or the exact airport yet? Submit the closest option and LuxAeris can refine it with you.</p><div class="status" aria-live="polite"></div><button class="btn btn-primary full-row" type="submit">Request tailored options</button></form></div></aside>`;
+}
+function luxaerisEnhancementTarget(){
+  return document.querySelector('.luxaeris-main-column') || document.querySelector('main .container') || document.querySelector('section .container');
+}
+function moveFaqBelowMainContent(){
+  const faq = document.querySelector('.luxaeris-inline-faq');
+  const main = document.querySelector('.luxaeris-main-column');
+  if (faq && main && faq.parentElement !== main) main.appendChild(faq);
+}
+function luxaerisInjectEnhancements(){
+  if (!luxaerisShouldHaveRail()) return;
+  const target = luxaerisEnhancementTarget();
+  if (!target) return;
+  const h1 = target.querySelector('h1') || document.querySelector('h1');
+  if (h1 && !target.querySelector('.luxaeris-trust-line')) {
+    const trust = document.createElement('p');
+    trust.className = 'luxaeris-trust-line';
+    trust.textContent = 'Tailored premium flight options • no LuxAeris service fee • request without leaving this page';
+    h1.insertAdjacentElement('afterend', trust);
+  }
+  if (/\/routes\//.test(window.location.pathname) && !target.querySelector('.luxaeris-price-box')) {
+    const intro = target.querySelector('p.section-intro, p.lead, p');
+    if (intro && intro.parentNode) {
+      const box = document.createElement('section');
+      box.className = 'luxaeris-price-box';
+      box.innerHTML = `<article class="content-panel"><p class="kicker">Why travelers choose LuxAeris</p><h2>Clear route guidance without the search overload</h2><ul class="guide-list"><li>No LuxAeris service fee</li><li>Helpful premium cabin context</li><li>Faster than checking dozens of combinations by hand</li></ul></article><article class="content-panel"><p class="kicker">Typical fare context</p><h2>Typical business class fare range</h2><p class="price-range">$2,200 – $4,800</p><p>Fares vary by season, demand, flexibility, and cabin inventory. Use the request form for route-specific options on your travel dates.</p></article>`;
+      intro.insertAdjacentElement('afterend', box);
+    }
+  }
+  if (!target.querySelector('.luxaeris-inline-faq')) {
+    const faq = document.createElement('section');
+    faq.className = 'luxaeris-inline-faq';
+    const title = (h1 ? h1.textContent.trim() : 'this page');
+    faq.innerHTML = `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I send a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
+    target.appendChild(faq);
+  }
+  moveFaqBelowMainContent();
+}
+function luxaerisInjectRail(){
+  if (!luxaerisShouldHaveRail()) return;
+  document.body.classList.add('has-sticky-request-rail');
+  document.querySelectorAll('.floating-request, .popup-overlay, .funnel-banner').forEach(el => el.remove());
+  const h1 = document.querySelector('main h1, .page-shell h1, section h1, .section h1, .section-title, h1');
+  const contextTitle = h1 ? h1.textContent.trim() : 'this trip';
+  let container = document.querySelector('.luxaeris-two-col-target, .page-shell > .container, section.section > .container, main > .container, body > section > .container');
+  if (!container) {
+    luxaerisInjectEnhancements();
+    bindUniversalQuoteForms();
+    return;
+  }
+  container.classList.add('luxaeris-two-col-target');
+  let rail = container.querySelector(':scope > .luxaeris-fixed-rail');
+  let mainCol = container.querySelector(':scope > .luxaeris-main-column');
+  if (!mainCol) {
+    mainCol = document.createElement('div');
+    mainCol.className = 'luxaeris-main-column';
+    Array.from(container.children).forEach(child => {
+      if (!child.classList.contains('luxaeris-fixed-rail')) mainCol.appendChild(child);
+    });
+  }
+  if (!rail) {
+    const wrap = document.createElement('div');
+    wrap.innerHTML = luxaerisRailHTML(contextTitle);
+    rail = wrap.firstElementChild;
+  }
+  container.innerHTML = '';
+  container.appendChild(rail);
+  container.appendChild(mainCol);
+  luxaerisInjectEnhancements();
+  bindUniversalQuoteForms();
+  moveFaqBelowMainContent();
+}
+async function initSiteSearch(){
+  const form = document.querySelector('[data-site-search]');
+  const results = document.getElementById('siteSearchResults');
+  if (!form || !results) return;
+  let searchIndex = [];
+  try {
+    const res = await fetch('/assets/search-index.json');
+    searchIndex = await res.json();
+  } catch (e) {
+    results.innerHTML = '<div class="site-search-empty">Search is loading. Please try again in a moment.</div>';
+    return;
+  }
+  const input = form.querySelector('input[type="text"]');
+  function render(q){
+    const query = (q || '').trim().toLowerCase();
+    if (!query) {
+      results.innerHTML = '';
+      return;
+    }
+    const words = query.split(/\s+/).filter(Boolean);
+    const scored = searchIndex.map(page => {
+      const hay = `${page.title} ${page.heading} ${page.description} ${page.text}`.toLowerCase();
+      let score = 0;
+      words.forEach(w => {
+        if (page.title.toLowerCase().includes(w)) score += 8;
+        if ((page.heading || '').toLowerCase().includes(w)) score += 6;
+        if ((page.description || '').toLowerCase().includes(w)) score += 3;
+        if (hay.includes(w)) score += 1;
+      });
+      return {...page, score};
+    }).filter(p => p.score > 0).sort((a,b) => b.score - a.score).slice(0, 24);
+    if (!scored.length) {
+      results.innerHTML = `<div class="site-search-empty">No pages matched <strong>${q}</strong>. Try a city, country, airport, airline, or route.</div>`;
+      return;
+    }
+    results.innerHTML = scored.map(page => `<a class="site-search-hit" href="${page.url}"><strong>${page.heading || page.title}</strong><span>${page.description || page.text.slice(0,160)}</span></a>`).join('');
+  }
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    render(input.value);
+  });
+  const url = new URL(window.location.href);
+  const q = url.searchParams.get('q');
+  if (q && input) { input.value = q; render(q); }
+}
+function removeToolsLinks(){
+  document.querySelectorAll('a[href="/tools/index.html"],a[href="tools/index.html"],a[href$="/tools/index.html"]').forEach(a => a.remove());
+}
+document.addEventListener('DOMContentLoaded', () => {
+  removeToolsLinks();
+  moveFaqBelowMainContent();
+  initSiteSearch();
+});
