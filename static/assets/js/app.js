@@ -341,6 +341,9 @@ function prefillRequestForm() {
     tripType: params.get('tripType') || ((params.get('returnDate') || '') ? 'Round Trip' : 'Round Trip'),
     cabin: params.get('cabin') || 'Business Class',
     preferredFareRange: params.get('preferredFareRange') || '',
+    fullName: params.get('fullName') || '',
+    email: params.get('email') || '',
+    phone: params.get('phone') || '',
     noFixedItinerary: params.get('noFixedItinerary') || ''
   };
 
@@ -433,15 +436,18 @@ function syncPreferredFareOptions(){
 
 function buildRequestUrl() {
   const params = new URLSearchParams({
-    origin: document.getElementById('origin').value,
-    originCode: document.getElementById('originCode').value,
-    destination: document.getElementById('destination').value,
-    destinationCode: document.getElementById('destinationCode').value,
-    departDate: mdyToISO(document.getElementById('departDate').value),
-    returnDate: mdyToISO(document.getElementById('returnDate').value),
-    tripType: document.getElementById('tripType') ? document.getElementById('tripType').value : (document.getElementById('returnDate').value ? 'Round Trip' : 'One Way'),
-    cabin: document.getElementById('cabin').value,
+    origin: document.getElementById('origin') ? document.getElementById('origin').value : '',
+    originCode: document.getElementById('originCode') ? document.getElementById('originCode').value : '',
+    destination: document.getElementById('destination') ? document.getElementById('destination').value : '',
+    destinationCode: document.getElementById('destinationCode') ? document.getElementById('destinationCode').value : '',
+    departDate: document.getElementById('departDate') ? mdyToISO(document.getElementById('departDate').value) : '',
+    returnDate: document.getElementById('returnDate') ? mdyToISO(document.getElementById('returnDate').value) : '',
+    tripType: document.getElementById('tripType') ? document.getElementById('tripType').value : ((document.getElementById('returnDate') && document.getElementById('returnDate').value) ? 'Round Trip' : 'One Way'),
+    cabin: document.getElementById('cabin') ? document.getElementById('cabin').value : 'Business Class',
     preferredFareRange: document.getElementById('preferredFareRange') ? document.getElementById('preferredFareRange').value : '',
+    fullName: document.getElementById('fullName') ? document.getElementById('fullName').value : '',
+    email: document.getElementById('email') ? document.getElementById('email').value : '',
+    phone: document.getElementById('phone') ? document.getElementById('phone').value : ''
   });
   return `request.html?${params.toString()}`;
 }
@@ -558,6 +564,8 @@ async function attachForms() {
       } else {
         returnField.setCustomValidity('');
       }
+      const fareField = document.getElementById('preferredFareRange');
+      if (fareField && !fareField.value) valid = false;
       if (!quickForm.reportValidity() || !valid) return;
       window.location.href = buildRequestUrl();
     });

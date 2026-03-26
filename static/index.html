@@ -10,18 +10,18 @@
 <meta content="LuxAeris — Luxury Business &amp; First Class Flight Concierge" property="og:title"/>
 <meta content="Request premium business and first class flights through a refined concierge booking experience, with elegant route planning, smart airport search, and personalized support from quote to ticketing." property="og:description"/>
 <meta content="website" property="og:type"/>
-<link href="favicon.ico" rel="icon"/>
+<link href="/favicon.ico" rel="icon"/>
 <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet"/>
-<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="/assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body class="has-video home-luxury">
 <video autoplay="" id="bg-video" loop="" muted="" playsinline="">
-<source src="assets/video/hero-background.mp4" type="video/mp4"/>
+<source src="/assets/video/hero-background.mp4" type="video/mp4"/>
 </video>
 <header class="site-header site-header-sticky">
 <div class="container nav nav-luxury">
 <a class="brand brand-logo" href="index.html">
-<img alt="LuxAeris logo" class="brand-image" src="assets/images/logo-header.png"/>
+<img alt="LuxAeris logo" class="brand-image" src="/assets/images/logo-header.png"/>
 <span class="brand-text-home"><span class="brand-title-home">LuxAeris</span><span class="brand-tag-home">Private fares. Premium journeys.</span></span>
 </a>
 <nav aria-label="Primary" class="top-links">
@@ -89,9 +89,29 @@
 <div class="field">
 <label for="cabin">Cabin</label>
 <select id="cabin" name="cabin">
-<option>Business Class</option>
+<option selected="">Business Class</option>
 <option>First Class</option>
 <option>Premium Economy</option></select>
+</div>
+<div class="field">
+<label for="preferredFareRange">Budget range</label>
+<select id="preferredFareRange" name="preferredFareRange" required="">
+<option value="">Select budget range</option>
+<option>$3,500–$5,500</option>
+<option>$5,500–$8,500</option>
+<option>$8,500+</option></select>
+</div>
+<div class="field">
+<label for="fullName">Full name</label>
+<input id="fullName" name="fullName" placeholder="Your full name" required="" type="text"/>
+</div>
+<div class="field">
+<label for="phone">Phone number</label>
+<input id="phone" name="phone" placeholder="+1 000 000 0000" required="" type="tel"/>
+</div>
+<div class="field field-wide">
+<label for="email">Email</label>
+<input id="email" name="email" placeholder="you@example.com" required="" type="email"/>
 </div>
 <div class="field field-wide button-row">
 <button class="btn-primary" type="submit">Continue</button>
@@ -118,14 +138,14 @@
 <a class="section-link" href="destinations/index.html">View all destinations</a>
 </div>
 <div class="destination-grid destination-grid-home">
-<a class="destination-card destination-card-large" href="destinations/new-york.html"><img alt="New York skyline at sunset" src="assets/images/cities/new-york.webp"/><span>New York</span></a>
-<a class="destination-card" href="destinations/paris.html"><img alt="Paris city view" src="assets/images/cities/paris.webp"/><span>Paris</span></a>
-<a class="destination-card" href="destinations/dubai.html"><img alt="Dubai skyline" src="assets/images/cities/dubai.webp"/><span>Dubai</span></a>
-<a class="destination-card" href="destinations/london.html"><img alt="London skyline" src="assets/images/cities/london.webp"/><span>London</span></a>
-<a class="destination-card" href="destinations/tokyo.html"><img alt="Tokyo skyline" src="assets/images/cities/tokyo.webp"/><span>Tokyo</span></a>
-<a class="destination-card" href="destinations/rome.html"><img alt="Rome skyline" src="assets/images/cities/rome.webp"/><span>Rome</span></a>
-<a class="destination-card" href="destinations/frankfurt.html"><img alt="Frankfurt skyline" src="assets/images/cities/frankfurt.webp"/><span>Frankfurt</span></a>
-<a class="destination-card" href="destinations/sydney.html"><img alt="Sydney skyline" src="assets/images/cities/sydney.webp"/><span>Sydney</span></a>
+<a class="destination-card destination-card-large" href="destinations/new-york.html"><img alt="New York skyline at sunset" src="/assets/images/cities/new-york.webp"/><span>New York</span></a>
+<a class="destination-card" href="destinations/paris.html"><img alt="Paris city view" src="/assets/images/cities/paris.webp"/><span>Paris</span></a>
+<a class="destination-card" href="destinations/dubai.html"><img alt="Dubai skyline" src="/assets/images/cities/dubai.webp"/><span>Dubai</span></a>
+<a class="destination-card" href="destinations/london.html"><img alt="London skyline" src="/assets/images/cities/london.webp"/><span>London</span></a>
+<a class="destination-card" href="destinations/tokyo.html"><img alt="Tokyo skyline" src="/assets/images/cities/tokyo.webp"/><span>Tokyo</span></a>
+<a class="destination-card" href="destinations/rome.html"><img alt="Rome skyline" src="/assets/images/cities/rome.webp"/><span>Rome</span></a>
+<a class="destination-card" href="destinations/frankfurt.html"><img alt="Frankfurt skyline" src="/assets/images/cities/frankfurt.webp"/><span>Frankfurt</span></a>
+<a class="destination-card" href="destinations/sydney.html"><img alt="Sydney skyline" src="/assets/images/cities/sydney.webp"/><span>Sydney</span></a>
 </div>
 </div>
 </section>
@@ -175,6 +195,6 @@
 </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script src="assets/js/app.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>

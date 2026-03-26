@@ -762,3 +762,27 @@ body.has-sticky-request-rail .hero-title{
 .related-box h2,.content-panel h2{font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(30px,3vw,42px);line-height:1}
 body.has-sticky-request-rail .luxaeris-price-box .price-range{font-size:clamp(42px,3.8vw,56px)}
 body.has-sticky-request-rail .luxaeris-trust-line{color:#6b594b;font-weight:600}
+
+
+/* 2026-03-26 vfinal5 site consistency */
+.topbar-inner{white-space:nowrap;overflow-x:auto;flex-wrap:nowrap}
+.topbar-inner::-webkit-scrollbar{display:none}
+.footer{padding:24px 0 28px !important}
+.footer-grid{display:flex !important;align-items:center;justify-content:center;gap:20px;flex-wrap:nowrap;overflow-x:auto}
+.footer-grid > div{display:flex;align-items:center;gap:10px}
+.footer-grid p{margin:0}
+.footer-grid br{display:none}
+.footer-grid strong{display:none}
+.footer-grid::-webkit-scrollbar{display:none}
+.route-bubble,.airport-pill,.nav-links a,.btn{transition:all .18s ease}
+.route-bubble:hover,.route-bubble:focus,.route-bubble:active,.route-bubble:visited{background:linear-gradient(180deg,#edd1a5,#d0a96a) !important;color:#20160f !important;border-color:#e5c58f !important}
+.logo-img{width:50px;height:50px}
+.logo-wrap{gap:12px}
+.brand-name{font-size:32px}
+.brand-tag{font-size:11px}
+.site-header{background:rgba(245,241,234,.97)}
+.lux-hero-overlay{background:linear-gradient(180deg, rgba(11,10,12,.38), rgba(11,10,12,.72)) !important}
+.lux-hero-copy h1{color:#fff7ef !important;text-shadow:0 10px 26px rgba(0,0,0,.55)}
+.lux-hero-copy p{color:#f1e6d7 !important}
+.page-hero .section-title{color:#201913}
+

@@ -32,7 +32,7 @@ BASE_TEMPLATE = """<!DOCTYPE html>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
-<div class="topbar"><div class="container topbar-inner"><span>No booking fees on quote requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
+<div class="topbar"><div class="container topbar-inner"><span>No booking fees on tailored requests</span><span>Business Class • First Class • Premium Economy</span></div></div>
 <header class="site-header">
   <div class="container nav">
     <a class="logo-wrap" href="/index.html">
@@ -45,7 +45,6 @@ BASE_TEMPLATE = """<!DOCTYPE html>
       <a href="/airlines/index.html">Airlines</a>
       <a href="/airports/index.html">Airports</a>
       <a href="/routes/index.html">Routes</a>
-      <a href="/tools/index.html">Tools</a>
       <a href="/search.html">Search</a>
       <a class="btn btn-primary" href="/request.html">Request Quote</a>
     </nav>
@@ -124,14 +123,7 @@ BASE_TEMPLATE = """<!DOCTYPE html>
 </section>
 {% endif %}
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
-    <div><strong>{{ site_name }}</strong><p>{{ brand_tagline }}</p></div>
-    <div><strong>Explore</strong><p><a href="/destinations/index.html">Destinations</a><br><a href="/airlines/index.html">Airlines</a><br><a href="/routes/index.html">Routes</a><br><a href="/airports/index.html">Airports</a></p></div>
-    <div><strong>Support</strong><p><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/request.html">Request Quote</a></p></div>
-    <div><strong>Company</strong><p><a href="/about.html">About</a><br><a href="/privacy-policy.html">Privacy Policy</a><br><a href="/terms-and-conditions.html">Terms & Conditions</a><br><a href="/cookie-policy.html">Cookie Policy</a></p></div>
-  </div>
-</footer>
+<footer class="footer"><div class="container footer-grid"><div><p><a href="/index.html">Home</a> · <a href="/request.html">Request</a> · <a href="/destinations/index.html">Destinations</a> · <a href="/routes/index.html">Routes</a> · <a href="/airports/index.html">Airports</a> · <a href="/airlines/index.html">Airlines</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a></p></div></div></footer>
 <div id="cookieBanner" class="cookie-banner" style="display:none"><div class="cookie-inner"><div><strong style="color:#fff8f1">Cookie notice</strong><p>LuxAeris uses cookies and similar technologies to improve site functionality, remember preferences, and understand website usage.</p></div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-secondary" id="cookieReject" type="button">Reject</button><button class="btn btn-primary" id="cookieAccept" type="button">Accept</button></div></div></div>
 </body></html>"""
 
