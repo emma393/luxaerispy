@@ -28,15 +28,15 @@
 <a href="airlines/index.html">Airlines</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
-</nav>
+<a href="best-places-by-season.html">By Season</a></nav>
 <a class="btn-secondary nav-cta" href="index.html">Back Home</a>
 </div>
 </header>
 <main class="request-page request-page-luxury">
 <section class="request-shell container">
 <section class="panel form-panel request-form-panel request-form-panel-wide">
-<h1 class="request-title request-title-compact">Request your premium flight.</h1>
-<p class="lead compact request-lead-compact">Choose your route from the dropdown lists, select your travel type and dates, and send your request.</p>
+<h1 class="request-title request-title-compact">Request your premium itinerary.</h1>
+<p class="lead compact request-lead-compact">Choose your route when you already know it, or use the flexible option below if you want ideas built around your cabin and preferred fare range.</p>
 <form id="fullRequestForm" novalidate="">
 <div class="form-grid form-grid-request">
 <div class="field field-half autocomplete-field">
@@ -63,7 +63,7 @@
 <button class="trip-type-btn" data-trip-type="Multi City" type="button">Multi City</button>
 </div>
 <input id="tripType" name="tripType" type="hidden" value="Round Trip"/>
-</div>
+</div><div class="field field-wide flexible-toggle"><label class="checkline"><input id="noFixedItinerary" name="noFixedItinerary" type="checkbox" value="yes"/> <span>I do not have a fixed itinerary yet</span></label><p class="helper helper-inline">When selected, cities and dates become optional. Cabin and preferred fare range stay required.</p></div>
 <div class="field date-field"><label for="departDate">Departure date</label><input data-date-field="" id="departDate" inputmode="numeric" name="departDate" placeholder="mm.dd.yyyy" required="" type="text"/></div>
 <div class="field date-field"><label for="returnDate">Return date</label><input data-date-field="" id="returnDate" inputmode="numeric" name="returnDate" placeholder="mm.dd.yyyy" type="text"/></div>
 <div class="field field-wide multi-city-section" hidden="" id="multiCitySection">
@@ -89,12 +89,12 @@
 </div>
 </div>
 </div>
-<div class="field"><label for="cabin">Cabin</label><select id="cabin" name="cabin"><option>Business Class</option><option>First Class</option></select></div>
-<div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option value="">Select budget</option><option>$2K–$5K</option><option>$5K–$10K</option><option>$10K+</option></select></div>
+<div class="field"><label for="cabin">Cabin</label><select id="cabin" name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div>
+
 <div class="field field-wide contact-span"><label for="fullName">Full name</label><input id="fullName" name="fullName" placeholder="Your full name" required="" type="text"/></div>
 <div class="field field-wide contact-field"><label for="email">Email</label><input id="email" name="email" placeholder="you@example.com" required="" type="email"/></div>
 <div class="field field-wide contact-field"><label for="phone">Phone number</label><input id="phone" name="phone" placeholder="+1 000 000 0000" required="" type="tel"/></div>
-<div class="field field-wide"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, passengers, special requests, or anything else relevant."></textarea></div>
+<div class="field field-wide fare-influence-box"><div class="fare-influence-inner"><strong>What shapes the fare</strong><span>Seasonality, flexibility, airline and alliance, aircraft, nonstop versus one-stop routing, advance notice, and the number of travelers.</span></div></div><div class="field field-wide preferred-range-field" hidden="" id="preferredRangeField"><label for="preferredFareRange">Preferred fare range</label><select id="preferredFareRange" name="preferredFareRange"><option value="">Select preferred fare range</option><option>$2,500–$5,000</option><option>$5,000–$8,000</option><option>$8,000–$12,000</option><option>$12,000+</option></select></div><div class="field field-wide"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, passengers, special requests, or anything else relevant."></textarea></div>
 <div class="field field-wide button-row request-actions"><button class="btn-primary" type="submit">Submit request</button><a class="btn-secondary back-link" href="index.html">Back home</a></div>
 </div>
 </form>

@@ -163,11 +163,6 @@
 /index.html  /destinations/europe/united-kingdom/index.html  200
 /london.html  /destinations/europe/united-kingdom/london.html  200
 /manchester.html  /destinations/europe/united-kingdom/manchester.html  200
-/canc╬ôo╠ê┬ú╬ôo╠Ç├ªn.html  /destinations/global/international/canc╬ôo╠ê┬ú╬ôo╠Ç├ªn.html  200
-/chennai.html  /destinations/global/international/chennai.html  200
-/christchurch.html  /destinations/global/international/christchurch.html  200
-/index.html  /destinations/global/international/index.html  200
-/nagoya.html  /destinations/global/international/nagoya.html  200
 /bahrain.html  /destinations/middle-east/bahrain/bahrain.html  200
 /index.html  /destinations/middle-east/bahrain/index.html  200
 /cairo.html  /destinations/middle-east/egypt/cairo.html  200
@@ -303,7 +298,6 @@
 /destinations/europe/switzerland.html  /destinations/europe/switzerland/index.html  200
 /destinations/europe/turkey.html  /destinations/europe/turkey/index.html  200
 /destinations/europe/united-kingdom.html  /destinations/europe/united-kingdom/index.html  200
-/destinations/global/international.html  /destinations/global/international/index.html  200
 /destinations/middle-east/bahrain.html  /destinations/middle-east/bahrain/index.html  200
 /destinations/middle-east/egypt.html  /destinations/middle-east/egypt/index.html  200
 /destinations/middle-east/israel.html  /destinations/middle-east/israel/index.html  200
@@ -330,7 +324,6 @@
 /destinations/asia.html  /destinations/asia/index.html  200
 /destinations/caribbean.html  /destinations/caribbean/index.html  200
 /destinations/europe.html  /destinations/europe/index.html  200
-/destinations/global.html  /destinations/global/index.html  200
 /destinations/middle-east.html  /destinations/middle-east/index.html  200
 /destinations/north-america.html  /destinations/north-america/index.html  200
 /destinations/oceania.html  /destinations/oceania/index.html  200

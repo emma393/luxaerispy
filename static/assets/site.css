@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
 :root{
-  --bg:#f7f3ed;
+  --bg:#f5f1ea;
   --surface:#ffffff;
   --surface-soft:#efe7dc;
   --text:#1e1a17;
@@ -34,7 +34,7 @@ h1,h2,h3{
   line-height:1.05; letter-spacing:-.01em; margin:0 0 12px;
   color:var(--text);
 }
-h1{font-size:clamp(44px, 6vw, 82px)}
+h1{font-size:clamp(34px, 5vw, 66px)}
 h2{font-size:clamp(28px, 3vw, 46px)}
 h3{font-size:clamp(20px, 2vw, 30px)}
 p{margin:0 0 14px; color:var(--muted)}
@@ -750,3 +750,5 @@ body.has-sticky-request-rail .hero-title{
     grid-template-columns:1fr !important;
   }
 }
+
+.section-intro{font-size:18px;max-width:760px}.hero-title{font-size:clamp(34px,4.6vw,58px)}.glass,.content-panel,.related-box{background:#fffdf9;border:1px solid rgba(39,28,20,.08);border-radius:24px;box-shadow:0 12px 28px rgba(39,28,20,.06);padding:24px}.hero-grid,.city-guide-grid{align-items:stretch}.hero-shot{border-radius:24px;object-fit:cover;min-height:360px}.site-footer,.footer{margin-top:48px}.route-bubbles,.airport-links{display:flex;flex-wrap:wrap;gap:10px}.route-bubble,.airport-pill,.city-bubble{display:inline-flex;align-items:center;padding:11px 15px;border-radius:999px;background:#fff;border:1px solid rgba(39,28,20,.09);text-decoration:none;color:#2a211b;font-weight:700}.section-soft{background:linear-gradient(180deg,#f8f3ec,#efe6da)}

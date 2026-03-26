@@ -63,9 +63,6 @@ def main():
     copy_contents(src, out)
     if not (out / 'index.html').exists():
         raise FileNotFoundError('generated/site/index.html was not created')
-    # remove tools page from publish output
-    if (out / 'tools').exists():
-        shutil.rmtree(out / 'tools')
     (out / 'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: https://luxaeris.com/sitemap.xml\n', encoding='utf-8')
     build_search_index(out)
     build_sitemap(out)

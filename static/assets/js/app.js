@@ -340,13 +340,11 @@ function prefillRequestForm() {
     returnDate: isoToMDY(params.get('returnDate') || ''),
     tripType: params.get('tripType') || ((params.get('returnDate') || '') ? 'Round Trip' : 'Round Trip'),
     cabin: params.get('cabin') || 'Business Class',
-    budget: params.get('budget') || ''
+    preferredFareRange: params.get('preferredFareRange') || '',
+    noFixedItinerary: params.get('noFixedItinerary') || ''
   };
 
-  Object.entries(values).forEach(([id, value]) => {
-    const el = document.getElementById(id);
-    if (el) el.value = value;
-  });
+  Object.entries(values).forEach(([id, value]) => { const el = document.getElementById(id); if (!el) return; if (el.type === 'checkbox') { el.checked = value === 'yes' || value === 'true' || value === true; } else { el.value = value; } });
 
   if (values.originCode) {
     const airport = findAirportByStoredCode(values.originCode);
@@ -425,7 +423,6 @@ function buildRequestUrl() {
     returnDate: mdyToISO(document.getElementById('returnDate').value),
     tripType: document.getElementById('tripType') ? document.getElementById('tripType').value : (document.getElementById('returnDate').value ? 'Round Trip' : 'One Way'),
     cabin: document.getElementById('cabin').value,
-    budget: document.getElementById('budget').value
   });
   return `request.html?${params.toString()}`;
 }
@@ -440,6 +437,34 @@ async function submitWithBeacon(payload) {
   }
 }
 
+
+
+function setupFlexibleItinerary(){
+  const toggle = document.getElementById('noFixedItinerary');
+  const preferredRange = document.getElementById('preferredRangeField');
+  if (!toggle) return;
+  const ids = ['origin','destination','departDate','returnDate','segment2Origin','segment2Destination','segment2DepartDate'];
+  const codeIds = ['originCode','destinationCode','segment2OriginCode','segment2DestinationCode'];
+  const apply = () => {
+    const on = toggle.checked;
+    const tripField = document.getElementById('tripType');
+    if (preferredRange) preferredRange.hidden = !on;
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.required = !on && !['returnDate','segment2Origin','segment2Destination','segment2DepartDate'].includes(id);
+      if (on) { el.setCustomValidity(''); }
+      const wrap = el.closest('.field');
+      if (wrap) wrap.classList.toggle('field-disabled', on);
+    });
+    codeIds.forEach((id) => { const el=document.getElementById(id); if (el && on) el.value=''; });
+    const originErr = document.getElementById('originError'); if (originErr && on) originErr.textContent='';
+    const destErr = document.getElementById('destinationError'); if (destErr && on) destErr.textContent='';
+    if (tripField && on) tripField.value='Flexible';
+  };
+  toggle.addEventListener('change', apply);
+  apply();
+}
 
 function setupTripType() {
   const hidden = document.getElementById('tripType');
@@ -525,21 +550,26 @@ async function attachForms() {
       event.preventDefault();
       await loadAirports();
       let valid = true;
-      if (!validateAirportField('origin', 'originCode', 'originError')) valid = false;
-      if (!validateAirportField('destination', 'destinationCode', 'destinationError')) valid = false;
+      const flexible = document.getElementById('noFixedItinerary') && document.getElementById('noFixedItinerary').checked;
+      if (!flexible) {
+        if (!validateAirportField('origin', 'originCode', 'originError')) valid = false;
+        if (!validateAirportField('destination', 'destinationCode', 'destinationError')) valid = false;
+      }
       const departField = document.getElementById('departDate');
       const returnField = document.getElementById('returnDate');
-      if (!departField.value || !validMDYWithinRange(departField.value)) valid = false;
+      if (!flexible && (!departField.value || !validMDYWithinRange(departField.value))) valid = false;
       const selectedTripType = document.getElementById('tripType') ? document.getElementById('tripType').value : (returnField.value ? 'Round Trip' : 'One Way');
-      if (selectedTripType === 'Round Trip') {
+      if (!flexible && selectedTripType === 'Round Trip') {
         if (!returnField.value || !validMDYWithinRange(returnField.value)) valid = false;
       }
-      if (selectedTripType === 'Multi City') {
+      if (!flexible && selectedTripType === 'Multi City') {
         if (!validateAirportField('segment2Origin', 'segment2OriginCode', 'segment2OriginError')) valid = false;
         if (!validateAirportField('segment2Destination', 'segment2DestinationCode', 'segment2DestinationError')) valid = false;
         const seg2Date = document.getElementById('segment2DepartDate');
         if (!seg2Date.value || !validMDYWithinRange(seg2Date.value)) valid = false;
       }
+      const preferredFareRangeField = document.getElementById('preferredFareRange');
+      if (flexible && preferredFareRangeField && !preferredFareRangeField.value) valid = false;
       if (!fullForm.reportValidity() || !valid) return;
 
       const submitButton = fullForm.querySelector('button[type="submit"]');
@@ -570,10 +600,12 @@ async function attachForms() {
         departDate: mdyToISO(document.getElementById('departDate').value),
         returnDate: (document.getElementById('tripType') && document.getElementById('tripType').value === 'Round Trip') ? mdyToISO(document.getElementById('returnDate').value) : '',
         cabin: document.getElementById('cabin').value,
-        priceRange: document.getElementById('budget').value,
-        budget: document.getElementById('budget').value,
+        preferredFareRange: document.getElementById('preferredFareRange') ? document.getElementById('preferredFareRange').value : '',
+        priceRange: document.getElementById('preferredFareRange') ? document.getElementById('preferredFareRange').value : '',
+        budget: document.getElementById('preferredFareRange') ? document.getElementById('preferredFareRange').value : '',
         notes: document.getElementById('notes').value,
-        tripType: document.getElementById('tripType') ? document.getElementById('tripType').value : (document.getElementById('returnDate').value ? 'Round Trip' : 'One Way'),
+        tripType: flexible ? 'Flexible' : (document.getElementById('tripType') ? document.getElementById('tripType').value : (document.getElementById('returnDate').value ? 'Round Trip' : 'One Way')),
+        noFixedItinerary: flexible ? 'yes' : 'no',
         flightType: 'Premium Cabin Request',
         multiCityLegs: '',
         multiCity: '',
@@ -654,6 +686,7 @@ async function init() {
   setupAutocomplete({ inputId: 'segment2Destination', hiddenId: 'segment2DestinationCode', listId: 'segment2DestinationList', errorId: 'segment2DestinationError' });
   prefillRequestForm();
   setupTripType();
+  setupFlexibleItinerary();
   await attachForms();
 }
 
