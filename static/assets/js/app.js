@@ -441,6 +441,7 @@ function buildRequestUrl() {
     returnDate: mdyToISO(document.getElementById('returnDate').value),
     tripType: document.getElementById('tripType') ? document.getElementById('tripType').value : (document.getElementById('returnDate').value ? 'Round Trip' : 'One Way'),
     cabin: document.getElementById('cabin').value,
+    preferredFareRange: document.getElementById('preferredFareRange') ? document.getElementById('preferredFareRange').value : '',
   });
   return `request.html?${params.toString()}`;
 }

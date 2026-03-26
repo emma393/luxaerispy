@@ -753,3 +753,41 @@ body.has-video:before{background:linear-gradient(90deg, rgba(6,8,14,.78) 0%, rgb
 .flatpickr-current-month .flatpickr-monthDropdown-months,.flatpickr-current-month input.cur-year{font-size:1.1rem !important;font-weight:700 !important}
 .flatpickr-months .flatpickr-prev-month,.flatpickr-months .flatpickr-next-month{padding-top:8px !important}
 @media (max-width: 900px){.hero-copy-luxury h1{font-size:clamp(2.7rem,11vw,4.15rem) !important;max-width:10ch !important}}
+
+
+/* 2026-03-26 vfinal4 home + request visibility fixes */
+.hero-copy-luxury h1{
+  font-size:clamp(2.7rem,4.3vw,4.5rem) !important;
+  line-height:.96 !important;
+  max-width:14.5ch !important;
+  letter-spacing:-0.025em !important;
+  color:#fffaf2 !important;
+  text-shadow:0 12px 34px rgba(0,0,0,.74), 0 3px 10px rgba(0,0,0,.62) !important;
+}
+.hero-copy-luxury .hero-line{display:block; white-space:nowrap;}
+.hero-copy-luxury{max-width:860px !important;}
+.final-cta .section-title{
+  font-size:clamp(2rem,3vw,2.85rem) !important;
+  line-height:1.02 !important;
+  color:#fff7ea !important;
+  text-shadow:0 6px 18px rgba(0,0,0,.45);
+  max-width:14ch;
+}
+.final-cta .eyebrow{color:#e4c98c !important;}
+.final-cta{background:linear-gradient(90deg, rgba(7,12,22,.93) 0%, rgba(10,15,27,.91) 100%) !important;}
+.final-cta .btn-secondary{background:rgba(255,255,255,.05) !important;color:#fff7ea !important;border-color:rgba(216,182,110,.18) !important;}
+.trip-type-btn:focus,.trip-type-btn:focus-visible{outline:2px solid rgba(216,182,110,.85) !important; outline-offset:2px; box-shadow:none !important;}
+.trip-type-btn.is-active{color:#111 !important;}
+.route-bubble:visited,.city-bubble:visited,.airport-pill:visited{color:#2a211b !important; background:#fff7ec !important; border-color:rgba(199,160,99,.35) !important;}
+#quickQuoteForm .field select,#fullRequestForm .field select{appearance:auto;}
+.home-form-panel .form-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.home-form-panel .field-wide{grid-column:1/-1;}
+.home-form-panel .button-row{padding-top:2px;}
+.home-form-panel #preferredFareRange,.request-form-panel-wide #preferredFareRange{font-weight:600;}
+@media (max-width: 900px){
+  .hero-copy-luxury h1{
+    font-size:clamp(2.35rem,9.8vw,3.6rem) !important;
+    max-width:12ch !important;
+  }
+  .hero-copy-luxury .hero-line{white-space:normal;}
+}
