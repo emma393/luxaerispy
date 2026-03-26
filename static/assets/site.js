@@ -527,7 +527,7 @@ function luxaerisInjectEnhancements(){
     if (intro && intro.parentNode) {
       const box = document.createElement('section');
       box.className = 'luxaeris-price-box';
-      box.innerHTML = `<article class="content-panel"><p class="kicker">Why travelers choose LuxAeris</p><h2>Premium route help without the search fatigue</h2><ul class="guide-list"><li>No LuxAeris service fee</li><li>Premium airlines and long-haul route context</li><li>Faster than manually checking dozens of combinations</li></ul></article><article class="content-panel"><p class="kicker">Typical fare context</p><h2>Typical business class fare range</h2><p class="price-range">$2,200 – $4,800</p><p>Typical fares vary by route, season, flexibility, and cabin inventory. Use the request form for route-specific options on your dates.</p></article>`;
+      box.innerHTML = `<article class="content-panel"><p class="kicker">Why travelers choose LuxAeris</p><h2>Premium route help without the search fatigue</h2><ul class="guide-list"><li>No LuxAeris service fee</li><li>Premium airlines and long-haul route context</li><li>Faster than manually checking dozens of combinations</li></ul></article><article class="content-panel"><p class="kicker">Typical fare context</p><h2>Typical business class fare range</h2><p class="price-range">$3,200 – $5,800</p><p>Typical fares vary by route, season, flexibility, and cabin inventory. Use the request form for route-specific options on your dates.</p></article>`;
       intro.insertAdjacentElement('afterend', box);
     }
   }
@@ -724,7 +724,7 @@ function luxaerisInjectEnhancements(){
     if (intro && intro.parentNode) {
       const box = document.createElement('section');
       box.className = 'luxaeris-price-box';
-      box.innerHTML = `<article class="content-panel"><p class="kicker">Why travelers choose LuxAeris</p><h2>Clear route guidance without the search overload</h2><ul class="guide-list"><li>No LuxAeris service fee</li><li>Helpful premium cabin context</li><li>Faster than checking dozens of combinations by hand</li></ul></article><article class="content-panel"><p class="kicker">Typical fare context</p><h2>Typical business class fare range</h2><p class="price-range">$2,200 – $4,800</p><p>Fares vary by season, demand, flexibility, and cabin inventory. Use the request form for route-specific options on your travel dates.</p></article>`;
+      box.innerHTML = `<article class="content-panel"><p class="kicker">Why travelers choose LuxAeris</p><h2>Clear route guidance without the search overload</h2><ul class="guide-list"><li>No LuxAeris service fee</li><li>Helpful premium cabin context</li><li>Faster than checking dozens of combinations by hand</li></ul></article><article class="content-panel"><p class="kicker">Typical fare context</p><h2>Typical business class fare range</h2><p class="price-range">$3,200 – $5,800</p><p>Fares vary by season, demand, flexibility, and cabin inventory. Use the request form for route-specific options on your travel dates.</p></article>`;
       intro.insertAdjacentElement('afterend', box);
     }
   }
@@ -823,4 +823,88 @@ document.addEventListener('DOMContentLoaded', () => {
   removeToolsLinks();
   moveFaqBelowMainContent();
   initSiteSearch();
+});
+
+
+/* 2026-03-26 route fare context override */
+async function luxaerisLoadAirportMeta(){
+  if (window.__luxaerisAirportMeta) return window.__luxaerisAirportMeta;
+  const urls = ['/data/airports.json','data/airports.json'];
+  for (const url of urls){
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const data = await res.json();
+      window.__luxaerisAirportMeta = data;
+      return data;
+    } catch(e) {}
+  }
+  return [];
+}
+function luxaerisParseRouteCodes(){
+  const path = window.location.pathname.toLowerCase();
+  const m = path.match(/\/routes\/([a-z0-9-]+)\.html$/);
+  if (!m) return null;
+  const slug = m[1];
+  const parts = slug.split('-to-');
+  if (parts.length !== 2) return null;
+  const origin = parts[0].split('-')[0].toUpperCase();
+  const dest = parts[1].split('-')[0].toUpperCase();
+  if (origin.length < 3 || dest.length < 3) return null;
+  return {origin, dest};
+}
+function luxaerisFareEstimate(originMeta, destMeta){
+  const us = code => code && code.country_name === 'United States';
+  const a = originMeta || {};
+  const b = destMeta || {};
+  const ar = a.region_cluster || '';
+  const br = b.region_cluster || '';
+  const eastUS = ['JFK','EWR','IAD','BOS','ATL','MIA','ORD','DFW'];
+  const westUS = ['LAX','SFO','SEA'];
+  const originCode = (a.code_iata || '').toUpperCase();
+  const destCode = (b.code_iata || '').toUpperCase();
+  const any = (...pairs) => pairs.some(([x,y]) => (ar===x&&br===y)||(ar===y&&br===x));
+  let low = 3200, high = 5600;
+  if (us(a) && us(b)) { low = 700; high = 1800; }
+  else if (any(['north-america','europe'])) {
+    if (eastUS.includes(originCode) || eastUS.includes(destCode)) { low = 2800; high = 5200; }
+    if (westUS.includes(originCode) || westUS.includes(destCode)) { low = 3400; high = 6200; }
+  } else if (any(['north-america','middle-east'])) { low = 4200; high = 7800; }
+  else if (any(['north-america','asia'])) {
+    if (westUS.includes(originCode) || westUS.includes(destCode)) { low = 4200; high = 7800; }
+    else { low = 4600; high = 8600; }
+  } else if (any(['north-america','africa'])) { low = 5200; high = 9200; }
+  else if (any(['north-america','oceania'])) { low = 6200; high = 10500; }
+  else if (any(['north-america','south-america'])) { low = 3000; high = 6200; }
+  else if (any(['north-america','caribbean'])) { low = 1200; high = 2800; }
+  const note = 'Typical fares move with seasonality, departure city, stop pattern, advance purchase, and live inventory. Use this page as planning context rather than a fixed quote.';
+  return {range:`$${low.toLocaleString()} – $${high.toLocaleString()}`, note};
+}
+async function luxaerisRefreshRoutePriceBoxes(){
+  if (!/\/routes\//.test(window.location.pathname)) return;
+  const boxes = document.querySelectorAll('.luxaeris-price-box');
+  if (!boxes.length) return;
+  const codes = luxaerisParseRouteCodes();
+  if (!codes) return;
+  const data = await luxaerisLoadAirportMeta();
+  const byCode = new Map((data || []).map(item => [String(item.code_iata || '').toUpperCase(), item]));
+  const estimate = luxaerisFareEstimate(byCode.get(codes.origin), byCode.get(codes.dest));
+  boxes.forEach(box => {
+    const h2 = box.querySelector('.content-panel:last-child h2');
+    const range = box.querySelector('.content-panel:last-child .price-range');
+    const desc = box.querySelector('.content-panel:last-child p:last-child');
+    if (h2) h2.textContent = 'Typical business class fare range';
+    if (range) range.textContent = estimate.range;
+    if (desc) desc.textContent = estimate.note;
+  });
+}
+function luxaerisNormalizeGuideImages(){
+  document.querySelectorAll('.city-guide-grid .hero-shot, .guide-hero img, .lux-hero img').forEach(img => {
+    img.style.objectFit = 'cover';
+    img.style.background = 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  luxaerisNormalizeGuideImages();
+  setTimeout(luxaerisRefreshRoutePriceBoxes, 120);
 });

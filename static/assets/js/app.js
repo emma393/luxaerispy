@@ -413,6 +413,24 @@ function validateAirportField(inputId, codeId, errorId) {
   return valid;
 }
 
+
+
+const CABIN_BUDGET_OPTIONS = {
+  'Business Class': ['Select budget range', '$3,500–$5,500', '$5,500–$8,500', '$8,500+'],
+  'First Class': ['Select budget range', '$7,500–$12,000', '$12,000–$18,000', '$18,000+'],
+  'Premium Economy': ['Select budget range', '$1,800–$3,000', '$3,000–$4,500', '$4,500+']
+};
+
+function syncPreferredFareOptions(){
+  const cabinField = document.getElementById('cabin');
+  const fareField = document.getElementById('preferredFareRange');
+  if (!cabinField || !fareField) return;
+  const currentValue = fareField.value;
+  const values = CABIN_BUDGET_OPTIONS[cabinField.value] || CABIN_BUDGET_OPTIONS['Business Class'];
+  fareField.innerHTML = values.map((value, index) => `<option value="${index === 0 ? '' : value}">${value}</option>`).join('');
+  if (values.includes(currentValue)) fareField.value = currentValue;
+}
+
 function buildRequestUrl() {
   const params = new URLSearchParams({
     origin: document.getElementById('origin').value,
@@ -679,6 +697,12 @@ Leg 2: ${payload.segment2Origin} → ${payload.segment2Destination} on ${payload
 
 async function init() {
   await loadAirports();
+  syncPreferredFareOptions();
+  const cabinBudgetField = document.getElementById('cabin');
+  if (cabinBudgetField && !cabinBudgetField.dataset.boundBudget) {
+    cabinBudgetField.dataset.boundBudget = '1';
+    cabinBudgetField.addEventListener('change', syncPreferredFareOptions);
+  }
   attachDatePickers();
   setupAutocomplete({ inputId: 'origin', hiddenId: 'originCode', listId: 'originList', errorId: 'originError' });
   setupAutocomplete({ inputId: 'destination', hiddenId: 'destinationCode', listId: 'destinationList', errorId: 'destinationError' });

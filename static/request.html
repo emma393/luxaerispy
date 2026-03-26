@@ -89,12 +89,13 @@
 </div>
 </div>
 </div>
-<div class="field"><label for="cabin">Cabin</label><select id="cabin" name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div>
+<div class="field"><label for="cabin">Cabin</label><select id="cabin" name="cabin"><option selected="">Business Class</option><option>First Class</option><option>Premium Economy</option></select></div>
+<div class="field"><label for="preferredFareRange">Budget range</label><select id="preferredFareRange" name="preferredFareRange" required=""><option value="">Select budget range</option><option>$3,500–$5,500</option><option>$5,500–$8,500</option><option>$8,500+</option></select></div>
 
 <div class="field field-wide contact-span"><label for="fullName">Full name</label><input id="fullName" name="fullName" placeholder="Your full name" required="" type="text"/></div>
 <div class="field field-wide contact-field"><label for="email">Email</label><input id="email" name="email" placeholder="you@example.com" required="" type="email"/></div>
 <div class="field field-wide contact-field"><label for="phone">Phone number</label><input id="phone" name="phone" placeholder="+1 000 000 0000" required="" type="tel"/></div>
-<div class="field"><label for="preferredFareRange">Preferred fare range</label><select id="preferredFareRange" name="preferredFareRange"><option value="">Select preferred fare range</option><option>$2,500–$5,000</option><option>$5,000–$8,000</option><option>$8,000–$12,000</option><option>$12,000+</option></select></div><div class="field field-wide fare-influence-box"><div class="fare-influence-inner"><strong>What shapes the fare</strong><span>Travel season, flexibility, airline and alliance, aircraft type, nonstop versus one-stop routing, advance notice, and the number of travelers all influence the final fare.</span></div></div><div class="field field-wide"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, passengers, special requests, or anything else relevant."></textarea></div>
+<div class="field field-wide fare-influence-box"><div class="fare-influence-inner"><strong>What influences the fare</strong><span>Travel season, flexibility, airline and alliance, aircraft type, nonstop versus one-stop routing, advance purchase, and the number of travelers all influence the final fare.</span></div></div><div class="field field-wide"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Preferred airline, flexibility, passengers, special requests, or anything else relevant."></textarea></div>
 <div class="field field-wide button-row request-actions"><button class="btn-primary" type="submit">Submit request</button><a class="btn-secondary back-link" href="index.html">Back home</a></div>
 </div>
 </form>

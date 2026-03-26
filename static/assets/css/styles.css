@@ -728,3 +728,28 @@ footer{margin-top:0}
   .hero-copy-luxury h1{font-size:clamp(3rem,13vw,4.5rem);max-width:none}
   .form-grid-request{grid-template-columns:1fr}
 }
+
+
+/* 2026-03-26 final visibility + request fixes */
+
+.home-luxury, .home-luxury body {background:linear-gradient(180deg,#0b1017 0%, #111827 100%);}
+body.has-video:before{background:linear-gradient(90deg, rgba(6,8,14,.78) 0%, rgba(6,8,14,.56) 34%, rgba(6,8,14,.22) 58%, rgba(6,8,14,.50) 100%) !important;}
+.hero-copy-luxury h1{font-size:clamp(3.15rem,5.15vw,5.45rem) !important;line-height:.96 !important;max-width:9.6ch !important;color:#fff8ef !important;text-shadow:0 10px 32px rgba(0,0,0,.62), 0 2px 8px rgba(0,0,0,.56) !important;}
+.hero-copy-luxury .eyebrow,.hero-copy-luxury .lead-hero,.hero-note{position:relative;z-index:2}
+.lead-hero{max-width:48ch !important;color:#f7edde !important;text-shadow:0 2px 10px rgba(0,0,0,.42)}
+.panel-title,.panel-subtitle,.luxury-quote-panel label,.luxury-quote-panel .trip-type-btn,.luxury-quote-panel .field input,.luxury-quote-panel .field select{color:#f7f1e7;}
+.luxury-quote-panel .panel-title{font-size:2rem;line-height:1.05;margin-bottom:8px}
+.luxury-quote-panel .trip-type-btn{background:rgba(255,255,255,.03)}
+.luxury-quote-panel .trip-type-btn.is-active{color:#111}
+.request-body{background:radial-gradient(circle at top, rgba(215,181,109,0.08), transparent 28%), linear-gradient(180deg,#07101b 0%, #0b1220 100%) !important;color:#f4ead8;}
+.request-body footer,.request-body .site-header-sticky{background:linear-gradient(180deg,rgba(6,8,12,.82),rgba(6,8,12,.46));}
+.request-form-panel-wide{background:linear-gradient(180deg, rgba(7,12,22,.98) 0%, rgba(10,16,29,.96) 100%) !important;max-width:1120px !important;border:1px solid rgba(216,182,110,.22) !important;box-shadow:0 28px 72px rgba(0,0,0,.34) !important;}
+.request-title,.request-title-compact{color:#fff5ea !important;font-size:clamp(2.25rem,3.2vw,3.4rem) !important;line-height:.98 !important;}
+.request-lead-compact,.request-body .lead,.request-body .helper,.request-body .field label{color:#e8dcc8 !important;}
+.request-body .field input,.request-body .field select,.request-body .field textarea{background:rgba(255,255,255,.035) !important;border:1px solid rgba(216,182,110,.16) !important;color:#f7f1e7 !important;}
+.request-body .field select option{color:#111}
+.request-body .fare-influence-inner{background:rgba(255,255,255,.04) !important;border-color:rgba(216,182,110,.18) !important;color:#f6ead7 !important;}
+.request-body .btn-secondary{background:rgba(255,255,255,.04);color:#f5ead7;border-color:rgba(216,182,110,.18)}
+.flatpickr-current-month .flatpickr-monthDropdown-months,.flatpickr-current-month input.cur-year{font-size:1.1rem !important;font-weight:700 !important}
+.flatpickr-months .flatpickr-prev-month,.flatpickr-months .flatpickr-next-month{padding-top:8px !important}
+@media (max-width: 900px){.hero-copy-luxury h1{font-size:clamp(2.7rem,11vw,4.15rem) !important;max-width:10ch !important}}
