@@ -908,3 +908,54 @@ document.addEventListener('DOMContentLoaded', () => {
   luxaerisNormalizeGuideImages();
   setTimeout(luxaerisRefreshRoutePriceBoxes, 120);
 });
+
+
+(function(){
+  function budgetOptionsFor(cabin){
+    const value=(cabin||'').toLowerCase();
+    if(value.includes('first')){
+      return ['Select budget range','$8,000–$12,000','$12,000–$18,000','$18,000+'];
+    }
+    if(value.includes('premium')){
+      return ['Select budget range','$1,500–$2,500','$2,500–$4,000','$4,000+'];
+    }
+    return ['Select budget range','$3,500–$5,500','$5,500–$8,500','$8,500+'];
+  }
+  function ensureBudgetField(form){
+    if(!form) return;
+    const cabin=form.querySelector('select[name="cabin"], #cabin');
+    if(!cabin || form.querySelector('select[name="preferredFareRange"], #preferredFareRange')) return;
+    const field=document.createElement('div');
+    field.className='field field-budget-row';
+    field.innerHTML='<label for="preferredFareRange">Budget range</label><select id="preferredFareRange" name="preferredFareRange" required><option value="">Select budget range</option></select>';
+    const budget=field.querySelector('select');
+    const sync=()=>{
+      const opts=budgetOptionsFor(cabin.value);
+      const keep=budget.value;
+      budget.innerHTML='';
+      opts.forEach((opt, idx)=>{
+        const o=document.createElement('option');
+        if(idx===0){o.value='';}
+        o.textContent=opt;
+        if(opt===keep) o.selected=true;
+        budget.appendChild(o);
+      });
+    };
+    sync();
+    cabin.addEventListener('change', sync);
+    const cabinField=cabin.closest('.field');
+    if(cabinField && cabinField.parentNode){
+      cabinField.insertAdjacentElement('afterend', field);
+    } else {
+      form.appendChild(field);
+    }
+  }
+  function patchForms(){
+    document.querySelectorAll('form').forEach(form=>{
+      if(form.querySelector('select[name="cabin"], #cabin')) ensureBudgetField(form);
+    });
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', patchForms);
+  } else { patchForms(); }
+})();

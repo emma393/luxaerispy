@@ -830,3 +830,161 @@ body.has-sticky-request-rail .luxaeris-trust-line{color:#6b594b;font-weight:600}
 .footer-inline-route,.footer-inner{min-height:2cm !important;display:flex !important;align-items:center !important;justify-content:center !important;gap:18px !important;flex-wrap:nowrap !important;white-space:nowrap !important;overflow-x:auto !important}
 .footer-inner nav{display:flex !important;gap:18px !important;flex-wrap:nowrap !important}
 
+
+
+
+/* 2026-03-26 vfinal8 visibility + request + calendar */
+.section-dark-panel .section-title,
+.section-dark-panel .section-link,
+.section-luxury-intro .section-title,
+.featured-destinations-section .section-title,
+.premium-routes-panel .section-title,
+.featured-destinations-section .eyebrow,
+.section-luxury-intro .eyebrow,
+.premium-routes-panel .eyebrow{
+  color:#fff8ef !important;
+  text-shadow:0 10px 24px rgba(0,0,0,.42) !important;
+}
+.section-luxury-intro .lead,
+.section-dark-panel p,
+.featured-destinations-section p{
+  color:#f3eadf !important;
+}
+.link-cloud a,
+.premium-routes-panel .link-cloud a{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:54px !important;
+  padding:0 22px !important;
+  border-radius:999px !important;
+  border:1px solid rgba(230,201,143,.28) !important;
+  background:rgba(17,21,33,.72) !important;
+  color:#fff8ef !important;
+  font-weight:700 !important;
+  text-decoration:none !important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.03) !important;
+}
+.link-cloud a:hover,
+.link-cloud a:focus,
+.link-cloud a:active{
+  background:linear-gradient(180deg,#edd39d,#d6b16f) !important;
+  color:#18130e !important;
+  border-color:#edcf93 !important;
+}
+.lux-hero-copy .hero-title{
+  font-size:clamp(3.2rem,4.6vw,5.2rem) !important;
+  line-height:1.02 !important;
+  max-width:12ch !important;
+}
+.lux-hero-copy .hero-sub{
+  max-width:26ch !important;
+}
+.lux-hero-overlay{
+  background:linear-gradient(180deg, rgba(7,9,16,.58), rgba(7,9,16,.76)) !important;
+}
+.site-footer,.footer{
+  min-height:2cm !important;
+  padding:0 !important;
+}
+.site-footer .footer-inner,.footer .footer-grid,.footer-inner{
+  min-height:2cm !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:14px !important;
+  flex-wrap:nowrap !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+}
+.footer p,.site-footer p{
+  margin:0 !important;
+  line-height:1.25 !important;
+}
+.flatpickr-calendar{
+  width:340px !important;
+  border-radius:18px !important;
+  overflow:hidden !important;
+}
+.flatpickr-calendar .flatpickr-months{
+  height:60px !important;
+}
+.flatpickr-calendar .flatpickr-current-month{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  padding-top:10px !important;
+  height:56px !important;
+  font-size:20px !important;
+  line-height:1.1 !important;
+}
+.flatpickr-calendar .cur-month{
+  font-size:20px !important;
+  font-weight:700 !important;
+  color:#182235 !important;
+  visibility:visible !important;
+}
+.flatpickr-calendar .numInput.cur-year,
+.flatpickr-calendar .flatpickr-monthDropdown-months{
+  font-size:20px !important;
+  font-weight:700 !important;
+  color:#182235 !important;
+  width:auto !important;
+  min-width:74px !important;
+  visibility:visible !important;
+}
+.flatpickr-calendar .dayContainer,
+.flatpickr-calendar .flatpickr-days{
+  width:340px !important;
+  min-width:340px !important;
+}
+.flatpickr-calendar .flatpickr-weekdays,
+.flatpickr-calendar span.flatpickr-weekday{
+  font-size:14px !important;
+  font-weight:700 !important;
+}
+.page-shell .request-rail select,
+.page-shell .request-rail input,
+.page-shell .request-rail textarea{
+  background:#fff !important;
+}
+.request-rail .field-budget-row,
+.luxaeris-fixed-rail .field-budget-row{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:16px !important;
+}
+.country-page-card img,
+.visual-card img{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
+
+.flatpickr-calendar .flatpickr-current-month .numInputWrapper{
+  width:6ch !important;
+  min-width:6ch !important;
+}
+.flatpickr-calendar .flatpickr-current-month input.cur-year{
+  width:6ch !important;
+  padding:0 !important;
+}
+.flatpickr-calendar .flatpickr-current-month .flatpickr-monthDropdown-months{
+  padding-right:6px !important;
+}
+.section-dark-panel .section-title,
+.section-luxury-intro .section-title,
+.featured-destinations-section .section-title{
+  position:relative !important;
+  z-index:2 !important;
+}
+.section-dark-panel .section-heading,
+.section-luxury-intro .luxury-copy-block,
+.featured-destinations-section .section-heading{
+  position:relative !important;
+  z-index:2 !important;
+}
+.footer-inline-route,.footer-inner,.footer-grid{
+  padding:0 18px !important;
+}
