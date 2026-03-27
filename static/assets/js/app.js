@@ -158,7 +158,7 @@ function findAirportByStoredCode(code) {
   if (!code) return null;
   if (AIRPORTS_BY_CODE.has(String(code).toUpperCase())) return AIRPORTS_BY_CODE.get(String(code).toUpperCase());
   const upper = String(code).toUpperCase();
-  const matches = AIRPORTS.filter((airport) => String(airport.submitCode || '').toUpperCase() === upper || String(airport.cityCode || '').toUpperCase() === upper || (airport.memberCodes || []).map((c)=>String(c).toUpperCase()).includes(upper));
+  const matches = AIRPORTS.filter((airport) => String(airport.submitCode || '').toUpperCase() === upper || String(airport.cityCode || '').toUpperCase() === upper || (airport.memberCodes || []).map((c) => String(c).toUpperCase()).includes(upper));
   if (!matches.length) return null;
   const preferredGroup = matches.find((airport) => airport.isCityGroup);
   return preferredGroup || matches[0];
@@ -767,45 +767,3 @@ async function init() {
 
 document.addEventListener('DOMContentLoaded', init);
 
-
-const CABIN_BUDGET_OPTIONS = {
-  'Premium Economy': ['$1,200–$2,200', '$2,200–$3,500', '$3,500+'],
-  'Business Class': ['$3,500–$5,500', '$5,500–$8,500', '$8,500+'],
-  'First Class': ['$6,500–$10,000', '$10,000–$16,000', '$16,000+']
-};
-
-function ensureBudgetFieldInForms(){
-  const cabinFields = Array.from(document.querySelectorAll('select[name="cabin"], #cabin'));
-  cabinFields.forEach((cabinField, idx) => {
-    const form = cabinField.closest('form');
-    const existing = form?.querySelector('select[name="preferredFareRange"], #preferredFareRange');
-    if (!form || existing) return;
-    const wrap = document.createElement('div');
-    wrap.className = 'field field-wide injected-budget-field';
-    wrap.innerHTML = `<label for="preferredFareRange_auto_${idx}">Budget range</label>
-      <select id="preferredFareRange_auto_${idx}" name="preferredFareRange" required>
-        <option value="">Select budget range</option>
-      </select>`;
-    const cabinFieldWrap = cabinField.closest('.field') || cabinField.parentElement;
-    if (cabinFieldWrap && cabinFieldWrap.parentNode) {
-      cabinFieldWrap.parentNode.insertBefore(wrap, cabinFieldWrap.nextSibling);
-      syncPreferredFareOptions(cabinField, wrap.querySelector('select'));
-      cabinField.addEventListener('change', () => syncPreferredFareOptions(cabinField, wrap.querySelector('select')));
-    }
-  });
-}
-
-function syncPreferredFareOptions(cabinFieldArg, fareFieldArg){
-  const cabinField = cabinFieldArg || document.getElementById('cabin');
-  const fareField = fareFieldArg || document.getElementById('preferredFareRange');
-  if (!cabinField || !fareField) return;
-  const previous = fareField.value;
-  const opts = CABIN_BUDGET_OPTIONS[cabinField.value] || CABIN_BUDGET_OPTIONS['Business Class'];
-  fareField.innerHTML = '<option value="">Select budget range</option>' + opts.map(v => `<option>${v}</option>`).join('');
-  if (opts.includes(previous)) fareField.value = previous;
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  ensureBudgetFieldInForms();
-  setTimeout(() => ensureBudgetFieldInForms(), 300);
-});
