@@ -1,40 +1,169 @@
 
-/* HERO FIX — POSITION + VISIBILITY */
+/* PERFECT HERO + FORM BALANCE */
 
-.hero {
+body.home-luxury .hero.hero-luxury{
   position: relative;
-  min-height: 88vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding-top: 112px !important;
+  padding-bottom: 64px !important;
 }
 
-.hero::before {
+body.home-luxury .hero.hero-luxury::before{
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(5, 10, 20, 0.65) 0%,
-    rgba(5, 10, 20, 0.55) 40%,
-    rgba(5, 10, 20, 0.35) 70%,
-    rgba(5, 10, 20, 0.15) 100%
-  );
+    rgba(5, 10, 20, 0.58) 0%,
+    rgba(5, 10, 20, 0.48) 34%,
+    rgba(5, 10, 20, 0.28) 62%,
+    rgba(5, 10, 20, 0.12) 100%
+  ) !important;
   z-index: 1;
 }
 
-.hero-content {
+body.home-luxury #bg-video{
+  opacity: 0.38 !important;
+  filter: brightness(0.95) saturate(0.96) !important;
+}
+
+body.home-luxury .hero-grid.hero-grid-luxury{
   position: relative;
   z-index: 2;
-  max-width: 780px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.22fr) minmax(360px, 0.9fr) !important;
+  column-gap: 34px !important;
+  align-items: center !important;
 }
 
-.hero h1 {
-  margin-top: 20px;
-  line-height: 1.15;
+body.home-luxury .hero-copy.hero-copy-luxury{
+  max-width: 860px !important;
+  padding-top: 42px !important;
+  padding-right: 8px !important;
 }
 
-.hero p {
-  opacity: 0.9;
+body.home-luxury .hero-copy-luxury h1{
+  font-size: clamp(2.7rem, 4vw, 4.7rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.025em !important;
+  max-width: 12.2ch !important;
+  margin: 14px 0 24px !important;
+}
+
+body.home-luxury .hero-copy-luxury .hero-line{
+  display: block;
+}
+
+body.home-luxury .lead-hero{
+  max-width: 34ch !important;
+  font-size: clamp(1rem, 1.18vw, 1.2rem) !important;
+  line-height: 1.46 !important;
+  color: rgba(255,248,239,0.97) !important;
+  margin-bottom: 26px !important;
+}
+
+body.home-luxury .hero-note{
+  color: rgba(255,248,239,0.95) !important;
+  margin-top: 22px !important;
+  font-size: 1rem !important;
+  line-height: 1.38 !important;
+}
+
+body.home-luxury .hero-actions,
+body.home-luxury .hero-cta-row{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  align-items: center !important;
+}
+
+body.home-luxury .luxury-quote-panel,
+body.home-luxury .request-card,
+body.home-luxury .hero-form-card{
+  position: relative;
+  z-index: 2;
+  margin-top: 6px !important;
+  align-self: center !important;
+  width: 100% !important;
+  max-width: 480px !important;
+  padding: 30px 30px 28px !important;
+  border-radius: 28px !important;
+  background: linear-gradient(180deg, rgba(4,10,20,0.90), rgba(5,12,24,0.84)) !important;
+  border: 1px solid rgba(216,191,119,0.24) !important;
+  box-shadow: 0 24px 54px rgba(0,0,0,0.34) !important;
+}
+
+body.home-luxury .luxury-quote-panel h2,
+body.home-luxury .request-card h2,
+body.home-luxury .hero-form-card h2{
+  margin-top: 0 !important;
+}
+
+body.home-luxury .luxury-quote-panel .form-grid,
+body.home-luxury .request-card .form-grid,
+body.home-luxury .hero-form-card .form-grid{
+  row-gap: 18px !important;
+  column-gap: 16px !important;
+}
+
+body.home-luxury .trip-type-switch{
+  gap: 12px !important;
+}
+
+body.home-luxury .trip-type-btn{
+  min-height: 58px !important;
+  padding: 0 24px !important;
+}
+
+body.home-luxury .field input,
+body.home-luxury .field select{
+  min-height: 64px !important;
+}
+
+@media (max-width: 1280px){
+  body.home-luxury .hero-grid.hero-grid-luxury{
+    grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr) !important;
+    column-gap: 24px !important;
+  }
+  body.home-luxury .hero-copy-luxury h1{
+    font-size: clamp(2.45rem, 3.6vw, 4.1rem) !important;
+    max-width: 12.4ch !important;
+  }
+}
+
+@media (max-width: 1100px){
+  body.home-luxury .hero.hero-luxury{
+    padding-top: 88px !important;
+    min-height: auto !important;
+  }
+
+  body.home-luxury .hero-grid.hero-grid-luxury{
+    grid-template-columns: 1fr !important;
+    row-gap: 30px !important;
+    align-items: start !important;
+  }
+
+  body.home-luxury .hero-copy.hero-copy-luxury{
+    max-width: 100% !important;
+    padding-top: 14px !important;
+    padding-right: 0 !important;
+  }
+
+  body.home-luxury .hero-copy-luxury h1{
+    font-size: clamp(2.2rem, 6.3vw, 3.5rem) !important;
+    max-width: 100% !important;
+  }
+
+  body.home-luxury .lead-hero{
+    max-width: 100% !important;
+  }
+
+  body.home-luxury .luxury-quote-panel,
+  body.home-luxury .request-card,
+  body.home-luxury .hero-form-card{
+    max-width: 100% !important;
+    margin-top: 0 !important;
+  }
 }
