@@ -713,6 +713,7 @@ async function init() {
     cabinBudgetField.addEventListener('change', syncPreferredFareOptions);
   }
   attachDatePickers();
+  ensureBudgetFieldInForms();
   setupAutocomplete({ inputId: 'origin', hiddenId: 'originCode', listId: 'originList', errorId: 'originError' });
   setupAutocomplete({ inputId: 'destination', hiddenId: 'destinationCode', listId: 'destinationList', errorId: 'destinationError' });
   setupAutocomplete({ inputId: 'segment2Origin', hiddenId: 'segment2OriginCode', listId: 'segment2OriginList', errorId: 'segment2OriginError' });

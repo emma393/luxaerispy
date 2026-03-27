@@ -21,8 +21,9 @@ function filterAirports(query) {
     const label = (item.label || '').toLowerCase();
     const code = (item.code || '').toLowerCase();
     const city = (item.city || '').toLowerCase();
+    const cityCode = (item.cityCode || '').toLowerCase();
     const country = (item.country || '').toLowerCase();
-    return label.includes(q) || code.includes(q) || city.includes(q) || country.includes(q);
+    return label.includes(q) || code.includes(q) || city.includes(q) || cityCode.includes(q) || country.includes(q);
   }).slice(0, 12);
 }
 
@@ -35,6 +36,14 @@ function closeDropdown() {
 
 function attachAirportAutocomplete(input) {
   input.setAttribute('autocomplete', 'off');
+  const selectItem = (item) => {
+    input.value = item.label;
+    input.dataset.airportCode = item.code || item.cityCode || '';
+    input.dataset.airportSlug = item.slug || '';
+    input.setCustomValidity('');
+    closeDropdown();
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  };
   input.addEventListener('input', () => {
     delete input.dataset.airportCode;
     delete input.dataset.airportSlug;
@@ -48,15 +57,8 @@ function attachAirportAutocomplete(input) {
       const row = document.createElement('button');
       row.type = 'button';
       row.className = 'airport-option';
-      row.innerHTML = `<strong>${item.code}</strong> — ${item.city}, ${item.country}`;
-      row.addEventListener('click', () => {
-        input.value = item.label;
-        input.dataset.airportCode = item.code;
-        input.dataset.airportSlug = item.slug || '';
-        input.setCustomValidity('');
-        closeDropdown();
-        input.dispatchEvent(new Event('change', { bubbles: true }));
-      });
+      row.innerHTML = `<strong>${item.code || item.cityCode || ''}</strong> — ${item.city || ''}${item.country ? ', ' + item.country : ''}`;
+      row.addEventListener('click', () => selectItem(item));
       box.appendChild(row);
     });
     input.parentElement.style.position = 'relative';
@@ -65,8 +67,11 @@ function attachAirportAutocomplete(input) {
   });
   input.addEventListener('blur', () => {
     setTimeout(() => {
+      const raw = (input.value || '').trim();
+      const exact = AIRPORT_LOOKUP.get(raw) || AIRPORTS_BY_CODE.get(raw.toUpperCase()) || AIRPORTS.find(item => (item.city || '').toLowerCase() === raw.toLowerCase() || (item.cityCode || '').toLowerCase() === raw.toLowerCase());
+      if (exact) selectItem(exact);
+      else markAirportFieldValidity(input);
       closeDropdown();
-      markAirportFieldValidity(input);
     }, 180);
   });
 }
@@ -81,7 +86,13 @@ function normalizeAirportCode(value) {
 function markAirportFieldValidity(input) {
   if (!input) return true;
   const raw = (input.value || '').trim();
-  const valid = !!input.dataset.airportCode && AIRPORT_LOOKUP.has(raw) && AIRPORT_LOOKUP.get(raw).code === input.dataset.airportCode;
+  const exact = AIRPORT_LOOKUP.get(raw) || AIRPORTS_BY_CODE.get(raw.toUpperCase()) || AIRPORTS.find(item => (item.city || '').toLowerCase() === raw.toLowerCase() || (item.cityCode || '').toLowerCase() === raw.toLowerCase());
+  if (exact && !input.dataset.airportCode) {
+    input.dataset.airportCode = exact.code || exact.cityCode || '';
+    input.dataset.airportSlug = exact.slug || '';
+    input.value = exact.label;
+  }
+  const valid = !!(input.dataset.airportCode || (exact && (exact.code || exact.cityCode)));
   input.setCustomValidity(valid ? '' : 'Please choose a valid airport from the list.');
   return valid;
 }
@@ -105,51 +116,59 @@ function syncDateDisplay(input) {
   if (display) display.value = toUS(input.value);
 }
 
-function applyDateLimitsAndUI() {
+async function applyDateLimitsAndUI() {
   const today = new Date();
-  const maxDate = new Date();
-  maxDate.setDate(today.getDate() + 364);
-  const min = toISO(today);
-  const max = toISO(maxDate);
+  today.setHours(0,0,0,0);
+  const maxDate = new Date(today);
+  maxDate.setDate(maxDate.getDate() + 364);
 
-  document.querySelectorAll('input[type="date"]').forEach(input => {
-    input.min = min;
-    input.max = max;
-    if (input.dataset.enhanced === '1') {
-      syncDateDisplay(input);
-      return;
+  if (!window.flatpickr) {
+    const cssHref = 'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css';
+    if (!document.querySelector(`link[href="${cssHref}"]`)) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = cssHref;
+      document.head.appendChild(link);
     }
-    input.dataset.enhanced = '1';
-
-    const shell = document.createElement('div');
-    shell.className = 'date-shell';
-    input.parentNode.insertBefore(shell, input);
-    shell.appendChild(input);
-
-    const display = document.createElement('input');
-    display.type = 'text';
-    display.className = 'date-display';
-    display.placeholder = 'mm.dd.yyyy';
-    display.readOnly = true;
-    display.value = toUS(input.value);
-    shell.insertBefore(display, input);
-
-    const trigger = document.createElement('button');
-    trigger.type = 'button';
-    trigger.className = 'date-trigger';
-    trigger.textContent = '📅';
-    trigger.addEventListener('click', () => {
-      if (typeof input.showPicker === 'function') input.showPicker();
-      else input.focus();
+    await new Promise((resolve) => {
+      const existing = document.querySelector('script[data-flatpickr-loader="1"]');
+      if (existing) {
+        existing.addEventListener('load', resolve, { once: true });
+        setTimeout(resolve, 1200);
+        return;
+      }
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/flatpickr';
+      script.dataset.flatpickrLoader = '1';
+      script.onload = resolve;
+      script.onerror = resolve;
+      document.head.appendChild(script);
     });
-    shell.appendChild(trigger);
+  }
 
-    display.addEventListener('click', () => {
-      if (typeof input.showPicker === 'function') input.showPicker();
-      else input.focus();
-    });
-
-    input.addEventListener('change', () => syncDateDisplay(input));
+  document.querySelectorAll('input[type="date"], input[data-date-field]').forEach(input => {
+    if (input.type === 'date') {
+      try { input.type = 'text'; } catch(e) {}
+      input.setAttribute('data-date-field', '');
+    }
+    input.placeholder = 'mm.dd.yyyy';
+    input.autocomplete = 'off';
+    if (input.dataset.fpBound === '1') return;
+    input.dataset.fpBound = '1';
+    if (window.flatpickr) {
+      flatpickr(input, {
+        dateFormat: 'm.d.Y',
+        allowInput: true,
+        minDate: today,
+        maxDate: maxDate,
+        disableMobile: true,
+        clickOpens: true,
+        onReady: (_, __, instance) => {
+          input.addEventListener('focus', () => instance.open());
+          input.addEventListener('click', () => instance.open());
+        }
+      });
+    }
   });
 }
 
@@ -177,7 +196,7 @@ function bindTripSwitchers() {
 
 function buildRequestURL(form) {
   const params = new URLSearchParams();
-  ['origin','destination','departDate','returnDate','cabin'].forEach(name => {
+  ['origin','destination','departDate','returnDate','cabin','preferredFareRange','fullName','email','phone','notes'].forEach(name => {
     const field = form.querySelector(`[name="${name}"]`);
     if (field && field.value) params.set(name, field.value);
   });
@@ -219,7 +238,7 @@ function prefillRequestForm() {
   const form = document.getElementById('quoteRequestForm');
   if (!form) return;
   const url = new URL(window.location.href);
-  ['origin','destination','departDate','returnDate','cabin','tripType'].forEach(name => {
+  ['origin','destination','departDate','returnDate','cabin','preferredFareRange','tripType','fullName','email','phone','notes'].forEach(name => {
     const value = url.searchParams.get(name);
     const field = form.querySelector(`[name="${name}"]`);
     if (value && field) {
@@ -505,7 +524,7 @@ function luxaerisShouldHaveRail(){
 }
 
 function luxaerisRailHTML(contextTitle){
-  return `<aside class="luxaeris-fixed-rail"><div class="request-card"><p class="kicker">Request tailored options</p><h2>Request refined premium options without leaving this page.</h2><p class="request-lede">Share your route, dates, and preferences for ${contextTitle}. Share your trip details and LuxAeris will shape premium options around comfort, timing, and airline fit.</p><div class="proof-list"><span>No service fee</span><span>Premium airlines</span><span>Fast follow-up</span></div><form class="rail-quote-form" data-luxaeris-form="rail" novalidate><div class="trip-switch"><button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button><button class="trip-tab" type="button" data-trip="oneway">One Way</button><button class="trip-tab" type="button" data-trip="multicity">Multi City</button><input type="hidden" name="tripType" value="roundtrip"></div><div class="field full-row"><label>Origin</label><input name="origin" data-location-input placeholder="Type city or airport" required></div><div class="field full-row"><label>Destination</label><input name="destination" data-location-input placeholder="Type city or airport" required></div><div class="field"><label>Departure date</label><input type="date" name="departDate" required></div><div class="field return-wrap"><label>Return date</label><input type="date" name="returnDate" required></div><div class="field"><label>Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div><div class="field"><label>Full name</label><input name="fullName" placeholder="Your name" required></div><div class="field full-row"><label>Email</label><input type="email" name="email" placeholder="name@email.com" required></div><div class="field full-row"><label>Phone or WhatsApp</label><input name="phone" placeholder="+1..." required></div><div class="field full-row"><label>Notes</label><textarea name="notes" placeholder="Preferred airline, flexibility, passengers, or anything helpful"></textarea></div><p class="microcopy">Not sure about dates or the exact airport yet? Submit the closest option and LuxAeris can refine it with you.</p><div class="status" aria-live="polite"></div><button class="btn btn-primary full-row" type="submit">Request tailored options</button></form></div></aside>`;
+  return `<aside class="luxaeris-fixed-rail"><div class="request-card"><p class="kicker">Request tailored options</p><h2>Request refined premium options without leaving this page.</h2><p class="request-lede">Share your route, dates, and preferences for ${contextTitle}. Share your trip details and LuxAeris will shape premium options around comfort, timing, and airline fit.</p><div class="proof-list"><span>No service fee</span><span>Premium airlines</span><span>Fast follow-up</span></div><form class="rail-quote-form" data-luxaeris-form="rail" novalidate><div class="trip-switch"><button class="trip-tab active" type="button" data-trip="roundtrip">Round Trip</button><button class="trip-tab" type="button" data-trip="oneway">One Way</button><button class="trip-tab" type="button" data-trip="multicity">Multi City</button><input type="hidden" name="tripType" value="roundtrip"></div><div class="field full-row"><label>Origin</label><input name="origin" data-location-input placeholder="Type city or airport" required></div><div class="field full-row"><label>Destination</label><input name="destination" data-location-input placeholder="Type city or airport" required></div><div class="field"><label>Departure date</label><input type="text" data-date-field name="departDate" placeholder="mm.dd.yyyy" required></div><div class="field return-wrap"><label>Return date</label><input type="text" data-date-field name="returnDate" placeholder="mm.dd.yyyy" required></div><div class="field"><label>Cabin</label><select name="cabin"><option>Business Class</option><option>First Class</option><option>Premium Economy</option></select></div><div class="field field-budget-row"><label>Budget range</label><select name="preferredFareRange" required><option value="">Select budget range</option><option>$3,500–$5,500</option><option>$5,500–$8,500</option><option>$8,500+</option></select></div><div class="field"><label>Full name</label><input name="fullName" placeholder="Your name" required></div><div class="field full-row"><label>Email</label><input type="email" name="email" placeholder="name@email.com" required></div><div class="field full-row"><label>Phone or WhatsApp</label><input name="phone" placeholder="+1..." required></div><div class="field full-row"><label>Notes</label><textarea name="notes" placeholder="Preferred airline, flexibility, passengers, or anything helpful"></textarea></div><p class="microcopy">Not sure about dates or the exact airport yet? Submit the closest option and LuxAeris can refine it with you.</p><div class="status" aria-live="polite"></div><button class="btn btn-primary full-row" type="submit">Request tailored options</button></form></div></aside>`;
 }
 
 
