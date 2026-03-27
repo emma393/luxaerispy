@@ -1,0 +1,17 @@
+{
+  "notes": "Optional page-specific title and description overrides.",
+  "overrides": {
+    "index.html": {
+      "title": "LuxAeris — Luxury Business & First Class Flight Concierge",
+      "description": "LuxAeris arranges premium business class, first class, and premium economy journeys with elegant route planning, polished airport selection, and discreet concierge-style support."
+    },
+    "request.html": {
+      "title": "Request Premium Flight Options | LuxAeris",
+      "description": "Request business class, first class, or premium economy flight options with LuxAeris and share your preferred route, timing, cabin, and budget in one polished form."
+    },
+    "best-places-by-season.html": {
+      "title": "Best Places to Visit by Season | Luxury Trip Ideas | LuxAeris",
+      "description": "Explore premium destinations by season with luxury travel ideas for spring, summer, fall, and winter, plus refined U.S.-origin route inspiration from LuxAeris."
+    }
+  }
+}
