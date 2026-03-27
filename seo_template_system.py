@@ -1,110 +1,49 @@
-from __future__ import annotations
-
 from pathlib import Path
-from bs4 import BeautifulSoup
-import json
-import re
-import unicodedata
+import json, re
 
 SITE_URL = "https://luxaeris.com"
 
-
-def _norm(value: str) -> str:
-    return unicodedata.normalize('NFKD', str(value or '')).encode('ascii', 'ignore').decode('ascii').strip()
-
-
-def _nice_name(stem: str) -> str:
-    text = _norm(stem).replace('-', ' ').replace('_', ' ')
-    words = []
-    for word in text.split():
-        low = word.lower()
-        if low in {'and', 'or', 'of', 'to', 'by', 'in', 'for', 'with', 'the'}:
-            words.append(low)
-        else:
-            words.append(word.capitalize())
-    return ' '.join(words).replace('Usa', 'USA').replace('Uk', 'UK').replace('Dc', 'DC')
-
-
-def _route_name(stem: str) -> str:
-    return _nice_name(stem).replace(' To ', ' to ')
-
-
-def _load_rules(path: Path) -> dict:
+def load_rules(path: Path) -> dict:
     if path.exists():
         return json.loads(path.read_text(encoding='utf-8'))
-    return {}
+    return {'overrides': {}}
 
+def strip_html(value: str) -> str:
+    value = re.sub(r'<script.*?</script>', ' ', value, flags=re.S | re.I)
+    value = re.sub(r'<style.*?</style>', ' ', value, flags=re.S | re.I)
+    value = re.sub(r'<[^>]+>', ' ', value)
+    return re.sub(r'\s+', ' ', value).strip()
 
-def _page_kind(rel: Path) -> str:
-    parts = rel.parts
-    if 'routes' in parts:
+def first_match(pattern: str, text: str) -> str:
+    m = re.search(pattern, text, flags=re.S | re.I)
+    return strip_html(m.group(1)) if m else ''
+
+def page_kind(rel: str) -> str:
+    if '/routes/' in rel or rel.startswith('routes/'):
         return 'route'
-    if 'destinations' in parts:
+    if '/destinations/' in rel or rel.startswith('destinations/'):
         return 'destination'
-    if 'airports' in parts:
+    if '/airports/' in rel or rel.startswith('airports/'):
         return 'airport'
-    if 'airlines' in parts:
+    if '/airlines/' in rel or rel.startswith('airlines/'):
         return 'airline'
-    if 'blog' in parts:
+    if '/blog/' in rel or rel.startswith('blog/'):
         return 'blog'
-    if rel.name == 'request.html':
+    if rel == 'request.html':
         return 'request'
-    if rel.name == 'index.html' and len(rel.parts) == 1:
+    if rel == 'index.html':
         return 'home'
     return 'page'
 
+def canonical(rel: str) -> str:
+    return SITE_URL + ('/' if rel == 'index.html' else '/' + rel)
 
-def _canonical(rel: Path) -> str:
-    if rel.name == 'index.html' and len(rel.parts) == 1:
-        return SITE_URL + '/'
-    return SITE_URL + '/' + '/'.join(rel.parts)
-
-
-def _redirect_target(text: str) -> str | None:
-    m = re.search(r'http-equiv=["\']refresh["\'][^>]+url=([^"\']+)', text, re.I)
-    if m:
-        return m.group(1)
-    m = re.search(r'location\.replace\(["\']([^"\']+)["\']\)', text, re.I)
-    if m:
-        return m.group(1)
-    return None
-
-
-def _first_text(soup: BeautifulSoup, selectors: list[str], min_len: int = 55) -> str:
-    for selector in selectors:
-        node = soup.select_one(selector)
-        if not node:
-            continue
-        txt = re.sub(r'\s+', ' ', node.get_text(' ', strip=True)).strip()
-        if len(txt) >= min_len:
-            return txt
-    return ''
-
-
-def _og_image(soup: BeautifulSoup) -> str:
-    for selector in ["meta[property='og:image']", '.hero img', '.card img', 'img']:
-        node = soup.select_one(selector)
-        if not node:
-            continue
-        value = node.get('content', '').strip() if node.name == 'meta' else node.get('src', '').strip()
-        if not value:
-            continue
-        if value.startswith('http://') or value.startswith('https://'):
-            return value
-        if value.startswith('/'):
-            return SITE_URL + value
-    return SITE_URL + '/favicon.svg'
-
-
-def _metadata_for(rel: Path, html_text: str, soup: BeautifulSoup, rules: dict) -> dict:
-    kind = _page_kind(rel)
-    stem = rel.stem if rel.stem != 'index' else (rel.parent.name if rel.parent.name else 'index')
-    name = _nice_name(stem)
-    redirect = _redirect_target(html_text)
-    heading = _first_text(soup, ['h1'], 3)
-    lead = _first_text(soup, ['.lead', '.lede', '.hero p', 'main p', 'p'], 55)
-    route_name = _route_name(stem)
-
+def metadata_for(rel: str, html: str, rules: dict):
+    kind = page_kind(rel)
+    stem = Path(rel).stem if Path(rel).stem != 'index' else Path(rel).parent.name
+    label = stem.replace('-', ' ').title().replace('Dc', 'DC')
+    h1 = first_match(r'<h1[^>]*>(.*?)</h1>', html)
+    lead = first_match(r'<p[^>]*class="section-intro"[^>]*>(.*?)</p>', html) or first_match(r'<p[^>]*>(.*?)</p>', html)
     if kind == 'home':
         title = 'LuxAeris — Luxury Business & First Class Flight Concierge'
         desc = 'LuxAeris arranges premium business class, first class, and premium economy journeys with elegant route planning, polished airport selection, and discreet concierge-style support.'
@@ -112,118 +51,47 @@ def _metadata_for(rel: Path, html_text: str, soup: BeautifulSoup, rules: dict) -
         title = 'Request Premium Flight Options | LuxAeris'
         desc = 'Request business class, first class, or premium economy flight options with LuxAeris and share your preferred route, timing, cabin, and budget in one polished form.'
     elif kind == 'route':
-        title = f'{route_name} Business Class Route Guide | LuxAeris'
-        desc = lead or f'Explore the LuxAeris premium route guide for {route_name}, with U.S.-focused long-haul planning, airport context, cabin guidance, and refined premium travel support.'
+        title = f'{h1 or label} | LuxAeris'
+        desc = lead or f'Explore premium route planning for {label} with U.S.-origin cabin intent, airport context, and tailored LuxAeris request flow.'
     elif kind == 'destination':
-        base_name = heading or name
-        title = f'{base_name} Premium Destination Guide | LuxAeris'
-        desc = lead or f'Explore {base_name} with LuxAeris premium travel planning, refined route ideas from the United States, airport context, and business class and first class guidance.'
+        title = f'{h1 or label} | LuxAeris'
+        desc = lead or f'Explore {label} with premium travel context, airport planning, and U.S.-origin route ideas from LuxAeris.'
     elif kind == 'airport':
-        base_name = heading or name
-        title = f'{base_name} Airport Guide | LuxAeris'
-        desc = lead or f'Explore the LuxAeris airport guide for {base_name}, with airline and alliance context, hub insight, and premium planning details for smoother long-haul travel.'
-    elif kind == 'airline':
-        base_name = heading or name
-        title = f'{base_name} Airline Cabin Guide | LuxAeris'
-        desc = lead or f'Explore the LuxAeris cabin guide for {base_name}, with premium seat, route, and booking context for travelers comparing business class and first class options.'
+        title = f'{h1 or label} | LuxAeris'
+        desc = lead or f'Explore airport guidance for {label} with premium arrivals, airline context, and long-haul travel support.'
     elif kind == 'blog':
-        base_name = heading or name
-        title = f'{base_name} | LuxAeris Journal'
-        desc = lead or f'Read the LuxAeris journal entry on {base_name.lower()} and discover premium travel insights, routes, and planning ideas.'
+        title = f'{h1 or label} | LuxAeris Journal'
+        desc = lead or f'Read the LuxAeris journal article on {label.lower()} and connect into premium route and destination planning.'
     else:
-        base_name = heading or name
-        title = f'{base_name} | LuxAeris'
-        desc = lead or f'Explore {base_name} with LuxAeris premium flight planning, refined route ideas, and concierge-style travel support.'
-
-    if redirect:
-        target_name = _nice_name(Path(redirect).stem)
-        desc = f'Redirecting to the latest LuxAeris page for {target_name}.'
-        robots = 'noindex,follow'
-    else:
-        robots = 'index,follow'
-
-    overrides = rules.get('overrides', {})
-    rel_key = rel.as_posix()
-    if rel_key in overrides:
-        title = overrides[rel_key].get('title', title)
-        desc = overrides[rel_key].get('description', desc)
-
+        title = f'{h1 or label} | LuxAeris'
+        desc = lead or f'Explore {label} with LuxAeris premium travel support.'
+    override = rules.get('overrides', {}).get(rel)
+    if override:
+        title = override.get('title', title)
+        desc = override.get('description', desc)
     desc = re.sub(r'\s+', ' ', desc).strip()
     if len(desc) > 175:
         desc = desc[:172].rstrip(' ,;:-.') + '.'
-
-    return {
-        'title': title,
-        'description': desc,
-        'canonical': _canonical(rel),
-        'robots': robots,
-        'og_image': _og_image(soup),
-    }
-
-
-def _inject_head_tags(soup: BeautifulSoup, meta: dict):
-    head = soup.head
-    if head is None:
-        head = soup.new_tag('head')
-        if soup.html:
-            soup.html.insert(0, head)
-
-    for selector in [
-        'title',
-        "meta[name='description']",
-        "meta[name='keywords']",
-        "meta[name='robots']",
-        "meta[property='og:title']",
-        "meta[property='og:description']",
-        "meta[property='og:type']",
-        "meta[property='og:url']",
-        "meta[property='og:image']",
-        "meta[name='twitter:card']",
-        "meta[name='twitter:title']",
-        "meta[name='twitter:description']",
-        "meta[name='twitter:image']",
-        "link[rel='canonical']",
-        "script[type='application/ld+json'][data-luxaeris='seo']",
-    ]:
-        for tag in head.select(selector):
-            tag.decompose()
-
-    title_tag = soup.new_tag('title')
-    title_tag.string = meta['title']
-    head.append(title_tag)
-
-    tags = [
-        ('meta', {'name': 'description', 'content': meta['description']}),
-        ('meta', {'name': 'keywords', 'content': 'business class flights, first class flights, premium economy flights, luxury travel, premium flight concierge'}),
-        ('meta', {'name': 'robots', 'content': meta['robots']}),
-        ('link', {'rel': 'canonical', 'href': meta['canonical']}),
-        ('meta', {'property': 'og:title', 'content': meta['title']}),
-        ('meta', {'property': 'og:description', 'content': meta['description']}),
-        ('meta', {'property': 'og:type', 'content': 'website'}),
-        ('meta', {'property': 'og:url', 'content': meta['canonical']}),
-        ('meta', {'property': 'og:image', 'content': meta['og_image']}),
-        ('meta', {'name': 'twitter:card', 'content': 'summary_large_image'}),
-        ('meta', {'name': 'twitter:title', 'content': meta['title']}),
-        ('meta', {'name': 'twitter:description', 'content': meta['description']}),
-        ('meta', {'name': 'twitter:image', 'content': meta['og_image']}),
-    ]
-    for name, attrs in tags:
-        tag = soup.new_tag(name)
-        for key, value in attrs.items():
-            tag.attrs[key] = value
-        head.append(tag)
-
-    schema = soup.new_tag('script', attrs={'type': 'application/ld+json', 'data-luxaeris': 'seo'})
-    schema.string = json.dumps({'@context': 'https://schema.org', '@type': 'TravelAgency', 'name': 'LuxAeris', 'url': SITE_URL, 'mainEntityOfPage': meta['canonical']}, ensure_ascii=False)
-    head.append(schema)
-
+    return title, desc, canonical(rel)
 
 def apply_dynamic_seo(output_root: Path, rules_path: Path):
-    rules = _load_rules(rules_path)
-    for html_file in sorted(output_root.rglob('*.html')):
-        rel = html_file.relative_to(output_root)
-        html_text = html_file.read_text(encoding='utf-8', errors='ignore')
-        soup = BeautifulSoup(html_text, 'html.parser')
-        meta = _metadata_for(rel, html_text, soup, rules)
-        _inject_head_tags(soup, meta)
-        html_file.write_text(str(soup), encoding='utf-8')
+    rules = load_rules(rules_path)
+    for html_file in output_root.rglob('*.html'):
+        rel = html_file.relative_to(output_root).as_posix()
+        raw = html_file.read_text(encoding='utf-8', errors='ignore')
+        title, desc, canon = metadata_for(rel, raw, rules)
+        m = re.search(r'<head>(.*?)</head>', raw, flags=re.S | re.I)
+        if not m:
+            continue
+        head = m.group(1)
+        head = re.sub(r'<title>.*?</title>', '', head, flags=re.S | re.I)
+        head = re.sub(r'<meta[^>]+name=["\']description["\'][^>]*>', '', head, flags=re.I)
+        head = re.sub(r'<meta[^>]+name=["\']keywords["\'][^>]*>', '', head, flags=re.I)
+        head = re.sub(r'<meta[^>]+name=["\']robots["\'][^>]*>', '', head, flags=re.I)
+        head = re.sub(r'<meta[^>]+property=["\']og:[^"\']+["\'][^>]*>', '', head, flags=re.I)
+        head = re.sub(r'<meta[^>]+name=["\']twitter:[^"\']+["\'][^>]*>', '', head, flags=re.I)
+        head = re.sub(r'<link[^>]+rel=["\']canonical["\'][^>]*>', '', head, flags=re.I)
+        seo = f'\n<title>{title}</title>\n<meta name="description" content="{desc}">\n<meta name="keywords" content="business class flights, first class flights, premium economy flights, luxury travel, premium flight concierge">\n<meta name="robots" content="index,follow">\n<link rel="canonical" href="{canon}">\n<meta property="og:title" content="{title}">\n<meta property="og:description" content="{desc}">\n<meta property="og:type" content="website">\n<meta property="og:url" content="{canon}">\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{title}">\n<meta name="twitter:description" content="{desc}">\n<script type="application/ld+json">{{"@context":"https://schema.org","@type":"TravelAgency","name":"LuxAeris","url":"https://luxaeris.com","mainEntityOfPage":"{canon}"}}</script>'
+        head = head + seo
+        raw = raw[:m.start(1)] + head + raw[m.end(1):]
+        html_file.write_text(raw, encoding='utf-8')
