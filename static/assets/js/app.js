@@ -1,12 +1,45 @@
 
 const GOOGLE_SCRIPT_URL = window.LUXAERIS_FORM_ENDPOINT || 'https://script.google.com/macros/s/AKfycbzI4qGgCYwGJMZL0P_xPqPtMCs_xJ7jvhDX0uYGXkgVFSQyMKKd1xBLYco9YmX7Dmhe/exec';
-const AIRPORTS_URL_CANDIDATES = ['data/airports.json', '/data/airports.json', 'assets/data/airports.json'];
+const AIRPORTS_URL_CANDIDATES = ['/data/airports.json','data/airports.json','/assets/airports-search-10k.json','assets/airports-search-10k.json','/assets/airport-search.json','assets/airport-search.json'];
 
 let AIRPORTS = [];
 let AIRPORTS_BY_CODE = new Map();
 
 const normalize = (value = '') => String(value).toLowerCase().trim();
 const normalizePlain = (value = '') => normalize(String(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, ''));
+
+function normalizeAirportRecord(item) {
+  if (!item || typeof item !== 'object') return null;
+  const label = String(item.label || '').trim();
+  let code = String(item.code || '').trim();
+  let city = String(item.city || '').trim();
+  let country = String(item.country || '').trim();
+  if (label && label.includes('—')) {
+    const parts = label.split('—');
+    code = code || parts[0].trim();
+    const right = parts.slice(1).join('—').trim();
+    if (!city) city = right.split(',')[0].trim();
+    if (!country && right.includes(',')) country = right.split(',').slice(1).join(',').trim();
+  }
+  const clean = {
+    code,
+    submitCode: item.submitCode || code,
+    city,
+    country,
+    name: item.name || item.airport || (city ? `${city} Airport` : code),
+    airport: item.airport || item.name || (city ? `${city} Airport` : code),
+    cityCode: item.cityCode || '',
+    displayPrefix: item.displayPrefix || code,
+    hasCityGroup: !!item.hasCityGroup,
+    isCityGroup: !!item.isCityGroup,
+    memberCodes: Array.isArray(item.memberCodes) ? item.memberCodes : [],
+    searchable: Array.isArray(item.searchable) ? item.searchable : []
+  };
+  if (label && !clean.searchable.includes(label)) clean.searchable.push(label);
+  if (item.slug && !clean.searchable.includes(item.slug)) clean.searchable.push(item.slug);
+  return clean;
+}
+
 
 async function loadAirports() {
   if (AIRPORTS.length) return AIRPORTS;
@@ -18,8 +51,8 @@ async function loadAirports() {
       const raw = await res.json();
       const data = Array.isArray(raw) ? raw : (Array.isArray(raw?.airports) ? raw.airports : []);
       if (!Array.isArray(data) || !data.length) throw new Error('Airport data is not an array');
-      AIRPORTS = data;
-      AIRPORTS_BY_CODE = new Map(AIRPORTS.map((a) => [a.code, a]));
+      AIRPORTS = data.map(normalizeAirportRecord).filter(Boolean);
+      AIRPORTS_BY_CODE = new Map(AIRPORTS.map((a) => [String(a.code || '').toUpperCase(), a]));
       return AIRPORTS;
     } catch (error) {
       lastError = error;
@@ -112,12 +145,12 @@ function findExactAirport(term) {
 }
 
 function isValidCode(code) {
-  return !!code && AIRPORTS_BY_CODE.has(code);
+  return !!code && AIRPORTS_BY_CODE.has(String(code).toUpperCase());
 }
 
 function findAirportByStoredCode(code) {
   if (!code) return null;
-  if (AIRPORTS_BY_CODE.has(code)) return AIRPORTS_BY_CODE.get(code);
+  if (AIRPORTS_BY_CODE.has(String(code).toUpperCase())) return AIRPORTS_BY_CODE.get(String(code).toUpperCase());
   const matches = AIRPORTS.filter((airport) => airport.submitCode === code);
   if (!matches.length) return null;
   const preferredGroup = matches.find((airport) => airport.isCityGroup);
@@ -713,7 +746,6 @@ async function init() {
     cabinBudgetField.addEventListener('change', syncPreferredFareOptions);
   }
   attachDatePickers();
-  ensureBudgetFieldInForms();
   setupAutocomplete({ inputId: 'origin', hiddenId: 'originCode', listId: 'originList', errorId: 'originError' });
   setupAutocomplete({ inputId: 'destination', hiddenId: 'destinationCode', listId: 'destinationList', errorId: 'destinationError' });
   setupAutocomplete({ inputId: 'segment2Origin', hiddenId: 'segment2OriginCode', listId: 'segment2OriginList', errorId: 'segment2OriginError' });

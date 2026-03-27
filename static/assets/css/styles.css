@@ -1213,3 +1213,16 @@ body.has-sticky-request-rail .continent-card img{
 .flatpickr-current-month .flatpickr-monthDropdown-months,
 .flatpickr-current-month input.cur-year{font-size:1.18rem !important; font-weight:700 !important; min-width:92px !important;}
 .flatpickr-current-month .numInputWrapper{width:7ch !important;}
+
+
+/* Final home hero overlap fix */
+body.home-luxury .hero-grid-luxury{grid-template-columns:minmax(0,1.42fr) minmax(330px,.88fr) !important;column-gap:28px !important;}
+body.home-luxury .hero-copy-luxury{max-width:1000px !important;padding-right:14px !important;}
+body.home-luxury .hero-copy-luxury h1{font-size:clamp(2.65rem,3.85vw,4.35rem) !important;line-height:.98 !important;letter-spacing:-.022em !important;max-width:11.75ch !important;}
+body.home-luxury .lead-hero{max-width:56ch !important;font-size:clamp(1rem,1.2vw,1.18rem) !important;line-height:1.48 !important;}
+body.home-luxury .hero-note{font-size:1rem !important;line-height:1.38 !important;}
+@media (max-width: 1100px){
+  body.home-luxury .hero-grid-luxury{grid-template-columns:minmax(0,1.18fr) minmax(320px,.92fr) !important;}
+  body.home-luxury .hero-copy-luxury h1{font-size:clamp(2.35rem,3.5vw,3.65rem) !important;max-width:12.5ch !important;}
+}
+
