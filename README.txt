@@ -1,1 +1,0 @@
-Core build + SEO + generation system

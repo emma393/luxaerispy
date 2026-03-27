@@ -1,1 +1,0 @@
-LuxAeris full 25k+ scaling system\n\nRun: python build.py\n\nOrigins: 60\nDestinations: 117\nVariants: 4\nRoute pages: 28,080\nBlog articles: 234\n
