@@ -52,13 +52,7 @@ async function loadAirports() {
       const data = Array.isArray(raw) ? raw : (Array.isArray(raw?.airports) ? raw.airports : []);
       if (!Array.isArray(data) || !data.length) throw new Error('Airport data is not an array');
       AIRPORTS = data.map(normalizeAirportRecord).filter(Boolean);
-      AIRPORTS_BY_CODE = new Map();
-      AIRPORTS.forEach((a) => {
-        [a.code, a.submitCode, a.cityCode, ...(a.memberCodes || [])].filter(Boolean).forEach((key) => {
-          const upper = String(key).toUpperCase();
-          if (!AIRPORTS_BY_CODE.has(upper) || a.isCityGroup) AIRPORTS_BY_CODE.set(upper, a);
-        });
-      });
+      AIRPORTS_BY_CODE = new Map(AIRPORTS.map((a) => [String(a.code || '').toUpperCase(), a]));
       return AIRPORTS;
     } catch (error) {
       lastError = error;
@@ -157,8 +151,7 @@ function isValidCode(code) {
 function findAirportByStoredCode(code) {
   if (!code) return null;
   if (AIRPORTS_BY_CODE.has(String(code).toUpperCase())) return AIRPORTS_BY_CODE.get(String(code).toUpperCase());
-  const upper = String(code).toUpperCase();
-  const matches = AIRPORTS.filter((airport) => String(airport.submitCode || '').toUpperCase() === upper || String(airport.cityCode || '').toUpperCase() === upper || (airport.memberCodes || []).map((c)=>String(c).toUpperCase()).includes(upper));
+  const matches = AIRPORTS.filter((airport) => airport.submitCode === code);
   if (!matches.length) return null;
   const preferredGroup = matches.find((airport) => airport.isCityGroup);
   return preferredGroup || matches[0];
@@ -274,9 +267,8 @@ function setupAutocomplete({ inputId, hiddenId, listId, errorId }) {
 
   const selectAirport = (airport) => {
     input.value = airportLabel(airport);
-    const storedCode = airport.submitCode || airport.cityCode || airport.code;
-    input.dataset.selectedCode = storedCode;
-    hidden.value = storedCode;
+    input.dataset.selectedCode = airport.code;
+    hidden.value = airport.code;
     if (error) error.textContent = '';
     clearList();
   };
@@ -448,9 +440,8 @@ function validateAirportField(inputId, codeId, errorId) {
     const exact = findExactAirport(input.value);
     if (exact) {
       input.value = airportLabel(exact);
-      const storedCode = exact.submitCode || exact.cityCode || exact.code;
-      input.dataset.selectedCode = storedCode;
-      codeField.value = storedCode;
+      input.dataset.selectedCode = exact.code;
+      codeField.value = exact.code;
     }
   }
   const valid = isValidCode(codeField.value);
