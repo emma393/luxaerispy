@@ -560,40 +560,40 @@
     "meta_description": "Compare business vs premium economy flights to Mexico City. Explore routes, airport context, and premium travel planning with LuxAeris."
   },
   {
-    "slug": "cancun-business-class",
-    "destination_slug": "cancun",
+    "slug": "cancún-business-class",
+    "destination_slug": "cancún",
     "cabin_variant": "business-class",
     "title": "Cancún Business Class",
     "meta_title": "Cancún Business Class Flights | LuxAeris",
     "meta_description": "Compare business class flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
   },
   {
-    "slug": "cancun-first-class",
-    "destination_slug": "cancun",
+    "slug": "cancún-first-class",
+    "destination_slug": "cancún",
     "cabin_variant": "first-class",
     "title": "Cancún First Class",
     "meta_title": "Cancún First Class Flights | LuxAeris",
     "meta_description": "Compare first class flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
   },
   {
-    "slug": "cancun-premium-economy",
-    "destination_slug": "cancun",
+    "slug": "cancún-premium-economy",
+    "destination_slug": "cancún",
     "cabin_variant": "premium-economy",
     "title": "Cancún Premium Economy",
     "meta_title": "Cancún Premium Economy Flights | LuxAeris",
     "meta_description": "Compare premium economy flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
   },
   {
-    "slug": "cancun-business-vs-first",
-    "destination_slug": "cancun",
+    "slug": "cancún-business-vs-first",
+    "destination_slug": "cancún",
     "cabin_variant": "business-vs-first",
     "title": "Cancún Business Vs First",
     "meta_title": "Cancún Business Vs First Flights | LuxAeris",
     "meta_description": "Compare business vs first flights to Cancún. Explore routes, airport context, and premium travel planning with LuxAeris."
   },
   {
-    "slug": "cancun-business-vs-premium-economy",
-    "destination_slug": "cancun",
+    "slug": "cancún-business-vs-premium-economy",
+    "destination_slug": "cancún",
     "cabin_variant": "business-vs-premium-economy",
     "title": "Cancún Business Vs Premium Economy",
     "meta_title": "Cancún Business Vs Premium Economy Flights | LuxAeris",

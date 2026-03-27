@@ -848,9 +848,9 @@
     "meta_description": "Compare premium flights from Amsterdam to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "amsterdam-to-cancun",
+    "slug": "amsterdam-to-cancún",
     "origin_city_slug": "amsterdam",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Amsterdam to Cancún",
     "meta_title": "Amsterdam to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Amsterdam to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -2456,9 +2456,9 @@
     "meta_description": "Compare premium flights from Barcelona to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "barcelona-to-cancun",
+    "slug": "barcelona-to-cancún",
     "origin_city_slug": "barcelona",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Barcelona to Cancún",
     "meta_title": "Barcelona to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Barcelona to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -4280,9 +4280,9 @@
     "meta_description": "Compare premium flights from Mumbai to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "mumbai-to-cancun",
+    "slug": "mumbai-to-cancún",
     "origin_city_slug": "mumbai",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Mumbai to Cancún",
     "meta_title": "Mumbai to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Mumbai to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -6104,9 +6104,9 @@
     "meta_description": "Compare premium flights from Paris to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "paris-to-cancun",
+    "slug": "paris-to-cancún",
     "origin_city_slug": "paris",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Paris to Cancún",
     "meta_title": "Paris to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Paris to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -7736,216 +7736,216 @@
     "meta_description": "Compare premium flights from Cape Town to Zurich. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-amsterdam",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-amsterdam",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "amsterdam",
     "title": "Cancún to Amsterdam",
     "meta_title": "Cancún to Amsterdam Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Amsterdam. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-barcelona",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-barcelona",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "barcelona",
     "title": "Cancún to Barcelona",
     "meta_title": "Cancún to Barcelona Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Barcelona. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-mumbai",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-mumbai",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "mumbai",
     "title": "Cancún to Mumbai",
     "meta_title": "Cancún to Mumbai Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Mumbai. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-paris",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-paris",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "paris",
     "title": "Cancún to Paris",
     "meta_title": "Cancún to Paris Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Paris. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-delhi",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-delhi",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "delhi",
     "title": "Cancún to Delhi",
     "meta_title": "Cancún to Delhi Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Delhi. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-doha",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-doha",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "doha",
     "title": "Cancún to Doha",
     "meta_title": "Cancún to Doha Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Doha. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-dubai",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-dubai",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "dubai",
     "title": "Cancún to Dubai",
     "meta_title": "Cancún to Dubai Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Dubai. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-rome",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-rome",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "rome",
     "title": "Cancún to Rome",
     "meta_title": "Cancún to Rome Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Rome. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-frankfurt",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-frankfurt",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "frankfurt",
     "title": "Cancún to Frankfurt",
     "meta_title": "Cancún to Frankfurt Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Frankfurt. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-sao-paulo",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-sao-paulo",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "sao-paulo",
     "title": "Cancún to Sao Paulo",
     "meta_title": "Cancún to Sao Paulo Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Sao Paulo. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-hong-kong",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-hong-kong",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "hong-kong",
     "title": "Cancún to Hong Kong",
     "meta_title": "Cancún to Hong Kong Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Hong Kong. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-tokyo",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-tokyo",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "tokyo",
     "title": "Cancún to Tokyo",
     "meta_title": "Cancún to Tokyo Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Tokyo. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-seoul",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-seoul",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "seoul",
     "title": "Cancún to Seoul",
     "meta_title": "Cancún to Seoul Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Seoul. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-istanbul",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-istanbul",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "istanbul",
     "title": "Cancún to Istanbul",
     "meta_title": "Cancún to Istanbul Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Istanbul. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-new-york",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-new-york",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "new-york",
     "title": "Cancún to New York",
     "meta_title": "Cancún to New York Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to New York. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-johannesburg",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-johannesburg",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "johannesburg",
     "title": "Cancún to Johannesburg",
     "meta_title": "Cancún to Johannesburg Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Johannesburg. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-los-angeles",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-los-angeles",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "los-angeles",
     "title": "Cancún to Los Angeles",
     "meta_title": "Cancún to Los Angeles Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Los Angeles. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-london",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-london",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "london",
     "title": "Cancún to London",
     "meta_title": "Cancún to London Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to London. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-madrid",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-madrid",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "madrid",
     "title": "Cancún to Madrid",
     "meta_title": "Cancún to Madrid Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Madrid. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-miami",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-miami",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "miami",
     "title": "Cancún to Miami",
     "meta_title": "Cancún to Miami Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Miami. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-chicago",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-chicago",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "chicago",
     "title": "Cancún to Chicago",
     "meta_title": "Cancún to Chicago Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Chicago. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-beijing",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-beijing",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "beijing",
     "title": "Cancún to Beijing",
     "meta_title": "Cancún to Beijing Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Beijing. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-shanghai",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-shanghai",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "shanghai",
     "title": "Cancún to Shanghai",
     "meta_title": "Cancún to Shanghai Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Shanghai. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-san-francisco",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-san-francisco",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "san-francisco",
     "title": "Cancún to San Francisco",
     "meta_title": "Cancún to San Francisco Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to San Francisco. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-singapore",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-singapore",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "singapore",
     "title": "Cancún to Singapore",
     "meta_title": "Cancún to Singapore Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Singapore. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-sydney",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-sydney",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "sydney",
     "title": "Cancún to Sydney",
     "meta_title": "Cancún to Sydney Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Cancún to Sydney. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "cancun-to-zurich",
-    "origin_city_slug": "cancun",
+    "slug": "cancún-to-zurich",
+    "origin_city_slug": "cancún",
     "destination_city_slug": "zurich",
     "title": "Cancún to Zurich",
     "meta_title": "Cancún to Zurich Premium Flights | LuxAeris",
@@ -8160,9 +8160,9 @@
     "meta_description": "Compare premium flights from Delhi to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "delhi-to-cancun",
+    "slug": "delhi-to-cancún",
     "origin_city_slug": "delhi",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Delhi to Cancún",
     "meta_title": "Delhi to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Delhi to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -9120,9 +9120,9 @@
     "meta_description": "Compare premium flights from Doha to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "doha-to-cancun",
+    "slug": "doha-to-cancún",
     "origin_city_slug": "doha",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Doha to Cancún",
     "meta_title": "Doha to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Doha to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -10480,9 +10480,9 @@
     "meta_description": "Compare premium flights from Dubai to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "dubai-to-cancun",
+    "slug": "dubai-to-cancún",
     "origin_city_slug": "dubai",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Dubai to Cancún",
     "meta_title": "Dubai to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Dubai to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -11480,9 +11480,9 @@
     "meta_description": "Compare premium flights from Rome to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "rome-to-cancun",
+    "slug": "rome-to-cancún",
     "origin_city_slug": "rome",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Rome to Cancún",
     "meta_title": "Rome to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Rome to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -12224,9 +12224,9 @@
     "meta_description": "Compare premium flights from Frankfurt to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "frankfurt-to-cancun",
+    "slug": "frankfurt-to-cancún",
     "origin_city_slug": "frankfurt",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Frankfurt to Cancún",
     "meta_title": "Frankfurt to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Frankfurt to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -13400,9 +13400,9 @@
     "meta_description": "Compare premium flights from Sao Paulo to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "sao-paulo-to-cancun",
+    "slug": "sao-paulo-to-cancún",
     "origin_city_slug": "sao-paulo",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Sao Paulo to Cancún",
     "meta_title": "Sao Paulo to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Sao Paulo to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -14792,9 +14792,9 @@
     "meta_description": "Compare premium flights from Hong Kong to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "hong-kong-to-cancun",
+    "slug": "hong-kong-to-cancún",
     "origin_city_slug": "hong-kong",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Hong Kong to Cancún",
     "meta_title": "Hong Kong to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Hong Kong to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -15536,9 +15536,9 @@
     "meta_description": "Compare premium flights from Tokyo to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "tokyo-to-cancun",
+    "slug": "tokyo-to-cancún",
     "origin_city_slug": "tokyo",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Tokyo to Cancún",
     "meta_title": "Tokyo to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Tokyo to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -16904,9 +16904,9 @@
     "meta_description": "Compare premium flights from Seoul to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "seoul-to-cancun",
+    "slug": "seoul-to-cancún",
     "origin_city_slug": "seoul",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Seoul to Cancún",
     "meta_title": "Seoul to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Seoul to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -17472,9 +17472,9 @@
     "meta_description": "Compare premium flights from Istanbul to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "istanbul-to-cancun",
+    "slug": "istanbul-to-cancún",
     "origin_city_slug": "istanbul",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Istanbul to Cancún",
     "meta_title": "Istanbul to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Istanbul to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -18624,9 +18624,9 @@
     "meta_description": "Compare premium flights from New York to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "new-york-to-cancun",
+    "slug": "new-york-to-cancún",
     "origin_city_slug": "new-york",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "New York to Cancún",
     "meta_title": "New York to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from New York to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -19192,9 +19192,9 @@
     "meta_description": "Compare premium flights from Johannesburg to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "johannesburg-to-cancun",
+    "slug": "johannesburg-to-cancún",
     "origin_city_slug": "johannesburg",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Johannesburg to Cancún",
     "meta_title": "Johannesburg to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Johannesburg to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -20152,9 +20152,9 @@
     "meta_description": "Compare premium flights from Los Angeles to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "los-angeles-to-cancun",
+    "slug": "los-angeles-to-cancún",
     "origin_city_slug": "los-angeles",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Los Angeles to Cancún",
     "meta_title": "Los Angeles to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Los Angeles to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -21080,9 +21080,9 @@
     "meta_description": "Compare premium flights from London to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "london-to-cancun",
+    "slug": "london-to-cancún",
     "origin_city_slug": "london",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "London to Cancún",
     "meta_title": "London to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from London to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -22512,9 +22512,9 @@
     "meta_description": "Compare premium flights from Madrid to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "madrid-to-cancun",
+    "slug": "madrid-to-cancún",
     "origin_city_slug": "madrid",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Madrid to Cancún",
     "meta_title": "Madrid to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Madrid to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -23904,9 +23904,9 @@
     "meta_description": "Compare premium flights from Miami to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "miami-to-cancun",
+    "slug": "miami-to-cancún",
     "origin_city_slug": "miami",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Miami to Cancún",
     "meta_title": "Miami to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Miami to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -26160,9 +26160,9 @@
     "meta_description": "Compare premium flights from Chicago to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "chicago-to-cancun",
+    "slug": "chicago-to-cancún",
     "origin_city_slug": "chicago",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Chicago to Cancún",
     "meta_title": "Chicago to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Chicago to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -27120,9 +27120,9 @@
     "meta_description": "Compare premium flights from Beijing to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "beijing-to-cancun",
+    "slug": "beijing-to-cancún",
     "origin_city_slug": "beijing",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Beijing to Cancún",
     "meta_title": "Beijing to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Beijing to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -28304,9 +28304,9 @@
     "meta_description": "Compare premium flights from Shanghai to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "shanghai-to-cancun",
+    "slug": "shanghai-to-cancún",
     "origin_city_slug": "shanghai",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Shanghai to Cancún",
     "meta_title": "Shanghai to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Shanghai to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -29920,9 +29920,9 @@
     "meta_description": "Compare premium flights from San Francisco to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "san-francisco-to-cancun",
+    "slug": "san-francisco-to-cancún",
     "origin_city_slug": "san-francisco",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "San Francisco to Cancún",
     "meta_title": "San Francisco to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from San Francisco to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -30880,9 +30880,9 @@
     "meta_description": "Compare premium flights from Singapore to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "singapore-to-cancun",
+    "slug": "singapore-to-cancún",
     "origin_city_slug": "singapore",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Singapore to Cancún",
     "meta_title": "Singapore to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Singapore to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -31624,9 +31624,9 @@
     "meta_description": "Compare premium flights from Sydney to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "sydney-to-cancun",
+    "slug": "sydney-to-cancún",
     "origin_city_slug": "sydney",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Sydney to Cancún",
     "meta_title": "Sydney to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Sydney to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."
@@ -34096,9 +34096,9 @@
     "meta_description": "Compare premium flights from Zurich to Cape Town. Explore airport options, route context, and cabin planning with LuxAeris."
   },
   {
-    "slug": "zurich-to-cancun",
+    "slug": "zurich-to-cancún",
     "origin_city_slug": "zurich",
-    "destination_city_slug": "cancun",
+    "destination_city_slug": "cancún",
     "title": "Zurich to Cancún",
     "meta_title": "Zurich to Cancún Premium Flights | LuxAeris",
     "meta_description": "Compare premium flights from Zurich to Cancún. Explore airport options, route context, and cabin planning with LuxAeris."

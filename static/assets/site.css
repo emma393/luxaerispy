@@ -763,8 +763,6 @@ body.has-sticky-request-rail .hero-title{
 body.has-sticky-request-rail .luxaeris-price-box .price-range{font-size:clamp(42px,3.8vw,56px)}
 body.has-sticky-request-rail .luxaeris-trust-line{color:#6b594b;font-weight:600}
 
-.route-bubble:visited,.city-bubble:visited,.airport-pill:visited{color:#2a211b !important;background:#fff7ec !important;border-color:rgba(199,160,99,.35) !important;}
-
 
 /* 2026-03-26 vfinal5 site consistency */
 .topbar-inner{white-space:nowrap;overflow-x:auto;flex-wrap:nowrap}

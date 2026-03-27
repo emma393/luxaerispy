@@ -648,8 +648,8 @@
     "meta_description": "Guide to Korean Air Prestige Lounge Seoul at Incheon International Airport. Explore terminal context, premium travel flow, and lounge planning with LuxAeris."
   },
   {
-    "slug": "latam-vip-lounge-sao-paulo-terminal-1",
-    "lounge_slug": "latam-vip-lounge-sao-paulo",
+    "slug": "latam-vip-lounge-são-paulo-terminal-1",
+    "lounge_slug": "latam-vip-lounge-são-paulo",
     "airport_slug": "gru",
     "terminal_variant": "terminal-1",
     "title": "LATAM VIP Lounge São Paulo Terminal 1",
@@ -657,8 +657,8 @@
     "meta_description": "Guide to LATAM VIP Lounge São Paulo at São Paulo/Guarulhos International Airport. Explore terminal context, premium travel flow, and lounge planning with LuxAeris."
   },
   {
-    "slug": "latam-vip-lounge-sao-paulo-terminal-2",
-    "lounge_slug": "latam-vip-lounge-sao-paulo",
+    "slug": "latam-vip-lounge-são-paulo-terminal-2",
+    "lounge_slug": "latam-vip-lounge-são-paulo",
     "airport_slug": "gru",
     "terminal_variant": "terminal-2",
     "title": "LATAM VIP Lounge São Paulo Terminal 2",
@@ -666,8 +666,8 @@
     "meta_description": "Guide to LATAM VIP Lounge São Paulo at São Paulo/Guarulhos International Airport. Explore terminal context, premium travel flow, and lounge planning with LuxAeris."
   },
   {
-    "slug": "latam-vip-lounge-sao-paulo-terminal-3",
-    "lounge_slug": "latam-vip-lounge-sao-paulo",
+    "slug": "latam-vip-lounge-são-paulo-terminal-3",
+    "lounge_slug": "latam-vip-lounge-são-paulo",
     "airport_slug": "gru",
     "terminal_variant": "terminal-3",
     "title": "LATAM VIP Lounge São Paulo Terminal 3",
