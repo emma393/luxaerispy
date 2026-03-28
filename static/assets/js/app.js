@@ -768,11 +768,7 @@ async function init() {
 document.addEventListener('DOMContentLoaded', init);
 
 
-const CABIN_BUDGET_OPTIONS = {
-  'Premium Economy': ['$1,200–$2,200', '$2,200–$3,500', '$3,500+'],
-  'Business Class': ['$3,500–$5,500', '$5,500–$8,500', '$8,500+'],
-  'First Class': ['$6,500–$10,000', '$10,000–$16,000', '$16,000+']
-};
+
 
 function ensureBudgetFieldInForms(){
   const cabinFields = Array.from(document.querySelectorAll('select[name="cabin"], #cabin'));
