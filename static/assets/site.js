@@ -499,7 +499,9 @@ function polishMicrocopy() {
 
 
 function luxaerisShouldHaveRail(){
-  return false;
+  const path = window.location.pathname.replace(/\/+/g,'/');
+  if (path === '/' || path === '/index.html' || path === '/request.html' || path === '/about.html' || path === '/contact.html' || path === '/faq.html' || path === '/privacy-policy.html' || path === '/terms-and-conditions.html' || path === '/cookie-policy.html' || path === '/disclaimer.html' || path === '/thank-you.html' || path === '/search.html') return false;
+  return /^\/(destinations|routes|airports|airlines|cabins)\//.test(path);
 }
 
 function luxaerisRailHTML(contextTitle){
@@ -689,7 +691,6 @@ function luxaerisInjectRail(){
 document.addEventListener('DOMContentLoaded', async () => {
   try { if (!AIRPORTS.length) await loadAirports(); } catch (e) {}
   applyDateLimitsAndUI();
-  luxaerisInjectRail();
   bindUniversalQuoteForms();
 });
 
