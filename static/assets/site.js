@@ -182,16 +182,28 @@ document.addEventListener('DOMContentLoaded', async () => {
   applyDateLimits(document);
   injectRail();
   bindForms(document);
-  applyFullPageCityBackground();
 });
 
 
-function applyFullPageCityBackground(){
-  const heroGrid = document.querySelector('.hero-grid.city-guide-grid');
-  const heroShot = heroGrid ? heroGrid.querySelector('img.hero-shot') : null;
-  if (!heroGrid || !heroShot) return;
-  const src = heroShot.getAttribute('src');
-  if (!src) return;
-  document.body.classList.add('city-page-bg');
-  document.body.style.setProperty('--city-page-bg', `url("${src}")`);
-}
+(function(){
+  function initCityPageBackground(){
+    const hero = document.querySelector('.hero-grid.city-guide-grid, .hero-grid.route-guide-grid');
+    if(!hero) return;
+    const img = hero.querySelector('img.hero-shot');
+    if(!img) return;
+    const src = img.getAttribute('src');
+    if(!src) return;
+    const test = new Image();
+    test.onload = function(){
+      document.body.classList.add('city-image-background-page');
+      document.documentElement.style.setProperty('--city-page-bg', 'url("' + src.replace(/"/g, '\\"') + '")');
+    };
+    test.onerror = function(){};
+    test.src = src;
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCityPageBackground);
+  } else {
+    initCityPageBackground();
+  }
+})();
