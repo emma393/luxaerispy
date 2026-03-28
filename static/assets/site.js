@@ -182,4 +182,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   applyDateLimits(document);
   injectRail();
   bindForms(document);
+  applyFullPageCityBackground();
 });
+
+
+function applyFullPageCityBackground(){
+  const heroGrid = document.querySelector('.hero-grid.city-guide-grid');
+  const heroShot = heroGrid ? heroGrid.querySelector('img.hero-shot') : null;
+  if (!heroGrid || !heroShot) return;
+  const src = heroShot.getAttribute('src');
+  if (!src) return;
+  document.body.classList.add('city-page-bg');
+  document.body.style.setProperty('--city-page-bg', `url("${src}")`);
+}
