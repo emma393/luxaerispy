@@ -1034,13 +1034,3 @@ body.home-luxury .hero-note{font-size:1rem !important;line-height:1.38 !importan
   body.home-luxury .hero-copy-luxury h1{font-size:clamp(2.35rem,3.5vw,3.65rem) !important;max-width:12.5ch !important;}
 }
 
-
-
-/* injected inline request section + city hero overlay */
-.inline-request-section .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid transparent;cursor:pointer}
-.inline-request-section .btn-primary{background:linear-gradient(180deg,#d9b57c,#c7a063);color:#21170f!important;box-shadow:0 10px 22px rgba(199,160,99,.25)}
-.inline-request-section .btn-secondary{background:#fff;color:#241b16!important;border-color:var(--line)}
-.inline-request-section .request-panel label{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#6b5640;margin:0 0 6px}
-.inline-request-section .request-panel .button-row{margin-top:6px}
-.inline-request-section .request-panel .field-invalid{border-color:#9b3f36!important}
-.city-guide-grid.city-guide-overlay .kicker{color:#d5b681}

@@ -158,7 +158,7 @@ function findAirportByStoredCode(code) {
   if (!code) return null;
   if (AIRPORTS_BY_CODE.has(String(code).toUpperCase())) return AIRPORTS_BY_CODE.get(String(code).toUpperCase());
   const upper = String(code).toUpperCase();
-  const matches = AIRPORTS.filter((airport) => String(airport.submitCode || '').toUpperCase() === upper || String(airport.cityCode || '').toUpperCase() === upper || (airport.memberCodes || []).map((c)=>String(c).toUpperCase()).includes(upper));
+  const matches = AIRPORTS.filter((airport) => String(airport.submitCode || '').toUpperCase() === upper || String(airport.cityCode || '').toUpperCase() === upper || (airport.memberCodes || []).map((c) => String(c).toUpperCase()).includes(upper));
   if (!matches.length) return null;
   const preferredGroup = matches.find((airport) => airport.isCityGroup);
   return preferredGroup || matches[0];
@@ -766,3 +766,4 @@ async function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
