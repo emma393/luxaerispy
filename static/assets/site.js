@@ -233,9 +233,35 @@ function prefillRequestForm() {
   });
 }
 
+
+function isLiteMobileMode() {
+  const small = window.matchMedia('(max-width: 900px)').matches;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = !!(navigator.connection && navigator.connection.saveData);
+  return small || reduce || saveData;
+}
+
+function optimizeImagesForMobile() {
+  const imgs = Array.from(document.querySelectorAll('img'));
+  imgs.forEach((img, index) => {
+    if (!img.getAttribute('loading')) img.setAttribute('loading', index < 2 ? 'eager' : 'lazy');
+    if (!img.getAttribute('decoding')) img.setAttribute('decoding', 'async');
+    if (index > 1 && !img.getAttribute('fetchpriority')) img.setAttribute('fetchpriority', 'low');
+  });
+}
+
+
 function initHeroVideo() {
   const video = document.getElementById('heroVideo');
   if (!video) return;
+  if (isLiteMobileMode()) {
+    video.removeAttribute('autoplay');
+    video.pause();
+    video.style.display = 'none';
+    const fallback = document.querySelector('.hero-video-fallback');
+    if (fallback) fallback.style.display = '';
+    return;
+  }
   const tryPlay = () => {
     const p = video.play();
     if (p && p.catch) p.catch(() => {});
@@ -254,6 +280,7 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
+  optimizeImagesForMobile();
   await loadAirports();
   applyDateLimitsAndUI();
   bindTripSwitchers();
@@ -265,6 +292,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 function injectFunnelBanner() {
+  if (isLiteMobileMode()) return;
   if (document.querySelector('.funnel-banner')) return;
   const banner = document.createElement('div');
   banner.className = 'funnel-banner';
@@ -280,6 +308,7 @@ function injectFunnelBanner() {
 }
 
 function injectExitPopup() {
+  if (isLiteMobileMode()) return;
   if (document.getElementById('exitPopup')) return;
   const popup = document.createElement('div');
   popup.id = 'exitPopup';
@@ -537,7 +566,7 @@ function luxaerisInjectEnhancements(){
       const faq = document.createElement('section');
       faq.className = 'luxaeris-inline-faq';
       const title = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'this page';
-      faq.innerHTML = lxFaqMarkup();
+      faq.innerHTML = `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I submit a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
       target.appendChild(faq);
     }
   }
@@ -732,7 +761,7 @@ function luxaerisInjectEnhancements(){
     const faq = document.createElement('section');
     faq.className = 'luxaeris-inline-faq';
     const title = (h1 ? h1.textContent.trim() : 'this page');
-    faq.innerHTML = lxFaqMarkup();
+    faq.innerHTML = `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I send a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
     target.appendChild(faq);
   }
   moveFaqBelowMainContent();
@@ -1035,102 +1064,8 @@ function lxCardMarkup(a) {
   return `<a class="lx-card" href="/airlines/${a.slug}.html"><div class="lx-card-head">${logo}<div><span class="lx-eyebrow">Premium airline</span><h3>${a.name}</h3></div></div><p>${a.summary}</p><div class="lx-chip-row">${chips}</div></a>`;
 }
 
-
-function lxPageTitle(){
-  const h1 = document.querySelector('main h1, .page-shell h1, section h1, h1');
-  return h1 ? h1.textContent.replace(/\s+/g, ' ').trim() : 'this page';
-}
-function lxPathName(){ return (window.location.pathname || '').replace(/\/+/g,'/'); }
-function lxIsAirlinePage(){
-  const p = lxPathName();
-  return /^\/airlines\/(?!index\.html$)[^\/]+(?:\.html)?$/i.test(p);
-}
-function lxIsRouteDetailPage(){
-  const p = lxPathName();
-  return /^\/routes\/[a-z0-9-]+-to-[a-z0-9-]+(?:-[a-z0-9]+)*-business-class\.html$/i.test(p);
-}
-function lxIsRouteHubPage(){
-  const p = lxPathName();
-  return p.includes('/routes/') && !lxIsRouteDetailPage() && !/\/routes\/index\.html$/.test(p);
-}
-function lxFaqMarkup(){
-  const title = lxPageTitle();
-  if (lxIsAirlinePage()) {
-    return `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Which long-haul routes matter most for ${title}?</summary><p>Focus first on the U.S.-linked long-haul markets where this airline is strongest, then compare seat privacy, timing, and nonstop convenience instead of treating every route the same.</p></details><details><summary>How should I compare this airline against other premium carriers?</summary><p>Start with cabin consistency, lounge quality, nonstop availability, and the strength of the airline on the exact route you want to fly.</p></details><details><summary>Can LuxAeris help refine options on this airline?</summary><p>Yes. Share your origin, destination, dates, and cabin goal, and LuxAeris can help narrow the most relevant premium options without charging a service fee.</p></details>`;
-  }
-  if (lxIsRouteDetailPage()) {
-    return `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Which airlines are strongest on ${title}?</summary><p>The best airline choices on this route usually depend on nonstop availability, aircraft type, business class seat quality, and how much schedule flexibility you have.</p></details><details><summary>When do fares on ${title} usually become less favorable?</summary><p>Premium fares often tighten around peak holiday windows, summer demand, and last-minute departures. Flexibility on dates and airports usually creates better business class value.</p></details><details><summary>Should I prioritize nonstop service on ${title}?</summary><p>For long-haul premium trips, nonstop flights are often worth prioritizing for comfort and timing. One-stop options usually win only when the cabin or fare difference is meaningful.</p></details>`;
-  }
-  if (lxIsRouteHubPage()) {
-    const cleaned = title.replace(/\s+business class route guide$/i, '').replace(/\s+business class routes$/i, '').replace(/\s+guide$/i, '').trim();
-    return `<p class="kicker">FAQ</p><h2>Questions travelers ask about premium flights to and from ${cleaned}</h2><details open><summary>Which premium arrivals into ${cleaned} are usually the strongest?</summary><p>The strongest arrivals are usually the long-haul markets where business class comfort, timing, and nonstop coverage matter most for how you land into ${cleaned}.</p></details><details><summary>Which departures from ${cleaned} should I compare first?</summary><p>Start with the longest and most practical nonstop or high-quality one-stop premium routes from ${cleaned}, then widen only when schedule or cabin quality improves meaningfully.</p></details><details><summary>Which airport should I prioritize for ${cleaned}?</summary><p>Use the main long-haul airport first, then compare nearby airport options only when they improve timing, cabin choice, or total premium value.</p></details>`;
-  }
-  return `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I send a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
-}
-function lxAirportByCodeOrSlug(value) {
-  const needle = String(value || '').toLowerCase();
-  return (AIRPORTS || []).find(a => (a.slug || '').toLowerCase() === needle || (a.code_iata || '').toLowerCase() === needle) || null;
-}
-function lxLinkLabel(slug) {
-  const m = String(slug || '').match(/^([a-z0-9-]+)-to-([a-z0-9-]+)-business-class$/i);
-  if (!m) return lxTitleCase(slug);
-  const origin = lxAirportByCodeOrSlug(m[1]) || {};
-  const dest = lxAirportByCodeOrSlug(m[2]) || {};
-  const o = origin.code_iata || String(m[1]).toUpperCase();
-  const d = dest.city_name || dest.code_iata || String(m[2]).toUpperCase();
-  return `${o} to ${d} business class`;
-}
-function lxChipLink(href, label) { return `<a class="lx-chip-link" href="${href}">${label}</a>`; }
-function lxAppendRouteNetwork() {
-  if (!lxIsRouteDetailPage()) return;
-  if (document.querySelector('.lx-route-network')) return;
-  const slug = lxRouteSlug();
-  const m = slug.match(/^([a-z0-9-]+)-to-([a-z0-9-]+)-business-class$/i);
-  if (!m) return;
-  const originCode = m[1].toLowerCase();
-  const destCode = m[2].toLowerCase();
-  const origin = lxAirportByCodeOrSlug(originCode);
-  const dest = lxAirportByCodeOrSlug(destCode);
-  const main = document.querySelector('.luxaeris-main-column') || document.querySelector('main .container') || document.querySelector('main');
-  if (!main || !origin || !dest) return;
-
-  const sameOrigin = (origin.related_route_slugs || []).filter(s => s.startsWith(`${originCode}-to-`) && s !== slug).slice(0, 6);
-  const sameDestination = (dest.related_route_slugs || []).filter(s => s.includes(`-to-${destCode}-business-class`) && s !== slug).slice(0, 6);
-  const reverse = `${destCode}-to-${originCode}-business-class`;
-  const reverseLinks = reverse !== slug ? [reverse] : [];
-
-  const blocks = [
-    {title: `More premium departures from ${origin.city_name || origin.code_iata || originCode.toUpperCase()}`, text: 'Keep this route connected to the wider departure cluster instead of treating it as a stand-alone page.', links: sameOrigin},
-    {title: `More ways to arrive in ${dest.city_name || dest.code_iata || destCode.toUpperCase()}`, text: 'Compare other premium routes that end in the same destination so the page supports destination intent as well as the exact route.', links: sameDestination.concat(reverseLinks)},
-  ];
-  const airportLinks = [
-    {href: `/airports/${origin.slug}.html`, label: `${origin.code_iata || origin.slug.toUpperCase()} airport guide`},
-    {href: `/airports/${dest.slug}.html`, label: `${dest.code_iata || dest.slug.toUpperCase()} airport guide`},
-  ];
-  const cityLinks = [];
-  if (dest.city_slug) cityLinks.push({href: `/destinations/${dest.city_slug}.html`, label: `${dest.city_name || lxTitleCase(dest.city_slug)} destination guide`});
-  if (dest.city_slug && dest.region_cluster && dest.country_name) cityLinks.push({href: `/routes/${dest.region_cluster}/${dest.country_name.toLowerCase().replace(/ /g,'-').replace(/&/g,'and').replace(/'/g,'')}/${dest.city_slug}.html`, label: `Flights to and from ${dest.city_name || lxTitleCase(dest.city_slug)}`});
-
-  const section = document.createElement('section');
-  section.className = 'lx-route-network';
-  section.innerHTML = `
-    <div class="lx-block">
-      <span class="lx-eyebrow">Internal route network</span>
-      <h2>Continue this premium route search without starting over</h2>
-      <p class="lx-muted">This route now links to same-origin departures, same-destination arrivals, airport guides, and destination context so the page sits inside a real premium search cluster.</p>
-      <div class="lx-route-grid">
-        ${blocks.map(block => `<article class="lx-subpanel"><h3>${block.title}</h3><p>${block.text}</p><div class="lx-chip-row">${block.links.map(s => lxChipLink(`/routes/${s}.html`, lxLinkLabel(s))).join('')}</div></article>`).join('')}
-      </div>
-      <div class="lx-inline-links">
-        ${airportLinks.concat(cityLinks).map(item => `<a href="${item.href}">${item.label}</a>`).join('')}
-      </div>
-    </div>`;
-  main.appendChild(section);
-}
-
 function lxAppendRouteAirlines() {
   if (!lxPath().includes('/routes/')) return;
-  if (lxIsRouteHubPage()) return;
   const main = document.querySelector('main .container') || document.querySelector('main') || document.body;
   if (!main || document.querySelector('.lx-linking-shell')) return;
   const routeSlug = lxRouteSlug();
@@ -1217,7 +1152,6 @@ function lxAppendAirlineRoutes() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  try { lxAppendRouteNetwork(); } catch (e) {}
   try { lxAppendRouteAirlines(); } catch (e) {}
   try { lxAppendHomeLinks(); } catch (e) {}
   try { lxAppendAirlineRoutes(); } catch (e) {}
