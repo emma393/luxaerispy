@@ -1363,45 +1363,181 @@ body.home-luxury .field select{min-height:62px !important;}
 
 
 
-/* 2026-03-29 premium home balance + destination card correction */
+/* === 2026-03-29 premium visual refinement patch === */
+/* Home hero: keep dark, but let the video breathe more */
 body.home-luxury .hero.hero-luxury::before{
   background:linear-gradient(
     90deg,
-    rgba(5,10,20,.44) 0%,
+    rgba(5,10,20,.46) 0%,
     rgba(5,10,20,.34) 34%,
-    rgba(5,10,20,.18) 60%,
+    rgba(5,10,20,.20) 62%,
     rgba(5,10,20,.08) 100%
   ) !important;
 }
 body.home-luxury #bg-video{
   opacity:.52 !important;
-  filter:brightness(1.06) saturate(1.02) !important;
+  filter:brightness(1.08) saturate(1.02) !important;
 }
-body.home-luxury .featured-destinations-section .destination-grid-home{
-  align-items:stretch !important;
-}
-body.home-luxury .destination-card{
-  min-height:260px !important;
-  aspect-ratio: 16 / 10;
+
+/* Home featured cards: remove blank lower area and restore full-bleed imagery */
+body.home-luxury .destination-grid-home .destination-card{
+  position:relative !important;
+  display:flex !important;
+  align-items:flex-end !important;
+  justify-content:flex-end !important;
+  min-height:230px !important;
+  padding:18px !important;
+  overflow:hidden !important;
   background:#07101c !important;
 }
-body.home-luxury .destination-card-large{
-  min-height:540px !important;
-  aspect-ratio:auto;
+body.home-luxury .destination-grid-home .destination-card.destination-card-large{
+  min-height:478px !important;
 }
-body.home-luxury .destination-card img{
+body.home-luxury .destination-grid-home .destination-card img{
   position:absolute !important;
   inset:0 !important;
   width:100% !important;
   height:100% !important;
   object-fit:cover !important;
   object-position:center center !important;
+  z-index:0 !important;
 }
-body.home-luxury .destination-card::before{
-  background:linear-gradient(180deg,rgba(7,10,14,.04),rgba(7,10,14,.16) 48%,rgba(7,10,14,.42) 100%) !important;
+body.home-luxury .destination-grid-home .destination-card::before{
+  content:'' !important;
+  position:absolute !important;
+  inset:0 !important;
+  background:linear-gradient(180deg,rgba(7,10,14,.04),rgba(7,10,14,.28) 56%,rgba(7,10,14,.62)) !important;
+  z-index:1 !important;
 }
-body.home-luxury .destination-card span{
-  position:relative;
-  z-index:2;
-  text-shadow:0 8px 20px rgba(0,0,0,.45);
+body.home-luxury .destination-grid-home .destination-card span{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+/* City pages: lighter editorial glass, not heavy boxes */
+body.city-page-with-bg::before{
+  background-image:
+    linear-gradient(180deg, rgba(4,14,32,0.74) 0%, rgba(4,14,32,0.68) 30%, rgba(4,14,32,0.62) 58%, rgba(4,14,32,0.72) 100%),
+    var(--city-page-bg) !important;
+}
+body.city-page-with-bg::after{
+  background:linear-gradient(90deg, rgba(4,14,32,0.26) 0%, rgba(4,14,32,0.10) 35%, rgba(4,14,32,0.16) 70%, rgba(4,14,32,0.28) 100%) !important;
+}
+body.city-page-with-bg .page-shell > .container{
+  align-items:start !important;
+  gap:22px !important;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid{
+  grid-template-columns:minmax(0,1fr) !important;
+  gap:0 !important;
+  padding:26px 30px !important;
+  min-height:auto !important;
+  background:rgba(5,18,44,0.16) !important;
+  border:1px solid rgba(255,255,255,0.10) !important;
+  box-shadow:0 20px 50px rgba(0,0,0,0.18) !important;
+  backdrop-filter:blur(10px) !important;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid .glass{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  padding:0 !important;
+  min-height:auto !important;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid img.hero-shot{
+  display:none !important;
+}
+body.city-page-with-bg .related-grid{
+  margin-top:18px !important;
+  gap:18px !important;
+}
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel,
+body.city-page-with-bg .luxaeris-inline-faq,
+body.city-page-with-bg .faq,
+body.city-page-with-bg .faq-panel,
+body.city-page-with-bg .faq-card{
+  background:rgba(5,18,44,0.14) !important;
+  border:1px solid rgba(255,255,255,0.10) !important;
+  box-shadow:0 18px 46px rgba(0,0,0,0.16) !important;
+  backdrop-filter:blur(10px) !important;
+}
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel,
+body.city-page-with-bg .luxaeris-inline-faq{
+  padding:24px 28px !important;
+}
+body.city-page-with-bg .related-box h2,
+body.city-page-with-bg .content-panel h2,
+body.city-page-with-bg .luxaeris-inline-faq h2,
+body.city-page-with-bg .faq-card h2,
+body.city-page-with-bg .faq h2{
+  color:#fff8ef !important;
+}
+body.city-page-with-bg .related-box p,
+body.city-page-with-bg .content-panel p,
+body.city-page-with-bg .luxaeris-inline-faq p,
+body.city-page-with-bg .faq-card p,
+body.city-page-with-bg .faq p,
+body.city-page-with-bg .related-box li,
+body.city-page-with-bg .content-panel li,
+body.city-page-with-bg .luxaeris-inline-faq li{
+  color:rgba(255,248,239,0.92) !important;
+}
+body.city-page-with-bg .luxaeris-inline-faq details,
+body.city-page-with-bg .faq details,
+body.city-page-with-bg .faq-card details,
+body.city-page-with-bg .accordion details{
+  background:rgba(255,255,255,0.04) !important;
+  border:1px solid rgba(255,255,255,0.08) !important;
+  color:#fff8ef !important;
+}
+body.city-page-with-bg .luxaeris-inline-faq summary,
+body.city-page-with-bg .faq summary,
+body.city-page-with-bg .faq-card summary,
+body.city-page-with-bg .accordion summary{
+  color:#fff8ef !important;
+}
+
+/* Keep only the request rail in its original premium cream style */
+body.city-page-with-bg .luxaeris-fixed-rail .request-card,
+body.city-page-with-bg .request-rail .request-card{
+  background:linear-gradient(180deg,#fffaf4,#f6efe3) !important;
+  border:1px solid rgba(39,28,20,.10) !important;
+  box-shadow:0 18px 38px rgba(39,28,20,.14) !important;
+  backdrop-filter:none !important;
+}
+body.city-page-with-bg .luxaeris-fixed-rail .request-card h2,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card h3,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card p,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card label,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card strong,
+body.city-page-with-bg .request-rail .request-card h2,
+body.city-page-with-bg .request-rail .request-card h3,
+body.city-page-with-bg .request-rail .request-card p,
+body.city-page-with-bg .request-rail .request-card label{
+  color:inherit !important;
+}
+
+/* Tighter page rhythm to avoid oversized empty bands */
+body.city-page-with-bg .page-shell{
+  padding-bottom:28px !important;
+}
+body.city-page-with-bg .page-shell section + section{
+  margin-top:18px !important;
+}
+body.city-page-with-bg .content-panel[style*="margin-top"]{
+  margin-top:18px !important;
+}
+body.city-page-with-bg .route-bubbles,
+body.city-page-with-bg .airport-links{
+  gap:10px !important;
+}
+
+@media (max-width: 1180px){
+  body.city-page-with-bg .hero-grid.city-guide-grid,
+  body.city-page-with-bg .related-box,
+  body.city-page-with-bg .content-panel{
+    padding:22px 22px !important;
+  }
 }
