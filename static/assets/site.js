@@ -1035,8 +1035,15 @@ function lxCardMarkup(a) {
   return `<a class="lx-card" href="/airlines/${a.slug}.html"><div class="lx-card-head">${logo}<div><span class="lx-eyebrow">Premium airline</span><h3>${a.name}</h3></div></div><p>${a.summary}</p><div class="lx-chip-row">${chips}</div></a>`;
 }
 
+
+function lxIsRouteHubPage() {
+  const path = (window.location.pathname || '').replace(/\/index\.html$/, '');
+  return /^\/routes\/north-america\/united-states\/[^\/]+(?:\.html)?$/.test(path);
+}
+
 function lxAppendRouteAirlines() {
   if (!lxPath().includes('/routes/')) return;
+  if (lxIsRouteHubPage()) return;
   const main = document.querySelector('main .container') || document.querySelector('main') || document.body;
   if (!main || document.querySelector('.lx-linking-shell')) return;
   const routeSlug = lxRouteSlug();
