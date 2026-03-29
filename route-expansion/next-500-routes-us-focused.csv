@@ -1,0 +1,501 @@
+origin_airport,origin_city,destination_airport,destination_city,direction,suggested_slug,suggested_url
+JFK,New York,LHR,London,US-origin outbound,jfk-to-lhr-business-class.html,https://luxaeris.com/routes/jfk-to-lhr-business-class.html
+JFK,New York,CDG,Paris,US-origin outbound,jfk-to-cdg-business-class.html,https://luxaeris.com/routes/jfk-to-cdg-business-class.html
+JFK,New York,FRA,Frankfurt,US-origin outbound,jfk-to-fra-business-class.html,https://luxaeris.com/routes/jfk-to-fra-business-class.html
+JFK,New York,ZRH,Zurich,US-origin outbound,jfk-to-zrh-business-class.html,https://luxaeris.com/routes/jfk-to-zrh-business-class.html
+JFK,New York,FCO,Rome,US-origin outbound,jfk-to-fco-business-class.html,https://luxaeris.com/routes/jfk-to-fco-business-class.html
+JFK,New York,MAD,Madrid,US-origin outbound,jfk-to-mad-business-class.html,https://luxaeris.com/routes/jfk-to-mad-business-class.html
+JFK,New York,BCN,Barcelona,US-origin outbound,jfk-to-bcn-business-class.html,https://luxaeris.com/routes/jfk-to-bcn-business-class.html
+JFK,New York,AMS,Amsterdam,US-origin outbound,jfk-to-ams-business-class.html,https://luxaeris.com/routes/jfk-to-ams-business-class.html
+JFK,New York,DUB,Dublin,US-origin outbound,jfk-to-dub-business-class.html,https://luxaeris.com/routes/jfk-to-dub-business-class.html
+JFK,New York,IST,Istanbul,US-origin outbound,jfk-to-ist-business-class.html,https://luxaeris.com/routes/jfk-to-ist-business-class.html
+JFK,New York,ATH,Athens,US-origin outbound,jfk-to-ath-business-class.html,https://luxaeris.com/routes/jfk-to-ath-business-class.html
+JFK,New York,DXB,Dubai,US-origin outbound,jfk-to-dxb-business-class.html,https://luxaeris.com/routes/jfk-to-dxb-business-class.html
+JFK,New York,DOH,Doha,US-origin outbound,jfk-to-doh-business-class.html,https://luxaeris.com/routes/jfk-to-doh-business-class.html
+JFK,New York,AUH,Abu Dhabi,US-origin outbound,jfk-to-auh-business-class.html,https://luxaeris.com/routes/jfk-to-auh-business-class.html
+JFK,New York,DEL,Delhi,US-origin outbound,jfk-to-del-business-class.html,https://luxaeris.com/routes/jfk-to-del-business-class.html
+JFK,New York,BOM,Mumbai,US-origin outbound,jfk-to-bom-business-class.html,https://luxaeris.com/routes/jfk-to-bom-business-class.html
+JFK,New York,SIN,Singapore,US-origin outbound,jfk-to-sin-business-class.html,https://luxaeris.com/routes/jfk-to-sin-business-class.html
+JFK,New York,HND,Tokyo,US-origin outbound,jfk-to-hnd-business-class.html,https://luxaeris.com/routes/jfk-to-hnd-business-class.html
+JFK,New York,ICN,Seoul,US-origin outbound,jfk-to-icn-business-class.html,https://luxaeris.com/routes/jfk-to-icn-business-class.html
+JFK,New York,HKG,Hong Kong,US-origin outbound,jfk-to-hkg-business-class.html,https://luxaeris.com/routes/jfk-to-hkg-business-class.html
+EWR,New York,LHR,London,US-origin outbound,ewr-to-lhr-business-class.html,https://luxaeris.com/routes/ewr-to-lhr-business-class.html
+EWR,New York,CDG,Paris,US-origin outbound,ewr-to-cdg-business-class.html,https://luxaeris.com/routes/ewr-to-cdg-business-class.html
+EWR,New York,FRA,Frankfurt,US-origin outbound,ewr-to-fra-business-class.html,https://luxaeris.com/routes/ewr-to-fra-business-class.html
+EWR,New York,ZRH,Zurich,US-origin outbound,ewr-to-zrh-business-class.html,https://luxaeris.com/routes/ewr-to-zrh-business-class.html
+EWR,New York,FCO,Rome,US-origin outbound,ewr-to-fco-business-class.html,https://luxaeris.com/routes/ewr-to-fco-business-class.html
+EWR,New York,MAD,Madrid,US-origin outbound,ewr-to-mad-business-class.html,https://luxaeris.com/routes/ewr-to-mad-business-class.html
+EWR,New York,BCN,Barcelona,US-origin outbound,ewr-to-bcn-business-class.html,https://luxaeris.com/routes/ewr-to-bcn-business-class.html
+EWR,New York,AMS,Amsterdam,US-origin outbound,ewr-to-ams-business-class.html,https://luxaeris.com/routes/ewr-to-ams-business-class.html
+EWR,New York,DUB,Dublin,US-origin outbound,ewr-to-dub-business-class.html,https://luxaeris.com/routes/ewr-to-dub-business-class.html
+EWR,New York,IST,Istanbul,US-origin outbound,ewr-to-ist-business-class.html,https://luxaeris.com/routes/ewr-to-ist-business-class.html
+EWR,New York,ATH,Athens,US-origin outbound,ewr-to-ath-business-class.html,https://luxaeris.com/routes/ewr-to-ath-business-class.html
+EWR,New York,DXB,Dubai,US-origin outbound,ewr-to-dxb-business-class.html,https://luxaeris.com/routes/ewr-to-dxb-business-class.html
+EWR,New York,DOH,Doha,US-origin outbound,ewr-to-doh-business-class.html,https://luxaeris.com/routes/ewr-to-doh-business-class.html
+EWR,New York,AUH,Abu Dhabi,US-origin outbound,ewr-to-auh-business-class.html,https://luxaeris.com/routes/ewr-to-auh-business-class.html
+EWR,New York,DEL,Delhi,US-origin outbound,ewr-to-del-business-class.html,https://luxaeris.com/routes/ewr-to-del-business-class.html
+EWR,New York,BOM,Mumbai,US-origin outbound,ewr-to-bom-business-class.html,https://luxaeris.com/routes/ewr-to-bom-business-class.html
+EWR,New York,SIN,Singapore,US-origin outbound,ewr-to-sin-business-class.html,https://luxaeris.com/routes/ewr-to-sin-business-class.html
+EWR,New York,HND,Tokyo,US-origin outbound,ewr-to-hnd-business-class.html,https://luxaeris.com/routes/ewr-to-hnd-business-class.html
+EWR,New York,ICN,Seoul,US-origin outbound,ewr-to-icn-business-class.html,https://luxaeris.com/routes/ewr-to-icn-business-class.html
+EWR,New York,HKG,Hong Kong,US-origin outbound,ewr-to-hkg-business-class.html,https://luxaeris.com/routes/ewr-to-hkg-business-class.html
+BOS,Boston,LHR,London,US-origin outbound,bos-to-lhr-business-class.html,https://luxaeris.com/routes/bos-to-lhr-business-class.html
+BOS,Boston,CDG,Paris,US-origin outbound,bos-to-cdg-business-class.html,https://luxaeris.com/routes/bos-to-cdg-business-class.html
+BOS,Boston,FRA,Frankfurt,US-origin outbound,bos-to-fra-business-class.html,https://luxaeris.com/routes/bos-to-fra-business-class.html
+BOS,Boston,ZRH,Zurich,US-origin outbound,bos-to-zrh-business-class.html,https://luxaeris.com/routes/bos-to-zrh-business-class.html
+BOS,Boston,FCO,Rome,US-origin outbound,bos-to-fco-business-class.html,https://luxaeris.com/routes/bos-to-fco-business-class.html
+BOS,Boston,MAD,Madrid,US-origin outbound,bos-to-mad-business-class.html,https://luxaeris.com/routes/bos-to-mad-business-class.html
+BOS,Boston,BCN,Barcelona,US-origin outbound,bos-to-bcn-business-class.html,https://luxaeris.com/routes/bos-to-bcn-business-class.html
+BOS,Boston,AMS,Amsterdam,US-origin outbound,bos-to-ams-business-class.html,https://luxaeris.com/routes/bos-to-ams-business-class.html
+BOS,Boston,DUB,Dublin,US-origin outbound,bos-to-dub-business-class.html,https://luxaeris.com/routes/bos-to-dub-business-class.html
+BOS,Boston,IST,Istanbul,US-origin outbound,bos-to-ist-business-class.html,https://luxaeris.com/routes/bos-to-ist-business-class.html
+BOS,Boston,ATH,Athens,US-origin outbound,bos-to-ath-business-class.html,https://luxaeris.com/routes/bos-to-ath-business-class.html
+BOS,Boston,DXB,Dubai,US-origin outbound,bos-to-dxb-business-class.html,https://luxaeris.com/routes/bos-to-dxb-business-class.html
+BOS,Boston,DOH,Doha,US-origin outbound,bos-to-doh-business-class.html,https://luxaeris.com/routes/bos-to-doh-business-class.html
+BOS,Boston,AUH,Abu Dhabi,US-origin outbound,bos-to-auh-business-class.html,https://luxaeris.com/routes/bos-to-auh-business-class.html
+BOS,Boston,DEL,Delhi,US-origin outbound,bos-to-del-business-class.html,https://luxaeris.com/routes/bos-to-del-business-class.html
+BOS,Boston,BOM,Mumbai,US-origin outbound,bos-to-bom-business-class.html,https://luxaeris.com/routes/bos-to-bom-business-class.html
+BOS,Boston,SIN,Singapore,US-origin outbound,bos-to-sin-business-class.html,https://luxaeris.com/routes/bos-to-sin-business-class.html
+BOS,Boston,HND,Tokyo,US-origin outbound,bos-to-hnd-business-class.html,https://luxaeris.com/routes/bos-to-hnd-business-class.html
+BOS,Boston,ICN,Seoul,US-origin outbound,bos-to-icn-business-class.html,https://luxaeris.com/routes/bos-to-icn-business-class.html
+BOS,Boston,HKG,Hong Kong,US-origin outbound,bos-to-hkg-business-class.html,https://luxaeris.com/routes/bos-to-hkg-business-class.html
+IAD,Washington,LHR,London,US-origin outbound,iad-to-lhr-business-class.html,https://luxaeris.com/routes/iad-to-lhr-business-class.html
+IAD,Washington,CDG,Paris,US-origin outbound,iad-to-cdg-business-class.html,https://luxaeris.com/routes/iad-to-cdg-business-class.html
+IAD,Washington,FRA,Frankfurt,US-origin outbound,iad-to-fra-business-class.html,https://luxaeris.com/routes/iad-to-fra-business-class.html
+IAD,Washington,ZRH,Zurich,US-origin outbound,iad-to-zrh-business-class.html,https://luxaeris.com/routes/iad-to-zrh-business-class.html
+IAD,Washington,FCO,Rome,US-origin outbound,iad-to-fco-business-class.html,https://luxaeris.com/routes/iad-to-fco-business-class.html
+IAD,Washington,MAD,Madrid,US-origin outbound,iad-to-mad-business-class.html,https://luxaeris.com/routes/iad-to-mad-business-class.html
+IAD,Washington,BCN,Barcelona,US-origin outbound,iad-to-bcn-business-class.html,https://luxaeris.com/routes/iad-to-bcn-business-class.html
+IAD,Washington,AMS,Amsterdam,US-origin outbound,iad-to-ams-business-class.html,https://luxaeris.com/routes/iad-to-ams-business-class.html
+IAD,Washington,DUB,Dublin,US-origin outbound,iad-to-dub-business-class.html,https://luxaeris.com/routes/iad-to-dub-business-class.html
+IAD,Washington,IST,Istanbul,US-origin outbound,iad-to-ist-business-class.html,https://luxaeris.com/routes/iad-to-ist-business-class.html
+IAD,Washington,ATH,Athens,US-origin outbound,iad-to-ath-business-class.html,https://luxaeris.com/routes/iad-to-ath-business-class.html
+IAD,Washington,DXB,Dubai,US-origin outbound,iad-to-dxb-business-class.html,https://luxaeris.com/routes/iad-to-dxb-business-class.html
+IAD,Washington,DOH,Doha,US-origin outbound,iad-to-doh-business-class.html,https://luxaeris.com/routes/iad-to-doh-business-class.html
+IAD,Washington,AUH,Abu Dhabi,US-origin outbound,iad-to-auh-business-class.html,https://luxaeris.com/routes/iad-to-auh-business-class.html
+IAD,Washington,DEL,Delhi,US-origin outbound,iad-to-del-business-class.html,https://luxaeris.com/routes/iad-to-del-business-class.html
+IAD,Washington,BOM,Mumbai,US-origin outbound,iad-to-bom-business-class.html,https://luxaeris.com/routes/iad-to-bom-business-class.html
+IAD,Washington,SIN,Singapore,US-origin outbound,iad-to-sin-business-class.html,https://luxaeris.com/routes/iad-to-sin-business-class.html
+IAD,Washington,HND,Tokyo,US-origin outbound,iad-to-hnd-business-class.html,https://luxaeris.com/routes/iad-to-hnd-business-class.html
+IAD,Washington,ICN,Seoul,US-origin outbound,iad-to-icn-business-class.html,https://luxaeris.com/routes/iad-to-icn-business-class.html
+IAD,Washington,HKG,Hong Kong,US-origin outbound,iad-to-hkg-business-class.html,https://luxaeris.com/routes/iad-to-hkg-business-class.html
+MIA,Miami,LHR,London,US-origin outbound,mia-to-lhr-business-class.html,https://luxaeris.com/routes/mia-to-lhr-business-class.html
+MIA,Miami,CDG,Paris,US-origin outbound,mia-to-cdg-business-class.html,https://luxaeris.com/routes/mia-to-cdg-business-class.html
+MIA,Miami,FRA,Frankfurt,US-origin outbound,mia-to-fra-business-class.html,https://luxaeris.com/routes/mia-to-fra-business-class.html
+MIA,Miami,ZRH,Zurich,US-origin outbound,mia-to-zrh-business-class.html,https://luxaeris.com/routes/mia-to-zrh-business-class.html
+MIA,Miami,FCO,Rome,US-origin outbound,mia-to-fco-business-class.html,https://luxaeris.com/routes/mia-to-fco-business-class.html
+MIA,Miami,MAD,Madrid,US-origin outbound,mia-to-mad-business-class.html,https://luxaeris.com/routes/mia-to-mad-business-class.html
+MIA,Miami,BCN,Barcelona,US-origin outbound,mia-to-bcn-business-class.html,https://luxaeris.com/routes/mia-to-bcn-business-class.html
+MIA,Miami,AMS,Amsterdam,US-origin outbound,mia-to-ams-business-class.html,https://luxaeris.com/routes/mia-to-ams-business-class.html
+MIA,Miami,DUB,Dublin,US-origin outbound,mia-to-dub-business-class.html,https://luxaeris.com/routes/mia-to-dub-business-class.html
+MIA,Miami,IST,Istanbul,US-origin outbound,mia-to-ist-business-class.html,https://luxaeris.com/routes/mia-to-ist-business-class.html
+MIA,Miami,ATH,Athens,US-origin outbound,mia-to-ath-business-class.html,https://luxaeris.com/routes/mia-to-ath-business-class.html
+MIA,Miami,DXB,Dubai,US-origin outbound,mia-to-dxb-business-class.html,https://luxaeris.com/routes/mia-to-dxb-business-class.html
+MIA,Miami,DOH,Doha,US-origin outbound,mia-to-doh-business-class.html,https://luxaeris.com/routes/mia-to-doh-business-class.html
+MIA,Miami,AUH,Abu Dhabi,US-origin outbound,mia-to-auh-business-class.html,https://luxaeris.com/routes/mia-to-auh-business-class.html
+MIA,Miami,DEL,Delhi,US-origin outbound,mia-to-del-business-class.html,https://luxaeris.com/routes/mia-to-del-business-class.html
+MIA,Miami,BOM,Mumbai,US-origin outbound,mia-to-bom-business-class.html,https://luxaeris.com/routes/mia-to-bom-business-class.html
+MIA,Miami,SIN,Singapore,US-origin outbound,mia-to-sin-business-class.html,https://luxaeris.com/routes/mia-to-sin-business-class.html
+MIA,Miami,HND,Tokyo,US-origin outbound,mia-to-hnd-business-class.html,https://luxaeris.com/routes/mia-to-hnd-business-class.html
+MIA,Miami,ICN,Seoul,US-origin outbound,mia-to-icn-business-class.html,https://luxaeris.com/routes/mia-to-icn-business-class.html
+MIA,Miami,HKG,Hong Kong,US-origin outbound,mia-to-hkg-business-class.html,https://luxaeris.com/routes/mia-to-hkg-business-class.html
+ATL,Atlanta,LHR,London,US-origin outbound,atl-to-lhr-business-class.html,https://luxaeris.com/routes/atl-to-lhr-business-class.html
+ATL,Atlanta,CDG,Paris,US-origin outbound,atl-to-cdg-business-class.html,https://luxaeris.com/routes/atl-to-cdg-business-class.html
+ATL,Atlanta,FRA,Frankfurt,US-origin outbound,atl-to-fra-business-class.html,https://luxaeris.com/routes/atl-to-fra-business-class.html
+ATL,Atlanta,ZRH,Zurich,US-origin outbound,atl-to-zrh-business-class.html,https://luxaeris.com/routes/atl-to-zrh-business-class.html
+ATL,Atlanta,FCO,Rome,US-origin outbound,atl-to-fco-business-class.html,https://luxaeris.com/routes/atl-to-fco-business-class.html
+ATL,Atlanta,MAD,Madrid,US-origin outbound,atl-to-mad-business-class.html,https://luxaeris.com/routes/atl-to-mad-business-class.html
+ATL,Atlanta,BCN,Barcelona,US-origin outbound,atl-to-bcn-business-class.html,https://luxaeris.com/routes/atl-to-bcn-business-class.html
+ATL,Atlanta,AMS,Amsterdam,US-origin outbound,atl-to-ams-business-class.html,https://luxaeris.com/routes/atl-to-ams-business-class.html
+ATL,Atlanta,DUB,Dublin,US-origin outbound,atl-to-dub-business-class.html,https://luxaeris.com/routes/atl-to-dub-business-class.html
+ATL,Atlanta,IST,Istanbul,US-origin outbound,atl-to-ist-business-class.html,https://luxaeris.com/routes/atl-to-ist-business-class.html
+ATL,Atlanta,ATH,Athens,US-origin outbound,atl-to-ath-business-class.html,https://luxaeris.com/routes/atl-to-ath-business-class.html
+ATL,Atlanta,DXB,Dubai,US-origin outbound,atl-to-dxb-business-class.html,https://luxaeris.com/routes/atl-to-dxb-business-class.html
+ATL,Atlanta,DOH,Doha,US-origin outbound,atl-to-doh-business-class.html,https://luxaeris.com/routes/atl-to-doh-business-class.html
+ATL,Atlanta,AUH,Abu Dhabi,US-origin outbound,atl-to-auh-business-class.html,https://luxaeris.com/routes/atl-to-auh-business-class.html
+ATL,Atlanta,DEL,Delhi,US-origin outbound,atl-to-del-business-class.html,https://luxaeris.com/routes/atl-to-del-business-class.html
+ATL,Atlanta,BOM,Mumbai,US-origin outbound,atl-to-bom-business-class.html,https://luxaeris.com/routes/atl-to-bom-business-class.html
+ATL,Atlanta,SIN,Singapore,US-origin outbound,atl-to-sin-business-class.html,https://luxaeris.com/routes/atl-to-sin-business-class.html
+ATL,Atlanta,HND,Tokyo,US-origin outbound,atl-to-hnd-business-class.html,https://luxaeris.com/routes/atl-to-hnd-business-class.html
+ATL,Atlanta,ICN,Seoul,US-origin outbound,atl-to-icn-business-class.html,https://luxaeris.com/routes/atl-to-icn-business-class.html
+ATL,Atlanta,HKG,Hong Kong,US-origin outbound,atl-to-hkg-business-class.html,https://luxaeris.com/routes/atl-to-hkg-business-class.html
+ORD,Chicago,LHR,London,US-origin outbound,ord-to-lhr-business-class.html,https://luxaeris.com/routes/ord-to-lhr-business-class.html
+ORD,Chicago,CDG,Paris,US-origin outbound,ord-to-cdg-business-class.html,https://luxaeris.com/routes/ord-to-cdg-business-class.html
+ORD,Chicago,FRA,Frankfurt,US-origin outbound,ord-to-fra-business-class.html,https://luxaeris.com/routes/ord-to-fra-business-class.html
+ORD,Chicago,ZRH,Zurich,US-origin outbound,ord-to-zrh-business-class.html,https://luxaeris.com/routes/ord-to-zrh-business-class.html
+ORD,Chicago,FCO,Rome,US-origin outbound,ord-to-fco-business-class.html,https://luxaeris.com/routes/ord-to-fco-business-class.html
+ORD,Chicago,MAD,Madrid,US-origin outbound,ord-to-mad-business-class.html,https://luxaeris.com/routes/ord-to-mad-business-class.html
+ORD,Chicago,BCN,Barcelona,US-origin outbound,ord-to-bcn-business-class.html,https://luxaeris.com/routes/ord-to-bcn-business-class.html
+ORD,Chicago,AMS,Amsterdam,US-origin outbound,ord-to-ams-business-class.html,https://luxaeris.com/routes/ord-to-ams-business-class.html
+ORD,Chicago,DUB,Dublin,US-origin outbound,ord-to-dub-business-class.html,https://luxaeris.com/routes/ord-to-dub-business-class.html
+ORD,Chicago,IST,Istanbul,US-origin outbound,ord-to-ist-business-class.html,https://luxaeris.com/routes/ord-to-ist-business-class.html
+ORD,Chicago,ATH,Athens,US-origin outbound,ord-to-ath-business-class.html,https://luxaeris.com/routes/ord-to-ath-business-class.html
+ORD,Chicago,DXB,Dubai,US-origin outbound,ord-to-dxb-business-class.html,https://luxaeris.com/routes/ord-to-dxb-business-class.html
+ORD,Chicago,DOH,Doha,US-origin outbound,ord-to-doh-business-class.html,https://luxaeris.com/routes/ord-to-doh-business-class.html
+ORD,Chicago,AUH,Abu Dhabi,US-origin outbound,ord-to-auh-business-class.html,https://luxaeris.com/routes/ord-to-auh-business-class.html
+ORD,Chicago,DEL,Delhi,US-origin outbound,ord-to-del-business-class.html,https://luxaeris.com/routes/ord-to-del-business-class.html
+ORD,Chicago,BOM,Mumbai,US-origin outbound,ord-to-bom-business-class.html,https://luxaeris.com/routes/ord-to-bom-business-class.html
+ORD,Chicago,SIN,Singapore,US-origin outbound,ord-to-sin-business-class.html,https://luxaeris.com/routes/ord-to-sin-business-class.html
+ORD,Chicago,HND,Tokyo,US-origin outbound,ord-to-hnd-business-class.html,https://luxaeris.com/routes/ord-to-hnd-business-class.html
+ORD,Chicago,ICN,Seoul,US-origin outbound,ord-to-icn-business-class.html,https://luxaeris.com/routes/ord-to-icn-business-class.html
+ORD,Chicago,HKG,Hong Kong,US-origin outbound,ord-to-hkg-business-class.html,https://luxaeris.com/routes/ord-to-hkg-business-class.html
+DFW,Dallas,LHR,London,US-origin outbound,dfw-to-lhr-business-class.html,https://luxaeris.com/routes/dfw-to-lhr-business-class.html
+DFW,Dallas,CDG,Paris,US-origin outbound,dfw-to-cdg-business-class.html,https://luxaeris.com/routes/dfw-to-cdg-business-class.html
+DFW,Dallas,FRA,Frankfurt,US-origin outbound,dfw-to-fra-business-class.html,https://luxaeris.com/routes/dfw-to-fra-business-class.html
+DFW,Dallas,ZRH,Zurich,US-origin outbound,dfw-to-zrh-business-class.html,https://luxaeris.com/routes/dfw-to-zrh-business-class.html
+DFW,Dallas,FCO,Rome,US-origin outbound,dfw-to-fco-business-class.html,https://luxaeris.com/routes/dfw-to-fco-business-class.html
+DFW,Dallas,MAD,Madrid,US-origin outbound,dfw-to-mad-business-class.html,https://luxaeris.com/routes/dfw-to-mad-business-class.html
+DFW,Dallas,BCN,Barcelona,US-origin outbound,dfw-to-bcn-business-class.html,https://luxaeris.com/routes/dfw-to-bcn-business-class.html
+DFW,Dallas,AMS,Amsterdam,US-origin outbound,dfw-to-ams-business-class.html,https://luxaeris.com/routes/dfw-to-ams-business-class.html
+DFW,Dallas,DUB,Dublin,US-origin outbound,dfw-to-dub-business-class.html,https://luxaeris.com/routes/dfw-to-dub-business-class.html
+DFW,Dallas,IST,Istanbul,US-origin outbound,dfw-to-ist-business-class.html,https://luxaeris.com/routes/dfw-to-ist-business-class.html
+DFW,Dallas,ATH,Athens,US-origin outbound,dfw-to-ath-business-class.html,https://luxaeris.com/routes/dfw-to-ath-business-class.html
+DFW,Dallas,DXB,Dubai,US-origin outbound,dfw-to-dxb-business-class.html,https://luxaeris.com/routes/dfw-to-dxb-business-class.html
+DFW,Dallas,DOH,Doha,US-origin outbound,dfw-to-doh-business-class.html,https://luxaeris.com/routes/dfw-to-doh-business-class.html
+DFW,Dallas,AUH,Abu Dhabi,US-origin outbound,dfw-to-auh-business-class.html,https://luxaeris.com/routes/dfw-to-auh-business-class.html
+DFW,Dallas,DEL,Delhi,US-origin outbound,dfw-to-del-business-class.html,https://luxaeris.com/routes/dfw-to-del-business-class.html
+DFW,Dallas,BOM,Mumbai,US-origin outbound,dfw-to-bom-business-class.html,https://luxaeris.com/routes/dfw-to-bom-business-class.html
+DFW,Dallas,SIN,Singapore,US-origin outbound,dfw-to-sin-business-class.html,https://luxaeris.com/routes/dfw-to-sin-business-class.html
+DFW,Dallas,HND,Tokyo,US-origin outbound,dfw-to-hnd-business-class.html,https://luxaeris.com/routes/dfw-to-hnd-business-class.html
+DFW,Dallas,ICN,Seoul,US-origin outbound,dfw-to-icn-business-class.html,https://luxaeris.com/routes/dfw-to-icn-business-class.html
+DFW,Dallas,HKG,Hong Kong,US-origin outbound,dfw-to-hkg-business-class.html,https://luxaeris.com/routes/dfw-to-hkg-business-class.html
+IAH,Houston,LHR,London,US-origin outbound,iah-to-lhr-business-class.html,https://luxaeris.com/routes/iah-to-lhr-business-class.html
+IAH,Houston,CDG,Paris,US-origin outbound,iah-to-cdg-business-class.html,https://luxaeris.com/routes/iah-to-cdg-business-class.html
+IAH,Houston,FRA,Frankfurt,US-origin outbound,iah-to-fra-business-class.html,https://luxaeris.com/routes/iah-to-fra-business-class.html
+IAH,Houston,ZRH,Zurich,US-origin outbound,iah-to-zrh-business-class.html,https://luxaeris.com/routes/iah-to-zrh-business-class.html
+IAH,Houston,FCO,Rome,US-origin outbound,iah-to-fco-business-class.html,https://luxaeris.com/routes/iah-to-fco-business-class.html
+IAH,Houston,MAD,Madrid,US-origin outbound,iah-to-mad-business-class.html,https://luxaeris.com/routes/iah-to-mad-business-class.html
+IAH,Houston,BCN,Barcelona,US-origin outbound,iah-to-bcn-business-class.html,https://luxaeris.com/routes/iah-to-bcn-business-class.html
+IAH,Houston,AMS,Amsterdam,US-origin outbound,iah-to-ams-business-class.html,https://luxaeris.com/routes/iah-to-ams-business-class.html
+IAH,Houston,DUB,Dublin,US-origin outbound,iah-to-dub-business-class.html,https://luxaeris.com/routes/iah-to-dub-business-class.html
+IAH,Houston,IST,Istanbul,US-origin outbound,iah-to-ist-business-class.html,https://luxaeris.com/routes/iah-to-ist-business-class.html
+IAH,Houston,ATH,Athens,US-origin outbound,iah-to-ath-business-class.html,https://luxaeris.com/routes/iah-to-ath-business-class.html
+IAH,Houston,DXB,Dubai,US-origin outbound,iah-to-dxb-business-class.html,https://luxaeris.com/routes/iah-to-dxb-business-class.html
+IAH,Houston,DOH,Doha,US-origin outbound,iah-to-doh-business-class.html,https://luxaeris.com/routes/iah-to-doh-business-class.html
+IAH,Houston,AUH,Abu Dhabi,US-origin outbound,iah-to-auh-business-class.html,https://luxaeris.com/routes/iah-to-auh-business-class.html
+IAH,Houston,DEL,Delhi,US-origin outbound,iah-to-del-business-class.html,https://luxaeris.com/routes/iah-to-del-business-class.html
+IAH,Houston,BOM,Mumbai,US-origin outbound,iah-to-bom-business-class.html,https://luxaeris.com/routes/iah-to-bom-business-class.html
+IAH,Houston,SIN,Singapore,US-origin outbound,iah-to-sin-business-class.html,https://luxaeris.com/routes/iah-to-sin-business-class.html
+IAH,Houston,HND,Tokyo,US-origin outbound,iah-to-hnd-business-class.html,https://luxaeris.com/routes/iah-to-hnd-business-class.html
+IAH,Houston,ICN,Seoul,US-origin outbound,iah-to-icn-business-class.html,https://luxaeris.com/routes/iah-to-icn-business-class.html
+IAH,Houston,HKG,Hong Kong,US-origin outbound,iah-to-hkg-business-class.html,https://luxaeris.com/routes/iah-to-hkg-business-class.html
+LAX,Los Angeles,LHR,London,US-origin outbound,lax-to-lhr-business-class.html,https://luxaeris.com/routes/lax-to-lhr-business-class.html
+LAX,Los Angeles,CDG,Paris,US-origin outbound,lax-to-cdg-business-class.html,https://luxaeris.com/routes/lax-to-cdg-business-class.html
+LAX,Los Angeles,FRA,Frankfurt,US-origin outbound,lax-to-fra-business-class.html,https://luxaeris.com/routes/lax-to-fra-business-class.html
+LAX,Los Angeles,ZRH,Zurich,US-origin outbound,lax-to-zrh-business-class.html,https://luxaeris.com/routes/lax-to-zrh-business-class.html
+LAX,Los Angeles,FCO,Rome,US-origin outbound,lax-to-fco-business-class.html,https://luxaeris.com/routes/lax-to-fco-business-class.html
+LAX,Los Angeles,MAD,Madrid,US-origin outbound,lax-to-mad-business-class.html,https://luxaeris.com/routes/lax-to-mad-business-class.html
+LAX,Los Angeles,BCN,Barcelona,US-origin outbound,lax-to-bcn-business-class.html,https://luxaeris.com/routes/lax-to-bcn-business-class.html
+LAX,Los Angeles,AMS,Amsterdam,US-origin outbound,lax-to-ams-business-class.html,https://luxaeris.com/routes/lax-to-ams-business-class.html
+LAX,Los Angeles,DUB,Dublin,US-origin outbound,lax-to-dub-business-class.html,https://luxaeris.com/routes/lax-to-dub-business-class.html
+LAX,Los Angeles,IST,Istanbul,US-origin outbound,lax-to-ist-business-class.html,https://luxaeris.com/routes/lax-to-ist-business-class.html
+LAX,Los Angeles,ATH,Athens,US-origin outbound,lax-to-ath-business-class.html,https://luxaeris.com/routes/lax-to-ath-business-class.html
+LAX,Los Angeles,DXB,Dubai,US-origin outbound,lax-to-dxb-business-class.html,https://luxaeris.com/routes/lax-to-dxb-business-class.html
+LAX,Los Angeles,DOH,Doha,US-origin outbound,lax-to-doh-business-class.html,https://luxaeris.com/routes/lax-to-doh-business-class.html
+LAX,Los Angeles,AUH,Abu Dhabi,US-origin outbound,lax-to-auh-business-class.html,https://luxaeris.com/routes/lax-to-auh-business-class.html
+LAX,Los Angeles,DEL,Delhi,US-origin outbound,lax-to-del-business-class.html,https://luxaeris.com/routes/lax-to-del-business-class.html
+LAX,Los Angeles,BOM,Mumbai,US-origin outbound,lax-to-bom-business-class.html,https://luxaeris.com/routes/lax-to-bom-business-class.html
+LAX,Los Angeles,SIN,Singapore,US-origin outbound,lax-to-sin-business-class.html,https://luxaeris.com/routes/lax-to-sin-business-class.html
+LAX,Los Angeles,HND,Tokyo,US-origin outbound,lax-to-hnd-business-class.html,https://luxaeris.com/routes/lax-to-hnd-business-class.html
+LAX,Los Angeles,ICN,Seoul,US-origin outbound,lax-to-icn-business-class.html,https://luxaeris.com/routes/lax-to-icn-business-class.html
+LAX,Los Angeles,HKG,Hong Kong,US-origin outbound,lax-to-hkg-business-class.html,https://luxaeris.com/routes/lax-to-hkg-business-class.html
+SFO,San Francisco,LHR,London,US-origin outbound,sfo-to-lhr-business-class.html,https://luxaeris.com/routes/sfo-to-lhr-business-class.html
+SFO,San Francisco,CDG,Paris,US-origin outbound,sfo-to-cdg-business-class.html,https://luxaeris.com/routes/sfo-to-cdg-business-class.html
+SFO,San Francisco,FRA,Frankfurt,US-origin outbound,sfo-to-fra-business-class.html,https://luxaeris.com/routes/sfo-to-fra-business-class.html
+SFO,San Francisco,ZRH,Zurich,US-origin outbound,sfo-to-zrh-business-class.html,https://luxaeris.com/routes/sfo-to-zrh-business-class.html
+SFO,San Francisco,FCO,Rome,US-origin outbound,sfo-to-fco-business-class.html,https://luxaeris.com/routes/sfo-to-fco-business-class.html
+SFO,San Francisco,MAD,Madrid,US-origin outbound,sfo-to-mad-business-class.html,https://luxaeris.com/routes/sfo-to-mad-business-class.html
+SFO,San Francisco,BCN,Barcelona,US-origin outbound,sfo-to-bcn-business-class.html,https://luxaeris.com/routes/sfo-to-bcn-business-class.html
+SFO,San Francisco,AMS,Amsterdam,US-origin outbound,sfo-to-ams-business-class.html,https://luxaeris.com/routes/sfo-to-ams-business-class.html
+SFO,San Francisco,DUB,Dublin,US-origin outbound,sfo-to-dub-business-class.html,https://luxaeris.com/routes/sfo-to-dub-business-class.html
+SFO,San Francisco,IST,Istanbul,US-origin outbound,sfo-to-ist-business-class.html,https://luxaeris.com/routes/sfo-to-ist-business-class.html
+SFO,San Francisco,ATH,Athens,US-origin outbound,sfo-to-ath-business-class.html,https://luxaeris.com/routes/sfo-to-ath-business-class.html
+SFO,San Francisco,DXB,Dubai,US-origin outbound,sfo-to-dxb-business-class.html,https://luxaeris.com/routes/sfo-to-dxb-business-class.html
+SFO,San Francisco,DOH,Doha,US-origin outbound,sfo-to-doh-business-class.html,https://luxaeris.com/routes/sfo-to-doh-business-class.html
+SFO,San Francisco,AUH,Abu Dhabi,US-origin outbound,sfo-to-auh-business-class.html,https://luxaeris.com/routes/sfo-to-auh-business-class.html
+SFO,San Francisco,DEL,Delhi,US-origin outbound,sfo-to-del-business-class.html,https://luxaeris.com/routes/sfo-to-del-business-class.html
+SFO,San Francisco,BOM,Mumbai,US-origin outbound,sfo-to-bom-business-class.html,https://luxaeris.com/routes/sfo-to-bom-business-class.html
+SFO,San Francisco,SIN,Singapore,US-origin outbound,sfo-to-sin-business-class.html,https://luxaeris.com/routes/sfo-to-sin-business-class.html
+SFO,San Francisco,HND,Tokyo,US-origin outbound,sfo-to-hnd-business-class.html,https://luxaeris.com/routes/sfo-to-hnd-business-class.html
+SFO,San Francisco,ICN,Seoul,US-origin outbound,sfo-to-icn-business-class.html,https://luxaeris.com/routes/sfo-to-icn-business-class.html
+SFO,San Francisco,HKG,Hong Kong,US-origin outbound,sfo-to-hkg-business-class.html,https://luxaeris.com/routes/sfo-to-hkg-business-class.html
+SEA,Seattle,LHR,London,US-origin outbound,sea-to-lhr-business-class.html,https://luxaeris.com/routes/sea-to-lhr-business-class.html
+SEA,Seattle,CDG,Paris,US-origin outbound,sea-to-cdg-business-class.html,https://luxaeris.com/routes/sea-to-cdg-business-class.html
+SEA,Seattle,FRA,Frankfurt,US-origin outbound,sea-to-fra-business-class.html,https://luxaeris.com/routes/sea-to-fra-business-class.html
+SEA,Seattle,ZRH,Zurich,US-origin outbound,sea-to-zrh-business-class.html,https://luxaeris.com/routes/sea-to-zrh-business-class.html
+SEA,Seattle,FCO,Rome,US-origin outbound,sea-to-fco-business-class.html,https://luxaeris.com/routes/sea-to-fco-business-class.html
+SEA,Seattle,MAD,Madrid,US-origin outbound,sea-to-mad-business-class.html,https://luxaeris.com/routes/sea-to-mad-business-class.html
+SEA,Seattle,BCN,Barcelona,US-origin outbound,sea-to-bcn-business-class.html,https://luxaeris.com/routes/sea-to-bcn-business-class.html
+SEA,Seattle,AMS,Amsterdam,US-origin outbound,sea-to-ams-business-class.html,https://luxaeris.com/routes/sea-to-ams-business-class.html
+SEA,Seattle,DUB,Dublin,US-origin outbound,sea-to-dub-business-class.html,https://luxaeris.com/routes/sea-to-dub-business-class.html
+SEA,Seattle,IST,Istanbul,US-origin outbound,sea-to-ist-business-class.html,https://luxaeris.com/routes/sea-to-ist-business-class.html
+SEA,Seattle,ATH,Athens,US-origin outbound,sea-to-ath-business-class.html,https://luxaeris.com/routes/sea-to-ath-business-class.html
+SEA,Seattle,DXB,Dubai,US-origin outbound,sea-to-dxb-business-class.html,https://luxaeris.com/routes/sea-to-dxb-business-class.html
+SEA,Seattle,DOH,Doha,US-origin outbound,sea-to-doh-business-class.html,https://luxaeris.com/routes/sea-to-doh-business-class.html
+SEA,Seattle,AUH,Abu Dhabi,US-origin outbound,sea-to-auh-business-class.html,https://luxaeris.com/routes/sea-to-auh-business-class.html
+SEA,Seattle,DEL,Delhi,US-origin outbound,sea-to-del-business-class.html,https://luxaeris.com/routes/sea-to-del-business-class.html
+SEA,Seattle,BOM,Mumbai,US-origin outbound,sea-to-bom-business-class.html,https://luxaeris.com/routes/sea-to-bom-business-class.html
+SEA,Seattle,SIN,Singapore,US-origin outbound,sea-to-sin-business-class.html,https://luxaeris.com/routes/sea-to-sin-business-class.html
+SEA,Seattle,HND,Tokyo,US-origin outbound,sea-to-hnd-business-class.html,https://luxaeris.com/routes/sea-to-hnd-business-class.html
+SEA,Seattle,ICN,Seoul,US-origin outbound,sea-to-icn-business-class.html,https://luxaeris.com/routes/sea-to-icn-business-class.html
+SEA,Seattle,HKG,Hong Kong,US-origin outbound,sea-to-hkg-business-class.html,https://luxaeris.com/routes/sea-to-hkg-business-class.html
+LAS,Las Vegas,LHR,London,US-origin outbound,las-to-lhr-business-class.html,https://luxaeris.com/routes/las-to-lhr-business-class.html
+LAS,Las Vegas,CDG,Paris,US-origin outbound,las-to-cdg-business-class.html,https://luxaeris.com/routes/las-to-cdg-business-class.html
+LAS,Las Vegas,FRA,Frankfurt,US-origin outbound,las-to-fra-business-class.html,https://luxaeris.com/routes/las-to-fra-business-class.html
+LAS,Las Vegas,ZRH,Zurich,US-origin outbound,las-to-zrh-business-class.html,https://luxaeris.com/routes/las-to-zrh-business-class.html
+LAS,Las Vegas,FCO,Rome,US-origin outbound,las-to-fco-business-class.html,https://luxaeris.com/routes/las-to-fco-business-class.html
+LAS,Las Vegas,MAD,Madrid,US-origin outbound,las-to-mad-business-class.html,https://luxaeris.com/routes/las-to-mad-business-class.html
+LAS,Las Vegas,BCN,Barcelona,US-origin outbound,las-to-bcn-business-class.html,https://luxaeris.com/routes/las-to-bcn-business-class.html
+LAS,Las Vegas,AMS,Amsterdam,US-origin outbound,las-to-ams-business-class.html,https://luxaeris.com/routes/las-to-ams-business-class.html
+LAS,Las Vegas,DUB,Dublin,US-origin outbound,las-to-dub-business-class.html,https://luxaeris.com/routes/las-to-dub-business-class.html
+LAS,Las Vegas,IST,Istanbul,US-origin outbound,las-to-ist-business-class.html,https://luxaeris.com/routes/las-to-ist-business-class.html
+LAS,Las Vegas,ATH,Athens,US-origin outbound,las-to-ath-business-class.html,https://luxaeris.com/routes/las-to-ath-business-class.html
+LAS,Las Vegas,DXB,Dubai,US-origin outbound,las-to-dxb-business-class.html,https://luxaeris.com/routes/las-to-dxb-business-class.html
+LAS,Las Vegas,DOH,Doha,US-origin outbound,las-to-doh-business-class.html,https://luxaeris.com/routes/las-to-doh-business-class.html
+LAS,Las Vegas,AUH,Abu Dhabi,US-origin outbound,las-to-auh-business-class.html,https://luxaeris.com/routes/las-to-auh-business-class.html
+LAS,Las Vegas,DEL,Delhi,US-origin outbound,las-to-del-business-class.html,https://luxaeris.com/routes/las-to-del-business-class.html
+LAS,Las Vegas,BOM,Mumbai,US-origin outbound,las-to-bom-business-class.html,https://luxaeris.com/routes/las-to-bom-business-class.html
+LAS,Las Vegas,SIN,Singapore,US-origin outbound,las-to-sin-business-class.html,https://luxaeris.com/routes/las-to-sin-business-class.html
+LAS,Las Vegas,HND,Tokyo,US-origin outbound,las-to-hnd-business-class.html,https://luxaeris.com/routes/las-to-hnd-business-class.html
+LAS,Las Vegas,ICN,Seoul,US-origin outbound,las-to-icn-business-class.html,https://luxaeris.com/routes/las-to-icn-business-class.html
+LAS,Las Vegas,HKG,Hong Kong,US-origin outbound,las-to-hkg-business-class.html,https://luxaeris.com/routes/las-to-hkg-business-class.html
+PHX,Phoenix,LHR,London,US-origin outbound,phx-to-lhr-business-class.html,https://luxaeris.com/routes/phx-to-lhr-business-class.html
+PHX,Phoenix,CDG,Paris,US-origin outbound,phx-to-cdg-business-class.html,https://luxaeris.com/routes/phx-to-cdg-business-class.html
+PHX,Phoenix,FRA,Frankfurt,US-origin outbound,phx-to-fra-business-class.html,https://luxaeris.com/routes/phx-to-fra-business-class.html
+PHX,Phoenix,ZRH,Zurich,US-origin outbound,phx-to-zrh-business-class.html,https://luxaeris.com/routes/phx-to-zrh-business-class.html
+PHX,Phoenix,FCO,Rome,US-origin outbound,phx-to-fco-business-class.html,https://luxaeris.com/routes/phx-to-fco-business-class.html
+PHX,Phoenix,MAD,Madrid,US-origin outbound,phx-to-mad-business-class.html,https://luxaeris.com/routes/phx-to-mad-business-class.html
+PHX,Phoenix,BCN,Barcelona,US-origin outbound,phx-to-bcn-business-class.html,https://luxaeris.com/routes/phx-to-bcn-business-class.html
+PHX,Phoenix,AMS,Amsterdam,US-origin outbound,phx-to-ams-business-class.html,https://luxaeris.com/routes/phx-to-ams-business-class.html
+PHX,Phoenix,DUB,Dublin,US-origin outbound,phx-to-dub-business-class.html,https://luxaeris.com/routes/phx-to-dub-business-class.html
+PHX,Phoenix,IST,Istanbul,US-origin outbound,phx-to-ist-business-class.html,https://luxaeris.com/routes/phx-to-ist-business-class.html
+PHX,Phoenix,ATH,Athens,US-origin outbound,phx-to-ath-business-class.html,https://luxaeris.com/routes/phx-to-ath-business-class.html
+PHX,Phoenix,DXB,Dubai,US-origin outbound,phx-to-dxb-business-class.html,https://luxaeris.com/routes/phx-to-dxb-business-class.html
+PHX,Phoenix,DOH,Doha,US-origin outbound,phx-to-doh-business-class.html,https://luxaeris.com/routes/phx-to-doh-business-class.html
+PHX,Phoenix,AUH,Abu Dhabi,US-origin outbound,phx-to-auh-business-class.html,https://luxaeris.com/routes/phx-to-auh-business-class.html
+PHX,Phoenix,DEL,Delhi,US-origin outbound,phx-to-del-business-class.html,https://luxaeris.com/routes/phx-to-del-business-class.html
+PHX,Phoenix,BOM,Mumbai,US-origin outbound,phx-to-bom-business-class.html,https://luxaeris.com/routes/phx-to-bom-business-class.html
+PHX,Phoenix,SIN,Singapore,US-origin outbound,phx-to-sin-business-class.html,https://luxaeris.com/routes/phx-to-sin-business-class.html
+PHX,Phoenix,HND,Tokyo,US-origin outbound,phx-to-hnd-business-class.html,https://luxaeris.com/routes/phx-to-hnd-business-class.html
+PHX,Phoenix,ICN,Seoul,US-origin outbound,phx-to-icn-business-class.html,https://luxaeris.com/routes/phx-to-icn-business-class.html
+PHX,Phoenix,HKG,Hong Kong,US-origin outbound,phx-to-hkg-business-class.html,https://luxaeris.com/routes/phx-to-hkg-business-class.html
+DEN,Denver,LHR,London,US-origin outbound,den-to-lhr-business-class.html,https://luxaeris.com/routes/den-to-lhr-business-class.html
+DEN,Denver,CDG,Paris,US-origin outbound,den-to-cdg-business-class.html,https://luxaeris.com/routes/den-to-cdg-business-class.html
+DEN,Denver,FRA,Frankfurt,US-origin outbound,den-to-fra-business-class.html,https://luxaeris.com/routes/den-to-fra-business-class.html
+DEN,Denver,ZRH,Zurich,US-origin outbound,den-to-zrh-business-class.html,https://luxaeris.com/routes/den-to-zrh-business-class.html
+DEN,Denver,FCO,Rome,US-origin outbound,den-to-fco-business-class.html,https://luxaeris.com/routes/den-to-fco-business-class.html
+DEN,Denver,MAD,Madrid,US-origin outbound,den-to-mad-business-class.html,https://luxaeris.com/routes/den-to-mad-business-class.html
+DEN,Denver,BCN,Barcelona,US-origin outbound,den-to-bcn-business-class.html,https://luxaeris.com/routes/den-to-bcn-business-class.html
+DEN,Denver,AMS,Amsterdam,US-origin outbound,den-to-ams-business-class.html,https://luxaeris.com/routes/den-to-ams-business-class.html
+DEN,Denver,DUB,Dublin,US-origin outbound,den-to-dub-business-class.html,https://luxaeris.com/routes/den-to-dub-business-class.html
+DEN,Denver,IST,Istanbul,US-origin outbound,den-to-ist-business-class.html,https://luxaeris.com/routes/den-to-ist-business-class.html
+DEN,Denver,ATH,Athens,US-origin outbound,den-to-ath-business-class.html,https://luxaeris.com/routes/den-to-ath-business-class.html
+DEN,Denver,DXB,Dubai,US-origin outbound,den-to-dxb-business-class.html,https://luxaeris.com/routes/den-to-dxb-business-class.html
+DEN,Denver,DOH,Doha,US-origin outbound,den-to-doh-business-class.html,https://luxaeris.com/routes/den-to-doh-business-class.html
+DEN,Denver,AUH,Abu Dhabi,US-origin outbound,den-to-auh-business-class.html,https://luxaeris.com/routes/den-to-auh-business-class.html
+DEN,Denver,DEL,Delhi,US-origin outbound,den-to-del-business-class.html,https://luxaeris.com/routes/den-to-del-business-class.html
+DEN,Denver,BOM,Mumbai,US-origin outbound,den-to-bom-business-class.html,https://luxaeris.com/routes/den-to-bom-business-class.html
+DEN,Denver,SIN,Singapore,US-origin outbound,den-to-sin-business-class.html,https://luxaeris.com/routes/den-to-sin-business-class.html
+DEN,Denver,HND,Tokyo,US-origin outbound,den-to-hnd-business-class.html,https://luxaeris.com/routes/den-to-hnd-business-class.html
+DEN,Denver,ICN,Seoul,US-origin outbound,den-to-icn-business-class.html,https://luxaeris.com/routes/den-to-icn-business-class.html
+DEN,Denver,HKG,Hong Kong,US-origin outbound,den-to-hkg-business-class.html,https://luxaeris.com/routes/den-to-hkg-business-class.html
+CLT,Charlotte,LHR,London,US-origin outbound,clt-to-lhr-business-class.html,https://luxaeris.com/routes/clt-to-lhr-business-class.html
+CLT,Charlotte,CDG,Paris,US-origin outbound,clt-to-cdg-business-class.html,https://luxaeris.com/routes/clt-to-cdg-business-class.html
+CLT,Charlotte,FRA,Frankfurt,US-origin outbound,clt-to-fra-business-class.html,https://luxaeris.com/routes/clt-to-fra-business-class.html
+CLT,Charlotte,ZRH,Zurich,US-origin outbound,clt-to-zrh-business-class.html,https://luxaeris.com/routes/clt-to-zrh-business-class.html
+CLT,Charlotte,FCO,Rome,US-origin outbound,clt-to-fco-business-class.html,https://luxaeris.com/routes/clt-to-fco-business-class.html
+CLT,Charlotte,MAD,Madrid,US-origin outbound,clt-to-mad-business-class.html,https://luxaeris.com/routes/clt-to-mad-business-class.html
+CLT,Charlotte,BCN,Barcelona,US-origin outbound,clt-to-bcn-business-class.html,https://luxaeris.com/routes/clt-to-bcn-business-class.html
+CLT,Charlotte,AMS,Amsterdam,US-origin outbound,clt-to-ams-business-class.html,https://luxaeris.com/routes/clt-to-ams-business-class.html
+CLT,Charlotte,DUB,Dublin,US-origin outbound,clt-to-dub-business-class.html,https://luxaeris.com/routes/clt-to-dub-business-class.html
+CLT,Charlotte,IST,Istanbul,US-origin outbound,clt-to-ist-business-class.html,https://luxaeris.com/routes/clt-to-ist-business-class.html
+CLT,Charlotte,ATH,Athens,US-origin outbound,clt-to-ath-business-class.html,https://luxaeris.com/routes/clt-to-ath-business-class.html
+CLT,Charlotte,DXB,Dubai,US-origin outbound,clt-to-dxb-business-class.html,https://luxaeris.com/routes/clt-to-dxb-business-class.html
+CLT,Charlotte,DOH,Doha,US-origin outbound,clt-to-doh-business-class.html,https://luxaeris.com/routes/clt-to-doh-business-class.html
+CLT,Charlotte,AUH,Abu Dhabi,US-origin outbound,clt-to-auh-business-class.html,https://luxaeris.com/routes/clt-to-auh-business-class.html
+CLT,Charlotte,DEL,Delhi,US-origin outbound,clt-to-del-business-class.html,https://luxaeris.com/routes/clt-to-del-business-class.html
+CLT,Charlotte,BOM,Mumbai,US-origin outbound,clt-to-bom-business-class.html,https://luxaeris.com/routes/clt-to-bom-business-class.html
+CLT,Charlotte,SIN,Singapore,US-origin outbound,clt-to-sin-business-class.html,https://luxaeris.com/routes/clt-to-sin-business-class.html
+CLT,Charlotte,HND,Tokyo,US-origin outbound,clt-to-hnd-business-class.html,https://luxaeris.com/routes/clt-to-hnd-business-class.html
+CLT,Charlotte,ICN,Seoul,US-origin outbound,clt-to-icn-business-class.html,https://luxaeris.com/routes/clt-to-icn-business-class.html
+CLT,Charlotte,HKG,Hong Kong,US-origin outbound,clt-to-hkg-business-class.html,https://luxaeris.com/routes/clt-to-hkg-business-class.html
+MSP,Minneapolis,LHR,London,US-origin outbound,msp-to-lhr-business-class.html,https://luxaeris.com/routes/msp-to-lhr-business-class.html
+MSP,Minneapolis,CDG,Paris,US-origin outbound,msp-to-cdg-business-class.html,https://luxaeris.com/routes/msp-to-cdg-business-class.html
+MSP,Minneapolis,FRA,Frankfurt,US-origin outbound,msp-to-fra-business-class.html,https://luxaeris.com/routes/msp-to-fra-business-class.html
+MSP,Minneapolis,ZRH,Zurich,US-origin outbound,msp-to-zrh-business-class.html,https://luxaeris.com/routes/msp-to-zrh-business-class.html
+MSP,Minneapolis,FCO,Rome,US-origin outbound,msp-to-fco-business-class.html,https://luxaeris.com/routes/msp-to-fco-business-class.html
+MSP,Minneapolis,MAD,Madrid,US-origin outbound,msp-to-mad-business-class.html,https://luxaeris.com/routes/msp-to-mad-business-class.html
+MSP,Minneapolis,BCN,Barcelona,US-origin outbound,msp-to-bcn-business-class.html,https://luxaeris.com/routes/msp-to-bcn-business-class.html
+MSP,Minneapolis,AMS,Amsterdam,US-origin outbound,msp-to-ams-business-class.html,https://luxaeris.com/routes/msp-to-ams-business-class.html
+MSP,Minneapolis,DUB,Dublin,US-origin outbound,msp-to-dub-business-class.html,https://luxaeris.com/routes/msp-to-dub-business-class.html
+MSP,Minneapolis,IST,Istanbul,US-origin outbound,msp-to-ist-business-class.html,https://luxaeris.com/routes/msp-to-ist-business-class.html
+MSP,Minneapolis,ATH,Athens,US-origin outbound,msp-to-ath-business-class.html,https://luxaeris.com/routes/msp-to-ath-business-class.html
+MSP,Minneapolis,DXB,Dubai,US-origin outbound,msp-to-dxb-business-class.html,https://luxaeris.com/routes/msp-to-dxb-business-class.html
+MSP,Minneapolis,DOH,Doha,US-origin outbound,msp-to-doh-business-class.html,https://luxaeris.com/routes/msp-to-doh-business-class.html
+MSP,Minneapolis,AUH,Abu Dhabi,US-origin outbound,msp-to-auh-business-class.html,https://luxaeris.com/routes/msp-to-auh-business-class.html
+MSP,Minneapolis,DEL,Delhi,US-origin outbound,msp-to-del-business-class.html,https://luxaeris.com/routes/msp-to-del-business-class.html
+MSP,Minneapolis,BOM,Mumbai,US-origin outbound,msp-to-bom-business-class.html,https://luxaeris.com/routes/msp-to-bom-business-class.html
+MSP,Minneapolis,SIN,Singapore,US-origin outbound,msp-to-sin-business-class.html,https://luxaeris.com/routes/msp-to-sin-business-class.html
+MSP,Minneapolis,HND,Tokyo,US-origin outbound,msp-to-hnd-business-class.html,https://luxaeris.com/routes/msp-to-hnd-business-class.html
+MSP,Minneapolis,ICN,Seoul,US-origin outbound,msp-to-icn-business-class.html,https://luxaeris.com/routes/msp-to-icn-business-class.html
+MSP,Minneapolis,HKG,Hong Kong,US-origin outbound,msp-to-hkg-business-class.html,https://luxaeris.com/routes/msp-to-hkg-business-class.html
+DTW,Detroit,LHR,London,US-origin outbound,dtw-to-lhr-business-class.html,https://luxaeris.com/routes/dtw-to-lhr-business-class.html
+DTW,Detroit,CDG,Paris,US-origin outbound,dtw-to-cdg-business-class.html,https://luxaeris.com/routes/dtw-to-cdg-business-class.html
+DTW,Detroit,FRA,Frankfurt,US-origin outbound,dtw-to-fra-business-class.html,https://luxaeris.com/routes/dtw-to-fra-business-class.html
+DTW,Detroit,ZRH,Zurich,US-origin outbound,dtw-to-zrh-business-class.html,https://luxaeris.com/routes/dtw-to-zrh-business-class.html
+DTW,Detroit,FCO,Rome,US-origin outbound,dtw-to-fco-business-class.html,https://luxaeris.com/routes/dtw-to-fco-business-class.html
+DTW,Detroit,MAD,Madrid,US-origin outbound,dtw-to-mad-business-class.html,https://luxaeris.com/routes/dtw-to-mad-business-class.html
+DTW,Detroit,BCN,Barcelona,US-origin outbound,dtw-to-bcn-business-class.html,https://luxaeris.com/routes/dtw-to-bcn-business-class.html
+DTW,Detroit,AMS,Amsterdam,US-origin outbound,dtw-to-ams-business-class.html,https://luxaeris.com/routes/dtw-to-ams-business-class.html
+DTW,Detroit,DUB,Dublin,US-origin outbound,dtw-to-dub-business-class.html,https://luxaeris.com/routes/dtw-to-dub-business-class.html
+DTW,Detroit,IST,Istanbul,US-origin outbound,dtw-to-ist-business-class.html,https://luxaeris.com/routes/dtw-to-ist-business-class.html
+DTW,Detroit,ATH,Athens,US-origin outbound,dtw-to-ath-business-class.html,https://luxaeris.com/routes/dtw-to-ath-business-class.html
+DTW,Detroit,DXB,Dubai,US-origin outbound,dtw-to-dxb-business-class.html,https://luxaeris.com/routes/dtw-to-dxb-business-class.html
+DTW,Detroit,DOH,Doha,US-origin outbound,dtw-to-doh-business-class.html,https://luxaeris.com/routes/dtw-to-doh-business-class.html
+DTW,Detroit,AUH,Abu Dhabi,US-origin outbound,dtw-to-auh-business-class.html,https://luxaeris.com/routes/dtw-to-auh-business-class.html
+DTW,Detroit,DEL,Delhi,US-origin outbound,dtw-to-del-business-class.html,https://luxaeris.com/routes/dtw-to-del-business-class.html
+DTW,Detroit,BOM,Mumbai,US-origin outbound,dtw-to-bom-business-class.html,https://luxaeris.com/routes/dtw-to-bom-business-class.html
+DTW,Detroit,SIN,Singapore,US-origin outbound,dtw-to-sin-business-class.html,https://luxaeris.com/routes/dtw-to-sin-business-class.html
+DTW,Detroit,HND,Tokyo,US-origin outbound,dtw-to-hnd-business-class.html,https://luxaeris.com/routes/dtw-to-hnd-business-class.html
+DTW,Detroit,ICN,Seoul,US-origin outbound,dtw-to-icn-business-class.html,https://luxaeris.com/routes/dtw-to-icn-business-class.html
+DTW,Detroit,HKG,Hong Kong,US-origin outbound,dtw-to-hkg-business-class.html,https://luxaeris.com/routes/dtw-to-hkg-business-class.html
+PHL,Philadelphia,LHR,London,US-origin outbound,phl-to-lhr-business-class.html,https://luxaeris.com/routes/phl-to-lhr-business-class.html
+PHL,Philadelphia,CDG,Paris,US-origin outbound,phl-to-cdg-business-class.html,https://luxaeris.com/routes/phl-to-cdg-business-class.html
+PHL,Philadelphia,FRA,Frankfurt,US-origin outbound,phl-to-fra-business-class.html,https://luxaeris.com/routes/phl-to-fra-business-class.html
+PHL,Philadelphia,ZRH,Zurich,US-origin outbound,phl-to-zrh-business-class.html,https://luxaeris.com/routes/phl-to-zrh-business-class.html
+PHL,Philadelphia,FCO,Rome,US-origin outbound,phl-to-fco-business-class.html,https://luxaeris.com/routes/phl-to-fco-business-class.html
+PHL,Philadelphia,MAD,Madrid,US-origin outbound,phl-to-mad-business-class.html,https://luxaeris.com/routes/phl-to-mad-business-class.html
+PHL,Philadelphia,BCN,Barcelona,US-origin outbound,phl-to-bcn-business-class.html,https://luxaeris.com/routes/phl-to-bcn-business-class.html
+PHL,Philadelphia,AMS,Amsterdam,US-origin outbound,phl-to-ams-business-class.html,https://luxaeris.com/routes/phl-to-ams-business-class.html
+PHL,Philadelphia,DUB,Dublin,US-origin outbound,phl-to-dub-business-class.html,https://luxaeris.com/routes/phl-to-dub-business-class.html
+PHL,Philadelphia,IST,Istanbul,US-origin outbound,phl-to-ist-business-class.html,https://luxaeris.com/routes/phl-to-ist-business-class.html
+PHL,Philadelphia,ATH,Athens,US-origin outbound,phl-to-ath-business-class.html,https://luxaeris.com/routes/phl-to-ath-business-class.html
+PHL,Philadelphia,DXB,Dubai,US-origin outbound,phl-to-dxb-business-class.html,https://luxaeris.com/routes/phl-to-dxb-business-class.html
+PHL,Philadelphia,DOH,Doha,US-origin outbound,phl-to-doh-business-class.html,https://luxaeris.com/routes/phl-to-doh-business-class.html
+PHL,Philadelphia,AUH,Abu Dhabi,US-origin outbound,phl-to-auh-business-class.html,https://luxaeris.com/routes/phl-to-auh-business-class.html
+PHL,Philadelphia,DEL,Delhi,US-origin outbound,phl-to-del-business-class.html,https://luxaeris.com/routes/phl-to-del-business-class.html
+PHL,Philadelphia,BOM,Mumbai,US-origin outbound,phl-to-bom-business-class.html,https://luxaeris.com/routes/phl-to-bom-business-class.html
+PHL,Philadelphia,SIN,Singapore,US-origin outbound,phl-to-sin-business-class.html,https://luxaeris.com/routes/phl-to-sin-business-class.html
+PHL,Philadelphia,HND,Tokyo,US-origin outbound,phl-to-hnd-business-class.html,https://luxaeris.com/routes/phl-to-hnd-business-class.html
+PHL,Philadelphia,ICN,Seoul,US-origin outbound,phl-to-icn-business-class.html,https://luxaeris.com/routes/phl-to-icn-business-class.html
+PHL,Philadelphia,HKG,Hong Kong,US-origin outbound,phl-to-hkg-business-class.html,https://luxaeris.com/routes/phl-to-hkg-business-class.html
+SAN,San Diego,LHR,London,US-origin outbound,san-to-lhr-business-class.html,https://luxaeris.com/routes/san-to-lhr-business-class.html
+SAN,San Diego,CDG,Paris,US-origin outbound,san-to-cdg-business-class.html,https://luxaeris.com/routes/san-to-cdg-business-class.html
+SAN,San Diego,FRA,Frankfurt,US-origin outbound,san-to-fra-business-class.html,https://luxaeris.com/routes/san-to-fra-business-class.html
+SAN,San Diego,ZRH,Zurich,US-origin outbound,san-to-zrh-business-class.html,https://luxaeris.com/routes/san-to-zrh-business-class.html
+SAN,San Diego,FCO,Rome,US-origin outbound,san-to-fco-business-class.html,https://luxaeris.com/routes/san-to-fco-business-class.html
+SAN,San Diego,MAD,Madrid,US-origin outbound,san-to-mad-business-class.html,https://luxaeris.com/routes/san-to-mad-business-class.html
+SAN,San Diego,BCN,Barcelona,US-origin outbound,san-to-bcn-business-class.html,https://luxaeris.com/routes/san-to-bcn-business-class.html
+SAN,San Diego,AMS,Amsterdam,US-origin outbound,san-to-ams-business-class.html,https://luxaeris.com/routes/san-to-ams-business-class.html
+SAN,San Diego,DUB,Dublin,US-origin outbound,san-to-dub-business-class.html,https://luxaeris.com/routes/san-to-dub-business-class.html
+SAN,San Diego,IST,Istanbul,US-origin outbound,san-to-ist-business-class.html,https://luxaeris.com/routes/san-to-ist-business-class.html
+SAN,San Diego,ATH,Athens,US-origin outbound,san-to-ath-business-class.html,https://luxaeris.com/routes/san-to-ath-business-class.html
+SAN,San Diego,DXB,Dubai,US-origin outbound,san-to-dxb-business-class.html,https://luxaeris.com/routes/san-to-dxb-business-class.html
+SAN,San Diego,DOH,Doha,US-origin outbound,san-to-doh-business-class.html,https://luxaeris.com/routes/san-to-doh-business-class.html
+SAN,San Diego,AUH,Abu Dhabi,US-origin outbound,san-to-auh-business-class.html,https://luxaeris.com/routes/san-to-auh-business-class.html
+SAN,San Diego,DEL,Delhi,US-origin outbound,san-to-del-business-class.html,https://luxaeris.com/routes/san-to-del-business-class.html
+SAN,San Diego,BOM,Mumbai,US-origin outbound,san-to-bom-business-class.html,https://luxaeris.com/routes/san-to-bom-business-class.html
+SAN,San Diego,SIN,Singapore,US-origin outbound,san-to-sin-business-class.html,https://luxaeris.com/routes/san-to-sin-business-class.html
+SAN,San Diego,HND,Tokyo,US-origin outbound,san-to-hnd-business-class.html,https://luxaeris.com/routes/san-to-hnd-business-class.html
+SAN,San Diego,ICN,Seoul,US-origin outbound,san-to-icn-business-class.html,https://luxaeris.com/routes/san-to-icn-business-class.html
+SAN,San Diego,HKG,Hong Kong,US-origin outbound,san-to-hkg-business-class.html,https://luxaeris.com/routes/san-to-hkg-business-class.html
+AUS,Austin,LHR,London,US-origin outbound,aus-to-lhr-business-class.html,https://luxaeris.com/routes/aus-to-lhr-business-class.html
+AUS,Austin,CDG,Paris,US-origin outbound,aus-to-cdg-business-class.html,https://luxaeris.com/routes/aus-to-cdg-business-class.html
+AUS,Austin,FRA,Frankfurt,US-origin outbound,aus-to-fra-business-class.html,https://luxaeris.com/routes/aus-to-fra-business-class.html
+AUS,Austin,ZRH,Zurich,US-origin outbound,aus-to-zrh-business-class.html,https://luxaeris.com/routes/aus-to-zrh-business-class.html
+AUS,Austin,FCO,Rome,US-origin outbound,aus-to-fco-business-class.html,https://luxaeris.com/routes/aus-to-fco-business-class.html
+AUS,Austin,MAD,Madrid,US-origin outbound,aus-to-mad-business-class.html,https://luxaeris.com/routes/aus-to-mad-business-class.html
+AUS,Austin,BCN,Barcelona,US-origin outbound,aus-to-bcn-business-class.html,https://luxaeris.com/routes/aus-to-bcn-business-class.html
+AUS,Austin,AMS,Amsterdam,US-origin outbound,aus-to-ams-business-class.html,https://luxaeris.com/routes/aus-to-ams-business-class.html
+AUS,Austin,DUB,Dublin,US-origin outbound,aus-to-dub-business-class.html,https://luxaeris.com/routes/aus-to-dub-business-class.html
+AUS,Austin,IST,Istanbul,US-origin outbound,aus-to-ist-business-class.html,https://luxaeris.com/routes/aus-to-ist-business-class.html
+AUS,Austin,ATH,Athens,US-origin outbound,aus-to-ath-business-class.html,https://luxaeris.com/routes/aus-to-ath-business-class.html
+AUS,Austin,DXB,Dubai,US-origin outbound,aus-to-dxb-business-class.html,https://luxaeris.com/routes/aus-to-dxb-business-class.html
+AUS,Austin,DOH,Doha,US-origin outbound,aus-to-doh-business-class.html,https://luxaeris.com/routes/aus-to-doh-business-class.html
+AUS,Austin,AUH,Abu Dhabi,US-origin outbound,aus-to-auh-business-class.html,https://luxaeris.com/routes/aus-to-auh-business-class.html
+AUS,Austin,DEL,Delhi,US-origin outbound,aus-to-del-business-class.html,https://luxaeris.com/routes/aus-to-del-business-class.html
+AUS,Austin,BOM,Mumbai,US-origin outbound,aus-to-bom-business-class.html,https://luxaeris.com/routes/aus-to-bom-business-class.html
+AUS,Austin,SIN,Singapore,US-origin outbound,aus-to-sin-business-class.html,https://luxaeris.com/routes/aus-to-sin-business-class.html
+AUS,Austin,HND,Tokyo,US-origin outbound,aus-to-hnd-business-class.html,https://luxaeris.com/routes/aus-to-hnd-business-class.html
+AUS,Austin,ICN,Seoul,US-origin outbound,aus-to-icn-business-class.html,https://luxaeris.com/routes/aus-to-icn-business-class.html
+AUS,Austin,HKG,Hong Kong,US-origin outbound,aus-to-hkg-business-class.html,https://luxaeris.com/routes/aus-to-hkg-business-class.html
+PDX,Portland,LHR,London,US-origin outbound,pdx-to-lhr-business-class.html,https://luxaeris.com/routes/pdx-to-lhr-business-class.html
+PDX,Portland,CDG,Paris,US-origin outbound,pdx-to-cdg-business-class.html,https://luxaeris.com/routes/pdx-to-cdg-business-class.html
+PDX,Portland,FRA,Frankfurt,US-origin outbound,pdx-to-fra-business-class.html,https://luxaeris.com/routes/pdx-to-fra-business-class.html
+PDX,Portland,ZRH,Zurich,US-origin outbound,pdx-to-zrh-business-class.html,https://luxaeris.com/routes/pdx-to-zrh-business-class.html
+PDX,Portland,FCO,Rome,US-origin outbound,pdx-to-fco-business-class.html,https://luxaeris.com/routes/pdx-to-fco-business-class.html
+PDX,Portland,MAD,Madrid,US-origin outbound,pdx-to-mad-business-class.html,https://luxaeris.com/routes/pdx-to-mad-business-class.html
+PDX,Portland,BCN,Barcelona,US-origin outbound,pdx-to-bcn-business-class.html,https://luxaeris.com/routes/pdx-to-bcn-business-class.html
+PDX,Portland,AMS,Amsterdam,US-origin outbound,pdx-to-ams-business-class.html,https://luxaeris.com/routes/pdx-to-ams-business-class.html
+PDX,Portland,DUB,Dublin,US-origin outbound,pdx-to-dub-business-class.html,https://luxaeris.com/routes/pdx-to-dub-business-class.html
+PDX,Portland,IST,Istanbul,US-origin outbound,pdx-to-ist-business-class.html,https://luxaeris.com/routes/pdx-to-ist-business-class.html
+PDX,Portland,ATH,Athens,US-origin outbound,pdx-to-ath-business-class.html,https://luxaeris.com/routes/pdx-to-ath-business-class.html
+PDX,Portland,DXB,Dubai,US-origin outbound,pdx-to-dxb-business-class.html,https://luxaeris.com/routes/pdx-to-dxb-business-class.html
+PDX,Portland,DOH,Doha,US-origin outbound,pdx-to-doh-business-class.html,https://luxaeris.com/routes/pdx-to-doh-business-class.html
+PDX,Portland,AUH,Abu Dhabi,US-origin outbound,pdx-to-auh-business-class.html,https://luxaeris.com/routes/pdx-to-auh-business-class.html
+PDX,Portland,DEL,Delhi,US-origin outbound,pdx-to-del-business-class.html,https://luxaeris.com/routes/pdx-to-del-business-class.html
+PDX,Portland,BOM,Mumbai,US-origin outbound,pdx-to-bom-business-class.html,https://luxaeris.com/routes/pdx-to-bom-business-class.html
+PDX,Portland,SIN,Singapore,US-origin outbound,pdx-to-sin-business-class.html,https://luxaeris.com/routes/pdx-to-sin-business-class.html
+PDX,Portland,HND,Tokyo,US-origin outbound,pdx-to-hnd-business-class.html,https://luxaeris.com/routes/pdx-to-hnd-business-class.html
+PDX,Portland,ICN,Seoul,US-origin outbound,pdx-to-icn-business-class.html,https://luxaeris.com/routes/pdx-to-icn-business-class.html
+PDX,Portland,HKG,Hong Kong,US-origin outbound,pdx-to-hkg-business-class.html,https://luxaeris.com/routes/pdx-to-hkg-business-class.html
+TPA,Tampa,LHR,London,US-origin outbound,tpa-to-lhr-business-class.html,https://luxaeris.com/routes/tpa-to-lhr-business-class.html
+TPA,Tampa,CDG,Paris,US-origin outbound,tpa-to-cdg-business-class.html,https://luxaeris.com/routes/tpa-to-cdg-business-class.html
+TPA,Tampa,FRA,Frankfurt,US-origin outbound,tpa-to-fra-business-class.html,https://luxaeris.com/routes/tpa-to-fra-business-class.html
+TPA,Tampa,ZRH,Zurich,US-origin outbound,tpa-to-zrh-business-class.html,https://luxaeris.com/routes/tpa-to-zrh-business-class.html
+TPA,Tampa,FCO,Rome,US-origin outbound,tpa-to-fco-business-class.html,https://luxaeris.com/routes/tpa-to-fco-business-class.html
+TPA,Tampa,MAD,Madrid,US-origin outbound,tpa-to-mad-business-class.html,https://luxaeris.com/routes/tpa-to-mad-business-class.html
+TPA,Tampa,BCN,Barcelona,US-origin outbound,tpa-to-bcn-business-class.html,https://luxaeris.com/routes/tpa-to-bcn-business-class.html
+TPA,Tampa,AMS,Amsterdam,US-origin outbound,tpa-to-ams-business-class.html,https://luxaeris.com/routes/tpa-to-ams-business-class.html
+TPA,Tampa,DUB,Dublin,US-origin outbound,tpa-to-dub-business-class.html,https://luxaeris.com/routes/tpa-to-dub-business-class.html
+TPA,Tampa,IST,Istanbul,US-origin outbound,tpa-to-ist-business-class.html,https://luxaeris.com/routes/tpa-to-ist-business-class.html
+TPA,Tampa,ATH,Athens,US-origin outbound,tpa-to-ath-business-class.html,https://luxaeris.com/routes/tpa-to-ath-business-class.html
+TPA,Tampa,DXB,Dubai,US-origin outbound,tpa-to-dxb-business-class.html,https://luxaeris.com/routes/tpa-to-dxb-business-class.html
+TPA,Tampa,DOH,Doha,US-origin outbound,tpa-to-doh-business-class.html,https://luxaeris.com/routes/tpa-to-doh-business-class.html
+TPA,Tampa,AUH,Abu Dhabi,US-origin outbound,tpa-to-auh-business-class.html,https://luxaeris.com/routes/tpa-to-auh-business-class.html
+TPA,Tampa,DEL,Delhi,US-origin outbound,tpa-to-del-business-class.html,https://luxaeris.com/routes/tpa-to-del-business-class.html
+TPA,Tampa,BOM,Mumbai,US-origin outbound,tpa-to-bom-business-class.html,https://luxaeris.com/routes/tpa-to-bom-business-class.html
+TPA,Tampa,SIN,Singapore,US-origin outbound,tpa-to-sin-business-class.html,https://luxaeris.com/routes/tpa-to-sin-business-class.html
+TPA,Tampa,HND,Tokyo,US-origin outbound,tpa-to-hnd-business-class.html,https://luxaeris.com/routes/tpa-to-hnd-business-class.html
+TPA,Tampa,ICN,Seoul,US-origin outbound,tpa-to-icn-business-class.html,https://luxaeris.com/routes/tpa-to-icn-business-class.html
+TPA,Tampa,HKG,Hong Kong,US-origin outbound,tpa-to-hkg-business-class.html,https://luxaeris.com/routes/tpa-to-hkg-business-class.html
+RDU,Raleigh,LHR,London,US-origin outbound,rdu-to-lhr-business-class.html,https://luxaeris.com/routes/rdu-to-lhr-business-class.html
+RDU,Raleigh,CDG,Paris,US-origin outbound,rdu-to-cdg-business-class.html,https://luxaeris.com/routes/rdu-to-cdg-business-class.html
+RDU,Raleigh,FRA,Frankfurt,US-origin outbound,rdu-to-fra-business-class.html,https://luxaeris.com/routes/rdu-to-fra-business-class.html
+RDU,Raleigh,ZRH,Zurich,US-origin outbound,rdu-to-zrh-business-class.html,https://luxaeris.com/routes/rdu-to-zrh-business-class.html
+RDU,Raleigh,FCO,Rome,US-origin outbound,rdu-to-fco-business-class.html,https://luxaeris.com/routes/rdu-to-fco-business-class.html
+RDU,Raleigh,MAD,Madrid,US-origin outbound,rdu-to-mad-business-class.html,https://luxaeris.com/routes/rdu-to-mad-business-class.html
+RDU,Raleigh,BCN,Barcelona,US-origin outbound,rdu-to-bcn-business-class.html,https://luxaeris.com/routes/rdu-to-bcn-business-class.html
+RDU,Raleigh,AMS,Amsterdam,US-origin outbound,rdu-to-ams-business-class.html,https://luxaeris.com/routes/rdu-to-ams-business-class.html
+RDU,Raleigh,DUB,Dublin,US-origin outbound,rdu-to-dub-business-class.html,https://luxaeris.com/routes/rdu-to-dub-business-class.html
+RDU,Raleigh,IST,Istanbul,US-origin outbound,rdu-to-ist-business-class.html,https://luxaeris.com/routes/rdu-to-ist-business-class.html
+RDU,Raleigh,ATH,Athens,US-origin outbound,rdu-to-ath-business-class.html,https://luxaeris.com/routes/rdu-to-ath-business-class.html
+RDU,Raleigh,DXB,Dubai,US-origin outbound,rdu-to-dxb-business-class.html,https://luxaeris.com/routes/rdu-to-dxb-business-class.html
+RDU,Raleigh,DOH,Doha,US-origin outbound,rdu-to-doh-business-class.html,https://luxaeris.com/routes/rdu-to-doh-business-class.html
+RDU,Raleigh,AUH,Abu Dhabi,US-origin outbound,rdu-to-auh-business-class.html,https://luxaeris.com/routes/rdu-to-auh-business-class.html
+RDU,Raleigh,DEL,Delhi,US-origin outbound,rdu-to-del-business-class.html,https://luxaeris.com/routes/rdu-to-del-business-class.html
+RDU,Raleigh,BOM,Mumbai,US-origin outbound,rdu-to-bom-business-class.html,https://luxaeris.com/routes/rdu-to-bom-business-class.html
+RDU,Raleigh,SIN,Singapore,US-origin outbound,rdu-to-sin-business-class.html,https://luxaeris.com/routes/rdu-to-sin-business-class.html
+RDU,Raleigh,HND,Tokyo,US-origin outbound,rdu-to-hnd-business-class.html,https://luxaeris.com/routes/rdu-to-hnd-business-class.html
+RDU,Raleigh,ICN,Seoul,US-origin outbound,rdu-to-icn-business-class.html,https://luxaeris.com/routes/rdu-to-icn-business-class.html
+RDU,Raleigh,HKG,Hong Kong,US-origin outbound,rdu-to-hkg-business-class.html,https://luxaeris.com/routes/rdu-to-hkg-business-class.html
+BNA,Nashville,LHR,London,US-origin outbound,bna-to-lhr-business-class.html,https://luxaeris.com/routes/bna-to-lhr-business-class.html
+BNA,Nashville,CDG,Paris,US-origin outbound,bna-to-cdg-business-class.html,https://luxaeris.com/routes/bna-to-cdg-business-class.html
+BNA,Nashville,FRA,Frankfurt,US-origin outbound,bna-to-fra-business-class.html,https://luxaeris.com/routes/bna-to-fra-business-class.html
+BNA,Nashville,ZRH,Zurich,US-origin outbound,bna-to-zrh-business-class.html,https://luxaeris.com/routes/bna-to-zrh-business-class.html
+BNA,Nashville,FCO,Rome,US-origin outbound,bna-to-fco-business-class.html,https://luxaeris.com/routes/bna-to-fco-business-class.html
+BNA,Nashville,MAD,Madrid,US-origin outbound,bna-to-mad-business-class.html,https://luxaeris.com/routes/bna-to-mad-business-class.html
+BNA,Nashville,BCN,Barcelona,US-origin outbound,bna-to-bcn-business-class.html,https://luxaeris.com/routes/bna-to-bcn-business-class.html
+BNA,Nashville,AMS,Amsterdam,US-origin outbound,bna-to-ams-business-class.html,https://luxaeris.com/routes/bna-to-ams-business-class.html
+BNA,Nashville,DUB,Dublin,US-origin outbound,bna-to-dub-business-class.html,https://luxaeris.com/routes/bna-to-dub-business-class.html
+BNA,Nashville,IST,Istanbul,US-origin outbound,bna-to-ist-business-class.html,https://luxaeris.com/routes/bna-to-ist-business-class.html
+BNA,Nashville,ATH,Athens,US-origin outbound,bna-to-ath-business-class.html,https://luxaeris.com/routes/bna-to-ath-business-class.html
+BNA,Nashville,DXB,Dubai,US-origin outbound,bna-to-dxb-business-class.html,https://luxaeris.com/routes/bna-to-dxb-business-class.html
+BNA,Nashville,DOH,Doha,US-origin outbound,bna-to-doh-business-class.html,https://luxaeris.com/routes/bna-to-doh-business-class.html
+BNA,Nashville,AUH,Abu Dhabi,US-origin outbound,bna-to-auh-business-class.html,https://luxaeris.com/routes/bna-to-auh-business-class.html
+BNA,Nashville,DEL,Delhi,US-origin outbound,bna-to-del-business-class.html,https://luxaeris.com/routes/bna-to-del-business-class.html
+BNA,Nashville,BOM,Mumbai,US-origin outbound,bna-to-bom-business-class.html,https://luxaeris.com/routes/bna-to-bom-business-class.html
+BNA,Nashville,SIN,Singapore,US-origin outbound,bna-to-sin-business-class.html,https://luxaeris.com/routes/bna-to-sin-business-class.html
+BNA,Nashville,HND,Tokyo,US-origin outbound,bna-to-hnd-business-class.html,https://luxaeris.com/routes/bna-to-hnd-business-class.html
+BNA,Nashville,ICN,Seoul,US-origin outbound,bna-to-icn-business-class.html,https://luxaeris.com/routes/bna-to-icn-business-class.html
+BNA,Nashville,HKG,Hong Kong,US-origin outbound,bna-to-hkg-business-class.html,https://luxaeris.com/routes/bna-to-hkg-business-class.html

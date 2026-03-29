@@ -499,96 +499,40 @@ function polishMicrocopy() {
 
 
 
-function lxPageTitle(){
+function lxPageTitle() {
   const h1 = document.querySelector('main h1, .page-shell h1, section h1, h1');
-  return h1 ? h1.textContent.trim() : 'this page';
+  return h1 ? h1.textContent.replace(/\s+/g, ' ').trim() : 'this page';
 }
-function lxPathName(){ return (window.location.pathname || '').replace(/\/+/g, '/'); }
-function lxIsAirlinePage(){
+function lxPathName() {
+  return (window.location.pathname || '').replace(/\/+/g, '/');
+}
+function lxIsAirlinePage() {
   const p = lxPathName();
-  return /^\/airlines\/(?!index\.html$)[^\/]+(?:\.html)?$/.test(p);
+  return /^\/airlines\/(?!index\.html$)[^\/]+(?:\.html)?$/i.test(p);
 }
-function lxIsRouteDetailPage(){
+function lxIsRouteDetailPage() {
   const p = lxPathName();
   return /^\/routes\/[a-z0-9-]+-to-[a-z0-9-]+-[a-z0-9-]+(?:-[a-z0-9-]+)*\.html$/i.test(p);
 }
-function lxIsRouteHubPage(){
+function lxIsRouteHubPage() {
   const p = lxPathName();
   return p.includes('/routes/') && !lxIsRouteDetailPage();
 }
-function lxCleanSubjectTitle(raw){
-  return String(raw || '').replace(/\s+/g, ' ').trim();
-}
-function lxFaqMarkup(){
-  const title = lxCleanSubjectTitle(lxPageTitle());
+function lxFaqMarkup() {
+  const title = lxPageTitle();
   if (lxIsAirlinePage()) {
-    return `
-      <p class="kicker">FAQ</p>
-      <h2>Questions travelers ask about ${title}</h2>
-      <details open>
-        <summary>Which long-haul routes matter most for ${title}?</summary>
-        <p>Focus first on the U.S.-linked long-haul markets where ${title} is most relevant for business class travelers, then compare cabin quality, schedule, and airport convenience rather than searching too broadly.</p>
-      </details>
-      <details>
-        <summary>How should I compare ${title} against other premium airlines?</summary>
-        <p>Start with nonstop strength, seat privacy, lounge quality, and the consistency of the airline’s long-haul premium product. The best comparison is usually route-specific rather than generic.</p>
-      </details>
-      <details>
-        <summary>Can LuxAeris help refine options on ${title}?</summary>
-        <p>Yes. Share your origin, destination, date range, and cabin goal, and LuxAeris can help narrow the most relevant premium options without charging a service fee.</p>
-      </details>`;
+    return `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Which routes matter most when comparing ${title}?</summary><p>Focus first on the airline’s strongest U.S.-linked long-haul markets, then compare seat privacy, timing, and nonstop convenience instead of treating every route the same.</p></details><details><summary>How should I compare ${title} against other premium airlines?</summary><p>Start with cabin consistency, lounge quality, nonstop availability, and the strength of the airline on the exact route you want to fly.</p></details><details><summary>Can LuxAeris help refine options on ${title}?</summary><p>Yes. Share your origin, destination, dates, and cabin goal, and LuxAeris can help narrow the most relevant premium options without charging a service fee.</p></details>`;
   }
   if (lxIsRouteDetailPage()) {
-    return `
-      <p class="kicker">FAQ</p>
-      <h2>Questions travelers ask about ${title}</h2>
-      <details open>
-        <summary>Which airlines are strongest on ${title}?</summary>
-        <p>The best airline choices on this route usually depend on nonstop availability, aircraft type, business class seat quality, and how much schedule flexibility you have.</p>
-      </details>
-      <details>
-        <summary>When do fares on ${title} usually become less favorable?</summary>
-        <p>Premium fares often tighten around peak holiday windows, summer demand, and last-minute departures. Flexibility on dates and airports usually creates better business class value.</p>
-      </details>
-      <details>
-        <summary>Should I prioritize nonstop service on ${title}?</summary>
-        <p>For long-haul premium trips, nonstop flights are often worth prioritizing for comfort and timing. One-stop options only tend to win when the cabin or fare difference is meaningful.</p>
-      </details>`;
+    return `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Which airlines are strongest on ${title}?</summary><p>The best airline choices on this route usually depend on nonstop availability, aircraft type, business class seat quality, and how much schedule flexibility you have.</p></details><details><summary>When do fares on ${title} usually become less favorable?</summary><p>Premium fares often tighten around peak holiday windows, summer demand, and last-minute departures. Flexibility on dates and airports usually creates better business class value.</p></details><details><summary>Should I prioritize nonstop service on ${title}?</summary><p>For long-haul premium trips, nonstop flights are often worth prioritizing for comfort and timing. One-stop options usually win only when the cabin or fare difference is meaningful.</p></details>`;
   }
   if (lxIsRouteHubPage()) {
     const cityTitle = title.replace(/\s+business class route guide$/i, '').replace(/\s+business class routes$/i, '').replace(/\s+guide$/i, '').trim();
-    return `
-      <p class="kicker">FAQ</p>
-      <h2>Questions travelers ask about premium flights to and from ${cityTitle}</h2>
-      <details open>
-        <summary>Which premium routes into ${cityTitle} are usually the strongest?</summary>
-        <p>The strongest routes into ${cityTitle} are typically the long-haul markets where business class comfort, timing, and nonstop coverage matter most for arrival quality.</p>
-      </details>
-      <details>
-        <summary>Which departures from ${cityTitle} are most useful to compare first?</summary>
-        <p>Start with the longest and most practical nonstop or high-quality one-stop premium routes from ${cityTitle}, then widen only when schedule or cabin quality improves meaningfully.</p>
-      </details>
-      <details>
-        <summary>Which airport should I prioritize for ${cityTitle}?</summary>
-        <p>Use the main long-haul airport first, then compare nearby airport options only when they improve timing, cabin choice, or total premium travel value.</p>
-      </details>`;
+    return `<p class="kicker">FAQ</p><h2>Questions travelers ask about premium flights to and from ${cityTitle}</h2><details open><summary>Which premium arrivals into ${cityTitle} are usually the strongest?</summary><p>The strongest arrivals are usually the long-haul markets where business class comfort, timing, and nonstop coverage matter most for how you land into ${cityTitle}.</p></details><details><summary>Which departures from ${cityTitle} should I compare first?</summary><p>Start with the longest and most practical nonstop or high-quality one-stop premium routes from ${cityTitle}, then widen only when schedule or cabin quality improves meaningfully.</p></details><details><summary>Which airport should I prioritize for ${cityTitle}?</summary><p>Use the main long-haul airport first, then compare nearby airport options only when they improve timing, cabin choice, or total premium value.</p></details>`;
   }
-  return `
-    <p class="kicker">FAQ</p>
-    <h2>Questions travelers ask about ${title}</h2>
-    <details open>
-      <summary>Does LuxAeris sell tickets directly?</summary>
-      <p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p>
-    </details>
-    <details>
-      <summary>Is there a LuxAeris service fee?</summary>
-      <p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p>
-    </details>
-    <details>
-      <summary>Can I send a request without exact dates?</summary>
-      <p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p>
-    </details>`;
+  return `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I send a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
 }
+
 
 function luxaerisShouldHaveRail(){
   const path = window.location.pathname.replace(/\/+/g,'/');

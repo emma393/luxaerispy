@@ -1,6 +1,11 @@
-Replace these files over your current repo, then redeploy.
-Fixes included:
-- FAQ titles and questions are now contextual for airline pages, route pages, and city route hubs
-- generic airline comparison block no longer appears on city route hub pages
-- route/city page text colors are forced dark on light panels
-- airline index hero logo image block removed
+Replace the files in this zip over your current repo, then redeploy.
+
+Included fixes:
+- request rail text is forced dark/readable on route pages
+- FAQ blocks are contextual for airline pages, route detail pages, and route hub pages
+- airline index hero image/logo block is removed
+- generic airline comparison block is skipped on route hub pages
+
+Also included:
+- route-expansion/next-500-routes-us-focused.csv
+  This is a US-focused next 500 route manifest for scaling.
