@@ -974,10 +974,30 @@ function initCityPageBackground() {
   if (!hero) return;
   const img = hero.querySelector('img.hero-shot');
   if (!img) return;
-  const src = img.getAttribute('src') || '';
-  if (!src || /placeholder|default|fallback/i.test(src)) return;
-  document.body.classList.add('city-page-with-bg');
-  document.body.style.setProperty('--city-page-bg', `url("${src}")`);
+  const rawSrc = img.getAttribute('src') || '';
+  if (!rawSrc || /placeholder|default|fallback/i.test(rawSrc)) return;
+
+  const slugMatch = rawSrc.match(/\/([^\/?#]+)\.(?:webp|jpg|jpeg|png|svg)(?:[?#].*)?$/i);
+  const slug = slugMatch ? slugMatch[1] : '';
+  const fallbackFromGenerated = slug ? `/assets/generated_png/dest-${slug}.png` : '';
+  const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content') || '';
+  const twitterImage = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content') || '';
+  const candidates = [rawSrc, ogImage, twitterImage, fallbackFromGenerated].filter(Boolean);
+
+  const applyBg = (src) => {
+    document.body.classList.add('city-page-with-bg');
+    document.body.style.setProperty('--city-page-bg', `url("${src}")`);
+  };
+
+  const tryNext = (index = 0) => {
+    if (index >= candidates.length) return;
+    const testImg = new Image();
+    testImg.onload = () => applyBg(candidates[index]);
+    testImg.onerror = () => tryNext(index + 1);
+    testImg.src = candidates[index];
+  };
+
+  tryNext(0);
 }
 
 document.addEventListener('DOMContentLoaded', initCityPageBackground, { once: true });

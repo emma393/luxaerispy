@@ -1071,29 +1071,19 @@ body.city-page-with-bg .page-shell > .container {
   position: relative;
 }
 body.city-page-with-bg .hero-grid.city-guide-grid {
-  display: block;
-  background: transparent;
-  backdrop-filter: none;
-  border: 0;
-  box-shadow: none;
-}
-body.city-page-with-bg .hero-grid.city-guide-grid .glass {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  padding: 0;
-  min-height: auto;
+  background: rgba(3, 18, 46, 0.62);
+  backdrop-filter: blur(2px);
 }
 body.city-page-with-bg .hero-grid.city-guide-grid img.hero-shot {
-  display: none !important;
+  opacity: 0;
 }
 body.city-page-with-bg .related-box,
-body.city-page-with-bg .content-panel {
-  background: transparent;
-  border-color: transparent;
-  box-shadow: none;
-  padding-left: 0;
-  padding-right: 0;
+body.city-page-with-bg .content-panel,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card,
+body.city-page-with-bg .request-card {
+  background: rgba(4, 18, 46, 0.82);
+  border-color: rgba(255,255,255,0.08);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.22);
 }
 body.city-page-with-bg .related-box h2,
 body.city-page-with-bg .content-panel h2,
@@ -1116,20 +1106,94 @@ body.city-page-with-bg .site-footer a,
 body.city-page-with-bg .site-footer span {
   color: rgba(255,248,239,0.94);
 }
-body.city-page-with-bg .glass .hero-title,
-body.city-page-with-bg .glass .lede,
-body.city-page-with-bg .related-box h2,
-body.city-page-with-bg .content-panel h2,
-body.city-page-with-bg .related-box p,
-body.city-page-with-bg .content-panel p,
-body.city-page-with-bg .related-box li,
-body.city-page-with-bg .content-panel li {
-  text-shadow: 0 2px 16px rgba(0,0,0,0.34);
-}
 body.city-page-with-bg .route-bubble,
 body.city-page-with-bg .city-bubble,
 body.city-page-with-bg .airport-pill {
   background: rgba(255,248,239,0.12);
   color: #fff8ef;
   border: 1px solid rgba(255,255,255,0.12);
+}
+
+
+/* 2026-03-29 premium city background refinement */
+body.city-page-with-bg::before {
+  background-image:
+    linear-gradient(180deg, rgba(4,14,32,0.76) 0%, rgba(4,14,32,0.62) 28%, rgba(4,14,32,0.54) 55%, rgba(4,14,32,0.68) 100%),
+    var(--city-page-bg);
+}
+body.city-page-with-bg::after {
+  background: linear-gradient(90deg, rgba(4,14,32,0.28) 0%, rgba(4,14,32,0.10) 35%, rgba(4,14,32,0.18) 70%, rgba(4,14,32,0.30) 100%);
+}
+body.city-page-with-bg .hero-grid.city-guide-grid {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  gap: 24px !important;
+}
+body.city-page-with-bg .city-guide-grid .glass,
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel {
+  background: linear-gradient(180deg, rgba(4,18,46,0.18), rgba(4,18,46,0.10)) !important;
+  backdrop-filter: blur(3px) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  box-shadow: none !important;
+}
+body.city-page-with-bg .city-guide-grid .glass {
+  padding: 18px 0 10px !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid img.hero-shot {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+body.city-page-with-bg .related-grid {
+  gap: 18px !important;
+}
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel {
+  border-radius: 24px !important;
+}
+body.city-page-with-bg .related-box h2,
+body.city-page-with-bg .content-panel h2,
+body.city-page-with-bg .content-panel h3,
+body.city-page-with-bg .related-box h3,
+body.city-page-with-bg .content-panel strong,
+body.city-page-with-bg .related-box strong,
+body.city-page-with-bg .hero-title,
+body.city-page-with-bg .kicker {
+  color: #fff8ef !important;
+}
+body.city-page-with-bg .lede,
+body.city-page-with-bg .related-box p,
+body.city-page-with-bg .content-panel p,
+body.city-page-with-bg .related-box li,
+body.city-page-with-bg .content-panel li,
+body.city-page-with-bg .muted,
+body.city-page-with-bg .small {
+  color: rgba(255,248,239,0.92) !important;
+}
+body.city-page-with-bg .route-bubble,
+body.city-page-with-bg .city-bubble,
+body.city-page-with-bg .airport-pill {
+  background: rgba(255,248,239,0.10) !important;
+  color: #fff8ef !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  box-shadow: none !important;
+}
+body.city-page-with-bg .route-bubble:hover,
+body.city-page-with-bg .city-bubble:hover,
+body.city-page-with-bg .airport-pill:hover {
+  background: rgba(255,248,239,0.18) !important;
+}
+/* keep request rail unchanged */
+body.city-page-with-bg .luxaeris-fixed-rail .request-card,
+body.city-page-with-bg .request-card {
+  background: rgba(4, 18, 46, 0.82) !important;
+  border-color: rgba(255,255,255,0.08) !important;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.22) !important;
 }
