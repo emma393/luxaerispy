@@ -974,30 +974,156 @@ function initCityPageBackground() {
   if (!hero) return;
   const img = hero.querySelector('img.hero-shot');
   if (!img) return;
-  const rawSrc = img.getAttribute('src') || '';
-  if (!rawSrc || /placeholder|default|fallback/i.test(rawSrc)) return;
-
-  const slugMatch = rawSrc.match(/\/([^\/?#]+)\.(?:webp|jpg|jpeg|png|svg)(?:[?#].*)?$/i);
-  const slug = slugMatch ? slugMatch[1] : '';
-  const fallbackFromGenerated = slug ? `/assets/generated_png/dest-${slug}.png` : '';
-  const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content') || '';
-  const twitterImage = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content') || '';
-  const candidates = [rawSrc, ogImage, twitterImage, fallbackFromGenerated].filter(Boolean);
-
-  const applyBg = (src) => {
-    document.body.classList.add('city-page-with-bg');
-    document.body.style.setProperty('--city-page-bg', `url("${src}")`);
-  };
-
-  const tryNext = (index = 0) => {
-    if (index >= candidates.length) return;
-    const testImg = new Image();
-    testImg.onload = () => applyBg(candidates[index]);
-    testImg.onerror = () => tryNext(index + 1);
-    testImg.src = candidates[index];
-  };
-
-  tryNext(0);
+  const src = img.getAttribute('src') || '';
+  if (!src || /placeholder|default|fallback/i.test(src)) return;
+  document.body.classList.add('city-page-with-bg');
+  document.body.style.setProperty('--city-page-bg', `url("${src}")`);
 }
 
 document.addEventListener('DOMContentLoaded', initCityPageBackground, { once: true });
+
+
+
+/* === LuxAeris internal linking expansion === */
+const LUXAERIS_AIRLINE_LIBRARY = [{"slug": "american-airlines-business-class", "name": "American Airlines Business Class", "alliance": "oneworld", "logo": "american-airlines.png", "summary": "Broad U.S. coverage with strong nonstop access to Europe, Latin America, and select Asia gateways.", "hubs": ["Dallas", "Miami", "New York", "Los Angeles"], "routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "mia-to-mad-business-class.html", "dfw-to-fco-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "dfw-to-fco-business-class.html"]}, {"slug": "delta-business-class", "name": "Delta Business Class", "alliance": "SkyTeam", "logo": "delta-air-lines.png", "summary": "A polished premium experience across major U.S. hubs with strong Atlantic coverage.", "hubs": ["Atlanta", "New York", "Boston", "Los Angeles"], "routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "bos-to-ath-business-class.html", "lax-to-lhr-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "bos-to-ath-business-class.html", "lax-to-lhr-business-class.html"]}, {"slug": "delta-one", "name": "Delta One", "alliance": "SkyTeam", "logo": "delta-air-lines.png", "summary": "Delta’s flagship long-haul premium cabin for the highest-demand corporate and leisure routes.", "hubs": ["New York", "Los Angeles", "Atlanta", "Detroit"], "routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "lax-to-lhr-business-class.html", "jfk-to-fco-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "lax-to-lhr-business-class.html", "jfk-to-fco-business-class.html"]}, {"slug": "united-business-class", "name": "United Business Class", "alliance": "Star Alliance", "logo": "united-airlines.png", "summary": "Large U.S. network reach with premium long-haul options from major coastal and interior hubs.", "hubs": ["Newark", "Chicago", "San Francisco", "Washington"], "routes": ["ewr-to-lhr-business-class.html", "sfo-to-lhr-business-class.html", "ord-to-fra-business-class.html", "iad-to-zrh-business-class.html"], "existing_routes": ["ewr-to-lhr-business-class.html", "sfo-to-lhr-business-class.html", "ord-to-fra-business-class.html", "iad-to-zrh-business-class.html"]}, {"slug": "united-polaris", "name": "United Polaris", "alliance": "Star Alliance", "logo": "united-airlines.png", "summary": "United’s long-haul premium product with strong transatlantic and transpacific relevance.", "hubs": ["Newark", "San Francisco", "Chicago", "Washington"], "routes": ["ewr-to-lhr-business-class.html", "sfo-to-lhr-business-class.html", "jfk-to-hnd-business-class.html", "jfk-to-fco-business-class.html"], "existing_routes": ["ewr-to-lhr-business-class.html", "sfo-to-lhr-business-class.html", "jfk-to-hnd-business-class.html", "jfk-to-fco-business-class.html"]}, {"slug": "jetblue-mint-business-class", "name": "JetBlue Mint", "alliance": "Independent", "logo": null, "summary": "JetBlue Mint remains one of the strongest premium-value products on select U.S. transcontinental and Atlantic routes.", "hubs": ["New York", "Boston", "Los Angeles"], "routes": ["jfk-to-lhr-business-class.html", "bos-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "lax-to-jfk-first-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "bos-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "lax-to-jfk-first-class.html"]}, {"slug": "alaska-airlines-business-class", "name": "Alaska Airlines First & Premium", "alliance": "oneworld", "logo": null, "summary": "Important for West Coast premium feed and select long-haul partner connections through oneworld.", "hubs": ["Seattle", "Portland", "Los Angeles", "San Francisco"], "routes": ["sea-to-lhr-business-class.html", "lax-to-lhr-business-class.html", "sfo-to-hnd-business-class.html"], "existing_routes": ["sea-to-lhr-business-class.html", "lax-to-lhr-business-class.html", "sfo-to-hnd-business-class.html"]}, {"slug": "hawaiian-airlines-business-class", "name": "Hawaiian Airlines Premium Cabin", "alliance": "Independent", "logo": null, "summary": "Useful for Hawaii premium demand and selected long-haul leisure travel from the U.S. mainland.", "hubs": ["Honolulu"], "routes": ["jfk-to-hnl-business-class.html", "lax-to-hnl-business-class.html", "sfo-to-hnl-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "jfk-to-dxb-business-class.html"]}, {"slug": "air-canada-business-class", "name": "Air Canada Business Class", "alliance": "Star Alliance", "logo": null, "summary": "Strong North American premium network and popular Europe connections for U.S.-origin travelers.", "hubs": ["Toronto", "Montreal", "Vancouver"], "routes": ["jfk-to-lhr-business-class.html", "ord-to-fra-business-class.html", "lax-to-lhr-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "ord-to-fra-business-class.html", "lax-to-lhr-business-class.html"]}, {"slug": "air-france-business-class", "name": "Air France Business Class", "alliance": "SkyTeam", "logo": "air-france.png", "summary": "One of the most searched premium carriers for elegant U.S.–Paris and beyond-Europe journeys.", "hubs": ["Paris Charles de Gaulle"], "routes": ["jfk-to-cdg-business-class.html", "mia-to-cdg-business-class.html", "lax-to-cdg-business-class.html"], "existing_routes": ["jfk-to-cdg-business-class.html", "mia-to-cdg-business-class.html", "lax-to-cdg-business-class.html"]}, {"slug": "klm-business-class", "name": "KLM Business Class", "alliance": "SkyTeam", "logo": "klm.png", "summary": "A frequent choice for U.S.–Amsterdam travel and smooth onward European connections.", "hubs": ["Amsterdam"], "routes": ["jfk-to-ams-business-class.html", "ord-to-ams-business-class.html", "lax-to-ams-business-class.html"], "existing_routes": ["jfk-to-ams-business-class.html", "ord-to-ams-business-class.html", "lax-to-ams-business-class.html"]}, {"slug": "virgin-atlantic-business-class", "name": "Virgin Atlantic Business Class", "alliance": "SkyTeam", "logo": "virgin-atlantic.png", "summary": "A premium favorite on U.S.–UK routes with strong lounge and onboard branding.", "hubs": ["London Heathrow"], "routes": ["jfk-to-lhr-business-class.html", "lax-to-lhr-business-class.html", "mia-to-lhr-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "lax-to-lhr-business-class.html", "mia-to-lhr-business-class.html"]}, {"slug": "british-airways-business-class", "name": "British Airways Business Class", "alliance": "oneworld", "logo": "british-airways.png", "summary": "A core option for nonstop U.S.–London premium travel with broad U.S. departures.", "hubs": ["London Heathrow"], "routes": ["jfk-to-lhr-business-class.html", "ewr-to-lhr-business-class.html", "lax-to-lhr-business-class.html", "sfo-to-lhr-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "ewr-to-lhr-business-class.html", "lax-to-lhr-business-class.html", "sfo-to-lhr-business-class.html"]}, {"slug": "iberia-business-class", "name": "Iberia Business Class", "alliance": "oneworld", "logo": "iberia.png", "summary": "A high-value choice for premium travel from the U.S. to Spain and Southern Europe.", "hubs": ["Madrid"], "routes": ["mia-to-mad-business-class.html", "jfk-to-mad-business-class.html", "ord-to-mad-business-class.html"], "existing_routes": ["jfk-to-mad-business-class.html", "ord-to-mad-business-class.html"]}, {"slug": "aer-lingus-business-class", "name": "Aer Lingus Business Class", "alliance": "oneworld", "logo": "aer-lingus.png", "summary": "A useful premium option to Ireland and onward Europe with easy U.S. preclearance on return.", "hubs": ["Dublin"], "routes": ["jfk-to-dub-business-class.html", "bos-to-dub-business-class.html", "ord-to-dub-business-class.html"], "existing_routes": ["jfk-to-dub-business-class.html", "bos-to-dub-business-class.html", "ord-to-dub-business-class.html"]}, {"slug": "finnair-business-class", "name": "Finnair Business Class", "alliance": "oneworld", "logo": null, "summary": "A refined Nordic premium product for Helsinki and onward Northern Europe and Asia journeys.", "hubs": ["Helsinki"], "routes": ["jfk-to-hel-business-class.html", "ord-to-hel-business-class.html", "lax-to-hel-business-class.html"], "existing_routes": ["jfk-to-hel-business-class.html", "ord-to-hel-business-class.html", "lax-to-hel-business-class.html"]}, {"slug": "japan-airlines-business-class", "name": "Japan Airlines Business Class", "alliance": "oneworld", "logo": "japan-airlines.png", "summary": "Highly regarded for quiet premium cabins on U.S.–Japan and connecting Asia travel.", "hubs": ["Tokyo Haneda", "Tokyo Narita"], "routes": ["jfk-to-hnd-business-class.html", "ord-to-hnd-business-class.html", "lax-to-hnd-business-class.html"], "existing_routes": ["jfk-to-hnd-business-class.html", "ord-to-hnd-business-class.html", "lax-to-hnd-business-class.html"]}, {"slug": "cathay-pacific-business-class", "name": "Cathay Pacific Business Class", "alliance": "oneworld", "logo": "cathay-pacific.png", "summary": "A long-haul premium benchmark for U.S.–Hong Kong and onward Asia itineraries.", "hubs": ["Hong Kong"], "routes": ["jfk-to-hkg-business-class.html", "lax-to-hkg-business-class.html", "sfo-to-hkg-business-class.html"], "existing_routes": ["jfk-to-hkg-business-class.html", "lax-to-hkg-business-class.html"]}, {"slug": "qatar-airways-business-class", "name": "Qatar Airways Business Class", "alliance": "oneworld", "logo": "qatar-airways.png", "summary": "A top-tier premium airline for U.S.–Doha and ultra-long-haul journeys to Asia, India, and Africa.", "hubs": ["Doha"], "routes": ["jfk-to-doh-business-class.html", "mia-to-doh-business-class.html", "lax-to-doh-business-class.html"], "existing_routes": ["jfk-to-doh-business-class.html", "mia-to-doh-business-class.html", "lax-to-doh-business-class.html"]}, {"slug": "lufthansa-business-class", "name": "Lufthansa Business Class", "alliance": "Star Alliance", "logo": "lufthansa.png", "summary": "One of the most practical premium choices for U.S.–Germany and onward Europe travel.", "hubs": ["Frankfurt", "Munich"], "routes": ["jfk-to-fra-business-class.html", "ord-to-fra-business-class.html", "lax-to-muc-business-class.html"], "existing_routes": ["jfk-to-fra-business-class.html", "ord-to-fra-business-class.html", "lax-to-muc-business-class.html"]}, {"slug": "swiss-business-class", "name": "SWISS Business Class", "alliance": "Star Alliance", "logo": "swiss.png", "summary": "A refined premium option for Zurich and onward alpine and European connections.", "hubs": ["Zurich"], "routes": ["jfk-to-zrh-business-class.html", "ord-to-zrh-business-class.html", "mia-to-zrh-business-class.html"], "existing_routes": ["jfk-to-zrh-business-class.html", "ord-to-zrh-business-class.html"]}, {"slug": "austrian-airlines-business-class", "name": "Austrian Airlines Business Class", "alliance": "Star Alliance", "logo": "austrian-airlines.png", "summary": "A strong premium choice for Vienna and Central Europe itineraries from the U.S.", "hubs": ["Vienna"], "routes": ["jfk-to-vie-business-class.html", "ord-to-vie-business-class.html", "iad-to-vie-business-class.html"], "existing_routes": ["jfk-to-vie-business-class.html", "ord-to-vie-business-class.html", "iad-to-vie-business-class.html"]}, {"slug": "brussels-airlines-business-class", "name": "Brussels Airlines Business Class", "alliance": "Star Alliance", "logo": null, "summary": "Relevant for premium travel to Belgium and selected African connections via Brussels.", "hubs": ["Brussels"], "routes": ["jfk-to-bru-business-class.html", "iad-to-bru-business-class.html"], "existing_routes": ["jfk-to-bru-business-class.html", "iad-to-bru-business-class.html"]}, {"slug": "sas-business-class", "name": "SAS Business Class", "alliance": "SkyTeam", "logo": "sas.png", "summary": "Important for premium Scandinavian travel and onward Nordic connections.", "hubs": ["Copenhagen", "Stockholm", "Oslo"], "routes": ["jfk-to-cph-business-class.html", "ewr-to-cph-business-class.html", "ord-to-arn-business-class.html"], "existing_routes": ["jfk-to-cph-business-class.html", "ewr-to-cph-business-class.html"]}, {"slug": "tap-air-portugal-business-class", "name": "TAP Air Portugal Business Class", "alliance": "Star Alliance", "logo": "tap-air-portugal.png", "summary": "A useful premium option to Lisbon, Porto, and onward Southern Europe routes.", "hubs": ["Lisbon", "Porto"], "routes": ["jfk-to-lis-business-class.html", "mia-to-lis-business-class.html", "ewr-to-lis-business-class.html"], "existing_routes": ["jfk-to-lis-business-class.html", "ewr-to-lis-business-class.html"]}, {"slug": "turkish-airlines-business-class", "name": "Turkish Airlines Business Class", "alliance": "Star Alliance", "logo": "turkish-airlines.png", "summary": "A highly connected premium choice for U.S.–Istanbul and onward Europe, Asia, and Middle East trips.", "hubs": ["Istanbul"], "routes": ["jfk-to-ist-business-class.html", "mia-to-ist-business-class.html", "ord-to-ist-business-class.html"], "existing_routes": ["jfk-to-ist-business-class.html", "ord-to-ist-business-class.html"]}, {"slug": "ita-airways-business-class", "name": "ITA Airways Business Class", "alliance": "Star Alliance", "logo": "ita-airways.png", "summary": "A popular Italy-focused premium option for Rome and Milan journeys from the U.S.", "hubs": ["Rome Fiumicino"], "routes": ["jfk-to-fco-business-class.html", "mia-to-fco-business-class.html", "ord-to-fco-business-class.html"], "existing_routes": ["jfk-to-fco-business-class.html", "ord-to-fco-business-class.html"]}, {"slug": "emirates-business-class", "name": "Emirates Business Class", "alliance": "Independent", "logo": "emirates.png", "summary": "A flagship luxury airline for Dubai and ultra-long-haul premium itineraries from the U.S.", "hubs": ["Dubai"], "routes": ["jfk-to-dxb-business-class.html", "mia-to-dxb-business-class.html", "lax-to-dxb-business-class.html"], "existing_routes": ["jfk-to-dxb-business-class.html", "mia-to-dxb-business-class.html", "lax-to-dxb-business-class.html"]}, {"slug": "etihad-business-class", "name": "Etihad Business Class", "alliance": "Independent", "logo": "etihad-airways.png", "summary": "A polished Abu Dhabi premium product with strong appeal for Middle East and India itineraries.", "hubs": ["Abu Dhabi"], "routes": ["jfk-to-auh-business-class.html", "ord-to-auh-business-class.html", "iad-to-auh-business-class.html"], "existing_routes": ["jfk-to-auh-business-class.html", "ord-to-auh-business-class.html", "iad-to-auh-business-class.html"]}, {"slug": "saudia-business-class", "name": "Saudia Business Class", "alliance": "SkyTeam", "logo": null, "summary": "Relevant for premium traffic to Saudi Arabia and select onward routes through Jeddah and Riyadh.", "hubs": ["Jeddah", "Riyadh"], "routes": ["jfk-to-jed-business-class.html", "iad-to-ruh-business-class.html"], "existing_routes": ["jfk-to-jed-business-class.html", "iad-to-ruh-business-class.html"]}, {"slug": "oman-air-business-class", "name": "Oman Air Business Class", "alliance": "Independent", "logo": null, "summary": "A boutique premium product with appeal for travelers prioritizing service and comfort to Muscat and beyond.", "hubs": ["Muscat"], "routes": ["jfk-to-mct-business-class.html", "ord-to-mct-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "jfk-to-dxb-business-class.html"]}, {"slug": "royal-jordanian-business-class", "name": "Royal Jordanian Business Class", "alliance": "oneworld", "logo": null, "summary": "Useful for premium itineraries to Amman and select Levant routes from North America.", "hubs": ["Amman"], "routes": ["jfk-to-amm-business-class.html", "ord-to-amm-business-class.html"], "existing_routes": ["jfk-to-amm-business-class.html", "ord-to-amm-business-class.html"]}, {"slug": "singapore-airlines-business-class", "name": "Singapore Airlines Business Class", "alliance": "Star Alliance", "logo": "singapore-airlines.png", "summary": "A benchmark premium airline for exceptional long-haul service from the U.S. to Asia.", "hubs": ["Singapore"], "routes": ["lax-to-sin-business-class.html", "jfk-to-sin-business-class.html", "sfo-to-sin-business-class.html"], "existing_routes": ["lax-to-sin-business-class.html", "jfk-to-sin-business-class.html"]}, {"slug": "ana-business-class", "name": "ANA Business Class", "alliance": "Star Alliance", "logo": "ana.png", "summary": "Highly regarded for premium service and strong U.S.–Japan coverage.", "hubs": ["Tokyo Haneda", "Tokyo Narita"], "routes": ["jfk-to-hnd-business-class.html", "ord-to-hnd-business-class.html", "lax-to-hnd-business-class.html"], "existing_routes": ["jfk-to-hnd-business-class.html", "ord-to-hnd-business-class.html", "lax-to-hnd-business-class.html"]}, {"slug": "korean-air-business-class", "name": "Korean Air Business Class", "alliance": "SkyTeam", "logo": null, "summary": "A strong option for premium travel to Seoul and onward Asia connections.", "hubs": ["Seoul Incheon"], "routes": ["jfk-to-icn-business-class.html", "lax-to-icn-business-class.html", "sea-to-icn-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "jfk-to-dxb-business-class.html"]}, {"slug": "asiana-airlines-business-class", "name": "Asiana Airlines Business Class", "alliance": "Star Alliance", "logo": null, "summary": "A premium South Korea option with solid long-haul comfort from major U.S. gateways.", "hubs": ["Seoul Incheon"], "routes": ["jfk-to-icn-business-class.html", "lax-to-icn-business-class.html", "sfo-to-icn-business-class.html"], "existing_routes": ["jfk-to-lhr-business-class.html", "jfk-to-cdg-business-class.html", "jfk-to-dxb-business-class.html"]}, {"slug": "eva-air-business-class", "name": "EVA Air Business Class", "alliance": "Star Alliance", "logo": null, "summary": "A consistently well-reviewed premium cabin for Taiwan and onward Asia routes.", "hubs": ["Taipei"], "routes": ["jfk-to-tpe-business-class.html", "lax-to-tpe-business-class.html", "sfo-to-tpe-business-class.html"], "existing_routes": ["jfk-to-tpe-business-class.html", "lax-to-tpe-business-class.html"]}, {"slug": "china-airlines-business-class", "name": "China Airlines Business Class", "alliance": "SkyTeam", "logo": null, "summary": "A strong Taiwan-focused premium option from the U.S. West Coast and beyond.", "hubs": ["Taipei"], "routes": ["jfk-to-tpe-business-class.html", "lax-to-tpe-business-class.html"], "existing_routes": ["jfk-to-tpe-business-class.html", "lax-to-tpe-business-class.html"]}, {"slug": "air-india-business-class", "name": "Air India Business Class", "alliance": "Star Alliance", "logo": null, "summary": "A practical premium choice for nonstop India access from major U.S. gateways.", "hubs": ["Delhi", "Mumbai"], "routes": ["jfk-to-del-business-class.html", "ewr-to-bom-business-class.html", "sfo-to-del-business-class.html"], "existing_routes": ["jfk-to-del-business-class.html", "ewr-to-bom-business-class.html"]}, {"slug": "latam-business-class", "name": "LATAM Business Class", "alliance": "Independent", "logo": null, "summary": "A major premium option for South America from the U.S., especially Brazil, Peru, and Chile.", "hubs": ["Sao Paulo", "Lima", "Santiago"], "routes": ["mia-to-gru-business-class.html", "jfk-to-lim-business-class.html", "mia-to-scl-business-class.html"], "existing_routes": ["jfk-to-lim-business-class.html"]}, {"slug": "avianca-business-class", "name": "Avianca Business Class", "alliance": "Star Alliance", "logo": null, "summary": "A useful premium airline for Colombia and Latin America itineraries from the U.S.", "hubs": ["Bogota"], "routes": ["jfk-to-bog-business-class.html", "mia-to-bog-business-class.html", "iad-to-bog-business-class.html"], "existing_routes": ["jfk-to-bog-business-class.html", "iad-to-bog-business-class.html"]}, {"slug": "aeromexico-business-class", "name": "Aeromexico Business Class", "alliance": "SkyTeam", "logo": null, "summary": "A key premium carrier for Mexico City and broader Latin America access from the U.S.", "hubs": ["Mexico City"], "routes": ["jfk-to-mex-business-class.html", "mia-to-mex-business-class.html", "lax-to-mex-business-class.html"], "existing_routes": ["jfk-to-mex-business-class.html", "lax-to-mex-business-class.html"]}];
+
+function lxTitleCase(slug) {
+  return (slug || '').replace(/\.html$/,'').replace(/-/g,' ').replace(/\w/g, m => m.toUpperCase());
+}
+
+function lxPath() {
+  return window.location.pathname || '';
+}
+
+function lxRouteSlug() {
+  return lxPath().split('/').pop() || '';
+}
+
+function lxFindAirlineBySlug(slug) {
+  return LUXAERIS_AIRLINE_LIBRARY.find(a => a.slug + '.html' === slug || a.slug === slug);
+}
+
+function lxAirlinesForRoute(routeSlug) {
+  const slug = (routeSlug || '').toLowerCase();
+  let picks = LUXAERIS_AIRLINE_LIBRARY.filter(a => (a.existing_routes || []).includes(routeSlug));
+  if (picks.length >= 4) return picks.slice(0, 6);
+  const rules = [
+    [/to-lhr|to-lgw|to-london/, ['british-airways-business-class','virgin-atlantic-business-class','american-airlines-business-class','delta-one','jetblue-mint-business-class']],
+    [/to-cdg|to-paris/, ['air-france-business-class','delta-business-class','american-airlines-business-class','jetblue-mint-business-class']],
+    [/to-mad|to-bcn|to-spain/, ['iberia-business-class','american-airlines-business-class','air-france-business-class']],
+    [/to-fco|to-rome|to-milan|to-vie|to-zrh|to-fra|to-muc|to-ist|to-europe/, ['lufthansa-business-class','swiss-business-class','austrian-airlines-business-class','turkish-airlines-business-class','ita-airways-business-class','united-polaris']],
+    [/to-dxb|to-auh|to-doh|to-amm|to-jed|to-ruh|to-ist|to-middle-east/, ['emirates-business-class','etihad-business-class','qatar-airways-business-class','turkish-airlines-business-class','royal-jordanian-business-class']],
+    [/to-hnd|to-nrt|to-icn|to-tpe|to-hkg|to-sin|to-del|to-bom|to-asia/, ['japan-airlines-business-class','ana-business-class','singapore-airlines-business-class','cathay-pacific-business-class','eva-air-business-class','korean-air-business-class','air-india-business-class']],
+    [/to-gru|to-lim|to-bog|to-mex|to-scl|to-latin/, ['latam-business-class','avianca-business-class','aeromexico-business-class','american-airlines-business-class','delta-business-class']],
+  ];
+  for (const [rx, slugs] of rules) {
+    if (rx.test(slug)) {
+      picks = slugs.map(s => lxFindAirlineBySlug(s)).filter(Boolean);
+      break;
+    }
+  }
+  if (picks.length < 4) {
+    const fallback = ['american-airlines-business-class','delta-one','united-polaris','british-airways-business-class','emirates-business-class','qatar-airways-business-class'];
+    picks = [...new Map([...picks, ...fallback.map(s=>lxFindAirlineBySlug(s)).filter(Boolean)].map(a => [a.slug, a])).values()];
+  }
+  return picks.slice(0, 6);
+}
+
+function lxCardMarkup(a) {
+  const logo = a.logo ? `<span class="lx-logo"><img src="/assets/images/airlines/main/${a.logo}" alt="${a.name} logo"></span>` : `<span class="lx-logo"><span class="lx-logo-text">${a.name.replace(/ Business Class| First & Premium| Premium Cabin/g,'')}</span></span>`;
+  const chips = [a.alliance].concat((a.hubs || []).slice(0,2)).map(v => `<span class="lx-chip">${v}</span>`).join('');
+  return `<a class="lx-card" href="/airlines/${a.slug}.html"><div class="lx-card-head">${logo}<div><span class="lx-eyebrow">Premium airline</span><h3>${a.name}</h3></div></div><p>${a.summary}</p><div class="lx-chip-row">${chips}</div></a>`;
+}
+
+function lxAppendRouteAirlines() {
+  if (!lxPath().includes('/routes/')) return;
+  const main = document.querySelector('main .container') || document.querySelector('main') || document.body;
+  if (!main || document.querySelector('.lx-linking-shell')) return;
+  const routeSlug = lxRouteSlug();
+  const picks = lxAirlinesForRoute(routeSlug);
+  const shell = document.createElement('section');
+  shell.className = 'lx-linking-shell';
+  const nearbyLinks = [
+    '/airlines/index.html',
+    '/request.html',
+    '/routes/index.html',
+    '/destinations/index.html'
+  ];
+  shell.innerHTML = `
+    <div class="lx-block">
+      <span class="lx-eyebrow">Airline options on this route</span>
+      <h2>Premium airlines travelers compare for this journey</h2>
+      <p class="lx-muted">The strongest converting route pages do more than name a destination. They show the airline choices travelers are already considering.</p>
+      <div class="lx-card-grid">${picks.map(lxCardMarkup).join('')}</div>
+      <div class="lx-inline-links">
+        <a href="${nearbyLinks[0]}">Browse all airlines</a>
+        <a href="${nearbyLinks[1]}">Request private fare options</a>
+        <a href="${nearbyLinks[2]}">Explore more U.S. routes</a>
+        <a href="${nearbyLinks[3]}">See destination guides</a>
+      </div>
+    </div>`;
+  main.appendChild(shell);
+}
+
+function lxAppendHomeLinks() {
+  if (!(lxPath() === '/' || lxPath().endsWith('/index.html') || lxPath() === '')) return;
+  const main = document.querySelector('main');
+  if (!main || document.querySelector('.lx-home-expansion')) return;
+  const home = document.createElement('section');
+  home.className = 'container lx-home-expansion';
+  const featured = ['british-airways-business-class','air-france-business-class','emirates-business-class','qatar-airways-business-class','singapore-airlines-business-class','united-polaris']
+    .map(s => lxFindAirlineBySlug(s)).filter(Boolean);
+  home.innerHTML = `
+    <div class="lx-block">
+      <div class="lx-home-grid">
+        <div>
+          <span class="lx-eyebrow">Premium airline coverage</span>
+          <h2>Compare the airlines most searched for U.S.-origin premium travel</h2>
+          <p class="lx-muted">Your homepage should send authority signals. These airline pages support LuxAeris route pages, destination pages, and high-intent quote requests.</p>
+          <div class="lx-inline-links">
+            <a href="/airlines/index.html">Browse all airline pages</a>
+            <a href="/routes/index.html">Explore U.S.-focused routes</a>
+            <a href="/request.html">Get private fare options</a>
+          </div>
+        </div>
+        <div class="lx-chip-row" style="align-content:flex-start">
+          <span class="lx-chip">US-focused</span>
+          <span class="lx-chip">Business Class</span>
+          <span class="lx-chip">First Class</span>
+          <span class="lx-chip">Premium Economy</span>
+          <span class="lx-chip">Luxury travel advisors</span>
+        </div>
+      </div>
+      <div class="lx-card-grid" style="margin-top:18px">${featured.map(lxCardMarkup).join('')}</div>
+    </div>`;
+  main.appendChild(home);
+}
+
+function lxAppendAirlineRoutes() {
+  if (!lxPath().includes('/airlines/')) return;
+  const slug = lxRouteSlug();
+  if (slug === 'index.html') return;
+  const airline = lxFindAirlineBySlug(slug);
+  const main = document.querySelector('main .container') || document.querySelector('main') || document.body;
+  if (!airline || !main || document.querySelector('.lx-airline-routes')) return;
+  const routes = airline.existing_routes || [];
+  const section = document.createElement('section');
+  section.className = 'lx-airline-routes';
+  section.innerHTML = `
+    <div class="lx-block">
+      <span class="lx-eyebrow">Popular routes</span>
+      <h2>Popular U.S.-origin routes travelers compare on ${airline.name}</h2>
+      <p class="lx-muted">These route pages keep your airline guides connected to high-intent search journeys rather than leaving them isolated.</p>
+      <div class="lx-inline-links">
+        ${routes.map(r => `<a href="/routes/${r}">${lxTitleCase(r)}</a>`).join('')}
+        <a href="/routes/index.html">Browse all routes</a>
+      </div>
+    </div>`;
+  main.appendChild(section);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try { lxAppendRouteAirlines(); } catch (e) {}
+  try { lxAppendHomeLinks(); } catch (e) {}
+  try { lxAppendAirlineRoutes(); } catch (e) {}
+});
