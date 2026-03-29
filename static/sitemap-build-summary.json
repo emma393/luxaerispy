@@ -1,0 +1,22 @@
+{
+  "total_urls": 17723,
+  "counts": {
+    "core": 4,
+    "pages": 13,
+    "routes": 17112,
+    "airlines": 43,
+    "destinations": 551,
+    "airports": 0
+  },
+  "sitemap_files": [
+    "sitemap-core.xml",
+    "sitemap-pages.xml",
+    "sitemap-routes-1.xml",
+    "sitemap-routes-2.xml",
+    "sitemap-routes-3.xml",
+    "sitemap-routes-4.xml",
+    "sitemap-airlines.xml",
+    "sitemap-destinations.xml"
+  ],
+  "generated_from": "/mnt/data/final_scaled/generated/site"
+}
