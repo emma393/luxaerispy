@@ -763,6 +763,8 @@ body.has-sticky-request-rail .hero-title{
 body.has-sticky-request-rail .luxaeris-price-box .price-range{font-size:clamp(42px,3.8vw,56px)}
 body.has-sticky-request-rail .luxaeris-trust-line{color:#6b594b;font-weight:600}
 
+.route-bubble:visited,.city-bubble:visited,.airport-pill:visited{color:#2a211b !important;background:#fff7ec !important;border-color:rgba(199,160,99,.35) !important;}
+
 
 /* 2026-03-26 vfinal5 site consistency */
 .topbar-inner{white-space:nowrap;overflow-x:auto;flex-wrap:nowrap}
@@ -1292,4 +1294,140 @@ body.city-page-with-bg .airport-links{
   body.city-page-with-bg .content-panel{
     padding:22px 22px !important;
   }
+}
+
+
+/* Final premium polish: clearer city-page header, request rail matches glass style */
+body.city-page-with-bg .topbar{
+  background:linear-gradient(180deg, rgba(8,18,40,0.92), rgba(8,18,40,0.70)) !important;
+  border-bottom:1px solid rgba(255,255,255,0.08) !important;
+}
+body.city-page-with-bg .topbar-inner,
+body.city-page-with-bg .topbar-inner span{
+  color:rgba(255,244,231,0.92) !important;
+}
+body.city-page-with-bg .site-header{
+  background:linear-gradient(180deg, rgba(8,18,40,0.88), rgba(8,18,40,0.66)) !important;
+  border-bottom:1px solid rgba(255,255,255,0.10) !important;
+  backdrop-filter:blur(16px) !important;
+}
+body.city-page-with-bg .logo-wrap .brand-name{
+  color:#fff8ee !important;
+  text-shadow:0 6px 18px rgba(0,0,0,0.35) !important;
+}
+body.city-page-with-bg .logo-wrap .brand-tag{
+  color:rgba(244,229,208,0.84) !important;
+}
+body.city-page-with-bg .nav-links > a{
+  color:rgba(255,245,235,0.88) !important;
+}
+body.city-page-with-bg .nav-links > a:hover{
+  color:#f0cf93 !important;
+}
+body.city-page-with-bg .nav-links .btn.btn-primary{
+  background:linear-gradient(180deg,#e1bc7d,#cfa261) !important;
+  color:#1d140d !important;
+  box-shadow:0 12px 28px rgba(207,162,97,0.26) !important;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid,
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel,
+body.city-page-with-bg .luxaeris-inline-faq,
+body.city-page-with-bg .faq,
+body.city-page-with-bg .faq-panel,
+body.city-page-with-bg .faq-card,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card,
+body.city-page-with-bg .request-rail .request-card{
+  background:rgba(6,20,48,0.18) !important;
+  border:1px solid rgba(255,255,255,0.11) !important;
+  box-shadow:0 20px 52px rgba(0,0,0,0.18) !important;
+  backdrop-filter:blur(12px) !important;
+}
+body.city-page-with-bg .luxaeris-fixed-rail .request-card h2,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card h3,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card p,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card label,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card strong,
+body.city-page-with-bg .request-rail .request-card h2,
+body.city-page-with-bg .request-rail .request-card h3,
+body.city-page-with-bg .request-rail .request-card p,
+body.city-page-with-bg .request-rail .request-card label,
+body.city-page-with-bg .request-rail .request-card strong{
+  color:#fff8ef !important;
+}
+body.city-page-with-bg .luxaeris-fixed-rail .request-card .chip,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card .tag,
+body.city-page-with-bg .request-rail .request-card .chip,
+body.city-page-with-bg .request-rail .request-card .tag{
+  background:rgba(255,255,255,0.08) !important;
+  border:1px solid rgba(255,255,255,0.12) !important;
+  color:#fff8ef !important;
+}
+body.city-page-with-bg .luxaeris-fixed-rail .request-card input,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card select,
+body.city-page-with-bg .luxaeris-fixed-rail .request-card textarea,
+body.city-page-with-bg .request-rail .request-card input,
+body.city-page-with-bg .request-rail .request-card select,
+body.city-page-with-bg .request-rail .request-card textarea{
+  background:rgba(255,252,247,0.96) !important;
+  color:#231912 !important;
+  border:1px solid rgba(39,28,20,0.10) !important;
+}
+
+/* Airlines index: show premium brand logos while preserving alliances */
+.airline-logo-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin-top:18px;
+}
+.airline-logo-card{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  min-height:88px;
+  padding:18px 20px;
+  border-radius:22px;
+  text-decoration:none;
+  background:linear-gradient(180deg,#fffaf2,#f7ecdb);
+  border:1px solid rgba(199,160,99,0.26);
+  box-shadow:0 12px 28px rgba(39,28,20,0.06);
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.airline-logo-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 34px rgba(39,28,20,0.10);
+  border-color:rgba(199,160,99,0.44);
+}
+.airline-logo-mark{
+  width:70px;
+  height:70px;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid rgba(39,28,20,0.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 70px;
+  overflow:hidden;
+}
+.airline-logo-mark img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
+.airline-logo-copy strong{
+  display:block;
+  font-size:18px;
+  line-height:1.2;
+  color:#241b16;
+}
+.airline-logo-copy span{
+  display:block;
+  margin-top:4px;
+  color:#6a5c4e;
+  font-size:14px;
+}
+@media (max-width: 860px){
+  .airline-logo-grid{grid-template-columns:1fr;}
 }
