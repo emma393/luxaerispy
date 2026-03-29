@@ -1114,43 +1114,86 @@ body.city-page-with-bg .airport-pill {
   border: 1px solid rgba(255,255,255,0.12);
 }
 
-/* 2026-03-29 generator + route cleanup */
-.guide-hero img,
-.lux-hero img,
-.hero-shot {
-  background:#0f1621;
+
+/* 2026-03-29 premium city background refinement */
+body.city-page-with-bg::before {
+  background-image:
+    linear-gradient(180deg, rgba(4,14,32,0.76) 0%, rgba(4,14,32,0.62) 28%, rgba(4,14,32,0.54) 55%, rgba(4,14,32,0.68) 100%),
+    var(--city-page-bg);
 }
-.brand-logo img,
-.brand-image,
-img[alt*="logo" i],
-img[src*="logo" i],
-img[src*="airline" i][src*="png" i],
-img[src*="airline" i][src*="svg" i] {
-  position:relative !important;
-  inset:auto !important;
-  width:auto !important;
-  max-width:100% !important;
-  height:auto !important;
-  max-height:64px;
-  object-fit:contain !important;
+body.city-page-with-bg::after {
+  background: linear-gradient(90deg, rgba(4,14,32,0.28) 0%, rgba(4,14,32,0.10) 35%, rgba(4,14,32,0.18) 70%, rgba(4,14,32,0.30) 100%);
 }
-.card-grid .card img,
-.panel img.airline-logo,
-.content-panel img.airline-logo {
-  display:block;
-  width:auto;
-  max-width:100%;
-  height:auto;
-  max-height:56px;
-  object-fit:contain;
+body.city-page-with-bg .hero-grid.city-guide-grid {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  gap: 24px !important;
 }
-.route-hub-grid,
-.route-links-grid {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:14px;
+body.city-page-with-bg .city-guide-grid .glass,
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel {
+  background: linear-gradient(180deg, rgba(4,18,46,0.18), rgba(4,18,46,0.10)) !important;
+  backdrop-filter: blur(3px) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  box-shadow: none !important;
 }
-@media (max-width:760px){
-  .route-hub-grid,
-  .route-links-grid{grid-template-columns:1fr}
+body.city-page-with-bg .city-guide-grid .glass {
+  padding: 18px 0 10px !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid img.hero-shot {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+body.city-page-with-bg .related-grid {
+  gap: 18px !important;
+}
+body.city-page-with-bg .related-box,
+body.city-page-with-bg .content-panel {
+  border-radius: 24px !important;
+}
+body.city-page-with-bg .related-box h2,
+body.city-page-with-bg .content-panel h2,
+body.city-page-with-bg .content-panel h3,
+body.city-page-with-bg .related-box h3,
+body.city-page-with-bg .content-panel strong,
+body.city-page-with-bg .related-box strong,
+body.city-page-with-bg .hero-title,
+body.city-page-with-bg .kicker {
+  color: #fff8ef !important;
+}
+body.city-page-with-bg .lede,
+body.city-page-with-bg .related-box p,
+body.city-page-with-bg .content-panel p,
+body.city-page-with-bg .related-box li,
+body.city-page-with-bg .content-panel li,
+body.city-page-with-bg .muted,
+body.city-page-with-bg .small {
+  color: rgba(255,248,239,0.92) !important;
+}
+body.city-page-with-bg .route-bubble,
+body.city-page-with-bg .city-bubble,
+body.city-page-with-bg .airport-pill {
+  background: rgba(255,248,239,0.10) !important;
+  color: #fff8ef !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  box-shadow: none !important;
+}
+body.city-page-with-bg .route-bubble:hover,
+body.city-page-with-bg .city-bubble:hover,
+body.city-page-with-bg .airport-pill:hover {
+  background: rgba(255,248,239,0.18) !important;
+}
+/* keep request rail unchanged */
+body.city-page-with-bg .luxaeris-fixed-rail .request-card,
+body.city-page-with-bg .request-card {
+  background: rgba(4, 18, 46, 0.82) !important;
+  border-color: rgba(255,255,255,0.08) !important;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.22) !important;
 }

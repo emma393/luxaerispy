@@ -974,43 +974,30 @@ function initCityPageBackground() {
   if (!hero) return;
   const img = hero.querySelector('img.hero-shot');
   if (!img) return;
-  const src = img.getAttribute('src') || '';
-  if (!src || /placeholder|default|fallback/i.test(src)) return;
-  document.body.classList.add('city-page-with-bg');
-  document.body.style.setProperty('--city-page-bg', `url("${src}")`);
+  const rawSrc = img.getAttribute('src') || '';
+  if (!rawSrc || /placeholder|default|fallback/i.test(rawSrc)) return;
+
+  const slugMatch = rawSrc.match(/\/([^\/?#]+)\.(?:webp|jpg|jpeg|png|svg)(?:[?#].*)?$/i);
+  const slug = slugMatch ? slugMatch[1] : '';
+  const fallbackFromGenerated = slug ? `/assets/generated_png/dest-${slug}.png` : '';
+  const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content') || '';
+  const twitterImage = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content') || '';
+  const candidates = [rawSrc, ogImage, twitterImage, fallbackFromGenerated].filter(Boolean);
+
+  const applyBg = (src) => {
+    document.body.classList.add('city-page-with-bg');
+    document.body.style.setProperty('--city-page-bg', `url("${src}")`);
+  };
+
+  const tryNext = (index = 0) => {
+    if (index >= candidates.length) return;
+    const testImg = new Image();
+    testImg.onload = () => applyBg(candidates[index]);
+    testImg.onerror = () => tryNext(index + 1);
+    testImg.src = candidates[index];
+  };
+
+  tryNext(0);
 }
 
 document.addEventListener('DOMContentLoaded', initCityPageBackground, { once: true });
-
-function luxaerisFixBadHeroImages() {
-  const img = document.querySelector('.guide-hero img, .lux-hero img, img.hero-shot');
-  if (!img) return;
-  const src = img.getAttribute('src') || '';
-  if (!/assets\/images\/real\/(business-class|first-class|premium-economy)\.jpg/i.test(src)) return;
-
-  let citySlug = '';
-  const destinationLink = document.querySelector('a[href*="/destinations/"]');
-  if (destinationLink) {
-    const match = destinationLink.getAttribute('href').match(/\/destinations\/(?:[^/]+\/[^/]+\/)?([^/.]+)\.html$/i);
-    if (match) citySlug = match[1];
-  }
-  if (!citySlug) {
-    const parts = location.pathname.split('/').filter(Boolean);
-    citySlug = (parts[parts.length - 1] || '').replace(/\.html$/i, '');
-    if (/^[a-z]{3}-to-[a-z]{3}-business-class$/i.test(citySlug) && destinationLink) citySlug = '';
-  }
-  const tries = [];
-  if (citySlug) {
-    tries.push(`/assets/images/cities/${citySlug}.webp`);
-    tries.push(`/assets/generated_png/dest-${citySlug}.png`);
-  }
-  tries.push('/assets/images/cities/new-york.webp');
-  let idx = 0;
-  img.onerror = () => {
-    idx += 1;
-    if (idx < tries.length) img.src = tries[idx];
-  };
-  if (tries.length) img.src = tries[0];
-}
-
-document.addEventListener('DOMContentLoaded', luxaerisFixBadHeroImages, { once: true });
