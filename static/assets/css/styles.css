@@ -1244,16 +1244,16 @@ body.home-luxury .hero.hero-luxury::before{
   inset:0;
   background:linear-gradient(
     90deg,
-    rgba(5,10,20,.56) 0%,
-    rgba(5,10,20,.46) 34%,
-    rgba(5,10,20,.28) 60%,
-    rgba(5,10,20,.12) 100%
+    rgba(5,10,20,.46) 0%,
+    rgba(5,10,20,.36) 34%,
+    rgba(5,10,20,.20) 60%,
+    rgba(5,10,20,.08) 100%
   ) !important;
   z-index:1;
 }
 body.home-luxury #bg-video{
-  opacity:.40 !important;
-  filter:brightness(.98) saturate(.96) !important;
+  opacity:.52 !important;
+  filter:brightness(1.02) saturate(.98) !important;
 }
 body.home-luxury .hero-grid.hero-grid-luxury{
   position:relative;

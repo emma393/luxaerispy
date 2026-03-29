@@ -1071,19 +1071,29 @@ body.city-page-with-bg .page-shell > .container {
   position: relative;
 }
 body.city-page-with-bg .hero-grid.city-guide-grid {
-  background: rgba(3, 18, 46, 0.62);
-  backdrop-filter: blur(2px);
+  display: block;
+  background: transparent;
+  backdrop-filter: none;
+  border: 0;
+  box-shadow: none;
+}
+body.city-page-with-bg .hero-grid.city-guide-grid .glass {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  min-height: auto;
 }
 body.city-page-with-bg .hero-grid.city-guide-grid img.hero-shot {
-  opacity: 0;
+  display: none !important;
 }
 body.city-page-with-bg .related-box,
-body.city-page-with-bg .content-panel,
-body.city-page-with-bg .luxaeris-fixed-rail .request-card,
-body.city-page-with-bg .request-card {
-  background: rgba(4, 18, 46, 0.82);
-  border-color: rgba(255,255,255,0.08);
-  box-shadow: 0 16px 36px rgba(0,0,0,0.22);
+body.city-page-with-bg .content-panel {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 body.city-page-with-bg .related-box h2,
 body.city-page-with-bg .content-panel h2,
@@ -1105,6 +1115,16 @@ body.city-page-with-bg .site-footer,
 body.city-page-with-bg .site-footer a,
 body.city-page-with-bg .site-footer span {
   color: rgba(255,248,239,0.94);
+}
+body.city-page-with-bg .glass .hero-title,
+body.city-page-with-bg .glass .lede,
+body.city-page-with-bg .related-box h2,
+body.city-page-with-bg .content-panel h2,
+body.city-page-with-bg .related-box p,
+body.city-page-with-bg .content-panel p,
+body.city-page-with-bg .related-box li,
+body.city-page-with-bg .content-panel li {
+  text-shadow: 0 2px 16px rgba(0,0,0,0.34);
 }
 body.city-page-with-bg .route-bubble,
 body.city-page-with-bg .city-bubble,
