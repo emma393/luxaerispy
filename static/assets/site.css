@@ -1458,97 +1458,49 @@ body.city-page-with-bg .request-rail .request-card textarea{
 @media (max-width:720px){.lx-card-grid,.lx-home-grid{grid-template-columns:1fr}.lx-block{padding:20px;border-radius:22px}}
 
 
-/* 2026-03-29 request rail visibility + contextual FAQ + airline hero cleanup */
+/* 2026-03-29 internal linking system + route layout visibility */
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card{
-  background:linear-gradient(180deg,#fffaf4,#f6efe3) !important;
+  background:linear-gradient(180deg,#fffaf4,#f5ecdf) !important;
   color:#241b15 !important;
 }
-body.has-sticky-request-rail .luxaeris-fixed-rail .request-card .kicker{
-  color:#a87e3f !important;
-}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card .kicker{color:#a87e3f !important}
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card h2,
-body.has-sticky-request-rail .luxaeris-fixed-rail .request-card h3{
-  color:#241b15 !important;
-  text-shadow:none !important;
-}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card h3,
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card strong{color:#241b15 !important;text-shadow:none !important}
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card p,
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card label,
-body.has-sticky-request-rail .luxaeris-fixed-rail .request-card strong,
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card .microcopy,
-body.has-sticky-request-rail .luxaeris-fixed-rail .request-card .status{
-  color:#54483d !important;
-}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card .status{color:#584c40 !important}
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card input,
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card select,
-body.has-sticky-request-rail .luxaeris-fixed-rail .request-card textarea{
-  color:#2b211a !important;
-  background:#fffdf9 !important;
-}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card textarea{color:#2a211b !important;background:#fffdf9 !important}
 body.has-sticky-request-rail .luxaeris-fixed-rail .request-card input::placeholder,
-body.has-sticky-request-rail .luxaeris-fixed-rail .request-card textarea::placeholder{
-  color:#8b7f72 !important;
-  opacity:1 !important;
-}
-body.has-sticky-request-rail .trip-switch .trip-tab:not(.active){
-  background:#3d3027 !important;
-  color:#fff1db !important;
-  border-color:#3d3027 !important;
-}
-body.has-sticky-request-rail .luxaeris-inline-faq{
-  background:#fffdf9 !important;
-  border:1px solid rgba(39,28,20,.10) !important;
-  box-shadow:0 14px 32px rgba(39,28,20,.06) !important;
-}
-body.has-sticky-request-rail .luxaeris-inline-faq .kicker{
-  color:#a87e3f !important;
-}
-body.has-sticky-request-rail .luxaeris-inline-faq h2{
-  color:#201913 !important;
-  font-family:"Cormorant Garamond", Georgia, serif !important;
-  font-size:clamp(2.2rem,3vw,3.35rem) !important;
-  line-height:1.02 !important;
-}
-body.has-sticky-request-rail .luxaeris-inline-faq details{
-  background:#ffffff !important;
-  border:1px solid rgba(39,28,20,.10) !important;
-}
-body.has-sticky-request-rail .luxaeris-inline-faq summary{
-  color:#2a211b !important;
-  font-weight:700 !important;
-}
-body.has-sticky-request-rail .luxaeris-inline-faq p{
-  color:#52473c !important;
-}
+body.has-sticky-request-rail .luxaeris-fixed-rail .request-card textarea::placeholder{color:#8d8071 !important;opacity:1 !important}
+body.has-sticky-request-rail .trip-switch .trip-tab:not(.active){background:#3d3027 !important;color:#fff1db !important;border-color:#3d3027 !important}
 body.has-sticky-request-rail .content-panel,
 body.has-sticky-request-rail .glass,
-body.has-sticky-request-rail .hero-grid .glass,
 body.has-sticky-request-rail .route-hub-card,
-body.has-sticky-request-rail .route-hub-info{
-  color:#2d241d !important;
-}
-body.has-sticky-request-rail .content-panel .kicker,
-body.has-sticky-request-rail .glass .kicker{
-  color:#b38744 !important;
-}
+body.has-sticky-request-rail .route-hub-info{color:#2d241d !important}
 body.has-sticky-request-rail .content-panel h1,
 body.has-sticky-request-rail .content-panel h2,
 body.has-sticky-request-rail .content-panel h3,
 body.has-sticky-request-rail .glass h1,
 body.has-sticky-request-rail .glass h2,
-body.has-sticky-request-rail .glass h3{
-  color:#241b15 !important;
-}
+body.has-sticky-request-rail .glass h3{color:#241b15 !important}
 body.has-sticky-request-rail .content-panel p,
 body.has-sticky-request-rail .content-panel li,
 body.has-sticky-request-rail .content-panel summary,
 body.has-sticky-request-rail .glass p,
-body.has-sticky-request-rail .glass li{
-  color:#4e4339 !important;
-}
-.airlines-index-hero{
-  grid-template-columns:1fr !important;
-}
-.airlines-index-hero .hero-shot,
-.airlines-index-hero .airline-index-mark{
-  display:none !important;
-}
+body.has-sticky-request-rail .glass li{color:#4d4339 !important}
+body.has-sticky-request-rail .luxaeris-inline-faq{background:#fffdf9 !important;border:1px solid rgba(39,28,20,.10) !important}
+body.has-sticky-request-rail .luxaeris-inline-faq h2{color:#201913 !important}
+body.has-sticky-request-rail .luxaeris-inline-faq summary{color:#2a211b !important}
+body.has-sticky-request-rail .luxaeris-inline-faq p{color:#52473c !important}
+.lx-route-network{margin-top:22px}
+.lx-route-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.lx-subpanel{padding:20px;border-radius:22px;background:rgba(255,255,255,.84);border:1px solid rgba(94,69,42,.10);box-shadow:0 10px 26px rgba(34,24,17,.05)}
+.lx-subpanel h3{margin:0 0 8px;font-size:30px;color:#241b15}
+.lx-subpanel p{margin:0 0 12px;color:#5b4f45}
+.lx-chip-link{display:inline-flex;align-items:center;padding:11px 15px;border-radius:999px;background:#fff;border:1px solid rgba(39,28,20,.10);text-decoration:none;color:#2a211b;font-weight:700}
+.lx-chip-link:hover{background:linear-gradient(180deg,#edd1a5,#d0a96a);color:#20160f;border-color:#d4ad72}
+@media (max-width:980px){.lx-route-grid{grid-template-columns:1fr}}

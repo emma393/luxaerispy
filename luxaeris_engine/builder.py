@@ -26,6 +26,115 @@ class LuxAerisBuilder:
         self.flights = load_json(self.data_root / "flights.json")
         self.airline_map = {x.get("airline_slug", ""): x for x in self.airlines}
         self.dest_map = {d.get("destination_slug",""): d for d in self.destinations}
+        self.route_map = {r.get("route_slug", ""): r for r in self.routes}
+        self.airport_map = {a.get("slug", ""): a for a in self.airports}
+
+
+    def _airport_record(self, slug_or_code: str):
+        value = (slug_or_code or "").lower()
+        for airport in self.airports:
+            if airport.get("slug", "").lower() == value or airport.get("code_iata", "").lower() == value:
+                return airport
+        return None
+
+    def _route_record(self, route_slug: str):
+        return self.route_map.get(route_slug)
+
+    def _route_label(self, route_slug: str) -> str:
+        route = self._route_record(route_slug)
+        if not route:
+            return slug_to_title(route_slug)
+        origin_airport = self._airport_record(route.get("origin_airport_slug", ""))
+        destination_airport = self._airport_record(route.get("destination_airport_slug", ""))
+        origin_code = (origin_airport or {}).get("code_iata", route.get("origin_airport_slug", "").upper())
+        destination_code = (destination_airport or {}).get("code_iata", route.get("destination_airport_slug", "").upper())
+        destination_city = self.dest_map.get(route.get("destination_city_slug", ""), {}).get("display_name")
+        if not destination_city:
+            destination_city = (destination_airport or {}).get("city_name", slug_to_title(route.get("destination_city_slug", "")))
+        return f"{origin_code} to {destination_city} business class"
+
+    def _route_href(self, route_slug: str) -> str:
+        return f"/routes/{route_slug}.html"
+
+    def _pick_unique_links(self, items, limit=8):
+        seen = set()
+        output = []
+        for item in items:
+            href = item.get("href")
+            if not href or href in seen:
+                continue
+            seen.add(href)
+            output.append(item)
+            if len(output) >= limit:
+                break
+        return output
+
+    def _route_network_links(self, route: dict):
+        route_slug = route.get("route_slug", "")
+        origin_airport = self._airport_record(route.get("origin_airport_slug", ""))
+        destination_airport = self._airport_record(route.get("destination_airport_slug", ""))
+        destination_city_slug = route.get("destination_city_slug", "")
+        destination_data = self.dest_map.get(destination_city_slug, {})
+        destination_city = destination_data.get("display_name", slug_to_title(destination_city_slug))
+        origin_code = (origin_airport or {}).get("code_iata", route.get("origin_airport_slug", "").upper())
+        destination_code = (destination_airport or {}).get("code_iata", route.get("destination_airport_slug", "").upper())
+
+        reverse_slug = f"{route.get('destination_airport_slug','')}-to-{route.get('origin_airport_slug','')}-{route.get('primary_cabin','Business Class').lower().replace(' ', '-')}"
+        reverse_links = []
+        if self._route_record(reverse_slug):
+            reverse_links.append({"href": self._route_href(reverse_slug), "label": f"{destination_code} to {origin_code} business class"})
+
+        same_origin = []
+        if origin_airport:
+            for slug in origin_airport.get("related_route_slugs", []):
+                if slug == route_slug or not slug.startswith(f"{route.get('origin_airport_slug','')}-to-"):
+                    continue
+                if not self._route_record(slug):
+                    continue
+                same_origin.append({"href": self._route_href(slug), "label": self._route_label(slug)})
+
+        same_destination = []
+        if destination_airport:
+            marker = f"-to-{route.get('destination_airport_slug','')}-business-class"
+            for slug in destination_airport.get("related_route_slugs", []):
+                if slug == route_slug or marker not in slug:
+                    continue
+                if not self._route_record(slug):
+                    continue
+                same_destination.append({"href": self._route_href(slug), "label": self._route_label(slug)})
+
+        airport_links = []
+        if origin_airport:
+            airport_links.append({"href": f"/airports/{origin_airport.get('slug')}.html", "label": f"{origin_code} airport guide"})
+        if destination_airport:
+            airport_links.append({"href": f"/airports/{destination_airport.get('slug')}.html", "label": f"{destination_code} airport guide"})
+
+        destination_links = []
+        if destination_city_slug:
+            destination_links.append({"href": f"/destinations/{destination_city_slug}.html", "label": f"{destination_city} destination guide"})
+            destination_links.append({
+                "href": f"/routes/{destination_data.get('region_cluster', 'global')}/{slug_country(destination_data.get('country', 'International'))}/{destination_city_slug}.html",
+                "label": f"Flights to and from {destination_city}"
+            })
+
+        return {
+            "same_origin": self._pick_unique_links(same_origin, limit=6),
+            "same_destination": self._pick_unique_links(same_destination, limit=6),
+            "reverse": self._pick_unique_links(reverse_links, limit=1),
+            "airports": self._pick_unique_links(airport_links, limit=2),
+            "destination": self._pick_unique_links(destination_links, limit=2),
+        }
+
+    def _airline_route_links(self, airline_slug: str):
+        results = []
+        for airport in self.airports:
+            if airline_slug in airport.get("related_airline_slugs", []):
+                for route_slug in airport.get("related_route_slugs", []):
+                    if not self._route_record(route_slug):
+                        continue
+                    results.append({"href": self._route_href(route_slug), "label": self._route_label(route_slug)})
+        return self._pick_unique_links(results, limit=10)
+
 
     def copy_static_site(self):
         if self.output_root.exists():
@@ -252,42 +361,48 @@ class LuxAerisBuilder:
                     city_cards.append({"slug": city_slug, "name": d.get("display_name", slug_to_title(city_slug)), "img": d.get("featured_image", self.config["default_image"]), "desc": f"Open route guides for {d.get('display_name', slug_to_title(city_slug))}."})
                 self.build_index(f"routes/{region}/{cslug}", city_cards, f"{country} Route Cities", f"Browse route cities in {country}.")
 
-    def build_routes(self):
-        for r in self.routes:
-            slug = r["route_slug"]
-            origin = r.get("origin_city_slug","origin").replace("-", " ").title()
-            dest = r.get("destination_city_slug","destination").replace("-", " ").title()
-            cabin = r.get("primary_cabin","Business Class")
-            d = self.dest_map.get(r.get("destination_city_slug"), {})
-            region = d.get("region_cluster","global")
-            cslug = slug_country(d.get("country","International"))
-            city_slug = r.get("destination_city_slug","city")
-            related = [
-                {"href": f"/airports/{r['origin_airport_slug']}.html", "label": f"{r['origin_airport_slug'].upper()} airport"},
-                {"href": f"/airports/{r['destination_airport_slug']}.html", "label": f"{r['destination_airport_slug'].upper()} airport"},
-                {"href": f"/destinations/{city_slug}.html", "label": f"{dest} destination guide"},
-            ]
-            sections = [
-                {"title": "Route overview", "text": r.get("route_summary",""), "links": []},
-                {"title": "Airport and airline logic", "text": "Use airport pages and airline pages to judge lounge quality, departure timing, and the total premium feel.", "links": related},
-            ]
-            cards = [
-                {"title": "Better cabin fit", "text": "Longer routes reward stronger privacy and sleep support."},
-                {"title": "Airport quality", "text": "Premium airport flow changes the full journey."},
-                {"title": "Request-ready route", "text": "Once the route looks right, move directly into the quote form."},
-            ]
-            ctx = self.ctx(
-                f"{origin} to {dest} {cabin} | {self.config['site_name']}",
-                f"Explore premium flights from {origin} to {dest}, with airport, route, and cabin context built for luxury travel.",
-                f"routes/{slug}.html",
-                f"{origin} to {dest} {cabin}",
-                r.get("route_summary",""),
-                r.get("featured_image", self.config["default_image"]),
-                sections, related, page_type="route", kicker="Route guide", highlight_cards=cards
-            )
-            write_page(self.output_root, f"routes/{slug}.html", ctx)
-            write_page(self.output_root, f"routes/{region}/{cslug}/{city_slug}/{slug}.html", ctx)
-        self.build_route_hierarchy()
+
+def build_routes(self):
+    for r in self.routes:
+        slug = r["route_slug"]
+        origin = r.get("origin_city_slug","origin").replace("-", " ").title()
+        dest = r.get("destination_city_slug","destination").replace("-", " ").title()
+        cabin = r.get("primary_cabin","Business Class")
+        d = self.dest_map.get(r.get("destination_city_slug"), {})
+        region = d.get("region_cluster","global")
+        cslug = slug_country(d.get("country","International"))
+        city_slug = r.get("destination_city_slug","city")
+        network = self._route_network_links(r)
+        related = self._pick_unique_links(
+            network["reverse"] + network["same_origin"] + network["same_destination"] + network["airports"] + network["destination"],
+            limit=14
+        )
+        sections = [
+            {"title": "Route overview", "text": r.get("route_summary",""), "links": []},
+            {"title": f"More premium departures from {origin}", "text": f"Compare more long-haul business class routes leaving {origin} so this page supports a full route cluster instead of standing alone.", "links": network["same_origin"]},
+            {"title": f"More ways to arrive in {dest}", "text": f"Use these pages to compare other U.S. or international premium departures that end in {dest}. This strengthens destination relevance and keeps route intent tightly connected.", "links": network["same_destination"] + network["reverse"]},
+            {"title": "Airport and destination structure", "text": "Use the airport guides and destination page to compare lounges, transfer logic, arrival quality, and the broader premium travel context around this route.", "links": network["airports"] + network["destination"]},
+        ]
+        cards = [
+            {"title": "Directional route intent", "text": "Each route now links to same-origin, same-destination, and reverse journeys for stronger ranking signals."},
+            {"title": "Airport authority flow", "text": "Origin and destination airport guides keep the route connected to premium lounge, timing, and transfer research."},
+            {"title": "Destination cluster support", "text": "This route page now feeds authority to destination and city route-hub pages instead of staying isolated."},
+        ]
+        ctx = self.ctx(
+            f"{origin} to {dest} {cabin} | {self.config['site_name']}",
+            f"Explore premium flights from {origin} to {dest}, with airport, route, and cabin context built for luxury travel.",
+            f"routes/{slug}.html",
+            f"{origin} to {dest} {cabin}",
+            r.get("route_summary",""),
+            r.get("featured_image", self.config["default_image"]),
+            sections, related, page_type="route", kicker="Route guide", highlight_cards=cards,
+            sidebar_title="Continue with related premium pages",
+            sidebar_text="Move through same-origin routes, same-destination comparisons, airport guides, and the destination guide without losing route intent."
+        )
+        write_page(self.output_root, f"routes/{slug}.html", ctx)
+        write_page(self.output_root, f"routes/{region}/{cslug}/{city_slug}/{slug}.html", ctx)
+    self.build_route_hierarchy()
+
 
     def build_airline_hierarchy(self):
         alliances = defaultdict(list)
@@ -303,21 +418,36 @@ class LuxAerisBuilder:
             airline_cards = [{"slug": a["airline_slug"], "name": a["airline_name"], "img": a.get("featured_image", self.config["default_image"]), "desc": a.get("premium_summary","")[:150]} for a in items]
             self.build_index(f"airlines/{aslug}", airline_cards, f"{alliance} Airlines", f"Explore premium airlines in {alliance}.")
 
-    def build_airlines(self):
-        for a in self.airlines:
-            slug, name = a["airline_slug"], a["airline_name"]
-            aslug = slug_country(a.get("alliance","Independent"))
-            related = [{"href": f"/aircraft/{x}.html", "label": slug_to_title(x)} for x in a.get("related_aircraft_slugs", [])]
-            sections = [{"title": "Airline overview", "text": a.get("premium_summary",""), "links": related}]
-            ctx = self.ctx(
-                f"{name} Review | {self.config['site_name']}",
-                f"Explore {name}, including route fit, aircraft context, and premium planning guidance.",
-                f"airlines/{slug}.html", name, a.get("premium_summary",""), a.get("featured_image", self.config["default_image"]),
-                sections, related, kicker="Airline"
-            )
-            write_page(self.output_root, f"airlines/{slug}.html", ctx)
-            write_page(self.output_root, f"airlines/{aslug}/{slug}.html", ctx)
-        self.build_airline_hierarchy()
+
+def build_airlines(self):
+    for a in self.airlines:
+        slug, name = a["airline_slug"], a["airline_name"]
+        aslug = slug_country(a.get("alliance","Independent"))
+        aircraft_links = [{"href": f"/aircraft/{x}.html", "label": slug_to_title(x)} for x in a.get("related_aircraft_slugs", [])]
+        route_links = self._airline_route_links(slug)
+        airport_links = []
+        for airport in self.airports:
+            if slug in airport.get("related_airline_slugs", []):
+                airport_links.append({"href": f"/airports/{airport.get('slug')}.html", "label": f"{airport.get('code_iata', airport.get('slug','').upper())} airport guide"})
+        airport_links = self._pick_unique_links(airport_links, limit=8)
+        related = self._pick_unique_links(route_links + airport_links + aircraft_links, limit=14)
+        sections = [
+            {"title": "Airline overview", "text": a.get("premium_summary",""), "links": []},
+            {"title": f"Popular premium routes on {name}", "text": "These route guides keep the airline page tied to the high-intent searches travelers actually compare before requesting tailored options.", "links": route_links},
+            {"title": "Aircraft and airport context", "text": "Use these aircraft and airport pages to compare cabin quality, hub strength, and the broader premium travel experience connected to this airline.", "links": airport_links + aircraft_links},
+        ]
+        ctx = self.ctx(
+            f"{name} Review | {self.config['site_name']}",
+            f"Explore {name}, including route fit, aircraft context, and premium planning guidance.",
+            f"airlines/{slug}.html", name, a.get("premium_summary",""), a.get("featured_image", self.config["default_image"]),
+            sections, related, kicker="Airline",
+            sidebar_title="Compare connected airline research",
+            sidebar_text="Move from airline overview into the actual route guides, airport hubs, and aircraft pages that support premium booking decisions."
+        )
+        write_page(self.output_root, f"airlines/{slug}.html", ctx)
+        write_page(self.output_root, f"airlines/{aslug}/{slug}.html", ctx)
+    self.build_airline_hierarchy()
+
 
     def build_aircraft(self):
         items = []
