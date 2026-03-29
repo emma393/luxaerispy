@@ -498,6 +498,98 @@ function polishMicrocopy() {
 }
 
 
+
+function lxPageTitle(){
+  const h1 = document.querySelector('main h1, .page-shell h1, section h1, h1');
+  return h1 ? h1.textContent.trim() : 'this page';
+}
+function lxPathName(){ return (window.location.pathname || '').replace(/\/+/g, '/'); }
+function lxIsAirlinePage(){
+  const p = lxPathName();
+  return /^\/airlines\/(?!index\.html$)[^\/]+(?:\.html)?$/.test(p);
+}
+function lxIsRouteDetailPage(){
+  const p = lxPathName();
+  return /^\/routes\/[a-z0-9-]+-to-[a-z0-9-]+-[a-z0-9-]+(?:-[a-z0-9-]+)*\.html$/i.test(p);
+}
+function lxIsRouteHubPage(){
+  const p = lxPathName();
+  return p.includes('/routes/') && !lxIsRouteDetailPage();
+}
+function lxCleanSubjectTitle(raw){
+  return String(raw || '').replace(/\s+/g, ' ').trim();
+}
+function lxFaqMarkup(){
+  const title = lxCleanSubjectTitle(lxPageTitle());
+  if (lxIsAirlinePage()) {
+    return `
+      <p class="kicker">FAQ</p>
+      <h2>Questions travelers ask about ${title}</h2>
+      <details open>
+        <summary>Which long-haul routes matter most for ${title}?</summary>
+        <p>Focus first on the U.S.-linked long-haul markets where ${title} is most relevant for business class travelers, then compare cabin quality, schedule, and airport convenience rather than searching too broadly.</p>
+      </details>
+      <details>
+        <summary>How should I compare ${title} against other premium airlines?</summary>
+        <p>Start with nonstop strength, seat privacy, lounge quality, and the consistency of the airline’s long-haul premium product. The best comparison is usually route-specific rather than generic.</p>
+      </details>
+      <details>
+        <summary>Can LuxAeris help refine options on ${title}?</summary>
+        <p>Yes. Share your origin, destination, date range, and cabin goal, and LuxAeris can help narrow the most relevant premium options without charging a service fee.</p>
+      </details>`;
+  }
+  if (lxIsRouteDetailPage()) {
+    return `
+      <p class="kicker">FAQ</p>
+      <h2>Questions travelers ask about ${title}</h2>
+      <details open>
+        <summary>Which airlines are strongest on ${title}?</summary>
+        <p>The best airline choices on this route usually depend on nonstop availability, aircraft type, business class seat quality, and how much schedule flexibility you have.</p>
+      </details>
+      <details>
+        <summary>When do fares on ${title} usually become less favorable?</summary>
+        <p>Premium fares often tighten around peak holiday windows, summer demand, and last-minute departures. Flexibility on dates and airports usually creates better business class value.</p>
+      </details>
+      <details>
+        <summary>Should I prioritize nonstop service on ${title}?</summary>
+        <p>For long-haul premium trips, nonstop flights are often worth prioritizing for comfort and timing. One-stop options only tend to win when the cabin or fare difference is meaningful.</p>
+      </details>`;
+  }
+  if (lxIsRouteHubPage()) {
+    const cityTitle = title.replace(/\s+business class route guide$/i, '').replace(/\s+business class routes$/i, '').replace(/\s+guide$/i, '').trim();
+    return `
+      <p class="kicker">FAQ</p>
+      <h2>Questions travelers ask about premium flights to and from ${cityTitle}</h2>
+      <details open>
+        <summary>Which premium routes into ${cityTitle} are usually the strongest?</summary>
+        <p>The strongest routes into ${cityTitle} are typically the long-haul markets where business class comfort, timing, and nonstop coverage matter most for arrival quality.</p>
+      </details>
+      <details>
+        <summary>Which departures from ${cityTitle} are most useful to compare first?</summary>
+        <p>Start with the longest and most practical nonstop or high-quality one-stop premium routes from ${cityTitle}, then widen only when schedule or cabin quality improves meaningfully.</p>
+      </details>
+      <details>
+        <summary>Which airport should I prioritize for ${cityTitle}?</summary>
+        <p>Use the main long-haul airport first, then compare nearby airport options only when they improve timing, cabin choice, or total premium travel value.</p>
+      </details>`;
+  }
+  return `
+    <p class="kicker">FAQ</p>
+    <h2>Questions travelers ask about ${title}</h2>
+    <details open>
+      <summary>Does LuxAeris sell tickets directly?</summary>
+      <p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p>
+    </details>
+    <details>
+      <summary>Is there a LuxAeris service fee?</summary>
+      <p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p>
+    </details>
+    <details>
+      <summary>Can I send a request without exact dates?</summary>
+      <p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p>
+    </details>`;
+}
+
 function luxaerisShouldHaveRail(){
   const path = window.location.pathname.replace(/\/+/g,'/');
   if (path === '/' || path === '/index.html' || path === '/request.html' || path === '/about.html' || path === '/contact.html' || path === '/faq.html' || path === '/privacy-policy.html' || path === '/terms-and-conditions.html' || path === '/cookie-policy.html' || path === '/disclaimer.html' || path === '/thank-you.html' || path === '/search.html') return false;
@@ -537,7 +629,7 @@ function luxaerisInjectEnhancements(){
       const faq = document.createElement('section');
       faq.className = 'luxaeris-inline-faq';
       const title = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'this page';
-      faq.innerHTML = `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I submit a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
+      faq.innerHTML = lxFaqMarkup();
       target.appendChild(faq);
     }
   }
@@ -732,7 +824,7 @@ function luxaerisInjectEnhancements(){
     const faq = document.createElement('section');
     faq.className = 'luxaeris-inline-faq';
     const title = (h1 ? h1.textContent.trim() : 'this page');
-    faq.innerHTML = `<p class="kicker">FAQ</p><h2>Questions travelers ask about ${title}</h2><details open><summary>Does LuxAeris sell tickets directly?</summary><p>No. LuxAeris does not sell tickets directly. The site helps travelers request tailored premium flight options through trusted providers.</p></details><details><summary>Is there a LuxAeris service fee?</summary><p>No. There is no LuxAeris service fee for submitting a tailored request through the website.</p></details><details><summary>Can I send a request without exact dates?</summary><p>Yes. Share your best estimate and any flexibility you have. LuxAeris can refine the route and date range with you.</p></details>`;
+    faq.innerHTML = lxFaqMarkup();
     target.appendChild(faq);
   }
   moveFaqBelowMainContent();
@@ -1033,12 +1125,6 @@ function lxCardMarkup(a) {
   const logo = a.logo ? `<span class="lx-logo"><img src="/assets/images/airlines/main/${a.logo}" alt="${a.name} logo"></span>` : `<span class="lx-logo"><span class="lx-logo-text">${a.name.replace(/ Business Class| First & Premium| Premium Cabin/g,'')}</span></span>`;
   const chips = [a.alliance].concat((a.hubs || []).slice(0,2)).map(v => `<span class="lx-chip">${v}</span>`).join('');
   return `<a class="lx-card" href="/airlines/${a.slug}.html"><div class="lx-card-head">${logo}<div><span class="lx-eyebrow">Premium airline</span><h3>${a.name}</h3></div></div><p>${a.summary}</p><div class="lx-chip-row">${chips}</div></a>`;
-}
-
-
-function lxIsRouteHubPage() {
-  const path = (window.location.pathname || '').replace(/\/index\.html$/, '');
-  return /^\/routes\/north-america\/united-states\/[^\/]+(?:\.html)?$/.test(path);
 }
 
 function lxAppendRouteAirlines() {

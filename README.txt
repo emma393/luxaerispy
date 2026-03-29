@@ -1,7 +1,6 @@
-Replace the files in this zip over your current repo.
-
-This patch:
-- rebuilds the U.S. route hub city pages under routes/north-america/united-states/
-- fixes visibility with darker premium route-hub sections
-- splits each city into Flights to city and Flights from city
-- skips the generic airline-comparison block on these city hub pages
+Replace these files over your current repo, then redeploy.
+Fixes included:
+- FAQ titles and questions are now contextual for airline pages, route pages, and city route hubs
+- generic airline comparison block no longer appears on city route hub pages
+- route/city page text colors are forced dark on light panels
+- airline index hero logo image block removed

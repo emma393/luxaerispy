@@ -1456,3 +1456,77 @@ body.city-page-with-bg .request-rail .request-card textarea{
 .lx-eyebrow{display:block;margin-bottom:8px;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:#a88043}
 @media (max-width:980px){.lx-card-grid,.lx-home-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:720px){.lx-card-grid,.lx-home-grid{grid-template-columns:1fr}.lx-block{padding:20px;border-radius:22px}}
+
+
+/* 2026-03-29 final visibility + airline page cleanup */
+body.has-sticky-request-rail .luxaeris-inline-faq,
+body.has-sticky-request-rail .luxaeris-inline-faq *{
+  color:inherit;
+}
+body.has-sticky-request-rail .luxaeris-inline-faq{
+  background:#fffdf9 !important;
+  border:1px solid rgba(39,28,20,.10) !important;
+  box-shadow:0 14px 32px rgba(39,28,20,.06) !important;
+}
+body.has-sticky-request-rail .luxaeris-inline-faq .kicker{
+  color:#a88043 !important;
+}
+body.has-sticky-request-rail .luxaeris-inline-faq h2{
+  color:#201913 !important;
+  font-family:"Cormorant Garamond", Georgia, serif !important;
+  font-size:clamp(2.2rem,3vw,3.35rem) !important;
+  line-height:1.02 !important;
+  margin:0 0 18px !important;
+}
+body.has-sticky-request-rail .luxaeris-inline-faq details{
+  background:#fff !important;
+  border:1px solid rgba(39,28,20,.10) !important;
+}
+body.has-sticky-request-rail .luxaeris-inline-faq summary{
+  color:#2a211b !important;
+  font-weight:700 !important;
+}
+body.has-sticky-request-rail .luxaeris-inline-faq p{
+  color:#51453a !important;
+}
+.lx-block h2,
+.lx-block h3{
+  color:#201913 !important;
+  font-family:"Cormorant Garamond", Georgia, serif !important;
+  line-height:1.04 !important;
+}
+.lx-card h3{
+  color:#2a211b !important;
+}
+.lx-card p,
+.lx-muted{
+  color:#5d5045 !important;
+}
+.page-shell .content-panel .kicker,
+.page-shell .glass .kicker{
+  color:#b38744 !important;
+}
+.page-shell .content-panel .section-title,
+.page-shell .content-panel h1,
+.page-shell .content-panel h2,
+.page-shell .content-panel h3{
+  color:#241b15 !important;
+}
+.page-shell .content-panel p,
+.page-shell .content-panel li,
+.page-shell .content-panel summary{
+  color:#4d433a !important;
+}
+.page-shell .content-panel details p{
+  color:#55483d !important;
+}
+.page-shell .content-panel details{
+  border-color:rgba(39,28,20,.10) !important;
+}
+.airlines-index-hero{
+  grid-template-columns:1fr !important;
+}
+.airlines-index-hero .hero-shot,
+.airlines-index-hero .airline-index-mark{
+  display:none !important;
+}
