@@ -1,0 +1,17 @@
+cd /path/to/your/repo
+nano scripts/run-self-heal-and-index.sh
+chmod +x scripts/run-self-heal-and-index.sh
+brew install node
+node -v
+bash scripts/run-self-heal-and-index.shcd /path/to/your/repo
+nano scripts/run-self-heal-and-index.sh
+chmod +x scripts/run-self-heal-and-index.sh
+brew inst#!/bin/bash
+set -e
+export SITE_URL="https://luxaeris.com"
+export SITE_ROOT="generated/site"
+export INDEXNOW_KEY="6e2a8c496bce49f4aebfc321063b2e26"
+export KEY_LOCATION="https://luxaeris.com/6e2a8c496bce49f4aebfc321063b2e26.txt"
+
+node scripts/self-heal-sitemaps.mjs
+node scripts/submit-indexnow-from-sitemaps.mjs
