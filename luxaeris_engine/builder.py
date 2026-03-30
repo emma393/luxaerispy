@@ -1,5 +1,5 @@
 
-# --- ONLY RELEVANT PATCH APPLIED ---
+# UPDATED safe_route_image WITH GENERATED DEFAULT
 
 def resolve_route_destination_slug(self, route: dict) -> str:
     slug = (route.get("destination_city_slug") or "").strip()
@@ -39,6 +39,15 @@ def safe_route_image(self, route: dict) -> str:
     candidate = (route.get("featured_image") or "").strip()
     destination_slug = self.resolve_route_destination_slug(route)
 
+    def generated_city_image(slug):
+        if not slug:
+            return None
+        for ext in ["webp", "jpg", "jpeg", "png"]:
+            path = f"/assets/images/cities/{slug}.{ext}"
+            if self.asset_exists(path):
+                return path
+        return None
+
     if (
         not candidate
         or candidate in BAD_HERO_IMAGES
@@ -46,9 +55,21 @@ def safe_route_image(self, route: dict) -> str:
         or "first-class" in candidate.lower()
         or "premium-economy" in candidate.lower()
     ):
-        return self.safe_destination_image(destination_slug, self.config["default_image"])
+        city_img = generated_city_image(destination_slug)
+        if city_img:
+            return city_img
+
+        dest_img = self.safe_destination_image(destination_slug, None)
+        if dest_img:
+            return dest_img
+
+        return "/assets/images/generated/default.webp"
 
     if candidate.startswith("/assets/") and not self.asset_exists(candidate):
-        return self.safe_destination_image(destination_slug, self.config["default_image"])
+        city_img = generated_city_image(destination_slug)
+        if city_img:
+            return city_img
+
+        return "/assets/images/generated/default.webp"
 
     return candidate
