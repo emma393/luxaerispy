@@ -1,910 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuxAeris — Private Fares for Business & First Class Flights</title>
-  <meta name="description" content="LuxAeris helps travelers request business and first class quotes with access to private fares, premium routing, and personalized support for international journeys." />
-  <meta http-equiv="content-language" content="en" />
-  <link rel="canonical" href="https://luxaeris.com/" />
-  <style>
-    :root {
-      --bg: #090909;
-      --bg-soft: rgba(255,255,255,0.04);
-      --panel: rgba(11,11,11,0.72);
-      --panel-strong: rgba(11,11,11,0.86);
-      --text: #f5efe4;
-      --muted: #d6c7a9;
-      --muted-2: #c8b48f;
-      --line: rgba(212, 175, 55, 0.16);
-      --gold: #d4af37;
-      --gold-soft: rgba(212,175,55,0.14);
-      --white-soft: rgba(255,255,255,0.82);
-      --max: 1220px;
-      --radius: 22px;
-      --shadow: 0 28px 80px rgba(0,0,0,0.38);
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: radial-gradient(circle at top, #1a1408 0%, #0b0b0b 36%, #090909 100%);
-      color: var(--text);
-      line-height: 1.55;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .container {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .nav-wrap {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      backdrop-filter: blur(14px);
-      background: rgba(8,8,8,0.72);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .nav {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .brand-mark {
-      font-size: 1.18rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .brand-sub {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.68);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 14px;
-      font-size: 0.94rem;
-      color: rgba(255,255,255,0.84);
-    }
-
-    .nav-links a:hover,
-    .footer-links a:hover,
-    .mini-links a:hover,
-    .route-link:hover,
-    .tag:hover {
-      color: var(--gold);
-    }
-
-    .cta-btn,
-    .ghost-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 22px;
-      border-radius: 999px;
-      font-size: 0.94rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      transition: transform .25s ease, background .25s ease, border-color .25s ease, color .25s ease;
-      box-shadow: var(--shadow);
-    }
-
-    .cta-btn {
-      background: linear-gradient(180deg, #e3bf54 0%, #c59a25 100%);
-      color: #111;
-    }
-
-    .cta-btn:hover,
-    .ghost-btn:hover {
-      transform: translateY(-1px);
-    }
-
-    .ghost-btn {
-      border: 1px solid rgba(255,255,255,0.16);
-      background: rgba(255,255,255,0.02);
-      color: var(--text);
-      box-shadow: none;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero video,
-    .hero .hero-fallback {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -3;
-    }
-
-    .hero-fallback {
-      background: linear-gradient(135deg, #38270d 0%, #0a0a0a 45%, #060606 100%);
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(7,7,7,0.90) 0%, rgba(7,7,7,0.78) 38%, rgba(7,7,7,0.60) 58%, rgba(7,7,7,0.88) 100%);
-      z-index: -2;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 18% 24%, rgba(212,175,55,0.16) 0%, rgba(212,175,55,0) 32%), radial-gradient(circle at 80% 20%, rgba(212,175,55,0.12) 0%, rgba(212,175,55,0) 26%);
-      z-index: -1;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(360px, 430px);
-      gap: 32px;
-      align-items: center;
-      padding: 72px 0 56px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 9px 14px;
-      border: 1px solid rgba(212,175,55,0.22);
-      border-radius: 999px;
-      background: rgba(10,10,10,0.42);
-      color: var(--muted);
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(2.65rem, 6vw, 5.4rem);
-      line-height: 0.96;
-      letter-spacing: -0.03em;
-      max-width: 13ch;
-    }
-
-    .hero p.lead {
-      margin: 22px 0 0;
-      max-width: 62ch;
-      font-size: 1.12rem;
-      color: var(--white-soft);
-    }
-
-    .value-line {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      margin: 24px 0 0;
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .value-line span {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .mini-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 22px;
-      font-size: 0.96rem;
-      color: rgba(255,255,255,0.78);
-    }
-
-    .hero-card {
-      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-strong) 100%);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-card h2,
-    .card h3,
-    .section-title h2,
-    .trust-card h3,
-    .faq-item h3 {
-      margin: 0;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-    }
-
-    .hero-card h2 { font-size: 1.55rem; }
-
-    .hero-card p {
-      margin: 12px 0 0;
-      color: rgba(255,255,255,0.8);
-      font-size: 0.98rem;
-    }
-
-    .quick-list {
-      margin: 20px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .quick-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      padding: 12px 14px;
-      border-radius: 16px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      color: rgba(255,255,255,0.88);
-    }
-
-    .quick-list strong { color: var(--text); }
-
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--gold-soft);
-      border: 1px solid rgba(212,175,55,0.18);
-      color: #f1dfae;
-      font-size: 0.88rem;
-    }
-
-    main section {
-      padding: 84px 0;
-      border-top: 1px solid rgba(255,255,255,0.04);
-    }
-
-    .section-title {
-      display: grid;
-      gap: 12px;
-      margin-bottom: 28px;
-      max-width: 70ch;
-    }
-
-    .section-title .label {
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.76rem;
-    }
-
-    .section-title h2 {
-      font-size: clamp(2rem, 4vw, 3.25rem);
-      line-height: 1;
-    }
-
-    .section-title p {
-      margin: 0;
-      color: rgba(255,255,255,0.76);
-      font-size: 1.02rem;
-    }
-
-    .grid-3,
-    .grid-4,
-    .routes-grid,
-    .trust-grid,
-    .faq-grid {
-      display: grid;
-      gap: 18px;
-    }
-
-    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .routes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .trust-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .faq-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-    .card,
-    .route-card,
-    .trust-card,
-    .faq-item {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: 0 18px 50px rgba(0,0,0,0.16);
-    }
-
-    .card .num {
-      display: inline-flex;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 14px;
-      background: var(--gold-soft);
-      border: 1px solid rgba(212,175,55,0.16);
-      color: var(--gold);
-      font-size: 0.96rem;
-      font-weight: 700;
-    }
-
-    .card p,
-    .route-card p,
-    .trust-card p,
-    .faq-item p {
-      margin: 12px 0 0;
-      color: rgba(255,255,255,0.76);
-      font-size: 0.98rem;
-    }
-
-    .usp-list {
-      margin: 18px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-
-    .usp-list li {
-      position: relative;
-      padding-left: 18px;
-      color: rgba(255,255,255,0.82);
-    }
-
-    .usp-list li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-    }
-
-    .route-card {
-      position: relative;
-      overflow: hidden;
-      min-height: 190px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 100%),
-        radial-gradient(circle at top right, rgba(212,175,55,0.14), transparent 36%),
-        rgba(255,255,255,0.03);
-    }
-
-    .route-card .route-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .route-card .route-code {
-      color: var(--muted);
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-    }
-
-    .route-card h3 { font-size: 1.36rem; }
-
-    .route-card .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-
-    .route-card .meta span {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.07);
-      color: rgba(255,255,255,0.82);
-      font-size: 0.85rem;
-    }
-
-    .route-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      color: var(--gold);
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
-      gap: 24px;
-      align-items: start;
-    }
-
-    .quote-panel {
-      background: linear-gradient(180deg, rgba(212,175,55,0.12), rgba(255,255,255,0.02));
-      border: 1px solid rgba(212,175,55,0.16);
-      border-radius: 26px;
-      padding: 28px;
-    }
-
-    .quote-panel h3 {
-      margin: 0;
-      font-size: 1.42rem;
-    }
-
-    .quote-panel p {
-      margin: 12px 0 0;
-      color: rgba(255,255,255,0.8);
-    }
-
-    .quote-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 22px;
-    }
-
-    .quote-note {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    footer {
-      padding: 34px 0 48px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .footer-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      color: rgba(255,255,255,0.76);
-      font-size: 0.94rem;
-    }
-
-    .foot-copy {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 1080px) {
-      .hero-grid,
-      .split,
-      .grid-4,
-      .grid-3,
-      .trust-grid,
-      .faq-grid,
-      .routes-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero-grid {
-        padding-top: 52px;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .nav {
-        padding: 14px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav-links {
-        justify-content: flex-start;
-      }
-
-      .hero h1 {
-        max-width: 11ch;
-      }
-
-      .hero-card,
-      .card,
-      .route-card,
-      .trust-card,
-      .faq-item,
-      .quote-panel {
-        padding: 20px;
-      }
-
-      main section {
-        padding: 68px 0;
-      }
-
-      .container {
-        width: min(var(--max), calc(100% - 22px));
-      }
-    }
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "LuxAeris",
-    "url": "https://luxaeris.com/",
-    "description": "LuxAeris helps travelers request business and first class quotes with access to private fares, premium routing, and personalized support.",
-    "areaServed": "Worldwide",
-    "sameAs": []
-  }
-  </script>
+<meta name="msvalidate.01" content="FC661BCEBF1403AB4A7B31F91ACB4E46" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>LuxAeris — Luxury Business &amp; First Class Flight Concierge</title>
+<meta name="description" content="LuxAeris helps travelers request business class, first class, and premium economy options with private fare focus, tailored route planning, and a polished premium booking experience."/>
+<meta name="keywords" content="business class flights, first class flights, premium economy flights, luxury travel, premium flight concierge, private fares"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://luxaeris.com/"/>
+<meta property="og:title" content="LuxAeris — Luxury Business &amp; First Class Flight Concierge"/>
+<meta property="og:description" content="LuxAeris helps travelers request business class, first class, and premium economy options with private fare focus, tailored route planning, and a polished premium booking experience."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://luxaeris.com/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="LuxAeris — Luxury Business &amp; First Class Flight Concierge"/>
+<meta name="twitter:description" content="LuxAeris helps travelers request business class, first class, and premium economy options with private fare focus, tailored route planning, and a polished premium booking experience."/>
+<link href="/favicon.ico" rel="icon"/>
+<link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet"/>
+<link href="/assets/css/styles.css" rel="stylesheet"/>
 </head>
-<body>
-  <div class="nav-wrap">
-    <div class="container nav">
-      <a class="brand" href="/">
-        <span class="brand-mark">LuxAeris</span>
-        <span class="brand-sub">Private fares. Premium journeys.</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="/">Home</a>
-        <a href="/request">Request</a>
-        <a href="/destinations/">Destinations</a>
-        <a href="/routes/">Routes</a>
-        <a href="/airports/">Airports</a>
-        <a href="/airlines/">Airlines</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-        <a href="/guides/index.html">Guides</a>
-        <a href="/guides/index.html">Guides</a>
-        <a class="cta-btn" href="/request">Get a Quote</a>
-      </nav>
+<body class="has-video home-luxury">
+<video autoplay="" id="bg-video" loop="" muted="" playsinline="">
+  <source src="/assets/video/hero-background.mp4" type="video/mp4"/>
+</video>
+
+<header class="site-header site-header-sticky">
+  <div class="container nav nav-luxury">
+    <a class="brand brand-logo" href="index.html">
+      <img alt="LuxAeris logo" class="brand-image" src="/assets/images/logo-header.png"/>
+      <span class="brand-text-home"><span class="brand-title-home">LuxAeris</span><span class="brand-tag-home">Private fares. Premium journeys.</span></span>
+    </a>
+    <nav aria-label="Primary" class="top-links">
+      <a href="index.html">Home</a>
+      <a href="request.html">Request</a>
+      <a href="destinations/index.html">Destinations</a>
+      <a href="routes/index.html">Routes</a>
+      <a href="airports/index.html">Airports</a>
+      <a href="airlines/index.html">Airlines</a>
+      <a href="guides/index.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="best-places-by-season.html">By Season</a>
+    </nav>
+    <a class="btn-secondary nav-cta" href="request.html">Get a Quote</a>
+  </div>
+</header>
+
+<main>
+<section class="hero hero-luxury">
+  <div class="container hero-grid hero-grid-luxury">
+    <div class="hero-copy hero-copy-luxury">
+      <div class="eyebrow">Premium Flight Concierge</div>
+      <h1><span class="hero-line">Business &amp; First Class travel,</span><span class="hero-line">arranged with precision.</span></h1>
+      <p class="lead lead-hero">Private fares, premium route planning, and a more polished way to search for better business class and first class options.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="request.html">Request a Quote</a>
+        <a class="btn-secondary" href="destinations/index.html">Explore Destinations</a>
+      </div>
+      <div class="hero-note">Our service is complimentary. You only pay for your ticket.</div>
+    </div>
+
+    <div class="panel form-panel home-form-panel luxury-quote-panel">
+      <h2 class="panel-title">Request a premium quote</h2>
+      <p class="panel-subtitle">Share your route, cabin, and timing. LuxAeris helps you approach premium travel with stronger fare value, cleaner airline choices, and a more personal experience from the first step.</p>
+
+      <form action="request.html" id="quickQuoteForm" method="GET" novalidate="">
+        <div class="form-grid">
+          <div class="field field-wide trip-type-field">
+            <label>Trip type</label>
+            <div aria-label="Trip type" class="trip-type-switch" role="tablist">
+              <button class="trip-type-btn is-active" data-trip-type="Round Trip" type="button">Round Trip</button>
+              <button class="trip-type-btn" data-trip-type="One Way" type="button">One Way</button>
+              <button class="trip-type-btn" data-trip-type="Multi City" type="button">Multi City</button>
+            </div>
+            <input id="tripType" name="tripType" type="hidden" value="Round Trip"/>
+          </div>
+
+          <div class="field field-wide autocomplete-field">
+            <label for="origin">Origin</label>
+            <input autocomplete="off" id="origin" name="origin" placeholder="City, airport, or metro code" required="" type="text"/>
+            <input id="originCode" name="originCode" type="hidden"/>
+            <div class="autocomplete-list" hidden="" id="originList"></div>
+            <div class="error" id="originError"></div>
+          </div>
+
+          <div class="field field-wide autocomplete-field">
+            <label for="destination">Destination</label>
+            <input autocomplete="off" id="destination" name="destination" placeholder="City, airport, or metro code" required="" type="text"/>
+            <input id="destinationCode" name="destinationCode" type="hidden"/>
+            <div class="autocomplete-list" hidden="" id="destinationList"></div>
+            <div class="error" id="destinationError"></div>
+          </div>
+
+          <div class="field">
+            <label for="departDate">Departure date</label>
+            <input data-date-field="" id="departDate" inputmode="numeric" name="departDate" placeholder="mm.dd.yyyy" required="" type="text"/>
+          </div>
+
+          <div class="field">
+            <label for="returnDate">Return date</label>
+            <input data-date-field="" id="returnDate" inputmode="numeric" name="returnDate" placeholder="mm.dd.yyyy" type="text"/>
+          </div>
+
+          <div class="field">
+            <label for="cabin">Cabin</label>
+            <select id="cabin" name="cabin">
+              <option selected="">Business Class</option>
+              <option>First Class</option>
+              <option>Premium Economy</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="preferredFareRange">Budget range</label>
+            <select id="preferredFareRange" name="preferredFareRange" required="">
+              <option value="">Select budget range</option>
+              <option>$3,500–$5,500</option>
+              <option>$5,500–$8,500</option>
+              <option>$8,500+</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" placeholder="Your full name" required="" type="text"/>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" placeholder="+1 000 000 0000" required="" type="tel"/>
+          </div>
+
+          <div class="field field-wide">
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+          </div>
+
+          <div class="field field-wide button-row">
+            <button class="btn-primary" type="submit">Continue</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
+</section>
 
-  <header class="hero">
-    <video autoplay muted loop playsinline poster="/assets/images/hero-fallback.jpg">
-      <source src="/assets/video/hero-background.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-fallback"></div>
-    <div class="container hero-grid">
+<section class="section section-luxury-intro">
+  <div class="container luxury-copy-block">
+    <div class="eyebrow">Why clients choose LuxAeris</div>
+    <h2 class="section-title">Luxury feels stronger when it is backed by clarity, access, and personal care.</h2>
+    <p class="lead">LuxAeris is built for travelers who want more than generic search results. The experience is designed to feel calm, polished, and genuinely useful — with private fare focus, route relevance, and thoughtful premium planning from the first message onward.</p>
+  </div>
+</section>
+
+<section class="section featured-destinations-section">
+  <div class="container">
+    <div class="section-heading compact">
       <div>
-        <div class="eyebrow">Luxury Flight Concierge • Private fares for premium journeys</div>
-        <h1>Fly Business &amp; First Class for Less</h1>
-        <p class="lead">LuxAeris helps travelers request premium long-haul flight options with access to private fares, stronger schedules, and more thoughtful routing than standard booking platforms usually surface.</p>
-        <div class="value-line">
-          <span>No fees</span>
-          <span>No obligation</span>
-          <span>Premium advisor support</span>
-          <span>You only pay for the ticket</span>
-        </div>
-        <div class="hero-actions">
-          <a class="cta-btn" href="/request">Request Your Personalized Quote</a>
-          <a class="ghost-btn" href="#popular-routes">Explore Popular Routes</a>
-        </div>
-        <div class="mini-links">
-          <a href="/routes/new-york-to-london/">New York to London</a>
-          <a href="/routes/los-angeles-to-tokyo/">Los Angeles to Tokyo</a>
-          <a href="/routes/miami-to-paris/">Miami to Paris</a>
-        </div>
+        <div class="eyebrow">Featured destinations</div>
+        <h2 class="section-title">Inspiration for your next premium journey.</h2>
       </div>
-
-      <aside class="hero-card" aria-label="Why request a quote">
-        <h2>Why travelers choose LuxAeris</h2>
-        <p>For high-value international itineraries, the difference is rarely just price. It is comfort, timing, routing quality, and access.</p>
-        <ul class="quick-list">
-          <li><strong>Private fare access</strong><br />Business and first class pricing not always shown on public booking platforms.</li>
-          <li><strong>Thoughtful premium planning</strong><br />Built around routes where comfort, timing, and cabin quality make a meaningful difference.</li>
-          <li><strong>Concierge-style guidance</strong><br />A cleaner path to premium options without hours of searching across tabs.</li>
-        </ul>
-        <div class="tag-row">
-          <a class="tag" href="/request">Request in under 60 seconds</a>
-          <a class="tag" href="/about/">How LuxAeris works</a>
-        </div>
-      </aside>
+      <a class="section-link" href="destinations/index.html">View all destinations</a>
     </div>
-  </header>
+    <div class="destination-grid destination-grid-home">
+      <a class="destination-card destination-card-large" href="destinations/new-york.html"><img alt="New York skyline at sunset" src="/assets/images/cities/new-york.webp"/><span>New York</span></a>
+      <a class="destination-card" href="destinations/paris.html"><img alt="Paris city view" src="/assets/images/cities/paris.webp"/><span>Paris</span></a>
+      <a class="destination-card" href="destinations/dubai.html"><img alt="Dubai skyline" src="/assets/images/cities/dubai.webp"/><span>Dubai</span></a>
+      <a class="destination-card" href="destinations/london.html"><img alt="London skyline" src="/assets/images/cities/london.webp"/><span>London</span></a>
+      <a class="destination-card" href="destinations/tokyo.html"><img alt="Tokyo skyline" src="/assets/images/cities/tokyo.webp"/><span>Tokyo</span></a>
+      <a class="destination-card" href="destinations/rome.html"><img alt="Rome skyline" src="/assets/images/cities/rome.webp"/><span>Rome</span></a>
+      <a class="destination-card" href="destinations/frankfurt.html"><img alt="Frankfurt skyline" src="/assets/images/cities/frankfurt.webp"/><span>Frankfurt</span></a>
+      <a class="destination-card" href="destinations/sydney.html"><img alt="Sydney skyline" src="/assets/images/cities/sydney.webp"/><span>Sydney</span></a>
+    </div>
+  </div>
+</section>
 
-  <main>
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <div class="label">How it works</div>
-          <h2>A more polished way to request premium flights</h2>
-          <p>LuxAeris keeps the search for premium flights more elegant, more focused, and more useful from the very first step.</p>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <div class="num">01</div>
-            <h3>Tell us your route</h3>
-            <p>Share the trip details that matter most: origin, destination, cabin, dates, flexibility, and preferences.</p>
-          </article>
-          <article class="card">
-            <div class="num">02</div>
-            <h3>We look beyond public fares</h3>
-            <p>LuxAeris looks beyond public fares to prioritize private-fare access, premium schedules, and itinerary quality for business and first class travel.</p>
-          </article>
-          <article class="card">
-            <div class="num">03</div>
-            <h3>You review premium options</h3>
-            <p>Receive tailored choices built around comfort, timing, airline quality, and overall travel value rather than endless generic search results.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container split">
-        <div>
-          <div class="section-title" style="margin-bottom: 18px;">
-            <div class="label">Why LuxAeris</div>
-            <h2>Premium positioning that earns trust faster</h2>
-            <p>LuxAeris is strongest when the luxury feel is matched by a clear promise: more refined premium travel options, delivered with more care and less noise.</p>
-          </div>
-          <ul class="usp-list">
-            <li>Explains private fares clearly instead of relying on abstract luxury language alone.</li>
-            <li>Keeps the experience high-end while making the benefit immediately practical and reassuring.</li>
-            <li>Keeps the message globally welcoming while still highlighting the premium routes travelers search most often.</li>
-            <li>Makes it easier for high-intent travelers to understand why LuxAeris feels more personal than generic flight search.</li>
-          </ul>
-        </div>
-        <aside class="quote-panel">
-          <h3>Designed for premium routes that deserve more attention</h3>
-          <p>LuxAeris works best on premium long-haul routes where fare quality, airline choice, timing, and comfort matter enough to deserve a more thoughtful search.</p>
-          <div class="quote-actions">
-            <a class="cta-btn" href="/request">Start a Quote Request</a>
-            <a class="ghost-btn" href="/routes/">View All Routes</a>
-          </div>
-          <div class="quote-note">A more elegant first step for travelers who want better premium options.</div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="popular-routes">
-      <div class="container">
-        <div class="section-title">
-          <div class="label">Popular premium routes</div>
-          <h2>Popular long-haul premium routes travelers request most often</h2>
-          <p>These are the types of journeys that best match LuxAeris: long-haul international business and first class itineraries where cabin quality, route timing, and fare access make a meaningful difference.</p>
-        </div>
-        <div class="routes-grid">
-          <article class="route-card">
-            <div class="route-top">
-              <div class="route-code">JFK / EWR • London</div>
-              <span class="tag">Lie-flat demand</span>
-            </div>
-            <h3>New York to London</h3>
-            <p>One of the strongest premium corridors in the market, ideal for business travelers and high-intent luxury leisure demand.</p>
-            <div class="meta">
-              <span>Business class</span><span>High-frequency route</span><span>Strong premium demand</span>
-            </div>
-            <a class="route-link" href="/routes/new-york-to-london/">View route →</a>
-          </article>
-          <article class="route-card">
-            <div class="route-top">
-              <div class="route-code">LAX • Tokyo</div>
-              <span class="tag">Premium long-haul</span>
-            </div>
-            <h3>Los Angeles to Tokyo</h3>
-            <p>A flagship Pacific journey where premium cabin quality, timing, and airline selection strongly influence traveler decisions.</p>
-            <div class="meta">
-              <span>Business &amp; First</span><span>Long-haul Asia</span><span>Premium route</span>
-            </div>
-            <a class="route-link" href="/routes/los-angeles-to-tokyo/">View route →</a>
-          </article>
-          <article class="route-card">
-            <div class="route-top">
-              <div class="route-code">MIA • Paris</div>
-              <span class="tag">Luxury leisure</span>
-            </div>
-            <h3>Miami to Paris</h3>
-            <p>Strong fit for affluent leisure travelers looking for a polished premium experience to Europe from a major U.S. gateway.</p>
-            <div class="meta">
-              <span>Premium Europe</span><span>Luxury leisure</span><span>Strong premium demand</span>
-            </div>
-            <a class="route-link" href="/routes/miami-to-paris/">View route →</a>
-          </article>
-          <article class="route-card">
-            <div class="route-top">
-              <div class="route-code">SFO • Singapore</div>
-              <span class="tag">Ultra-long-haul</span>
-            </div>
-            <h3>San Francisco to Singapore</h3>
-            <p>Exactly the kind of trip where premium comfort matters enough for travelers to look beyond generic public search results.</p>
-            <div class="meta">
-              <span>Ultra-long-haul</span><span>High cabin sensitivity</span><span>Premium route</span>
-            </div>
-            <a class="route-link" href="/routes/san-francisco-to-singapore/">View route →</a>
-          </article>
-          <article class="route-card">
-            <div class="route-top">
-              <div class="route-code">ORD • Rome</div>
-              <span class="tag">Seasonal demand</span>
-            </div>
-            <h3>Chicago to Rome</h3>
-            <p>A valuable U.S.-to-Europe route for travelers who want better timing, more comfortable cabins, and a less fragmented search process.</p>
-            <div class="meta">
-              <span>Europe</span><span>Strong leisure mix</span><span>Premium route</span>
-            </div>
-            <a class="route-link" href="/routes/chicago-to-rome/">View route →</a>
-          </article>
-          <article class="route-card">
-            <div class="route-top">
-              <div class="route-code">DFW • Dubai</div>
-              <span class="tag">Premium Middle East</span>
-            </div>
-            <h3>Dallas to Dubai</h3>
-            <p>A route that naturally supports LuxAeris positioning around premium international travel, higher budgets, and strong service expectations.</p>
-            <div class="meta">
-              <span>Luxury route</span><span>Long-haul premium</span><span>High-value demand</span>
-            </div>
-            <a class="route-link" href="/routes/dallas-to-dubai/">View route →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <div class="label">Why travelers choose LuxAeris</div>
-          <h2>Luxury works best when it is matched by clarity, trust, and human support</h2>
-          <p>The homepage should feel refined, but it should also answer the human question immediately: why should someone trust LuxAeris with an important premium journey?</p>
-        </div>
-        <div class="trust-grid">
-          <article class="trust-card">
-            <h3>Clarity</h3>
-            <p>Visitors understand in seconds that LuxAeris is about meaningful premium flight options, not just travel inspiration.</p>
-          </article>
-          <article class="trust-card">
-            <h3>Relevance</h3>
-            <p>The route mix highlights the kinds of premium journeys where comfort, timing, and airline quality matter most.</p>
-          </article>
-          <article class="trust-card">
-            <h3>Conversion</h3>
-            <p>The message removes friction with “no fees” and “you only pay for the ticket,” while giving the visitor a direct reason to submit.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <div class="label">Frequently asked</div>
-          <h2>Quick answers travelers genuinely want to know</h2>
-          <p>These FAQs help visitors feel more confident about LuxAeris and make the homepage easier for search engines and AI systems to interpret.</p>
-        </div>
-        <div class="faq-grid">
-          <article class="faq-item">
-            <h3>Are LuxAeris services free?</h3>
-            <p>Yes. LuxAeris positions the service as complimentary, and the traveler only pays for the ticket itself.</p>
-          </article>
-          <article class="faq-item">
-            <h3>How can fares be better than what I find online?</h3>
-            <p>LuxAeris is built around private fares, premium routing, and more tailored business and first class options.</p>
-          </article>
-          <article class="faq-item">
-            <h3>What kind of trips fit LuxAeris best?</h3>
-            <p>Long-haul international premium routes where cabin comfort, timing, and overall trip quality matter enough to deserve a more refined search.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <div class="label">Premium travel guides</div>
-          <h2>Helpful answers for travelers planning business and first class flights</h2>
-          <p>These guides explain private fares, booking timing, lie-flat routes, and smarter ways to approach premium travel without the noise of generic flight search.</p>
-        </div>
-        <div class="trust-grid">
-          <article class="trust-card">
-            <h3><a href="/guides/how-to-get-business-class-flights-for-less.html">How to get business class flights for less</a></h3>
-            <p>Learn the practical ways travelers improve premium fare value through route choice, flexible timing, and private fares.</p>
-          </article>
-          <article class="trust-card">
-            <h3><a href="/guides/what-are-private-fares-business-class.html">What are private fares?</a></h3>
-            <p>A simple explanation of how private fares work and why they matter so much in business and first class travel.</p>
-          </article>
-          <article class="trust-card">
-            <h3><a href="/guides/best-time-to-book-business-class-flights.html">Best time to book business class</a></h3>
-            <p>Understand how booking windows, seasonality, and flexibility affect premium pricing and route value.</p>
-          </article>
-        </div>
-        <div class="hero-actions" style="margin-top:24px;">
-          <a class="cta-btn" href="/guides/index.html">View All Guides</a>
-          <a class="ghost-btn" href="/request">Request a Quote</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container split">
-        <div>
-          <div class="section-title" style="margin-bottom: 18px;">
-            <div class="label">Final call to action</div>
-            <h2>Tell us where you want to go</h2>
-            <p>We take care of the premium side of the search, so travelers do not have to guess which routes, airlines, and fare types are worth pursuing.</p>
-          </div>
-        </div>
-        <aside class="quote-panel">
-          <h3>Ready for better premium options?</h3>
-          <p>Share the route, timing, and cabin you want, and LuxAeris will help shape a cleaner premium search from the very first step.</p>
-          <div class="quote-actions">
-            <a class="cta-btn" href="/request">Request a Quote</a>
-            <a class="ghost-btn" href="/contact/">Contact LuxAeris</a>
-          </div>
-          <div class="quote-note">Thoughtful, discreet, and built around the kind of comfort travelers remember.</div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-row">
+<section class="section section-dark-panel">
+  <div class="container premium-routes-panel panel">
+    <div class="section-heading compact">
       <div>
-        <div class="brand-mark" style="font-size:1rem;">LuxAeris</div>
-        <div class="foot-copy">Private fares. Premium journeys. Thoughtful support for premium long-haul travel.</div>
+        <div class="eyebrow">Popular premium long-haul routes</div>
+        <h2 class="section-title" style="font-size:clamp(28px,2.3vw,42px);line-height:1.12;">Start with the routes most likely to drive serious premium flight inquiries.</h2>
       </div>
-      <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="/request">Request</a>
-        <a href="/routes/">Routes</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-        <a href="/guides/index.html">Guides</a>
+      <a class="section-link" href="routes/index.html">View all routes</a>
+    </div>
+    <div class="link-cloud">
+      <a href="routes/jfk-to-lhr-business-class.html">New York to London</a>
+      <a href="routes/lax-to-tyo-business-class.html">Los Angeles to Tokyo</a>
+      <a href="routes/sfo-to-sin-business-class.html">San Francisco to Singapore</a>
+      <a href="routes/dfw-to-dxb-business-class.html">Dallas to Dubai</a>
+      <a href="routes/mia-to-par-business-class.html">Miami to Paris</a>
+      <a href="routes/bos-to-fra-business-class.html">Boston to Frankfurt</a>
+      <a href="routes/iad-to-rom-business-class.html">Washington to Rome</a>
+      <a href="routes/ord-to-zrh-business-class.html">Chicago to Zurich</a>
+      <a href="routes/sea-to-tyo-business-class.html">Seattle to Tokyo</a>
+      <a href="routes/atl-to-lon-business-class.html">Atlanta to London</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark-panel">
+  <div class="container premium-routes-panel panel">
+    <div class="section-heading compact">
+      <div>
+        <div class="eyebrow">Premium travel guides</div>
+        <h2 class="section-title" style="font-size:clamp(28px,2.2vw,40px);line-height:1.12;">Clear answers for business class, private fares, and smarter premium booking decisions.</h2>
+        <p class="lead" style="max-width:900px;">These guides help LuxAeris answer the questions travelers actually ask before they submit a premium request — which also makes the site easier for search engines and AI systems to understand.</p>
+      </div>
+      <a class="section-link" href="guides/index.html">View all guides</a>
+    </div>
+
+    <div class="index-grid">
+      <a class="index-card" href="guides/how-to-get-business-class-flights-for-less.html">
+        <h3>How to get business class flights for less</h3>
+        <p>Learn what actually changes premium pricing: private fares, route selection, timing, and flexibility.</p>
+      </a>
+      <a class="index-card" href="guides/what-are-private-fares-business-class.html">
+        <h3>What are private fares?</h3>
+        <p>A simple guide to why some premium fares are not shown publicly and why they matter in business class.</p>
+      </a>
+      <a class="index-card" href="guides/best-time-to-book-business-class-flights.html">
+        <h3>Best time to book business class</h3>
+        <p>Understand how booking windows, seasonality, and route demand affect premium cabin value.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark-panel">
+  <div class="container premium-routes-panel panel">
+    <div class="section-heading compact">
+      <div>
+        <div class="eyebrow">What you can browse</div>
+        <h2 class="section-title" style="font-size:clamp(28px,2.25vw,40px);line-height:1.12;">Move directly into the parts of LuxAeris that support premium planning.</h2>
       </div>
     </div>
-  </footer>
+    <div class="link-cloud">
+      <a href="request.html">Request a Quote</a>
+      <a href="destinations/index.html">Destinations</a>
+      <a href="routes/index.html">Routes</a>
+      <a href="airports/index.html">Airports</a>
+      <a href="airlines/index.html">Airlines</a>
+      <a href="guides/index.html">Guides</a>
+      <a href="about.html">About LuxAeris</a>
+      <a href="contact.html">Contact</a>
+      <a href="best-places-by-season.html">Best Places by Season</a>
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta-section">
+  <div class="container final-cta panel" style="align-items:center;">
+    <div style="max-width:760px;">
+      <div class="eyebrow">The best human interaction matters</div>
+      <h2 class="section-title" style="font-size:clamp(34px,3vw,54px);line-height:1.08;">Tell us where you want to go — and let LuxAeris handle the premium side with care.</h2>
+      <p class="lead">The best premium travel experience should feel personal, discreet, and genuinely useful. That means clearer communication, stronger route guidance, more thoughtful airline and cabin selection, and support that respects your time from the first message onward.</p>
+      <ul class="guide-list">
+        <li>Private fare focus for travelers who want stronger premium value</li>
+        <li>Personal follow-up that respects your timing, preferences, and privacy</li>
+        <li>Premium airline, route, and cabin guidance shaped around the trip itself</li>
+        <li>A more polished and reassuring experience than generic flight search</li>
+      </ul>
+    </div>
+    <div class="panel-dark" style="max-width:620px;width:100%;">
+      <h3 style="font-size:clamp(30px,2.2vw,42px);line-height:1.08;color:#fff;margin-bottom:14px;">Ready for better premium options?</h3>
+      <p style="color:#f3eadf;">Use the existing request flow exactly as it is. LuxAeris keeps the search calm, clear, and more useful by focusing on private fares, better route relevance, and more personal support.</p>
+      <p style="font-weight:700;color:#e8cb90;">No fees • Private fare focus • Personal support</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="request.html">Request a Quote</a>
+        <a class="btn-secondary" href="contact.html">Contact LuxAeris</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inline footer-inline-rich">
+    <a href="index.html">Home</a>
+    <a href="request.html">Request</a>
+    <a href="destinations/index.html">Destinations</a>
+    <a href="routes/index.html">Routes</a>
+    <a href="guides/index.html">Guides</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>
