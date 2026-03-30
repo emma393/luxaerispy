@@ -6,49 +6,39 @@
 <title>Indonesia Route Cities | LuxAeris</title>
 <meta name="description" content="Browse cities within Indonesia for U.S.-connected premium routes."/>
 <meta name="robots" content="index,follow"/>
-<link rel="canonical" href="https://luxaeris.com/routes/{cont}/{country}/index.html"/>
+<link rel="canonical" href="https://luxaeris.com/routes/asia/indonesia/index.html"/>
 <link href="/favicon.ico" rel="icon"/>
 <link href="/assets/css/styles.css" rel="stylesheet"/>
-
 <style>
 .route-page-shell{padding:48px 0 72px}
-.route-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:24px;align-items:stretch}
-.route-hero-copy,.route-side-card,.route-section{background:rgba(10,16,28,.88);border:1px solid rgba(215,181,109,.18);border-radius:24px;box-shadow:0 18px 42px rgba(0,0,0,.18)}
-.route-hero-copy{padding:34px}
-.route-side-card{padding:24px}
+.route-intro,.route-card,.route-meta{background:rgba(10,16,28,.88);border:1px solid rgba(215,181,109,.18);border-radius:24px;box-shadow:0 18px 42px rgba(0,0,0,.18)}
+.route-intro{padding:34px}
+.route-meta{padding:24px}
+.route-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:24px;align-items:start}
 .route-kicker{letter-spacing:.18em;text-transform:uppercase;color:#e7cf95;font-size:.8rem;margin:0 0 14px}
-.route-title{margin:0 0 16px;font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(2.4rem,4vw,4rem);line-height:.98;color:#fff8ef}
-.route-lead{margin:0;color:#efe4d4;line-height:1.72;font-size:1.06rem}
-.route-pills,.route-links,.route-meta-list{display:flex;flex-wrap:wrap;gap:10px}
-.route-pill,.route-link-pill{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border-radius:999px;text-decoration:none;border:1px solid rgba(216,182,110,.22)}
+.route-title{margin:0 0 14px;font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(2.2rem,3.6vw,3.8rem);line-height:1;color:#fff8ef}
+.route-lead{margin:0;color:#efe4d4;line-height:1.72;font-size:1.03rem;max-width:62ch}
+.route-pill-row,.route-link-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.route-pill,.route-link{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border-radius:999px;text-decoration:none;border:1px solid rgba(216,182,110,.22)}
 .route-pill{background:rgba(255,255,255,.05);color:#fff6ea}
-.route-link-pill{background:rgba(255,255,255,.04);color:#fff7ea}
-.route-link-pill:hover,.route-link-pill:focus{background:linear-gradient(180deg,var(--gold-strong),var(--gold));color:#111317}
-.route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:24px}
-.route-section{padding:26px 28px}
-.route-section h2{margin:0 0 12px;font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(1.9rem,2.5vw,2.6rem);line-height:1.02;color:#fff8ef}
-.route-section p,.route-section li{color:#f1e7d9;line-height:1.72}
-.route-section ul{margin:0;padding-left:20px}
-.route-side-card h3{margin:0 0 12px;font-family:"Cormorant Garamond", Georgia, serif;font-size:2rem;color:#fff8ef}
-.route-small{color:#eadfce;line-height:1.7}
-.route-cta{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
-.route-index-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.route-index-card{display:block;text-decoration:none;color:inherit;padding:22px;border-radius:22px;background:rgba(10,16,28,.88);border:1px solid rgba(215,181,109,.18);box-shadow:0 18px 42px rgba(0,0,0,.18)}
-.route-index-card h3{margin:0 0 8px;font-size:1.35rem;color:#fff8ef}
-.route-index-card p{margin:0;color:#efe4d4;line-height:1.65}
-.route-index-card .route-kicker{margin-bottom:10px}
-.route-region-block{margin-top:28px}
-.route-region-block h2{margin:0 0 14px;font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(2rem,2.9vw,3rem);color:#fff8ef}
-.route-simple-list{display:flex;flex-wrap:wrap;gap:10px}
-.route-simple-list a{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border-radius:999px;text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(216,182,110,.18);color:#fff6ea}
-.route-simple-list a:hover{background:linear-gradient(180deg,var(--gold-strong),var(--gold));color:#111317}
-@media (max-width:980px){
-  .route-hero,.route-grid,.route-index-grid{grid-template-columns:1fr}
-}
+.route-link{background:rgba(255,255,255,.04);color:#fff7ea}
+.route-link:hover,.route-link:focus{background:linear-gradient(180deg,var(--gold-strong),var(--gold));color:#111317}
+.route-section-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.route-card{padding:24px 26px}
+.route-card h2{margin:0 0 10px;font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(1.8rem,2.4vw,2.45rem);line-height:1.04;color:#fff8ef}
+.route-card p,.route-card li{color:#f1e7d9;line-height:1.72}
+.route-card ul{margin:0;padding-left:20px}
+.index-visual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+.visual-card{display:block;text-decoration:none;color:inherit;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:20px;overflow:hidden}
+.visual-card-body{padding:18px 20px}
+.visual-card h3{margin:0 0 8px;font-size:1.2rem;color:#fff8ef}
+.visual-card p{margin:0;color:#eadfce;line-height:1.68}
+.route-meta h3{margin:0 0 12px;font-family:"Cormorant Garamond", Georgia, serif;font-size:1.95rem;color:#fff8ef}
+.route-meta p,.route-meta li{color:#eadfce;line-height:1.7}
+@media(max-width:980px){.route-grid,.route-section-grid,.index-visual-grid{grid-template-columns:1fr}.route-title{font-size:clamp(2rem,7vw,3rem)}}
 </style>
-
 </head>
-<body class="route-page-body">
+<body>
 <header class="site-header site-header-sticky">
   <div class="container nav nav-luxury">
     <a class="brand brand-logo" href="/index.html">
@@ -56,30 +46,11 @@
       <span class="brand-text-home"><span class="brand-title-home">LuxAeris</span><span class="brand-tag-home">Private fares. Premium journeys.</span></span>
     </a>
     <nav aria-label="Primary" class="top-links">
-      <a href="/index.html">Home</a>
-      <a href="/request.html">Request</a>
-      <a href="/destinations/index.html">Destinations</a>
-      <a href="/routes/index.html">Routes</a>
-      <a href="/airports/index.html">Airports</a>
-      <a href="/airlines/index.html">Airlines</a>
-      <a href="/guides/index.html">Guides</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/index.html">Home</a><a href="/request.html">Request</a><a href="/destinations/index.html">Destinations</a><a href="/routes/index.html">Routes</a><a href="/airports/index.html">Airports</a><a href="/airlines/index.html">Airlines</a><a href="/guides/index.html">Guides</a>
     </nav>
     <a class="btn-secondary nav-cta" href="/request.html">Get a Quote</a>
   </div>
 </header>
-
-<main class="route-page-shell"><div class="container"><section class="route-hero"><div class="route-hero-copy"><p class="route-kicker">Indonesia</p><h1 class="route-title">Indonesia route cities</h1><p class="route-lead">Choose the city first, then move into a cleaned route page that keeps all premium cabin guidance together on one URL.</p></div><aside class="route-side-card"><h3>Open a city</h3><div class="route-links"><a class="route-link-pill" href="/routes/asia/indonesia/bali.html">Bali</a></div></aside></section></div></main>
-<footer>
-  <div class="container footer-inline footer-inline-rich">
-    <a href="/index.html">Home</a>
-    <a href="/request.html">Request</a>
-    <a href="/destinations/index.html">Destinations</a>
-    <a href="/routes/index.html">Routes</a>
-    <a href="/airports/index.html">Airports</a>
-    <a href="/guides/index.html">Guides</a>
-    <a href="/contact.html">Contact</a>
-  </div>
-</footer>
+<main class="route-page-shell"><div class="container"><section class="route-grid"><div class="route-intro"><p class="route-kicker">Routes</p><h1 class="route-title">Indonesia route cities</h1><p class="route-lead">Choose a city to browse the U.S.-connected premium routes that matter for Indonesia. Each city hub uses the same layout as the wider routes section so the site feels visually consistent throughout.</p><div class="route-pill-row"><span class="route-pill">Asia</span><span class="route-pill">Indonesia</span><span class="route-pill">City route hubs</span></div></div><aside class="route-meta"><h3>Why this page exists</h3><p>Instead of splitting one market into many weak variations, LuxAeris groups the route research by city and keeps cabin guidance inside the route pages themselves.</p><div class="route-link-row"><a class="route-link" href="/routes/asia/index.html">Back to Asia</a><a class="route-link" href="/request.html">Request a quote</a></div></aside></section><section class="route-card" style="margin-top:24px"><h2>Cities in Indonesia</h2><div class="index-visual-grid"><a class="visual-card" href="/routes/asia/indonesia/bali.html"><div class="visual-card-body"><h3>Bali</h3><p>Browse the main premium routes, airports, and route planning notes for Bali.</p></div></a></div></section></div></main>
+<footer><div class="container footer-inline footer-inline-rich"><a href="/index.html">Home</a><a href="/request.html">Request</a><a href="/destinations/index.html">Destinations</a><a href="/routes/index.html">Routes</a><a href="/guides/index.html">Guides</a><a href="/contact.html">Contact</a></div></footer>
 </body></html>
