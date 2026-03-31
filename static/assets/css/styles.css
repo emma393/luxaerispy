@@ -1542,60 +1542,83 @@ body.city-page-with-bg .airport-links{
   }
 }
 
+/* === LuxAeris routes visibility fix (safe) === */
+/* Keeps homepage unchanged. Fixes only route hub typography and avoids the request rail. */
 
-/* LuxAeris routes text color fix
-   Append this at the bottom of static/assets/css/styles.css
-   and generated/site/assets/css/styles.css if needed.
-*/
-
-/* Route section pages only */
-body[class*="route"],
-.routes-page,
-.page-shell {
-  color: #f5ecde;
-}
-
-/* Headings on route index / continent / country / city pages */
-.page-shell .hero-title,
-.page-shell h1,
-.page-shell h2,
-.page-shell h3,
-.page-shell .section-title,
 .page-shell .kicker,
-.page-shell .eyebrow {
-  color: #fff8ef !important;
+.page-shell .section .kicker,
+.page-shell .city-main .kicker {
+  color: #d9bf74 !important;
+  opacity: 1 !important;
 }
 
-/* Body copy */
-.page-shell .lede,
-.page-shell p,
-.page-shell li,
-.page-shell .muted,
-.page-shell .small,
+.page-shell .section-title,
+.page-shell .city-main .section-title,
+.page-shell .visual-card-body h3 {
+  color: #fff8ef !important;
+  opacity: 1 !important;
+  text-shadow: 0 6px 18px rgba(0,0,0,.34) !important;
+}
+
 .page-shell .section-intro,
+.page-shell .city-main .section-intro,
+.page-shell .visual-card-body p {
+  color: #f1e7d7 !important;
+  opacity: 1 !important;
+}
+
+.page-shell .visual-card {
+  background: rgba(8,14,26,.88) !important;
+  border: 1px solid rgba(216,182,110,.16) !important;
+}
+
+.page-shell .content-panel {
+  background: rgba(8,14,26,.88) !important;
+  border: 1px solid rgba(216,182,110,.16) !important;
+}
+
 .page-shell .content-panel p,
 .page-shell .content-panel li,
-.page-shell .related-box p,
-.page-shell .related-box li,
-.page-shell .request-copy,
-.page-shell .request-copy p {
-  color: #f1e6d6 !important;
+.page-shell .content-panel strong,
+.page-shell .city-main .content-panel p,
+.page-shell .city-main .content-panel li {
+  color: #f1e7d7 !important;
 }
 
-/* Light cards / request rail text */
+/* Request rail must stay cream with dark text */
+.page-shell .request-box,
+.page-shell .request-box *,
 .page-shell .request-card,
-.page-shell .request-card p,
-.page-shell .request-card li,
-.page-shell .request-card .panel-subtitle,
-.page-shell .request-card .helper,
+.page-shell .request-card *,
 .page-shell .luxaeris-fixed-rail .request-card,
+.page-shell .luxaeris-fixed-rail .request-card * {
+  text-shadow: none !important;
+}
+
+.page-shell .request-box h2,
+.page-shell .request-box h3,
+.page-shell .request-box label,
+.page-shell .request-box p,
+.page-shell .request-box .eyebrow,
+.page-shell .request-box .badge-pills span,
+.page-shell .request-card h2,
+.page-shell .request-card h3,
+.page-shell .request-card label,
+.page-shell .request-card p,
+.page-shell .request-card .eyebrow,
+.page-shell .request-card .badge-pills span,
+.page-shell .luxaeris-fixed-rail .request-card h2,
+.page-shell .luxaeris-fixed-rail .request-card h3,
+.page-shell .luxaeris-fixed-rail .request-card label,
 .page-shell .luxaeris-fixed-rail .request-card p,
-.page-shell .luxaeris-fixed-rail .request-card li,
-.page-shell .luxaeris-fixed-rail .request-card label {
+.page-shell .luxaeris-fixed-rail .request-card .eyebrow,
+.page-shell .luxaeris-fixed-rail .request-card .badge-pills span {
   color: #2b2119 !important;
 }
 
-/* Inputs in visible request section */
+.page-shell .request-box input,
+.page-shell .request-box select,
+.page-shell .request-box textarea,
 .page-shell .request-card input,
 .page-shell .request-card select,
 .page-shell .request-card textarea,
@@ -1603,8 +1626,11 @@ body[class*="route"],
 .page-shell .luxaeris-fixed-rail .request-card select,
 .page-shell .luxaeris-fixed-rail .request-card textarea {
   color: #2b2119 !important;
+  background: #fff !important;
 }
 
+.page-shell .request-box input::placeholder,
+.page-shell .request-box textarea::placeholder,
 .page-shell .request-card input::placeholder,
 .page-shell .request-card textarea::placeholder,
 .page-shell .luxaeris-fixed-rail .request-card input::placeholder,
@@ -1612,45 +1638,13 @@ body[class*="route"],
   color: #75685a !important;
 }
 
-/* Pills / bubbles / links */
-.page-shell .route-bubble,
-.page-shell .route-bubble:link,
-.page-shell .route-bubble:visited,
-.page-shell .airport-pill,
-.page-shell .airport-pill:link,
-.page-shell .airport-pill:visited {
-  color: #fff8ef !important;
-}
-
-.page-shell .route-bubble:hover,
-.page-shell .route-bubble:focus,
-.page-shell .airport-pill:hover,
-.page-shell .airport-pill:focus {
-  color: #17120d !important;
-}
-
-/* Remove raw blue link look inside route pages */
-.page-shell a:not(.btn-primary):not(.btn-secondary):not(.route-bubble):not(.airport-pill) {
+/* Remove raw blue links on route-related panels */
+.page-shell .city-main a:not(.route-bubble):not(.btn-primary):not(.btn-secondary),
+.page-shell .section a:not(.visual-card):not(.route-bubble):not(.btn-primary):not(.btn-secondary) {
   color: #ead4a1 !important;
 }
 
-.page-shell a:not(.btn-primary):not(.btn-secondary):not(.route-bubble):not(.airport-pill):hover {
-  color: #fff3d8 !important;
-}
-
-/* White content panels */
-.page-shell .content-panel {
-  color: #3b3027 !important;
-}
-
-.page-shell .content-panel h2,
-.page-shell .content-panel h3 {
-  color: #241b16 !important;
-}
-
-.page-shell .content-panel p,
-.page-shell .content-panel li,
-.page-shell .content-panel .muted,
-.page-shell .content-panel .small {
-  color: #4a4138 !important;
+.page-shell .city-main a:not(.route-bubble):not(.btn-primary):not(.btn-secondary):hover,
+.page-shell .section a:not(.visual-card):not(.route-bubble):not(.btn-primary):not(.btn-secondary):hover {
+  color: #fff1d1 !important;
 }
