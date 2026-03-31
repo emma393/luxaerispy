@@ -1543,39 +1543,14 @@ body.city-page-with-bg .airport-links{
 }
 
 
-/* 2026-03-31 homepage font balance patch */
-body.home-luxury .hero.hero-luxury{padding-top:92px !important;padding-bottom:48px !important;}
-body.home-luxury .hero-grid.hero-grid-luxury{grid-template-columns:minmax(0,1.08fr) minmax(350px,.92fr) !important;column-gap:26px !important;}
-body.home-luxury .hero-copy.hero-copy-luxury{max-width:760px !important;padding-top:18px !important;}
-body.home-luxury .hero-copy-luxury h1{
-  font-size:clamp(2.15rem,3.05vw,3.55rem) !important;
-  line-height:1.02 !important;
-  max-width:12.4ch !important;
-  letter-spacing:-0.02em !important;
-}
-body.home-luxury .lead-hero{
-  max-width:42ch !important;
-  font-size:clamp(.98rem,1vw,1.08rem) !important;
-  line-height:1.5 !important;
-}
-body.home-luxury .hero-note{font-size:.95rem !important;white-space:normal !important;}
-body.home-luxury .luxury-quote-panel{max-width:470px !important;padding:24px 24px 22px !important;}
-body.home-luxury .luxury-quote-panel .panel-title{font-size:1.72rem !important;}
-body.home-luxury .section-luxury-intro .section-title,
-body.home-luxury .featured-destinations-section .section-title,
-body.home-luxury .section-dark-panel .section-title,
-body.home-luxury .final-cta .section-title{
-  white-space:normal !important;
-  max-width:18ch !important;
-}
-body.home-luxury .section-luxury-intro .section-title{font-size:clamp(2rem,2.6vw,3.1rem) !important;}
-body.home-luxury .featured-destinations-section .section-title,
-body.home-luxury .section-dark-panel .section-title{font-size:clamp(1.95rem,2.45vw,2.9rem) !important;}
-body.home-luxury .final-cta .section-title{font-size:clamp(1.65rem,2vw,2.2rem) !important;max-width:14ch !important;}
-body.home-luxury .premium-routes-panel,body.home-luxury .final-cta{padding:24px !important;}
-@media (max-width: 1100px){
-  body.home-luxury .hero-grid.hero-grid-luxury{grid-template-columns:1fr !important;row-gap:24px !important;}
-  body.home-luxury .hero-copy.hero-copy-luxury{max-width:100% !important;padding-top:0 !important;}
-  body.home-luxury .hero-copy-luxury h1{font-size:clamp(2rem,6vw,3.2rem) !important;max-width:100% !important;}
-  body.home-luxury .lead-hero,body.home-luxury .hero-note{max-width:100% !important;}
-}
+/* === 2026-03-31 homepage readability patch === */
+body.home-luxury .section-luxury-intro .section-title{font-size:clamp(2rem,3vw,3.2rem)!important;max-width:12ch!important;line-height:1.04!important;white-space:normal!important;}
+body.home-luxury .section-luxury-intro .lead{max-width:54ch!important;color:#f5ebde!important;line-height:1.58!important;}
+body.home-luxury .section-dark-panel .section-title{font-size:clamp(1.85rem,2.5vw,2.6rem)!important;max-width:14ch!important;line-height:1.06!important;white-space:normal!important;}
+body.home-luxury .premium-routes-panel .section-heading{align-items:start!important;}
+body.home-luxury .premium-routes-panel .section-link{margin-top:12px;display:inline-flex;}
+body.home-luxury .final-cta .section-title{font-size:clamp(1.7rem,2.2vw,2.25rem)!important;max-width:11ch!important;line-height:1.08!important;white-space:normal!important;}
+body.home-luxury .final-cta .lead,body.home-luxury .final-cta p,body.home-luxury .final-cta li{color:#f4eadc!important;line-height:1.58!important;opacity:1!important;}
+body.home-luxury .final-cta{align-items:start!important;gap:28px!important;}
+body.home-luxury .final-cta .panel-dark{background:rgba(8,12,22,.72)!important;border:1px solid rgba(216,182,110,.18)!important;}
+@media (max-width:1100px){body.home-luxury .section-luxury-intro .section-title,body.home-luxury .section-dark-panel .section-title,body.home-luxury .final-cta .section-title{max-width:none!important;}}
