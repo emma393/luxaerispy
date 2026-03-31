@@ -1542,109 +1542,57 @@ body.city-page-with-bg .airport-links{
   }
 }
 
-/* === LuxAeris routes visibility fix (safe) === */
-/* Keeps homepage unchanged. Fixes only route hub typography and avoids the request rail. */
+/* === 2026-03-31 homepage polish + guides cleanup === */
+body.home-luxury .section-luxury-intro .section-title{font-size:clamp(2rem,2.7vw,3.25rem)!important;max-width:12ch!important;line-height:1.02!important}body.home-luxury .premium-routes-panel .section-title{font-size:clamp(1.9rem,2.5vw,3rem)!important;max-width:13ch!important;line-height:1.03!important}body.home-luxury .section-dark-panel .section-title{font-size:clamp(1.85rem,2.3vw,2.8rem)!important;max-width:14ch!important;line-height:1.04!important}body.home-luxury .final-cta .section-title{font-size:clamp(1.7rem,2.15vw,2.35rem)!important;max-width:11ch!important;line-height:1.06!important}body.home-luxury .section-dark-panel .section-heading.compact,body.home-luxury .final-cta{align-items:start!important}body.home-luxury .premium-routes-panel,body.home-luxury .final-cta{padding:30px!important}body.home-luxury .final-cta{grid-template-columns:minmax(0,1fr) minmax(380px,560px)!important}.guides-clean .index-card,.guides-clean .index-card:visited,.homepage-panel-fix .index-card,.homepage-panel-fix .index-card:visited{color:#fff8ef!important;text-decoration:none!important;display:block;background:rgba(255,255,255,.04)!important;border:1px solid rgba(216,182,110,.18)!important;border-radius:22px!important;padding:20px!important}.guides-clean .index-card h3,.homepage-panel-fix .index-card h3{color:#fff8ef!important;margin:0 0 10px!important}.guides-clean .index-card p,.homepage-panel-fix .index-card p{color:#f2e7d9!important;margin:0!important;line-height:1.6!important}.guides-clean .index-card:hover,.homepage-panel-fix .index-card:hover{background:rgba(255,255,255,.06)!important}.guides-clean,.homepage-panel-fix{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px!important;align-items:stretch!important}@media(max-width:980px){.guides-clean,.homepage-panel-fix{grid-template-columns:1fr!important}body.home-luxury .final-cta{grid-template-columns:1fr!important}}
 
-.page-shell .kicker,
-.page-shell .section .kicker,
-.page-shell .city-main .kicker {
-  color: #d9bf74 !important;
-  opacity: 1 !important;
-}
-
-.page-shell .section-title,
-.page-shell .city-main .section-title,
-.page-shell .visual-card-body h3 {
-  color: #fff8ef !important;
-  opacity: 1 !important;
-  text-shadow: 0 6px 18px rgba(0,0,0,.34) !important;
-}
-
-.page-shell .section-intro,
-.page-shell .city-main .section-intro,
-.page-shell .visual-card-body p {
-  color: #f1e7d7 !important;
-  opacity: 1 !important;
-}
-
-.page-shell .visual-card {
-  background: rgba(8,14,26,.88) !important;
-  border: 1px solid rgba(216,182,110,.16) !important;
-}
-
-.page-shell .content-panel {
-  background: rgba(8,14,26,.88) !important;
-  border: 1px solid rgba(216,182,110,.16) !important;
-}
-
-.page-shell .content-panel p,
-.page-shell .content-panel li,
-.page-shell .content-panel strong,
-.page-shell .city-main .content-panel p,
-.page-shell .city-main .content-panel li {
-  color: #f1e7d7 !important;
-}
-
-/* Request rail must stay cream with dark text */
-.page-shell .request-box,
-.page-shell .request-box *,
-.page-shell .request-card,
-.page-shell .request-card *,
-.page-shell .luxaeris-fixed-rail .request-card,
-.page-shell .luxaeris-fixed-rail .request-card * {
-  text-shadow: none !important;
-}
-
+/* === Routes continent/country/city hard contrast fix === */
 .page-shell .request-box h2,
 .page-shell .request-box h3,
-.page-shell .request-box label,
-.page-shell .request-box p,
 .page-shell .request-box .eyebrow,
+.page-shell .request-box label,
+.page-shell .request-box strong,
 .page-shell .request-box .badge-pills span,
-.page-shell .request-card h2,
-.page-shell .request-card h3,
-.page-shell .request-card label,
-.page-shell .request-card p,
-.page-shell .request-card .eyebrow,
-.page-shell .request-card .badge-pills span,
-.page-shell .luxaeris-fixed-rail .request-card h2,
-.page-shell .luxaeris-fixed-rail .request-card h3,
-.page-shell .luxaeris-fixed-rail .request-card label,
-.page-shell .luxaeris-fixed-rail .request-card p,
-.page-shell .luxaeris-fixed-rail .request-card .eyebrow,
-.page-shell .luxaeris-fixed-rail .request-card .badge-pills span {
+.page-shell .request-box .helper,
+.page-shell .request-box .panel-subtitle {
   color: #2b2119 !important;
 }
-
+.page-shell .request-box p,
+.page-shell .request-box li,
+.page-shell .request-box .muted,
+.page-shell .request-box .small {
+  color: #5a4d42 !important;
+}
 .page-shell .request-box input,
 .page-shell .request-box select,
-.page-shell .request-box textarea,
-.page-shell .request-card input,
-.page-shell .request-card select,
-.page-shell .request-card textarea,
-.page-shell .luxaeris-fixed-rail .request-card input,
-.page-shell .luxaeris-fixed-rail .request-card select,
-.page-shell .luxaeris-fixed-rail .request-card textarea {
+.page-shell .request-box textarea {
   color: #2b2119 !important;
   background: #fff !important;
 }
-
 .page-shell .request-box input::placeholder,
-.page-shell .request-box textarea::placeholder,
-.page-shell .request-card input::placeholder,
-.page-shell .request-card textarea::placeholder,
-.page-shell .luxaeris-fixed-rail .request-card input::placeholder,
-.page-shell .luxaeris-fixed-rail .request-card textarea::placeholder {
-  color: #75685a !important;
+.page-shell .request-box textarea::placeholder {
+  color: #7d736a !important;
+}
+.page-shell .request-box .cta,
+.page-shell .request-box .btn-primary {
+  color: #17120e !important;
 }
 
-/* Remove raw blue links on route-related panels */
-.page-shell .city-main a:not(.route-bubble):not(.btn-primary):not(.btn-secondary),
-.page-shell .section a:not(.visual-card):not(.route-bubble):not(.btn-primary):not(.btn-secondary) {
-  color: #ead4a1 !important;
+.page-shell .section-title,
+.page-shell .hero-title,
+.page-shell .visual-card-body h3,
+.page-shell .content-panel h2,
+.page-shell .content-panel h3,
+.page-shell .city-main h1,
+.page-shell .city-main h2,
+.page-shell .city-main h3 {
+  color: #fff8ef !important;
+}
+.page-shell .section-intro,
+.page-shell .visual-card-body p,
+.page-shell .city-main p,
+.page-shell .city-main li {
+  color: #e9dfd0 !important;
 }
 
-.page-shell .city-main a:not(.route-bubble):not(.btn-primary):not(.btn-secondary):hover,
-.page-shell .section a:not(.visual-card):not(.route-bubble):not(.btn-primary):not(.btn-secondary):hover {
-  color: #fff1d1 !important;
-}
+/* Make broken-image alt text invisible if any card image still fails */
+.page-shell .visual-card img { color: transparent !important; }
